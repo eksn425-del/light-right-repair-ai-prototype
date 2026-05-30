@@ -1,0 +1,17 @@
+# Candidate intervention boxes. Subtract boxes mark suggested void cuts.
+# Units: meters
+g candidate_02_INT0018_reorganize
+v 43.000 -1.250 0.000
+v 55.000 -1.250 0.000
+v 55.000 1.250 0.000
+v 43.000 1.250 0.000
+v 43.000 -1.250 0.200
+v 55.000 -1.250 0.200
+v 55.000 1.250 0.200
+v 43.000 1.250 0.200
+f 1 2 3 4
+f 5 8 7 6
+f 1 5 6 2
+f 2 6 7 3
+f 3 7 8 4
+f 4 8 5 1

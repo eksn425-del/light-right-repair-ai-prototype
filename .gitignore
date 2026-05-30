@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Private/raw project materials
+private_assets/
+raw_project_files/
+real_project_data/
+*.dwg
+*.dxf
+*.skp
+*.skb
+*.3dm
+*.doc
+*.docx
+*.pdf
+*.pptx
+*.zip
+*.rar
+*.7z
+*.bak
+
+# Secrets/local config
+.env
+.env.*
+*.pem
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+known_hosts
+

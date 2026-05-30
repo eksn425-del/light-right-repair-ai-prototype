@@ -1,0 +1,13 @@
+route_id,candidate_id,start_node_id,end_node_id,length_m,average_sunlight_hours,is_accessible,notes
+R001,candidate_01,N01,N02,24.0,5.2,True,node-to-node route placeholder based on street width and candidate conflicts
+R002,candidate_01,N02,N03,24.0,5.2,True,node-to-node route placeholder based on street width and candidate conflicts
+R003,candidate_01,N03,N04,24.0,5.2,True,node-to-node route placeholder based on street width and candidate conflicts
+R004,candidate_01,N04,N05,26.0,5.2,True,node-to-node route placeholder based on street width and candidate conflicts
+R001,candidate_02,N01,N02,24.0,3.2,True,node-to-node route placeholder based on street width and candidate conflicts
+R002,candidate_02,N02,N03,24.0,3.2,True,node-to-node route placeholder based on street width and candidate conflicts
+R003,candidate_02,N03,N04,24.0,3.2,True,node-to-node route placeholder based on street width and candidate conflicts
+R004,candidate_02,N04,N05,26.0,3.2,True,node-to-node route placeholder based on street width and candidate conflicts
+R001,candidate_03,N01,N02,24.0,3.14,True,node-to-node route placeholder based on street width and candidate conflicts
+R002,candidate_03,N02,N03,24.0,3.14,True,node-to-node route placeholder based on street width and candidate conflicts
+R003,candidate_03,N03,N04,24.0,3.14,True,node-to-node route placeholder based on street width and candidate conflicts
+R004,candidate_03,N04,N05,26.0,3.14,True,node-to-node route placeholder based on street width and candidate conflicts

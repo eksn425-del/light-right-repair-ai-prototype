@@ -1,0 +1,10 @@
+# Accessibility and safety rules used by Algorithm C.
+max_slope_percent: 8
+min_clear_width_m: 1.2
+max_step_height_m: 0.16
+guardrail_required_height_m: 1.0
+min_accessibility_coverage: 0.8
+min_slow_path_width_m: 1.8
+min_pedestrian_vehicle_separation_m: 0.5
+waterfront_guardrail_required: true
+parking_entry_visibility_required: true

@@ -1,0 +1,2 @@
+street_id,start_x,start_y,end_x,end_y,width_m,main_direction,pedestrian_priority,notes
+S01,0.0,0.0,98.0,0.0,10.0,east-west,True,"toy main old street, width about 10m"

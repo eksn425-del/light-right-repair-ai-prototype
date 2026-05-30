@@ -1,0 +1,12 @@
+{
+  "candidate_count": 3,
+  "best_candidate_id": "candidate_01",
+  "score_weights": {
+    "light_gain": 1.0,
+    "intervention_volume": 0.08,
+    "new_shadow_penalty": 0.6,
+    "protected_zone_penalty": 1.0
+  },
+  "search_iterations": 260,
+  "notes": "Framework version: boolean geometry is represented by reference boxes."
+}

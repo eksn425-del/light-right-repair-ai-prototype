@@ -1,0 +1,6 @@
+node_id,x,y,z,node_type,importance,notes
+N01,0.0,0.0,0.0,east_entrance,5,street entrance
+N02,24.0,0.0,0.0,small_shop_cluster,4,active storefront segment
+N03,48.0,0.0,0.0,narrow_shadow_segment,5,expected darker street segment
+N04,72.0,0.0,0.0,community_pause_point,3,possible gray-space node
+N05,98.0,0.0,0.0,west_entrance,5,street entrance

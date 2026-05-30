@@ -1,0 +1,11 @@
+gap_id,x,y,related_building_1,related_building_2,estimated_potential,notes
+GAP001,19.5,5.0,B01,B02,5.0,between adjacent toy/white-model masses
+GAP002,36.0,5.0,B02,B03,5.0,between adjacent toy/white-model masses
+GAP003,50.0,5.0,B03,B04,5.0,between adjacent toy/white-model masses
+GAP004,68.5,5.0,B04,B05,5.0,between adjacent toy/white-model masses
+GAP005,84.0,5.0,B05,B06,5.0,between adjacent toy/white-model masses
+GAP006,18.0,-5.0,B07,B08,5.0,between adjacent toy/white-model masses
+GAP007,31.0,-5.0,B08,B09,5.0,between adjacent toy/white-model masses
+GAP008,50.0,-5.0,B09,B10,5.0,between adjacent toy/white-model masses
+GAP009,64.5,-5.0,B10,B11,5.0,between adjacent toy/white-model masses
+GAP010,83.0,-5.0,B11,B12,5.0,between adjacent toy/white-model masses

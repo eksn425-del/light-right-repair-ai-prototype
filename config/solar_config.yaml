@@ -1,0 +1,8 @@
+# Simplified winter-solstice sampling for Xiamen.
+winter_solstice_date: "2026-12-21"
+start_hour: 8
+end_hour: 16
+time_step_hours: 1.0
+shadow_ray_step_m: 1.0
+min_sun_altitude_deg: 1.0
+

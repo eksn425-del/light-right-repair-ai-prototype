@@ -1,0 +1,10 @@
+{
+  "selected_candidate_id": "candidate_01",
+  "reason": "highest combined light/intervention score among candidates that passed accessibility checks",
+  "total_score": 11.887,
+  "light_gain": 13.5,
+  "intervention_volume": 20.16,
+  "accessible_route_ratio": 0.96,
+  "safety_score": 89.92,
+  "final_notes": "sparse_route_nodes"
+}

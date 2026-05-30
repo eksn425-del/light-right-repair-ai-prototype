@@ -1,0 +1,59 @@
+{
+  "total_grid_count": 364,
+  "dark_grid_count": 216,
+  "dark_zone_ratio": 0.5934,
+  "average_sunlight_hours": 2.684,
+  "worst_dark_zone_location": {
+    "x": 8.0,
+    "y": -4.0,
+    "sunlight_hours": 0.0
+  },
+  "zone_count": 2,
+  "priority_zone_count": 2,
+  "config_used": {
+    "site_config": {
+      "site_name": "Demo Lakeside Block - Light Equity Framework",
+      "project_scope": "public_demo_block",
+      "task_book_version": "public-demo",
+      "latitude": 24.55,
+      "longitude": 118.03,
+      "utc_offset": 8,
+      "dataset_units": "m",
+      "grid_size_m": 2.0,
+      "ground_z": 0.0,
+      "bounds_padding_m": 6.0,
+      "street_analysis_margin_m": 5.0,
+      "dark_sunlight_threshold_hours": 3.0,
+      "nearest_building_search_radius_m": 20.0,
+      "zone_dark_ratio_threshold": 0.35,
+      "zone_priority_light_weight": 0.5,
+      "candidate_count": 3,
+      "search_iterations": 260,
+      "max_interventions_per_candidate": 3,
+      "random_seed": 42,
+      "score_weight_light_gain": 1.0,
+      "score_weight_intervention_volume": 0.08,
+      "score_weight_new_shadow_penalty": 0.6,
+      "score_weight_protected_zone_penalty": 1.0,
+      "report_light_gain_scale": 0.12,
+      "baseline_accessibility_coverage": 0.68,
+      "baseline_safety_score": 62,
+      "manual_design_avg_sunlight_gain": 0.45,
+      "manual_design_dark_ratio_drop": 0.06,
+      "manual_design_accessibility_coverage": 0.76,
+      "manual_design_safety_score": 74,
+      "default_micro_device_size_m": 3.0,
+      "default_slow_path_width_m": 2.0,
+      "waterfront_guardrail_required": true
+    },
+    "solar_config": {
+      "winter_solstice_date": "2026-12-21",
+      "start_hour": 8,
+      "end_hour": 16,
+      "time_step_hours": 1.0,
+      "shadow_ray_step_m": 1.0,
+      "min_sun_altitude_deg": 1.0
+    },
+    "dataset_dir": "E:\\light-right-repair-ai-prototype\\data\\sample_toy_street"
+  }
+}

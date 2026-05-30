@@ -1,0 +1,17 @@
+# Candidate intervention boxes. Subtract boxes mark suggested void cuts.
+# Units: meters
+g candidate_03_INT0001_subtract
+v 17.750 -7.250 6.750
+v 20.250 -7.250 6.750
+v 20.250 -4.750 6.750
+v 17.750 -4.750 6.750
+v 17.750 -7.250 9.000
+v 20.250 -7.250 9.000
+v 20.250 -4.750 9.000
+v 17.750 -4.750 9.000
+f 1 2 3 4
+f 5 8 7 6
+f 1 5 6 2
+f 2 6 7 3
+f 3 7 8 4
+f 4 8 5 1

@@ -1,0 +1,13 @@
+building_id,name,x_min,x_max,y_min,y_max,height_m,floors,movable,protected,facade_type,notes
+B01,north_block_1,6.0,18.0,6.0,23.0,9,3,False,False,mixed_old_shopfront,toy north-side massing
+B02,north_block_2,21.0,35.0,6.0,23.0,12,4,True,False,mixed_old_shopfront,toy north-side massing
+B03,north_block_3,37.0,48.0,6.0,23.0,15,5,False,True,mixed_old_shopfront,toy north-side massing
+B04,north_block_4,52.0,67.0,6.0,23.0,6,2,True,False,mixed_old_shopfront,toy north-side massing
+B05,north_block_5,70.0,83.0,6.0,23.0,12,4,False,False,mixed_old_shopfront,toy north-side massing
+B06,north_block_6,85.0,97.0,6.0,23.0,9,3,True,False,mixed_old_shopfront,toy north-side massing
+B07,south_block_1,4.0,17.0,-24.0,-6.0,6,2,False,False,mixed_old_residential,toy south-side massing
+B08,south_block_2,19.0,29.0,-24.0,-6.0,9,3,True,False,mixed_old_residential,toy south-side massing
+B09,south_block_3,33.0,49.0,-24.0,-6.0,12,4,False,True,mixed_old_residential,toy south-side massing
+B10,south_block_4,51.0,63.0,-24.0,-6.0,15,5,True,False,mixed_old_residential,toy south-side massing
+B11,south_block_5,66.0,81.0,-24.0,-6.0,9,3,False,False,mixed_old_residential,toy south-side massing
+B12,south_block_6,85.0,95.0,-24.0,-6.0,12,4,True,False,mixed_old_residential,toy south-side massing
