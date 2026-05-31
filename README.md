@@ -4,6 +4,16 @@ AI-assisted spatial decision workflow for light-equity restoration in dense urba
 
 This repository is a public-safe demo extracted from a larger private research project. It keeps the reusable algorithmic workflow and toy dataset, while excluding all real site data, raw CAD/Rhino/SketchUp files, field materials, team documents, and private project files.
 
+## Product Positioning
+
+This project is best understood as an **AI-assisted spatial decision prototype**, not a final daylight-engineering tool. It turns a spatial justice question - which parts of a dense block remain under-lit, and what small interventions could improve them - into a repeatable product workflow:
+
+```text
+site geometry + planning rules -> diagnosis -> candidate generation -> safety validation -> design-team recommendation
+```
+
+The intended user is a designer, planner, or urban-renewal researcher who needs an early-stage decision aid before committing to detailed manual modeling.
+
 ## What It Does
 
 The prototype runs a three-stage spatial decision workflow:
@@ -16,6 +26,16 @@ The prototype runs a three-stage spatial decision workflow:
 
 3. **Algorithm C - Validation**  
    Checks candidate interventions against accessibility and safety rules, then produces a final recommendation.
+
+## AI Product Loop
+
+| Product layer | Current implementation |
+| --- | --- |
+| User input | Toy block dataset or standalone grouped OBJ massing model |
+| Processing | Simplified 2.5D sunlight diagnosis, candidate generation, rule-based validation |
+| Output | Dark-zone heatmap, candidate scores, before/after metrics, final recommendation |
+| Validation | Post-simulation ranking, accessibility and safety screening, manual caveat notes |
+| Human feedback | Designer reviews recommendation, adjusts geometry/rules, and reruns the workflow |
 
 ## Why It Matters
 
@@ -65,6 +85,20 @@ Regenerate the toy dataset and run:
 python main.py --dataset sample_toy_street --regenerate-toy --output-dir outputs/demo_run
 ```
 
+Run with candidate post-simulation verification:
+
+```bash
+python main.py --dataset sample_toy_street --regenerate-toy --verify-candidates --output-dir outputs/demo_verified
+```
+
+Validate a standalone OBJ massing model:
+
+```bash
+python main.py --obj examples/single_mass_block.obj --overwrite-obj-dataset --diagnosis-only --output-dir outputs/single_mass_check
+```
+
+Standalone OBJ validation is useful for early testing, but it is not a reliable urban-design conclusion until roads, protected zones, accessibility nodes, and building IDs are manually checked. A single massing block should usually use `--diagnosis-only`; full A/B/C optimization is more meaningful when the OBJ contains several grouped buildings plus site context.
+
 ## Repository Map
 
 - `main.py` - command-line entry point for the A/B/C workflow
@@ -79,6 +113,7 @@ python main.py --dataset sample_toy_street --regenerate-toy --output-dir outputs
 - `outputs/demo_run/` - generated demo outputs
 - `assets/figures/` - selected figures for README/portfolio review
 - `docs/` - project positioning and privacy notes
+- `examples/` - small public-safe geometry examples for validation
 
 ## Demo Figures
 
@@ -96,7 +131,14 @@ python main.py --dataset sample_toy_street --regenerate-toy --output-dir outputs
 
 ## Status
 
-Public-safe research prototype release.
+Public-safe research prototype release. It is ready to show as a v0.1 AI product prototype, with transparent limitations and an upgrade path toward a richer design-review interface.
 
 The private project archive remains offline and is not published.
 
+## Product Documents
+
+- [PRD-lite](docs/PRD-lite.md)
+- [AI decision pipeline](docs/AI_DECISION_PIPELINE.md)
+- [Evaluation metrics](docs/EVALUATION_METRICS.md)
+- [Standalone OBJ validation guide](docs/SINGLE_MASS_VALIDATION_GUIDE.md)
+- [Interview talking points](docs/INTERVIEW_TALKING_POINTS.md)

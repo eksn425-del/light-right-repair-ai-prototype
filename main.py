@@ -73,6 +73,7 @@ def run_pipeline(
     dataset_dir_override: Path | None = None,
     config_dir: Path = CONFIG_DIR,
     verify_candidates: bool = False,
+    diagnosis_only: bool = False,
 ) -> dict:
     """Run the complete A/B/C and final-report workflow."""
     dataset_dir = dataset_dir_override or _prepare_dataset(dataset_name, regenerate_toy)
@@ -94,6 +95,17 @@ def run_pipeline(
 
     diagnosis_outputs = run_diagnosis(dataset_dir, diagnosis_dir, config_dir)
     _print_paths("Algorithm A diagnosis", diagnosis_outputs)
+
+    if diagnosis_only:
+        print("\nDiagnosis-only mode finished.")
+        return {
+            "dataset_dir": dataset_dir,
+            "diagnosis": diagnosis_outputs,
+            "optimization": None,
+            "candidate_verification": None,
+            "validation": None,
+            "final_report": None,
+        }
 
     optimization_outputs = run_optimization(dataset_dir, diagnosis_dir, candidates_dir, config_dir)
     _print_paths("Algorithm B candidates", optimization_outputs)
@@ -169,6 +181,11 @@ def main() -> None:
         help="Re-simulate each B candidate and replace candidate_scores.csv with verified ranking before C.",
     )
     parser.add_argument(
+        "--diagnosis-only",
+        action="store_true",
+        help="Run only Algorithm A. Useful for standalone OBJ smoke tests or single-mass validation.",
+    )
+    parser.add_argument(
         "--regenerate-toy",
         action="store_true",
         help="Regenerate the toy street data before running.",
@@ -189,6 +206,7 @@ def main() -> None:
             dataset_dir_override=dataset_dir_override,
             config_dir=args.config_dir,
             verify_candidates=args.verify_candidates,
+            diagnosis_only=args.diagnosis_only,
         )
     except Exception as exc:
         print(f"\n[ERROR] {exc}", file=sys.stderr)

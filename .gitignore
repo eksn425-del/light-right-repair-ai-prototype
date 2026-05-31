@@ -38,3 +38,6 @@ id_rsa
 id_ed25519
 known_hosts
 
+# Local validation scratch outputs
+outputs/_*/
+data/auto_obj/
