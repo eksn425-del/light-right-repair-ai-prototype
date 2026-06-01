@@ -138,6 +138,7 @@ The private project archive remains offline and is not published.
 ## Product Documents
 
 - [PRD-lite](docs/PRD-lite.md)
+- [AI product flow diagram](docs/AI_PRODUCT_FLOW_DIAGRAM.md)
 - [AI decision pipeline](docs/AI_DECISION_PIPELINE.md)
 - [Evaluation metrics](docs/EVALUATION_METRICS.md)
 - [Standalone OBJ validation guide](docs/SINGLE_MASS_VALIDATION_GUIDE.md)
