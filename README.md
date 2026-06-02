@@ -2,6 +2,14 @@
 
 AI-assisted spatial decision workflow for light-equity restoration in dense urban blocks.
 
+## 中文项目简介
+
+**Light Right Repair AI Prototype** 是一个面向城市更新和空间公平议题的 AI 辅助决策工作流原型。它把“哪些街区光照不足、哪些微更新策略最值得优先尝试”转化为可运行的三阶段流程：诊断、候选生成、规则验证和最终推荐。
+
+这个项目不是最终版日照工程软件，也不是自动生成城市设计方案。它更适合表达为：**面向设计团队的空间诊断与方案评估 Workflow 产品**。系统用 toy dataset 和公开安全样例展示算法流程，真实项目数据和原始建模文件不在公开仓库中。
+
+**适合投递方向：** AI 产品实习生 / Workflow 自动化 / 空间智能 / 数据评测与决策辅助产品。
+
 This repository is a public-safe demo extracted from a larger private research project. It keeps the reusable algorithmic workflow and toy dataset, while excluding all real site data, raw CAD/Rhino/SketchUp files, field materials, team documents, and private project files.
 
 ## Product Positioning
@@ -142,4 +150,5 @@ The private project archive remains offline and is not published.
 - [AI decision pipeline](docs/AI_DECISION_PIPELINE.md)
 - [Evaluation metrics](docs/EVALUATION_METRICS.md)
 - [Standalone OBJ validation guide](docs/SINGLE_MASS_VALIDATION_GUIDE.md)
+- [中文 AI 产品实习定位](docs/AI_PRODUCT_INTERNSHIP_POSITIONING_CN.md)
 - [Interview talking points](docs/INTERVIEW_TALKING_POINTS.md)
