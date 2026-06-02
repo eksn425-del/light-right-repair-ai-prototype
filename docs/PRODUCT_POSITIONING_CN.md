@@ -1,4 +1,4 @@
-# AI 产品实习定位｜Light Right Repair AI Prototype
+# 中文产品定位说明｜Light Right Repair AI Prototype
 
 ## 推荐定位
 
@@ -66,7 +66,6 @@ toy block dataset / grouped OBJ massing
 2. 补一张产品流程截图或 demo GIF。
 3. 补一个“为什么不用强 Agent”的说明。
 
-## 面试讲法
+## 项目叙述建议
 
 这个项目解决的是城市更新中光照公平难以量化和迭代的问题。我把它做成一个可运行的 AI-assisted decision workflow：先诊断暗区，再生成微更新候选，最后用安全和可达性规则筛选推荐结果。它的价值不是自动设计，而是让设计团队在早期用指标比较方案，并保留人工复核。
-
