@@ -42,4 +42,6 @@
 
 - Local reproducibility commit: `319b0ec` (the code/results package commit before this handoff note).
 - Final local tag: `soict-2026-repro-final`.
-- GitHub push: pending repository/authentication check; do not push private source geometry to a public repository.
+- Public GitHub mirror branch: [research-repro-v1](https://github.com/eksn425-del/light-right-repair-ai-prototype/tree/research-repro-v1/research_reproducibility).
+- Public mirror commit: `3994be8`; this branch contains public-safe code and paper-support summaries only.
+- Raw CAD/SKP/OBJ/DXF, sensor-coordinate tables and Radiance intermediates remain local/private.
