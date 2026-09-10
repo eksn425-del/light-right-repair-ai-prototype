@@ -38,6 +38,22 @@ Use “within-independent-sample composite-ranking agreement,” “selective HB
 5. `paper_support/RESULT_DIFF_AUDIT.csv` and `audit/SCORING_FORMULA_MIGRATION_AUDIT.csv`
 6. `REPRODUCE.md` and `ENVIRONMENT.md`
 
+## Paper asset package
+
+- Complete private repository: `https://github.com/eksn425-del/soict-2026-paper-assets`
+- Private branch: `paper-assets-v1`
+- Private commit: `1f886551991d0e2a653de72981e084c6ecb89b6d`
+- Private tag: `soict-2026-paper-assets-v1`
+- Complete package path: `paper_assets/`
+- Public-safe subset path: `research_reproducibility/paper_assets/`
+- Public mirror asset commit: `b3da4c58d1f86745bf16f6579a02a0f2edfb2650`
+
+The private package contains Figures 1--9 and all numbered table CSVs. Figure
+2, Figure 5, Table 1, Table 3 and Table 4 are private-only because they may
+expose site-specific geometry or identifiers. No raw CAD/DXF/DWG/SKP/OBJ,
+sensor coordinate tables, Radiance intermediate files, or unauthorized real
+raw data is included.
+
 ## Explicit limitations
 
 - No full 630-scene HB run was performed; the stated value is serial-equivalent extrapolation.

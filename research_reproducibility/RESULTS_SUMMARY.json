@@ -106,6 +106,24 @@
     "command": "pytest -q",
     "test_count": 19
   },
+  "paper_assets": {
+    "status": "PUBLISHED",
+    "private_repo": "eksn425-del/soict-2026-paper-assets",
+    "private_branch": "paper-assets-v1",
+    "private_commit": "1f886551991d0e2a653de72981e084c6ecb89b6d",
+    "private_tag": "soict-2026-paper-assets-v1",
+    "private_path": "paper_assets/",
+    "public_path": "research_reproducibility/paper_assets/",
+    "public_commit": "b3da4c58d1f86745bf16f6579a02a0f2edfb2650",
+    "private_only": [
+      "F02_baseline_field.png",
+      "F05_candidate_change_map.png",
+      "table_01_geometry_audit.csv",
+      "table_03_candidate_universe.csv",
+      "table_04_curated_hb_verification.csv"
+    ],
+    "raw_source_files_uploaded": false
+  },
   "warnings": [
     "Operational HB batch elapsed time is NOT_MEASURED.",
     "Selective HB verification is not an all-630 high-fidelity simulation.",
