@@ -1,0 +1,16 @@
+{
+  "run_id": "baseline_20260909_clean",
+  "status": "reproducibility_package_ready_for_review",
+  "numbers_file": "paper_support/PAPER_NUMBERS.csv",
+  "claims_file": "paper_support/CLAIMS_LEDGER.csv",
+  "diff_audit_file": "audit/RESULT_DIFF_AUDIT.csv",
+  "key_counts": {
+    "buildings": 45,
+    "eligible_buildings": 36,
+    "candidates": 630,
+    "verified_rule_candidates": 23,
+    "independent_sample": 20
+  },
+  "high_fidelity_scope": "curated scenes plus frozen independent validation sample; not all 630 candidates",
+  "paper_claim_boundary": "No claim that the system beats human design, proves buildability, or is universally accurate."
+}

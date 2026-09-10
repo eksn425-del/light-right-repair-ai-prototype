@@ -1,0 +1,29 @@
+run_id: baseline_20260909
+seed: 20260909
+
+paths:
+  source_team_root: ../PRIVATE_SOURCE
+  source_dataset: ../PRIVATE_SOURCE/algorithm_ready_lakeside_v2
+  source_audit: ../PRIVATE_SOURCE/latest_audit
+
+analysis:
+  latitude: 24.55
+  longitude: 118.03
+  timezone: Asia/Shanghai
+  analysis_date: 2026-12-21
+  start_time: "08:15"
+  end_time: "15:45"
+  timestep_minutes: 30
+  grid_size_m: 3.0
+  sensor_height_m: 0.1
+  north_deg: 0.0
+  low_threshold_h: 3.0
+  height_floor_m: 3.0
+  height_reduction_cap_m: 3.0
+  height_reduction_fraction: 0.25
+  cpu_count: 4
+experiments:
+  final_design_pairs:
+    - ["C9,C24", "highest low-area reduction candidate"]
+    - ["C9,C15", "higher gain and lower-volume balance candidate"]
+    - ["C9,C13", "lower-volume high-gain candidate"]
