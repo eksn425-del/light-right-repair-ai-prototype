@@ -10,6 +10,7 @@ analysis:
   latitude: 24.55
   longitude: 118.03
   timezone: Asia/Shanghai
+  utc_offset_hours: 8
   analysis_date: 2026-12-21
   start_time: "08:15"
   end_time: "15:45"
@@ -22,6 +23,11 @@ analysis:
   height_reduction_cap_m: 3.0
   height_reduction_fraction: 0.25
   cpu_count: 4
+screening_score:
+  low_area_drop_weight: 0.45
+  avg_gain_weight: 0.35
+  intervention_volume_economy_weight: 0.15
+  new_low_area_avoidance_weight: 0.05
 experiments:
   final_design_pairs:
     - ["C9,C24", "highest low-area reduction candidate"]

@@ -152,7 +152,7 @@ def historical_map(source_root: Path) -> list[dict[str, str]]:
         "canonical_site_v2/canonical_buildings.csv",
         "building_id after movable/protected/height_m filter",
         "code/route_b_geometry_audit.py + route_b_enumerate_2p5d_candidates.py",
-        "PRIVATE_SOURCE/algorithm_ready_lakeside_v2/buildings.csv and DXF/OBJ audit",
+        "private source/algorithm_ready_lakeside_v2/buildings.csv and DXF/OBJ audit",
         "PARTIAL",
         f"The canonical table has {building_count} rows; {eligible_count} satisfy the current candidate eligibility rule.",
     )

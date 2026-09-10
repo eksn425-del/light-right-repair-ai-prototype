@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import sys
+from datetime import datetime
 from pathlib import Path
 
 import pandas as pd
@@ -57,7 +58,7 @@ def main():
         model.properties.radiance.add_sensor_grid(sensor_grid)
         hbjson = inp_dir / f"{scenario['scenario']}.hbjson"
         model.to_hbjson(name=hbjson.name, folder=str(hbjson.parent), indent=2)
-        wea = inp_dir / "winter_solstice_30min_0815_1545.wea"
+        wea = inp_dir / f"analysis_{RUNTIME.timestep_minutes}min_{RUNTIME.start_time.replace(':', '')}_{RUNTIME.end_time.replace(':', '')}.wea"
         write_wea(wea)
         input_json = inp_dir / f"{scenario['scenario']}_inputs.json"
         input_json.write_text(
@@ -65,7 +66,7 @@ def main():
                 {
                     "model": str(hbjson),
                     "wea": str(wea),
-                    "timestep": int(60 / RUNTIME.timestep_minutes),
+                    "timestep": RUNTIME.timesteps_per_hour,
                     "grid-filter": "*",
                     "north": RUNTIME.north_deg,
                     "min-sensor-count": 200,
@@ -83,9 +84,11 @@ def main():
                 "pair": pair,
                 "model_type": "design_stepback",
                 "sensor_count": len(grid),
-                "date": "2026-12-21",
-                "time_range": "08:15-15:45",
+                "date": RUNTIME.analysis_date,
+                "time_range": f"{RUNTIME.start_time}-{RUNTIME.end_time}",
                 "timestep_minutes": RUNTIME.timestep_minutes,
+                "timezone": RUNTIME.timezone,
+                "utc_offset_hours": RUNTIME.utc_offset_hours,
                 "grid_size_m": RUNTIME.grid_size_m,
                 "sensor_height_m": RUNTIME.sensor_height_m,
                 "north_deg": RUNTIME.north_deg,

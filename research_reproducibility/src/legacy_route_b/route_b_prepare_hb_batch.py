@@ -69,7 +69,11 @@ def point_segment_distance(px, py, ax, ay, bx, by):
     return math.hypot(px - (ax + t * dx), py - (ay + t * dy))
 
 
-def create_grid(geom_by_id: dict, grid_size=3.0, sensor_z=0.1):
+def create_grid(geom_by_id: dict, grid_size: float | None = None, sensor_z: float | None = None):
+    """Create the fixed analysis grid using the resolved runtime settings."""
+
+    grid_size = RUNTIME.grid_size_m if grid_size is None else float(grid_size)
+    sensor_z = RUNTIME.sensor_height_m if sensor_z is None else float(sensor_z)
     streets = pd.read_csv(DATASET / "streets.csv")
     all_geom = unary_union([g for g in geom_by_id.values() if not g.is_empty])
     minx, miny, maxx, maxy = all_geom.bounds
@@ -101,7 +105,9 @@ def create_grid(geom_by_id: dict, grid_size=3.0, sensor_z=0.1):
 
 
 def reduced_height(h: float) -> float:
-    return max(3.0, h - min(3.0, h * 0.25))
+    """Return the shared config-driven reduced height."""
+
+    return RUNTIME.reduced_height(h)
 
 
 def face(identifier: str, pts):
@@ -148,7 +154,7 @@ def building_shades(buildings, geom_by_id, scenario):
                 shades.extend(prism_shades(f"{bid}_p{part_i}_rule", poly, 0, h2))
         elif mode == "design_stepback":
             h_rule = reduced_height(h)
-            base_h = min(3.0, h)
+            base_h = min(RUNTIME.height_floor_m, h)
             removed_volume = orig_area * (h - h_rule)
             for part_i, poly in enumerate(geoms, 1):
                 shades.extend(prism_shades(f"{bid}_p{part_i}_base", poly, 0, base_h))
@@ -177,16 +183,29 @@ def building_shades(buildings, geom_by_id, scenario):
 
 
 def write_wea(path: Path):
-    month, day = [int(x) for x in RUNTIME.analysis_date.split("-")[1:]]
-    start_hour = int(RUNTIME.start_time.split(":")[0])
-    end_hour = int(RUNTIME.end_time.split(":")[0])
-    location = Location("Xiamen_Guankou", "Fujian", "China", RUNTIME.latitude, RUNTIME.longitude, 8, 10)
-    datetimes = []
-    for hour in range(start_hour, end_hour + 1):
-        for minute in (15, 45):
-            if (hour, minute) >= (start_hour, int(RUNTIME.start_time.split(":")[1])) and (hour, minute) <= (end_hour, int(RUNTIME.end_time.split(":")[1])):
-                datetimes.append(DateTime(month, day, hour, minute))
-    ap = AnalysisPeriod(month, day, start_hour, month, day, end_hour, timestep=2)
+    """Write a direct-sun-hours WEA using the configured local period."""
+
+    local_times = RUNTIME.analysis_datetimes()
+    first, last = local_times[0], local_times[-1]
+    location = Location(
+        "Xiamen_Guankou",
+        "Fujian",
+        "China",
+        RUNTIME.latitude,
+        RUNTIME.longitude,
+        RUNTIME.utc_offset_hours,
+        10,
+    )
+    datetimes = [DateTime(t.month, t.day, t.hour, t.minute) for t in local_times]
+    ap = AnalysisPeriod(
+        first.month,
+        first.day,
+        first.hour,
+        last.month,
+        last.day,
+        last.hour,
+        timestep=RUNTIME.timesteps_per_hour,
+    )
     dni = HourlyDiscontinuousCollection(Header(DirectNormalIrradiance(), "W/m2", ap), [1000] * len(datetimes), datetimes)
     dhi = HourlyDiscontinuousCollection(Header(DiffuseHorizontalIrradiance(), "W/m2", ap), [0] * len(datetimes), datetimes)
     Wea(location, dni, dhi).write(str(path), write_hours=True)
@@ -213,12 +232,12 @@ def main():
         model.properties.radiance.add_sensor_grid(sensor_grid)
         hbjson = inp_dir / f"{scenario['scenario']}.hbjson"
         model.to_hbjson(name=hbjson.name, folder=str(hbjson.parent), indent=2)
-        wea = inp_dir / "winter_solstice_30min_0815_1545.wea"
+        wea = inp_dir / f"analysis_{RUNTIME.timestep_minutes}min_{RUNTIME.start_time.replace(':', '')}_{RUNTIME.end_time.replace(':', '')}.wea"
         write_wea(wea)
         recipe_inputs = {
             "model": str(hbjson),
             "wea": str(wea),
-            "timestep": 2,
+            "timestep": RUNTIME.timesteps_per_hour,
             "north": RUNTIME.north_deg,
             "grid-filter": "*",
             "min-sensor-count": 200,
@@ -233,9 +252,11 @@ def main():
                 "pair": scenario["pair"],
                 "model_type": scenario["model_type"],
                 "sensor_count": len(grid),
-                "date": "12-21",
-                "time_range": "08:15-15:45",
-                "timestep": int(60 / RUNTIME.timestep_minutes),
+                "date": RUNTIME.analysis_date,
+                "time_range": f"{RUNTIME.start_time}-{RUNTIME.end_time}",
+                "timestep": RUNTIME.timesteps_per_hour,
+                "timezone": RUNTIME.timezone,
+                "utc_offset_hours": RUNTIME.utc_offset_hours,
                 "grid_size_m": RUNTIME.grid_size_m,
                 "sensor_height_m": RUNTIME.sensor_height_m,
                 "north_deg": RUNTIME.north_deg,

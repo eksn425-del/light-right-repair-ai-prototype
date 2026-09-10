@@ -1,0 +1,7 @@
+﻿classification,count,scope,paper_use
+all_2p5d_candidates,630,complete defined 630-pair universe,screening universe
+curated_rule_hb_verified,23,selected rule candidates from Top/Pareto review,selective high-fidelity evidence
+operational_hb_scenes,33,baseline/support/design workflow,operational evidence
+research_only_independent_hb_scenes,20,frozen N=20 validation sample,independent agreement evidence
+design_translation_rerun,5,candidate designs with a measured translation rerun,design judgement
+design_translation_review_required,2,worsened points or new low-area signal,human-in-the-loop warning

@@ -94,7 +94,7 @@ def main():
             {
                 "pair_key": row.pair_key,
                 "scenario": row.scenario,
-                "python_low_area_drop_h3_m2": float(((py_baseline < 3.0).sum() - (py_hours < 3.0).sum()) * RUNTIME.grid_size_m ** 2),
+                "python_low_area_drop_h3_m2": float(((py_baseline < RUNTIME.low_threshold_h).sum() - (py_hours < RUNTIME.low_threshold_h).sum()) * RUNTIME.grid_size_m ** 2),
                 "hb_low_area_drop_h3_m2": row.low_area_drop_h3_m2,
                 "python_avg_gain_h": float(delta_py.mean()),
                 "hb_avg_gain_h": row.avg_gain_vs_baseline_h,
@@ -106,7 +106,7 @@ def main():
                 "is_hb_pareto_front": row.is_hb_pareto_front,
             }
         )
-        for threshold in [2.0, 3.0, 4.0]:
+        for threshold in [2.0, RUNTIME.low_threshold_h, 4.0]:
             diff = py_hours - hb_hours
             cls = classification_metrics(py_hours < threshold, hb_hours < threshold)
             metric_rows.append(

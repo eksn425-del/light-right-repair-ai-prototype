@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import argparse
 import hashlib
-import itertools
 from pathlib import Path
 
 import numpy as np
@@ -15,6 +14,9 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 from research_runtime import load_runtime, write_run_metadata  # noqa: E402
+
+
+STRATA = ["Q1", "Q2", "Q3", "Q4", "Q5"]
 
 
 def key(value: str) -> str:
@@ -48,6 +50,81 @@ def choose_stratum(pool: pd.DataFrame, selected_ids: set[str], count: int, seed:
     return pool.loc[chosen].copy()
 
 
+def stratum_allocation(n: int) -> dict[str, int]:
+    """Return the preregistered deterministic allocation for five strata.
+
+    The old implementation silently selected only ``n // 5`` rows per
+    stratum.  That made the fallback N=12 request return ten rows.  Remainders
+    are assigned from Q1 onward so N=20 is unchanged and N=12 is exactly
+    ``[3, 3, 2, 2, 2]``.
+    """
+
+    if n not in {12, 20}:
+        raise ValueError("Only preregistered N=20 or fallback N=12 is allowed.")
+    base, remainder = divmod(n, len(STRATA))
+    return {stratum: base + int(index < remainder) for index, stratum in enumerate(STRATA)}
+
+
+def build_frozen_sample(
+    candidates: pd.DataFrame,
+    curated_pairs: set[str],
+    *,
+    n: int,
+    seed: int,
+) -> pd.DataFrame:
+    """Build a deterministic independent sample without reading HB outcomes.
+
+    Parameters
+    ----------
+    candidates:
+        Complete 630-row 2.5D candidate universe.
+    curated_pairs:
+        Pair keys already used by the historical/operational HB set.
+    n:
+        Preregistered sample size, currently 20 or the retained 12-row
+        fallback.
+    seed:
+        Stable selection seed.
+
+    Returns
+    -------
+    pandas.DataFrame
+        The frozen sample with pair keys, strata, and sample order.  The
+        function never consults HB metrics, so it cannot select on outcomes.
+    """
+
+    allocation = stratum_allocation(n)
+    universe = candidates.copy()
+    universe["pair_key"] = universe["building_ids"].map(key)
+    universe = universe[~universe["pair_key"].isin({key(pair) for pair in curated_pairs})].copy()
+    expected = len(candidates) - len(curated_pairs)
+    if len(universe) != expected:
+        raise ValueError(f"Unexpected independent universe size: {len(universe)} (expected {expected})")
+    universe["stratum"] = pd.qcut(
+        universe["score"].rank(method="first"),
+        q=5,
+        labels=STRATA,
+    )
+    selected_parts = []
+    selected_ids: set[str] = set()
+    for offset, stratum in enumerate(STRATA):
+        count = allocation[stratum]
+        part = choose_stratum(
+            universe[universe["stratum"].eq(stratum)],
+            selected_ids,
+            count,
+            seed + offset,
+        )
+        selected_parts.append(part)
+        selected_ids.update(",".join(part["building_ids"]).split(","))
+    sample = pd.concat(selected_parts, ignore_index=True)
+    if len(sample) != n or sample["pair_key"].duplicated().any():
+        raise AssertionError("Independent sampler did not produce the requested unique sample")
+    sample["sample_order"] = np.arange(1, len(sample) + 1)
+    sample["selection_seed"] = seed
+    return sample.sort_values(["stratum", "sample_order"]).reset_index(drop=True)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--run-dir", type=Path, required=True)
@@ -65,21 +142,7 @@ def main() -> None:
     universe = candidates[~candidates["pair_key"].isin(curated)].copy()
     if len(universe) != 630 - len(curated):
         raise ValueError(f"Unexpected independent universe size: {len(universe)}")
-    if args.n not in {12, 20}:
-        raise ValueError("Only preregistered N=20 or fallback N=12 is allowed.")
-
-    universe["stratum"] = pd.qcut(universe["score"].rank(method="first"), q=5, labels=["Q1", "Q2", "Q3", "Q4", "Q5"])
-    per_stratum = args.n // 5
-    selected_parts = []
-    selected_ids: set[str] = set()
-    for offset, stratum in enumerate(["Q1", "Q2", "Q3", "Q4", "Q5"]):
-        part = choose_stratum(universe[universe["stratum"].eq(stratum)], selected_ids, per_stratum, runtime.seed + offset)
-        selected_parts.append(part)
-        selected_ids.update(",".join(part["building_ids"]).split(","))
-    sample = pd.concat(selected_parts, ignore_index=True)
-    sample["sample_order"] = np.arange(1, len(sample) + 1)
-    sample["selection_seed"] = runtime.seed
-    sample = sample.sort_values(["stratum", "sample_order"]).reset_index(drop=True)
+    sample = build_frozen_sample(candidates, curated, n=args.n, seed=runtime.seed)
     sample.to_csv(out_dir / "VALIDATION_SAMPLE_FROZEN.csv", index=False, encoding="utf-8-sig")
     digest = hashlib.sha256((out_dir / "VALIDATION_SAMPLE_FROZEN.csv").read_bytes()).hexdigest()
     (out_dir / "VALIDATION_SAMPLE_FROZEN.sha256").write_text(digest + "\n", encoding="ascii")
@@ -92,7 +155,7 @@ def main() -> None:
         f"- Seed: {runtime.seed}",
         f"- Requested sample size: {args.n}",
         f"- Candidate universe: {len(universe)} after excluding {len(curated)} historical rule pairs",
-        "- Stratification: five 2.5D-score quintiles, equal allocation",
+        f"- Stratification: five 2.5D-score quintiles, allocation {stratum_allocation(args.n)}",
         "- Within-stratum tie breaking: deterministic intervention-volume spread and building-ID diversity",
         f"- Frozen CSV SHA256: {digest}",
         "",

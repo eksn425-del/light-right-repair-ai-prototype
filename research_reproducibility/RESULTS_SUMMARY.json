@@ -1,16 +1,114 @@
 {
+  "repo": "eksn425-del/light-right-repair-ai-prototype",
+  "branch": "research-repro-v1",
+  "commit": "TO_BE_RECORDED_AFTER_RELEASE_COMMIT",
+  "tag": "soict-2026-write-ready-v1",
   "run_id": "baseline_20260909_clean",
-  "status": "reproducibility_package_ready_for_review",
-  "numbers_file": "paper_support/PAPER_NUMBERS.csv",
-  "claims_file": "paper_support/CLAIMS_LEDGER.csv",
-  "diff_audit_file": "audit/RESULT_DIFF_AUDIT.csv",
-  "key_counts": {
-    "buildings": 45,
-    "eligible_buildings": 36,
-    "candidates": 630,
-    "verified_rule_candidates": 23,
-    "independent_sample": 20
+  "soict_write_ready": true,
+  "production_score": {
+    "formula": "0.45 A_norm + 0.35 H_norm + 0.15 (1-V_norm) + 0.05 (1-N_norm)",
+    "low_area_drop": 0.45,
+    "avg_gain": 0.35,
+    "volume_economy": 0.15,
+    "new_low_avoidance": 0.05
   },
-  "high_fidelity_scope": "curated scenes plus frozen independent validation sample; not all 630 candidates",
-  "paper_claim_boundary": "No claim that the system beats human design, proves buildability, or is universally accurate."
+  "reproduction": {
+    "status": "PASS",
+    "candidate_count": 630,
+    "eligible_buildings": 36,
+    "sensor_count": 2031
+  },
+  "independent_metric_validation": {
+    "status": "PASS",
+    "sample_size": 20,
+    "spearman_rho": 0.997668088547906,
+    "mae_low_area_m2": 0.45
+  },
+  "independent_composite_validation": {
+    "status": "PASS",
+    "sample_size": 20,
+    "spearman_rho": 1.0,
+    "top3": 1.0,
+    "top5": 1.0,
+    "top10": 1.0,
+    "mean_abs_rank_error": 0.0,
+    "median_abs_rank_error": 0.0,
+    "max_abs_rank_error": 0.0
+  },
+  "runtime": {
+    "screening_repeat_count": 3,
+    "screening_repeat_seconds": [
+      55.32469019999917,
+      55.492603800001234,
+      55.39783389999866
+    ],
+    "screening_mean_seconds": 55.40504263333302,
+    "screening_median_seconds": 55.39783389999866,
+    "screening_iqr_seconds": 0.08395680000103312,
+    "hb_measured_scene_count": 53,
+    "hb_median_seconds_per_scene": 51.106736,
+    "hb_iqr_seconds_per_scene": 0.2205589999999944,
+    "hb_min_seconds_per_scene": 43.083838,
+    "hb_max_seconds_per_scene": 55.375767,
+    "rule_candidate_universe_count": 630,
+    "rule_candidate_verification_count": 23,
+    "rule_candidate_verification_fraction": 0.03650793650793651,
+    "operational_hb_scene_count": 33,
+    "research_only_validation_scene_count": 20,
+    "total_measured_hb_scene_count": 53,
+    "serial_equivalent_hb_630_seconds": 32197.24368,
+    "serial_equivalent_hb_630_label": "serial-equivalent extrapolation from the measured per-scene median; not directly measured",
+    "operational_batch_elapsed_status": "NOT_MEASURED",
+    "workers_by_scope": {
+      "curated_extra": [
+        4
+      ],
+      "curated_initial": [
+        2
+      ],
+      "design_translation": [
+        4
+      ],
+      "independent_validation": [
+        4
+      ]
+    },
+    "worker_record_status": "historical records inferred from invocation documentation",
+    "host_os": "Windows-11-10.0.22000-SP0",
+    "python_version": "3.12.2",
+    "cpu_count": 16,
+    "ram_gb": "NOT_AVAILABLE",
+    "radiance_version": "NOT_AVAILABLE",
+    "lbt_recipes_version": "lbt-recipes, version 0.28.2",
+    "measurement_semantics": {
+      "screening": "measured wall-clock time for one complete 630-candidate 2.5D screening run",
+      "hb_scene": "measured wall-clock time for one sequentially launched HB scene; each scene used its recorded worker count",
+      "serial_equivalent_hb_630": "not a completed batch; 630 multiplied by measured per-scene median",
+      "operational_vs_research": "33 operational workflow HB scenes; 20 independent validation scenes counted as research-only evidence"
+    }
+  },
+  "weight_sensitivity_v2": {
+    "status": "PASS",
+    "scenario_count": 6,
+    "min_rho": 0.9759413903909104,
+    "min_top10_overlap": 6,
+    "monte_carlo_draws": 1000,
+    "monte_carlo_seed": 20260909
+  },
+  "design_translation": {
+    "status": "PASS",
+    "rerun_count": 5,
+    "review_required_count": 2,
+    "source": "results/design_translation_summary.csv"
+  },
+  "tests": {
+    "status": "PASS",
+    "command": "pytest -q",
+    "test_count": 19
+  },
+  "warnings": [
+    "Operational HB batch elapsed time is NOT_MEASURED.",
+    "Selective HB verification is not an all-630 high-fidelity simulation.",
+    "Design acceptance remains human-in-the-loop."
+  ]
 }

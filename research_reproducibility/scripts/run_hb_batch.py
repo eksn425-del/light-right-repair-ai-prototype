@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import csv
 import os
+import platform
 import subprocess
 import sys
 import time
@@ -12,11 +13,42 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 
+def command_version(command: list[str]) -> str:
+    """Return a short tool version without failing a completed run."""
+
+    try:
+        completed = subprocess.run(command, check=False, capture_output=True, text=True, timeout=10)
+        text = (completed.stdout or completed.stderr).strip().splitlines()
+        return text[0][:200] if text else "NOT_AVAILABLE"
+    except (OSError, subprocess.SubprocessError):
+        return "NOT_AVAILABLE"
+
+
+def resource_snapshot() -> dict[str, object]:
+    """Capture reproducibility-relevant host and tool metadata."""
+
+    try:
+        import psutil
+
+        ram_gb = round(psutil.virtual_memory().total / 1024**3, 2)
+    except (ImportError, AttributeError):
+        ram_gb = "NOT_AVAILABLE"
+    return {
+        "host_os": platform.platform(),
+        "python_version": platform.python_version(),
+        "cpu_count": os.cpu_count() or "NOT_AVAILABLE",
+        "ram_gb": ram_gb,
+        "radiance_version": command_version(["rtrace", "-version"]),
+        "lbt_recipes_version": command_version(["lbt-recipes", "--version"]),
+    }
+
+
 def run_manifest(manifest: Path, log_dir: Path, workers: int, scope: str) -> list[dict[str, object]]:
     """Execute each manifest row and return one measured record per scenario."""
 
     log_dir.mkdir(parents=True, exist_ok=True)
     rows: list[dict[str, object]] = []
+    resources = resource_snapshot()
     with manifest.open("r", encoding="utf-8-sig", newline="") as handle:
         entries = list(csv.DictReader(handle))
     for entry in entries:
@@ -55,6 +87,9 @@ def run_manifest(manifest: Path, log_dir: Path, workers: int, scope: str) -> lis
                 "exit_code": completed.returncode,
                 "status": "PASS" if completed.returncode == 0 else "FAIL",
                 "log": str(stdout_path),
+                "workers": workers,
+                "command": " ".join(command),
+                **resources,
             }
         )
         if completed.returncode != 0:
@@ -74,11 +109,19 @@ def main() -> None:
     args = parser.parse_args()
     rows = run_manifest(args.manifest, args.log_dir, args.workers, args.scope)
     args.records.parent.mkdir(parents=True, exist_ok=True)
-    with args.records.open("a", encoding="utf-8-sig", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=list(rows[0].keys()) if rows else ["scope", "status"])
-        if handle.tell() == 0:
-            writer.writeheader()
-        writer.writerows(rows)
+    existing: list[dict[str, object]] = []
+    if args.records.exists() and args.records.stat().st_size > 0:
+        with args.records.open("r", encoding="utf-8-sig", newline="") as handle:
+            existing = list(csv.DictReader(handle))
+    fieldnames: list[str] = []
+    for row in [*existing, *rows]:
+        for field in row:
+            if field not in fieldnames:
+                fieldnames.append(field)
+    with args.records.open("w", encoding="utf-8-sig", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fieldnames or ["scope", "status"])
+        writer.writeheader()
+        writer.writerows([*existing, *rows])
     if any(row["status"] != "PASS" for row in rows):
         raise SystemExit(1)
 

@@ -16,7 +16,7 @@ import pvlib
 from shapely.geometry import LineString, Point, shape
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from research_runtime import load_runtime, write_run_metadata  # noqa: E402
+from research_runtime import production_score, load_runtime, strict_bool, write_run_metadata  # noqa: E402
 
 
 RUNTIME = load_runtime()
@@ -38,22 +38,23 @@ RANDOM_SEED = RUNTIME.seed
 plt.rcParams["axes.unicode_minus"] = False
 
 
-def boolish(value) -> bool:
-    return str(value).strip().lower() in {"true", "1", "yes", "y"}
+def reduced_height(height_m: float, runtime=None) -> float:
+    """Return the configured reduced height for one candidate building."""
+
+    return (runtime or RUNTIME).reduced_height(height_m)
 
 
-def reduced_height(height_m: float) -> float:
-    return max(3.0, height_m - min(3.0, height_m * 0.25))
+def solar_samples(runtime=None) -> pd.DataFrame:
+    """Build the configured local-time solar sample table."""
 
-
-def solar_samples() -> pd.DataFrame:
+    runtime = runtime or RUNTIME
     times = pd.date_range(
-        f"{RUNTIME.analysis_date} {RUNTIME.start_time}",
-        f"{RUNTIME.analysis_date} {RUNTIME.end_time}",
-        freq=f"{RUNTIME.timestep_minutes}min",
-        tz="Asia/Shanghai",
+        f"{runtime.analysis_date} {runtime.start_time}",
+        f"{runtime.analysis_date} {runtime.end_time}",
+        freq=f"{runtime.timestep_minutes}min",
+        tz=runtime.timezone,
     )
-    solar = pvlib.solarposition.get_solarposition(times, RUNTIME.latitude, RUNTIME.longitude)
+    solar = pvlib.solarposition.get_solarposition(times, runtime.latitude, runtime.longitude)
     alt = solar["apparent_elevation"].to_numpy(float)
     az = solar["azimuth"].to_numpy(float)
     return pd.DataFrame(
@@ -146,9 +147,14 @@ def geoms_unary_bounds(geoms: dict[str, object]):
     return bounds[:, 0].min(), bounds[:, 1].min(), bounds[:, 2].max(), bounds[:, 3].max()
 
 
-def hours_from_blocked(blocked: np.ndarray, sensor_count: int, sun_count: int) -> np.ndarray:
+def hours_from_blocked(blocked: np.ndarray, sensor_count: int, sun_count: int, timestep_minutes: int | None = None) -> np.ndarray:
+    """Convert visible configured samples to direct-sun hours."""
+
     visible = (~blocked.reshape(sensor_count, sun_count)).sum(axis=1)
-    return visible * 0.5
+    minutes = RUNTIME.timestep_minutes if timestep_minutes is None else int(timestep_minutes)
+    if minutes <= 0:
+        raise ValueError("timestep_minutes must be positive")
+    return visible * (minutes / 60.0)
 
 
 def low_area(hours: np.ndarray, threshold_h: float = LOW_THRESHOLD_H) -> float:
@@ -157,15 +163,15 @@ def low_area(hours: np.ndarray, threshold_h: float = LOW_THRESHOLD_H) -> float:
 
 def candidate_metrics():
     buildings = pd.read_csv(BUILDINGS_CSV)
-    buildings["movable_bool"] = buildings["movable"].map(boolish)
-    buildings["protected_bool"] = buildings["protected"].map(boolish)
+    buildings["movable_bool"] = buildings["movable"].map(lambda value: strict_bool(value, field="movable"))
+    buildings["protected_bool"] = buildings["protected"].map(lambda value: strict_bool(value, field="protected"))
     geoms = load_geometries()
     grid = pd.read_csv(GRID_CSV)
     solar = solar_samples()
     solar.to_csv(RESULTS / "100_统一太阳时刻表.csv", index=False, encoding="utf-8-sig")
 
     legal = buildings[(buildings["movable_bool"]) & (~buildings["protected_bool"])].copy()
-    legal = legal[legal["height_m"].astype(float) > 3.0].copy()
+    legal = legal[legal["height_m"].astype(float) > RUNTIME.height_floor_m].copy()
     legal_ids = legal["building_id"].tolist()
 
     orig, reduced = precompute_blockers(buildings, grid, geoms, solar)
@@ -197,7 +203,10 @@ def candidate_metrics():
                 "candidate_id": f"P{pair_no:03d}",
                 "building_ids": f"{a},{b}",
                 "operation_type": "双建筑整体减高",
-                "height_rule": "new_h=max(3m, h-min(3m, 25%h))",
+                "height_rule": (
+                    f"new_h=max({RUNTIME.height_floor_m:g}m, h-min({RUNTIME.height_reduction_cap_m:g}m, "
+                    f"{RUNTIME.height_reduction_fraction:g}h))"
+                ),
                 "original_heights_m": f"{float(a_row['height_m']):.3f},{float(b_row['height_m']):.3f}",
                 "modified_heights_m": f"{reduced_height(float(a_row['height_m'])):.3f},{reduced_height(float(b_row['height_m'])):.3f}",
                 "intervention_volume_m3": vol_a + vol_b,
@@ -221,11 +230,12 @@ def candidate_metrics():
             df[f"{col}_norm"] = 0.0
         else:
             df[f"{col}_norm"] = (df[col] - lo) / (hi - lo)
-    df["score"] = (
-        0.45 * df["low_area_drop_h3_m2_norm"]
-        + 0.35 * df["avg_gain_vs_baseline_h_norm"]
-        + 0.15 * (1 - df["intervention_volume_m3_norm"])
-        + 0.05 * (1 - df["new_low_area_h3_m2_norm"])
+    df["score"] = production_score(
+        df["low_area_drop_h3_m2_norm"],
+        df["avg_gain_vs_baseline_h_norm"],
+        df["intervention_volume_m3_norm"],
+        df["new_low_area_h3_m2_norm"],
+        RUNTIME.score_weights,
     )
 
     pareto = []
@@ -280,6 +290,11 @@ def candidate_metrics():
         "pareto_nonzero_count": int(len(pareto_nonzero)),
         "must_hb_unique_count": int(len(must_hb)),
         "random_seed_for_future_sampling": RANDOM_SEED,
+        "score_formula": "four_term_config_driven_v1",
+        "score_weights": RUNTIME.score_weights,
+        "height_floor_m": RUNTIME.height_floor_m,
+        "height_reduction_cap_m": RUNTIME.height_reduction_cap_m,
+        "height_reduction_fraction": RUNTIME.height_reduction_fraction,
     }
     (ROOT / "logs" / "120_canonical_2p5D_candidate_enumeration_summary.json").write_text(
         json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8"

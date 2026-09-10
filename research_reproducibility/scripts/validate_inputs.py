@@ -4,9 +4,14 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 from pathlib import Path
 
 import pandas as pd
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "src"))
+from research_runtime import load_runtime, strict_bool as parse_strict_bool  # noqa: E402
 
 
 REQUIRED_BUILDING_COLUMNS = {
@@ -28,21 +33,12 @@ REQUIRED_CANDIDATE_COLUMNS = {
 REQUIRED_SENSOR_COLUMNS = {"grid_id", "x", "y", "z"}
 
 
-def strict_bool(value: object) -> bool:
-    """Parse the boolean vocabulary allowed by the research data contract."""
-    text = str(value).strip().lower()
-    if text in {"true", "1", "yes", "y"}:
-        return True
-    if text in {"false", "0", "no", "n"}:
-        return False
-    raise ValueError(f"Unsupported boolean value: {value!r}")
-
-
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--run-dir", type=Path, required=True)
     args = parser.parse_args()
     run_dir = args.run_dir.resolve()
+    runtime = load_runtime(run_dir=run_dir)
     checks: list[dict[str, object]] = []
 
     def check(name: str, passed: bool, detail: str) -> None:
@@ -61,9 +57,9 @@ def main() -> None:
         and (buildings["height_m"] > 0).all()
     )
     check("building_bounds", bounds_ok, "positive boxes and heights")
-    movable = buildings["movable"].map(strict_bool)
-    protected = buildings["protected"].map(strict_bool)
-    eligible = buildings[movable & ~protected & (buildings["height_m"] > 3.0)]
+    movable = buildings["movable"].map(lambda value: parse_strict_bool(value, field="movable"))
+    protected = buildings["protected"].map(lambda value: parse_strict_bool(value, field="protected"))
+    eligible = buildings[movable & ~protected & (buildings["height_m"] > runtime.height_floor_m)]
     check("eligible_buildings", len(eligible) == 36, f"eligible={len(eligible)}")
 
     candidates = pd.read_csv(run_dir / "results_csv" / "120_canonical_2p5D完整双建筑候选排名.csv")

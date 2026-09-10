@@ -6,17 +6,17 @@ Use Python 3.12 on Windows. Install the packages in `requirements-lock.txt`. The
 
 ## 2. Inputs
 
-The source dataset is external and private: `../PRIVATE_SOURCE/algorithm_ready_lakeside_v2`. Do not copy or upload CAD/SKP/OBJ/DXF binaries without permission. The route configuration is in `configs/research.yaml`.
+The source dataset is external and private: `../PRIVATE_SOURCE/algorithm_ready_lakeside_v2`. Do not copy or upload CAD/SKP/OBJ/DXF binaries without permission. The route configuration is in `configs/research.yaml`. This public mirror contains aggregate evidence only; the full run directory is kept in the private package.
 
 ## 3. Staged execution
 
 Run in this order from the repository root:
 
 ```powershell
-$env:LIGHT_EQUITY_CONFIG = "<research-repository>\configs\research.yaml"
+$env:LIGHT_EQUITY_CONFIG = (Resolve-Path "configs/research.yaml").Path
 $env:LIGHT_EQUITY_RUN_ID = "baseline_20260909_clean"
-$env:LIGHT_EQUITY_RUN_DIR = "<research-repository>\experiments\baseline_20260909_clean"
-$env:PYTHONPATH = "<research-repository>\src"
+$env:LIGHT_EQUITY_RUN_DIR = "<private-run-directory>\baseline_20260909_clean"
+$env:PYTHONPATH = (Resolve-Path "src").Path
 
 python scripts/run_all.py --run-id baseline_20260909_clean --skip-hb
 python scripts/run_hb_batch.py --manifest experiments/baseline_20260909_clean/hb_radiance_project_batch/run_manifest.csv --log-dir experiments/baseline_20260909_clean/logs/hb_initial --records experiments/baseline_20260909_clean/logs/runtime_records.csv --scope curated_initial --workers 2
@@ -31,10 +31,11 @@ python src/legacy_route_b/route_b_final_candidate_judgement.py
 The independent validation sample is frozen before HB execution:
 
 ```powershell
-python scripts/freeze_independent_sample.py
+python scripts/freeze_independent_sample.py --run-dir experiments/baseline_20260909_clean --n 20
 python scripts/prepare_independent_validation.py
 python scripts/run_hb_batch.py --manifest experiments/baseline_20260909_clean/independent_validation/hb_batch/run_manifest.csv --log-dir experiments/baseline_20260909_clean/logs/hb_independent --records experiments/baseline_20260909_clean/logs/runtime_records.csv --scope independent_validation --workers 4
 python scripts/analyze_independent_validation.py
+python scripts/validate_independent_composite.py --run-dir experiments/baseline_20260909_clean
 ```
 
 Then run the audit and paper-support steps:
@@ -42,6 +43,7 @@ Then run the audit and paper-support steps:
 ```powershell
 python scripts/run_runtime_benchmark.py --run-dir experiments/baseline_20260909_clean --repeats 3
 python scripts/run_weight_sensitivity.py
+python scripts/run_scoring_migration_audit.py --run-dir experiments/baseline_20260909_clean
 python scripts/validate_inputs.py --run-dir experiments/baseline_20260909_clean
 python scripts/generate_figures.py --run-dir experiments/baseline_20260909_clean
 python scripts/build_paper_support.py --run-dir experiments/baseline_20260909_clean
@@ -49,3 +51,5 @@ pytest -q
 ```
 
 `run_all.py --skip-hb` is intended for geometry and candidate generation only. A full clean rerun with HB can take substantially longer and writes large private intermediate files.
+
+The private repository contains the frozen N=20 sample and its measured HB outputs. For the final evidence package, do not rerun the sampler or the 20 independent HB scenes; use the SHA256 and composite-validation script as regression checks. The N=12 sampler is retained only as a tested fallback and is allocated 3/3/2/2/2 across the five score strata. The public mirror cannot execute these private stages without the omitted source and run directories.

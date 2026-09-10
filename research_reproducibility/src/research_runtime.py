@@ -11,15 +11,21 @@ import json
 import os
 import subprocess
 from dataclasses import dataclass
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from typing import Any
+from typing import Any, Mapping
 
 import yaml
 
 
 TRUE_VALUES = {"true", "1", "yes", "y", "on"}
 FALSE_VALUES = {"false", "0", "no", "n", "off"}
+SCORE_WEIGHT_KEYS = (
+    "low_area_drop_weight",
+    "avg_gain_weight",
+    "intervention_volume_economy_weight",
+    "new_low_area_avoidance_weight",
+)
 
 
 def strict_bool(value: Any, *, field: str = "boolean") -> bool:
@@ -35,6 +41,50 @@ def strict_bool(value: Any, *, field: str = "boolean") -> bool:
     if text in FALSE_VALUES:
         return False
     raise ValueError(f"{field} has invalid boolean value: {value!r}")
+
+
+def validate_score_weights(weights: Mapping[str, Any]) -> dict[str, float]:
+    """Validate and return the four production screening weights.
+
+    The formula is shared by production screening, sensitivity analysis, and
+    independent composite validation. Keeping the validation here prevents a
+    missing or negative configuration value from silently changing rankings.
+    """
+
+    missing = [key for key in SCORE_WEIGHT_KEYS if key not in weights]
+    if missing:
+        raise ValueError(f"Missing screening score weights: {missing}")
+    parsed = {key: float(weights[key]) for key in SCORE_WEIGHT_KEYS}
+    if any(value < 0 for value in parsed.values()):
+        raise ValueError(f"Screening score weights must be non-negative: {parsed}")
+    total = sum(parsed.values())
+    if abs(total - 1.0) > 1e-9:
+        raise ValueError(f"Screening score weights must sum to 1.0, got {total}")
+    return parsed
+
+
+def production_score(
+    low_area_drop_norm: Any,
+    avg_gain_norm: Any,
+    intervention_volume_norm: Any,
+    new_low_area_norm: Any,
+    weights: Mapping[str, Any],
+) -> Any:
+    """Compute the declared four-term production screening score.
+
+    Parameters are normalized benefit/cost columns. The returned value can be
+    a scalar, NumPy array, pandas Series, or another arithmetic-compatible
+    object. The signs and complement terms are fixed here so every caller uses
+    the same scientific definition.
+    """
+
+    w = validate_score_weights(weights)
+    return (
+        w["low_area_drop_weight"] * low_area_drop_norm
+        + w["avg_gain_weight"] * avg_gain_norm
+        + w["intervention_volume_economy_weight"] * (1 - intervention_volume_norm)
+        + w["new_low_area_avoidance_weight"] * (1 - new_low_area_norm)
+    )
 
 
 def sha256(path: Path) -> str:
@@ -77,11 +127,20 @@ class Runtime:
     low_threshold_h: float
     latitude: float
     longitude: float
+    timezone: str
+    utc_offset_hours: int
     north_deg: float
     analysis_date: str
     start_time: str
     end_time: str
     timestep_minutes: int
+    height_floor_m: float
+    height_reduction_cap_m: float
+    height_reduction_fraction: float
+    low_area_drop_weight: float
+    avg_gain_weight: float
+    intervention_volume_economy_weight: float
+    new_low_area_avoidance_weight: float
     cpu_count: int
     seed: int
 
@@ -100,6 +159,61 @@ class Runtime:
     @property
     def logs_dir(self) -> Path:
         return self.run_dir / "logs"
+
+    @property
+    def timestep_hours(self) -> float:
+        """Return the configured duration represented by one visible sample."""
+
+        return self.timestep_minutes / 60.0
+
+    @property
+    def timesteps_per_hour(self) -> int:
+        """Return the integer timesteps-per-hour required by LBT recipes."""
+
+        if self.timestep_minutes <= 0 or 60 % self.timestep_minutes:
+            raise ValueError("timestep_minutes must be a positive divisor of 60")
+        return 60 // self.timestep_minutes
+
+    @property
+    def score_weights(self) -> dict[str, float]:
+        """Return the validated four-term production score weights."""
+
+        return validate_score_weights(
+            {
+                "low_area_drop_weight": self.low_area_drop_weight,
+                "avg_gain_weight": self.avg_gain_weight,
+                "intervention_volume_economy_weight": self.intervention_volume_economy_weight,
+                "new_low_area_avoidance_weight": self.new_low_area_avoidance_weight,
+            }
+        )
+
+    def reduced_height(self, height_m: float) -> float:
+        """Apply the configured minimum-intervention height rule."""
+
+        return max(
+            self.height_floor_m,
+            float(height_m) - min(
+                self.height_reduction_cap_m,
+                self.height_reduction_fraction * float(height_m),
+            ),
+        )
+
+    def analysis_datetimes(self) -> list[datetime]:
+        """Return local naive datetimes for the configured analysis period."""
+
+        start = datetime.fromisoformat(f"{self.analysis_date}T{self.start_time}")
+        end = datetime.fromisoformat(f"{self.analysis_date}T{self.end_time}")
+        if end < start:
+            raise ValueError("analysis end_time must not precede start_time")
+        step = timedelta(minutes=self.timestep_minutes)
+        if self.timestep_minutes <= 0:
+            raise ValueError("timestep_minutes must be positive")
+        values: list[datetime] = []
+        current = start
+        while current <= end:
+            values.append(current)
+            current += step
+        return values
 
     def ensure_dirs(self) -> None:
         """Create only directories owned by the current run."""
@@ -123,6 +237,7 @@ def load_runtime(config_path: str | Path | None = None, run_dir: str | Path | No
     raw = yaml.safe_load(config.read_text(encoding="utf-8")) or {}
     paths = raw.get("paths", {})
     analysis = raw.get("analysis", {})
+    score = validate_score_weights(raw.get("screening_score", {}))
     run_id = os.environ.get("LIGHT_EQUITY_RUN_ID", raw.get("run_id", "unassigned_run"))
     resolved_run_dir = Path(run_dir or os.environ.get("LIGHT_EQUITY_RUN_DIR", project_root / "experiments" / run_id))
     if not resolved_run_dir.is_absolute():
@@ -140,11 +255,20 @@ def load_runtime(config_path: str | Path | None = None, run_dir: str | Path | No
         low_threshold_h=float(analysis.get("low_threshold_h", 3.0)),
         latitude=float(analysis.get("latitude", 24.55)),
         longitude=float(analysis.get("longitude", 118.03)),
+        timezone=str(analysis["timezone"]),
+        utc_offset_hours=int(analysis["utc_offset_hours"]),
         north_deg=float(analysis.get("north_deg", 0.0)),
         analysis_date=str(analysis.get("analysis_date", "2026-12-21")),
         start_time=str(analysis.get("start_time", "08:15")),
         end_time=str(analysis.get("end_time", "15:45")),
         timestep_minutes=int(analysis.get("timestep_minutes", 30)),
+        height_floor_m=float(analysis.get("height_floor_m", 3.0)),
+        height_reduction_cap_m=float(analysis.get("height_reduction_cap_m", 3.0)),
+        height_reduction_fraction=float(analysis.get("height_reduction_fraction", 0.25)),
+        low_area_drop_weight=score["low_area_drop_weight"],
+        avg_gain_weight=score["avg_gain_weight"],
+        intervention_volume_economy_weight=score["intervention_volume_economy_weight"],
+        new_low_area_avoidance_weight=score["new_low_area_avoidance_weight"],
         cpu_count=int(analysis.get("cpu_count", 4)),
         seed=int(raw.get("seed", 20260909)),
     )

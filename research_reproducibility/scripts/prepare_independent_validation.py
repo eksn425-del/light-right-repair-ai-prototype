@@ -47,7 +47,7 @@ def main() -> None:
         model.properties.radiance.add_sensor_grid(sensor_grid)
         hbjson = input_dir / f"{scenario}.hbjson"
         model.to_hbjson(name=hbjson.name, folder=str(hbjson.parent), indent=2)
-        wea = input_dir / "winter_solstice_30min.wea"
+        wea = input_dir / f"analysis_{runtime.timestep_minutes}min_{runtime.start_time.replace(':', '')}_{runtime.end_time.replace(':', '')}.wea"
         write_wea(wea)
         input_json = input_dir / f"{scenario}_inputs.json"
         input_json.write_text(
@@ -55,7 +55,7 @@ def main() -> None:
                 {
                     "model": str(hbjson),
                     "wea": str(wea),
-                    "timestep": int(60 / runtime.timestep_minutes),
+                    "timestep": runtime.timesteps_per_hour,
                     "grid-filter": "*",
                     "north": runtime.north_deg,
                     "min-sensor-count": 200,
@@ -80,6 +80,11 @@ def main() -> None:
                 "grid_size_m": runtime.grid_size_m,
                 "sensor_height_m": runtime.sensor_height_m,
                 "analysis_date": runtime.analysis_date,
+                "start_time": runtime.start_time,
+                "end_time": runtime.end_time,
+                "timestep_minutes": runtime.timestep_minutes,
+                "timezone": runtime.timezone,
+                "utc_offset_hours": runtime.utc_offset_hours,
             }
         )
         manifest.append({"scenario": scenario, "project_folder": str(scen_dir), "input_json": str(input_json), "debug_folder": str(scen_dir / "debug")})

@@ -15,7 +15,7 @@ import pvlib
 from scipy.stats import pearsonr, spearmanr
 from shapely.geometry import shape
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from research_runtime import load_runtime, write_run_metadata  # noqa: E402
+from research_runtime import load_runtime, strict_bool, write_run_metadata  # noqa: E402
 
 
 RUNTIME = load_runtime()
@@ -39,7 +39,9 @@ SCENARIO_PAIRS = {
 
 
 def reduced_height(h):
-    return max(3.0, h - min(3.0, h * 0.25))
+    """Apply the same configured height rule as production screening."""
+
+    return RUNTIME.reduced_height(h)
 
 
 def solar_samples():
@@ -47,7 +49,7 @@ def solar_samples():
         f"{RUNTIME.analysis_date} {RUNTIME.start_time}",
         f"{RUNTIME.analysis_date} {RUNTIME.end_time}",
         freq=f"{RUNTIME.timestep_minutes}min",
-        tz="Asia/Shanghai",
+        tz=RUNTIME.timezone,
     )
     solar = pvlib.solarposition.get_solarposition(times, RUNTIME.latitude, RUNTIME.longitude)
     alt = solar["apparent_elevation"].to_numpy(float)
@@ -62,7 +64,7 @@ def solar_samples():
             "vx": np.cos(alt_r) * np.sin(az_r),
             "vy": np.cos(alt_r) * np.cos(az_r),
             "vz": np.sin(alt_r),
-            "weight_h": 0.5,
+            "weight_h": RUNTIME.timestep_hours,
             "active": alt > 1.0,
         }
     )
@@ -88,8 +90,8 @@ def load_building_bounds():
                 "y_min": miny,
                 "y_max": maxy,
                 "height_m": float(row.height_m),
-                "movable": str(row.movable).lower() == "true",
-                "protected": str(row.protected).lower() == "true",
+                "movable": strict_bool(row.movable, field=f"{bid}.movable"),
+                "protected": strict_bool(row.protected, field=f"{bid}.protected"),
             }
         )
     return pd.DataFrame(rows)
@@ -224,8 +226,8 @@ def main():
         rank_rows.append(
             {
                 "scenario": scenario,
-                "python_low_area_drop_h3_m2": float(((base_2d < 3.0).sum() - (py_s < 3.0).sum()) * RUNTIME.grid_size_m ** 2),
-                "hb_low_area_drop_h3_m2": float(((base_hb < 3.0).sum() - (hb_s < 3.0).sum()) * RUNTIME.grid_size_m ** 2),
+                "python_low_area_drop_h3_m2": float(((base_2d < RUNTIME.low_threshold_h).sum() - (py_s < RUNTIME.low_threshold_h).sum()) * RUNTIME.grid_size_m ** 2),
+                "hb_low_area_drop_h3_m2": float(((base_hb < RUNTIME.low_threshold_h).sum() - (hb_s < RUNTIME.low_threshold_h).sum()) * RUNTIME.grid_size_m ** 2),
                 "python_avg_gain_h": float((py_s - base_2d).mean()),
                 "hb_avg_gain_h": float((hb_s - base_hb).mean()),
                 "direction_consistency_all_points": float(np.mean(np.sign(py_s - base_2d) == np.sign(hb_s - base_hb))),

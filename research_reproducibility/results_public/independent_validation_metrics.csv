@@ -1,0 +1,16 @@
+﻿metric,value,unit
+sample_size,20.0,candidates
+seed,20260909.0,fixed seed
+spearman_rho,0.997668088547906,rank correlation
+pearson_r,0.9996232509897169,linear correlation
+mae_low_area,0.45,m2
+median_absolute_error_low_area,0.0,m2
+mean_bias_2p5d_minus_hb,-0.45,m2
+sign_agreement,1.0,fraction
+rank_direction_consistency,1.0,fraction
+within_sample_top_3_overlap,3.0,candidates
+within_sample_top_3_recall,1.0,fraction
+within_sample_top_5_overlap,4.0,candidates
+within_sample_top_5_recall,0.8,fraction
+within_sample_top_10_overlap,10.0,candidates
+within_sample_top_10_recall,1.0,fraction

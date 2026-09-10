@@ -1,29 +1,51 @@
 ﻿number_id,value,unit,source_file,source_field_or_rule,run_id,status,notes
-total_buildings,45.0,buildings,canonical_site_v2/canonical_buildings.csv,row count,baseline_20260909_clean,verified,
-eligible_buildings,36.0,buildings,canonical_site_v2/canonical_buildings.csv,"movable=true, protected=false, height_m>3",baseline_20260909_clean,verified,
-candidate_universe,630.0,pairs,results_csv/120_canonical_2p5D完整双建筑候选排名.csv,row count,baseline_20260909_clean,verified,
-sensor_count,2031.0,sensors,results_csv/100_HB_Radiance传感点.csv,row count,baseline_20260909_clean,verified,
+total_buildings,45,buildings,canonical_site_v2/canonical_buildings.csv,row count,baseline_20260909_clean,verified,
+eligible_buildings,36,buildings,canonical_site_v2/canonical_buildings.csv,"strict movable=true, protected=false, height_m>height_floor_m",baseline_20260909_clean,verified,
+candidate_universe,630,pairs,results_csv/120_canonical_2p5D完整双建筑候选排名.csv,row count,baseline_20260909_clean,verified,exhaustive only for the declared pairwise intervention universe
+sensor_count,2031,sensors,results_csv/100_HB_Radiance传感点.csv,row count,baseline_20260909_clean,verified,
 grid_size,3.0,m,configs/research.yaml,analysis.grid_size_m,baseline_20260909_clean,verified,
-baseline_mean_hb,5.957163958641064,h,hb_radiance_project_batch/baseline/.../ground_3m_road_open_space.ill,sum of 16 half-hour states / 2,baseline_20260909_clean,verified,HB-Radiance baseline field
+sensor_height,0.1,m,configs/research.yaml,analysis.sensor_height_m,baseline_20260909_clean,verified,
+analysis_timestep,30,minutes,configs/research.yaml,analysis.timestep_minutes,baseline_20260909_clean,verified,
+baseline_mean_hb,5.957163958641064,h,hb_radiance_project_batch/baseline/.../ground_3m_road_open_space.ill,sum of configured samples x timestep_hours,baseline_20260909_clean,verified,HB-Radiance baseline field
 baseline_low_area_h3,3051.0,m2,logs/120_canonical_2p5D_candidate_enumeration_summary.json,baseline_low_area_h3_m2,baseline_20260909_clean,verified,2.5D canonical metric
-verified_rule_candidates,23.0,pairs,results_csv/131_HB_Radiance合并候选汇总结果.csv,model_type=rule_flat and source=extra_top_pareto,baseline_20260909_clean,verified,
-total_hb_scenarios,31.0,scenes,results_csv/131_HB_Radiance合并候选汇总结果.csv,row count,baseline_20260909_clean,verified,"includes baseline, curated rule, design and support scenes"
+verified_rule_candidates,23,pairs,results_csv/131_HB_Radiance合并候选汇总结果.csv,model_type=rule_flat and source=extra_top_pareto,baseline_20260909_clean,verified,
+operational_hb_scenes,33,scenes,results/runtime_summary_v2.json,operational_hb_scene_count,baseline_20260909_clean,measured,curated initial + extra + design translation
+independent_hb_scenes,20,scenes,results/runtime_summary_v2.json,research_only_validation_scene_count,baseline_20260909_clean,measured,research-only independent evidence
+total_measured_hb_scenes,53,scenes,results/runtime_summary_v2.json,total_measured_hb_scene_count,baseline_20260909_clean,measured,
+selected_rule_verification_fraction,0.03650793650793651,fraction,results/runtime_summary_v2.json,rule_candidate_verification_count / rule_candidate_universe_count,baseline_20260909_clean,verified,23/630; not an all-candidate HB fraction
 curated_rank_spearman,0.8833992094861661,rho,results_csv/132_HB_Radiance已复核候选排名与Pareto.csv,rank_2p5d_score vs rank_hb_low_area_drop,baseline_20260909_clean,verified,23 curated rule candidates
-independent_sample_size,20.0,pairs,results/independent_validation_metrics.csv,sample_size,baseline_20260909_clean,verified,
-independent_spearman,0.997668088547906,rho,results/independent_validation_metrics.csv,spearman_rho,baseline_20260909_clean,verified,frozen stratified independent sample
-independent_pearson,0.9996232509897168,r,results/independent_validation_metrics.csv,pearson_r,baseline_20260909_clean,verified,frozen stratified independent sample
-independent_mae_low_area,0.45,m2,results/independent_validation_metrics.csv,mae_low_area,baseline_20260909_clean,verified,frozen stratified independent sample
-independent_median_abs_error,0.0,m2,results/independent_validation_metrics.csv,median_absolute_error_low_area,baseline_20260909_clean,verified,frozen stratified independent sample
-independent_sign_agreement,1.0,fraction,results/independent_validation_metrics.csv,sign_agreement,baseline_20260909_clean,verified,frozen stratified independent sample
-independent_top3_recall,1.0,fraction,results/independent_validation_metrics.csv,within_sample_top_3_recall,baseline_20260909_clean,verified,frozen stratified independent sample
-independent_top5_recall,0.8,fraction,results/independent_validation_metrics.csv,within_sample_top_5_recall,baseline_20260909_clean,verified,frozen stratified independent sample
-independent_top10_recall,1.0,fraction,results/independent_validation_metrics.csv,within_sample_top_10_recall,baseline_20260909_clean,verified,frozen stratified independent sample
-runtime_screening_median,52.32868199999939,s,results/runtime_summary.json,screening_median_seconds,baseline_20260909_clean,measured,three isolated repeats
-runtime_hb_median,51.106736,s/scene,results/runtime_summary.json,hb_median_seconds,baseline_20260909_clean,measured,53 completed HB scenes
-runtime_full_hb_estimate,32197.24368,s,results/runtime_summary.json,estimated_full_hb_630_seconds,baseline_20260909_clean,extrapolated,630 x measured HB median; not a measured run
-operational_hb_calls,33.0,scenes,results/runtime_summary.json,operational_workflow_hb_calls,baseline_20260909_clean,measured,
-weight_sensitivity_min_rho,0.9790105651203816,rho,results/weight_sensitivity_summary.csv,minimum across deterministic scenarios,baseline_20260909_clean,verified,five deterministic weight settings
-weight_sensitivity_min_top10_overlap,6.0,candidates,results/weight_sensitivity_summary.csv,minimum top10 overlap,baseline_20260909_clean,verified,five deterministic weight settings
+independent_spearman,0.997668088547906,rho,results/independent_validation_metrics.csv,spearman_rho,baseline_20260909_clean,verified,frozen N=20 independent sample; declared low-area-drop metric
+independent_pearson,0.9996232509897168,r,results/independent_validation_metrics.csv,pearson_r,baseline_20260909_clean,verified,frozen N=20 independent sample; declared low-area-drop metric
+independent_mae_low_area,0.45,m2,results/independent_validation_metrics.csv,mae_low_area,baseline_20260909_clean,verified,frozen N=20 independent sample; declared low-area-drop metric
+independent_median_abs_error,0.0,m2,results/independent_validation_metrics.csv,median_absolute_error_low_area,baseline_20260909_clean,verified,frozen N=20 independent sample; declared low-area-drop metric
+independent_sign_agreement,1.0,fraction,results/independent_validation_metrics.csv,sign_agreement,baseline_20260909_clean,verified,frozen N=20 independent sample; declared low-area-drop metric
+independent_top3_recall,1.0,fraction,results/independent_validation_metrics.csv,within_sample_top_3_recall,baseline_20260909_clean,verified,frozen N=20 independent sample; declared low-area-drop metric
+independent_top5_recall,0.8,fraction,results/independent_validation_metrics.csv,within_sample_top_5_recall,baseline_20260909_clean,verified,frozen N=20 independent sample; declared low-area-drop metric
+independent_top10_recall,1.0,fraction,results/independent_validation_metrics.csv,within_sample_top_10_recall,baseline_20260909_clean,verified,frozen N=20 independent sample; declared low-area-drop metric
+composite_spearman,1.0,rho,results/independent_composite_metrics.csv,spearman_rho,baseline_20260909_clean,verified,within-independent-sample composite-ranking agreement; bounds fixed by complete 630 universe
+composite_spearman_pvalue,0.0,p-value,results/independent_composite_metrics.csv,spearman_pvalue,baseline_20260909_clean,verified,within-independent-sample composite-ranking agreement; bounds fixed by complete 630 universe
+composite_top3_overlap,3.0,candidates,results/independent_composite_metrics.csv,top3_overlap,baseline_20260909_clean,verified,within-independent-sample composite-ranking agreement; bounds fixed by complete 630 universe
+composite_top3_recall,1.0,fraction,results/independent_composite_metrics.csv,top3_recall,baseline_20260909_clean,verified,within-independent-sample composite-ranking agreement; bounds fixed by complete 630 universe
+composite_top5_overlap,5.0,candidates,results/independent_composite_metrics.csv,top5_overlap,baseline_20260909_clean,verified,within-independent-sample composite-ranking agreement; bounds fixed by complete 630 universe
+composite_top5_recall,1.0,fraction,results/independent_composite_metrics.csv,top5_recall,baseline_20260909_clean,verified,within-independent-sample composite-ranking agreement; bounds fixed by complete 630 universe
+composite_top10_overlap,10.0,candidates,results/independent_composite_metrics.csv,top10_overlap,baseline_20260909_clean,verified,within-independent-sample composite-ranking agreement; bounds fixed by complete 630 universe
+composite_top10_recall,1.0,fraction,results/independent_composite_metrics.csv,top10_recall,baseline_20260909_clean,verified,within-independent-sample composite-ranking agreement; bounds fixed by complete 630 universe
+composite_mean_abs_rank_error,0.0,rank positions,results/independent_composite_metrics.csv,mean_absolute_rank_error,baseline_20260909_clean,verified,within-independent-sample composite-ranking agreement; bounds fixed by complete 630 universe
+composite_median_abs_rank_error,0.0,rank positions,results/independent_composite_metrics.csv,median_absolute_rank_error,baseline_20260909_clean,verified,within-independent-sample composite-ranking agreement; bounds fixed by complete 630 universe
+composite_max_abs_rank_error,0.0,rank positions,results/independent_composite_metrics.csv,max_absolute_rank_error,baseline_20260909_clean,verified,within-independent-sample composite-ranking agreement; bounds fixed by complete 630 universe
+score_low_area_drop_weight,0.45,weight,configs/research.yaml,screening_score.low_area_drop_weight,baseline_20260909_clean,verified,four-term production score
+score_avg_gain_weight,0.35,weight,configs/research.yaml,screening_score.avg_gain_weight,baseline_20260909_clean,verified,four-term production score
+score_intervention_volume_economy_weight,0.15,weight,configs/research.yaml,screening_score.intervention_volume_economy_weight,baseline_20260909_clean,verified,four-term production score
+score_new_low_area_avoidance_weight,0.05,weight,configs/research.yaml,screening_score.new_low_area_avoidance_weight,baseline_20260909_clean,verified,four-term production score
+score_migration_max_abs_diff,0.0,score units,audit/SCORING_FORMULA_MIGRATION_AUDIT.csv,abs_diff maximum,baseline_20260909_clean,verified,630 regression audit
+runtime_screening_median,55.39783389999866,s/run,results/runtime_summary_v2.json,screening_median_seconds,baseline_20260909_clean,measured,three isolated full 630-candidate 2.5D repeats
+runtime_hb_median,51.106736,s/scene,results/runtime_summary_v2.json,hb_median_seconds_per_scene,baseline_20260909_clean,measured,53 completed HB scenes
+runtime_hb_630_serial_equivalent,32197.24368,s,results/runtime_summary_v2.json,serial_equivalent_hb_630_seconds,baseline_20260909_clean,extrapolated,not a measured 630-scene HB run
+weight_sensitivity_v2_min_rho,0.9759413903909104,rho,results/weight_sensitivity_summary_v2.csv,minimum across six deterministic scenarios,baseline_20260909_clean,verified,four-term score
+weight_sensitivity_v2_min_top10_overlap,6,candidates,results/weight_sensitivity_summary_v2.csv,minimum top10 overlap,baseline_20260909_clean,verified,six deterministic scenarios
+weight_sensitivity_v2_mc_min_top10_frequency,0.0,fraction,results/candidate_rank_stability_v2.csv,minimum across candidates,baseline_20260909_clean,verified,1000 normalized multiplicative draws
+weight_sensitivity_v2_mc_max_top10_frequency,1.0,fraction,results/candidate_rank_stability_v2.csv,maximum across candidates,baseline_20260909_clean,verified,1000 normalized multiplicative draws
+independent_sample_sha256,ad4abb9b89a263edaecc2cb3553f7832ce0ccb460521ba218e0083e05bcb46b2,digest,independent_validation/VALIDATION_SAMPLE_FROZEN.sha256,SHA256,baseline_20260909_clean,verified,frozen before independent HB outcomes
 C9_C15_rule_low_area_drop,351.0,m2,results_csv/138_最终候选规则与设计转译对比.csv,rule_low_area_drop_h3_m2,baseline_20260909_clean,verified,rule model
 C9_C15_design_low_area_drop,342.0,m2,results_csv/138_最终候选规则与设计转译对比.csv,design_low_area_drop_h3_m2,baseline_20260909_clean,verified,design translation rerun
 C9_C15_design_worsened_points,0.0,points,results_csv/138_最终候选规则与设计转译对比.csv,design_worsened_point_count,baseline_20260909_clean,verified,design translation rerun
@@ -44,3 +66,5 @@ C6_C33_rule_low_area_drop,9.0,m2,results_csv/138_最终候选规则与设计转�
 C6_C33_design_low_area_drop,18.0,m2,results_csv/138_最终候选规则与设计转译对比.csv,design_low_area_drop_h3_m2,baseline_20260909_clean,verified,design translation rerun
 C6_C33_design_worsened_points,0.0,points,results_csv/138_最终候选规则与设计转译对比.csv,design_worsened_point_count,baseline_20260909_clean,verified,design translation rerun
 C6_C33_design_new_low_area,0.0,m2,results_csv/138_最终候选规则与设计转译对比.csv,design_new_low_area_h3_m2,baseline_20260909_clean,verified,design translation rerun
+weight_sensitivity_v1_min_rho,0.9790105651203816,rho,results/weight_sensitivity_summary.csv,old three-term sensitivity minimum,baseline_20260909_clean,SUPERSEDED_NOT_FOR_PAPER,Retained only to show the formula migration; do not cite.
+weight_sensitivity_v1_min_top10_overlap,6.0,candidates,results/weight_sensitivity_summary.csv,old three-term sensitivity minimum,baseline_20260909_clean,SUPERSEDED_NOT_FOR_PAPER,Retained only to show the formula migration; do not cite.

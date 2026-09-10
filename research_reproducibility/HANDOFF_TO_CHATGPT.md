@@ -1,47 +1,46 @@
-# Handoff to the web conversation
+# HANDOFF_TO_CHATGPT
 
-## Project status
+## Repository state
 
-- Project: Light Equity / Solar-Access Computational Screening Research
-- Current run: `baseline_20260909_clean`
-- Dataset: private Xieyan lakeside site, canonicalized from the Route B research package.
-- Method: geometry audit -> 2.5D exhaustive candidate screening -> selective HB-Radiance verification -> independent validation -> design-translation judgement.
+- Repository: `eksn425-del/light-right-repair-ai-prototype`
+- Branch: `research-repro-v1`
+- Final release commit: `TO_BE_RECORDED_AFTER_RELEASE_COMMIT`
+- Tag: `soict-2026-write-ready-v1`
+- Run ID: `baseline_20260909_clean`
+- `SOICT_WRITE_READY`: `TRUE` after the recorded final QA, public-safe copy and tag verification.
 
-## Verified outputs
+## Scientific definition frozen for writing
 
-- 45 building records; 36 eligible buildings under the declared rule; 630 unordered two-building candidates.
-- 2,031 fixed ground sensors at a 3 m grid and 0.1 m sensor height.
-- 23 curated rule candidates and 31 HB scenes in the merged run output; 20 additional independent validation candidates were frozen and successfully run.
-- Independent sample: Spearman rho 0.997668, MAE of low-area drop 0.45 m2, median absolute error 0 m2, sign agreement 1.0, Top-10 recall 1.0. These statistics apply only to the frozen 20-pair sample and declared metric.
-- Curated verified ranking: Spearman rho 0.883399.
-- Runtime: 2.5D median 52.33 s per full 630-candidate screening; HB median 51.11 s per measured scene; the 630-scene HB value is an extrapolation, not a completed run.
+- Production score: `0.45 A_norm + 0.35 H_norm + 0.15 (1-V_norm) + 0.05 (1-N_norm)`.
+- Weights are read from `configs/research.yaml`; the scoring migration audit found unchanged 630 candidate IDs, scores, ranks, Top-10 and Pareto membership.
+- Height rule, timezone, timestep and strict booleans are runtime/config-driven.
+- The independent N=20 sample and SHA256 are unchanged; do not reselect or rerun it.
 
-## Candidate judgement boundary
+## Final evidence
 
-- C9,C15: positive design translation in the current metric and no observed new low-area signal or worsened points in the rerun. Still requires architectural review.
-- C9,C24: higher gain but 4 worsened points and 9 m2 new low-area signal in the design translation; treat as a review-required trade-off candidate.
-- C13,C24: design translation also retains adverse signals; do not present as an automatic recommendation.
-- C6,C33 and C9,C13 are retained as evidence candidates, not universal answers.
+- 45 buildings, 36 eligible, 630 defined 2.5D candidates, 2,031 sensors.
+- 23 selected rule candidates verified; 33 operational HB scenes; 20 research-only independent scenes; 53 measured HB scenes total.
+- Independent metric validation: rho 0.997668; MAE 0.45 m2.
+- Independent composite validation: rho 1.000000; Top3/Top5/Top10 recall 1.000/1.000/1.000; mean/median/max absolute rank error 0.0/0.0/0.0.
+- Four-term weight sensitivity v2: minimum deterministic rho 0.975941; minimum deterministic Top-10 overlap 6/10; 1,000 normalized Monte Carlo draws.
+- Runtime: 2.5D median 55.40s; HB measured per-scene median 51.11s; 630 HB serial-equivalent 32197.24s, not directly measured.
 
-## Files to use
+## Required wording boundary
 
-- `paper_support/PAPER_NUMBERS.csv`: paper-number source of truth.
-- `paper_support/CLAIMS_LEDGER.csv`: supported wording and forbidden overclaims.
-- `paper_support/RESULT_DIFF_AUDIT.csv`: clean rerun versus copied June artifacts.
-- `paper_support/TABLE_INDEX.md` and `paper_support/FIGURE_INDEX.md`: paper mapping.
-- `REPRODUCE.md`: exact rerun sequence.
-- `ENVIRONMENT.md`: Python, package and Radiance environment.
+Use “within-independent-sample composite-ranking agreement,” “selective HB-Radiance verification,” and “human-in-the-loop design translation.” Do not write 99.7% accuracy, universal accuracy, Radiance as ground truth, all-630 HB, AI beats human, global optimum, or proven buildability/legal/heritage compliance.
 
-## Not done / must remain explicit
+## First files for the web conversation
 
-- No full 630-scene HB-Radiance run was performed.
-- No claim of AI/ML training, human-design superiority, universal accuracy, structural feasibility, legal compliance or heritage approval.
-- The source CAD/SKP/OBJ data remain private and require permission before any external upload.
+1. `SOICT_2026_PAPER_WRITING_BRIEF.md`
+2. `paper_support/PAPER_NUMBERS.csv`
+3. `paper_support/CLAIMS_LEDGER.csv`
+4. `paper_support/TABLE_INDEX.md` and `paper_support/FIGURE_INDEX.md`
+5. `paper_support/RESULT_DIFF_AUDIT.csv` and `audit/SCORING_FORMULA_MIGRATION_AUDIT.csv`
+6. `REPRODUCE.md` and `ENVIRONMENT.md`
 
-## Git
+## Explicit limitations
 
-- Local reproducibility commit: `319b0ec` (the code/results package commit before this handoff note).
-- Final local tag: `soict-2026-repro-final`.
-- Public GitHub mirror branch: [research-repro-v1](https://github.com/eksn425-del/light-right-repair-ai-prototype/tree/research-repro-v1/research_reproducibility).
-- Public mirror commit: `3994be8`; this branch contains public-safe code and paper-support summaries only.
-- Raw CAD/SKP/OBJ/DXF, sensor-coordinate tables and Radiance intermediates remain local/private.
+- No full 630-scene HB run was performed; the stated value is serial-equivalent extrapolation.
+- Operational batch elapsed time is `NOT_MEASURED`.
+- Private geometry, sensor coordinates and Radiance intermediates remain outside the public mirror.
+- This package is a writing/evidence handoff, not polished paper正文.

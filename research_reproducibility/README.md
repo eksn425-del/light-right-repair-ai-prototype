@@ -1,6 +1,6 @@
 # Light Equity / Solar-Access Computational Screening Research
 
-This repository is the reproducible research package for the private Xieyan lakeside case. It is separate from the earlier public toy/demo repository. The current research question is deliberately narrow: can a low-cost 2.5D candidate screen rank minimum-intervention solar-access changes well enough to select a small, auditable set for higher-fidelity HB-Radiance verification?
+This directory is the reproducible research package for a private lakeside case. It is separate from the earlier public toy/demo repository. The current research question is deliberately narrow: can a low-cost 2.5D candidate screen rank minimum-intervention solar-access changes well enough to select a small, auditable set for higher-fidelity HB-Radiance verification?
 
 ## Current result boundary
 
@@ -9,31 +9,37 @@ This repository is the reproducible research package for the private Xieyan lake
 - The full candidate universe is screened by the low-cost 2.5D method. HB-Radiance is used for curated candidates and a frozen independent validation sample, not all 630 candidates.
 - The output is a decision-support experiment, not a proof of buildability, legal compliance, heritage approval, or superiority over human design.
 
-## Reproduce the clean run
+## Reproduce or inspect the clean run
 
-The source team folder is private and is supplied separately as `../PRIVATE_SOURCE`. See [REPRODUCE.md](REPRODUCE.md) for the staged sequence. The main run is stored under `experiments/baseline_20260909_clean` in the private package.
+The source dataset is private and must be supplied separately as `../PRIVATE_SOURCE`; it is intentionally absent from this public mirror. The measured aggregate evidence is included under `results_public/`, while the full run directory and raw geometric/Radiance files remain in the private package. See [REPRODUCE.md](REPRODUCE.md) for the staged sequence and the boundary between inspection and rerun.
 
 ```powershell
-$env:LIGHT_EQUITY_CONFIG = "<research-repository>\configs\research.yaml"
+$env:LIGHT_EQUITY_CONFIG = (Resolve-Path "configs/research.yaml").Path
 $env:LIGHT_EQUITY_RUN_ID = "baseline_20260909_clean"
-$env:LIGHT_EQUITY_RUN_DIR = "<research-repository>\experiments\baseline_20260909_clean"
-$env:PYTHONPATH = "<research-repository>\src"
+$env:LIGHT_EQUITY_RUN_DIR = "<private-run-directory>\baseline_20260909_clean"
+$env:PYTHONPATH = (Resolve-Path "src").Path
 python scripts/validate_inputs.py --run-dir $env:LIGHT_EQUITY_RUN_DIR
+python scripts/run_scoring_migration_audit.py --run-dir $env:LIGHT_EQUITY_RUN_DIR
+python scripts/run_weight_sensitivity.py
+python scripts/validate_independent_composite.py --run-dir $env:LIGHT_EQUITY_RUN_DIR
 python scripts/generate_figures.py --run-dir $env:LIGHT_EQUITY_RUN_DIR
 python scripts/build_paper_support.py --run-dir $env:LIGHT_EQUITY_RUN_DIR
 pytest -q
 ```
 
+The commands above are a private-run template. In this public mirror, start with `pytest -q` and inspect `results_public/`; the private 630-candidate and HB stages require the omitted source and run directories.
+
 ## Evidence package
 
-- `experiments/baseline_20260909_clean/results_csv/`: numerical outputs from the clean rerun.
-- `experiments/baseline_20260909_clean/results/`: independent validation, runtime and weight sensitivity.
-- `experiments/baseline_20260909_clean/figures/`: generated figures at 320 dpi.
-- `experiments/baseline_20260909_clean/paper_support/`: paper-number ledger, claims ledger, table/figure indices and historical diff audit.
-- `experiments/baseline_20260909_clean/HANDOFF_TO_CHATGPT.md`: concise handoff for the web conversation.
+- `results_public/`: aggregate independent-validation, composite-ranking, runtime and sensitivity evidence with no site geometry.
+- `paper_support/`: paper-number ledger, claims ledger, table/figure indices, writing brief and historical diff audit.
+- `audit/`: public-safe scoring migration and result-diff audits.
+- `HANDOFF_TO_CHATGPT.md`: concise handoff for the web conversation.
 
 ## Scientific guardrails
 
 Do not turn `rho`, Top-K recall or a positive candidate score into a universal accuracy claim. Do not describe this pipeline as trained AI/ML: the current method is rule-based computational screening. Geometry correspondence, design translation and final acceptance remain human-in-the-loop.
 
-See [ENVIRONMENT.md](ENVIRONMENT.md) for versions and [data/PROVENANCE_PRIVATE_DATA.md](data/PROVENANCE_PRIVATE_DATA.md) for the private-input policy.
+See [ENVIRONMENT.md](ENVIRONMENT.md) for versions and [PUBLIC_RESEARCH_NOTE.md](PUBLIC_RESEARCH_NOTE.md) for the public/private input boundary.
+
+The production score is the four-term config-driven formula `0.45 A_norm + 0.35 H_norm + 0.15 (1-V_norm) + 0.05 (1-N_norm)`. The old three-term sensitivity files remain only as superseded audit evidence.
