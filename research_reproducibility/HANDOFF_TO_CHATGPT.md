@@ -42,7 +42,8 @@ Use “within-independent-sample composite-ranking agreement,” “selective HB
 
 - Complete private repository: `https://github.com/eksn425-del/soict-2026-paper-assets`
 - Private branch: `paper-assets-v1`
-- Private commit: `1f886551991d0e2a653de72981e084c6ecb89b6d`
+- Private core-asset commit: `1f886551991d0e2a653de72981e084c6ecb89b6d`
+- Private current branch tip (includes feedback): `189a5746bc75b593454ac1e9315a45b5bbdde637`
 - Private tag: `soict-2026-paper-assets-v1`
 - Complete package path: `paper_assets/`
 - Public-safe subset path: `research_reproducibility/paper_assets/`
@@ -53,6 +54,10 @@ The private package contains Figures 1--9 and all numbered table CSVs. Figure
 expose site-specific geometry or identifiers. No raw CAD/DXF/DWG/SKP/OBJ,
 sensor coordinate tables, Radiance intermediate files, or unauthorized real
 raw data is included.
+
+The package feedback document is `paper_assets/FEEDBACK_REPORT.md` in the
+private repository and `research_reproducibility/paper_assets/FEEDBACK_REPORT.md`
+in this public mirror.
 
 ## Explicit limitations
 
