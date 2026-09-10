@@ -1,0 +1,15 @@
+﻿metric,value,unit,notes
+sample_size,20.0,candidates,frozen independent sample only
+normalization_universe_size,630.0,candidates,fixed before reading HB outcomes
+spearman_rho,1.0,rank correlation,2.5D composite versus HB composite
+spearman_pvalue,0.0,p-value,within-independent-sample test
+pearson_r,0.9997234374756304,linear correlation,composite score values
+top3_overlap,3.0,candidates,HB composite as reference
+top3_recall,1.0,fraction,within-independent-sample only
+top5_overlap,5.0,candidates,HB composite as reference
+top5_recall,1.0,fraction,within-independent-sample only
+top10_overlap,10.0,candidates,HB composite as reference
+top10_recall,1.0,fraction,within-independent-sample only
+mean_absolute_rank_error,0.0,rank positions,absolute 2.5D versus HB composite rank error
+median_absolute_rank_error,0.0,rank positions,absolute 2.5D versus HB composite rank error
+max_absolute_rank_error,0.0,rank positions,absolute 2.5D versus HB composite rank error

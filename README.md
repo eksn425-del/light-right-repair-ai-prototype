@@ -156,3 +156,10 @@ The private project archive remains offline and is not published.
 - [Standalone OBJ validation guide](docs/SINGLE_MASS_VALIDATION_GUIDE.md)
 - [中文产品定位说明](docs/PRODUCT_POSITIONING_CN.md)
 - [Interview talking points](docs/INTERVIEW_TALKING_POINTS.md)
+
+## SOICT Paper Assets
+
+The public-safe SOICT paper figures, derived table CSVs, captions, bibliography,
+and submission checklist are under
+`research_reproducibility/paper_assets/`. Geometry-sensitive Figures 2 and 5
+and Tables 1, 3 and 4 are held in the private paper-assets repository.

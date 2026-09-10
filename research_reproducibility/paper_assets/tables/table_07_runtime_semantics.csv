@@ -1,0 +1,16 @@
+﻿metric,value,unit,measurement_class,notes
+screening_repeat_count,3,runs,measured,complete 630-candidate 2.5D screening repeats
+screening_median_seconds,55.39783389999866,seconds,measured,median of complete screening repeats
+screening_iqr_seconds,0.08395680000103312,seconds,measured,IQR of screening repeats
+hb_measured_scene_count,53,scenes,measured,measured HB scenes in runtime records
+hb_median_seconds_per_scene,51.106736,seconds/scene,measured,per-scene HB median
+hb_iqr_seconds_per_scene,0.2205589999999944,seconds/scene,measured,IQR of measured HB scenes
+rule_candidate_universe_count,630,candidates,screening_universe,complete clean candidate universe
+rule_candidate_verification_count,23,candidates,operational,curated rule candidates verified with HB
+rule_candidate_verification_fraction,0.03650793650793651,fraction,operational,verified curated rule candidates / 630
+operational_hb_scene_count,33,scenes,operational,operational workflow scenes
+research_only_validation_scene_count,20,scenes,research_only,independent validation scenes
+serial_equivalent_hb_630_seconds,32197.24368,seconds,serial_equivalent_extrapolated,serial-equivalent extrapolation from the measured per-scene median; not directly measured
+operational_batch_elapsed_status,NOT_MEASURED,status,not_measured,no completed 630-scene HB batch elapsed time
+python_version,3.12.2,version,environment,recorded run environment
+lbt_recipes_version,"lbt-recipes, version 0.28.2",version,environment,recorded run environment
