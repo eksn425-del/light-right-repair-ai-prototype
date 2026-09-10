@@ -14,7 +14,7 @@ This repository is a public-safe demo extracted from a larger private research p
 
 ## SOICT 2026 Research Reproducibility Release
 
-The current research patch, audit results and paper-writing handoff are maintained in [`research_reproducibility/`](research_reproducibility/). Start with its [handoff](research_reproducibility/HANDOFF_TO_CHATGPT.md), [writing brief](research_reproducibility/SOICT_2026_PAPER_WRITING_BRIEF.md), [paper-number ledger](research_reproducibility/paper_support/PAPER_NUMBERS.csv) and [claims ledger](research_reproducibility/paper_support/CLAIMS_LEDGER.csv). The public branch contains aggregate evidence and toy data only; private geometry and Radiance intermediates remain excluded.
+The current research patch, audit results and paper-writing handoff are maintained in [`research_reproducibility/`](research_reproducibility/). Start with its [final patch feedback](research_reproducibility/SOICT_2026_FINAL_PATCH_FEEDBACK.md), [handoff](research_reproducibility/HANDOFF_TO_CHATGPT.md), [writing brief](research_reproducibility/SOICT_2026_PAPER_WRITING_BRIEF.md), [paper-number ledger](research_reproducibility/paper_support/PAPER_NUMBERS.csv) and [claims ledger](research_reproducibility/paper_support/CLAIMS_LEDGER.csv). The public branch contains aggregate evidence and toy data only; private geometry and Radiance intermediates remain excluded.
 
 ## Product Positioning
 
