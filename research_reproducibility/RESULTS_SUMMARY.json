@@ -1,7 +1,7 @@
 {
   "repo": "eksn425-del/light-right-repair-ai-prototype",
   "branch": "research-repro-v1",
-  "commit": "TO_BE_RECORDED_AFTER_RELEASE_COMMIT",
+  "commit": "6b64fe43451e2e0330930a5677cbe3432307282b",
   "tag": "soict-2026-write-ready-v1",
   "run_id": "baseline_20260909_clean",
   "soict_write_ready": true,

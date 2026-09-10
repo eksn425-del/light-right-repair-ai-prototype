@@ -4,7 +4,7 @@
 
 - Repository: `eksn425-del/light-right-repair-ai-prototype`
 - Branch: `research-repro-v1`
-- Final release commit: `TO_BE_RECORDED_AFTER_RELEASE_COMMIT`
+- Final release commit: `6b64fe43451e2e0330930a5677cbe3432307282b`
 - Tag: `soict-2026-write-ready-v1`
 - Run ID: `baseline_20260909_clean`
 - `SOICT_WRITE_READY`: `TRUE` after the recorded final QA, public-safe copy and tag verification.
