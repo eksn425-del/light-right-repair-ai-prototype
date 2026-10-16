@@ -21,25 +21,37 @@
   "tasks": {
     "G0": "COMPLETED_WITH_LIMITATIONS",
     "G1": "PASS",
-    "G2": "NOT_STARTED",
-    "G3": "NOT_STARTED",
+    "G2": "RUNNING",
+    "G3": "RUNNING",
     "G4": "COMPLETED_WITH_LIMITATIONS",
-    "G5": "NOT_STARTED",
-    "G6": "NOT_STARTED",
+    "G5": "RUNNING",
+    "G6": "RUNNING",
     "G7": "NOT_STARTED"
   },
   "evidence_commit": null,
   "handoff_commit": null,
   "known_open_items": [
-    "Canonical footprint geometry, ordered sensors, old per-hour visibility and recipe inputs missing",
-    "Radiance executables unavailable initially; isolated dependency install ongoing",
-    "Design-stepback monotonicity unresolved",
-    "Matched real-input ablation blocked by input gaps",
-    "Anonymous disclosure placement and author single-submission approval pending"
+    "Canonical footprints and ordered2031 sensors missing",
+    "Actual old model/recipe/WEA/per-hour output package missing; physical adverse-ray cause unresolved",
+    "Real matched A/B benchmark blocked on missing inputs",
+    "Synthetic geometry bugs require real-scene impact assessment",
+    "New annotated tag creation tool unavailable; no authenticated shell git push",
+    "Anonymous disclosure placement, authorship, rights and single-submission confirmation pending"
   ],
   "new_execution_classes": [
     "SYNTHETIC_RUNTIME_SMOKE",
     "RECOMPUTED_FROZEN_AGGREGATES"
   ],
-  "real_site_new_HB_scenarios": 0
+  "real_site_new_HB_scenarios": 0,
+  "updated_utc": "2026-10-16T05:33:01.848831+00:00",
+  "stage_details": {
+    "G0": "Shell, private GitHub write, actual Honeybee/Radiance6.0.2 smoke verified; missing real inputs documented",
+    "G1": "Protocol committed ae7483ca493768e23a19cf402446c54d6f6c95ef before simulations/benchmark",
+    "G2": "Synthetic production-source geometry bugs confirmed; safe wrapper tests running; actual site replay BLOCKED on inputs",
+    "G3": "Fair same-primitive harness implementation and synthetic equality tests running; real benchmark BLOCKED on inputs",
+    "G4": "Frozen-table recomputation and15 tests complete; actual historical HB ray/time matching BLOCKED",
+    "G5": "Ledgers and native vector chart generated; integrated QA pending",
+    "G6": "Official anonymous template compiled; bibliography/anonymity QA finalizing",
+    "G7": "Not frozen yet; eventual partial handoff is not scientific readiness"
+  }
 }
