@@ -1,0 +1,14 @@
+{
+  "status": "ENGINE_VALUES_PASS_DRIVER_STATUS_UNVERIFIED",
+  "measurement_class": "SYNTHETIC_RUNTIME_SMOKE",
+  "run_id": "environment_20261016",
+  "started_utc": "2026-10-16T05:23:21.198465+00:00",
+  "wall_seconds": 5.6492304950006655,
+  "radiance_version": "RADIANCE 6.0.2 2026-02-02 LBNL (6.0.c1700d56cc)",
+  "result_values": [
+    "0.0\n0.5"
+  ],
+  "result_file_count": 1,
+  "real_site_replay": false,
+  "script_sha256": "ed5d8b746395ce4aec933f0f71c379a16020e726ab19afe51af642f3c98e0493"
+}

@@ -1,0 +1,11 @@
+--- lbt_recipes/direct_sun_hours/run.py.original
++++ lbt_recipes/direct_sun_hours/run.py.fixed
+@@ -137,7 +137,7 @@
+             pass
+     duration = now - datetime.datetime.strptime(
+         status['status']['started_at'], '%Y-%m-%dT%H:%M:%SZ'
+-    )
++    ).replace(tzinfo=datetime.timezone.utc)
+     duration -= datetime.timedelta(microseconds=duration.microseconds)
+     status['status']['finished_at'] = now.strftime('%Y-%m-%dT%H:%M:%SZ')
+     status['status']['status'] = 'Cancelled'

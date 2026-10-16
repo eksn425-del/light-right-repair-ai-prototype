@@ -1,0 +1,12 @@
+{
+  "numpy": "2.1.0",
+  "pandas": "2.2.3",
+  "scipy": "1.17.0",
+  "shapely": "2.2.0",
+  "pytest": "9.1.1",
+  "pvlib": "0.16.1",
+  "honeybee-core": "1.64.76",
+  "honeybee-radiance": "1.66.296",
+  "lbt-recipes": "0.29.1",
+  "ladybug-core": "0.44.62"
+}

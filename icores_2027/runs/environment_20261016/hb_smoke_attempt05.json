@@ -1,0 +1,6 @@
+{
+  "status": "FAIL",
+  "measurement_class": "SYNTHETIC_RUNTIME_SMOKE",
+  "error": "[Errno 2] No such file or directory: '/tmp/icores_hb_smoke/run/__logs__/status.json'",
+  "real_site_replay": false
+}

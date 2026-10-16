@@ -6,7 +6,7 @@
   "workspace_write_read": "PASS",
   "cross_session_persistence": "UNKNOWN",
   "logical_cpu_count": 9,
-  "physical_cpu_count": "UNKNOWN",
+  "physical_cpu_count": "9 reported by psutil; actual host topology UNKNOWN",
   "cpu_model": "UNKNOWN",
   "memory_bytes": 10451464192,
   "virtualization_limits": "UNKNOWN: sysfs/cgroup unavailable",
@@ -17,10 +17,10 @@
   "read_route": "GitHub connector immutable file materialization",
   "source_head": "ce4087f564a1169b500c0106f869158349c58c6e",
   "radiance": {
-    "oconv": null,
-    "rtrace": null,
-    "rcontrib": null,
-    "gendaymtx": null
+    "oconv": "FOUND_IN_ISOLATED_RADIANCE_BIN",
+    "rtrace": "FOUND_IN_ISOLATED_RADIANCE_BIN",
+    "rcontrib": "FOUND_IN_ISOLATED_RADIANCE_BIN",
+    "gendaymtx": "FOUND_IN_ISOLATED_RADIANCE_BIN"
   },
   "python_modules_initial": {
     "numpy": true,
@@ -32,11 +32,28 @@
     "lbt_recipes": false,
     "pvlib": false
   },
-  "dependency_install": "isolated venv succeeded; Honeybee runtime import and Radiance smoke verification pending",
+  "dependency_install": "SUCCESS_ISOLATED_VENV",
   "raw_geometry_available": false,
   "ordered_sensors_available": false,
   "old_hourly_outputs_available": false,
   "user_E_drive_access": "NOT_ATTEMPTED_NOT_AVAILABLE",
   "execution_capable": true,
-  "full_physical_replay_capable": false
+  "full_physical_replay_capable": false,
+  "honeybee_recipe_smoke": "PASS",
+  "radiance_version": "RADIANCE 6.0.2 2026-02-02 LBNL (6.0.c1700d56cc)",
+  "radiance_package_sha256": "04ee53cafbb64b943a53616b3d0ee379dd7ef80379c83aa7a145e547d9809c28",
+  "radiance_package_url": "https://github.com/LBNL-ETA/Radiance/releases/download/rad6R0P2/Radiance_c1700d56_Linux.zip",
+  "dependency_patch": "audit/lbt_recipes_timestamp_fix.patch",
+  "runtime_python_versions": {
+    "numpy": "2.1.0",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "shapely": "2.2.0",
+    "pytest": "9.1.1",
+    "pvlib": "0.16.1",
+    "honeybee-core": "1.64.76",
+    "honeybee-radiance": "1.66.296",
+    "lbt-recipes": "0.29.1",
+    "ladybug-core": "0.44.62"
+  }
 }

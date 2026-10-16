@@ -1,0 +1,103 @@
+2026-10-16 13:22:01 INFO: Started running WriteTimestep...
+2026-10-16 13:22:01 INFO: [0/1] completed. 1 running.
+2026-10-16 13:22:01 INFO: ...finished running WriteTimestep in 0:00:00
+2026-10-16 13:22:01 INFO: [1/1] completed. 0 running.
+2026-10-16 13:22:01 INFO: Started running ConvertWeaToConstant...
+2026-10-16 13:22:01 INFO: [1/2] completed. 1 running.
+2026-10-16 13:22:01 INFO: ...finished running ConvertWeaToConstant in 0:00:00
+2026-10-16 13:22:01 INFO: [2/2] completed. 0 running.
+2026-10-16 13:22:01 INFO: Started running GenerateSunpath...
+2026-10-16 13:22:01 INFO: [2/3] completed. 1 running.
+2026-10-16 13:22:01 INFO: gendaymtx: reading weather tape 'sky.wea'
+2026-10-16 13:22:01 INFO: gendaymtx: location 'synthetic
+2026-10-16 13:22:01 INFO: , '
+2026-10-16 13:22:01 INFO: gendaymtx: (lat,long)=(24.6,-118.0) degrees north, west
+2026-10-16 13:22:01 INFO: gendaymtx: outputting suns to file
+2026-10-16 13:22:01 INFO: gendaymtx: done.
+2026-10-16 13:22:01 INFO: ...finished running GenerateSunpath in 0:00:00
+2026-10-16 13:22:01 INFO: [3/3] completed. 0 running.
+2026-10-16 13:22:01 INFO: Started running ParseSunUpHours...
+2026-10-16 13:22:01 INFO: [3/4] completed. 1 running.
+2026-10-16 13:22:02 INFO: ...finished running ParseSunUpHours in 0:00:00
+2026-10-16 13:22:02 INFO: [4/4] completed. 0 running.
+2026-10-16 13:22:02 INFO: Started running CreateRadFolder...
+2026-10-16 13:22:02 INFO: [4/5] completed. 1 running.
+2026-10-16 13:22:03 INFO: /tmp/CreateRadFolder-8awt_l8h
+2026-10-16 13:22:03 INFO: ...finished running CreateRadFolder in 0:00:00
+2026-10-16 13:22:03 INFO: [5/5] completed. 0 running.
+2026-10-16 13:22:03 INFO: Started running CreateOctree...
+2026-10-16 13:22:03 INFO: [5/6] completed. 1 running.
+2026-10-16 13:22:03 INFO: ...finished running CreateOctree in 0:00:00
+2026-10-16 13:22:03 INFO: [6/6] completed. 0 running.
+2026-10-16 13:22:03 INFO: Started running SplitGridFolder...
+2026-10-16 13:22:03 INFO: [6/7] completed. 1 running.
+2026-10-16 13:22:04 INFO: Distributed 2 sensors among 1 grids with 2 sensors each.
+2026-10-16 13:22:04 INFO: ...finished running SplitGridFolder in 0:00:00
+2026-10-16 13:22:04 INFO: [7/7] completed. 0 running.
+2026-10-16 13:22:04 INFO: Started running CopyRedistInfo...
+2026-10-16 13:22:04 INFO: [7/8] completed. 1 running.
+2026-10-16 13:22:04 INFO: copying input file...
+2026-10-16 13:22:04 INFO: ...finished running CopyRedistInfo in 0:00:00
+2026-10-16 13:22:04 INFO: [8/8] completed. 0 running.
+2026-10-16 13:22:04 INFO: Started running DirectIrradianceCalculation...
+2026-10-16 13:22:04 INFO: [8/9] completed. 1 running.
+2026-10-16 13:22:04 INFO: ...finished running DirectIrradianceCalculation in 0:00:00
+2026-10-16 13:22:04 INFO: [9/9] completed. 0 running.
+2026-10-16 13:22:04 INFO: Started running ConvertToSunHours...
+2026-10-16 13:22:04 INFO: [9/10] completed. 1 running.
+2026-10-16 13:22:05 INFO: ...finished running ConvertToSunHours in 0:00:00
+2026-10-16 13:22:05 INFO: [10/10] completed. 0 running.
+2026-10-16 13:22:05 INFO: Started running CopySunHours...
+2026-10-16 13:22:05 INFO: [10/11] completed. 1 running.
+2026-10-16 13:22:05 INFO: copying input path...
+2026-10-16 13:22:05 INFO: ...finished running CopySunHours in 0:00:00
+2026-10-16 13:22:05 INFO: [11/11] completed. 0 running.
+2026-10-16 13:22:05 INFO: Started running CalculateCumulativeHours...
+2026-10-16 13:22:05 INFO: [11/12] completed. 1 running.
+2026-10-16 13:22:06 INFO: ...finished running CalculateCumulativeHours in 0:00:00
+2026-10-16 13:22:06 INFO: [12/12] completed. 0 running.
+2026-10-16 13:22:06 INFO: Started running CopyTimestep...
+2026-10-16 13:22:06 INFO: [12/13] completed. 1 running.
+2026-10-16 13:22:06 INFO: copying input file...
+2026-10-16 13:22:06 INFO: ...finished running CopyTimestep in 0:00:00
+2026-10-16 13:22:06 INFO: [13/13] completed. 0 running.
+2026-10-16 13:22:06 INFO: Started running CopySunUpHours...
+2026-10-16 13:22:06 INFO: [13/14] completed. 1 running.
+2026-10-16 13:22:06 INFO: copying input path...
+2026-10-16 13:22:06 INFO: ...finished running CopySunUpHours in 0:00:00
+2026-10-16 13:22:06 INFO: [14/14] completed. 0 running.
+2026-10-16 13:22:06 INFO: Started running CopyGridInfo...
+2026-10-16 13:22:06 INFO: [14/15] completed. 1 running.
+2026-10-16 13:22:06 INFO: copying input path...
+2026-10-16 13:22:06 INFO: ...finished running CopyGridInfo in 0:00:00
+2026-10-16 13:22:06 INFO: [15/15] completed. 0 running.
+2026-10-16 13:22:06 INFO: Started running RestructureCumulativeResults...
+2026-10-16 13:22:06 INFO: [15/16] completed. 1 running.
+2026-10-16 13:22:06 INFO: ...finished running RestructureCumulativeResults in 0:00:00
+2026-10-16 13:22:06 INFO: [16/16] completed. 0 running.
+2026-10-16 13:22:06 INFO: Started running RestructureTimestepResults...
+2026-10-16 13:22:06 INFO: [16/17] completed. 1 running.
+2026-10-16 13:22:07 INFO: ...finished running RestructureTimestepResults in 0:00:00
+2026-10-16 13:22:07 INFO: [17/17] completed. 0 running.
+Traceback (most recent call last):
+  File "<VENV>/lib/python3.12/site-packages/lbt_recipes/direct_sun_hours/run.py", line 164, in <module>
+    start(project_folder, user_values, workers)
+  File "<VENV>/lib/python3.12/site-packages/lbt_recipes/direct_sun_hours/run.py", line 138, in start
+    duration = now - datetime.datetime.strptime(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: can't subtract offset-naive and offset-aware datetimes
+Failed to find <RUNTIME_HOME>/.queenbee/config.yml
+{
+  "status": "PASS",
+  "measurement_class": "SYNTHETIC_RUNTIME_SMOKE",
+  "run_id": "environment_20261016",
+  "started_utc": "2026-10-16T05:22:01.196479+00:00",
+  "wall_seconds": 6.045142216999011,
+  "radiance_version": "RADIANCE 6.0.2 2026-02-02 LBNL (6.0.c1700d56cc)",
+  "result_values": [
+    "0.5\n0.5"
+  ],
+  "result_file_count": 1,
+  "real_site_replay": false,
+  "script_sha256": "f21dc362a61d6e132ecad966f3975b3f16def95cda2ec27c913ef9ce0631ad77"
+}

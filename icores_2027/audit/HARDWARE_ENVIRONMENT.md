@@ -1,0 +1,11 @@
+# Actual cloud execution environment
+
+Checked 2026-10-16 UTC. Linux x86_64, kernel6.18.44, Python3.12.14. psutil reports9 logical CPUs,9 physical cores and affinity0–8; true host physical topology and cgroup CPU limits UNKNOWN because sysfs/cgroup interfaces are unavailable. Total exposed RAM10,451,464,192 bytes. CPU brand is UNKNOWN (empty platform.processor; lscpu cannot read sysfs). No GPU needed or purchased.
+
+The shared cloud workspace passed actual write/read probe, but persistence beyond this session is not guaranteed. GitHub connector writes were verified by G0 commit. Direct HTTPS git clone failed for missing shell credentials; immutable connector materialization and GitHub tree/commit/leased fast-forward ref updates are used. No force push or credential creation.
+
+The virtual environment is isolated for dependencies (system base numerical libraries reused where compatible). Exact versions: PYTHON_RUNTIME_VERSIONS.json. Radiance6.0.2 official Linux archive SHA25604ee53cafbb64b943a53616b3d0ee379dd7ef80379c83aa7a145e547d9809c28 from LBNL-ETA official release rad6R0P2. This matches historical Radiance version but not OS or Python package versions. Source: https://www.radiance-online.org/download-install/installation-information ; package: https://github.com/LBNL-ETA/Radiance/releases/download/rad6R0P2/Radiance_c1700d56_Linux.zip . Open-source distribution/license applies; no purchase or service account.
+
+Actual lbt-recipes direct-sun-hours run used one worker and a single synthetic midday sample: obstructed sensor0h, unobstructed sensor0.5h. Final driver status Succeeded. The isolated lbt-recipes0.29.1 driver had a timezone-aware/naive duration-reporting bug after numerical output; exact one-line UTC fix and before/after hashes retained. This is not a numerical solver modification. Earlier failed runs preserved, including missing writable configuration home, initial fixture too small to shade the sensor, and status-path check error. These do not count as real-site experiments.
+
+G3 uses protocol one-thread setting and must record actual process/memory timing; presently no real-input matched A/B run exists. Historical Windows55.40s screening/51.11s HB scene costs are not timings for this cloud hardware and cannot establish new speedup. Any synthetic harness timings are unit-test diagnostics only.

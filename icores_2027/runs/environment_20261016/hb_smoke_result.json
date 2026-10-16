@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "driver_status": "Succeeded",
+  "expected_values_h": [
+    0,
+    0.5
+  ],
+  "runtime_patch": "audit/lbt_recipes_timestamp_fix.patch",
+  "measurement_class": "SYNTHETIC_RUNTIME_SMOKE",
+  "run_id": "environment_20261016",
+  "started_utc": "2026-10-16T05:24:44.822424+00:00",
+  "wall_seconds": 5.816712535000988,
+  "radiance_version": "RADIANCE 6.0.2 2026-02-02 LBNL (6.0.c1700d56cc)",
+  "result_values": [
+    "0.0\n0.5"
+  ],
+  "result_file_count": 1,
+  "real_site_replay": false,
+  "script_sha256": "1118978ecba797dd76bfd3aa7cf5f236bbc9443165251567eb1ee8f947f813c8"
+}

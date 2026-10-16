@@ -1,0 +1,107 @@
+2026-10-16 13:23:46 INFO: Started running WriteTimestep...
+2026-10-16 13:23:46 INFO: [0/1] completed. 1 running.
+2026-10-16 13:23:46 INFO: ...finished running WriteTimestep in 0:00:00
+2026-10-16 13:23:46 INFO: [1/1] completed. 0 running.
+2026-10-16 13:23:46 INFO: Started running ConvertWeaToConstant...
+2026-10-16 13:23:46 INFO: [1/2] completed. 1 running.
+2026-10-16 13:23:46 INFO: ...finished running ConvertWeaToConstant in 0:00:00
+2026-10-16 13:23:46 INFO: [2/2] completed. 0 running.
+2026-10-16 13:23:46 INFO: Started running GenerateSunpath...
+2026-10-16 13:23:46 INFO: [2/3] completed. 1 running.
+2026-10-16 13:23:46 INFO: gendaymtx: reading weather tape 'sky.wea'
+2026-10-16 13:23:46 INFO: gendaymtx: location 'synthetic
+2026-10-16 13:23:46 INFO: , '
+2026-10-16 13:23:46 INFO: gendaymtx: (lat,long)=(24.6,-118.0) degrees north, west
+2026-10-16 13:23:46 INFO: gendaymtx: outputting suns to file
+2026-10-16 13:23:46 INFO: gendaymtx: done.
+2026-10-16 13:23:46 INFO: ...finished running GenerateSunpath in 0:00:00
+2026-10-16 13:23:46 INFO: [3/3] completed. 0 running.
+2026-10-16 13:23:46 INFO: Started running ParseSunUpHours...
+2026-10-16 13:23:46 INFO: [3/4] completed. 1 running.
+2026-10-16 13:23:46 INFO: ...finished running ParseSunUpHours in 0:00:00
+2026-10-16 13:23:46 INFO: [4/4] completed. 0 running.
+2026-10-16 13:23:46 INFO: Started running CreateRadFolder...
+2026-10-16 13:23:46 INFO: [4/5] completed. 1 running.
+2026-10-16 13:23:47 INFO: /tmp/CreateRadFolder-y3m5umqp
+2026-10-16 13:23:47 INFO: ...finished running CreateRadFolder in 0:00:00
+2026-10-16 13:23:47 INFO: [5/5] completed. 0 running.
+2026-10-16 13:23:47 INFO: Started running CreateOctree...
+2026-10-16 13:23:47 INFO: [5/6] completed. 1 running.
+2026-10-16 13:23:47 INFO: ...finished running CreateOctree in 0:00:00
+2026-10-16 13:23:47 INFO: [6/6] completed. 0 running.
+2026-10-16 13:23:47 INFO: Started running SplitGridFolder...
+2026-10-16 13:23:47 INFO: [6/7] completed. 1 running.
+2026-10-16 13:23:48 INFO: Distributed 2 sensors among 1 grids with 2 sensors each.
+2026-10-16 13:23:48 INFO: ...finished running SplitGridFolder in 0:00:00
+2026-10-16 13:23:48 INFO: [7/7] completed. 0 running.
+2026-10-16 13:23:48 INFO: Started running CopyRedistInfo...
+2026-10-16 13:23:48 INFO: [7/8] completed. 1 running.
+2026-10-16 13:23:48 INFO: copying input file...
+2026-10-16 13:23:48 INFO: ...finished running CopyRedistInfo in 0:00:00
+2026-10-16 13:23:48 INFO: [8/8] completed. 0 running.
+2026-10-16 13:23:48 INFO: Started running DirectIrradianceCalculation...
+2026-10-16 13:23:48 INFO: [8/9] completed. 1 running.
+2026-10-16 13:23:48 INFO: ...finished running DirectIrradianceCalculation in 0:00:00
+2026-10-16 13:23:48 INFO: [9/9] completed. 0 running.
+2026-10-16 13:23:48 INFO: Started running ConvertToSunHours...
+2026-10-16 13:23:48 INFO: [9/10] completed. 1 running.
+2026-10-16 13:23:49 INFO: ...finished running ConvertToSunHours in 0:00:00
+2026-10-16 13:23:49 INFO: [10/10] completed. 0 running.
+2026-10-16 13:23:49 INFO: Started running CopySunHours...
+2026-10-16 13:23:49 INFO: [10/11] completed. 1 running.
+2026-10-16 13:23:49 INFO: copying input path...
+2026-10-16 13:23:49 INFO: ...finished running CopySunHours in 0:00:00
+2026-10-16 13:23:49 INFO: [11/11] completed. 0 running.
+2026-10-16 13:23:49 INFO: Started running CalculateCumulativeHours...
+2026-10-16 13:23:49 INFO: [11/12] completed. 1 running.
+2026-10-16 13:23:50 INFO: ...finished running CalculateCumulativeHours in 0:00:00
+2026-10-16 13:23:50 INFO: [12/12] completed. 0 running.
+2026-10-16 13:23:50 INFO: Started running CopyTimestep...
+2026-10-16 13:23:50 INFO: [12/13] completed. 1 running.
+2026-10-16 13:23:50 INFO: copying input file...
+2026-10-16 13:23:50 INFO: ...finished running CopyTimestep in 0:00:00
+2026-10-16 13:23:50 INFO: [13/13] completed. 0 running.
+2026-10-16 13:23:50 INFO: Started running CopyGridInfo...
+2026-10-16 13:23:50 INFO: [13/14] completed. 1 running.
+2026-10-16 13:23:50 INFO: copying input path...
+2026-10-16 13:23:50 INFO: ...finished running CopyGridInfo in 0:00:00
+2026-10-16 13:23:50 INFO: [14/14] completed. 0 running.
+2026-10-16 13:23:50 INFO: Started running CopySunUpHours...
+2026-10-16 13:23:50 INFO: [14/15] completed. 1 running.
+2026-10-16 13:23:50 INFO: copying input path...
+2026-10-16 13:23:50 INFO: ...finished running CopySunUpHours in 0:00:00
+2026-10-16 13:23:50 INFO: [15/15] completed. 0 running.
+2026-10-16 13:23:50 INFO: Started running RestructureCumulativeResults...
+2026-10-16 13:23:50 INFO: [15/16] completed. 1 running.
+2026-10-16 13:23:50 INFO: ...finished running RestructureCumulativeResults in 0:00:00
+2026-10-16 13:23:50 INFO: [16/16] completed. 0 running.
+2026-10-16 13:23:50 INFO: Started running RestructureTimestepResults...
+2026-10-16 13:23:50 INFO: [16/17] completed. 1 running.
+2026-10-16 13:23:51 INFO: ...finished running RestructureTimestepResults in 0:00:00
+2026-10-16 13:23:51 INFO: [17/17] completed. 0 running.
+
+===== Luigi Execution Summary =====
+
+Scheduled 26 tasks of which:
+* 26 ran successfully:
+    - 1 CalculateCumulativeHours(...)
+    - 1 ConvertToSunHours(...)
+    - 1 ConvertWeaToConstant(...)
+    - 1 CopyGridInfo(...)
+    - 1 CopyRedistInfo(...)
+    ...
+
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+Duration: 0:00:05    CPU Usage: 0:00:00
+More info:
+ - <PRIVATE_SYNTHETIC_WORK>/run/direct_sun_hours/__logs__/logs.log
+ - <PRIVATE_SYNTHETIC_WORK>/run/direct_sun_hours/__logs__/err.log
+{
+  "status": "FAIL",
+  "measurement_class": "SYNTHETIC_RUNTIME_SMOKE",
+  "error": "[Errno 2] No such file or directory: '<PRIVATE_SYNTHETIC_WORK>/run/__logs__/status.json'",
+  "real_site_replay": false
+}

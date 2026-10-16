@@ -1,0 +1,46 @@
+Failed to find /home/agent/.queenbee/config.yml
+Traceback (most recent call last):
+  File "<VENV>/bin/queenbee", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "<VENV>/lib/python3.12/site-packages/click/core.py", line 1514, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<VENV>/lib/python3.12/site-packages/click/core.py", line 1435, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "<VENV>/lib/python3.12/site-packages/click/core.py", line 1899, in invoke
+    super().invoke(ctx)
+  File "<VENV>/lib/python3.12/site-packages/click/core.py", line 1298, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<VENV>/lib/python3.12/site-packages/click/core.py", line 853, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<VENV>/lib/python3.12/site-packages/click/decorators.py", line 34, in new_func
+    return f(get_current_context(), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<VENV>/lib/python3.12/site-packages/queenbee/cli/__init__.py", line 56, in main
+    ctx.ensure_object(Context)
+  File "<VENV>/lib/python3.12/site-packages/click/core.py", line 698, in ensure_object
+    self.obj = rv = object_type()
+                    ^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pydantic/main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<VENV>/lib/python3.12/site-packages/queenbee/cli/context.py", line 21, in init_config
+    os.makedirs(DEFAULT_CONFIG_DIR, exist_ok=True)
+  File "<frozen os>", line 225, in makedirs
+OSError: [Errno 30] Read-only file system: '/home/agent/.queenbee'
+{
+  "status": "FAIL_NO_EXPECTED_RESULT",
+  "measurement_class": "SYNTHETIC_RUNTIME_SMOKE",
+  "run_id": "environment_20261016",
+  "started_utc": "2026-10-16T05:21:41.773850+00:00",
+  "wall_seconds": 0.4895007359991723,
+  "radiance_version": "RADIANCE 6.0.2 2026-02-02 LBNL (6.0.c1700d56cc)",
+  "result_values": [],
+  "result_file_count": 0,
+  "real_site_replay": false,
+  "script_sha256": "f21dc362a61d6e132ecad966f3975b3f16def95cda2ec27c913ef9ce0631ad77"
+}

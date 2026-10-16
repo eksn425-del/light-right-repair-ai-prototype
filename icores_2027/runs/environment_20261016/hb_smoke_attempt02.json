@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "measurement_class": "SYNTHETIC_RUNTIME_SMOKE",
+  "run_id": "environment_20261016",
+  "started_utc": "2026-10-16T05:22:01.196479+00:00",
+  "wall_seconds": 6.045142216999011,
+  "radiance_version": "RADIANCE 6.0.2 2026-02-02 LBNL (6.0.c1700d56cc)",
+  "result_values": [
+    "0.5\n0.5"
+  ],
+  "result_file_count": 1,
+  "real_site_replay": false,
+  "script_sha256": "f21dc362a61d6e132ecad966f3975b3f16def95cda2ec27c913ef9ce0631ad77"
+}

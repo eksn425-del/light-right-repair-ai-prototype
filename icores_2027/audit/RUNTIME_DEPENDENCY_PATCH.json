@@ -1,0 +1,9 @@
+{
+  "dependency": "lbt-recipes",
+  "version": "0.29.1",
+  "scope": "isolated runtime only; no numerical/scene/solver changes",
+  "reason": "naive started_at parsed from UTC-Z timestamp subtracted from aware UTC datetime",
+  "original_sha256": "45186c9df894fda19926eaa1903a18ffc37fb312b631bcdcaa33c5cff68dcb7c",
+  "patched_sha256": "0294b7042b66c9699eb64a5cab486ff9deb065af3f91a9065c9b73d94c97783d",
+  "patch": "lbt_recipes_timestamp_fix.patch"
+}
