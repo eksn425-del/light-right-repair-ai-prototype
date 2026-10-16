@@ -27,3 +27,19 @@ def test_measured_decimal_round_trip_is_preserved(tmp_path):
     data=pd.read_csv(path,float_precision='round_trip')
     data.to_csv(path,index=False)
     assert float(path.read_text().splitlines()[1])==float('1.0000000000000002')
+
+
+def test_completed_real_experiment_files_independently_pass():
+    root=Path(__file__).resolve().parents[1]
+    checks=check_experiments(root/'runs/local_ablation_20261016',root/'runs/local_hb_20261016')
+    assert checks and all(checks.values()),checks
+
+
+def test_actual_recipe_audit_not_inferred_from_cloud():
+    import json
+    root=Path(__file__).resolve().parents[1]
+    report=json.loads((root/'runs/local_protocol_20261016/protocol_semantics.json').read_text())
+    for key in ['weather_semantics_verified','all_recipe_timezones_utc_plus8','all_sample_counts16','all_expected_faces_present']:
+        assert report[key] is True
+    assert report['receivers_strictly_inside_canonical_union']==0
+    assert report['receivers_on_boundary_within_tolerance']==0

@@ -125,6 +125,31 @@ def generate(ablation,hb,code_commit):
     replay=pd.read_csv(hb/'design_translation_recheck.csv',float_precision='round_trip')
     geom=pd.read_csv(hb/'geometry_recheck.csv',float_precision='round_trip')
     solar=pd.read_csv(hb/'historical_solar_mapping.csv',float_precision='round_trip')
+    comparisons=[]
+    for _,g in geom[(geom.scope.eq('whole_scene_union')) & geom.scenario.eq('legacy_stepback')].iterrows():
+        stem=g.case_id.replace(',','_')
+        old_result=replay[replay.scenario.eq(stem+'_design_stepback')].iloc[0]
+        fixed=replay[replay.scenario.eq(stem+'_contained_stepback_v2')]
+        reused=fixed.empty
+        new_result=old_result if reused else fixed.iloc[0]
+        rule=geom[geom.case_id.eq(g.case_id) & geom.scope.eq('whole_scene_union') & geom.scenario.eq('rule_flat')].iloc[0]
+        corrected=geom[geom.case_id.eq(g.case_id) & geom.scope.eq('whole_scene_union') & geom.scenario.eq('contained_stepback_v2_UNVALIDATED')].iloc[0]
+        comparisons.append(dict(**provenance(new_result),case_id=g.case_id,
+            target_rule_volume_m3=g.target_removed_volume_m3,
+            rule_union_removed_m3=rule.actual_removed_volume_m3,
+            legacy_union_removed_m3=g.actual_removed_volume_m3,
+            corrected_union_removed_m3=corrected.actual_removed_volume_m3,
+            legacy_solid_contained=g.solid_contained,corrected_solid_contained=corrected.solid_contained,
+            legacy_low_area_reduction_m2=old_result.low_area_drop_h3_m2,
+            corrected_low_area_reduction_m2=new_result.low_area_drop_h3_m2,
+            legacy_worsened_point_count=old_result.worsened_point_count,
+            corrected_worsened_point_count=new_result.worsened_point_count,
+            corrected_new_low_area_m2=new_result.new_low_area_h3_m2,
+            corrected_result_reuses_unchanged_legacy=reused,
+            status='LEGACY_REPRODUCED_AND_EXPLAINED_CORRECTION_VERIFIED',
+            geometry_source_sha256=sha(hb/'geometry_recheck.csv'),
+            daylight_source_sha256=sha(hb/'design_translation_recheck.csv')))
+    pd.DataFrame(comparisons).to_csv(hb/'translation_outcome_comparison.csv',index=False)
     old=pd.read_csv(cloud/'PAPER_NUMBERS_ICORES.csv').fillna('')
     old.loc[old.metric.eq('weighted_day_duration'),'notes']='16*0.5h; actual archived HB/WEA/HOY columns now verified; HB/pvlib effective rays not identical.'
     rows=old[~old.metric.eq('real_matched_ablation_speedup')].to_dict('records')

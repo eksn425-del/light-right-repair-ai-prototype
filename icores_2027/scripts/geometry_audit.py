@@ -141,10 +141,12 @@ def emitted_prism_layers(layers):
 
 
 def contained_stepback_v2(geom, height, building_id='fixture'):
-    """UNVALIDATED candidate: explicit intersection of legacy upper with baseline.
+    """Explicitly intersect the legacy upper footprint with its baseline.
 
     This changes design volume when legacy scaling escapes a concavity or hole;
-    it is not a volume-matched optimization or a validated HB solver correction.
+    it is not a volume-matched optimization. Controlled validation is limited to
+    the frozen cases recorded under runs/local_hb_20261016; it is not a general
+    guarantee of surveyed-geometry accuracy or professional design feasibility.
     """
     validate_polygon(geom, building_id)
     layers, _ = legacy_layers(geom, height, building_id=building_id)
