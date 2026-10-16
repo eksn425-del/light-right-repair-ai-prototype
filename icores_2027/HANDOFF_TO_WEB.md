@@ -2,13 +2,14 @@
 
 ## 当前本机状态，2026-10-17
 
-本机实验和实际验证已完成，正在进行最后的Git证据冻结、tag和远端核验。最终E/M提交和就绪状态以本节最终元数据及`RESULTS_SUMMARY.json`为准；下方云端部分交接为历史，已被本机证据取代。
+EVIDENCE_READY_FOR_WEB_REVIEW=true。本机实验、验证和Git证据交付已完成。manuscript_draft_ready/author_approved/submitted仍全部false。最终状态以本节及`RESULTS_SUMMARY.json`为准；下方云端部分交接仅保留作历史。
 
 - 仓库`eksn425-del/light-right-repair-ai-prototype`，当前GitHub connector已核验private。
 - 唯一分支`icores-2027-sprint`，不改main、不强推、不移动历史tag。
-- evidence_commit E：待本次完整证据提交产生，不使用旧afc13c0冒充本机结果。
-- handoff_commit M：补入E/tag和最终状态的元数据提交，由分支HEAD与外部交付定位，避免自引用。
-- annotated tag：`icores-2027-evidence-v1`待创建和核验；预定名称不算实际已创建。
+- evidence_commit E：`af486946b210b12853b83f9dbdaf708255754d56`。
+- handoff_commit M：本次补入E/tag和最终ready状态的元数据提交，由分支HEAD/外部交付SHA定位，避免自引用；M的父提交是E。
+- annotated tag：`icores-2027-evidence-v1`已创建、推送、核验远端。tag对象`67eaba3a7af2cf6a20bd292e7a106a3ac09c5203`，peeled目标为E。
+- tag固定科学证据E；E的交付元数据记录当时待Git收敛。请从分支最终M读取完成状态；不要用E的交付前状态否定最终交付，也不要改写E来回避正常的两阶段流程。
 
 已完成：45建筑/2031点/16时槽真实归档输入核查，六个旧HB场景逐点逐时精确重放，四个contained-v2新场景实际运行；原20样本未改未重跑。四个旧转译越界，恶化射线实际命中C24越出原轮廓的上层墙面，原因已解释。四个修正版在固定模型/网格/太阳下均无新增遮挡事件、恶化点或新增暗区。C9/C13本就包含，复用其未变结果，不是第11次模拟。
 

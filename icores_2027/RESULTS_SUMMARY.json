@@ -1,16 +1,16 @@
 {
   "schema_version": 2,
-  "checkpoint_kind": "LOCAL_EXPERIMENTS_COMPLETE_PENDING_FINAL_FREEZE",
+  "checkpoint_kind": "LOCAL_EVIDENCE_COMPLETE_WEB_REVIEW_READY",
   "repository": "eksn425-del/light-right-repair-ai-prototype",
   "branch": "icores-2027-sprint",
   "created_utc": "2026-10-16T05:48:37.721020+00:00",
-  "evidence_commit": null,
+  "evidence_commit": "af486946b210b12853b83f9dbdaf708255754d56",
   "handoff_commit": null,
-  "handoff_commit_resolution": "The commit that adds this metadata is M; use verified GitHub branch HEAD or external delivery, avoiding self-reference.",
-  "tag": null,
-  "tag_status": "PENDING_EVIDENCE_FREEZE",
+  "handoff_commit_resolution": "Metadata commit M that introduces this final-ready state; resolve via verified branch HEAD/external handoff SHA to avoid self-reference.",
+  "tag": "icores-2027-evidence-v1",
+  "tag_status": "ANNOTATED_TAG_PUSHED_AND_REMOTE_PEELED_TARGET_VERIFIED",
   "planned_final_tag": "icores-2027-evidence-v1",
-  "EVIDENCE_READY_FOR_WEB_REVIEW": false,
+  "EVIDENCE_READY_FOR_WEB_REVIEW": true,
   "manuscript_draft_ready": false,
   "author_approved": false,
   "submitted": false,
@@ -22,7 +22,7 @@
     "G4": "PASS",
     "G5": "PASS",
     "G6": "PASS",
-    "G7": "RUNNING"
+    "G7": "PASS"
   },
   "tests": {
     "integrated_passed": 112,
@@ -67,10 +67,8 @@
     "actual_weather": "constant DNI1000/DHI0 carrier, not measured weather",
     "canonical_model_fidelity": "DXF component-bbox/shared-footprint approximation with overlaps; not as-built certification"
   },
-  "blockers": [
-    "Final release audit, E/M commits and remote tag verification pending"
-  ],
-  "next_executor": "Local final Git delivery, then web ChatGPT evidence/manuscript review",
+  "blockers": [],
+  "next_executor": "Web ChatGPT evidence/manuscript review, then author",
   "web_review_scope": "Review final evidence within stated canonical model and validation boundaries; not measured as-built accuracy or automatic design finality",
   "cloud_writes_after_handoff": false,
   "cloud_branch_writes": "STOPPED_AT_HANDOFF_COMMIT",
@@ -101,5 +99,20 @@
     "Author confirmation of rights, authorship, anonymous AI disclosure and single submission"
   ],
   "restricted_raw_inputs_uploaded": false,
-  "main_commit_unchanged": "7070d8873fa60ab1e60be30b1b9daa44e7bc21fa"
+  "main_commit_unchanged": "7070d8873fa60ab1e60be30b1b9daa44e7bc21fa",
+  "handoff_commit_parent": "af486946b210b12853b83f9dbdaf708255754d56",
+  "tag_object_sha": "67eaba3a7af2cf6a20bd292e7a106a3ac09c5203",
+  "tag_target_commit": "af486946b210b12853b83f9dbdaf708255754d56",
+  "evidence_ready_for_web_review": true,
+  "updated_utc": "2026-10-16 17:37:27 UTC",
+  "new_tag_points_to_E_not_metadata_M": true,
+  "additional_legacy_production_tests": {
+    "passed": 17,
+    "skipped": 2,
+    "scope": "Intentional public-mirror omissions of private geometry/protected tables; not included in112 ICORES passes",
+    "log": "runs/local_quality_20261016/historical_production_regression.log"
+  },
+  "public_safe_audit": "runs/local_quality_20261016/PUBLIC_SAFE_AUDIT.json",
+  "scientific_artifact_hash_manifest": "runs/local_quality_20261016/PUBLIC_SAFE_FILE_MANIFEST.csv",
+  "staged_scientific_blob_hashes_verified": 59
 }

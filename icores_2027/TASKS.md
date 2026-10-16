@@ -2,6 +2,8 @@
 
 本轮已实际开始；状态以各项证据为准。负责人dot；网页端负责结果审查和论文。请勿引用旧SOICT_READY代替当前状态。
 
+最终交付：G0–G7均PASS，EVIDENCE_READY_FOR_WEB_REVIEW=true。证据E=`af486946b210b12853b83f9dbdaf708255754d56`，新annotated tag已推送并核验。最终元数据M由分支HEAD/外部交付定位，稿件/作者/提交标志仍false。下面的早期/冻结前记录保留历史，不是当前阻断。
+
 | ID | 优先级 | 工作 | 前置条件 | 验收文件 | 状态 |
 |---|---|---|---|---|---|
 | G0 | P0 | 实际执行能力、私有输入、官方规则复核 | GitHub/工具连接 | audit/EXECUTION_CAPABILITIES.json、MISSING_INPUTS.md | PASS |
@@ -11,7 +13,7 @@
 | G4 | P0 | N常量、样本性质、同指标统计、时间语义 | 现有表及必要模拟输入 | METHOD_SPEC、CLAIM_CORRECTIONS | PASS |
 | G5 | P0 | 实际tests、数字/主张/图表台账、差异 | G2–G4 | PAPER_NUMBERS_ICORES、pytest日志 | PASS |
 | G6 | P1 | 官方面板/模板下载、匿名骨架编译 | 联网、文档环境 | TEMPLATE_MANIFEST、编译日志 | PASS |
-| G7 | P0 | GitHub evidence freeze与网页端交接 | P0无未解项 | HANDOFF_TO_WEB、RESULTS_SUMMARY | RUNNING |
+| G7 | P0 | GitHub evidence freeze与网页端交接 | P0无未解项 | HANDOFF_TO_WEB、RESULTS_SUMMARY | PASS |
 | W1 | 后续 | 正式英文稿、引用、版式、逐页QA | 网页端通过G7 | 稿件与QA报告 | NOT_STARTED |
 | A1 | 后续 | 作者/权益/披露/单投确认与投递 | W1及作者批准 | 系统回执 | NOT_STARTED |
 
@@ -25,6 +27,6 @@
 
 真实45建筑、2031点、六个历史HB场景均已找到并核验。六个实际模型与生产函数重新生成的面字典在JSON规范化后完全一致；点位与太阳时间映射通过。旧C9/C24和C13/C24的8个恶化射线事件均定位到C24越出原轮廓的上层墙面。四个越界配对已准备 contained_v2，不把准备完成当作复算完成。新103项集成测试通过，包含7项重放解析回归。完整真实A/B测试仍在运行，pilot仅按时间选择了5/20/60/630、各3次。HB受控重放安排在速度测试结束后，避免主动并发重求解影响计时。所有就绪/稿件/作者/提交标志仍为false。
 
-## 本机实验完成，2026-10-17
+## 本机实验完成、冻结前记录，2026-10-17
 
 完整5/20/60/630各三次匹配测试通过，630的A为实测，不是外推。六个旧场景逐点逐时精确复现，四个contained-v2完成实际HB验证且均单调；共10场景。原20样本未改未重跑。112项集成本机检查通过。两张新增聚合图均有300dpi PNG及原生SVG/PDF与来源manifest，真实场地几何没有入图。规范bbox/shared-footprint近似及体积预算差异明确限制物理主张。G7待完成E/M提交、新tag及远端核验后转PASS；稿件/作者/提交状态仍false。
