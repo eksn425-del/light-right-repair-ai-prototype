@@ -4,9 +4,9 @@
   "repository": "eksn425-del/light-right-repair-ai-prototype",
   "branch": "icores-2027-sprint",
   "created_utc": "2026-10-16T05:48:37.721020+00:00",
-  "evidence_commit": null,
+  "evidence_commit": "afc13c078965f225ea4aaa62ff3db4b2010908b3",
   "handoff_commit": null,
-  "handoff_commit_resolution": "The commit containing final handoff metadata is M; returned externally to avoid self-reference.",
+  "handoff_commit_resolution": "The commit that adds this metadata is M; use verified GitHub branch HEAD or external delivery, avoiding self-reference.",
   "tag": null,
   "tag_status": "TAG_CREATION_UNAVAILABLE",
   "planned_final_tag": "icores-2027-evidence-v1",
@@ -65,5 +65,6 @@
   ],
   "next_executor": "Local Codex; exact Chinese prompt LOCAL_CODEX_HANDOFF.md",
   "web_review_scope": "Review checkpoint and claim corrections only; do not draft scientific conclusions as accepted evidence.",
-  "cloud_writes_after_handoff": false
+  "cloud_writes_after_handoff": false,
+  "cloud_branch_writes": "STOPPED_AT_HANDOFF_COMMIT"
 }

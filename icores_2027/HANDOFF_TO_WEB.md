@@ -3,7 +3,7 @@
 EVIDENCE_READY_FOR_WEB_REVIEW=false。此包是可审查的部分检查点，不是科学验收完成或可投稿稿件。
 
 - 仓库 eksn425-del/light-right-repair-ai-prototype 保持 private；唯一分支 icores-2027-sprint。
-- evidence_commit：待冻结后由下一次交接元数据提交填入。
+- evidence_commit：afc13c078965f225ea4aaa62ff3db4b2010908b3。
 - handoff_commit：包含最终交接元数据的提交 M；通过 GitHub HEAD/外部交付引用解析，避免自引用。
 - tag：未创建，TAG_CREATION_UNAVAILABLE。连接器没有 tag 创建接口，shell 未认证；未使用 branch 接口冒充 tag。最终本机可按 LOCAL_CODEX_HANDOFF.md 创建新 annotated tag，不覆盖旧 tag。
 
@@ -34,4 +34,4 @@ EVIDENCE_READY_FOR_WEB_REVIEW=false。此包是可审查的部分检查点，不
 
 需要 clean run 的45建筑真实footprints、2031点有序坐标、baseline与五方案实际模型/recipe/WEA/太阳时列及逐点逐时结果、来源/单位/北向/hash。按归档索引在已授权本机定位；受限原始输入和逐点结果全程留本机。缺失哪些就暂停哪些，继续其余任务。
 
-云端在 M 后停止所有分支写入，本机成为单一执行者。真实物理矛盾、必要复算、匹配性能和时间语义未解决前不得把 ready 设 true。网页端负责最终英文论文审核修改；权益、披露、单投、最终投稿由作者确认。未发送邮件、投稿、缴费或购买算力。
+云端已完成部分检查点，在 M 后停止所有分支写入，本机成为单一执行者。真实物理矛盾、必要复算、匹配性能和时间语义未解决前不得把 ready 设 true。网页端负责最终英文论文审核修改；权益、披露、单投、最终投稿由作者确认。未发送邮件、投稿、缴费或购买算力。

@@ -28,7 +28,7 @@
     "G6": "PASS",
     "G7": "BLOCKED"
   },
-  "evidence_commit": null,
+  "evidence_commit": "afc13c078965f225ea4aaa62ff3db4b2010908b3",
   "handoff_commit": null,
   "known_open_items": [
     "Canonical footprints and ordered2031 sensors missing",
@@ -57,8 +57,9 @@
     "G7": "Partial cloud evidence freeze and local/web handoff only; scientific acceptance BLOCKED; remote tag unavailable."
   },
   "partial_handoff_prepared": true,
-  "cloud_branch_writes": "STOP_AFTER_HANDOFF_COMMIT",
+  "cloud_branch_writes": "STOPPED_AT_HANDOFF_COMMIT",
   "tag": null,
   "tag_status": "TAG_CREATION_UNAVAILABLE",
-  "EVIDENCE_READY_FOR_WEB_REVIEW": false
+  "EVIDENCE_READY_FOR_WEB_REVIEW": false,
+  "handoff_commit_resolution": "The commit that adds this metadata is M; use verified GitHub branch HEAD or external delivery, avoiding self-reference."
 }
