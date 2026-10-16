@@ -9,7 +9,7 @@
   "historical_evidence_commit": "6b64fe43451e2e0330930a5677cbe3432307282b",
   "required_visibility": "private",
   "execution_capable": true,
-  "raw_inputs_available_to_dot": false,
+  "raw_inputs_available_to_dot": true,
   "official_requirements_checked_on": "2026-10-16",
   "submission_deadline_aoe": "2026-10-22",
   "notification_date": "2026-12-04",
@@ -19,14 +19,14 @@
   "submitted": false,
   "new_experiments_run": true,
   "tasks": {
-    "G0": "COMPLETED_WITH_LIMITATIONS",
+    "G0": "PASS",
     "G1": "PASS",
-    "G2": "BLOCKED",
-    "G3": "BLOCKED",
-    "G4": "COMPLETED_WITH_LIMITATIONS",
-    "G5": "COMPLETED_WITH_LIMITATIONS",
+    "G2": "RUNNING",
+    "G3": "RUNNING",
+    "G4": "RUNNING",
+    "G5": "RUNNING",
     "G6": "PASS",
-    "G7": "BLOCKED"
+    "G7": "RUNNING"
   },
   "evidence_commit": "afc13c078965f225ea4aaa62ff3db4b2010908b3",
   "handoff_commit": null,
@@ -47,7 +47,7 @@
   "real_site_new_HB_scenarios": 0,
   "updated_utc": "2026-10-16T05:48:37.721020+00:00",
   "stage_details": {
-    "G0": "Shell, private GitHub write, actual Honeybee/Radiance6.0.2 smoke verified; missing real inputs documented",
+    "G0": "Author-local Windows inputs found, hash and 45/2031/16 strict validation passed; original HB scenes and solver present",
     "G1": "Protocol committed ae7483ca493768e23a19cf402446c54d6f6c95ef before simulations/benchmark",
     "G2": "Source audit and60tests complete; synthetic defects confirmed; five real cases unresolved pending local inputs/HB rays",
     "G3": "Fair same-primitive real-input-gated harness and synthetic equality complete; real timings/speedups NOT_MEASURED",
@@ -61,5 +61,7 @@
   "tag": null,
   "tag_status": "TAG_CREATION_UNAVAILABLE",
   "EVIDENCE_READY_FOR_WEB_REVIEW": false,
-  "handoff_commit_resolution": "The commit that adds this metadata is M; use verified GitHub branch HEAD or external delivery, avoiding self-reference."
+  "handoff_commit_resolution": "The commit that adds this metadata is M; use verified GitHub branch HEAD or external delivery, avoiding self-reference.",
+  "local_takeover_commit": "32721b622d4676be46d210c2c691cbe6a3ee2e92",
+  "local_inputs_report": "runs/local_inputs_20261016/local_input_validation.json"
 }

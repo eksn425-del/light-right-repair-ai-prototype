@@ -1,0 +1,74 @@
+{
+  "status": "REAL_INPUTS_VALIDATED",
+  "run_id": "local_inputs_20261016",
+  "config_hash": "6433016792a46a4720d40a5c9d8a445e0a832cd8a896a67d4cfae06705f22d97",
+  "code_commit": "32721b622d4676be46d210c2c691cbe6a3ee2e92",
+  "input_hash": "880fe4c78018f201e0279781db2026764b43c98020c43a4c0b86946c88879732",
+  "measurement_class": "MEASURED_LOCAL_INPUT_AUDIT",
+  "checked_utc": "2026-10-16T05:59:15.077888+00:00",
+  "platform": "Windows-11-10.0.22000-SP0",
+  "python": "3.12.2",
+  "logical_cpu_count": 16,
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "shapely": "2.1.2",
+    "pvlib": "0.15.2",
+    "honeybee-core": "1.64.54",
+    "honeybee-radiance": "1.66.273",
+    "ladybug-core": "0.44.52",
+    "lbt-recipes": "0.28.2"
+  },
+  "radiance": {
+    "rtrace": {
+      "present": true,
+      "sha256": "edb01ac56b31ad79263c1f42a686413c0d369829f460e83a170340a6f821b5c9",
+      "version": "rtrace: system - cannot find function file \"rayinit.cal\": No such file or directory"
+    },
+    "rcontrib": {
+      "present": true,
+      "sha256": "0e622eb168ce5ba30bfad2d154bf64bc4555d1663f1d20c9c1a833f947816975"
+    },
+    "oconv": {
+      "present": true,
+      "sha256": "e0bc7240ee2645d6590c33ef5a6a783f4bfe81246dce23bfefdc66966cba60a2"
+    },
+    "gendaymtx": {
+      "present": true,
+      "sha256": "07a022f4569c7815bba868148add3706aa0e120622f0e8e7c7029e7947af527d"
+    }
+  },
+  "building_count": 45,
+  "sensor_count": 2031,
+  "sample_count": 16,
+  "source_files": {
+    "building_csv": {
+      "sha256": "e50a664e074ac7be5bb7c5b1561e21f35703ccd573075c29abcf29d181ce69e0",
+      "bytes": 10748
+    },
+    "geometry_geojson": {
+      "sha256": "97021f73c5e0bf831d9696a4b00a967605ec90a329f2bcba828b501ceff2d1b8",
+      "bytes": 41062
+    },
+    "sensors_csv": {
+      "sha256": "57ba551955a6c854fd8001afbd7bcf276f6c17f5dcc3dd1aaf83a906b99e04e3",
+      "bytes": 47443
+    },
+    "solar_csv": {
+      "sha256": "1e9a3fcff98b4230fc95ac12cb07e5c6b56c234d92a676883ac3580bafcd0b06",
+      "bytes": 2013
+    }
+  },
+  "historical_solar_source_sha256": "59fc523760e2929367aed79ca621e1eeae0ea4585db6aea49697b6398d39f3b3",
+  "solar_schema_mapping": {
+    "altitude_deg": "apparent_elevation_deg",
+    "azimuth_deg": "azimuth_deg; dx=sin(azimuth),dy=cos(azimuth)",
+    "tan_altitude": "tan(altitude_deg)",
+    "time": "unchanged timezone-aware local timestamps"
+  },
+  "pvlib_reconstruction_max_elevation_error_deg": 7.105427357601002e-15,
+  "pvlib_reconstruction_max_azimuth_error_deg": 2.842170943040401e-14,
+  "sensor_order_note": "original CSV read without sorting; later matched against every historical HB sensor grid",
+  "historical_HB_effective_solar_match": "AUDITED_SEPARATELY_NOT_INFERRED",
+  "raw_files_uploaded": false
+}
