@@ -190,6 +190,13 @@ def generate(ablation,hb,code_commit):
         ('canonical_positive_overlap_pair_count',len(overlap),hb/'footprint_overlap_audit.csv',overlap.iloc[0]),
         ('canonical_identical_footprint_pair_count',int(boolean(overlap.identical_footprints).sum()),hb/'footprint_overlap_audit.csv',overlap.iloc[0])]:
         number(metric,value,'count',source,row,'Conditional on frozen canonical approximation; not surveyed geometry certification')
+    for metric in ['rank_changed_count','significant_rank_inversions']:
+        number('canonical630_regression_'+metric,regression_detail[metric],'count',
+               quality/'canonical630_frozen_regression.csv',report,'Frozen630 comparison; no rank forcing or output hardcoding')
+    for metric,value in regression_detail['max_absolute_errors'].items():
+        number('canonical630_regression_'+metric+'_max_abs_error',value,
+               {'A':'m2','H':'h','V':'m3','N':'m2','score':'dimensionless'}[metric],
+               quality/'canonical630_frozen_regression.csv',report,'Maximum across630 candidates; registered tolerance audit')
     pd.DataFrame(rows).to_csv(P/'PAPER_NUMBERS_ICORES.csv',index=False)
     corrections=pd.read_csv(cloud/'CLAIM_CORRECTIONS.csv').fillna('')
     replacements={
