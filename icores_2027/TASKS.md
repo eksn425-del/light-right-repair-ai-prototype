@@ -1,10 +1,10 @@
 # ICORES执行进度
 
-截至建档：全部NOT_STARTED。负责人dot；网页端负责结果审查和论文。请勿引用旧SOICT_READY代替当前状态。
+本轮已实际开始；状态以各项证据为准。负责人dot；网页端负责结果审查和论文。请勿引用旧SOICT_READY代替当前状态。
 
 | ID | 优先级 | 工作 | 前置条件 | 验收文件 | 状态 |
 |---|---|---|---|---|---|
-| G0 | P0 | 实际执行能力、私有输入、官方规则复核 | GitHub/工具连接 | audit/EXECUTION_CAPABILITIES.json、MISSING_INPUTS.md | NOT_STARTED |
+| G0 | P0 | 实际执行能力、私有输入、官方规则复核 | GitHub/工具连接 | audit/EXECUTION_CAPABILITIES.json、MISSING_INPUTS.md | COMPLETED_WITH_LIMITATIONS |
 | G1 | P0 | 冻结新协议、容差、benchmark子集 | G0 | configs/ICORES_PROTOCOL.json+commit | NOT_STARTED |
 | G2 | P0 | 5方案包含性/实际体积/恶化点审计及必要复算 | 真实几何、点位、HB | audit/GEOMETRY_FINDINGS.md、重算差异 | NOT_STARTED |
 | G3 | P0 | 同条件naive vs cached遮挡对照 | 固定输入和终端 | ablation_summary/equivalence/records | NOT_STARTED |

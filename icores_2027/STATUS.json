@@ -8,8 +8,8 @@
   "archive_base": "a44a8f5b5072654fd4198898e366a1278b831bc6",
   "historical_evidence_commit": "6b64fe43451e2e0330930a5677cbe3432307282b",
   "required_visibility": "private",
-  "execution_capable": "NOT_CHECKED",
-  "raw_inputs_available_to_dot": "NOT_CHECKED",
+  "execution_capable": true,
+  "raw_inputs_available_to_dot": false,
   "official_requirements_checked_on": "2026-10-16",
   "submission_deadline_aoe": "2026-10-22",
   "notification_date": "2026-12-04",
@@ -18,8 +18,23 @@
   "author_approved": false,
   "submitted": false,
   "new_experiments_run": false,
-  "tasks": {"G0":"NOT_STARTED","G1":"NOT_STARTED","G2":"NOT_STARTED","G3":"NOT_STARTED","G4":"NOT_STARTED","G5":"NOT_STARTED","G6":"NOT_STARTED","G7":"NOT_STARTED"},
+  "tasks": {
+    "G0": "COMPLETED_WITH_LIMITATIONS",
+    "G1": "NOT_STARTED",
+    "G2": "NOT_STARTED",
+    "G3": "NOT_STARTED",
+    "G4": "NOT_STARTED",
+    "G5": "NOT_STARTED",
+    "G6": "NOT_STARTED",
+    "G7": "NOT_STARTED"
+  },
   "evidence_commit": null,
   "handoff_commit": null,
-  "known_open_items": ["dot executor and local-only inputs unverified", "design-stepback monotonicity unresolved", "matched precomputation ablation not yet run", "anonymous AI-disclosure placement needs author confirmation", "authorship and submission status not confirmed"]
+  "known_open_items": [
+    "Canonical footprint geometry, ordered sensors, old per-hour visibility and recipe inputs missing",
+    "Radiance executables unavailable initially; isolated dependency install ongoing",
+    "Design-stepback monotonicity unresolved",
+    "Matched real-input ablation blocked by input gaps",
+    "Anonymous disclosure placement and author single-submission approval pending"
+  ]
 }
