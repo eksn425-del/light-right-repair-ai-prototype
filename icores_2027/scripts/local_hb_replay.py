@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import itertools
 import json
 import math
 import os
@@ -23,6 +24,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 from shapely.geometry import shape
+from shapely.ops import unary_union
 
 from geometry_audit import (Prism, containment_report, contained_stepback_v2,
                             emitted_prism_layers, legacy_layers, polygon_parts,
@@ -99,6 +101,16 @@ def inspect(args):
     buildings=pd.read_csv(old/'canonical_site_v2/canonical_buildings.csv').set_index('building_id')
     geo=json.loads((old/'canonical_site_v2/canonical_site_v2.geojson').read_text())
     geoms={f['properties']['building_id']:shape(f['geometry']) for f in geo['features']}
+    overlap_rows=[]
+    for a,b in itertools.combinations(geoms,2):
+        intersection=geoms[a].intersection(geoms[b]).area
+        if intersection>1e-7:
+            overlap_rows.append(dict(**meta(args,sha256(old/'canonical_site_v2/canonical_site_v2.geojson'),
+                'RECOMPUTED_CANONICAL_FOOTPRINT_AUDIT'),building_1=a,building_2=b,
+                intersection_area_m2=intersection,
+                identical_footprints=bool(geoms[a].equals(geoms[b])),
+                geometry_source='frozen canonical DXF component bbox union; not surveyed exact footprints'))
+    write_csv(public/'footprint_overlap_audit.csv',overlap_rows)
     baseline=old/'hb_radiance_project_batch/baseline'
     baseline_matrix,baseline_hours=matrices(baseline)
     baseline_suns=suns(baseline/'direct_sun_hours/resources/sunpath.mtx')
