@@ -1,5 +1,7 @@
 # Minimal private input request — G0, 2026-10-16
 
+**Local update:** the minimal package below has now been located in the author's authorized Windows environment and verified. No additional input upload is requested. See `runs/local_inputs_20261016/local_input_validation.json` and `runs/local_hb_20261016/historical_input_hashes.csv`. The remainder of this file preserves the original cloud-side request/history; its missing-to-cloud statements are not current local blockers. Remaining work is execution, validation and final evidence integration, not obtaining CAD/SKP.
+
 Do not upload these restricted inputs to GitHub. Supply in an author-authorized private runtime or private attachment. No access to the author's E: drive is assumed. Canonical building attributes, 630 aggregate candidate rows, and frozen 20-row sample are already available and are NOT requested again. No full CAD/SKP or whole 630 HB batch is required.
 
 Source index: `project_archive_2026_10_16/indexes/EXCLUDED_SOURCE_FILES.csv`, read at ce4087f; omissions explicitly list the following clean-run inputs. Actual missing-file hashes are unknown until supplied; sizes below are index values, not invented minimum acceptance thresholds.

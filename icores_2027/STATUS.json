@@ -31,11 +31,10 @@
   "evidence_commit": "afc13c078965f225ea4aaa62ff3db4b2010908b3",
   "handoff_commit": null,
   "known_open_items": [
-    "Canonical footprints and ordered2031 sensors missing",
-    "Actual old model/recipe/WEA/per-hour output package missing; physical adverse-ray cause unresolved",
-    "Real matched A/B benchmark blocked on missing inputs",
-    "Synthetic geometry bugs require real-scene impact assessment",
-    "New annotated tag creation tool unavailable; no authenticated shell git push",
+    "Six historical and four corrected HB scenes prepared; controlled replays pending",
+    "Real matched A/B benchmark running; complete repeats and equivalence not yet available",
+    "Actual union volume differs from target proxy; final ledger and claim scope require update",
+    "Final evidence tests, release scan, commits and annotated tag pending",
     "Anonymous disclosure placement, authorship, rights and single-submission confirmation pending"
   ],
   "new_execution_classes": [
@@ -49,10 +48,10 @@
   "stage_details": {
     "G0": "Author-local Windows inputs found, hash and 45/2031/16 strict validation passed; original HB scenes and solver present",
     "G1": "Protocol committed ae7483ca493768e23a19cf402446c54d6f6c95ef before simulations/benchmark",
-    "G2": "Source audit and60tests complete; synthetic defects confirmed; five real cases unresolved pending local inputs/HB rays",
-    "G3": "Fair same-primitive real-input-gated harness and synthetic equality complete; real timings/speedups NOT_MEASURED",
-    "G4": "Frozen-table recomputation and15 tests complete; actual historical HB ray/time matching BLOCKED",
-    "G5": "96 integrated tests passed; numeric/claim/difference ledgers and native vector chart verified. Real-input evidence remains missing.",
+    "G2": "Six actual historical models exactly regenerated; original sensors and solar/time mapping verified; eight adverse rays traced to C24 outside geometry; ten controlled replays pending",
+    "G3": "Real matched benchmark running, registered pilot selected full5/20/60/630, three repeats; partial outputs not final speedup",
+    "G4": "Actual historical vectors/time columns mapped across six scenes; 16 slots integrate8h; HB and pvlib effective rays measurably differ",
+    "G5": "103 local integrated tests passed after recording and repairing checkout line-ending failures; final ledgers await completed measurements",
     "G6": "Official current template compiled, 2 pages rendered and visually checked; 15 anonymity tests; 13 bibliography metadata checks; proof is not final manuscript",
     "G7": "Partial cloud evidence freeze and local/web handoff only; scientific acceptance BLOCKED; remote tag unavailable."
   },

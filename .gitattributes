@@ -7,3 +7,7 @@ START_HERE.md -text
 HANDOFF_TO_CHATGPT.md -text
 PROJECT_STATE.json -text
 .gitattributes -text
+# Preserve newly measured ICORES evidence and the frozen vector figure bytes.
+icores_2027/runs/local_*/** -text
+icores_2027/paper_support/figures/same_metric_area_agreement.svg -text
+icores_2027/formatting/anonymous/skeleton.tex -text
