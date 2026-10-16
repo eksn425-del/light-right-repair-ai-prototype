@@ -1,0 +1,20 @@
+{
+  "run_id": "local_protocol_20261016",
+  "config_hash": "6433016792a46a4720d40a5c9d8a445e0a832cd8a896a67d4cfae06705f22d97",
+  "code_commit": "7220f0ab6e309e08ff7e61d524b1b60525a28604",
+  "measurement_class": "RECOMPUTED_HISTORICAL_PROTOCOL_SEMANTICS",
+  "script_sha256": "bd588eb3aa22b6ca888a8cce85afbc8dd536ac0af0a00e54f7a4c5a21b9ea082",
+  "input_hash": "97021f73c5e0bf831d9696a4b00a967605ec90a329f2bcba828b501ceff2d1b8",
+  "created_utc": "2026-10-16T15:00:53.164020+00:00",
+  "sensor_count": 2031,
+  "sensor_source_sha256": "57ba551955a6c854fd8001afbd7bcf276f6c17f5dcc3dd1aaf83a906b99e04e3",
+  "receivers_strictly_inside_canonical_union": 0,
+  "receivers_on_boundary_within_tolerance": 0,
+  "canonical_geometry_source": "DXF component bbox union; overlaps and shared IDs; not exact surveyed footprints",
+  "geographic_north_status": "frozen north=0 assumption, not a new surveyed true-north verification",
+  "weather_semantics_verified": true,
+  "all_recipe_timezones_utc_plus8": true,
+  "all_sample_counts16": true,
+  "all_expected_faces_present": true,
+  "raw_payload_uploaded": false
+}
