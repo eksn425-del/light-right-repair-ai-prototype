@@ -24,6 +24,7 @@ def git(*args):return subprocess.check_output(['git',*args],cwd=ROOT,text=True,e
 def main():
     changed=set(git('diff','--name-only',BASE,'HEAD'))
     changed.update(git('diff','--name-only'))
+    changed.update(git('diff','--cached','--name-only'))
     changed.update(git('ls-files','--others','--exclude-standard'))
     # These permitted generated PDFs are ignored by the repo-wide PDF pattern.
     changed.update(str(p.relative_to(ROOT)).replace('\\','/') for p in (I/'paper_support/figures').glob('local_*.pdf'))
@@ -48,7 +49,8 @@ def main():
         if has_raster:errors.append('RASTER_EMBEDDED:'+p.name)
     code=git('rev-parse','HEAD')[0]
     common={'run_id':'local_release_20261017','config_hash':sha(I/'configs/ICORES_PROTOCOL.json'),
-            'code_commit':code,'measurement_class':'RECOMPUTED_PUBLIC_SAFE_RELEASE_AUDIT'}
+            'code_commit':code,'measurement_class':'RECOMPUTED_PUBLIC_SAFE_RELEASE_AUDIT',
+            'script_sha256':sha(Path(__file__))}
     science=[]
     for folder in ['local_ablation_20261016','local_hb_20261016','local_protocol_20261016','local_inputs_20261016']:
         science.extend(p for p in (I/'runs'/folder).iterdir() if p.is_file())
