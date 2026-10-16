@@ -1,9 +1,10 @@
 # Method specification for author and web review
 
-Version: ICORES sprint, 2026-10-16. This is a methods/evidence specification,
-not a submission-ready manuscript. Frozen aggregate numbers are recomputed
-in `runs/statistics_20261016`; real-site geometry replay and matched efficiency
-evidence remain subject to the sprint's separate gates.
+Version: author-local evidence completion, 2026-10-17. This is a methods/evidence
+specification, not a submission-ready manuscript. Frozen aggregate statistics
+remain in `runs/statistics_20261016`. Completed local input, geometry, solver and
+efficiency evidence is under `runs/local_*_20261016`; run IDs retain their start
+date. No original20 sample was reselected or re-simulated.
 
 ## 1. Decision problem and scope
 
@@ -30,9 +31,11 @@ The frozen protocol uses a 3 m horizontal grid, 2,031 fixed receiving points
 at z=0.1 m, north=0, latitude 24.55°N, longitude 118.03°E, local timezone
 Asia/Shanghai (UTC+8), and date 2026-12-21. The 16 listed times are 08:15,
 08:45, …, 15:45. With weights Δt=0.5 h, maximum accumulated exposure is 8 h.
-The 7.5 h endpoint span is not the sum of the integration weights. A proposed
-08:00–16:00 midpoint-bin interpretation must remain unconfirmed until actual
-historical recipe inputs are inspected.
+The 7.5 h endpoint span is not the sum of the integration weights. Actual archived
+WEA records, HOY labels, solar-source names and16-column binary visibility
+matrices have now been checked across all six original scenes. Each cumulative
+result exactly equals its visibility sum times0.5h. Treat these as half-hour
+samples centered on08:15–15:45 with total weight8h, not continuous-time precision.
 
 Let d_t indicate an above-horizon sun sample and b_jt(z) indicate occlusion at
 receiver j by at least one building. A physically correct discrete estimator is
@@ -53,12 +56,15 @@ receiving-point order, ray sign, time vectors and tolerance must be audited
 before comparing physical outputs. A correct visibility routine must also
 handle receiver/geometry boundary cases explicitly.
 
-The current HB preparation code supplies a constant-DNI WEA (1000 W/m²,
-DHI=0) to direct-sun-hours. This is an analysis carrier rather than measured
-meteorology. The current pvlib and Ladybug solar reconstructions differ
-slightly and their date handling differs; actual archived HB effective rays
-remain unverified. Do not call this annual-weather validation or assume two
-solver names imply identical solar inputs.
+All six actual archived WEA files supply constant DNI1000 W/m² and DHI0 to
+direct-sun-hours: an analysis carrier, not measured meteorology. Actual HB
+effective rays are now mapped and shared across those scenes. They differ
+slightly from saved pvlib rays; `historical_solar_mapping.csv` quantifies this.
+WEA/HOY lack a calendar-year field: the declared pvlib2026 sequence is not an
+identical year-specific astronomical input to the archived Ladybug reconstruction.
+Timezone is UTC+8; north0 is a modeling assumption, not newly surveyed true north.
+No annual-weather, indoor illuminance, glare or statutory-compliance validation
+is established.
 
 ## 3. Four metrics, units, normalization and preference score
 
@@ -161,8 +167,17 @@ The G1 matched comparison specifies:
   declared 12-hour budget; otherwise only measured matched subsets support a
   speedup claim.
 
-No new real-site speedup is established by this specification or by the frozen
-statistics audit. The old 55.3978 s screening median and 51.1067 s HB scene
+The real-input comparison is complete:5/20/60/630 candidates, three matched
+repeats at each scale. All pointwise DSH, A/H/V/N, score, rank and A/V Pareto
+checks pass. At630, median A=11608.1830554s and median B=24.0371276s, including
+precompute; the measured ratio is482.9272136. These are two specific single-thread
+Shapely implementations on the same frozen canonical input, not every spatially
+indexed implementation, commercial CAD tool or HB. A retains first-blocker
+short-circuiting; neither implementation uses a spatial index in this ablation.
+Raw repeats, phase costs and environment are retained. Windows RSS is unavailable
+and blank/UNKNOWN, not zero or a claimed peak-memory measurement.
+
+The old55.3978s screening median and51.1067s HB scene
 median are historical costs with different execution semantics. HB's 53
 scenes combine 33 operational and 20 research-only scenes, with historical
 worker settings initial=2 and later=4. The 8.94-hour full-630 HB estimate is
@@ -194,24 +209,46 @@ the nonprobability sample does not support a population-generalization claim.
 
 ## 7. Translation audit and contribution boundary
 
-Under fixed opaque geometry, rays and receivers, deleting a subset of a
-baseline solid cannot decrease direct sunlight. The old translated C9/C24
-record of four worsened points and 9 m² newly low-sun area therefore requires
-geometric, mapping or numerical explanation. Do not retain a narrative of
-unavoidable design side effects when the containment premise has not been
-verified. Legacy centroid scaling, polygon holes/multipart geometry, silent
-face-construction errors, actual union volume and receiver/time mapping are
-separate audit targets.
+Under fixed opaque geometry, rays and receivers, deleting a subset of a baseline
+solid cannot decrease direct sunlight. Actual historical rtrace now explains the
+old C9/C24 four worsened points and9m² newly low-sun area: clear baseline rays
+hit C24 upper walls outside its original footprint in the translation. C13/C24
+has the same four events. These are erroneous added obstructions, not unavoidable
+effects of pure subtraction. Four of five legacy translations fail containment.
+The actual canonical site has no polygon holes and every expected roof/wall
+exists; synthetic hole/silent-face defects are not demonstrated causes here.
 
-If an invalid translation is confirmed, preserve it as an error audit and
-separately label a contained correction. If new geometry changes intervention
-volume, report it; do not claim matched volume by construction alone. A
-correction needs the same baseline/solver/config comparison before results
-can support a revised contribution. If a shared baseline or time/parser
-defect is found, expand the affected-result review rather than keeping
-potentially contaminated 23/20 claims.
+Six controlled legacy replays (baseline plus five translations) reproduce the
+original visibility matrices exactly, with all new runs fixed to cpu-count1 and
+workers1. Four contained-v2 corrections were then simulated, with unchanged
+ordered grid, solar sources and time columns. They have no adverse visibility
+events, worsened points or newly low-sun area on this model. C9/C24 low-area
+reduction changes342→351m²; C13/C24 changes207→216m². C9/C15 and C6/C33 stay342
+and18m². C9/C13 was already contained; its unchanged333m² result is reused, not
+an eleventh run. Historical negative outputs are retained. See the paired
+`translation_outcome_comparison.csv` and its source hashes.
 
-At this delivery stage, the permissible contribution is a bounded decision
-support workflow, reproducible aggregate/statistical auditing, and an
-explicitly specified reuse ablation awaiting real-input execution. Scientific
-readiness still depends on the geometry, adverse-ray and matched-runtime gates.
+Actual whole-scene union volumes differ from nominal per-building rule budgets
+and across translations. Report both; clipping is not a volume-matched
+optimization. No shared receiver/time/parser or missing-face defect was found
+in the actual scenes, so this audit gives no basis for replacing or selectively
+re-running the frozen20. A newly discovered shared defect would still require
+explicit affected-scope review, not selective retention of favorable conclusions.
+
+## 8. Canonical Fidelity and Release Boundary
+
+The frozen canonical geometry is a DXF component-bbox union approximation.
+Different IDs may share components and footprints overlap. The archived
+OBJ/canonical audit reports discrepancies for important candidates. Experiments
+therefore establish reproducible screening/translation behavior conditional on
+this model, not as-built accuracy, legal modification permission, construction
+feasibility or measured real-street improvement. If boundaries are corrected,
+register a new input version and assess affected experiments explicitly; do not
+reuse current cohort agreement as validation of different geometry.
+
+Permissible contributions are bounded decision support, frozen same-model
+aggregate agreement, actual geometry/ray error diagnosis with a tested correction,
+and measured same-primitive reuse efficiency. Web evidence review can proceed
+after final delivery gates. Manuscript completion, author approval, acceptance
+and submission are separate. Raw geometry, coordinates, WEA and solver files stay
+author-local; new figures are aggregate native-vector charts with manifests.

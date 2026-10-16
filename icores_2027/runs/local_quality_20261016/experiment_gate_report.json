@@ -1,0 +1,38 @@
+{
+  "run_id": "local_integration_20261016",
+  "config_hash": "6433016792a46a4720d40a5c9d8a445e0a832cd8a896a67d4cfae06705f22d97",
+  "code_commit": "5ec39767d80f5497928373c4be98e9b42118a3b3",
+  "measurement_class": "RECOMPUTED_LOCAL_EVIDENCE_GATES",
+  "input_hash": "01c05a9cad3b7974a286589d2a2d03f4d56e168e06a472a09344400657cc5e84",
+  "checks": {
+    "all_registered_scales_measured": true,
+    "three_matched_repeats_each": true,
+    "every_comparison_equal": true,
+    "twelve_measured_comparisons": true,
+    "single_thread_A_B": true,
+    "measured_B_includes_precompute": true,
+    "six_legacy_and_four_corrected": true,
+    "legacy_outputs_exactly_reproduced": true,
+    "corrected_scenes_monotonic": true,
+    "all_replays_share_points_and_rays": true,
+    "six_original_models_faces_and_mapping_verified": true,
+    "all_recorded_adverse_rays_explained": true,
+    "corrected_union_solids_contained": true,
+    "frozen20_preserved": true,
+    "all630_metrics_match_frozen_tolerances": true,
+    "no_rank_inversions_outside_score_tolerance": true
+  },
+  "all_experiment_gates_passed": true,
+  "canonical630_regression": {
+    "rank_changed_count": 0,
+    "significant_rank_inversions": 0,
+    "max_absolute_errors": {
+      "A": 0.0,
+      "H": 0.0,
+      "V": 9.094947017729282e-13,
+      "N": 0.0,
+      "score": 4.440892098500626e-16
+    }
+  },
+  "checked_utc": "2026-10-16T17:30:00.783587+00:00"
+}

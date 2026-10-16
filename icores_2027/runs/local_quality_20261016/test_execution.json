@@ -1,8 +1,10 @@
 {
   "run_id": "local_quality_20261016",
   "config_hash": "6433016792a46a4720d40a5c9d8a445e0a832cd8a896a67d4cfae06705f22d97",
-  "code_commit": "3ed957029d1e5e1b30406bd63a6e35d30530e9b0",
-  "input_hash": "dd55c39d8ca9fd7d5fe9f0827f2455c667aec5aa155be817853f20604d1b229a",
+  "code_commit": "5ec39767d80f5497928373c4be98e9b42118a3b3",
+  "input_hash": "757ceaabde1093f65e451cc9b18da1c723b3877dd1604b7da91530c0cdfbb442",
+  "working_status_sha256": "2ee1a925f13b47ff23b84704cd1fe345704ac11e098775d0b52fda8a4e04f15a",
+  "paper_numbers_sha256": "324642e52b051aa74f2d78c31bf0f56d1a6b6a4d1a96a62a616d13911a034aa9",
   "measurement_class": "MEASURED_LOCAL_TEST_EXECUTION",
   "command": [
     "-m",
@@ -11,8 +13,8 @@
     "icores_2027/tests",
     "icores_2027/formatting/test_anonymity.py"
   ],
-  "started_utc": "2026-10-16T06:20:21.956155+00:00",
-  "ended_utc": "2026-10-16T06:20:29.370490+00:00",
+  "started_utc": "2026-10-16T17:30:02.683445+00:00",
+  "ended_utc": "2026-10-16T17:30:09.831070+00:00",
   "exit_code": 0,
-  "stdout_sha256": "be329d4260c73eeef5cc9a48c52ecb90539000aa247594262b2ba5ad54837096"
+  "stdout_sha256": "d485138807511b7ac15746f2be08b10021256bd027167126f0772f82bf5665dd"
 }

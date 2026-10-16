@@ -1,4 +1,26 @@
-# ICORES 2027 云端部分证据交接
+# ICORES 2027 本机最终证据交接
+
+## 当前本机状态，2026-10-17
+
+本机实验和实际验证已完成，正在进行最后的Git证据冻结、tag和远端核验。最终E/M提交和就绪状态以本节最终元数据及`RESULTS_SUMMARY.json`为准；下方云端部分交接为历史，已被本机证据取代。
+
+- 仓库`eksn425-del/light-right-repair-ai-prototype`，当前GitHub connector已核验private。
+- 唯一分支`icores-2027-sprint`，不改main、不强推、不移动历史tag。
+- evidence_commit E：待本次完整证据提交产生，不使用旧afc13c0冒充本机结果。
+- handoff_commit M：补入E/tag和最终状态的元数据提交，由分支HEAD与外部交付定位，避免自引用。
+- annotated tag：`icores-2027-evidence-v1`待创建和核验；预定名称不算实际已创建。
+
+已完成：45建筑/2031点/16时槽真实归档输入核查，六个旧HB场景逐点逐时精确重放，四个contained-v2新场景实际运行；原20样本未改未重跑。四个旧转译越界，恶化射线实际命中C24越出原轮廓的上层墙面，原因已解释。四个修正版在固定模型/网格/太阳下均无新增遮挡事件、恶化点或新增暗区。C9/C13本就包含，复用其未变结果，不是第11次模拟。
+
+5/20/60/630各三次匹配测试全部等价；630的A为实测，B含预计算。最终中位A=11608.1830554s，B=24.0371276s，比值482.9272136。只针对两个具体单线程同原语实现，不是所有CAD/HB/空间索引实现的优势。完整630旧新排序零变化。112项实际本机测试通过，失败过程和旧结果保留。
+
+重要限制：规范几何为DXF组件包围盒并集，存在共享/重叠轮廓与旧OBJ不一致，不能当作精确实测边界。体积分列名义预算和实际并集移除，不声称等体积。实际WEA为常量载体，不是实测天气；north0为假设。HB/pvlib有效太阳向量不同。20样本仍是同场地覆盖样本，rho1、恒定N和MAE0.45m²的限定继续适用。
+
+当前阅读顺序：`audit/LOCAL_FINAL_REPORT.md`、`paper_support/WEB_WRITING_BRIEF.md`、`METHOD_SPEC.md`、最终数字/主张/差异台账，再读`runs/local_ablation_20261016/`、`runs/local_hb_20261016/translation_outcome_comparison.csv`及源表、`runs/local_protocol_20261016/`、`runs/local_quality_20261016/`。两张新聚合图有300dpi PNG、原生SVG/PDF和各自source/run/script/hash manifest，无真实场地几何。
+
+网页端下一步是审查最终证据和修订正式英文稿，不再补造数据或重选原20。作者仍需处理署名/权益、单投、匿名与AI披露位置、文献/模板已记录冲突及正式稿逐页QA。论文未完成、未获作者批准、未投稿。原CAD/DXF/SKP/OBJ、点位坐标、WEA、HBJSON和Radiance中间文件只留本机。
+
+## 以下为保留的云端历史检查点，不是当前状态
 
 EVIDENCE_READY_FOR_WEB_REVIEW=false。此包是可审查的部分检查点，不是科学验收完成或可投稿稿件。
 

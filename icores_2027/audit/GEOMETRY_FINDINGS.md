@@ -1,5 +1,43 @@
 # G2 geometry and monotonicity audit
 
+## Current Author-Local Resolution, 2026-10-17
+
+The cloud findings below are retained as a historical checkpoint, including their
+then-BLOCKED rows. They are superseded for current real-scene status by
+`runs/local_hb_20261016/translation_outcome_comparison.csv`,
+`historical_scene_mapping.csv`, `adverse_ray_explanation.csv` and
+`design_translation_recheck.csv`. Original raw files remain local.
+
+All six historical HB models regenerate exactly after JSON list/tuple
+normalization, without coordinate rounding. Unique original point IDs/XYZ,
+actual six-column Radiance points, solar source order and sixteen time columns
+are checked. Every expected roof/wall face exists; the actual canonical site
+has no holes. No shared baseline parser/time/missing-face error was found.
+
+Four of five legacy translations protrude beyond the original solid. The
+eight adverse ray events across C9/C24 and C13/C24 are actually traced to
+C24 upper-stepback walls outside its original footprint. Each scene has four
+worsened receivers and9m² newly low area; these historical negative results
+remain intact and are not explained away as ordinary subtraction trade-offs.
+
+Six controlled original replays reproduce all2031×16 visibility entries exactly.
+Four contained-v2 scenes were additionally run, with the same points, rays,
+time columns and solver; all new scenes use cpu-count1/workers1. The corrections
+have no newly blocked ray event, worsened point or newly low area. C9/C24
+low-area reduction changes342→351m²; C13/C24 changes207→216m². C9/C15 and
+C6/C33 grid metrics stay unchanged, despite fixing geometric containment.
+C9/C13 was already contained and is reused, not counted as an extra simulation.
+
+Nominal target volume, flat-rule union removal, legacy union removal and corrected
+union removal are distinct columns. In particular the canonical source is a
+component-bbox union approximation with shared/overlapping footprints, not a
+surveyed exact model. No volume-matching, construction feasibility, real-street
+measurement or universal-geometry validity claim follows. The `_UNVALIDATED`
+label in the original geometry-only CSV records its pre-HB creation stage; the
+joined current outcome table supplies the later controlled validation status.
+
+## Preserved Cloud Checkpoint
+
 Status: source/synthetic counterexamples executed; real-site adverse points UNRESOLVED.
 No real footprint, original 2,031-row sensor ordering, historical model/binary visibility
 or Raytrace replay has been inferred, reconstructed from images, or substituted.

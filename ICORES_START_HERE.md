@@ -14,7 +14,11 @@
 4. 读取旧 `START_HERE.md`、`PROJECT_STATE.json` 了解档案，但不要把旧 SOICT 任务和旧 READY 标记当作本轮结论。
 5. 读取 `research_reproducibility/` 的论文数字、主张、代码和 `paper_assets/`。
 
-当前只完成了执行计划建档。尚未验证 dot 的终端/私有数据权限；尚未执行本轮新实验。所有任务初始化为 NOT_STARTED。
+本机接续实验已执行完成，当前入口为 `icores_2027/HANDOFF_TO_WEB.md` 和
+`icores_2027/RESULTS_SUMMARY.json`。先读 `icores_2027/audit/LOCAL_FINAL_REPORT.md`、
+`icores_2027/paper_support/WEB_WRITING_BRIEF.md` 及最终数字/主张台账。原任务书与云端
+BLOCKED运行目录保留作历史证据，不代表本机接续后的状态。最终 evidence commit、
+交接提交和实际tag以最终交接文件及远端核验为准，不把预定名称当成已创建tag。
 
 ## 分工
 - dot：环境核查、代码和物理一致性审计、真实实验、汇总数据、官方模板获取及编译验证、GitHub交付。

@@ -1,0 +1,19 @@
+{
+  "run_id": "local_production_regression_20261017",
+  "code_commit": "5ec39767d80f5497928373c4be98e9b42118a3b3",
+  "measurement_class": "MEASURED_LOCAL_TEST_EXECUTION",
+  "command": [
+    "-m",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q",
+    "-ra",
+    "research_reproducibility/tests"
+  ],
+  "started_utc": "2026-10-16T17:32:28.926678+00:00",
+  "ended_utc": "2026-10-16T17:32:33.415846+00:00",
+  "exit_code": 0,
+  "output_sha256": "bec57209feb7f85036de67cf5ded9bb5721afae3d33727b05cc4a4ead3befd69",
+  "scope": "Additional historical public-mirror production suite; two intentional private-table skips, not counted among112 ICORES passes"
+}

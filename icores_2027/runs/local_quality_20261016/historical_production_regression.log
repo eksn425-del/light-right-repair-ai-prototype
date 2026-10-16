@@ -1,0 +1,5 @@
+..........ss.......                                                      [100%]
+=========================== short test summary info ===========================
+SKIPPED [1] research_reproducibility\tests\test_research_invariants.py:83: Private geometry table is intentionally omitted from the public mirror.
+SKIPPED [1] research_reproducibility\tests\test_research_invariants.py:95: Private protected-building table is intentionally omitted from the public mirror.
+17 passed, 2 skipped in 3.18s

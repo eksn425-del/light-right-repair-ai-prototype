@@ -1,5 +1,17 @@
 # Frozen-table statistics and time semantics audit
 
+**Local resolution, 2026-10-17:** the recomputation below remains a historical
+aggregate audit, not new HB. Its then-unverified input/time statements are now
+resolved by `LOCAL_PROTOCOL_FINDINGS.md` and `runs/local_hb_20261016/`.
+Actual16-slot/WEA/HOY/solar-column mapping and UTC+8 are checked; constant
+DNI1000/DHI0 is not measured weather. Actual HB and pvlib effective rays differ
+slightly. Six legacy scenes were exactly replayed and four contained corrections
+were separately simulated. The original20 sample and all old statistics remain
+unchanged; no resampling or heldout HB rerun was performed. Canonical bbox/shared
+footprint fidelity limits all physical interpretation, including agreement
+statistics. Current efficiency is the separately measured local A/B comparison,
+not any of the historical cross-solver or extrapolated costs below.
+
 Run: `statistics_20261016`; executed 2026-10-16 UTC after protocol commit
 `ae7483ca493768e23a19cf402446c54d6f6c95ef`. Historical scientific freeze:
 `6b64fe43451e2e0330930a5677cbe3432307282b`, run `baseline_20260909_clean`.

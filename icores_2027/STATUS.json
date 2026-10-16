@@ -21,21 +21,19 @@
   "tasks": {
     "G0": "PASS",
     "G1": "PASS",
-    "G2": "RUNNING",
-    "G3": "RUNNING",
-    "G4": "RUNNING",
-    "G5": "RUNNING",
+    "G2": "PASS",
+    "G3": "PASS",
+    "G4": "PASS",
+    "G5": "PASS",
     "G6": "PASS",
     "G7": "RUNNING"
   },
-  "evidence_commit": "afc13c078965f225ea4aaa62ff3db4b2010908b3",
+  "evidence_commit": null,
   "handoff_commit": null,
   "known_open_items": [
-    "Six historical and four corrected HB scenes prepared; controlled replays pending",
-    "Real matched A/B benchmark running; complete repeats and equivalence not yet available",
-    "Actual union volume differs from target proxy; final ledger and claim scope require update",
-    "Final evidence tests, release scan, commits and annotated tag pending",
-    "Anonymous disclosure placement, authorship, rights and single-submission confirmation pending"
+    "Final release audit, evidence commit, handoff metadata and remote annotated tag verification",
+    "Full English manuscript and web review",
+    "Author confirmation of rights, authorship, anonymous AI disclosure and single submission"
   ],
   "new_execution_classes": [
     "SYNTHETIC_RUNTIME_SMOKE",
@@ -43,24 +41,34 @@
     "RECOMPUTED_FROZEN_AGGREGATES",
     "TEMPLATE_BUILD_AND_TESTS"
   ],
-  "real_site_new_HB_scenarios": 0,
+  "real_site_new_HB_scenarios": 10,
   "updated_utc": "2026-10-16T05:48:37.721020+00:00",
   "stage_details": {
-    "G0": "Author-local Windows inputs found, hash and 45/2031/16 strict validation passed; original HB scenes and solver present",
-    "G1": "Protocol committed ae7483ca493768e23a19cf402446c54d6f6c95ef before simulations/benchmark",
-    "G2": "Six actual historical models exactly regenerated; original sensors and solar/time mapping verified; eight adverse rays traced to C24 outside geometry; ten controlled replays pending",
-    "G3": "Real matched benchmark running, registered pilot selected full5/20/60/630, three repeats; partial outputs not final speedup",
-    "G4": "Actual historical vectors/time columns mapped across six scenes; 16 slots integrate8h; HB and pvlib effective rays measurably differ",
-    "G5": "103 local integrated tests passed after recording and repairing checkout line-ending failures; final ledgers await completed measurements",
-    "G6": "Official current template compiled, 2 pages rendered and visually checked; 15 anonymity tests; 13 bibliography metadata checks; proof is not final manuscript",
-    "G7": "Partial cloud evidence freeze and local/web handoff only; scientific acceptance BLOCKED; remote tag unavailable."
+    "G0": "Author-local45/2031/16 inputs and six old scenes located and hash-verified",
+    "G1": "Original scientific protocol and20 sample unchanged; explicit normalization identity amendment",
+    "G2": "Six exact legacy replays; four contained corrections measured; actual C24 adverse-ray cause explained; no site hole/missing-face problem observed",
+    "G3": "5/20/60/630 each three matched repetitions; all pointwise/metric/score/rank/Pareto checks equal; full630 A measured and B includes precompute",
+    "G4": "Actual recipe/WEA/time/solar mapping verified;8h integration and UTC+8; HB/pvlib ray difference and weather assumptions disclosed",
+    "G5": "112 actual local integrated tests passed; frozen630 rank changes0; final ledgers and vector charts sourced; release audit to be recorded",
+    "G6": "Verified cloud template proof reused, local anonymity tests pass; no new full manuscript or local TeX build claimed",
+    "G7": "Local experiments complete; final evidence E, metadata M, tag and remote checks pending"
   },
-  "partial_handoff_prepared": true,
+  "partial_handoff_prepared": false,
   "cloud_branch_writes": "STOPPED_AT_HANDOFF_COMMIT",
   "tag": null,
-  "tag_status": "TAG_CREATION_UNAVAILABLE",
+  "tag_status": "PENDING_EVIDENCE_FREEZE",
   "EVIDENCE_READY_FOR_WEB_REVIEW": false,
   "handoff_commit_resolution": "The commit that adds this metadata is M; use verified GitHub branch HEAD or external delivery, avoiding self-reference.",
   "local_takeover_commit": "32721b622d4676be46d210c2c691cbe6a3ee2e92",
-  "local_inputs_report": "runs/local_inputs_20261016/local_input_validation.json"
+  "local_inputs_report": "runs/local_inputs_20261016/local_input_validation.json",
+  "planned_final_tag": "icores-2027-evidence-v1",
+  "local_experiments_completed_on": "2026-10-17",
+  "final_experiment_gates": "runs/local_quality_20261016/experiment_gate_report.json",
+  "scope_limitations": [
+    "Frozen DXF component-bbox/shared-footprint approximation, not surveyed as-built geometry",
+    "Nominal per-building volume differs from union-integrated solid removal",
+    "Same-site coverage20 is not population probability sampling",
+    "Matched speedup only applies to two specific single-thread same-primitive implementations",
+    "North0/fixed day/grid/time bins and constant weather are modeling assumptions"
+  ]
 }

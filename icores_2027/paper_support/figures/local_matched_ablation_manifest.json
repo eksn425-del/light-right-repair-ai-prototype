@@ -1,0 +1,25 @@
+{
+  "figure": "local_matched_ablation",
+  "source_table": "runs/local_ablation_20261016/ablation_summary.csv",
+  "source_sha256": "01c05a9cad3b7974a286589d2a2d03f4d56e168e06a472a09344400657cc5e84",
+  "script": "icores_2027/scripts/local_finalize.py",
+  "script_sha256": "ce669b8ae8714b8c30b9858d9935e63c146d971bb5ca49256c46ace72b14bb51",
+  "artifact_build_commit": "5ec39767d80f5497928373c4be98e9b42118a3b3",
+  "files": {
+    "local_matched_ablation.svg": "890088cbba96cf42906463bf9d32eeb6265a92ed48bab73e22cacb5a59ee0b96",
+    "local_matched_ablation.pdf": "a6246feb7b66ced3836a449a053254a1832cc828084ddc9f6bcbe0f4ff4f5dc7",
+    "local_matched_ablation.png": "b1afea61ebe48a3623ac7bea2bda6f5b57f10da2a01cd836be0fa50388c7da1e"
+  },
+  "geometry_exposed": false,
+  "release_scope": "PRIVATE_REVIEW_ONLY",
+  "formats": {
+    "svg": "native vector",
+    "pdf": "native vector",
+    "png": "300 dpi"
+  },
+  "run_id": "local_ablation_20261016",
+  "config_hash": "6433016792a46a4720d40a5c9d8a445e0a832cd8a896a67d4cfae06705f22d97",
+  "code_commit": "1ea4e57a858a23702f3fa8950e9e4e0734bfb7c3",
+  "input_hash": "880fe4c78018f201e0279781db2026764b43c98020c43a4c0b86946c88879732",
+  "measurement_class": "MEASURED_REAL_SITE"
+}

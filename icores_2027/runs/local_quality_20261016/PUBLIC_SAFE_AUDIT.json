@@ -1,0 +1,30 @@
+{
+  "run_id": "local_release_20261017",
+  "config_hash": "6433016792a46a4720d40a5c9d8a445e0a832cd8a896a67d4cfae06705f22d97",
+  "code_commit": "105f193d2c033098d47139e2e42bcff7b9a73916",
+  "measurement_class": "RECOMPUTED_PUBLIC_SAFE_RELEASE_AUDIT",
+  "script_sha256": "2ca1cb0d53573f70b17609f0d36e4e5bff6577092653cb94acbb691e704aa0c8",
+  "input_hash": "c95054ae92703af0ea397154ad081bd43134ce56540e92f079ece9a4225e3879",
+  "created_utc": "2026-10-16T17:34:12.610451+00:00",
+  "new_or_changed_files_checked": 99,
+  "csvs_checked": 51,
+  "scientific_artifacts_hashed": 59,
+  "errors": [],
+  "passed": true,
+  "protocol_scientific_content_unchanged": true,
+  "protocol_git_lf_sha256": "86ec7ad7ff5d78048ded963e659ecf0bfbc3d20efad91d46668e516461532f0a",
+  "protocol_windows_working_sha256": "6433016792a46a4720d40a5c9d8a445e0a832cd8a896a67d4cfae06705f22d97",
+  "frozen20_sha256": "ad4abb9b89a263edaecc2cb3553f7832ce0ccb460521ba218e0083e05bcb46b2",
+  "vector_checks": {
+    "local_matched_ablation.svg": {
+      "native_vector_no_embedded_raster": true
+    },
+    "local_translation_recheck.svg": {
+      "native_vector_no_embedded_raster": true
+    }
+  },
+  "public_geometry_added": false,
+  "restricted_originals_upload_allowed": false,
+  "visual_review": "Both aggregate PNG plots inspected in-chat after generation; labels and footnote readable, no overlap or site geometry",
+  "main_commit": "7070d8873fa60ab1e60be30b1b9daa44e7bc21fa"
+}

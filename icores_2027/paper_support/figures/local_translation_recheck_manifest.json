@@ -1,0 +1,25 @@
+{
+  "figure": "local_translation_recheck",
+  "source_table": "runs/local_hb_20261016/design_translation_recheck.csv",
+  "source_sha256": "d8c5757546117cd1b6abdee684d327ebf93995b99030069be3772fa40bdaa0ff",
+  "script": "icores_2027/scripts/local_finalize.py",
+  "script_sha256": "ce669b8ae8714b8c30b9858d9935e63c146d971bb5ca49256c46ace72b14bb51",
+  "artifact_build_commit": "5ec39767d80f5497928373c4be98e9b42118a3b3",
+  "files": {
+    "local_translation_recheck.svg": "1cc47e4c19b013ff0247b8bf81a5b2b8634cd6767db695d091450e223dbf9560",
+    "local_translation_recheck.pdf": "1a22b413473ab09ae3add09dc559718e0ad3d5f04f9c00a555ff6fb93d1f5a6c",
+    "local_translation_recheck.png": "ef4a35f0bab0570f261006b923016b494a1ed853a51d47b627ca3d8de78606a0"
+  },
+  "geometry_exposed": false,
+  "release_scope": "PRIVATE_REVIEW_ONLY",
+  "formats": {
+    "svg": "native vector",
+    "pdf": "native vector",
+    "png": "300 dpi"
+  },
+  "run_id": "local_hb_20261016",
+  "config_hash": "6433016792a46a4720d40a5c9d8a445e0a832cd8a896a67d4cfae06705f22d97",
+  "code_commit": "a4cc383c7a69a1d4978154e9053bfd21138968a6",
+  "input_hash": "976b22c330137f48cbdc616fd301378782154fd9c7ba857cf7acbd1dfd2448fb",
+  "measurement_class": "MEASURED_LOCAL_HB_REPLAY"
+}
