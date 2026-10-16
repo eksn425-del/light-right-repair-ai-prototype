@@ -17,13 +17,13 @@
   "manuscript_draft_ready": false,
   "author_approved": false,
   "submitted": false,
-  "new_experiments_run": false,
+  "new_experiments_run": true,
   "tasks": {
     "G0": "COMPLETED_WITH_LIMITATIONS",
     "G1": "PASS",
     "G2": "NOT_STARTED",
     "G3": "NOT_STARTED",
-    "G4": "NOT_STARTED",
+    "G4": "COMPLETED_WITH_LIMITATIONS",
     "G5": "NOT_STARTED",
     "G6": "NOT_STARTED",
     "G7": "NOT_STARTED"
@@ -36,5 +36,10 @@
     "Design-stepback monotonicity unresolved",
     "Matched real-input ablation blocked by input gaps",
     "Anonymous disclosure placement and author single-submission approval pending"
-  ]
+  ],
+  "new_execution_classes": [
+    "SYNTHETIC_RUNTIME_SMOKE",
+    "RECOMPUTED_FROZEN_AGGREGATES"
+  ],
+  "real_site_new_HB_scenarios": 0
 }
