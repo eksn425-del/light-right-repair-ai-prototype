@@ -1,0 +1,6 @@
+Started UTC: 2026-10-16T05:37:22.139317+00:00
+Command: python -m pytest icores_2027/tests/test_geometry_ablation.py -q
+............................................................             [100%]
+60 passed in 1.03s
+Ended UTC: 2026-10-16T05:37:23.878173+00:00
+Exit code: 0

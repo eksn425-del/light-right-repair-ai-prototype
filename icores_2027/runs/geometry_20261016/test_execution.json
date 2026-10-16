@@ -1,0 +1,30 @@
+{
+  "run_id": "geometry_20261016",
+  "measurement_class": "EXECUTED_SYNTHETIC_AND_FROZEN_ATTRIBUTE_TESTS",
+  "code_commit": "ae7483ca493768e23a19cf402446c54d6f6c95ef",
+  "config_hash": "86ec7ad7ff5d78048ded963e659ecf0bfbc3d20efad91d46668e516461532f0a",
+  "started_utc": "2026-10-16T05:37:22.139317+00:00",
+  "ended_utc": "2026-10-16T05:37:23.878173+00:00",
+  "elapsed_seconds": 1.7391858900009538,
+  "exit_code": 0,
+  "command": "python -m pytest icores_2027/tests/test_geometry_ablation.py -q",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "source_hashes": {
+    "icores_2027/scripts/geometry_audit.py": "b73665525ba08105b5cad714b4de7a5161b1228bf02c7f76a6511f2557585b08",
+    "icores_2027/scripts/matched_ablation.py": "f295a259c99bd39cb9ceee89eba38cdcaad9e5c3780a9a58aa256ddf030397d3",
+    "icores_2027/tests/test_geometry_ablation.py": "43510c547d0d1ad38582b93682e28eacb4e86f493237337f1f0ddb09989e164b"
+  },
+  "packages": {
+    "numpy": "2.1.0",
+    "pandas": "2.2.3",
+    "shapely": "2.2.0",
+    "pytest": "9.1.1",
+    "pvlib": "0.16.1",
+    "honeybee-core": "1.64.76",
+    "ladybug-geometry": "1.35.6"
+  },
+  "windows_execution": "NOT_TESTED",
+  "real_scene_simulations": 0,
+  "note": "Final source containing commit will be supplied after parent commits code; no real geometry or benchmark executed."
+}

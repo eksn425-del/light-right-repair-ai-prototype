@@ -6,8 +6,8 @@
 |---|---|---|---|---|---|
 | G0 | P0 | 实际执行能力、私有输入、官方规则复核 | GitHub/工具连接 | audit/EXECUTION_CAPABILITIES.json、MISSING_INPUTS.md | COMPLETED_WITH_LIMITATIONS |
 | G1 | P0 | 冻结新协议、容差、benchmark子集 | G0 | configs/ICORES_PROTOCOL.json+commit | PASS |
-| G2 | P0 | 5方案包含性/实际体积/恶化点审计及必要复算 | 真实几何、点位、HB | audit/GEOMETRY_FINDINGS.md、重算差异 | RUNNING |
-| G3 | P0 | 同条件naive vs cached遮挡对照 | 固定输入和终端 | ablation_summary/equivalence/records | RUNNING |
+| G2 | P0 | 5方案包含性/实际体积/恶化点审计及必要复算 | 真实几何、点位、HB | audit/GEOMETRY_FINDINGS.md、重算差异 | BLOCKED |
+| G3 | P0 | 同条件naive vs cached遮挡对照 | 固定输入和终端 | ablation_summary/equivalence/records | BLOCKED |
 | G4 | P0 | N常量、样本性质、同指标统计、时间语义 | 现有表及必要模拟输入 | METHOD_SPEC、CLAIM_CORRECTIONS | COMPLETED_WITH_LIMITATIONS |
 | G5 | P0 | 实际tests、数字/主张/图表台账、差异 | G2–G4 | PAPER_NUMBERS_ICORES、pytest日志 | RUNNING |
 | G6 | P1 | 官方面板/模板下载、匿名骨架编译 | 联网、文档环境 | TEMPLATE_MANIFEST、编译日志 | RUNNING |

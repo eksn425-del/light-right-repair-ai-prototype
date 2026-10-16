@@ -1,0 +1,66 @@
+{
+  "created_at": "2026-10-16T05:37:25.588248+00:00",
+  "run_id": "geometry_20261016",
+  "config_hash": "86ec7ad7ff5d78048ded963e659ecf0bfbc3d20efad91d46668e516461532f0a",
+  "code_commit": "ae7483ca493768e23a19cf402446c54d6f6c95ef",
+  "input_hash": "df367047ccb7fbe05de3ff79470a98701ac9187291001b84c2a1b451dfa2e97f",
+  "measurement_class": "SYNTHETIC_TEST",
+  "source_hashes": {
+    "research_reproducibility/src/legacy_route_b/route_b_prepare_hb_batch.py": "e4d6e9d10f28746338a669929d838c328e2abf82fa2d517a1372c8f0e2a1f564",
+    "research_reproducibility/src/legacy_route_b/route_b_enumerate_2p5d_candidates.py": "b975782b0aba78083c3b75a6606d1f0760fbe51f87ee987092d340aac7a82c08",
+    "icores_2027/scripts/geometry_audit.py": "b73665525ba08105b5cad714b4de7a5161b1228bf02c7f76a6511f2557585b08"
+  },
+  "synthetic_input_spec": {
+    "footprints": {
+      "rectangle": {
+        "wkt": "POLYGON ((10 0, 10 8, 0 8, 0 0, 10 0))",
+        "height_m": 12
+      },
+      "concave_u": {
+        "wkt": "POLYGON ((0 0, 10 0, 10 10, 7 10, 7 3, 3 3, 3 10, 0 10, 0 0))",
+        "height_m": 12
+      },
+      "courtyard_hole": {
+        "wkt": "POLYGON ((0 0, 10 0, 10 10, 0 10, 0 0), (3 3, 7 3, 7 7, 3 7, 3 3))",
+        "height_m": 12
+      },
+      "multipart": {
+        "wkt": "MULTIPOLYGON (((4 0, 4 4, 0 4, 0 0, 4 0)), ((10 0, 10 6, 7 6, 7 0, 10 0)))",
+        "height_m": 12
+      }
+    },
+    "short_rectangle": {
+      "wkt": "POLYGON ((10 0, 10 10, 0 10, 0 0, 10 0))",
+      "height_m": 4.01
+    },
+    "ray_probe": {
+      "sensor_height_m": 0.1,
+      "grid_range": [
+        -2,
+        12,
+        2
+      ],
+      "added_patch_representative_points": true,
+      "altitudes_deg": [
+        15,
+        30,
+        45,
+        89
+      ],
+      "azimuths_deg": [
+        0,
+        45,
+        90,
+        135,
+        180,
+        225,
+        270,
+        315
+      ]
+    }
+  },
+  "real_site_status": "UNRESOLVED",
+  "contained_stepback_v2": "UNVALIDATED_CANDIDATE",
+  "synthetic_adverse_ray_count": 7,
+  "code_commit_note": "Source commit supplied by CLI (default is initial protocol/base tree); exact executed wrapper hashes supplied separately. Final evidence commit recorded by handoff metadata."
+}

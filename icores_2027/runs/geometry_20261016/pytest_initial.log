@@ -1,0 +1,30 @@
+........................FFF                                              [100%]
+=================================== FAILURES ===================================
+_______ test_matched_ablation_pointwise_metrics_scores_and_ranking_equal _______
+
+    def test_matched_ablation_pointwise_metrics_scores_and_ranking_equal():
+>       from matched_ablation import evaluate_method,compare_results
+E       ModuleNotFoundError: No module named 'matched_ablation'
+
+icores_2027/tests/test_geometry_ablation.py:195: ModuleNotFoundError
+___________________ test_safe_ablation_hours_mask_nighttime ____________________
+
+    def test_safe_ablation_hours_mask_nighttime():
+>       from matched_ablation import hours_from_blocked
+E       ModuleNotFoundError: No module named 'matched_ablation'
+
+icores_2027/tests/test_geometry_ablation.py:211: ModuleNotFoundError
+________________ test_real_cli_loader_rejects_missing_manifest _________________
+
+tmp_path = PosixPath('/tmp/pytest-of-agent/pytest-0/test_real_cli_loader_rejects_m0')
+
+    def test_real_cli_loader_rejects_missing_manifest(tmp_path):
+>       from matched_ablation import load_real_inputs,ReadinessError
+E       ModuleNotFoundError: No module named 'matched_ablation'
+
+icores_2027/tests/test_geometry_ablation.py:218: ModuleNotFoundError
+=========================== short test summary info ============================
+FAILED icores_2027/tests/test_geometry_ablation.py::test_matched_ablation_pointwise_metrics_scores_and_ranking_equal
+FAILED icores_2027/tests/test_geometry_ablation.py::test_safe_ablation_hours_mask_nighttime
+FAILED icores_2027/tests/test_geometry_ablation.py::test_real_cli_loader_rejects_missing_manifest
+3 failed, 24 passed in 0.74s

@@ -21,8 +21,8 @@
   "tasks": {
     "G0": "COMPLETED_WITH_LIMITATIONS",
     "G1": "PASS",
-    "G2": "RUNNING",
-    "G3": "RUNNING",
+    "G2": "BLOCKED",
+    "G3": "BLOCKED",
     "G4": "COMPLETED_WITH_LIMITATIONS",
     "G5": "RUNNING",
     "G6": "RUNNING",
@@ -47,8 +47,8 @@
   "stage_details": {
     "G0": "Shell, private GitHub write, actual Honeybee/Radiance6.0.2 smoke verified; missing real inputs documented",
     "G1": "Protocol committed ae7483ca493768e23a19cf402446c54d6f6c95ef before simulations/benchmark",
-    "G2": "Synthetic production-source geometry bugs confirmed; safe wrapper tests running; actual site replay BLOCKED on inputs",
-    "G3": "Fair same-primitive harness implementation and synthetic equality tests running; real benchmark BLOCKED on inputs",
+    "G2": "Source audit and60tests complete; synthetic defects confirmed; five real cases unresolved pending local inputs/HB rays",
+    "G3": "Fair same-primitive real-input-gated harness and synthetic equality complete; real timings/speedups NOT_MEASURED",
     "G4": "Frozen-table recomputation and15 tests complete; actual historical HB ray/time matching BLOCKED",
     "G5": "Ledgers and native vector chart generated; integrated QA pending",
     "G6": "Official anonymous template compiled; bibliography/anonymity QA finalizing",
