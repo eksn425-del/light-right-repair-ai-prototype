@@ -134,7 +134,11 @@ def generate(ablation,hb,code_commit):
         new_result=old_result if reused else fixed.iloc[0]
         rule=geom[geom.case_id.eq(g.case_id) & geom.scope.eq('whole_scene_union') & geom.scenario.eq('rule_flat')].iloc[0]
         corrected=geom[geom.case_id.eq(g.case_id) & geom.scope.eq('whole_scene_union') & geom.scenario.eq('contained_stepback_v2_UNVALIDATED')].iloc[0]
-        comparisons.append(dict(**provenance(new_result),case_id=g.case_id,
+        aggregate_provenance={**provenance(new_result),'code_commit':code_commit,
+            'input_hash':hashlib.sha256((sha(hb/'geometry_recheck.csv')+sha(hb/'design_translation_recheck.csv')).encode()).hexdigest(),
+            'measurement_class':'RECOMPUTED_REAL_EXPERIMENT_AGGREGATES'}
+        comparisons.append(dict(**aggregate_provenance,case_id=g.case_id,
+            hb_source_code_commit=new_result.code_commit,geometry_source_code_commit=g.code_commit,
             target_rule_volume_m3=g.target_removed_volume_m3,
             rule_union_removed_m3=rule.actual_removed_volume_m3,
             legacy_union_removed_m3=g.actual_removed_volume_m3,
@@ -210,11 +214,11 @@ def generate(ablation,hb,code_commit):
         for _,r in corrections.iterrows()]).to_csv(P/'CLAIMS_LEDGER_ICORES.csv',index=False)
     pd.DataFrame([dict(item=r.claim_id,old=r.old_claim,new=r.corrected_claim,reason=r.status,
         affected_stage=r.stage,**provenance(r)) for _,r in corrections.iterrows()]).to_csv(I/'audit/RESULT_DIFF_ICORES.csv',index=False)
-    make_figures(summary,replay,ablation,hb)
+    make_figures(summary,replay,ablation,hb,code_commit)
     return report
 
 
-def make_figures(summary,replay,ablation,hb):
+def make_figures(summary,replay,ablation,hb,code_commit):
     """Native vector plots contain aggregate metrics only, never real geometry."""
     import matplotlib
     matplotlib.use('Agg')
@@ -227,7 +231,7 @@ def make_figures(summary,replay,ablation,hb):
                 label='A: fresh intersections' if method=='A' else 'B: reuse (including precompute)')
     ax.set(xscale='log',yscale='log',xlabel='Candidate count (matched prefixes)',ylabel='Median end-to-end seconds')
     ax.legend(frameon=False);ax.grid(alpha=.2);fig.tight_layout()
-    save_figure(fig,'local_matched_ablation',out,ablation/'ablation_summary.csv',summary.iloc[0])
+    save_figure(fig,'local_matched_ablation',out,ablation/'ablation_summary.csv',summary.iloc[0],code_commit)
     plt.close(fig)
     legacy=replay[replay.model_type.eq('legacy_replay') & ~replay.scenario.eq('baseline')].copy()
     corrected=replay[replay.model_type.eq('contained_v2')]
@@ -246,11 +250,11 @@ def make_figures(summary,replay,ablation,hb):
     axes[0].legend(frameon=False,fontsize=8)
     fig.text(.5,.005,'*C9/C13 already contained: unchanged legacy result reused, not an extra solver run.',ha='center',fontsize=8)
     fig.tight_layout(rect=(0,.04,1,1))
-    save_figure(fig,'local_translation_recheck',out,hb/'design_translation_recheck.csv',replay.iloc[0])
+    save_figure(fig,'local_translation_recheck',out,hb/'design_translation_recheck.csv',replay.iloc[0],code_commit)
     plt.close(fig)
 
 
-def save_figure(fig,name,out,source,row):
+def save_figure(fig,name,out,source,row,code_commit):
     files={}
     for suffix in ['svg','pdf','png']:
         path=out/f'{name}.{suffix}';fig.savefig(path,dpi=300)
@@ -259,7 +263,8 @@ def save_figure(fig,name,out,source,row):
         files[path.name]=sha(path)
     record={'figure':name,'source_table':str(source.relative_to(I)).replace('\\','/'),
         'source_sha256':sha(source),'script':'icores_2027/scripts/local_finalize.py',
-        'script_sha256':sha(Path(__file__)),'files':files,'geometry_exposed':False,
+        'script_sha256':sha(Path(__file__)),'artifact_build_commit':code_commit,
+        'files':files,'geometry_exposed':False,
         'release_scope':'PRIVATE_REVIEW_ONLY','formats':{'svg':'native vector','pdf':'native vector','png':'300 dpi'},
         **provenance(row)}
     (out/f'{name}_manifest.json').write_text(json.dumps(record,indent=2),encoding='utf-8')
@@ -274,6 +279,8 @@ def run_tests(code_commit):
     (out/'integrated_final.log').write_text(done.stdout,encoding='utf-8')
     record={'run_id':'local_quality_20261016','config_hash':sha(I/'configs/ICORES_PROTOCOL.json'),
         'code_commit':code_commit,'input_hash':hashlib.sha256(''.join(sha(p) for p in sorted((I/'tests').glob('test*.py'))).encode()).hexdigest(),
+        'working_status_sha256':sha(I/'STATUS.json'),
+        'paper_numbers_sha256':sha(P/'PAPER_NUMBERS_ICORES.csv'),
         'measurement_class':'MEASURED_LOCAL_TEST_EXECUTION','command':command[1:],
         'started_utc':start,'ended_utc':datetime.now(timezone.utc).isoformat(),'exit_code':done.returncode,
         'stdout_sha256':sha(out/'integrated_final.log')}
