@@ -1,0 +1,22 @@
+{
+  "figure": "same_metric_area_agreement",
+  "source_table": "runs/statistics_20261016/comparison_values.csv",
+  "source_sha256": "9890c9ec0c751d24f4154008cf6e8fe680ef753e94ebf504a8702769dcadd16a",
+  "formats": {
+    "svg": "native vector paths and text, no embedded raster",
+    "pdf": "vector scatter and lines; text embedded",
+    "png": "160dpi raster"
+  },
+  "release_scope": "PRIVATE_REVIEW_ONLY; author approves anonymized release",
+  "interpretation": "No new HB simulations; same-site aggregate agreement; does not establish real geometry correctness",
+  "files": {
+    "same_metric_area_agreement.png": "407809dd600d9e732ca5a558e0d53605f5a8b9f2fe64cdffe671bedea79bab42",
+    "same_metric_area_agreement.svg": "76fa85ba6719a385a73247df55b5e34d98f9639e682c19840e01ff4b335be003",
+    "same_metric_area_agreement.pdf": "0c36e03b109ea0ce065c9acc222184ebaf885729de35d6649a1bb7a1a6d096a4"
+  },
+  "run_id": "statistics_20261016",
+  "config_hash": "86ec7ad7ff5d78048ded963e659ecf0bfbc3d20efad91d46668e516461532f0a",
+  "code_commit": "936aa2fe8d044a5754d54bbe4e953fe30be53fa7",
+  "input_hash": "eab8b2c3ecbc0eb3cb4e105ba168a35656b84c24a8064bd00c46686e3efddfc7",
+  "measurement_class": "RECOMPUTED_FROZEN_AGGREGATES"
+}

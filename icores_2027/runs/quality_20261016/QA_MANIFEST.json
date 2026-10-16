@@ -1,0 +1,20 @@
+{
+  "completed_utc": "2026-10-16T05:48:58.655345+00:00",
+  "command": "python -m pytest -q icores_2027/tests icores_2027/formatting/test_anonymity.py",
+  "result": "96 passed in 2.06s",
+  "code_base_commit": "79610573d4778c15c1a98e60036322d7cb60dea7",
+  "uncommitted_test_and_ledger_scripts_recorded_by_sha256": {
+    "icores_2027/tests/test_geometry_ablation.py": "43510c547d0d1ad38582b93682e28eacb4e86f493237337f1f0ddb09989e164b",
+    "icores_2027/tests/test_evidence_contracts.py": "a211094dc47db0726db74b20c8db76a018c0cb06e26151d9bb7a10b45e898a79",
+    "icores_2027/tests/test_stats_audit.py": "94578ef8683eb3f8442e4eeb9863e62ce4d6bd998e89c037dd952c83019da218",
+    "icores_2027/scripts/build_evidence_ledgers.py": "14b1b714906c352ac2fa08c202713f3d6f0264e1d03d0c4cfd8cbd9c5561ff9f",
+    "icores_2027/scripts/smoke_hb_runtime.py": "1118978ecba797dd76bfd3aa7cf5f236bbc9443165251567eb1ee8f947f813c8",
+    "icores_2027/scripts/matched_ablation.py": "f295a259c99bd39cb9ceee89eba38cdcaad9e5c3780a9a58aa256ddf030397d3",
+    "icores_2027/scripts/geometry_audit.py": "b73665525ba08105b5cad714b4de7a5161b1228bf02c7f76a6511f2557585b08",
+    "icores_2027/scripts/stats_audit.py": "cc139d08f983ced6364d3f3d0587f7c053c8b3d4e4c5b61581892891104fdd11",
+    "icores_2027/formatting/verify_bibliography_provenance.py": "600c5fc4a6d5606f2034b9c3772102f663fc4168ee5e41aa819f98424358f6e3",
+    "icores_2027/formatting/test_anonymity.py": "003666246bc08c52b3a4c972cf9e5174fbd789d766b92664ea5f77445d8dc269",
+    "icores_2027/formatting/build_anonymous.py": "c34021102e4462644a2b2b25085c1272bd2e18be055f8f77f4e120ba3833c1f7"
+  },
+  "scope": "Actual cloud run; synthetic and frozen aggregates, no new real site replay"
+}

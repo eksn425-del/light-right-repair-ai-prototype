@@ -12,3 +12,7 @@ Source index: `project_archive_2026_10_16/indexes/EXCLUDED_SOURCE_FILES.csv`, re
 Not input requests: Radiance/lbt-recipes are runtime dependencies being inspected/installed by the executor. Author's current 12-page manuscript is not needed for these experiments. The original frozen 20 samples will not be regenerated.
 
 Only real geometry/replay/matched-scene benchmarking and actual historical binary time correspondence are blocked. Code audits, synthetic invariants, frozen aggregate-statistic recomputation, official-template build and honest blocked handoff continue. EVIDENCE_READY_FOR_WEB_REVIEW remains false.
+
+## Updated execution route requested by author
+
+The author chose local Codex continuation for computer-dependent discovery and experiments. Use `LOCAL_CODEX_HANDOFF.md`: locate the above files locally, keep restricted inputs and complete pointwise outputs on that computer, and push only permitted derived evidence to this same private branch. No cloud upload of raw inputs is required. Cloud work will stop branch writes at the final partial checkpoint before local Codex takes over. Missing-to-cloud does not imply these files are absent on the author's computer.

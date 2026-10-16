@@ -1,8 +1,8 @@
 {
-  "created_at": "2026-10-16T05:37:25.588248+00:00",
+  "created_at": "2026-10-16T05:39:41.975342+00:00",
   "run_id": "geometry_20261016",
   "config_hash": "86ec7ad7ff5d78048ded963e659ecf0bfbc3d20efad91d46668e516461532f0a",
-  "code_commit": "ae7483ca493768e23a19cf402446c54d6f6c95ef",
+  "code_commit": "ecf8c591a5231b76688700cb8f258d4dcc8c79d5",
   "input_hash": "df367047ccb7fbe05de3ff79470a98701ac9187291001b84c2a1b451dfa2e97f",
   "measurement_class": "SYNTHETIC_TEST",
   "source_hashes": {

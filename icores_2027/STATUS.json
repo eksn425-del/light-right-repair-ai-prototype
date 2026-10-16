@@ -24,9 +24,9 @@
     "G2": "BLOCKED",
     "G3": "BLOCKED",
     "G4": "COMPLETED_WITH_LIMITATIONS",
-    "G5": "RUNNING",
+    "G5": "COMPLETED_WITH_LIMITATIONS",
     "G6": "PASS",
-    "G7": "NOT_STARTED"
+    "G7": "BLOCKED"
   },
   "evidence_commit": null,
   "handoff_commit": null,
@@ -40,18 +40,25 @@
   ],
   "new_execution_classes": [
     "SYNTHETIC_RUNTIME_SMOKE",
-    "RECOMPUTED_FROZEN_AGGREGATES"
+    "SYNTHETIC_PRODUCTION_SOURCE_AUDIT",
+    "RECOMPUTED_FROZEN_AGGREGATES",
+    "TEMPLATE_BUILD_AND_TESTS"
   ],
   "real_site_new_HB_scenarios": 0,
-  "updated_utc": "2026-10-16T05:42:23.687836+00:00",
+  "updated_utc": "2026-10-16T05:48:37.721020+00:00",
   "stage_details": {
     "G0": "Shell, private GitHub write, actual Honeybee/Radiance6.0.2 smoke verified; missing real inputs documented",
     "G1": "Protocol committed ae7483ca493768e23a19cf402446c54d6f6c95ef before simulations/benchmark",
     "G2": "Source audit and60tests complete; synthetic defects confirmed; five real cases unresolved pending local inputs/HB rays",
     "G3": "Fair same-primitive real-input-gated harness and synthetic equality complete; real timings/speedups NOT_MEASURED",
     "G4": "Frozen-table recomputation and15 tests complete; actual historical HB ray/time matching BLOCKED",
-    "G5": "96 integrated tests passed; derived ledgers/vector chart complete; final provenance freeze pending",
+    "G5": "96 integrated tests passed; numeric/claim/difference ledgers and native vector chart verified. Real-input evidence remains missing.",
     "G6": "Official current template compiled, 2 pages rendered and visually checked; 15 anonymity tests; 13 bibliography metadata checks; proof is not final manuscript",
-    "G7": "Not frozen yet; eventual partial handoff is not scientific readiness"
-  }
+    "G7": "Partial cloud evidence freeze and local/web handoff only; scientific acceptance BLOCKED; remote tag unavailable."
+  },
+  "partial_handoff_prepared": true,
+  "cloud_branch_writes": "STOP_AFTER_HANDOFF_COMMIT",
+  "tag": null,
+  "tag_status": "TAG_CREATION_UNAVAILABLE",
+  "EVIDENCE_READY_FOR_WEB_REVIEW": false
 }
