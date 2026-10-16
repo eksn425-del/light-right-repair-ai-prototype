@@ -1,0 +1,9 @@
+{
+  "local_sha256": "09c362af34cba12b5752b724b8d698a5e20dd6d7847b891a920bdccbde358028",
+  "retained_sha256": "eb5a94fbe9e82d24a96babecb34b9af0c05803cfeba7129a8a6e9c6dc0dcbf22",
+  "retained_bytes": 304626,
+  "pages": 15,
+  "all_page_render_equal": true,
+  "text_equal": true,
+  "library_file_id": "libfile_6abe2f8ca77c8191b600dfd11f7b74a6"
+}

@@ -1,0 +1,115 @@
+{
+  "pdf_sha256": "09c362af34cba12b5752b724b8d698a5e20dd6d7847b891a920bdccbde358028",
+  "pages": 15,
+  "nonwhitespace_extracted_pdf_characters": 32804,
+  "character_count_method": "PyMuPDF page text extraction includes vector figure labels, equations, captions, footnotes, tables and bibliography. Extraction is not a certified PRIMORIS count. Conservative source-based upper check below adds all TeX syntax, complete bibliography and figure label text; both are inside 10000\u201350000.",
+  "conservative_nonwhitespace_tex_plus_bib_plus_figure_text": 37324,
+  "official_range": [
+    10000,
+    50000
+  ],
+  "range_pass": true,
+  "metadata": {
+    "format": "PDF 1.4",
+    "title": "Auditable Solar-Access Decision Support through Exact Blocker Reuse and Containment-Constrained Translation",
+    "author": "",
+    "subject": "Anonymous regular-paper manuscript for author review",
+    "keywords": "solar access, decision support, exhaustive screening, geometry validation",
+    "creator": "LaTeX",
+    "producer": "pdfTeX-1.40.26",
+    "creationDate": "",
+    "modDate": "",
+    "trapped": "",
+    "encryption": null
+  },
+  "identity_scan_terms": [
+    "eksn425",
+    "light-right-repair",
+    "/workspace/",
+    "/Users/",
+    "github.com/eksn",
+    "af486946",
+    "91d0d4d7",
+    "Alan"
+  ],
+  "identity_hits": [],
+  "overfull_boxes": 0,
+  "undefined_reference_or_citation": false,
+  "remaining_build_warning": "amsmath: Unable to redefine math accent \\vec. No vector-accent command is used in manuscript; all equations rendered and checked.",
+  "all_fonts_embedded": true,
+  "fonts": [
+    {
+      "name": "QIHSJH+TeXGyreTermesX-Bold",
+      "embedded": true
+    },
+    {
+      "name": "QBEJKM+TeXGyreTermesX-Regular",
+      "embedded": true
+    },
+    {
+      "name": "QBEJKM+TeXGyreTermesX-Regular",
+      "embedded": true
+    },
+    {
+      "name": "QESHXC+TeXGyreTermes-Regular",
+      "embedded": true
+    },
+    {
+      "name": "DRWHEF+txsys",
+      "embedded": true
+    },
+    {
+      "name": "LXUYTI+NewTXMI",
+      "embedded": true
+    },
+    {
+      "name": "EOVSLY+NewTXMI7",
+      "embedded": true
+    },
+    {
+      "name": "DPHKQX+txexs",
+      "embedded": true
+    },
+    {
+      "name": "EHCPMK+txmiaX",
+      "embedded": true
+    },
+    {
+      "name": "QIHSJH+TeXGyreTermesX-Bold",
+      "embedded": true
+    },
+    {
+      "name": "QBRCSP+t1xtt",
+      "embedded": true
+    },
+    {
+      "name": "BMQQDV+DejaVuSans",
+      "embedded": true
+    },
+    {
+      "name": "BMQQDV+DejaVuSans",
+      "embedded": true
+    },
+    {
+      "name": "BMQQDV+DejaVuSans",
+      "embedded": true
+    },
+    {
+      "name": "SBBTWB+TeXGyreTermesX-Italic",
+      "embedded": true
+    }
+  ],
+  "vector_figure_image_objects": {
+    "agreement_publication.pdf": 0,
+    "translation_publication.pdf": 0,
+    "runtime_publication.pdf": 0
+  },
+  "template_class_sha256": "04ec99046ad9867f6cd54ffd1ef8c47c767b327d1baec77536db0528cd492fa2",
+  "official_zip_sha256": "42afb32ed4fadc9e209134ec65dab1bd2a7ead42f9a3f8abb184f250c4a197b9",
+  "science_changed": false,
+  "author_approved": false,
+  "submitted": false,
+  "independent_review": "qa/INDEPENDENT_REVIEW.md",
+  "independent_pdftotext_nonwhitespace_characters": 32803,
+  "extractor_variance_note": "One character difference from PyMuPDF32804; both far inside bounds."
+}

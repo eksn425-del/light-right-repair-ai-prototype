@@ -1,0 +1,49 @@
+\begin{thebibliography}{1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{https://doi.org/#1}
+
+\bibitem{compagnon2004urban}
+Compagnon, R.: Solar and daylight availability in the urban fabric. Energy and
+  Buildings  \textbf{36}(4),  321--328 (2004).
+  \doi{10.1016/j.enbuild.2004.01.009}
+
+\bibitem{czachura2022metrics}
+Czachura, A., Kanters, J., Gentile, N., Wall, M.: Solar performance metrics in
+  urban planning: A review and taxonomy. Buildings  \textbf{12}(4), ~393
+  (2022). \doi{10.3390/buildings12040393}
+
+\bibitem{deluca2021reverse}
+De~Luca, F., Dogan, T., Sep{\'u}lveda, A.: Reverse solar envelope method. a new
+  building form-finding method that can take regulatory frameworks into
+  account. Automation in Construction  \textbf{123},  103518 (2021).
+  \doi{10.1016/j.autcon.2020.103518}
+
+\bibitem{holmgren2018pvlib}
+Holmgren, W.F., Hansen, C.W., Mikofski, M.A.: pvlib python: a python package
+  for modeling solar energy systems. Journal of Open Source Software
+  \textbf{3}(29), ~884 (2018). \doi{10.21105/joss.00884}
+
+\bibitem{konis2016passive}
+Konis, K., Gamas, A., Kensek, K.: Passive performance and building form: An
+  optimization framework for early-stage design support. Solar Energy
+  \textbf{125},  161--179 (2016). \doi{10.1016/j.solener.2015.12.020}
+
+\bibitem{openai2026}
+{OpenAI}: {OpenAI} assistant. \url{https://openai.com/} (2026), {AI}-assisted
+  drafting and editing tool; exact underlying model/version not recorded. Used
+  October 2026
+
+\bibitem{roudsari2013ladybug}
+Sadeghipour~Roudsari, M., Pak, M.: {Ladybug}: A parametric environmental plugin
+  for {Grasshopper} to help designers create an environmentally-conscious
+  design. In: Proceedings of BS2013: 13th Conference of International Building
+  Performance Simulation Association. pp. 3128--3135 (2013).
+  \doi{10.26868/25222708.2013.2499}
+
+\bibitem{ward1994radiance}
+Ward, G.J.: The {RADIANCE} lighting simulation and rendering system. In:
+  Proceedings of the 21st Annual Conference on Computer Graphics and
+  Interactive Techniques. pp. 459--472. ACM (1994). \doi{10.1145/192161.192286}
+
+\end{thebibliography}

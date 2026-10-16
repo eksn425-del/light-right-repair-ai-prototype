@@ -1,0 +1,29 @@
+{
+  "script_sha256": "08599b4a3c76b29b3698f32bb544f1227f786183f5ed85cba7b2aeec755fa3c0",
+  "figures": [
+    {
+      "figure": "runtime_publication",
+      "source": "evidence/icores_2027/runs/local_ablation_20261016/ablation_summary.csv",
+      "source_sha256": "381d238bc9c130857a86ea0e26c836c7ea930a6c9ccaee6e2a90dcfa4b1b4ec8",
+      "script": "make_figures.py",
+      "notes": "Three repeats per method and size; medians; both axes logarithmic.",
+      "change": "Publication-size replot of unchanged frozen aggregate source; no new experiment or inferred data."
+    },
+    {
+      "figure": "agreement_publication",
+      "source": "evidence/icores_2027/runs/statistics_20261016/comparison_values.csv",
+      "source_sha256": "9a08b8834b5b4eaa4679032e6a0900aff57ef46e92e3637d9776debfce97923d",
+      "script": "make_figures.py",
+      "notes": "Frozen aggregate comparison; overplotted coincident values retained without jitter; identity line only.",
+      "change": "Publication-size replot of unchanged frozen aggregate source; no new experiment or inferred data."
+    },
+    {
+      "figure": "translation_publication",
+      "source": "evidence/icores_2027/runs/local_hb_20261016/translation_outcome_comparison.csv",
+      "source_sha256": "2354461754e88c09c7d21e4758b045f1f371f15bf0f283792c8b26505b0666b1",
+      "script": "make_figures.py",
+      "notes": "Four new corrections; *C9/C13 reuses unchanged historical result. Net union-volume reductions are not matched.",
+      "change": "Publication-size replot of unchanged frozen aggregate source; no new experiment or inferred data."
+    }
+  ]
+}

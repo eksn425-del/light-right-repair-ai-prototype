@@ -1,0 +1,227 @@
+{
+  "checks": [
+    {
+      "source": "A_median_end_to_end_seconds",
+      "value": "109.706",
+      "present": true
+    },
+    {
+      "source": "B_median_end_to_end_seconds",
+      "value": "23.359",
+      "present": true
+    },
+    {
+      "source": "measured_speedup",
+      "value": "4.697",
+      "present": true
+    },
+    {
+      "source": "A_median_end_to_end_seconds",
+      "value": "373.812",
+      "present": true
+    },
+    {
+      "source": "B_median_end_to_end_seconds",
+      "value": "23.418",
+      "present": true
+    },
+    {
+      "source": "measured_speedup",
+      "value": "15.963",
+      "present": true
+    },
+    {
+      "source": "A_median_end_to_end_seconds",
+      "value": "1,085.983",
+      "present": true
+    },
+    {
+      "source": "B_median_end_to_end_seconds",
+      "value": "23.975",
+      "present": true
+    },
+    {
+      "source": "measured_speedup",
+      "value": "45.297",
+      "present": true
+    },
+    {
+      "source": "A_median_end_to_end_seconds",
+      "value": "11,608.183",
+      "present": true
+    },
+    {
+      "source": "B_median_end_to_end_seconds",
+      "value": "24.037",
+      "present": true
+    },
+    {
+      "source": "measured_speedup",
+      "value": "482.927",
+      "present": true
+    },
+    {
+      "source": "C9,C24:target_rule_volume_m3",
+      "value": "5,551.333",
+      "present": true
+    },
+    {
+      "source": "C9,C24:rule_union_removed_m3",
+      "value": "5,470.406",
+      "present": true
+    },
+    {
+      "source": "C9,C24:legacy_union_removed_m3",
+      "value": "5,259.615",
+      "present": true
+    },
+    {
+      "source": "C9,C24:corrected_union_removed_m3",
+      "value": "5,474.582",
+      "present": true
+    },
+    {
+      "source": "C9,C15:target_rule_volume_m3",
+      "value": "3,127.755",
+      "present": true
+    },
+    {
+      "source": "C9,C15:rule_union_removed_m3",
+      "value": "3,065.681",
+      "present": true
+    },
+    {
+      "source": "C9,C15:legacy_union_removed_m3",
+      "value": "2,927.693",
+      "present": true
+    },
+    {
+      "source": "C9,C15:corrected_union_removed_m3",
+      "value": "2,937.931",
+      "present": true
+    },
+    {
+      "source": "C9,C13:target_rule_volume_m3",
+      "value": "2,975.156",
+      "present": true
+    },
+    {
+      "source": "C9,C13:rule_union_removed_m3",
+      "value": "2,918.246",
+      "present": true
+    },
+    {
+      "source": "C9,C13:legacy_union_removed_m3",
+      "value": "2,785.422",
+      "present": true
+    },
+    {
+      "source": "C9,C13:corrected_union_removed_m3",
+      "value": "2,785.422",
+      "present": true
+    },
+    {
+      "source": "C13,C24:target_rule_volume_m3",
+      "value": "3,863.880",
+      "present": true
+    },
+    {
+      "source": "C13,C24:rule_union_removed_m3",
+      "value": "3,726.044",
+      "present": true
+    },
+    {
+      "source": "C13,C24:legacy_union_removed_m3",
+      "value": "3,534.257",
+      "present": true
+    },
+    {
+      "source": "C13,C24:corrected_union_removed_m3",
+      "value": "3,749.224",
+      "present": true
+    },
+    {
+      "source": "C6,C33:target_rule_volume_m3",
+      "value": "5,583.055",
+      "present": true
+    },
+    {
+      "source": "C6,C33:rule_union_removed_m3",
+      "value": "1,909.864",
+      "present": true
+    },
+    {
+      "source": "C6,C33:legacy_union_removed_m3",
+      "value": "2,553.509",
+      "present": true
+    },
+    {
+      "source": "C6,C33:corrected_union_removed_m3",
+      "value": "2,554.767",
+      "present": true
+    },
+    {
+      "source": "curated23:A_vs_A:spearman_rho",
+      "value": "0.999258",
+      "present": true
+    },
+    {
+      "source": "curated23:A_vs_A:mae",
+      "value": "0.391304",
+      "present": true
+    },
+    {
+      "source": "curated23:H_vs_H:spearman_rho",
+      "value": "0.991597",
+      "present": true
+    },
+    {
+      "source": "curated23:H_vs_H:mae",
+      "value": "0.001177",
+      "present": true
+    },
+    {
+      "source": "curated23:score_vs_score:spearman_rho",
+      "value": "0.999012",
+      "present": true
+    },
+    {
+      "source": "curated23:score_vs_score:mae",
+      "value": "0.006933",
+      "present": true
+    },
+    {
+      "source": "heldout20:A_vs_A:spearman_rho",
+      "value": "0.997668",
+      "present": true
+    },
+    {
+      "source": "heldout20:A_vs_A:mae",
+      "value": "0.450000",
+      "present": true
+    },
+    {
+      "source": "heldout20:H_vs_H:spearman_rho",
+      "value": "0.999624",
+      "present": true
+    },
+    {
+      "source": "heldout20:H_vs_H:mae",
+      "value": "0.000295",
+      "present": true
+    },
+    {
+      "source": "heldout20:score_vs_score:spearman_rho",
+      "value": "1.000000",
+      "present": true
+    },
+    {
+      "source": "heldout20:score_vs_score:mae",
+      "value": "0.002139",
+      "present": true
+    }
+  ],
+  "passed": 44,
+  "failed": 0,
+  "scope": "Displayed timing,cohortstatistics andvolumetable values matched source rounding. No new experiment."
+}
