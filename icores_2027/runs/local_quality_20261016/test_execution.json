@@ -1,0 +1,18 @@
+{
+  "run_id": "local_quality_20261016",
+  "config_hash": "6433016792a46a4720d40a5c9d8a445e0a832cd8a896a67d4cfae06705f22d97",
+  "code_commit": "3ed957029d1e5e1b30406bd63a6e35d30530e9b0",
+  "input_hash": "dd55c39d8ca9fd7d5fe9f0827f2455c667aec5aa155be817853f20604d1b229a",
+  "measurement_class": "MEASURED_LOCAL_TEST_EXECUTION",
+  "command": [
+    "-m",
+    "pytest",
+    "-q",
+    "icores_2027/tests",
+    "icores_2027/formatting/test_anonymity.py"
+  ],
+  "started_utc": "2026-10-16T06:20:21.956155+00:00",
+  "ended_utc": "2026-10-16T06:20:29.370490+00:00",
+  "exit_code": 0,
+  "stdout_sha256": "be329d4260c73eeef5cc9a48c52ecb90539000aa247594262b2ba5ad54837096"
+}

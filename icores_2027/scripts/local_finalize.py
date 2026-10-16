@@ -69,14 +69,50 @@ def check_experiments(ablation,hb):
     return {key:bool(value) for key,value in checks.items()}
 
 
+def frozen_regression(ablation,quality):
+    """Audit all630 fresh metrics against frozen outputs, retaining tie drift.
+
+    Floating-score tie order is not forced to match the archival row order.
+    Every inversion outside the registered score tolerance is a hard failure.
+    """
+    fresh=pd.read_csv(ablation/'aggregate_B_m630_r1_run.csv').set_index('pair')
+    frozen=pd.read_csv(ROOT/'paper_assets/tables/table_03_candidate_universe.csv').set_index('building_ids')
+    if set(fresh.index)!=set(frozen.index) or len(fresh)!=630:
+        raise ValueError('Fresh full630 pair universe differs from freeze')
+    frozen=frozen.loc[fresh.index]
+    columns={'A':'low_area_drop_h3_m2','H':'avg_gain_vs_baseline_h','V':'intervention_volume_m3',
+             'N':'new_low_area_h3_m2','score':'score'}
+    output=pd.DataFrame({'pair':fresh.index,'new_rank':fresh['rank'].to_numpy(),
+                         'archived_rank':frozen.rank_2p5d_score.to_numpy()})
+    valid=True
+    for new,old in columns.items():
+        diff=fresh[new].to_numpy()-frozen[old].to_numpy()
+        output[new+'_difference']=diff
+        valid=valid and bool(np.max(np.abs(diff))<=(1e-10 if new=='score' else 1e-8))
+    oldscore=frozen.score.to_numpy();newrank=fresh['rank'].to_numpy()
+    significant=oldscore[:,None]>oldscore[None,:]+1e-10
+    inversions=int((significant & (newrank[:,None]>newrank[None,:])).sum())
+    for key,value in provenance(fresh.iloc[0]).items():output[key]=value
+    output['measurement_class']='RECOMPUTED_FROZEN_VS_NEW_RUN'
+    output.to_csv(quality/'canonical630_frozen_regression.csv',index=False)
+    return {'all630_metrics_match_frozen_tolerances':bool(valid),
+            'no_rank_inversions_outside_score_tolerance':inversions==0}, {
+                'rank_changed_count':int(output.new_rank.ne(output.archived_rank).sum()),
+                'significant_rank_inversions':inversions,
+                'max_absolute_errors':{k:float(output[k+'_difference'].abs().max()) for k in columns}}
+
+
 def generate(ablation,hb,code_commit):
     """Create auditable new number/claim/difference tables from measured rows."""
-    checks=check_experiments(ablation,hb)
     quality=I/'runs/local_quality_20261016';quality.mkdir(parents=True,exist_ok=True)
+    checks=check_experiments(ablation,hb)
+    regression_checks,regression_detail=frozen_regression(ablation,quality)
+    checks.update(regression_checks)
     report={'run_id':'local_integration_20261016','config_hash':sha(I/'configs/ICORES_PROTOCOL.json'),
             'code_commit':code_commit,'measurement_class':'RECOMPUTED_LOCAL_EVIDENCE_GATES',
             'input_hash':sha(ablation/'ablation_summary.csv'),'checks':checks,
-            'all_experiment_gates_passed':all(checks.values()),'checked_utc':datetime.now(timezone.utc).isoformat()}
+            'all_experiment_gates_passed':all(checks.values()),'canonical630_regression':regression_detail,
+            'checked_utc':datetime.now(timezone.utc).isoformat()}
     (quality/'experiment_gate_report.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
     if not all(checks.values()):
         raise ValueError('Incomplete/failed experiment gates: '+', '.join(k for k,v in checks.items() if not v))
