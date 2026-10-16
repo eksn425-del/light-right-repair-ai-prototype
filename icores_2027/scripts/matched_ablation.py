@@ -288,8 +288,31 @@ def load_normalization_reference(protocol: Mapping[str, Any]) -> tuple[dict, dic
     """
     path = REPO_ROOT / NORMALIZATION_SOURCE
     expected = protocol.get("source_table_hashes", {}).get(NORMALIZATION_SOURCE)
-    if not expected or not path.is_file() or sha256_file(path) != expected:
+    if not expected or not path.is_file():
         raise ReadinessError("Frozen full630 normalization source/hash unavailable or mismatched")
+    actual_hash = sha256_file(path)
+    if actual_hash != expected:
+        amendment_path = SPRINT_ROOT / 'configs/LOCAL_INPUT_IDENTITY_AMENDMENT.json'
+        if not amendment_path.is_file():
+            raise ReadinessError("Frozen full630 normalization source/hash unavailable or mismatched")
+        amendment = json.loads(amendment_path.read_text(encoding='utf-8'))
+        entry = amendment.get('normalization_reference', {})
+        if (amendment.get('protocol_sha256') != sha256_file(DEFAULT_PROTOCOL)
+                or entry.get('registered_hash') != expected
+                or entry.get('committed_file_sha256') != actual_hash
+                or entry.get('path') != NORMALIZATION_SOURCE):
+            raise ReadinessError('Normalization identity amendment does not authorize these exact bytes')
+        reference_path = REPO_ROOT / entry['independent_frozen_reference_path']
+        if sha256_file(reference_path) != entry['independent_frozen_reference_sha256']:
+            raise ReadinessError('Independent frozen reference hash mismatch')
+        left = pd.read_csv(path).set_index('building_ids').sort_index()
+        right = pd.read_csv(reference_path).set_index('building_ids').sort_index()
+        if not left.index.equals(right.index) or len(left) != 630:
+            raise ReadinessError('Amended reference pair identities differ')
+        for column in [*NORMALIZATION_COLUMNS.values(), 'score']:
+            if not np.allclose(left[column].to_numpy(float), right[column].to_numpy(float),
+                               rtol=0, atol=float(protocol['tolerances']['metric_abs'])):
+                raise ReadinessError('Amended normalization reference differs from frozen values')
     frame = pd.read_csv(path)
     if len(frame) != 630 or "building_ids" not in frame:
         raise ReadinessError("Full630 normalization reference has invalid dimensions")
@@ -307,7 +330,9 @@ def load_normalization_reference(protocol: Mapping[str, Any]) -> tuple[dict, dic
         bounds[metric] = (float(values.min()), float(values.max()))
     provenance = {"normalization_basis": "FROZEN_FULL630_REFERENCE",
                   "normalization_source": NORMALIZATION_SOURCE,
-                  "normalization_source_sha256": expected,
+                  "normalization_source_sha256": actual_hash,
+                  "protocol_registered_source_sha256": expected,
+                  "normalization_identity_amendment": actual_hash != expected,
                   "normalization_bounds_json": json.dumps(bounds, sort_keys=True),
                   "normalization_bounds_sha256": _json_hash(bounds),
                   "normalization_out_of_range_policy": "No clipping or outcome-adaptive refitting"}

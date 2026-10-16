@@ -1,0 +1,20 @@
+{
+  "protocol_sha256": "6433016792a46a4720d40a5c9d8a445e0a832cd8a896a67d4cfae06705f22d97",
+  "registered_before_benchmark": true,
+  "scientific_definitions_changed": false,
+  "reason": "Declared cloud hash differs from tracked file; original protocol preserved; committed reference numerically agrees with independent frozen source",
+  "normalization_reference": {
+    "path": "paper_assets/tables/table_03_candidate_universe.csv",
+    "registered_hash": "0aa078bd3c99717297fbc54b0c554b453969da07e8ce49792f7a74fb9f12c1a7",
+    "committed_file_sha256": "3779555e4b63cb6b47a81b24bb7aa60eb09f622f85b81f71dfc0914beb2bb3a6",
+    "independent_frozen_reference_path": "project_archive_2026_10_16/research/experiments/baseline_20260909_clean/results_csv/120_canonical_2p5D\u5b8c\u6574\u53cc\u5efa\u7b51\u5019\u9009\u6392\u540d.csv",
+    "independent_frozen_reference_sha256": "d163a7bdc90b51f002559dffc8a4051913ef1f861a35641b1a8400a3cabf2824",
+    "maximum_absolute_differences": {
+      "low_area_drop_h3_m2": 0.0,
+      "avg_gain_vs_baseline_h": 0.0,
+      "intervention_volume_m3": 9.094947017729282e-13,
+      "new_low_area_h3_m2": 0.0,
+      "score": 0.0
+    }
+  }
+}
