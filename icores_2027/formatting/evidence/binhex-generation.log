@@ -1,0 +1,51 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex)
+entering extended mode
+(./binhex.ins
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+(/usr/share/texlive/texmf-dist/tex/latex/base/docstrip.tex
+Utility: `docstrip' v2.6b <2022-09-03>
+English documentation    <2024-02-08>
+
+**********************************************************
+* This program converts documented macro-files into fast *
+* loadable files by stripping off (nearly) all comments! *
+**********************************************************
+
+********************************************************
+* No Configuration file found, using default settings. *
+********************************************************
+
+)
+
+Generating file(s) ./binhex.drv ./binhex.tex 
+
+Processing file binhex.dtx (driver) -> binhex.drv
+                           (style) -> binhex.tex
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % <*style . . . . . % % % % % % % % %
+% % % % % % % % % % % . . . . . . . % % % % % % % % % % % % % % . . % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % . % % % % % % %
+% % % % % % % % % % . % % % % % % % % % % % % % . . % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % . . . . . % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % . . . . . . . % % % % % %
+% % % % % % % % % % % % % % % . % % % % % % % % % % % % % . % % % % % % % % %
+% % % % % % % % % % % % % % % % % % . . . % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % . . . . % % % % % % % % % % % . . % % % % % % %
+% % % . . . . . . % % % % % % % % % % . > % % % % % <installer . >
+<installer . > <installer . > <installer . > <installer . > <installer . >
+<installer . > % % % <driver . > <driver . > <driver . > % % % % % %
+<driver . > <driver . > <driver . > <driver . > <driver . > <driver . >
+<driver . > <driver . > <driver . > <driver . > % % % % % % % <driver . >
+<driver . > <driver . > % % % % % % % % % % % % % <driver . > <driver . >
+<driver . > <driver . > <driver . > % % % % <driver . > <driver . >
+<driver . > % %
+Lines  processed: 518
+Comments removed: 437
+Comments  passed: 0
+Codelines passed: 48
+
+ )
+No pages of output.
+Transcript written on binhex.log.

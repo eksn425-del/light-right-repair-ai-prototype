@@ -1,0 +1,20 @@
+test_01_source_matches_actual_build (__main__.SkeletonQA.test_01_source_matches_actual_build) ... ok
+test_02_current_official_class_unchanged (__main__.SkeletonQA.test_02_current_official_class_unchanged) ... ok
+test_03_executed_build_succeeded (__main__.SkeletonQA.test_03_executed_build_succeeded) ... ok
+test_04_blank_author_affiliation_fields (__main__.SkeletonQA.test_04_blank_author_affiliation_fields) ... ok
+test_05_pdf_metadata_anonymous (__main__.SkeletonQA.test_05_pdf_metadata_anonymous) ... ok
+test_06_no_private_paths_or_accounts (__main__.SkeletonQA.test_06_no_private_paths_or_accounts) ... ok
+test_07_no_forms_attachments_comments_or_javascript (__main__.SkeletonQA.test_07_no_forms_attachments_comments_or_javascript) ... ok
+test_08_no_layout_or_citation_failures (__main__.SkeletonQA.test_08_no_layout_or_citation_failures) ... ok
+test_09_embedded_type_one_fonts (__main__.SkeletonQA.test_09_embedded_type_one_fonts) ... ok
+test_10_two_pages_rendered_and_no_raster_figures (__main__.SkeletonQA.test_10_two_pages_rendered_and_no_raster_figures) ... ok
+test_11_editable_equation_table_figure (__main__.SkeletonQA.test_11_editable_equation_table_figure) ... ok
+test_12_no_font_size_or_margin_compression (__main__.SkeletonQA.test_12_no_font_size_or_margin_compression) ... ok
+test_13_proof_not_claimed_submission_ready (__main__.SkeletonQA.test_13_proof_not_claimed_submission_ready) ... ok
+test_14_no_vendor_fonts_or_word_macros_released (__main__.SkeletonQA.test_14_no_vendor_fonts_or_word_macros_released) ... ok
+test_15_all_downloads_hash_checked (__main__.SkeletonQA.test_15_all_downloads_hash_checked) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.047s
+
+OK

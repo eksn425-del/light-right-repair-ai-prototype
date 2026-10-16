@@ -1,0 +1,17 @@
+\begin{thebibliography}{1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{https://doi.org/#1}
+
+\bibitem{openai2026}
+{OpenAI}: {OpenAI}. \url{https://openai.com/}, tool-provider reference for the
+  AI-assisted formatting proof; accessed 16 October 2026
+
+\bibitem{roudsari2013ladybug}
+Sadeghipour~Roudsari, M., Pak, M.: {Ladybug}: A parametric environmental plugin
+  for {Grasshopper} to help designers create an environmentally-conscious
+  design. In: Proceedings of BS2013: 13th Conference of International Building
+  Performance Simulation Association. pp. 3128--3135 (2013).
+  \doi{10.26868/25222708.2013.2499}
+
+\end{thebibliography}

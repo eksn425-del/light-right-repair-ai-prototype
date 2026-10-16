@@ -1,0 +1,628 @@
+{
+  "checked_utc": "2026-10-16T05:36:18.151730+00:00",
+  "source_file": "research_reproducibility/paper_assets/BIBLIOGRAPHY.bib",
+  "input_hash": "381e8506fa52d78ea6e3f0fed5f5f4e0bc4eeb2542da69736dbf1baa8162e9f7",
+  "records": [
+    {
+      "key": "sampson1986sunlight",
+      "url": "https://api.crossref.org/works/10.7916%2Fcjel.v11i2.5670",
+      "status": "UNAVAILABLE",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "key": "bryan1986amenity",
+      "url": "https://api.crossref.org/works/10.1177%2F036063258601600610",
+      "accessed_utc": "2026-10-16T05:26:07.459099+00:00",
+      "status": "FETCHED",
+      "metadata": {
+        "DOI": "10.1177/036063258601600610",
+        "title": [
+          "Natural Light as an Urban Amenity: Three cities plan for solar access"
+        ],
+        "author": [
+          {
+            "given": "Harvey",
+            "family": "Bryan"
+          },
+          {
+            "given": "Susan",
+            "family": "Stuebing"
+          }
+        ],
+        "container-title": [
+          "Lighting Design + Application"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1986,
+              6
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              1986,
+              6
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              1986,
+              6,
+              1
+            ]
+          ]
+        },
+        "volume": "16",
+        "issue": "6",
+        "page": "44-48",
+        "article-number": null,
+        "URL": "https://doi.org/10.1177/036063258601600610",
+        "publisher": "SAGE Publications"
+      }
+    },
+    {
+      "key": "czachura2022metrics",
+      "url": "https://api.crossref.org/works/10.3390%2Fbuildings12040393",
+      "accessed_utc": "2026-10-16T05:26:07.621845+00:00",
+      "status": "FETCHED",
+      "metadata": {
+        "DOI": "10.3390/buildings12040393",
+        "title": [
+          "Solar Performance Metrics in Urban Planning: A Review and Taxonomy"
+        ],
+        "author": [
+          {
+            "given": "Agnieszka",
+            "family": "Czachura"
+          },
+          {
+            "given": "Jouri",
+            "family": "Kanters"
+          },
+          {
+            "given": "Niko",
+            "family": "Gentile"
+          },
+          {
+            "given": "Maria",
+            "family": "Wall"
+          }
+        ],
+        "container-title": [
+          "Buildings"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2022,
+              3,
+              23
+            ]
+          ]
+        },
+        "published-print": null,
+        "published-online": {
+          "date-parts": [
+            [
+              2022,
+              3,
+              23
+            ]
+          ]
+        },
+        "volume": "12",
+        "issue": "4",
+        "page": "393",
+        "article-number": null,
+        "URL": "https://doi.org/10.3390/buildings12040393",
+        "publisher": "MDPI AG"
+      }
+    },
+    {
+      "key": "compagnon2004urban",
+      "url": "https://api.crossref.org/works/10.1016%2Fj.enbuild.2004.01.009",
+      "accessed_utc": "2026-10-16T05:26:07.579854+00:00",
+      "status": "FETCHED",
+      "metadata": {
+        "DOI": "10.1016/j.enbuild.2004.01.009",
+        "title": [
+          "Solar and daylight availability in the urban fabric"
+        ],
+        "author": [
+          {
+            "given": "R.",
+            "family": "Compagnon"
+          }
+        ],
+        "container-title": [
+          "Energy and Buildings"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2004,
+              4
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2004,
+              4
+            ]
+          ]
+        },
+        "published-online": null,
+        "volume": "36",
+        "issue": "4",
+        "page": "321-328",
+        "article-number": null,
+        "URL": "https://doi.org/10.1016/j.enbuild.2004.01.009",
+        "publisher": "Elsevier BV"
+      }
+    },
+    {
+      "key": "sanaieian2014block",
+      "url": "https://api.crossref.org/works/10.1016%2Fj.rser.2014.06.007",
+      "accessed_utc": "2026-10-16T05:26:14.773831+00:00",
+      "status": "FETCHED",
+      "metadata": {
+        "DOI": "10.1016/j.rser.2014.06.007",
+        "title": [
+          "Review of the impact of urban block form on thermal performance, solar access and ventilation"
+        ],
+        "author": [
+          {
+            "given": "Haniyeh",
+            "family": "Sanaieian"
+          },
+          {
+            "given": "Martin",
+            "family": "Tenpierik"
+          },
+          {
+            "given": "Kees van den",
+            "family": "Linden"
+          },
+          {
+            "given": "Fatemeh",
+            "family": "Mehdizadeh Seraj"
+          },
+          {
+            "given": "Seyed Majid",
+            "family": "Mofidi Shemrani"
+          }
+        ],
+        "container-title": [
+          "Renewable and Sustainable Energy Reviews"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2014,
+              10
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2014,
+              10
+            ]
+          ]
+        },
+        "published-online": null,
+        "volume": "38",
+        "issue": null,
+        "page": "551-560",
+        "article-number": null,
+        "URL": "https://doi.org/10.1016/j.rser.2014.06.007",
+        "publisher": "Elsevier BV"
+      }
+    },
+    {
+      "key": "curreli2016form",
+      "url": "https://api.crossref.org/works/10.3390%2Fen9070544",
+      "accessed_utc": "2026-10-16T05:26:14.845826+00:00",
+      "status": "FETCHED",
+      "metadata": {
+        "DOI": "10.3390/en9070544",
+        "title": [
+          "Solar Energy as a Form Giver for Future Cities"
+        ],
+        "author": [
+          {
+            "given": "Alessandra",
+            "family": "Curreli"
+          },
+          {
+            "given": "Glòria",
+            "family": "Serra-Coch"
+          },
+          {
+            "given": "Antonio",
+            "family": "Isalgue"
+          },
+          {
+            "given": "Isabel",
+            "family": "Crespo"
+          },
+          {
+            "given": "Helena",
+            "family": "Coch"
+          }
+        ],
+        "container-title": [
+          "Energies"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2016,
+              7,
+              14
+            ]
+          ]
+        },
+        "published-print": null,
+        "published-online": {
+          "date-parts": [
+            [
+              2016,
+              7,
+              14
+            ]
+          ]
+        },
+        "volume": "9",
+        "issue": "7",
+        "page": "544",
+        "article-number": null,
+        "URL": "https://doi.org/10.3390/en9070544",
+        "publisher": "MDPI AG"
+      }
+    },
+    {
+      "key": "konis2016passive",
+      "url": "https://api.crossref.org/works/10.1016%2Fj.solener.2015.12.020",
+      "accessed_utc": "2026-10-16T05:26:14.880515+00:00",
+      "status": "FETCHED",
+      "metadata": {
+        "DOI": "10.1016/j.solener.2015.12.020",
+        "title": [
+          "Passive performance and building form: An optimization framework for early-stage design support"
+        ],
+        "author": [
+          {
+            "given": "Kyle",
+            "family": "Konis"
+          },
+          {
+            "given": "Alejandro",
+            "family": "Gamas"
+          },
+          {
+            "given": "Karen",
+            "family": "Kensek"
+          }
+        ],
+        "container-title": [
+          "Solar Energy"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2016,
+              2
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2016,
+              2
+            ]
+          ]
+        },
+        "published-online": null,
+        "volume": "125",
+        "issue": null,
+        "page": "161-179",
+        "article-number": null,
+        "URL": "https://doi.org/10.1016/j.solener.2015.12.020",
+        "publisher": "Elsevier BV"
+      }
+    },
+    {
+      "key": "wang2024evomass",
+      "url": "https://api.crossref.org/works/10.1016%2Fj.foar.2024.06.001",
+      "accessed_utc": "2026-10-16T05:26:14.786827+00:00",
+      "status": "FETCHED",
+      "metadata": {
+        "DOI": "10.1016/j.foar.2024.06.001",
+        "title": [
+          "Optimization-based design exploration of building massing typologies—EvoMass and a typology-oriented computational design optimization method for early-stage performance-based building massing design"
+        ],
+        "author": [
+          {
+            "given": "Likai",
+            "family": "Wang"
+          },
+          {
+            "given": "Patrick",
+            "family": "Janssen"
+          },
+          {
+            "given": "Guohua",
+            "family": "Ji"
+          }
+        ],
+        "container-title": [
+          "Frontiers of Architectural Research"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2024,
+              12
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2024,
+              12
+            ]
+          ]
+        },
+        "published-online": null,
+        "volume": "13",
+        "issue": "6",
+        "page": "1400-1422",
+        "article-number": null,
+        "URL": "https://doi.org/10.1016/j.foar.2024.06.001",
+        "publisher": "Elsevier BV"
+      }
+    },
+    {
+      "key": "roudsari2013ladybug",
+      "status": "NO_DOI_IN_SOURCE"
+    },
+    {
+      "key": "deluca2021reverse",
+      "url": "https://api.crossref.org/works/10.1016%2Fj.autcon.2020.103518",
+      "accessed_utc": "2026-10-16T05:26:23.704090+00:00",
+      "status": "FETCHED",
+      "metadata": {
+        "DOI": "10.1016/j.autcon.2020.103518",
+        "title": [
+          "Reverse solar envelope method. A new building form-finding method that can take regulatory frameworks into account"
+        ],
+        "author": [
+          {
+            "given": "Francesco",
+            "family": "De Luca"
+          },
+          {
+            "given": "Timur",
+            "family": "Dogan"
+          },
+          {
+            "given": "Abel",
+            "family": "Sepúlveda"
+          }
+        ],
+        "container-title": [
+          "Automation in Construction"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2021,
+              3
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2021,
+              3
+            ]
+          ]
+        },
+        "published-online": null,
+        "volume": "123",
+        "issue": null,
+        "page": "103518",
+        "article-number": "103518",
+        "URL": "https://doi.org/10.1016/j.autcon.2020.103518",
+        "publisher": "Elsevier BV"
+      }
+    },
+    {
+      "key": "thoring2023augmented",
+      "url": "https://api.crossref.org/works/10.1017%2Fpds.2023.335",
+      "accessed_utc": "2026-10-16T05:26:23.734678+00:00",
+      "status": "FETCHED",
+      "metadata": {
+        "DOI": "10.1017/pds.2023.335",
+        "title": [
+          "THE AUGMENTED DESIGNER: A RESEARCH AGENDA FOR GENERATIVE AI-ENABLED DESIGN"
+        ],
+        "author": [
+          {
+            "given": "Katja",
+            "family": "Thoring"
+          },
+          {
+            "given": "Sebastian",
+            "family": "Huettemann"
+          },
+          {
+            "given": "Roland M.",
+            "family": "Mueller"
+          }
+        ],
+        "container-title": [
+          "Proceedings of the Design Society"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              6,
+              19
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2023,
+              7
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2023,
+              6,
+              19
+            ]
+          ]
+        },
+        "volume": "3",
+        "issue": null,
+        "page": "3345-3354",
+        "article-number": null,
+        "URL": "https://doi.org/10.1017/pds.2023.335",
+        "publisher": "Cambridge University Press (CUP)"
+      }
+    },
+    {
+      "key": "jakubik2022human",
+      "url": "https://api.crossref.org/works/10.1609%2Faaai.v36i11.21522",
+      "accessed_utc": "2026-10-16T05:26:23.576372+00:00",
+      "status": "FETCHED",
+      "metadata": {
+        "DOI": "10.1609/aaai.v36i11.21522",
+        "title": [
+          "Designing a Human-in-the-Loop System for Object Detection in Floor Plans"
+        ],
+        "author": [
+          {
+            "given": "Johannes",
+            "family": "Jakubik"
+          },
+          {
+            "given": "Patrick",
+            "family": "Hemmer"
+          },
+          {
+            "given": "Michael",
+            "family": "Vössing"
+          },
+          {
+            "given": "Benedikt",
+            "family": "Blumenstiel"
+          },
+          {
+            "given": "Andrea",
+            "family": "Bartos"
+          },
+          {
+            "given": "Kamilla",
+            "family": "Mohr"
+          }
+        ],
+        "container-title": [
+          "Proceedings of the AAAI Conference on Artificial Intelligence"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2022,
+              6,
+              28
+            ]
+          ]
+        },
+        "published-print": null,
+        "published-online": {
+          "date-parts": [
+            [
+              2022,
+              6,
+              28
+            ]
+          ]
+        },
+        "volume": "36",
+        "issue": "11",
+        "page": "12524-12530",
+        "article-number": null,
+        "URL": "https://doi.org/10.1609/aaai.v36i11.21522",
+        "publisher": "Association for the Advancement of Artificial Intelligence (AAAI)"
+      }
+    },
+    {
+      "key": "rafsanjani2023human",
+      "url": "https://api.crossref.org/works/10.1016%2Fj.chbr.2023.100319",
+      "accessed_utc": "2026-10-16T05:26:23.739526+00:00",
+      "status": "FETCHED",
+      "metadata": {
+        "DOI": "10.1016/j.chbr.2023.100319",
+        "title": [
+          "Towards human-centered artificial intelligence (AI) in architecture, engineering, and construction (AEC) industry"
+        ],
+        "author": [
+          {
+            "given": "Hamed",
+            "family": "Nabizadeh Rafsanjani"
+          },
+          {
+            "given": "Amir Hossein",
+            "family": "Nabizadeh"
+          }
+        ],
+        "container-title": [
+          "Computers in Human Behavior Reports"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              8
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2023,
+              8
+            ]
+          ]
+        },
+        "published-online": null,
+        "volume": "11",
+        "issue": null,
+        "page": "100319",
+        "article-number": "100319",
+        "URL": "https://doi.org/10.1016/j.chbr.2023.100319",
+        "publisher": "Elsevier BV"
+      }
+    }
+  ]
+}

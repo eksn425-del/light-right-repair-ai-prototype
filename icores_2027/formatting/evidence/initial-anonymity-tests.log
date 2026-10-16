@@ -1,0 +1,37 @@
+test_01_source_matches_actual_build (__main__.SkeletonQA.test_01_source_matches_actual_build) ... ok
+test_02_current_official_class_unchanged (__main__.SkeletonQA.test_02_current_official_class_unchanged) ... ok
+test_03_executed_build_succeeded (__main__.SkeletonQA.test_03_executed_build_succeeded) ... ok
+test_04_blank_author_affiliation_fields (__main__.SkeletonQA.test_04_blank_author_affiliation_fields) ... ok
+test_05_pdf_metadata_anonymous (__main__.SkeletonQA.test_05_pdf_metadata_anonymous) ... ok
+test_06_no_private_paths_or_accounts (__main__.SkeletonQA.test_06_no_private_paths_or_accounts) ... FAIL
+test_07_no_forms_attachments_comments_or_javascript (__main__.SkeletonQA.test_07_no_forms_attachments_comments_or_javascript) ... ok
+test_08_no_layout_or_citation_failures (__main__.SkeletonQA.test_08_no_layout_or_citation_failures) ... ok
+test_09_embedded_type_one_fonts (__main__.SkeletonQA.test_09_embedded_type_one_fonts) ... ok
+test_10_two_pages_rendered_and_no_raster_figures (__main__.SkeletonQA.test_10_two_pages_rendered_and_no_raster_figures) ... ok
+test_11_editable_equation_table_figure (__main__.SkeletonQA.test_11_editable_equation_table_figure) ... ok
+test_12_no_font_size_or_margin_compression (__main__.SkeletonQA.test_12_no_font_size_or_margin_compression) ... ok
+test_13_proof_not_claimed_submission_ready (__main__.SkeletonQA.test_13_proof_not_claimed_submission_ready) ... FAIL
+test_14_no_vendor_fonts_or_word_macros_released (__main__.SkeletonQA.test_14_no_vendor_fonts_or_word_macros_released) ... ok
+test_15_all_downloads_hash_checked (__main__.SkeletonQA.test_15_all_downloads_hash_checked) ... ok
+
+======================================================================
+FAIL: test_06_no_private_paths_or_accounts (__main__.SkeletonQA.test_06_no_private_paths_or_accounts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<FORMATTING>/test_anonymity.py", line 74, in test_06_no_private_paths_or_accounts
+    for pattern in patterns:self.assertIsNone(re.search(pattern,data,re.I),pattern)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: <re.Match object; span=(3362, 3365), match='s:/'> is not None : [A-Za-z]:[\\/]
+
+======================================================================
+FAIL: test_13_proof_not_claimed_submission_ready (__main__.SkeletonQA.test_13_proof_not_claimed_submission_ready)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<FORMATTING>/test_anonymity.py", line 123, in test_13_proof_not_claimed_submission_ready
+    self.assertIn('must not be submitted',self.text)
+AssertionError: 'must not be submitted' not found in 'Decision Support for Urban Solar Access Anonymous\nFormatting Skeleton\nAbstract. This document is a formatting proof for a future research manuscript.\nIt tests an anonymous title block, editable equations and tables, a vector diagram,\nfigure alternative text, numbered citations, and the bibliography style in the cur-\nrent Springer proceedings class. It contains no experimental results and must not\nbesubmittedasaresearchpaper.Thefinalabstractmustbewrittenfromreviewed\nevidence after the geometry, temporal, and matched runtime checks have been\nresolved.Claimsrequiretraceablesourcesandadistinctionbetweenhistoricalev-\nidence and new measurements. The sections below identify their intended scope\nwithoutfillingmissingobservationswithillustrativenumbers.Thisshortproofis\ndeliberately below the conference’s minimum character count; successful compi-\nlation establishes only that the template can be built. Author approval, scientific\nreview, disclosure placement, and a submission-stage anonymity check remain\nnecessary.Theprovisionaldisclosurerecordstheartificial-intelligenceassistance\nused for this proof and requires confirmation of the conference’s placement re-\nquirements.\nKeywords: Decision support·Solar access·Reproducibility\n1 Introduction\nDefinethedecisionproblem,setting,andevidence-supportedcontribution.TheLadybug\npaper describes an environmental analysis tool [2]. It demonstrates citation formatting\nhere; it does not validate this study.\n2 Methods\n2.1 Decision Variables and Sunlight Duration\nEquation 1 illustrates the editable binary decision model. The eligible set𝐸 must be\ndefined by explicit research constraints; it does not represent legal permission to alter a\nbuilding.\n𝑧𝑖 ∈ { 0, 1} ( 𝑖 ∈ 𝐸),\n∑︁\n𝑖 ∈𝐸\n𝑧𝑖 = 2. (1)\nTable 1 defines the symbols used in Eq. 2. For fixed sample times, the direct-sunlight\nduration at receiver𝑗 is represented by\n𝐷 𝑗 (𝑧) =\n∑︁\n𝑡 ∈𝑇\nΔ𝑡 𝑣 𝑗𝑡 (𝑧)1{𝛼𝑡 > 0}. (2)\nTable 1.Editable notation example with no experimental values\nSymbol Meaning Unit\n𝑧𝑖 Selection of eligible building𝑖 dimensionless\n𝑇 Fixed set of analysis samples index set\nΔ𝑡 Duration represented by each sample h\n𝑣 𝑗𝑡 (𝑧) Direct visibility at receiver𝑗 and sample𝑡 binary\n𝛼𝑡 Solar elevation at sample𝑡 angle\n𝐷 𝑗 (𝑧) Direct-sunlight duration at receiver𝑗 h\nFixed protocol - Audits and tests - Evidence review\nFig. 1. Conceptual vector workflow with no measured data. AI tool: OpenAI assistant. Prompt:\nshow fixed protocol, audits and tests, and evidence review in sequence.\nState the interval interpretation, solar-position source, visibility tolerances, receiver\nmapping, and geometry treatment. The notation asserts no agreement with an external\nsolver.\nFigure 1 illustrates the evidence sequence. Describe containment, volume, matched\nruntime, and validation checks separately.\n3 Results, Limitations, and Conclusions\nInsert reviewed evidence, retain unresolved effects, and separate measurements from\nextrapolations. Write conclusions only after scientific review.\nProvisional AI Use Disclosure\nAn OpenAI assistant [1] generated this proof, including its prose, equations, table, and\nconceptual diagram. No experimental values were generated. Final AI-use disclosure\nand its anonymous placement require author review. Human authors must also declare\ncompeting interests; none are asserted on their behalf here.\nReferences\n1. OpenAI: OpenAI. https://openai.com/, tool-provider reference for the AI-assisted for-\nmatting proof; accessed 16 October 2026\n2. Sadeghipour Roudsari, M., Pak, M.: Ladybug: A parametric environmental plugin for\nGrasshoppertohelpdesignerscreateanenvironmentally-consciousdesign.In:Proceedingsof\nBS2013: 13th Conference of International Building Performance Simulation Association. pp.\n3128–3135 (2013).https://doi.org/10.26868/25222708.2013.2499'
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.045s
+
+FAILED (failures=2)

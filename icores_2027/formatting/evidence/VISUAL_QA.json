@@ -1,0 +1,43 @@
+{
+  "inspected_utc": "2026-10-16T05:36:18.154259+00:00",
+  "pdf_sha256": "43fc467adbc207340fc464c54644e71b0994352c693227e3f3d6ac04c5b221da",
+  "pages": [
+    {
+      "page": 1,
+      "render": "rendered/page-1.png",
+      "sha256": "e734e9a4f754414e0703caf055a520632e802ca534f173efe392f2b565ee95d4",
+      "result": "PASS",
+      "checks": [
+        "readable text",
+        "no clipping or overlap",
+        "editable equations rendered",
+        "no author identity visible"
+      ]
+    },
+    {
+      "page": 2,
+      "render": "rendered/page-2.png",
+      "sha256": "5fec40ee7566037fb292040b04f61ecb5baeed53662588289806d9be5204d9c7",
+      "result": "PASS",
+      "checks": [
+        "readable text",
+        "no clipping or overlap",
+        "editable equations rendered",
+        "no author identity visible"
+      ]
+    }
+  ],
+  "table_caption_above": true,
+  "figure_caption_below": true,
+  "table_column_gap_fixed_before_final_build": true,
+  "references_resolved": true,
+  "layout_compression": false,
+  "figure_type": "Vector drawing authored in LaTeX picture environment; zero raster image XObjects in PDF",
+  "accessibility_note": "Figure DescriptionTexts sidecar exported; PDF itself is not tagged.",
+  "secondary_review": {
+    "reported_utc": "2026-10-16T05:38:31Z",
+    "reviewer_role": "parent task reviewer",
+    "result": "PASS",
+    "scope": "Both final rendered pages inspected; clean legible two-page proof with no empirical values. No further styling changes requested."
+  }
+}

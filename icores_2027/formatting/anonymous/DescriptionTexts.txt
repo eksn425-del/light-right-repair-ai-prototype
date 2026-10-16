@@ -1,0 +1,1 @@
+1 (Fig. 1) - Three boxes connected from left to right: Fixed protocol, Audits and tests, and Evidence review. This is a conceptual workflow with no measured data.

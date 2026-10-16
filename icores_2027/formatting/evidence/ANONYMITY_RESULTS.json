@@ -1,0 +1,15 @@
+{
+  "started_utc": "2026-10-16T05:38:31.541364+00:00",
+  "finished_utc": "2026-10-16T05:38:31.588199+00:00",
+  "tests_run": 15,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "pdf_sha256": "43fc467adbc207340fc464c54644e71b0994352c693227e3f3d6ac04c5b221da",
+  "nonwhitespace_extracted_characters": 3309,
+  "object_scan_scope": "Parsed PDF strings and decoded non-font streams; binary embedded font programs excluded from text-pattern matching.",
+  "count_scope": "PDF extracted text including vector labels; not an official final-manuscript count.",
+  "private_denylist_entries_checked": 3,
+  "docx_checks": "NOT_APPLICABLE: no manuscript DOCX produced; downloaded publisher DOCM templates remain private and unexecuted.",
+  "accessibility": "DescriptionTexts sidecar exists; PDF is not tagged. Full accessibility QA remains for final manuscript."
+}

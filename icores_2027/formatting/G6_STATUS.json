@@ -1,0 +1,32 @@
+{
+  "completed_utc": "2026-10-16T05:37:41.316841+00:00",
+  "task": "G6",
+  "template_build_status": "PASS",
+  "anonymous_pdf_status": "PASS",
+  "visual_qa_status": "PASS",
+  "tests_passed": 15,
+  "pages": 2,
+  "manuscript_draft_ready": false,
+  "author_approved": false,
+  "submitted": false,
+  "scientific_evidence_ready": "NOT_ASSESSED_BY_TEMPLATE_PROOF",
+  "pdf_sha256": "43fc467adbc207340fc464c54644e71b0994352c693227e3f3d6ac04c5b221da",
+  "bibliography_entries_checked": 13,
+  "bibliography_manuscript_claim_support": "UNVERIFIED_FOR_ALL_13",
+  "required_author_decisions": [
+    "AI disclosure placement",
+    "Competing interests declaration",
+    "No concurrent SOICT review",
+    "Ladybug conflicting primary author metadata",
+    "Final template font discrepancy review"
+  ],
+  "new_csv_provenance": {
+    "run_id": "icores_g6_template_20261016",
+    "config_hash": "86ec7ad7ff5d78048ded963e659ecf0bfbc3d20efad91d46668e516461532f0a",
+    "code_commit": "ce4087f564a1169b500c0106f869158349c58c6e",
+    "input_hash": "381e8506fa52d78ea6e3f0fed5f5f4e0bc4eeb2542da69736dbf1baa8162e9f7",
+    "measurement_class": "SOURCE_VERIFICATION",
+    "code_commit_scope": "BASE_COMMIT_PLUS_EXACT_SCRIPT_HASH",
+    "code_script_sha256": "600c5fc4a6d5606f2034b9c3772102f663fc4168ee5e41aa819f98424358f6e3"
+  }
+}

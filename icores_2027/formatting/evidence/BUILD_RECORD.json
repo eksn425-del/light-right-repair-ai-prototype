@@ -1,0 +1,213 @@
+{
+  "started_utc": "2026-10-16T05:31:12.438821+00:00",
+  "status": "BUILT_PENDING_VISUAL_AND_ANONYMITY_QA",
+  "commands": [
+    {
+      "name": "engine-version",
+      "command": [
+        "pdflatex",
+        "--version"
+      ],
+      "started_utc": "2026-10-16T05:31:12.867237+00:00",
+      "finished_utc": "2026-10-16T05:31:12.870732+00:00",
+      "elapsed_seconds": 0.003485575000013341,
+      "exit_code": 0,
+      "log": "evidence/engine-version.log"
+    },
+    {
+      "name": "format-generation",
+      "command": [
+        "pdftex",
+        "-ini",
+        "-etex",
+        "-jobname=pdflatex",
+        "-progname=pdflatex",
+        "-interaction=nonstopmode",
+        "\\input latex.ltx"
+      ],
+      "started_utc": "2026-10-16T05:31:12.870742+00:00",
+      "finished_utc": "2026-10-16T05:31:17.604070+00:00",
+      "elapsed_seconds": 4.733340953000152,
+      "exit_code": 0,
+      "log": "evidence/format-generation.log"
+    },
+    {
+      "name": "binhex-generation",
+      "command": [
+        "pdflatex",
+        "-output-format=pdf",
+        "-no-shell-escape",
+        "-halt-on-error",
+        "-interaction=nonstopmode",
+        "binhex.ins"
+      ],
+      "started_utc": "2026-10-16T05:31:17.604092+00:00",
+      "finished_utc": "2026-10-16T05:31:17.726250+00:00",
+      "elapsed_seconds": 0.12216825500036066,
+      "exit_code": 0,
+      "log": "evidence/binhex-generation.log"
+    },
+    {
+      "name": "pdflatex-pass-1",
+      "command": [
+        "pdflatex",
+        "-output-format=pdf",
+        "-no-shell-escape",
+        "-halt-on-error",
+        "-interaction=nonstopmode",
+        "skeleton.tex"
+      ],
+      "started_utc": "2026-10-16T05:31:17.726267+00:00",
+      "finished_utc": "2026-10-16T05:31:20.311968+00:00",
+      "elapsed_seconds": 2.585711458001242,
+      "exit_code": 0,
+      "log": "evidence/pdflatex-pass-1.log"
+    },
+    {
+      "name": "bibtex",
+      "command": [
+        "bibtex",
+        "skeleton"
+      ],
+      "started_utc": "2026-10-16T05:31:20.311984+00:00",
+      "finished_utc": "2026-10-16T05:31:20.317326+00:00",
+      "elapsed_seconds": 0.005346189998817863,
+      "exit_code": 0,
+      "log": "evidence/bibtex.log"
+    },
+    {
+      "name": "pdflatex-pass-2",
+      "command": [
+        "pdflatex",
+        "-output-format=pdf",
+        "-no-shell-escape",
+        "-halt-on-error",
+        "-interaction=nonstopmode",
+        "skeleton.tex"
+      ],
+      "started_utc": "2026-10-16T05:31:20.317335+00:00",
+      "finished_utc": "2026-10-16T05:31:22.158978+00:00",
+      "elapsed_seconds": 1.841653886000131,
+      "exit_code": 0,
+      "log": "evidence/pdflatex-pass-2.log"
+    },
+    {
+      "name": "pdflatex-pass-3",
+      "command": [
+        "pdflatex",
+        "-output-format=pdf",
+        "-no-shell-escape",
+        "-halt-on-error",
+        "-interaction=nonstopmode",
+        "skeleton.tex"
+      ],
+      "started_utc": "2026-10-16T05:31:22.158995+00:00",
+      "finished_utc": "2026-10-16T05:31:24.054644+00:00",
+      "elapsed_seconds": 1.895659505000367,
+      "exit_code": 0,
+      "log": "evidence/pdflatex-pass-3.log"
+    },
+    {
+      "name": "pdfinfo",
+      "command": [
+        "pdfinfo",
+        "skeleton.pdf"
+      ],
+      "started_utc": "2026-10-16T05:31:24.057009+00:00",
+      "finished_utc": "2026-10-16T05:31:24.070840+00:00",
+      "elapsed_seconds": 0.013830755999151734,
+      "exit_code": 0,
+      "log": "evidence/pdfinfo.log"
+    },
+    {
+      "name": "pdffonts",
+      "command": [
+        "pdffonts",
+        "skeleton.pdf"
+      ],
+      "started_utc": "2026-10-16T05:31:24.070849+00:00",
+      "finished_utc": "2026-10-16T05:31:24.095925+00:00",
+      "elapsed_seconds": 0.02508179299911717,
+      "exit_code": 0,
+      "log": "evidence/pdffonts.log"
+    },
+    {
+      "name": "pdftotext",
+      "command": [
+        "pdftotext",
+        "skeleton.pdf",
+        "skeleton.txt"
+      ],
+      "started_utc": "2026-10-16T05:31:24.095936+00:00",
+      "finished_utc": "2026-10-16T05:31:24.114286+00:00",
+      "elapsed_seconds": 0.018353920000663493,
+      "exit_code": 0,
+      "log": "evidence/pdftotext.log"
+    },
+    {
+      "name": "render",
+      "command": [
+        "pdftoppm",
+        "-scale-to",
+        "1800",
+        "-png",
+        "skeleton.pdf",
+        "page"
+      ],
+      "started_utc": "2026-10-16T05:31:24.114415+00:00",
+      "finished_utc": "2026-10-16T05:31:24.693748+00:00",
+      "elapsed_seconds": 0.5793443330003356,
+      "exit_code": 0,
+      "log": "evidence/render.log"
+    }
+  ],
+  "download_checks": [
+    {
+      "name": "latex.zip",
+      "sha256": "42afb32ed4fadc9e209134ec65dab1bd2a7ead42f9a3f8abb184f250c4a197b9",
+      "bytes": 515408,
+      "status": "PASS"
+    },
+    {
+      "name": "word.zip",
+      "sha256": "8165e9dbe5c18fa1aabb80d806178f69dd3b743f942f66415727d0fe1331576e",
+      "bytes": 554378,
+      "status": "PASS"
+    },
+    {
+      "name": "instructions.pdf",
+      "sha256": "b6a56391a68e64c06d2d9f4173f5260d123a3277eb9cd1a36d0e74b4702ca385",
+      "bytes": 312570,
+      "status": "PASS"
+    },
+    {
+      "name": "newtx.zip",
+      "sha256": "bbe07d4ad91ade9f61326e59f2f3bf389b4ace1c0c1ef2e8c85377e4e2535f4e",
+      "bytes": 9704591,
+      "status": "PASS"
+    },
+    {
+      "name": "kastrup.zip",
+      "sha256": "c3ec4e73ca69bc2f8e813c01618b670a936e24a465228ccf06b8c6ae28f7220e",
+      "bytes": 147569,
+      "status": "PASS"
+    },
+    {
+      "name": "tex-gyre.zip",
+      "sha256": "1773c470f9e388e087b68e3426e115af2cd236845a7e05ceb25b2a503409a7a3",
+      "bytes": 21661540,
+      "status": "PASS"
+    }
+  ],
+  "source_sha256": "c22bd5c47e7ee47f303e7fcd75659b7c1f0c32cb37f01c25e318968c8fcbe533",
+  "bib_sha256": "dd6d8977dc300141656395bdc299bb360a74d0f47349dab02673b87973f91f05",
+  "engine_version": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "pdf_sha256": "43fc467adbc207340fc464c54644e71b0994352c693227e3f3d6ac04c5b221da",
+  "template_class_sha256": "04ec99046ad9867f6cd54ffd1ef8c47c767b327d1baec77536db0528cd492fa2",
+  "bibliography_style_sha256": "f36c3a17e5304a692706359aafa9de709395a085e579eb47c027095aeaa35174",
+  "finished_utc": "2026-10-16T05:31:24.694651+00:00",
+  "base_code_commit": "ce4087f564a1169b500c0106f869158349c58c6e",
+  "code_commit_scope": "BASE_COMMIT_PLUS_EXACT_SCRIPT_HASH",
+  "build_script_sha256": "c34021102e4462644a2b2b25085c1272bd2e18be055f8f77f4e120ba3833c1f7",
+  "test_script_sha256": "003666246bc08c52b3a4c972cf9e5174fbd789d766b92664ea5f77445d8dc269"
+}

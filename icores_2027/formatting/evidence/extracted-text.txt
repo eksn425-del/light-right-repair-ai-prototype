@@ -1,0 +1,114 @@
+Decision Support for Urban Solar Access Anonymous
+Formatting Skeleton
+
+Abstract. This document is a formatting proof for a future research manuscript.
+It tests an anonymous title block, editable equations and tables, a vector diagram,
+figure alternative text, numbered citations, and the bibliography style in the current Springer proceedings class. It contains no experimental results and must not
+be submitted as a research paper. The final abstract must be written from reviewed
+evidence after the geometry, temporal, and matched runtime checks have been
+resolved. Claims require traceable sources and a distinction between historical evidence and new measurements. The sections below identify their intended scope
+without filling missing observations with illustrative numbers. This short proof is
+deliberately below the conference’s minimum character count; successful compilation establishes only that the template can be built. Author approval, scientific
+review, disclosure placement, and a submission-stage anonymity check remain
+necessary. The provisional disclosure records the artificial-intelligence assistance
+used for this proof and requires confirmation of the conference’s placement requirements.
+Keywords: Decision support · Solar access · Reproducibility
+
+1
+
+Introduction
+
+Define the decision problem, setting, and evidence-supported contribution. The Ladybug
+paper describes an environmental analysis tool [2]. It demonstrates citation formatting
+here; it does not validate this study.
+
+2
+
+Methods
+
+2.1
+
+Decision Variables and Sunlight Duration
+
+Equation 1 illustrates the editable binary decision model. The eligible set 𝐸 must be
+defined by explicit research constraints; it does not represent legal permission to alter a
+building.
+∑︁
+𝑧𝑖 ∈ {0, 1} (𝑖 ∈ 𝐸),
+𝑧 𝑖 = 2.
+(1)
+𝑖 ∈𝐸
+
+Table 1 defines the symbols used in Eq. 2. For fixed sample times, the direct-sunlight
+duration at receiver 𝑗 is represented by
+∑︁
+𝐷 𝑗 (𝑧) =
+Δ𝑡 𝑣 𝑗𝑡 (𝑧)1{𝛼𝑡 > 0}.
+(2)
+𝑡 ∈𝑇
+
+Table 1. Editable notation example with no experimental values
+Symbol
+𝑧𝑖
+𝑇
+Δ𝑡
+𝑣 𝑗𝑡 (𝑧)
+𝛼𝑡
+𝐷 𝑗 (𝑧)
+
+Fixed protocol
+
+Meaning
+Selection of eligible building 𝑖
+Fixed set of analysis samples
+Duration represented by each sample
+Direct visibility at receiver 𝑗 and sample 𝑡
+Solar elevation at sample 𝑡
+Direct-sunlight duration at receiver 𝑗
+
+-
+
+Audits and tests
+
+-
+
+Unit
+dimensionless
+index set
+h
+binary
+angle
+h
+
+Evidence review
+
+Fig. 1. Conceptual vector workflow with no measured data. AI tool: OpenAI assistant. Prompt:
+show fixed protocol, audits and tests, and evidence review in sequence.
+
+State the interval interpretation, solar-position source, visibility tolerances, receiver
+mapping, and geometry treatment. The notation asserts no agreement with an external
+solver.
+Figure 1 illustrates the evidence sequence. Describe containment, volume, matched
+runtime, and validation checks separately.
+
+3
+
+Results, Limitations, and Conclusions
+
+Insert reviewed evidence, retain unresolved effects, and separate measurements from
+extrapolations. Write conclusions only after scientific review.
+
+Provisional AI Use Disclosure
+An OpenAI assistant [1] generated this proof, including its prose, equations, table, and
+conceptual diagram. No experimental values were generated. Final AI-use disclosure
+and its anonymous placement require author review. Human authors must also declare
+competing interests; none are asserted on their behalf here.
+
+References
+1. OpenAI: OpenAI. https://openai.com/, tool-provider reference for the AI-assisted formatting proof; accessed 16 October 2026
+2. Sadeghipour Roudsari, M., Pak, M.: Ladybug: A parametric environmental plugin for
+Grasshopper to help designers create an environmentally-conscious design. In: Proceedings of
+BS2013: 13th Conference of International Building Performance Simulation Association. pp.
+3128–3135 (2013). https://doi.org/10.26868/25222708.2013.2499
+
+
