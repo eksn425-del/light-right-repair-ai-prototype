@@ -15,7 +15,15 @@ def test_historical_timings_not_measured_in_new_run():
   if r['metric'].startswith('historical_'):
    assert r['status'].startswith('REUSED_FROZEN')
    assert r['run_id']=='baseline_20260909_clean'
- assert next(r for r in rows if r['metric']=='real_matched_ablation_speedup')['value']==''
+ r=next(r for r in rows if r['metric']=='real_matched_ablation_speedup')
+ if r['value']:
+  measured=ROOT/'runs/local_ablation_20261016/ablation_summary.csv'
+  full=next(x for x in csv.DictReader(measured.open()) if x['subset_size']=='630')
+  assert full['completed_matched_repetitions']=='3' and full['all_equal']=='True'
+  assert float(r['value'])==float(full['measured_speedup'])
+  assert r['measurement_class']=='MEASURED_REAL_SITE'
+ else:
+  assert r['status']=='BLOCKED'
 
 def test_frozen_aggregate_figure_is_genuine_vector():
  p=ROOT/'paper_support/figures/same_metric_area_agreement.svg'
@@ -33,9 +41,13 @@ def test_actual_runtime_smoke_not_real_scene_claim():
  assert d['measurement_class']=='SYNTHETIC_RUNTIME_SMOKE'
  assert [float(v) for v in d['result_values'][0].split()]==[0.0,0.5]
 
-def test_readiness_and_author_gates_remain_false():
+def test_readiness_requires_real_gates_and_author_gates_remain_false():
  s=json.loads((ROOT/'STATUS.json').read_text())
- assert s['evidence_ready_for_web_review'] is False
+ if s['evidence_ready_for_web_review']:
+  gate=json.loads((ROOT/'runs/local_quality_20261016/experiment_gate_report.json').read_text())
+  assert gate['all_experiment_gates_passed'] and all(gate['checks'].values())
+  assert all(s['tasks'][key]=='PASS' for key in ['G0','G1','G2','G3','G4','G5','G6'])
+  assert s['EVIDENCE_READY_FOR_WEB_REVIEW'] is True
  assert s['author_approved'] is False and s['submitted'] is False
  assert s['manuscript_draft_ready'] is False
 
