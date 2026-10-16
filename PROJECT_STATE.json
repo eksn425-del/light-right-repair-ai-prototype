@@ -8,6 +8,7 @@
   "entry_point": "START_HERE.md",
   "archive_path": "project_archive_2026_10_16/",
   "complete_paper_assets": "paper_assets/",
+  "connector_read_verified_on": "2026-10-16",
   "frozen_evidence": {
     "branch": "research-repro-v1",
     "tag": "soict-2026-write-ready-v1",

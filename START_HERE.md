@@ -28,6 +28,7 @@
 - [实验运行与阶段目录登记](project_archive_2026_10_16/indexes/EXPERIMENT_REGISTER.csv)
 - [论文、LaTeX 与 BibTeX 版本登记](project_archive_2026_10_16/indexes/MANUSCRIPT_INDEX.csv)
 - [未上传源文件清单](project_archive_2026_10_16/indexes/EXCLUDED_SOURCE_FILES.csv)
+- [超大“1314焕新计划”PDF 的可检索文字](project_archive_2026_10_16/context/large_planning_pdf/1314_PLAN_SEARCHABLE_TEXT.md)
 
 研究事实冻结在 `soict-2026-write-ready-v1`，对应源提交 `6b64fe43451e2e0330930a5677cbe3432307282b`、运行 ID `baseline_20260909_clean`。当前总档案是这份证据与项目历史的交接集合。旧文件名中的“终稿”“最终”不能替代这个版本规则。
 

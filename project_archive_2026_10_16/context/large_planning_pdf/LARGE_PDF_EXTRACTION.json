@@ -1,0 +1,413 @@
+{
+  "source_file": "20250212灌口镇灌口一二社区“1314”焕新计划.pdf",
+  "source_bytes": 195817290,
+  "source_sha256": "a29053c1afdffd420b80b8756dbc35ba59d205075a6e7c7c49c9c38b519c65fd",
+  "raw_pdf_uploaded": false,
+  "extraction_date": "2026-10-16",
+  "page_count": 80,
+  "extracted_characters": 12675,
+  "text_output": "context/large_planning_pdf/1314_PLAN_SEARCHABLE_TEXT.md",
+  "limitation": "Text extraction does not preserve maps, drawings or scanned-image text. No OCR or scientific re-analysis was performed.",
+  "pages": [
+    {
+      "page": 1,
+      "extracted_characters": 4,
+      "requires_visual_reference": true
+    },
+    {
+      "page": 2,
+      "extracted_characters": 133,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 3,
+      "extracted_characters": 42,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 4,
+      "extracted_characters": 232,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 5,
+      "extracted_characters": 632,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 6,
+      "extracted_characters": 44,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 7,
+      "extracted_characters": 81,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 8,
+      "extracted_characters": 146,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 9,
+      "extracted_characters": 43,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 10,
+      "extracted_characters": 3,
+      "requires_visual_reference": true
+    },
+    {
+      "page": 11,
+      "extracted_characters": 126,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 12,
+      "extracted_characters": 228,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 13,
+      "extracted_characters": 176,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 14,
+      "extracted_characters": 168,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 15,
+      "extracted_characters": 79,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 16,
+      "extracted_characters": 5,
+      "requires_visual_reference": true
+    },
+    {
+      "page": 17,
+      "extracted_characters": 132,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 18,
+      "extracted_characters": 125,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 19,
+      "extracted_characters": 34,
+      "requires_visual_reference": true
+    },
+    {
+      "page": 20,
+      "extracted_characters": 12,
+      "requires_visual_reference": true
+    },
+    {
+      "page": 21,
+      "extracted_characters": 121,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 22,
+      "extracted_characters": 177,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 23,
+      "extracted_characters": 163,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 24,
+      "extracted_characters": 153,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 25,
+      "extracted_characters": 106,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 26,
+      "extracted_characters": 126,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 27,
+      "extracted_characters": 133,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 28,
+      "extracted_characters": 169,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 29,
+      "extracted_characters": 129,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 30,
+      "extracted_characters": 129,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 31,
+      "extracted_characters": 166,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 32,
+      "extracted_characters": 159,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 33,
+      "extracted_characters": 96,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 34,
+      "extracted_characters": 10,
+      "requires_visual_reference": true
+    },
+    {
+      "page": 35,
+      "extracted_characters": 141,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 36,
+      "extracted_characters": 115,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 37,
+      "extracted_characters": 120,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 38,
+      "extracted_characters": 134,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 39,
+      "extracted_characters": 213,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 40,
+      "extracted_characters": 143,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 41,
+      "extracted_characters": 125,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 42,
+      "extracted_characters": 185,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 43,
+      "extracted_characters": 217,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 44,
+      "extracted_characters": 219,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 45,
+      "extracted_characters": 220,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 46,
+      "extracted_characters": 204,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 47,
+      "extracted_characters": 5,
+      "requires_visual_reference": true
+    },
+    {
+      "page": 48,
+      "extracted_characters": 245,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 49,
+      "extracted_characters": 188,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 50,
+      "extracted_characters": 172,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 51,
+      "extracted_characters": 154,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 52,
+      "extracted_characters": 221,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 53,
+      "extracted_characters": 379,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 54,
+      "extracted_characters": 142,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 55,
+      "extracted_characters": 187,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 56,
+      "extracted_characters": 160,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 57,
+      "extracted_characters": 157,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 58,
+      "extracted_characters": 182,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 59,
+      "extracted_characters": 195,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 60,
+      "extracted_characters": 127,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 61,
+      "extracted_characters": 149,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 62,
+      "extracted_characters": 119,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 63,
+      "extracted_characters": 214,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 64,
+      "extracted_characters": 466,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 65,
+      "extracted_characters": 355,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 66,
+      "extracted_characters": 3,
+      "requires_visual_reference": true
+    },
+    {
+      "page": 67,
+      "extracted_characters": 99,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 68,
+      "extracted_characters": 8,
+      "requires_visual_reference": true
+    },
+    {
+      "page": 69,
+      "extracted_characters": 133,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 70,
+      "extracted_characters": 122,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 71,
+      "extracted_characters": 134,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 72,
+      "extracted_characters": 521,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 73,
+      "extracted_characters": 193,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 74,
+      "extracted_characters": 106,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 75,
+      "extracted_characters": 161,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 76,
+      "extracted_characters": 208,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 77,
+      "extracted_characters": 191,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 78,
+      "extracted_characters": 289,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 79,
+      "extracted_characters": 196,
+      "requires_visual_reference": false
+    },
+    {
+      "page": 80,
+      "extracted_characters": 176,
+      "requires_visual_reference": false
+    }
+  ]
+}
