@@ -20,7 +20,7 @@
   "new_experiments_run": false,
   "tasks": {
     "G0": "COMPLETED_WITH_LIMITATIONS",
-    "G1": "NOT_STARTED",
+    "G1": "PASS",
     "G2": "NOT_STARTED",
     "G3": "NOT_STARTED",
     "G4": "NOT_STARTED",

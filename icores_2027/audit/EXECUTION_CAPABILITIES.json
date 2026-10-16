@@ -12,7 +12,7 @@
   "virtualization_limits": "UNKNOWN: sysfs/cgroup unavailable",
   "github_visibility": "private",
   "github_permissions_push": true,
-  "github_write": "PENDING_G0_COMMIT",
+  "github_write": "VERIFIED: G0 branch commit 4094e5ce732d4afde5e7e3e55b743c07b07477cf",
   "git_clone": "FAILED_NO_SHELL_CREDENTIALS",
   "read_route": "GitHub connector immutable file materialization",
   "source_head": "ce4087f564a1169b500c0106f869158349c58c6e",
@@ -32,7 +32,7 @@
     "lbt_recipes": false,
     "pvlib": false
   },
-  "dependency_install": "isolated venv installation in progress; no actual HB run",
+  "dependency_install": "isolated venv succeeded; Honeybee runtime import and Radiance smoke verification pending",
   "raw_geometry_available": false,
   "ordered_sensors_available": false,
   "old_hourly_outputs_available": false,
