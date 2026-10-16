@@ -19,3 +19,11 @@ def test_missing_or_unrecognized_gate_is_rejected(value):
 
 def test_missing_runs_cannot_pass_ready(tmp_path):
     with pytest.raises(FileNotFoundError): check_experiments(tmp_path/'a',tmp_path/'b')
+
+
+def test_measured_decimal_round_trip_is_preserved(tmp_path):
+    path=tmp_path/'decimal.csv'
+    path.write_text('value\n1.0000000000000002\n')
+    data=pd.read_csv(path,float_precision='round_trip')
+    data.to_csv(path,index=False)
+    assert float(path.read_text().splitlines()[1])==float('1.0000000000000002')

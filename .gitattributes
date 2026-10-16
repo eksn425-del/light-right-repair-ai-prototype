@@ -11,3 +11,5 @@ PROJECT_STATE.json -text
 icores_2027/runs/local_*/** -text
 icores_2027/paper_support/figures/same_metric_area_agreement.svg -text
 icores_2027/formatting/anonymous/skeleton.tex -text
+icores_2027/paper_support/figures/local_* -text
+icores_2027/paper_support/cloud_checkpoint/** -text

@@ -297,7 +297,8 @@ def load_normalization_reference(protocol: Mapping[str, Any]) -> tuple[dict, dic
             raise ReadinessError("Frozen full630 normalization source/hash unavailable or mismatched")
         amendment = json.loads(amendment_path.read_text(encoding='utf-8'))
         entry = amendment.get('normalization_reference', {})
-        if (amendment.get('protocol_sha256') != sha256_file(DEFAULT_PROTOCOL)
+        accepted_protocol_hashes=amendment.get('accepted_protocol_byte_hashes',[amendment.get('protocol_sha256')])
+        if (sha256_file(DEFAULT_PROTOCOL) not in accepted_protocol_hashes
                 or entry.get('registered_hash') != expected
                 or entry.get('committed_file_sha256') != actual_hash
                 or entry.get('path') != NORMALIZATION_SOURCE):

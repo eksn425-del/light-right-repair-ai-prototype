@@ -121,11 +121,12 @@ def generate(ablation,hb,code_commit):
         if not (cloud/filename).exists(): shutil.copy2(P/filename,cloud/filename)
     if not (cloud/'RESULT_DIFF_ICORES.csv').exists():
         shutil.copy2(I/'audit/RESULT_DIFF_ICORES.csv',cloud/'RESULT_DIFF_ICORES.csv')
-    summary=pd.read_csv(ablation/'ablation_summary.csv')
-    replay=pd.read_csv(hb/'design_translation_recheck.csv')
-    geom=pd.read_csv(hb/'geometry_recheck.csv')
-    solar=pd.read_csv(hb/'historical_solar_mapping.csv')
+    summary=pd.read_csv(ablation/'ablation_summary.csv',float_precision='round_trip')
+    replay=pd.read_csv(hb/'design_translation_recheck.csv',float_precision='round_trip')
+    geom=pd.read_csv(hb/'geometry_recheck.csv',float_precision='round_trip')
+    solar=pd.read_csv(hb/'historical_solar_mapping.csv',float_precision='round_trip')
     old=pd.read_csv(cloud/'PAPER_NUMBERS_ICORES.csv').fillna('')
+    old.loc[old.metric.eq('weighted_day_duration'),'notes']='16*0.5h; actual archived HB/WEA/HOY columns now verified; HB/pvlib effective rays not identical.'
     rows=old[~old.metric.eq('real_matched_ablation_speedup')].to_dict('records')
     def number(metric,value,unit,path,row,notes=''):
         rows.append(dict(metric=metric,value=value,unit=unit,source=str(path.relative_to(I)).replace('\\','/'),
@@ -151,6 +152,15 @@ def generate(ablation,hb,code_commit):
     for key in ['elevation_difference_deg','azimuth_difference_deg']:
         number('local_actual_HB_pvlib_max_abs_'+key,float(solar[key].abs().max()),'deg',hb/'historical_solar_mapping.csv',solar.iloc[0],
                'Actual archived solar source columns mapped to local slots; the two engines do not have identical effective rays')
+    overlap=pd.read_csv(hb/'footprint_overlap_audit.csv')
+    adverse=pd.read_csv(hb/'adverse_ray_explanation.csv')
+    for metric,value,source,row in [
+        ('local_HB_replay_scene_count',len(replay),hb/'design_translation_recheck.csv',replay.iloc[0]),
+        ('local_corrected_scene_count',int(replay.model_type.eq('contained_v2').sum()),hb/'design_translation_recheck.csv',replay.iloc[0]),
+        ('local_explained_adverse_ray_events',len(adverse),hb/'adverse_ray_explanation.csv',adverse.iloc[0]),
+        ('canonical_positive_overlap_pair_count',len(overlap),hb/'footprint_overlap_audit.csv',overlap.iloc[0]),
+        ('canonical_identical_footprint_pair_count',int(boolean(overlap.identical_footprints).sum()),hb/'footprint_overlap_audit.csv',overlap.iloc[0])]:
+        number(metric,value,'count',source,row,'Conditional on frozen canonical approximation; not surveyed geometry certification')
     pd.DataFrame(rows).to_csv(P/'PAPER_NUMBERS_ICORES.csv',index=False)
     corrections=pd.read_csv(cloud/'CLAIM_CORRECTIONS.csv').fillna('')
     replacements={

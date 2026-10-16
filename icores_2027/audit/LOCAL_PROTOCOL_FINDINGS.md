@@ -22,4 +22,4 @@ Consequently, matched A/B equality, controlled legacy reproduction and contained
 
 The original protocol and original20 sample remain unchanged. The normalization-source identity amendment and first failed attempt are retained in `LOCAL_FAILURE_HISTORY.md`. The Windows working protocol hash differs from its Git LF blob hash only by checkout line endings; record both forms explicitly rather than silently replacing an old experiment's config hash. New local output files are pinned as binary/text-unconverted evidence in `.gitattributes`.
 
-The6/4 historical cpu split, raw file hashes and exact time mapping come from the actual archived files, not cloud environment inference. Final controlled HB success and full repeated speedup remain subject to their own completed-run reports.
+The2/4 historical cpu split, raw file hashes and exact time mapping come from the actual archived files, not cloud environment inference. Final controlled HB success and full repeated speedup remain subject to their own completed-run reports.

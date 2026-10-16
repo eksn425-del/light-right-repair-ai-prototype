@@ -1,0 +1,25 @@
+.F...................................................................... [ 66%]
+.....................................                                    [100%]
+================================== FAILURES ===================================
+_______________ test_historical_timings_not_measured_in_new_run _______________
+
+    def test_historical_timings_not_measured_in_new_run():
+     rows=list(csv.DictReader((ROOT/'paper_support/PAPER_NUMBERS_ICORES.csv').open()))
+     for r in rows:
+      if r['metric'].startswith('historical_'):
+       assert r['status'].startswith('REUSED_FROZEN')
+       assert r['run_id']=='baseline_20260909_clean'
+     r=next(r for r in rows if r['metric']=='real_matched_ablation_speedup')
+     if r['value']:
+      measured=ROOT/'runs/local_ablation_20261016/ablation_summary.csv'
+      full=next(x for x in csv.DictReader(measured.open()) if x['subset_size']=='630')
+      assert full['completed_matched_repetitions']=='3' and full['all_equal']=='True'
+>     assert float(r['value'])==float(full['measured_speedup'])
+E     AssertionError: assert 482.9272136243724 == 482.92721362437237
+E      +  where 482.9272136243724 = float('482.9272136243724')
+E      +  and   482.92721362437237 = float('482.92721362437237')
+
+icores_2027\tests\test_evidence_contracts.py:23: AssertionError
+=========================== short test summary info ===========================
+FAILED icores_2027/tests/test_evidence_contracts.py::test_historical_timings_not_measured_in_new_run
+1 failed, 108 passed in 7.44s

@@ -1,5 +1,10 @@
 {
   "protocol_sha256": "6433016792a46a4720d40a5c9d8a445e0a832cd8a896a67d4cfae06705f22d97",
+  "accepted_protocol_byte_hashes": [
+    "6433016792a46a4720d40a5c9d8a445e0a832cd8a896a67d4cfae06705f22d97",
+    "86ec7ad7ff5d78048ded963e659ecf0bfbc3d20efad91d46668e516461532f0a"
+  ],
+  "accepted_protocol_byte_hashes_note": "Post-run portability clarification: Windows CRLF working bytes and exact Git LF blob, verified identical after newline normalization. No analysis field changed. Original benchmark used the first hash and source commit1ea4e57.",
   "registered_before_benchmark": true,
   "scientific_definitions_changed": false,
   "reason": "Declared cloud hash differs from tracked file; original protocol preserved; committed reference numerically agrees with independent frozen source",
