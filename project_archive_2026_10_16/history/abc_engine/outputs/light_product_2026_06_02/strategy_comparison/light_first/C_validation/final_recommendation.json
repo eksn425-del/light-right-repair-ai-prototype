@@ -1,0 +1,10 @@
+{
+  "selected_candidate_id": "candidate_01",
+  "reason": "no candidate fully passed; selected least-risk option for design-team revision",
+  "total_score": 19.797,
+  "light_gain": 16.201,
+  "intervention_volume": 46.095,
+  "accessible_route_ratio": 0.78,
+  "safety_score": 80.56,
+  "final_notes": "node_locations_partly_placeholder; road_alignment_inferred; road_centerline_needs_survey; sparse_route_nodes"
+}

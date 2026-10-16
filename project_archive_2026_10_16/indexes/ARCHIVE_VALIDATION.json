@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-10-16",
+  "scope": "archive packaging only; no simulation rerun",
+  "status": "PASS",
+  "source_inventory_rows": 8343,
+  "copied_unique_files": 1067,
+  "hash_checked_source_references": 1658,
+  "word_readable_exports": 35,
+  "run_or_stage_directories_registered": 30,
+  "summary_scalar_fields_indexed": 1426,
+  "frozen_sample_sha256_valid": true,
+  "paper_numbers_identical_to_frozen_run": true,
+  "claims_ledger_identical_to_frozen_run": true,
+  "prohibited_payload_count": 0,
+  "credential_pattern_findings": 0,
+  "errors": [],
+  "exclusion_counts": {
+    "cache_or_simulation_intermediates": 5959,
+    "not_a_selected_handoff_format": 383,
+    "raw_geometry_sensor_or_radiance_source": 157,
+    "sensor_or_point_coordinate_table": 185,
+    "oversized_binary_inventory_only": 1
+  }
+}

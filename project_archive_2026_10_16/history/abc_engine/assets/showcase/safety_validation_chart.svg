@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 580">
+  <rect width="1200" height="580" fill="#f7f6ef"/>
+  <text x="60" y="70" font-family="Microsoft YaHei, sans-serif" font-size="34" font-weight="800" fill="#18201d">算法C安全与可达性筛查</text>
+  <g font-family="Microsoft YaHei, sans-serif">
+    <rect x="140" y="150" width="250" height="300" fill="#fff" stroke="#427d51" stroke-width="4"/><text x="170" y="230" font-size="30" font-weight="800" fill="#427d51">80.56</text><text x="170" y="290" font-size="22" fill="#18201d">安全筛查评分</text><text x="170" y="350" font-size="18" fill="#65716b">未触发硬性冲突</text>
+    <rect x="475" y="150" width="250" height="300" fill="#fff" stroke="#087f96" stroke-width="4"/><text x="505" y="230" font-size="30" font-weight="800" fill="#087f96">0.78</text><text x="505" y="290" font-size="22" fill="#18201d">安全可达覆盖率</text><text x="505" y="350" font-size="18" fill="#65716b">含数据置信度折减</text>
+    <rect x="810" y="150" width="250" height="300" fill="#fff" stroke="#b78a25" stroke-width="4"/><text x="840" y="230" font-size="30" font-weight="800" fill="#b78a25">0</text><text x="840" y="290" font-size="22" fill="#18201d">阻断路径数量</text><text x="840" y="350" font-size="18" fill="#65716b">仍需人工复核道路</text>
+  </g>
+</svg>

@@ -1,0 +1,229 @@
+谢研组“沿湖休闲片区”数据转换与算法试跑反馈
+生成时间：2026-05-20
+
+一、总体结论
+
+你这次补充的格式转换是有效的。
+
+谢研组现在已经不再只是“资料收集阶段”，而是进入了“算法可接收初版数据包”阶段。OBJ、DXF、Excel 高度表之间已经可以建立关系：Excel 中 C1-C45 的高度，能够和 DXF 标号图里的 C1-C45 坐标自动匹配。
+
+但注意：目前生成的是“可运行的近似版”，不是最终真实模型版。建筑边界、道路中心线、幼儿园保护区、照片问题点坐标仍需要组员复核。
+
+二、我已经完成的转换
+
+输出了两份相同的数据包：
+
+1. 组员文件夹版本：
+E:/AI项目/谢研组/processed
+
+2. 项目工程版本：
+E:/AI项目/light_equity_project/data/real_guankou/lakeside_leisure_processed
+
+里面包括：
+
+- site_model.obj
+- site_model.mtl
+- buildings.csv
+- streets.csv
+- nodes.csv
+- protected_zones.csv
+- site_zones.csv
+- photo_index.csv
+- conversion_summary.json
+- building_height_map.png
+- xieyan_lakeside_conversion_report.txt
+
+其中最关键的是 buildings.csv：已经把 C1-C45 的高度表转成算法需要的建筑表。
+
+三、建筑高度表转换结果
+
+成功识别建筑/编号数量：45 个。
+
+高度统计：
+
+- 最低高度：3m
+- 最高高度：21m
+- 平均高度：8.733m
+- 中位数高度：9m
+
+高度分布：
+
+- 3m：8 个
+- 4m：3 个
+- 6m：9 个
+- 9m：10 个
+- 12m：9 个
+- 15m：3 个
+- 18m：1 个
+- 21m：2 个
+
+较高体块：
+
+- C3：21m，约 7 层
+- C19：21m，约 7 层
+- C26：18m，约 6 层
+- C16：15m，约 5 层
+- C27：15m，约 5 层
+- C35：15m，约 5 层
+
+初步判断：
+
+C3 和 C19 是目前片区中最需要关注的高体块，后续算法A诊断时要重点观察它们对低层建筑、步道、公园活动节点和滨水空间的遮挡影响。
+
+C26、C16、C27、C35 也属于潜在遮光影响较强的体块。
+
+3m、4m、6m 的低矮体块较多，它们更适合作为“小尺度灰空间、口袋空间、设施整合、局部加减法”的候选对象。但它们是否真的 movable，必须由组员根据产权、功能、保护要求再判断，不能只按高度自动决定。
+
+四、这次试跑结果
+
+我用粗网格参数做了一次流程验证。
+
+注意：这是为了测试管线能不能跑通，不是论文最终结果。
+
+临时试跑设置：
+
+- 原正式网格：2m
+- 临时粗网格：8m
+- 目的：快速验证 A/B/C 是否能读取谢研组数据包
+
+试跑位置：
+
+E:/AI项目/light_equity_project/outputs/lakeside_leisure_test
+
+算法A输出：
+
+- total_grid_count：137
+- dark_zone_ratio：0.0292
+- average_sunlight_hours：8.066
+
+算法B输出：
+
+- 生成候选方案数量：3
+- 当前最佳候选：candidate_01
+
+算法C输出：
+
+- 最终推荐候选：candidate_01
+- 简化安全规则下通过候选数：3
+
+最终汇总输出：
+
+- E:/AI项目/light_equity_project/outputs/lakeside_leisure_test/final_report/before_after_metrics.csv
+- E:/AI项目/light_equity_project/outputs/lakeside_leisure_test/final_report/comparison_chart.png
+- E:/AI项目/light_equity_project/outputs/lakeside_leisure_test/final_report/final_summary.json
+
+五、为什么现在不能把试跑结果当论文结论
+
+因为当前 buildings.csv 里的 x_min、x_max、y_min、y_max 是根据 DXF 标号圆圈自动估算的近似外接框，不等于真实建筑轮廓。
+
+当前 streets.csv 是根据片区范围生成的占位道路，不是真实道路中心线。
+
+当前 nodes.csv 是根据说明文档和照片问题生成的占位节点，不是真实测绘点。
+
+当前 protected_zones.csv 里幼儿园保护区也是占位边界，不是真实边界。
+
+所以目前可以说：
+
+“沿湖休闲片区数据已经可以进入算法框架试运行。”
+
+但不能说：
+
+“沿湖休闲片区已经完成真实日照诊断和最终方案验证。”
+
+六、谢研组下一步必须做什么
+
+1. 核对 buildings.csv
+
+打开：
+E:/AI项目/谢研组/processed/buildings.csv
+
+逐个核对 C1-C45：
+
+- building_id 是否对应正确建筑；
+- height_m 是否正确；
+- x_min/x_max/y_min/y_max 是否贴合真实建筑外轮廓；
+- floors 是否合理；
+- movable 是否真实可改；
+- protected 是否真实不可动；
+- facade_type 可以暂时 unknown，但最好补充住宅、商业、幼儿园、公共建筑、临建等类型。
+
+2. 明确幼儿园位置
+
+说明文档里写了“幼儿园不可改动”，但没有精确边界。
+
+谢研组必须在 CAD 或 SU 中找到幼儿园，补进：
+
+- buildings.csv 里对应建筑 protected = true；
+- protected_zones.csv 里填写真实 x_min/x_max/y_min/y_max；
+- nodes.csv 里填写幼儿园入口或保护节点。
+
+3. 替换 streets.csv
+
+当前 streets.csv 只是占位。
+
+谢研组需要补真实路径：
+
+- 主要车行路；
+- 滨水步道；
+- 公园/居民活动点连接路径；
+- 停车冲突路段；
+- 需要改善的慢行路径。
+
+每条路至少要有起点、终点、宽度、人行优先属性。
+
+4. 替换 nodes.csv
+
+当前 nodes.csv 是占位问题点。
+
+谢研组要把以下问题落实到真实坐标：
+
+- 夜间照明不足点；
+- 线缆杂乱点；
+- 停车冲突点；
+- 缺少座椅/口袋空间点；
+- 滨水步道断点；
+- 公园活动节点；
+- 幼儿园保护入口。
+
+5. 修正 site_zones.csv
+
+当前已经有以下片区占位：
+
+- vacant green land
+- discontinuous waterfront path
+- parking conflict area
+- kindergarten protected zone
+- park activity node
+- night lighting weak street segment
+
+谢研组需要把这些矩形边界改成真实范围。
+
+6. 核对 photo_index.csv
+
+每张照片要对应一个问题点或片区：
+
+- 哪张是线缆问题；
+- 哪张是停车问题；
+- 哪张是照明问题；
+- 哪张是滨水/绿地/公共空间问题。
+
+七、对 ABC 算法是否需要改
+
+ABC 主逻辑不需要改。
+
+但沿湖休闲片区的数据提醒我们，算法B和算法C后续要更重视公共空间与夜间安全，而不只是白天采光。
+
+沿湖片区适合强调：
+
+- 补光照明节点；
+- 口袋空间和座椅设施；
+- 滨水步道连续性；
+- 停车与慢行冲突整理；
+- 线缆整理作为风貌和安全问题；
+- 幼儿园等公共服务设施保护。
+
+这不改变“光权修复 + 最小干预 + 安全验证”的主线，只是让沿湖片区的干预类型更贴合真实任务书。
+
+八、给网页端继续讨论的简短结论
+
+谢研组提交的新版本已经可以转为算法初版数据包。我已完成 C1-C45 建筑高度表转换、DXF 标号匹配、OBJ/CSV 数据包整理，并用粗网格跑通了 A/B/C 流程。当前可作为工程框架试运行成果，但不能作为最终论文结论。下一步应让组员核对建筑真实轮廓、道路中心线、问题节点、幼儿园保护边界和照片索引。算法主框架无需推翻，只需在沿湖片区强化照明、停车、滨水步道、口袋空间和保护区字段。

@@ -1,0 +1,4 @@
+candidate_id,average_sunlight_hours,dark_zone_ratio,dark_grid_count,sunlight_gain_hours,dark_ratio_drop,intervention_volume,gain_per_1000m3,protected_zone_penalty,notes
+candidate_real_03,6.545,0.1531,75,0.122,0.0224,11620.584,0.947,0,full 6m grid re-simulation with actual candidate intervention boxes
+candidate_real_01,6.506,0.1551,76,0.084,0.0204,6556.565,1.525,0,full 6m grid re-simulation with actual candidate intervention boxes
+candidate_real_02,6.459,0.1612,79,0.037,0.0143,2519.975,2.778,0,full 6m grid re-simulation with actual candidate intervention boxes

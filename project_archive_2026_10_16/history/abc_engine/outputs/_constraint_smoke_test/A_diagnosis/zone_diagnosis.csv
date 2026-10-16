@@ -1,0 +1,3 @@
+zone_id,name,zone_type,grid_count,average_sunlight_hours,dark_zone_ratio,priority,diagnosis,notes
+Z01,toy_main_street_corridor,street_corridor,250,1.576,0.756,5.0,priority_light_and_public_space_repair,legacy linear-street test area
+Z02,toy_pocket_activity_node,community_node,50,0.16,1.0,4.0,priority_light_and_public_space_repair,placeholder for pocket public-space diagnosis

@@ -1,0 +1,4 @@
+candidate_id,safety_score,accessible_route_ratio,raw_route_pass_ratio,data_confidence,blocked_path_count,slope_violation_count,width_violation_count,step_violation_count,guardrail_violation_count,passed,notes
+candidate_01,80.56,0.78,1.0,0.78,0,0,0,0,0,False,node_locations_partly_placeholder; road_alignment_inferred; road_centerline_needs_survey; sparse_route_nodes
+candidate_02,80.56,0.78,1.0,0.78,0,0,0,0,0,False,node_locations_partly_placeholder; road_alignment_inferred; road_centerline_needs_survey; sparse_route_nodes
+candidate_03,80.56,0.78,1.0,0.78,0,0,0,0,0,False,guardrail_detail_required; node_locations_partly_placeholder; road_alignment_inferred; road_centerline_needs_survey; sparse_route_nodes

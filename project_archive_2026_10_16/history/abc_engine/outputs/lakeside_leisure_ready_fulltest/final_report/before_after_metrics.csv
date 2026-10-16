@@ -1,0 +1,4 @@
+scheme_id,scheme_type,average_sunlight_hours,dark_zone_ratio,light_equity_improvement,intervention_volume,accessibility_coverage,safety_score,notes
+baseline_01,baseline,6.638,0.1449,0.0,0.0,0.68,62.0,pre-intervention result from Algorithm A
+manual_01,manual_design,7.088,0.0849,0.414,61.219,0.76,74.0,placeholder; replace after architecture team submits manual scheme
+candidate_01,algorithm_design,8.258,0.0,1.0,48.975,1.0,100.0,selected by Algorithm C from Algorithm B candidates

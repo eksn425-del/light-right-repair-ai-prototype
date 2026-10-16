@@ -1,0 +1,6 @@
+﻿label,candidate_id,buildings,intervention_volume_m3,low_sun_area_drop_m2,average_direct_sun_gain_h,scenario_low_sun_ratio,is_pareto_front,is_final
+最终推荐,C13_C24,"C13,C24",5750.320958999998,162.0,0.05048692977959934,0.17631983598154793,True,True
+C6/C33,C6_C33,"C6,C33",6343.644611249997,9.0,0.010507432086109603,0.18503331624807792,False,False
+高度优先基线,C3_C19,"C3,C19",5953.178853000003,0.0,0.001025115325473891,0.18554587391081498,False,False
+低日照邻近基线,C26_C35,"C26,C35",4546.797452999998,99.0,0.04279856483854427,0.17990773962070733,False,False
+随机基线1000次均值,random_1000,same-count/similar-volume sampled with replacement,5740.487147301183,27.936,,,False,False

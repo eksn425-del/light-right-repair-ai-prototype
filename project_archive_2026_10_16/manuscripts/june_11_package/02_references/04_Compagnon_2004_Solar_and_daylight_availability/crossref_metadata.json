@@ -1,0 +1,288 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          6
+        ]
+      ],
+      "date-time": "2026-06-06T03:54:36Z",
+      "timestamp": 1780718076067,
+      "version": "3.54.1"
+    },
+    "reference-count": 16,
+    "publisher": "Elsevier BV",
+    "issue": "4",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2004,
+              4,
+              1
+            ]
+          ],
+          "date-time": "2004-04-01T00:00:00Z",
+          "timestamp": 1080777600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Energy and Buildings"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2004,
+          4
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.enbuild.2004.01.009",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2004,
+          4,
+          13
+        ]
+      ],
+      "date-time": "2004-04-13T09:30:59Z",
+      "timestamp": 1081848659000
+    },
+    "page": "321-328",
+    "source": "Crossref",
+    "is-referenced-by-count": 312,
+    "title": [
+      "Solar and daylight availability in the urban fabric"
+    ],
+    "prefix": "10.1016",
+    "volume": "36",
+    "author": [
+      {
+        "given": "R.",
+        "family": "Compagnon",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.enbuild.2004.01.009_BIB1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "M. Santamouris (Guest Ed.), Solar Energy in the Urban Environment, Solar Energy 70 (3) (2001) 175–318 (special issue).",
+        "DOI": "10.1016/S0038-092X(00)00087-6"
+      },
+      {
+        "key": "10.1016/j.enbuild.2004.01.009_BIB2",
+        "unstructured": "P. Schatt, Besonnung von Wohnungen, Schattenwurf. Institut für Orts-, Regional- und Landesplanung der ETH-Z, Zürich, 1965."
+      },
+      {
+        "key": "10.1016/j.enbuild.2004.01.009_BIB3",
+        "unstructured": "P.J. Littlefair, M.E. Aizlewood, Calculating Access to Skylight, Sunlight and Solar Radiation on Obstructed Sites in Europe, BRE Publication no. 379, Construction Research Communication Ltd., Watford, UK, 1999."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.enbuild.2004.01.009_BIB4",
+        "doi-asserted-by": "crossref",
+        "first-page": "15",
+        "DOI": "10.1016/S0378-7788(02)00076-2",
+        "article-title": "The solar envelope: its meaning for urban growth and form",
+        "volume": "35",
+        "author": "Knowles",
+        "year": "2003",
+        "journal-title": "Energy and Buildings"
+      },
+      {
+        "key": "10.1016/j.enbuild.2004.01.009_BIB5",
+        "unstructured": "G. Ward Larson, R. Shakespeare, Rendering with Radiance: The Art and Science of Lighting Visualization, Morgan Kaufmann, San Francisco, 1998. http://radsite.lbl.gov/radiance/."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.enbuild.2004.01.009_BIB6",
+        "doi-asserted-by": "crossref",
+        "first-page": "27",
+        "DOI": "10.1016/S0378-7788(02)00077-4",
+        "article-title": "Irradiation mapping of complex urban environments: an image-based approach",
+        "volume": "35",
+        "author": "Mardaljevic",
+        "year": "2003",
+        "journal-title": "Energy and Buildings"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.enbuild.2004.01.009_BIB7",
+        "doi-asserted-by": "crossref",
+        "first-page": "271",
+        "DOI": "10.1016/0038-092X(90)90055-H",
+        "article-title": "Modelling daylight availability and irradiance components from direct and global irradiance",
+        "volume": "44",
+        "author": "Perez",
+        "year": "1990",
+        "journal-title": "Solar Energy"
+      },
+      {
+        "key": "10.1016/j.enbuild.2004.01.009_BIB8",
+        "unstructured": "J.-J. Delaunay, Contribution à la modélisation de la lumière naturelle en vue de son application à la simulation de l’éclairage des locaux, Thèse de doctorat, Université Louis Pasteur de Strasbourg 1, 1995."
+      },
+      {
+        "key": "10.1016/j.enbuild.2004.01.009_BIB9",
+        "unstructured": "J. Remund, S. Kunz, R. Lang, Solar Engineering Handbook METEONORM—Global Meteorological Database for Solar Energy and Applied Climatology, Version 4.0, Meteotest & Swiss Federal Office for Energy, Bern, 1999. http://www.meteotest.ch/."
+      },
+      {
+        "key": "10.1016/j.enbuild.2004.01.009_BIB10",
+        "unstructured": "P. Tregenza, S. Sharples, Daylighting algorithms, Report ETSU S 1350, Department of Trade and Industry, UK, 1993."
+      },
+      {
+        "key": "10.1016/j.enbuild.2004.01.009_BIB11",
+        "unstructured": "R. Compagnon, Solar and daylight availability in urban areas, Final Technical Report (PRECis project), Ecole d’ingénieurs et d’architectes de Fribourg, 2000."
+      },
+      {
+        "key": "10.1016/j.enbuild.2004.01.009_BIB12",
+        "unstructured": "C. Ratti, D. Robinson, N. Baker, K. Steemers, L.T. Urban, The energy modelling of urban form, in: K. Steemers, S. Yannas (Eds.), Proceedings of the PLEA 2000, Cambridge, UK, July 2000, James & James Science Publishers Ltd, London, 2000."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.enbuild.2004.01.009_BIB13",
+        "doi-asserted-by": "crossref",
+        "first-page": "187",
+        "DOI": "10.1016/S0038-092X(00)00097-9",
+        "article-title": "Townscope II-A computer system to support solar access decision-making",
+        "volume": "70",
+        "author": "Teller",
+        "year": "2001",
+        "journal-title": "Solar Energy"
+      },
+      {
+        "issue": "8/9",
+        "key": "10.1016/j.enbuild.2004.01.009_BIB14",
+        "doi-asserted-by": "crossref",
+        "first-page": "833",
+        "DOI": "10.1016/S0360-1323(02)00049-5",
+        "article-title": "A daylight simulation tool for urban and architectural spaces—application to transmitted direct and diffuse light through glazing",
+        "volume": "37",
+        "author": "Miguet",
+        "year": "2002",
+        "journal-title": "Building and Environment"
+      },
+      {
+        "key": "10.1016/j.enbuild.2004.01.009_BIB15",
+        "unstructured": "European Commission DG TREN, Solar ElectriCity Guide, Institut Cerdà, Barcelona, 2001. http://pvcityguide.energyprojects.net/."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.enbuild.2004.01.009_BIB16",
+        "doi-asserted-by": "crossref",
+        "first-page": "83",
+        "DOI": "10.1016/0360-1323(94)E0006-D",
+        "article-title": "Mean daylight illuminance in rooms facing sunlit streets",
+        "volume": "30",
+        "author": "Tregenza",
+        "year": "1995",
+        "journal-title": "Building and Environment"
+      }
+    ],
+    "container-title": [
+      "Energy and Buildings"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0378778804000398?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0378778804000398?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2019,
+          2,
+          14
+        ]
+      ],
+      "date-time": "2019-02-14T03:25:47Z",
+      "timestamp": 1550114747000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0378778804000398"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2004,
+          4
+        ]
+      ]
+    },
+    "references-count": 16,
+    "journal-issue": {
+      "issue": "4",
+      "published-print": {
+        "date-parts": [
+          [
+            2004,
+            4
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "S0378778804000398"
+    ],
+    "URL": "https://doi.org/10.1016/j.enbuild.2004.01.009",
+    "relation": {},
+    "ISSN": [
+      "0378-7788"
+    ],
+    "issn-type": [
+      {
+        "value": "0378-7788",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2004,
+          4
+        ]
+      ]
+    }
+  }
+}

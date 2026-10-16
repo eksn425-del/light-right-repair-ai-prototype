@@ -1,0 +1,28 @@
+{
+  "run_id": "baseline_20260909_clean",
+  "stage": "independent_composite_validation",
+  "timestamp_utc": "2026-09-10T07:26:30+00:00",
+  "git_commit": "bca5d8733dd472eca08d0293de0bdcf4b9ee4c9d",
+  "config_path": "E:\\AI项目\\light-equity-soict-2026\\configs\\research.yaml",
+  "config_sha256": "e6c389dcee933658cb198fb720f840711b248bcd0aa3b1f3f389f1f288cfdcda",
+  "inputs": [
+    {
+      "path": "E:\\AI项目\\light-equity-soict-2026\\experiments\\baseline_20260909_clean\\independent_validation\\VALIDATION_SAMPLE_FROZEN.csv",
+      "exists": true,
+      "sha256": "ad4abb9b89a263edaecc2cb3553f7832ce0ccb460521ba218e0083e05bcb46b2"
+    },
+    {
+      "path": "E:\\AI项目\\light-equity-soict-2026\\experiments\\baseline_20260909_clean\\results_csv\\120_canonical_2p5D完整双建筑候选排名.csv",
+      "exists": true,
+      "sha256": "d163a7bdc90b51f002559dffc8a4051913ef1f861a35641b1a8400a3cabf2824"
+    },
+    {
+      "path": "E:\\AI项目\\light-equity-soict-2026\\experiments\\baseline_20260909_clean\\hb_radiance_project_batch\\baseline\\direct_sun_hours\\results\\cumulative\\ground_3m_road_open_space.res",
+      "exists": true,
+      "sha256": "7ffd588c6f4b827bc76fc60d96d54d86868f3d08edf8a8e161843eb1265a30cd"
+    }
+  ],
+  "sample_size": 20,
+  "spearman_rho": 1.0,
+  "frozen_sample_sha256": "ad4abb9b89a263edaecc2cb3553f7832ce0ccb460521ba218e0083e05bcb46b2"
+}

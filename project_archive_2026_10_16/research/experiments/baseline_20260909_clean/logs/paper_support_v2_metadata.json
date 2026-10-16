@@ -1,0 +1,33 @@
+{
+  "run_id": "baseline_20260909_clean",
+  "stage": "paper_support_v2",
+  "timestamp_utc": "2026-09-10T07:36:51+00:00",
+  "git_commit": "bca5d8733dd472eca08d0293de0bdcf4b9ee4c9d",
+  "config_path": "E:\\AI项目\\light-equity-soict-2026\\configs\\research.yaml",
+  "config_sha256": "e6c389dcee933658cb198fb720f840711b248bcd0aa3b1f3f389f1f288cfdcda",
+  "inputs": [
+    {
+      "path": "E:\\AI项目\\light-equity-soict-2026\\experiments\\baseline_20260909_clean\\results_csv\\120_canonical_2p5D完整双建筑候选排名.csv",
+      "exists": true,
+      "sha256": "d163a7bdc90b51f002559dffc8a4051913ef1f861a35641b1a8400a3cabf2824"
+    },
+    {
+      "path": "E:\\AI项目\\light-equity-soict-2026\\experiments\\baseline_20260909_clean\\results\\independent_composite_metrics.csv",
+      "exists": true,
+      "sha256": "61ac94f6e5cbfa9e0154041f16c1330da337085b3a61b8cc0e67e217ace8aaed"
+    },
+    {
+      "path": "E:\\AI项目\\light-equity-soict-2026\\experiments\\baseline_20260909_clean\\results\\runtime_summary_v2.json",
+      "exists": true,
+      "sha256": "2608103d608a861d3184f1d5eef88acef3f3ef63c3fb5dc5b4b3c6c75bd8baa9"
+    },
+    {
+      "path": "E:\\AI项目\\light-equity-soict-2026\\configs\\research.yaml",
+      "exists": true,
+      "sha256": "e6c389dcee933658cb198fb720f840711b248bcd0aa3b1f3f389f1f288cfdcda"
+    }
+  ],
+  "paper_numbers": "E:\\AI项目\\light-equity-soict-2026\\experiments\\baseline_20260909_clean\\paper_support\\PAPER_NUMBERS.csv",
+  "claims_ledger": "E:\\AI项目\\light-equity-soict-2026\\experiments\\baseline_20260909_clean\\paper_support\\CLAIMS_LEDGER.csv",
+  "writing_brief": "E:\\AI项目\\light-equity-soict-2026\\experiments\\baseline_20260909_clean\\paper_support\\SOICT_2026_PAPER_WRITING_BRIEF.md"
+}

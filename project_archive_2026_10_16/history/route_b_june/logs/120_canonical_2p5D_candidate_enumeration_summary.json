@@ -1,0 +1,10 @@
+{
+  "generated_candidate_count": 630,
+  "legal_building_count": 36,
+  "baseline_low_area_h3_m2": 3051.0,
+  "baseline_mean_direct_sun_hours": 5.960118168389956,
+  "top10_count": 10,
+  "pareto_nonzero_count": 12,
+  "must_hb_unique_count": 23,
+  "random_seed_for_future_sampling": 20260620
+}

@@ -1,0 +1,5 @@
+startup
+model=E:\skp_convert_light_equity\working_algorithm_after.skp
+saved=true
+C33: C33 9m
+C6: C6 6m

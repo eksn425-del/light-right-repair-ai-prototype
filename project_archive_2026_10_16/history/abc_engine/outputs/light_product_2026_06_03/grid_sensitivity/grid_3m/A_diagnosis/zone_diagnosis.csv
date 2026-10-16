@@ -1,0 +1,4 @@
+zone_id,name,zone_type,grid_count,average_sunlight_hours,dark_zone_ratio,priority,diagnosis,notes
+LH_Z002,road layer corridor,main_road_corridor,1901,6.488,0.1615,5.0,general_context_zone,derived from road layer; represents the middle/main street range
+LH_Z001,vacant green land,vacant_land,119,8.765,0.0,5.0,idle_space_activation_candidate,editable vacant green land; boundary placeholder
+LH_Z003,kindergarten protected zone C42,protected_public_service,0,0.0,0.0,5.0,general_context_zone,C42 kindergarten fixed/non-movable

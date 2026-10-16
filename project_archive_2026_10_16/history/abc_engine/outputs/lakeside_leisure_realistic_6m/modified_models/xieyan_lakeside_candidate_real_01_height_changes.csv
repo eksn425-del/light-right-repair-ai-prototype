@@ -1,0 +1,4 @@
+﻿building_id,old_height_m,new_height_m,removed_height_m,intervention_id,intervention_type,volume_change_m3
+C33,9.0,7.0,2.0,candidate_real_01_I01,subtract,-967.61
+C26,18.0,16.0,2.0,candidate_real_01_I02,subtract,-1049.871
+C24,9.0,7.0,2.0,candidate_real_01_I03,subtract,-4539.084

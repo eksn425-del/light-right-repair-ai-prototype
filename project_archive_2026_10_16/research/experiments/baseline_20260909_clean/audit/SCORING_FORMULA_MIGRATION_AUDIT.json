@@ -1,0 +1,14 @@
+{
+  "old_file": "E:\\AI项目\\light-equity-soict-2026\\experiments\\baseline_20260909_clean\\audit\\SCORING_FORMULA_PRE_PATCH_120.csv",
+  "new_file": "E:\\AI项目\\light-equity-soict-2026\\experiments\\baseline_20260909_clean\\results_csv\\120_canonical_2p5D完整双建筑候选排名.csv",
+  "candidate_count_old": 630,
+  "candidate_count_new": 630,
+  "pair_set_same": true,
+  "max_abs_score_diff": 0.0,
+  "ranking_same": true,
+  "top10_same": true,
+  "pareto_same": true,
+  "old_formula": "historical clean production score",
+  "new_formula": "0.45 A_norm + 0.35 H_norm + 0.15 (1-V_norm) + 0.05 (1-N_norm), config-driven",
+  "status": "PASS"
+}

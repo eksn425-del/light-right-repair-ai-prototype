@@ -1,0 +1,3 @@
+﻿algorithm_candidate,manual_review_node,review_rule,accepted,design_translation,recomputed_after_translation,final_reason
+C13_C24,候选建筑是否可干预,排除 protected=True，核对功能、产权、结构风险,待导师/设计师复核,整体减高转译为上部退台/转角切削/采光缝,True,以独立三维参考复算结果判断是否保留
+C6_C33,旧稿重点方案复核,不得因旧稿保留而反向调参,仅按真实结果判断,可作为候选区间对照,规则模型已复算；若作为最终方案需补设计模型,与最终候选、Pareto和独立参考结果共同比较

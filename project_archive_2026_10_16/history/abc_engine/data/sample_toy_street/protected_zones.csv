@@ -1,0 +1,3 @@
+zone_id,x_min,x_max,y_min,y_max,z_min,z_max,reason,notes
+PZ_B03,37.0,48.0,6.0,23.0,0.0,15,toy protected historical facade,do not cut or occupy in candidate generation
+PZ_B09,33.0,49.0,-24.0,-6.0,0.0,12,toy protected historical facade,do not cut or occupy in candidate generation

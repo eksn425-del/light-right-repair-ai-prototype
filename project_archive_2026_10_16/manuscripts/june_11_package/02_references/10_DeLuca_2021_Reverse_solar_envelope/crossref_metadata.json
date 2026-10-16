@@ -1,0 +1,1060 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          4
+        ]
+      ],
+      "date-time": "2026-06-04T22:01:24Z",
+      "timestamp": 1780610484690,
+      "version": "3.54.1"
+    },
+    "reference-count": 84,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              3,
+              1
+            ]
+          ],
+          "date-time": "2021-03-01T00:00:00Z",
+          "timestamp": 1614556800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              3,
+              1
+            ]
+          ],
+          "date-time": "2021-03-01T00:00:00Z",
+          "timestamp": 1614556800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      }
+    ],
+    "funder": [
+      {
+        "name": "Estonian Centre of Excellence in Zero Energy and Resource Efficient Smart Buildings and Districts, ZEBE",
+        "award": [
+          "2014-2020.4.01.15-0016"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "2014-2020.4.01.15-0016"
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100008530",
+        "name": "European Regional Development Fund",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100008530",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100000780",
+        "name": "European Commission",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "H2020"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "H2020"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100000780",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100000780",
+        "name": "European Commission",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "856602"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "856602"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100000780",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Automation in Construction"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          3
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.autcon.2020.103518",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2020,
+          12,
+          21
+        ]
+      ],
+      "date-time": "2020-12-21T23:14:07Z",
+      "timestamp": 1608592447000
+    },
+    "page": "103518",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 18,
+    "special_numbering": "C",
+    "title": [
+      "Reverse solar envelope method. A new building form-finding method that can take regulatory frameworks into account"
+    ],
+    "prefix": "10.1016",
+    "volume": "123",
+    "author": [
+      {
+        "given": "Francesco",
+        "family": "De Luca",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Timur",
+        "family": "Dogan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Abel",
+        "family": "Sepúlveda",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0005",
+        "series-title": "A Golden Thread. 2500 Years of Solar Architecture and Technology",
+        "author": "Butti",
+        "year": "1980"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.autcon.2020.103518_bb0010",
+        "first-page": "25",
+        "article-title": "The right to the sun in the urban design",
+        "volume": "2",
+        "author": "Lepore",
+        "year": "2017",
+        "journal-title": "Vitruvio Int. J. Archit. Technol. Sustain."
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0015",
+        "series-title": "Form Follows Finance. Skyscrapers and Skylines in New York and Chicago",
+        "author": "Willis",
+        "year": "1995"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.autcon.2020.103518_bb0020",
+        "first-page": "132",
+        "article-title": "The future of ancient light",
+        "volume": "6",
+        "author": "Howard",
+        "year": "1989",
+        "journal-title": "J. Archit. Plann. Res."
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0025",
+        "series-title": "Proceedings of the 3rd International Conference Passive and Low Energy Cooling for the Built Environment PALENC 2010, Rhodes Island, Greece, 29 September-1 October 2010",
+        "first-page": "1",
+        "article-title": "Solar Access in the compact city: a study case in Barcelona",
+        "author": "Curreli",
+        "year": "2010"
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0030",
+        "series-title": "‘Towards a New Architecture’. London, UK: John Rodker. Reprint (1986)",
+        "first-page": "29",
+        "author": "Le Corbusier",
+        "year": "1931"
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.autcon.2020.103518_bb0035",
+        "doi-asserted-by": "crossref",
+        "first-page": "715",
+        "DOI": "10.1016/j.enbuild.2006.03.005",
+        "article-title": "Daylighting - Light, form, and people",
+        "volume": "38",
+        "author": "Reinhart",
+        "year": "2006",
+        "journal-title": "Energy Build."
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0040",
+        "author": "United Nations Department of Economic and Social Affairs"
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0045",
+        "series-title": "Science for Environment Policy - Future Brief 14: No Net Land Take by 2050?",
+        "author": "Science Communication Unit",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0050",
+        "series-title": "World Energy Outlook 2016",
+        "author": "International Energy Agency",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0055",
+        "doi-asserted-by": "crossref",
+        "first-page": "53",
+        "DOI": "10.1016/j.solener.2016.09.005",
+        "article-title": "Urban geometry and solar availability on façades and ground of real urban forms: using London as a case study",
+        "volume": "138",
+        "author": "Chatzipoulka",
+        "year": "2016",
+        "journal-title": "Sol. Energy"
+      },
+      {
+        "issue": "9",
+        "key": "10.1016/j.autcon.2020.103518_bb0060",
+        "article-title": "Effects of orientations, aspect ratios, pavement materials and vegetation elements on thermal stress inside typical urban canyons",
+        "volume": "16",
+        "author": "Lobaccaro",
+        "year": "2019",
+        "journal-title": "Int. J. Environ. Res. Public Health"
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.autcon.2020.103518_bb0065",
+        "doi-asserted-by": "crossref",
+        "first-page": "939",
+        "DOI": "10.1080/23744731.2016.1195657",
+        "article-title": "Analysis of the insolation criteria for nearly-zero energy buildings in Estonia",
+        "volume": "22",
+        "author": "Voll",
+        "year": "2016",
+        "journal-title": "Sci. Technol. Built Environ."
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0070",
+        "doi-asserted-by": "crossref",
+        "first-page": "762",
+        "DOI": "10.1016/j.enbuild.2004.10.010",
+        "article-title": "Energy consumption and urban texture",
+        "volume": "37",
+        "author": "Ratti",
+        "year": "2005",
+        "journal-title": "Energy Build."
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0075",
+        "doi-asserted-by": "crossref",
+        "first-page": "1143",
+        "DOI": "10.1016/j.egypro.2012.11.127",
+        "article-title": "Solar energy as a design parameter in urban planning",
+        "volume": "30",
+        "author": "Kanters",
+        "year": "2012",
+        "journal-title": "Energy Procedia"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.autcon.2020.103518_bb0080",
+        "doi-asserted-by": "crossref",
+        "first-page": "623",
+        "DOI": "10.1108/MEQ-05-2015-0102",
+        "article-title": "Horizontal or vertical? Windows’ layout selection for shading devices optimization",
+        "volume": "27",
+        "author": "De Luca",
+        "year": "2016",
+        "journal-title": "Manag. Environ. Qual."
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.autcon.2020.103518_bb0085",
+        "doi-asserted-by": "crossref",
+        "first-page": "634",
+        "DOI": "10.1108/MEQ-05-2015-0101",
+        "article-title": "Urban planning principles of nearly zero-energy residential buildings in Estonia",
+        "volume": "27",
+        "author": "Voll",
+        "year": "2016",
+        "journal-title": "Manag. Environ. Qual."
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0090",
+        "doi-asserted-by": "crossref",
+        "first-page": "1559",
+        "DOI": "10.1016/j.egypro.2014.02.176",
+        "article-title": "Solar energy in urban environment: How urban densification affects existing buildings",
+        "volume": "48",
+        "author": "Lobaccaro",
+        "year": "2014",
+        "journal-title": "Energy Procedia"
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0095",
+        "series-title": "Cambridge (MA)",
+        "article-title": "Daylighting handbook I. Fundamentals. Designing with the Sun",
+        "author": "Reinhart",
+        "year": "2014"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.autcon.2020.103518_bb0100",
+        "first-page": "3",
+        "article-title": "Daylight for energy savings and psycho-physiological well-being in sustainable built environments",
+        "volume": "1",
+        "author": "Altomonte",
+        "year": "2008",
+        "journal-title": "J. Sustain. Develop."
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0105",
+        "series-title": "Encyclopedia of Neuroscience",
+        "first-page": "971",
+        "article-title": "Circadian rhythms: Influence of light in humans",
+        "author": "Lockley",
+        "year": "2009"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.autcon.2020.103518_bb0110",
+        "doi-asserted-by": "crossref",
+        "first-page": "37",
+        "DOI": "10.1177/1477153511435961",
+        "article-title": "A framework for predicting the non-visual effects of daylight-part I: photobiology-based model",
+        "volume": "44",
+        "author": "Andersen",
+        "year": "2012",
+        "journal-title": "Light. Res. Technol."
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0115",
+        "doi-asserted-by": "crossref",
+        "first-page": "1245",
+        "DOI": "10.1016/j.egypro.2015.11.266",
+        "article-title": "Sunlight and insolation of building interiors",
+        "volume": "78",
+        "author": "Darula",
+        "year": "2015",
+        "journal-title": "Energy Procedia"
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0120",
+        "author": "U.S. Green Building Council"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.autcon.2020.103518_bb0125",
+        "doi-asserted-by": "crossref",
+        "first-page": "7",
+        "DOI": "10.1582/LEUKOS.2006.03.01.001",
+        "article-title": "Dynamic daylight performance metrics for sustainable building design",
+        "volume": "3",
+        "author": "Reinhart",
+        "year": "2006",
+        "journal-title": "Leukos"
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0130",
+        "series-title": "IES LM-83-12 Approved Method: Spatial Daylight Autonomy (sDA) and Annual Sunlight Exposure (ASE)",
+        "author": "Illuminating Engineering Society",
+        "year": "2013"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.autcon.2020.103518_bb0135",
+        "doi-asserted-by": "crossref",
+        "first-page": "206",
+        "DOI": "10.1177/1477153518755561",
+        "article-title": "A critical review of daylighting metrics for residential architecture and a new metric for cold and temperate climates",
+        "volume": "51",
+        "author": "Dogan",
+        "year": "2019",
+        "journal-title": "Light. Res. Technol."
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0140",
+        "series-title": "Sun Rhythm Form",
+        "author": "Knowles",
+        "year": "1981"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.autcon.2020.103518_bb0145",
+        "doi-asserted-by": "crossref",
+        "first-page": "15",
+        "DOI": "10.1016/S0378-7788(02)00076-2",
+        "article-title": "The solar envelope: its meaning for energy and buildings",
+        "volume": "35",
+        "author": "Knowles",
+        "year": "2003",
+        "journal-title": "Energy Build."
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0150",
+        "series-title": "Solar Envelope and Form Generation in Architecture",
+        "author": "Topaloğlu",
+        "year": "2003"
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0155",
+        "series-title": "Sun, Wind & Light: Architectural Design Strategies",
+        "author": "DeKay",
+        "year": "2001"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.autcon.2020.103518_bb0160",
+        "doi-asserted-by": "crossref",
+        "first-page": "181",
+        "DOI": "10.1016/S0926-5805(98)00072-7",
+        "article-title": "An interactive web-based teaching tool for simplified 3D analysis of solar rhythms",
+        "volume": "8",
+        "author": "Jain",
+        "year": "1998",
+        "journal-title": "Autom. Constr."
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0165",
+        "doi-asserted-by": "crossref",
+        "first-page": "915",
+        "DOI": "10.1016/j.rser.2014.08.060",
+        "article-title": "Modelling solar potential in the urban environment: State-of-the-art review",
+        "volume": "41",
+        "author": "Freitas",
+        "year": "2015",
+        "journal-title": "Renew. Sust. Energ. Rev."
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0170",
+        "series-title": "Computer Aided Solar Envelope Design",
+        "author": "Yeh",
+        "year": "1992"
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0175",
+        "series-title": "Connecting the Crossroads of Digital Discourse - Proceedings of the 22nd Annual Conference of the Association for Computer Aided Design in Architecture (ACADIA). Indianapolis (IN), USA, 24–27 October 2003",
+        "first-page": "411",
+        "article-title": "SolCAD: 3D spatial design tool to generate solar envelope",
+        "author": "Juyal",
+        "year": "2003"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.autcon.2020.103518_bb0180",
+        "doi-asserted-by": "crossref",
+        "first-page": "117",
+        "DOI": "10.1080/136023698374233",
+        "article-title": "Computer generated solar envelopes in architecture",
+        "volume": "3",
+        "author": "Noble",
+        "year": "1998",
+        "journal-title": "J. Archit."
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0185",
+        "series-title": "Proceedings of the 6th IBPSA International Conference Building Simulation (BS 1999), Kyoto, Japan, September 13-15 1999",
+        "first-page": "1341",
+        "article-title": "Modeling the design of urban fabric with solar rights considerations",
+        "author": "Capeluto",
+        "year": "1999"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.autcon.2020.103518_bb0190",
+        "doi-asserted-by": "crossref",
+        "first-page": "275",
+        "DOI": "10.1016/S0038-092X(00)00088-8",
+        "article-title": "On the use of ‘solar volume’ for determining the urban fabric",
+        "volume": "70",
+        "author": "Capeluto",
+        "year": "2001",
+        "journal-title": "Sol. Energy"
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0195",
+        "series-title": "Proceedings of PLEA2006 - The 23rd Conference on Passive and Low Energy Architecture, Geneva, Switzerland, 6-8 September 2006",
+        "first-page": "689",
+        "article-title": "Solar rights in the design of urban spaces",
+        "author": "Capeluto",
+        "year": "2006"
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0200",
+        "series-title": "Proceedings of the 13th IBPSA International Conference Building Simulation (BS 2013). Chambéry, France, 25-28 August 2013",
+        "first-page": "3128",
+        "article-title": "Ladybug: a parametric environmental plugin for grasshopper to help designers create an environmentally-conscious design",
+        "author": "Sadeghipour Roudsari",
+        "year": "2013"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.autcon.2020.103518_bb0205",
+        "doi-asserted-by": "crossref",
+        "first-page": "395",
+        "DOI": "10.1080/00038628.2017.1331334",
+        "article-title": "A method for the generation of climate-based, context-dependent parametric solar envelopes",
+        "volume": "60",
+        "author": "Capeluto",
+        "year": "2017",
+        "journal-title": "Archit. Sci. Rev."
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0210",
+        "series-title": "Proceedings of the 8th IBPSA International Conference Building Simulation (BS 2003). Eindhoven, Netherlands, 11-14 August 2003",
+        "first-page": "831",
+        "article-title": "Computer-optimized shading design",
+        "author": "Marsh",
+        "year": "2003"
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0215",
+        "series-title": "WIT Transactions on Ecology and the Environment, The Sustainable City VII (2 Volume Set)",
+        "first-page": "619",
+        "article-title": "Climatic urban design: configuring the urban fabric to support daylighting, passive cooling, and solar heating",
+        "volume": "155",
+        "author": "DeKay",
+        "year": "2012"
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0220",
+        "series-title": "Proceedings of PLEA2017 - The 33th International Conference on Passive and Low Energy Architecture - Design to Thrive. Edinburgh, UK, 3-5 July 2017",
+        "first-page": "2077",
+        "article-title": "Limiting the buildings’ envelopes in order to prevent the surrounding mask effect: towards an efficient implementation in the context of SketchUp",
+        "author": "Leduc",
+        "year": "2017"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.autcon.2020.103518_bb0225",
+        "doi-asserted-by": "crossref",
+        "first-page": "185",
+        "DOI": "10.1016/0926-5805(96)00148-3",
+        "article-title": "Solid modeling as a tool for constructing solar envelopes",
+        "volume": "5",
+        "author": "Cotton",
+        "year": "1996",
+        "journal-title": "Autom. Constr."
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0230",
+        "series-title": "DIVA",
+        "author": "Solemma",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0235",
+        "doi-asserted-by": "crossref",
+        "first-page": "757",
+        "DOI": "10.1016/j.proenv.2013.02.093",
+        "article-title": "Solar envelope assessment in tropical region building case study: vertical settlement in Bandung, Indonesia",
+        "volume": "17",
+        "author": "Paramita",
+        "year": "2013",
+        "journal-title": "Procedia Environ. Sci."
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.autcon.2020.103518_bb0240",
+        "doi-asserted-by": "crossref",
+        "first-page": "801",
+        "DOI": "10.1068/b38055",
+        "article-title": "Solar zoning and energy in detached dwellings",
+        "volume": "40",
+        "author": "Niemasz",
+        "year": "2013",
+        "journal-title": "Environ. Plann. B"
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0245",
+        "series-title": "Proceedings of PLEA2013 - The 29th Conference Sustainable Architecture for a Renewable Future, Munich, Germany, 10–12 September 2013",
+        "first-page": "1",
+        "article-title": "A morphological generator of urban rules of solar control",
+        "author": "Raboudi",
+        "year": "2013"
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0250",
+        "author": "Stasinopoulos"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.autcon.2020.103518_bb0255",
+        "doi-asserted-by": "crossref",
+        "first-page": "3",
+        "DOI": "10.3992/1943-4618.13.1.3",
+        "article-title": "A survey of solar envelope properties using solid modelling",
+        "volume": "13",
+        "author": "Stasinopoulos",
+        "year": "2018",
+        "journal-title": "J. Green Build."
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0260",
+        "doi-asserted-by": "crossref",
+        "first-page": "303",
+        "DOI": "10.1016/j.enbuild.2015.04.046",
+        "article-title": "The residential solar block envelope: A method for enabling the development of compact urban blocks with high passive solar potential",
+        "volume": "99",
+        "author": "Vartholomaios",
+        "year": "2015",
+        "journal-title": "Energy Build."
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0265",
+        "series-title": "Proceedings of SOLAR 2013, the 42nd ASES Annual Solar Conference, Baltimore (MD), USA, 16-20 April 2013",
+        "first-page": "1",
+        "article-title": "Solar access zoning + building information modeling",
+        "author": "Kensek",
+        "year": "2013"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.autcon.2020.103518_bb0270",
+        "first-page": "79",
+        "article-title": "CityZoom: A visualization tool for the assessment of planning regulations",
+        "volume": "1",
+        "author": "Turkienicz",
+        "year": "2008",
+        "journal-title": "Int. J. Archit. Comput."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.autcon.2020.103518_bb0275",
+        "doi-asserted-by": "crossref",
+        "first-page": "217",
+        "DOI": "10.1016/S0038-092X(00)00094-3",
+        "article-title": "A methodology for sunlight urban planning: A computer based solar and sky vault obstruction analysis",
+        "volume": "70",
+        "author": "Pereira",
+        "year": "2001",
+        "journal-title": "Sol. Energy"
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0280",
+        "doi-asserted-by": "crossref",
+        "first-page": "26",
+        "DOI": "10.1016/j.compenvurbsys.2008.09.005",
+        "article-title": "Sunscapes: ‘Solar Envelopes’ and the analysis of urban DEMs",
+        "volume": "33",
+        "author": "Morello",
+        "year": "2009",
+        "journal-title": "Comput. Environ. Urban. Syst."
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0285",
+        "series-title": "Proceeding of the 8th Annual Symposium on Simulation for Architecture and Urban Design (SimAUD), Toronto, Canada, 22-24 May 2017",
+        "first-page": "335",
+        "article-title": "Computational method for variable objectives and context aware solar envelopes generation",
+        "author": "De Luca",
+        "year": "2017"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.autcon.2020.103518_bb0290",
+        "doi-asserted-by": "crossref",
+        "first-page": "817",
+        "DOI": "10.1007/s12273-019-0561-1",
+        "article-title": "A novel solar envelope method based on solar ordinances for urban planning",
+        "volume": "12",
+        "author": "De Luca",
+        "year": "2019",
+        "journal-title": "Build. Simul."
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0295",
+        "author": "Sepulveda"
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0300",
+        "doi-asserted-by": "crossref",
+        "first-page": "24",
+        "DOI": "10.1016/j.autcon.2011.09.007",
+        "article-title": "A parametric approach to the bioclimatic design of large scale projects: The case of a student housing complex",
+        "volume": "22",
+        "author": "Chronis",
+        "year": "2012",
+        "journal-title": "Autom. Constr."
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0305",
+        "doi-asserted-by": "crossref",
+        "first-page": "36",
+        "DOI": "10.1016/j.autcon.2011.08.001",
+        "article-title": "Performative skins for passive climatic comfort. A parametric design process",
+        "volume": "22",
+        "author": "Turrin",
+        "year": "2012",
+        "journal-title": "Autom. Constr."
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0310",
+        "series-title": "Cambridge (MA)",
+        "isbn-type": "print",
+        "article-title": "Energy and form. An ecological approach to urban growth",
+        "author": "Knowles",
+        "year": "1975",
+        "ISBN": "https://id.crossref.org/isbn/9780262110501"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.autcon.2020.103518_bb0315",
+        "first-page": "157",
+        "article-title": "Exploring urban space. Volumetric site analysis for conceptual design in the urban context",
+        "volume": "11",
+        "author": "Leidi",
+        "year": "2013",
+        "journal-title": "Int. J. Archit. Comput."
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0320",
+        "series-title": "Computational Ecologies: Design in the Anthropocene: Proceedings of the 35th Annual Conference of the Association for Computer Aided Design in Architecture (ACADIA). Cincinnati (OH), USA, 19–25 October 2015",
+        "first-page": "451",
+        "article-title": "High rise morphologies: architectural form finding in a performative design search space of dense urban contexts",
+        "author": "Jyoti",
+        "year": "2015"
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0325",
+        "series-title": "Disciplines and Disruption - Proceedings Catalog of the 37th Annual Conference of the Association for Computer Aided Design in Architecture (ACADIA), Cambridge (MA), USA, 2–4 November 2017",
+        "first-page": "610",
+        "article-title": "Buildable performance envelopes. optimizing sustainable design in a pre-design phase",
+        "author": "Thariyan",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0330",
+        "series-title": "Disciplines and Disruption - Proceedings Catalog of the 37th Annual Conference of the Association for Computer Aided Design in Architecture (ACADIA), Cambridge (MA), USA, 2–4 November 2017",
+        "first-page": "212",
+        "article-title": "Solar form finding. Subtractive solar envelope and integrated solar collection computational method for high-rise buildings in urban environments",
+        "author": "De Luca",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0335",
+        "series-title": "Modern Architecture - A Critical History",
+        "author": "Frampton",
+        "year": "2007"
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0340",
+        "series-title": "Rhinoceros",
+        "author": "McNeel",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0345",
+        "author": "Rutten"
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0350",
+        "series-title": "DIN 5034–1:2011–07 Daylight in Interiors - Part 1: General Requirements",
+        "author": "German Institute for Standardization",
+        "year": "2011"
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0355",
+        "series-title": "Daylight in Dwellings and Offices 894:2008+A2:2015",
+        "author": "EVS",
+        "year": "2015"
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0360",
+        "series-title": "An Investigation into Real-time 3D Polygon Rendering Using BSP Trees",
+        "author": "Winter",
+        "year": "1999"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.autcon.2020.103518_bb0365",
+        "doi-asserted-by": "crossref",
+        "first-page": "339",
+        "DOI": "10.1108/09566160210439242",
+        "article-title": "Sunny walls vs sunnier roofs: A study on the advantages of roofs for solar collection",
+        "volume": "13",
+        "author": "Stasinopoulos",
+        "year": "2002",
+        "journal-title": "Environ. Manag. Health"
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0370",
+        "doi-asserted-by": "crossref",
+        "first-page": "352",
+        "DOI": "10.1111/mice.12418",
+        "article-title": "Modeling and kinematic path selection of retractable Kirigami roof structures",
+        "volume": "34",
+        "author": "Cai",
+        "year": "2019",
+        "journal-title": "Comput. Aid. Civil Infrastruct. Eng."
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0375",
+        "doi-asserted-by": "crossref",
+        "first-page": "2191",
+        "DOI": "10.1016/j.proeng.2016.08.814",
+        "article-title": "The review of the selected challenges for an incorporation of daylight assessment methods into urban planning in Poland",
+        "volume": "161",
+        "author": "Sokol",
+        "year": "2016",
+        "journal-title": "Procedia Eng."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.autcon.2020.103518_bb0380",
+        "first-page": "294",
+        "article-title": "Dimensioning of household electricity storage for PV-systems and load scheduling based on Nord Pool Spot prices",
+        "volume": "88",
+        "author": "Rosin",
+        "year": "2012",
+        "journal-title": "Przeglad Elektrotechniczny"
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0385",
+        "author": "Chatzikonstantinou"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.autcon.2020.103518_bb0390",
+        "doi-asserted-by": "crossref",
+        "first-page": "505",
+        "DOI": "10.1145/3828.3830",
+        "article-title": "Generalized best-first search strategies and the optimality of A*",
+        "volume": "32",
+        "author": "Dechter",
+        "year": "1985",
+        "journal-title": "J. Assoc. Comput. Mach."
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0395",
+        "author": "Piacentino"
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0400",
+        "series-title": "Posthuman Frontiers: Data, Designers, and Cognitive Machines - Proceedings of the 36th Annual Conference of the Association for Computer Aided Design in Architecture (ACADIA), Ann Arbor (MI), USA, 27–29 October 2016",
+        "first-page": "140",
+        "article-title": "Ivy. Bringing a weighted-mesh representation to bear on generative architectural design applications’",
+        "author": "Nejur",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0405",
+        "series-title": "Proceedings of ‘94 SIGGRAPH: 21st Annual Conference on Computer Graphics and Interactive Techniques, Orlando (FL), USA, 24–29 July 1994",
+        "first-page": "459",
+        "article-title": "The RADIANCE lighting simulation and rendering system",
+        "author": "Ward",
+        "year": "1994"
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.autcon.2020.103518_bb0410",
+        "doi-asserted-by": "crossref",
+        "first-page": "683",
+        "DOI": "10.1016/S0378-7788(01)00058-5",
+        "article-title": "Validation of dynamic RADIANCE-based daylight simulations for a test office with external blinds",
+        "volume": "33",
+        "author": "Reinhart",
+        "year": "2001",
+        "journal-title": "Energy Build."
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0415",
+        "doi-asserted-by": "crossref",
+        "first-page": "90.101",
+        "DOI": "10.1016/j.autcon.2011.06.011",
+        "article-title": "Evaluating environmental implications of density: A comparative case study on the relationship between density, urban block typology and sky exposure",
+        "volume": "22",
+        "author": "Zhang",
+        "year": "2012",
+        "journal-title": "Autom. Constr."
+      },
+      {
+        "key": "10.1016/j.autcon.2020.103518_bb0420",
+        "series-title": "Sharing Computational Knowledge! ShoCK! Proceedings of the 35th International Conference on Education and research in Computer Aided Architectural Design in Europe (eCAADe) Vol. 2, Rome, Italy, 20-22 September 2017",
+        "first-page": "431",
+        "article-title": "From envelope to layout. Buildings massing and layout generation for solar access in urban environments",
+        "author": "De Luca",
+        "year": "2017"
+      }
+    ],
+    "container-title": [
+      "Automation in Construction"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0926580520310980?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0926580520310980?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          14
+        ]
+      ],
+      "date-time": "2025-10-14T23:17:42Z",
+      "timestamp": 1760483862000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0926580520310980"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          3
+        ]
+      ]
+    },
+    "references-count": 84,
+    "alternative-id": [
+      "S0926580520310980"
+    ],
+    "URL": "https://doi.org/10.1016/j.autcon.2020.103518",
+    "relation": {},
+    "ISSN": [
+      "0926-5805"
+    ],
+    "issn-type": [
+      {
+        "value": "0926-5805",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          3
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Reverse solar envelope method. A new building form-finding method that can take regulatory frameworks into account",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Automation in Construction",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.autcon.2020.103518",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2020 Elsevier B.V. All rights reserved.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "article-number": "103518"
+  }
+}

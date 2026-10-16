@@ -1,0 +1,8 @@
+variant_id,variant_label,weight_light_gain,weight_intervention_volume,weight_new_shadow_penalty,weight_protected_zone_penalty,best_candidate_id,changed_building_ids,intervention_count,intervention_volume,score_total,estimated_light_gain,post_average_sunlight_hours,post_dark_zone_ratio,post_dark_zone_percent,dark_zone_drop_percentage_points,relative_dark_zone_improvement,sunlight_gain_h
+base,基准权重,1.0,0.16,0.9,2.0,candidate_01,C6;C33,2,28.125,5.5,10.0,6.435,0.1694,16.94,0.61,0.0349,0.012
+light_minus_50,光照收益 -50%,0.5,0.16,0.9,2.0,candidate_01,C6;C28|C37,2,17.97,0.941,7.632,6.424,0.1755,17.55,0.0,0.0,0.002
+light_plus_50,光照收益 +50%,1.5,0.16,0.9,2.0,candidate_01,C6;C6,2,22.5,11.4,10.0,6.424,0.1755,17.55,0.0,0.0,0.002
+volume_minus_50,体量惩罚 -50%,1.0,0.08,0.9,2.0,candidate_01,C6;C33,2,28.125,7.75,10.0,6.435,0.1694,16.94,0.61,0.0349,0.012
+volume_plus_50,体量惩罚 +50%,1.0,0.24,0.9,2.0,candidate_01,C6;C6,2,22.5,4.6,10.0,6.424,0.1755,17.55,0.0,0.0,0.002
+shadow_minus_50,新阴影惩罚 -50%,1.0,0.16,0.45,2.0,candidate_01,C6;C6,2,22.5,6.4,10.0,6.424,0.1755,17.55,0.0,0.0,0.002
+shadow_plus_50,新阴影惩罚 +50%,1.0,0.16,1.35,2.0,candidate_01,C6;C6,2,22.5,6.4,10.0,6.424,0.1755,17.55,0.0,0.0,0.002

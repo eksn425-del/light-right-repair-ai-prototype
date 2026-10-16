@@ -1,0 +1,36 @@
+﻿[
+    {
+        "grid_size_m":  6,
+        "baseline_average_sunlight_hours":  6.422,
+        "baseline_dark_zone_ratio":  0.1755,
+        "baseline_dark_grid_count":  86,
+        "total_grid_count":  490,
+        "selected_candidate_id":  "candidate_01",
+        "post_average_sunlight_hours":  6.435,
+        "post_dark_zone_ratio":  0.1694,
+        "post_dark_grid_count":  83,
+        "dark_zone_improvement_ratio":  0.03476,
+        "estimated_light_gain":  10,
+        "intervention_volume":  28.125,
+        "changed_building_ids":  "C33;C6",
+        "output_dir":  "outputs/light_product_2026_06_02/strategy_comparison_postsim/conservative",
+        "notes":  "Completed 6m baseline from prior post-simulation strategy comparison."
+    },
+    {
+        "grid_size_m":  3.0,
+        "baseline_average_sunlight_hours":  6.509,
+        "baseline_dark_zone_ratio":  0.1609,
+        "baseline_dark_grid_count":  314,
+        "total_grid_count":  1951,
+        "selected_candidate_id":  "candidate_01",
+        "post_average_sunlight_hours":  6.509,
+        "post_dark_zone_ratio":  0.1609,
+        "post_dark_grid_count":  314,
+        "dark_zone_improvement_ratio":  0.0,
+        "estimated_light_gain":  9.0,
+        "intervention_volume":  13.44,
+        "changed_building_ids":  "C28;C34;C38;C9",
+        "output_dir":  "E:\\AI项目\\light_equity_project\\outputs\\light_product_2026_06_03\\grid_sensitivity\\grid_3m",
+        "notes":  "Completed 3m sensitivity case. 2m case timed out before producing A outputs."
+    }
+]

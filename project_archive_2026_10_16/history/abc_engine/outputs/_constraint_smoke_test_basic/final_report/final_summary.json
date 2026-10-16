@@ -1,0 +1,21 @@
+{
+  "selected_candidate_id": "candidate_01",
+  "baseline_dark_zone_ratio": 0.5934,
+  "algorithm_dark_zone_ratio": 0.5934,
+  "algorithm_post_simulation": {
+    "average_sunlight_hours": 2.684,
+    "dark_zone_ratio": 0.5934,
+    "dark_grid_count": 216,
+    "total_grid_count": 364,
+    "method": "same 2.5D sunlight model re-run with selected intervention boxes"
+  },
+  "algorithm_light_equity_improvement": 0.0,
+  "outputs": {
+    "before_after_metrics": "before_after_metrics.csv",
+    "comparison_chart": "comparison_chart.png",
+    "algorithm_sunlight_hours": "algorithm_sunlight_hours.csv",
+    "algorithm_heatmap": "algorithm_heatmap.png",
+    "algorithm_post_simulation_summary": "algorithm_post_simulation_summary.json"
+  },
+  "notes": "Manual design values are placeholders until the architecture team submits a real comparison scheme. Algorithm values are re-simulated with the current simplified 2.5D model."
+}

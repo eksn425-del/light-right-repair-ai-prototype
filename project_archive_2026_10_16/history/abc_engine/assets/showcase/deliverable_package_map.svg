@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 580">
+  <rect width="1200" height="580" fill="#f7f6ef"/>
+  <text x="60" y="70" font-family="Microsoft YaHei, sans-serif" font-size="34" font-weight="800" fill="#18201d">最终交付包结构</text>
+  <g font-family="Microsoft YaHei, sans-serif">
+    <rect x="70" y="135" width="300" height="100" fill="#fff" stroke="#087f96" stroke-width="4"/><text x="95" y="195" font-size="26" font-weight="800" fill="#18201d">00 说明</text>
+    <rect x="450" y="135" width="300" height="100" fill="#fff" stroke="#b78a25" stroke-width="4"/><text x="475" y="195" font-size="26" font-weight="800" fill="#18201d">01 输入数据</text>
+    <rect x="830" y="135" width="300" height="100" fill="#fff" stroke="#be5776" stroke-width="4"/><text x="855" y="195" font-size="26" font-weight="800" fill="#18201d">02 A诊断</text>
+    <rect x="70" y="310" width="300" height="100" fill="#fff" stroke="#427d51" stroke-width="4"/><text x="95" y="370" font-size="26" font-weight="800" fill="#18201d">03 B候选</text>
+    <rect x="450" y="310" width="300" height="100" fill="#fff" stroke="#087f96" stroke-width="4"/><text x="475" y="370" font-size="26" font-weight="800" fill="#18201d">04 C验证</text>
+    <rect x="830" y="310" width="300" height="100" fill="#fff" stroke="#b78a25" stroke-width="4"/><text x="855" y="370" font-size="26" font-weight="800" fill="#18201d">05 最终报告</text>
+  </g>
+  <text x="60" y="510" font-family="Microsoft YaHei, sans-serif" font-size="19" fill="#65716b">每个文件夹对应汇报链路中的一个证据层：CSV / PNG / OBJ / JSON。</text>
+</svg>

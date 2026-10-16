@@ -1,0 +1,6 @@
+case_id,case_label,average_sunlight_hours,dark_zone_ratio,dark_zone_ratio_percent,dark_zone_drop,relative_dark_improvement,sunlight_gain_hours,intervention_volume,changed_building_count,changed_building_ids,notes
+baseline,现状,6.422,0.1755,17.55,0.0,0.0,0.0,0.0,0,,baseline from Algorithm A
+ai_conservative,AI保守型,6.435,0.1694,16.94,0.0061,0.0348,0.013,28.125,2,C6;C33,official slow post-simulation result from existing paper pipeline
+height_priority,高度优先基线,6.424,0.1755,17.55,0.0,0.0,0.002,45.0,2,C19;C3,fast vectorized reproduction of the same 2.5D height-reduction post-simulation logic
+dark_nearest,暗区邻近基线,6.439,0.1735,17.35,0.002,0.0116,0.016,33.75,2,C27;C6,fast vectorized reproduction of the same 2.5D height-reduction post-simulation logic
+random_10_mean,随机基线均值,6.435,0.1726,17.26,0.0029,0.0163,0.013,31.035,2,10 deterministic random trials; see random_baseline_trials_fast.csv,mean of 10 deterministic random editable two-building baselines; seed=42

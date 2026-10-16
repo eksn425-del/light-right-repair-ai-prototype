@@ -1,0 +1,17 @@
+﻿package,installed,version
+numpy,True,2.4.0
+pandas,True,2.3.3
+scipy,True,1.17.1
+matplotlib,True,3.10.8
+shapely,True,2.1.2
+geopandas,False,
+trimesh,True,4.12.2
+pyvista,False,
+open3d,False,
+pvlib,True,0.15.2
+python-docx,True,1.2.0
+ezdxf,True,1.4.3
+ladybug-core,False,
+ladybug-rhino,False,
+honeybee-core,False,
+honeybee-radiance,False,

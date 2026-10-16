@@ -1,0 +1,17 @@
+{
+  "run_id": "baseline_20260909_clean",
+  "stage": "weight_sensitivity",
+  "timestamp_utc": "2026-09-09T19:08:33+00:00",
+  "git_commit": "NOT_A_GIT_CHECKOUT",
+  "config_path": "E:\\AI项目\\light-equity-soict-2026\\configs\\research.yaml",
+  "config_sha256": "b15d4644ed7d0b6806c2c9395836fbec25da803c9aa8ff74a8fffcd3bf009c8f",
+  "inputs": [
+    {
+      "path": "E:\\AI项目\\light-equity-soict-2026\\experiments\\baseline_20260909_clean\\results_csv\\120_canonical_2p5D完整双建筑候选排名.csv",
+      "exists": true,
+      "sha256": "6f0d2c9ed13a88c56fc827b2868363613a3b5c70738eaee594292ccada9682ea"
+    }
+  ],
+  "scenario_count": 5,
+  "monte_carlo_draws": 1000
+}

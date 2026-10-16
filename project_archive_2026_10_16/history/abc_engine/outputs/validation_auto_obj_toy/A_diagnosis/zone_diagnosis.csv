@@ -1,0 +1,2 @@
+zone_id,name,zone_type,grid_count,average_sunlight_hours,dark_zone_ratio,priority,diagnosis,notes
+AUTO_Z001,auto OBJ analysis zone,auto_context,257,1.389,0.7938,3.0,general_context_zone,auto-generated from OBJ bounds; replace with project-specific zones

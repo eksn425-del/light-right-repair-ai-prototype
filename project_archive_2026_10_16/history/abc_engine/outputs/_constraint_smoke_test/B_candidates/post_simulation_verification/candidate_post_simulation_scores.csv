@@ -1,0 +1,4 @@
+candidate_id,verified_total_score,verified_average_sunlight_hours,verified_dark_zone_ratio,verified_dark_grid_count,verified_sunlight_gain_hours,verified_dark_ratio_drop,intervention_volume,protected_zone_penalty,notes
+candidate_03,0.258,2.698,0.5934,216,0.014,0.0,14.062,0.0,post-simulation verified ranking on the same grid as Algorithm A
+candidate_02,-0.007,2.684,0.5934,216,0.0,0.0,6.0,0.0,post-simulation verified ranking on the same grid as Algorithm A
+candidate_01,-0.024,2.684,0.5934,216,0.0,0.0,20.16,0.0,post-simulation verified ranking on the same grid as Algorithm A

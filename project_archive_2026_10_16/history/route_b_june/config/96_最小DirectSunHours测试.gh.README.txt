@@ -1,0 +1,1 @@
+Rhino/Grasshopper GUI 未在本机检出，未生成或伪造 .gh 文件。本轮最小测试为 hb_radiance_wall_smoke，使用官方 lbt-recipes direct-sun-hours + Radiance 6.0.2，结果见 97_最小DirectSunHours测试结果.png。

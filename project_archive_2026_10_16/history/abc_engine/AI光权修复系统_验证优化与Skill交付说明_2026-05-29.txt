@@ -1,0 +1,164 @@
+AI光权修复系统：验证、优化迭代与 Skill 交付说明
+日期：2026-05-29
+
+一、本轮目标
+
+本轮不是重新做论文结论，而是验证并加固整个 AI 光权修复 ABC 系统：
+1. 检查 toy 数据是否能完整跑完。
+2. 检查谢研组真实片区是否能完整跑完。
+3. 检查随机 OBJ 是否可以降级生成可运行数据集。
+4. 修复“能跑但不一定真实优化”的风险。
+5. 封装可复用的 AI 光权修复 Codex skill。
+
+二、已经完成的工程更新
+
+1. main.py 新增参数
+   - --dataset：支持 data/ 下任意相对数据集路径，例如 real_guankou/lakeside_leisure_ready。
+   - --obj：支持直接输入独立 OBJ，并自动生成粗略数据集。
+   - --overwrite-obj-dataset：允许覆盖 OBJ 自动生成数据集。
+   - --output-dir：允许把每次测试输出放到独立目录，避免覆盖旧结果。
+   - --config-dir：允许使用 6m、8m 等不同配置。
+   - --verify-candidates：对 B 的每个候选方案进行干预后光照重算，并用真实重算结果重新排序。
+
+2. 新增 OBJ 自动数据集生成器
+   文件：
+   src/io/obj_dataset_builder.py
+
+   功能：
+   - 读取 OBJ 的 o/g 分组。
+   - 按 group/object 的包围盒生成 buildings.csv。
+   - 自动生成 fallback streets.csv、nodes.csv、site_zones.csv。
+   - 如果 OBJ 只有一个整体组，会明确警告：能跑流程，但不能可靠做单栋建筑优化。
+
+3. 新增 B 候选后验验证器
+   文件：
+   src/algorithm_b_optimization/post_simulation_ranker.py
+
+   功能：
+   - 对每个候选方案重新跑一次简化光照模型。
+   - 输出 candidate_post_simulation_scores.csv。
+   - 可选择用真实重算分数替换 candidate_scores.csv。
+   - 避免只靠启发式 expected_light_gain 写论文结论。
+
+4. 新增验证脚本
+   文件：
+   scripts/validate_light_equity_pipeline.py
+
+   功能：
+   - 编译检查。
+   - 运行完整 ABC。
+   - 检查关键输出是否存在且非空。
+   - 输出 validation_report.json。
+
+三、测试结果
+
+1. Python 编译检查
+   命令：
+   python -m compileall -q light_equity_project
+
+   结果：
+   通过。
+
+2. toy street 全流程测试
+   命令：
+   python light_equity_project/main.py --dataset sample_toy_street --regenerate-toy
+
+   结果：
+   通过。
+   A/B/C/final_report 全部生成。
+
+3. toy street + 候选后验验证测试
+   命令：
+   python light_equity_project/main.py --dataset sample_toy_street --regenerate-toy --output-dir light_equity_project/outputs/validation_toy_verified --verify-candidates
+
+   结果：
+   通过。
+   说明：
+   toy 数据中候选可微弱提升平均采光，但暗区比例不一定下降。系统现在会如实反映“没有明显改善”，不会强行报 100% 或 0%。
+
+4. 谢研组真实片区 6m 测试
+   命令：
+   python light_equity_project/main.py --dataset real_guankou/lakeside_leisure_ready --config-dir light_equity_project/outputs/lakeside_leisure_final_6m_config --output-dir light_equity_project/outputs/validation_lakeside_6m
+
+   结果：
+   通过。
+   运行时间约 4 分 47 秒。
+   关键结果：
+   - total_grid_count: 490
+   - dark_grid_count: 86
+   - baseline_dark_zone_ratio: 0.1755
+   - baseline_average_sunlight_hours: 6.422
+
+5. 随机 OBJ / standalone OBJ 测试
+   命令：
+   python light_equity_project/scripts/validate_light_equity_pipeline.py --obj light_equity_project/data/sample_toy_street/site_model.obj --dataset ignored_when_obj_is_used --output-dir light_equity_project/outputs/validation_script_auto_obj --regenerate-toy
+
+   结果：
+   通过。
+   说明：
+   系统可以从 OBJ 自动生成 CSV 并跑完 ABC。
+   但如果 OBJ 没有按建筑分组，结果只能作为流程测试，不能作为可靠建筑优化结论。
+
+四、关于“随机给 OBJ 能不能正确优化”的结论
+
+可以分三档：
+
+1. OBJ 有清楚的建筑 group/object 分组
+   可以自动生成 buildings.csv，并跑完 ABC。
+   结果可用于初步诊断，但仍建议人工核对建筑编号、保护建筑和道路。
+
+2. OBJ 是一个整体白模，没有单栋分组
+   系统可以跑完，但只能识别成一个或少数几个大体块。
+   不能可靠判断“哪栋建筑该削减/退台”。
+
+3. OBJ 之外还提供 buildings.csv、streets.csv、nodes.csv、protected_zones.csv
+   这是正式算法优化需要的数据。
+   这一级才适合写论文和做方案对比。
+
+结论：
+随机 OBJ 可以让系统“降级跑通”，但要“正确优化”，必须至少有建筑分组或 buildings.csv。
+
+五、已经安装的 Codex Skill
+
+Skill 路径：
+C:/Users/洪禄/.codex/skills/light-equity-restoration
+
+Skill 名称：
+light-equity-restoration
+
+Skill 内容：
+1. SKILL.md：核心工作流说明。
+2. references/data-contract.md：数据验收格式。
+3. scripts/run_validation.py：一键调用项目验证脚本。
+4. agents/openai.yaml：Skill UI 元数据。
+
+Skill 校验：
+python C:/Users/洪禄/.codex/skills/.system/skill-creator/scripts/quick_validate.py C:/Users/洪禄/.codex/skills/light-equity-restoration
+
+结果：
+Skill is valid!
+
+六、推荐后续使用命令
+
+1. 快速验证 toy：
+python E:/AI项目/light_equity_project/scripts/validate_light_equity_pipeline.py --dataset sample_toy_street --output-dir E:/AI项目/light_equity_project/outputs/check_toy --regenerate-toy
+
+2. 验证谢研组真实片区：
+python E:/AI项目/light_equity_project/scripts/validate_light_equity_pipeline.py --dataset real_guankou/lakeside_leisure_ready --config-dir E:/AI项目/light_equity_project/outputs/lakeside_leisure_final_6m_config --output-dir E:/AI项目/light_equity_project/outputs/check_lakeside_6m
+
+3. 对候选方案做后验验证：
+python E:/AI项目/light_equity_project/scripts/validate_light_equity_pipeline.py --dataset real_guankou/lakeside_leisure_ready --config-dir E:/AI项目/light_equity_project/outputs/lakeside_leisure_final_6m_config --output-dir E:/AI项目/light_equity_project/outputs/check_lakeside_verified --verify-candidates
+
+4. 随机 OBJ 降级测试：
+python E:/AI项目/light_equity_project/scripts/validate_light_equity_pipeline.py --obj E:/path/to/site_model.obj --dataset ignored --output-dir E:/AI项目/light_equity_project/outputs/check_obj
+
+七、最终判断
+
+当前系统已经达到“可交付的工程骨架 + 可验证运行 + 可降级接收 OBJ + 可复用 Skill”的状态。
+
+但需要明确：
+1. 没有 CSV 的随机 OBJ，只能作为自动推断和流程测试。
+2. 论文结论必须优先使用 --verify-candidates 后的后验验证结果。
+3. 安全验证仍依赖道路、节点、坡度、台阶、护栏等数据质量。
+4. 如果要和人工方案正式对比，人工方案仍需提供 OBJ 或 intervention CSV。
+

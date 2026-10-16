@@ -1,0 +1,6 @@
+candidate_id,intervention_id,type,target_building_id,x,y,z,size_x,size_y,size_z,volume_change,expected_light_gain,protected_conflict,notes
+candidate_01,INT0005,reorganize,B02|B03,36.0,5.0,0.0,5.0,1.6,2.8,-6.72,4.5,False,open ground-level gray space or passage; no boolean geometry yet
+candidate_01,INT0009,reorganize,B04|B05,68.5,5.0,0.0,5.0,1.6,2.8,-6.72,4.5,False,open ground-level gray space or passage; no boolean geometry yet
+candidate_01,INT0011,reorganize,B05|B06,84.0,5.0,0.0,5.0,1.6,2.8,-6.72,4.5,False,open ground-level gray space or passage; no boolean geometry yet
+candidate_02,INT0018,reorganize,zone:Z01,49.0,0.0,0.0,12.0,2.5,0.2,-6.0,3.5,False,slow-path / parking / idle-space reorganization for street_corridor
+candidate_03,INT0001,subtract,B08,19.0,-6.0,6.75,2.5,2.5,2.25,-14.062,3.2,False,reference void box for local corner/overhang reduction

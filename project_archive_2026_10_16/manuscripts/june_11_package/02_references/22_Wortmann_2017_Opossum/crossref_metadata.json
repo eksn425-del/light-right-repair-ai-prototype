@@ -1,0 +1,145 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          8
+        ]
+      ],
+      "date-time": "2026-06-08T02:04:07Z",
+      "timestamp": 1780884247264,
+      "version": "3.54.1"
+    },
+    "reference-count": 0,
+    "publisher": "CAADRIA",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "DOI": "10.52842/conf.caadria.2017.283",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2022,
+          6,
+          6
+        ]
+      ],
+      "date-time": "2022-06-06T19:47:10Z",
+      "timestamp": 1654544830000
+    },
+    "page": "283-292",
+    "source": "Crossref",
+    "is-referenced-by-count": 52,
+    "title": [
+      "Opossum - Introducing and Evaluating a Model-based Optimization Tool for Grasshopper"
+    ],
+    "prefix": "10.52842",
+    "author": [
+      {
+        "given": "Thomas",
+        "family": "Wortmann",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "30589",
+    "event": {
+      "name": "CAADRIA 2017: Protocols, Flows, and Glitches",
+      "theme": "Computer Aided Architectural Design",
+      "location": "Suzhou, China",
+      "acronym": "CAADRIA 2017",
+      "number": "22",
+      "start": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            5
+          ]
+        ]
+      },
+      "end": {
+        "date-parts": [
+          [
+            2017,
+            4,
+            8
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "CAADRIA proceedings",
+      "Proceedings of the 22nd Conference on Computer Aided Architectural Design Research in Asia (CAADRIA)"
+    ],
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2022,
+          6,
+          6
+        ]
+      ],
+      "date-time": "2022-06-06T19:47:18Z",
+      "timestamp": 1654544838000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://papers.cumincad.org/cgi-bin/works/paper/caadria2017_124"
+      }
+    },
+    "subtitle": [],
+    "proceedings-subject": "Computer Aided Architectural Design",
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.52842/conf.caadria.2017.283",
+    "relation": {},
+    "ISSN": [
+      "2710-4265"
+    ],
+    "issn-type": [
+      {
+        "value": "2710-4265",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    }
+  }
+}

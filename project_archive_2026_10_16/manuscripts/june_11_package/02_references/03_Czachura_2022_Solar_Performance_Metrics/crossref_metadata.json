@@ -1,0 +1,1255 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          4
+        ]
+      ],
+      "date-time": "2026-06-04T21:32:54Z",
+      "timestamp": 1780608774927,
+      "version": "3.54.1"
+    },
+    "reference-count": 115,
+    "publisher": "MDPI AG",
+    "issue": "4",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              3,
+              23
+            ]
+          ],
+          "date-time": "2022-03-23T00:00:00Z",
+          "timestamp": 1647993600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100004527",
+        "name": "Swedish Energy Agency",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "49518-1"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "49518-1"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100004527",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Buildings"
+    ],
+    "abstract": "<jats:p>Metrics are instrumental in design assessments. Solar performance metrics help designers to evaluate solar access in cities. Metrics should be used early in the urban planning stages in order to enable sustainable urban development with greater access to solar energy. Currently, solar assessments at this design stage are limited in practice; established methods or routines are lacking, and so are suitable metrics. This paper reviews the relevant literature to provide a critical overview of solar metrics commonly used in building performance assessments. The review defines key metric formulation principles—valuation, time constraint, and normalisation—which should be considered when designing a performance indicator. A new taxonomy of solar performance metrics is provided. Metric definitions, suitability, and limitations are discussed. The findings highlight the need for reliable, low-complexity metrics and adequate methods for early solar assessments for urban planning.</jats:p>",
+    "DOI": "10.3390/buildings12040393",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2022,
+          3,
+          23
+        ]
+      ],
+      "date-time": "2022-03-23T12:20:25Z",
+      "timestamp": 1648038025000
+    },
+    "page": "393",
+    "update-policy": "https://doi.org/10.3390/mdpi_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 23,
+    "title": [
+      "Solar Performance Metrics in Urban Planning: A Review and Taxonomy"
+    ],
+    "prefix": "10.3390",
+    "volume": "12",
+    "author": [
+      {
+        "given": "Agnieszka",
+        "family": "Czachura",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Division of Energy and Building Design, Department of Building and Environmental Technology, Lund University, P.O. Box 118, SE-221 00 Lund, Sweden"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4731-7203",
+        "authenticated-orcid": false,
+        "given": "Jouri",
+        "family": "Kanters",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Division of Energy and Building Design, Department of Building and Environmental Technology, Lund University, P.O. Box 118, SE-221 00 Lund, Sweden"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5721-6644",
+        "authenticated-orcid": false,
+        "given": "Niko",
+        "family": "Gentile",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Division of Energy and Building Design, Department of Building and Environmental Technology, Lund University, P.O. Box 118, SE-221 00 Lund, Sweden"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Maria",
+        "family": "Wall",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Division of Energy and Building Design, Department of Building and Environmental Technology, Lund University, P.O. Box 118, SE-221 00 Lund, Sweden"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "1968",
+    "published-online": {
+      "date-parts": [
+        [
+          2022,
+          3,
+          23
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "ref_1",
+        "unstructured": "European Union (2010). Directive 2010/31/EU of the European Parliament and of the Council of 19 May 2010 on the Energy Performance of Buildings, European Union."
+      },
+      {
+        "key": "ref_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "411",
+        "DOI": "10.1080/19401493.2013.863383",
+        "article-title": "A methodology for identifying the influence of design variations on building energy performance",
+        "volume": "7",
+        "author": "Bucking",
+        "year": "2013",
+        "journal-title": "J. Build. Perform. Simul."
+      },
+      {
+        "key": "ref_3",
+        "doi-asserted-by": "crossref",
+        "first-page": "312",
+        "DOI": "10.1080/21650020.2014.939297",
+        "article-title": "The impact of urban design decisions on net zero energy solar buildings in Sweden",
+        "volume": "2",
+        "author": "Kanters",
+        "year": "2014",
+        "journal-title": "Urban Plan. Transp. Res."
+      },
+      {
+        "key": "ref_4",
+        "unstructured": "Lechner, N. (2015). Heating, Cooling, Lighting: Sustainable Design Methods for Architects, John Wiley & Sons. [4th ed.]."
+      },
+      {
+        "key": "ref_5",
+        "unstructured": "Building and Construction Authority (2010). Building Planning and Massing."
+      },
+      {
+        "key": "ref_6",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chen, K.W., and Norford, L. (2017). Evaluating Urban Forms for Comparison Studies in the Massing Design Stage. Sustainability, 9.",
+        "DOI": "10.3390/su9060987"
+      },
+      {
+        "key": "ref_7",
+        "doi-asserted-by": "crossref",
+        "first-page": "7",
+        "DOI": "10.1590/s1678-86212016000300089",
+        "article-title": "Urban environment quality assessment using a methodology and set of indicators for medium-density neighbourhoods: A comparative case study of Lodi and Genoa",
+        "volume": "16",
+        "author": "Delsante",
+        "year": "2016",
+        "journal-title": "Ambiente Construído"
+      },
+      {
+        "key": "ref_8",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Garau, C., and Pavan, V.M. (2018). Evaluating Urban Quality: Indicators and Assessment Tools for Smart Sustainable Cities. Sustainability, 10.",
+        "DOI": "10.3390/su10030575"
+      },
+      {
+        "key": "ref_9",
+        "unstructured": "IEA SHC Task 51 (2018). Solar Energy in Urban Planning. Approaches, Methods and Tools for Solar Energy in Urban Planning, IEA SHC Task 51."
+      },
+      {
+        "key": "ref_10",
+        "unstructured": "Wall, M., Hachem-Vermette, C., Vettorato, D., Croce, S., Kanters, J., and Florio, P. (2021, December 13). SHC Task 63: Solar Neighbourhood Planning, Annex Plan. Available online: https://task63.iea-shc.org/supporting-documents."
+      },
+      {
+        "key": "ref_11",
+        "doi-asserted-by": "crossref",
+        "first-page": "817",
+        "DOI": "10.1007/s12273-019-0561-1",
+        "article-title": "A novel solar envelope method based on solar ordinances for urban planning",
+        "volume": "12",
+        "author": "Dogan",
+        "year": "2019",
+        "journal-title": "Build. Simul."
+      },
+      {
+        "key": "ref_12",
+        "unstructured": "(2018). Daylight in Buildings (Standard No. SS-EN 17037:2018)."
+      },
+      {
+        "key": "ref_13",
+        "doi-asserted-by": "crossref",
+        "first-page": "679",
+        "DOI": "10.1016/j.buildenv.2015.05.012",
+        "article-title": "Review and critical analysis of early-design phase evaluation metrics for the solar potential of neighborhood designs",
+        "volume": "92",
+        "author": "Nault",
+        "year": "2015",
+        "journal-title": "Build. Environ."
+      },
+      {
+        "key": "ref_14",
+        "doi-asserted-by": "crossref",
+        "first-page": "54",
+        "DOI": "10.1080/21650020.2018.1478323",
+        "article-title": "Experiences from the urban planning process of a solar neighbourhood in Malmö, Sweden",
+        "volume": "6",
+        "author": "Kanters",
+        "year": "2018",
+        "journal-title": "Urban Plan. Transp. Res."
+      },
+      {
+        "key": "ref_15",
+        "doi-asserted-by": "crossref",
+        "first-page": "721",
+        "DOI": "10.1016/j.enbuild.2012.05.031",
+        "article-title": "Tools and methods used by architects for solar design",
+        "volume": "68",
+        "author": "Kanters",
+        "year": "2014",
+        "journal-title": "Energy Build."
+      },
+      {
+        "key": "ref_16",
+        "doi-asserted-by": "crossref",
+        "first-page": "1026",
+        "DOI": "10.1016/j.solener.2018.06.028",
+        "article-title": "Sky view factor as predictor of solar availability on building façades",
+        "volume": "170",
+        "author": "Chatzipoulka",
+        "year": "2018",
+        "journal-title": "Sol. Energy"
+      },
+      {
+        "key": "ref_17",
+        "doi-asserted-by": "crossref",
+        "first-page": "321",
+        "DOI": "10.1016/j.enbuild.2004.01.009",
+        "article-title": "Solar and daylight availability in the urban fabric",
+        "volume": "36",
+        "author": "Compagnon",
+        "year": "2004",
+        "journal-title": "Energy Build."
+      },
+      {
+        "key": "ref_18",
+        "doi-asserted-by": "crossref",
+        "first-page": "110916",
+        "DOI": "10.1016/j.enbuild.2021.110916",
+        "article-title": "Simplified evaluation metrics for generative energy-driven urban design: A morphological study of residential blocks in Tel Aviv",
+        "volume": "240",
+        "author": "Natanian",
+        "year": "2021",
+        "journal-title": "Energy Build."
+      },
+      {
+        "key": "ref_19",
+        "doi-asserted-by": "crossref",
+        "first-page": "333",
+        "DOI": "10.1016/j.jbusres.2019.07.039",
+        "article-title": "Literature review as a research methodology: An overview and guidelines",
+        "volume": "104",
+        "author": "Snyder",
+        "year": "2019",
+        "journal-title": "J. Bus. Res."
+      },
+      {
+        "key": "ref_20",
+        "unstructured": "Elsevier (2022, February 07). Scopus Content Coverage Guide. Available online: https://www.elsevier.com/__data/assets/pdf_file/0007/69451/Scopus_ContentCoverage_Guide_WEB.pdf."
+      },
+      {
+        "key": "ref_21",
+        "unstructured": "Littlefair, P.J., Santamouris, M., Alvarez, S., Dupagne, A., Hall, D., Teller, J., Coronel, J.F., and Papanikolaou, N. (2000). Environmental Site Layout Planning: Solar Access, Microclimate and Passive Cooling in Urban Areas, Building Research Establishment."
+      },
+      {
+        "key": "ref_22",
+        "doi-asserted-by": "crossref",
+        "first-page": "347",
+        "DOI": "10.1080/21650020.2021.1944293",
+        "article-title": "Planning for solar access in Sweden: Routines, metrics, and tools",
+        "volume": "9",
+        "author": "Kanters",
+        "year": "2021",
+        "journal-title": "Urban Plan. Transp. Res."
+      },
+      {
+        "key": "ref_23",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1016/j.buildenv.2017.01.018",
+        "article-title": "Predictive models for assessing the passive solar and daylight potential of neighborhood designs: A comparative proof-of-concept study",
+        "volume": "116",
+        "author": "Nault",
+        "year": "2017",
+        "journal-title": "Build. Environ."
+      },
+      {
+        "key": "ref_24",
+        "doi-asserted-by": "crossref",
+        "first-page": "469",
+        "DOI": "10.1016/j.renene.2016.02.053",
+        "article-title": "Effects of urban compactness on solar energy potential",
+        "volume": "93",
+        "author": "Mohajeri",
+        "year": "2016",
+        "journal-title": "Renew. Energy"
+      },
+      {
+        "key": "ref_25",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lobaccaro, G., Lisowska, M.M., Saretta, E., Bonomo, P., and Frontini, F. (2019). A Methodological Analysis Approach to Assess Solar Energy Potential at the Neighborhood Scale. Energies, 12.",
+        "DOI": "10.3390/en12183554"
+      },
+      {
+        "key": "ref_26",
+        "doi-asserted-by": "crossref",
+        "first-page": "513",
+        "DOI": "10.1016/j.apenergy.2019.02.033",
+        "article-title": "Impact of urban block typology on building solar potential and energy use efficiency in tropical high-density city",
+        "volume": "240",
+        "author": "Zhang",
+        "year": "2019",
+        "journal-title": "Appl. Energy"
+      },
+      {
+        "key": "ref_27",
+        "unstructured": "Robert McNeel and Associates (2021, December 06). Rhinoceros 3D, Version 7. Available online: https://www.rhino3d.com/."
+      },
+      {
+        "key": "ref_28",
+        "unstructured": "Ladybug Tools (2021, October 11). Ladybug Tools | Home Page. Available online: https://www.ladybug.tools/."
+      },
+      {
+        "key": "ref_29",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wilcox, S., and Marion, W. (2008). Users Manual for TMY3 Data Sets, Technical Report NREL/TP-581-43156.",
+        "DOI": "10.2172/928611"
+      },
+      {
+        "key": "ref_30",
+        "doi-asserted-by": "crossref",
+        "first-page": "119320",
+        "DOI": "10.1016/j.jclepro.2019.119320",
+        "article-title": "Analyzing energy options for small-scale off-grid communities: A Canadian case study",
+        "volume": "249",
+        "author": "Prabatha",
+        "year": "2020",
+        "journal-title": "J. Clean. Prod."
+      },
+      {
+        "key": "ref_31",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1016/j.enbuild.2017.09.003",
+        "article-title": "Identifying stakeholders and key performance indicators for district and building energy performance analysis",
+        "volume": "155",
+        "author": "Li",
+        "year": "2017",
+        "journal-title": "Energy Build."
+      },
+      {
+        "key": "ref_32",
+        "doi-asserted-by": "crossref",
+        "first-page": "881",
+        "DOI": "10.1080/09613218.2018.1463015",
+        "article-title": "Urban geometry, SVF and insolation of open spaces: London and Paris",
+        "volume": "46",
+        "author": "Chatzipoulka",
+        "year": "2018",
+        "journal-title": "Build. Res. Inf."
+      },
+      {
+        "key": "ref_33",
+        "doi-asserted-by": "crossref",
+        "first-page": "90",
+        "DOI": "10.1016/j.autcon.2011.06.011",
+        "article-title": "Evaluating environmental implications of density: A comparative case study on the relationship between density, urban block typology and sky exposure",
+        "volume": "22",
+        "author": "Zhang",
+        "year": "2012",
+        "journal-title": "Autom. Constr."
+      },
+      {
+        "key": "ref_34",
+        "doi-asserted-by": "crossref",
+        "first-page": "113637",
+        "DOI": "10.1016/j.apenergy.2019.113637",
+        "article-title": "A parametric approach to optimizing urban form, energy balance and environmental quality: The case of Mediterranean districts",
+        "volume": "254",
+        "author": "Natanian",
+        "year": "2019",
+        "journal-title": "Appl. Energy"
+      },
+      {
+        "key": "ref_35",
+        "unstructured": "Mardaljevic, J. (2021, February 22). Daylight Simulation: Validation, Sky Models and Daylight Coefficients, Loughborough University. Available online: /articles/thesis/Daylight_simulation_validation_sky_models_and_daylight_coefficients/9460817/1."
+      },
+      {
+        "key": "ref_36",
+        "unstructured": "Baker, C., Goel, S., Wang, N., Rosenberg, M., Wolf, D., and Henderson, P. (2018, January 26–28). A simplified energy modeling approach for buildings. Proceedings of the ASHRAE and IBPSA-USA Building Simulation Conference, Chicago, IL, USA."
+      },
+      {
+        "key": "ref_37",
+        "doi-asserted-by": "crossref",
+        "first-page": "13",
+        "DOI": "10.1177/096032718701900103",
+        "article-title": "Subdivision of the sky hemisphere for luminance measurements",
+        "volume": "19",
+        "author": "Tregenza",
+        "year": "1987",
+        "journal-title": "Light. Res. Technol."
+      },
+      {
+        "key": "ref_38",
+        "unstructured": "Subramaniam, S., and Mistrick, R. (2017, January 8–10). A More Accurate Approach for calculating Illuminance with Daylight Coefficients. Proceedings of the Illuminating Engineering Society Annual Conference 2017, Portland, OR, USA. Available online: http://sarith.in/papers/2017-IES.pdf."
+      },
+      {
+        "key": "ref_39",
+        "unstructured": "(2004). Spatial Distribution of Daylight–CIE Standard General Sky (Standard No. ISO-15469:2004 (E)/CIE S 011/E:2003)."
+      },
+      {
+        "key": "ref_40",
+        "first-page": "23",
+        "article-title": "Standard sky calculations for daylighting design and energy performance purposes",
+        "volume": "4",
+        "author": "Darula",
+        "year": "2009",
+        "journal-title": "Fiz. Budowli Teor. Prakt."
+      },
+      {
+        "key": "ref_41",
+        "doi-asserted-by": "crossref",
+        "first-page": "329",
+        "DOI": "10.1175/1520-0450(1984)023<0329:TDOVFI>2.0.CO;2",
+        "article-title": "The Determination of View-Factors in Urban Canyons",
+        "volume": "23",
+        "author": "Johnson",
+        "year": "1984",
+        "journal-title": "J. Clim. Appl. Meteorol."
+      },
+      {
+        "key": "ref_42",
+        "unstructured": "Metropolitan Council (2015). Calculating Floor Area Ratio—Local Planning Handbook."
+      },
+      {
+        "key": "ref_43",
+        "doi-asserted-by": "crossref",
+        "first-page": "807",
+        "DOI": "10.1016/j.egypro.2017.09.533",
+        "article-title": "Urban morphology indicators for solar energy analysis",
+        "volume": "134",
+        "author": "Morganti",
+        "year": "2017",
+        "journal-title": "Energy Procedia"
+      },
+      {
+        "key": "ref_44",
+        "doi-asserted-by": "crossref",
+        "first-page": "757",
+        "DOI": "10.1016/j.solener.2016.10.041",
+        "article-title": "Sunlight availability and potential food and energy self-sufficiency in tropical generic residential districts",
+        "volume": "139",
+        "author": "Tablada",
+        "year": "2016",
+        "journal-title": "Sol. Energy"
+      },
+      {
+        "key": "ref_45",
+        "doi-asserted-by": "crossref",
+        "first-page": "113",
+        "DOI": "10.1007/s10666-020-09707-9",
+        "article-title": "Evaluating Urban Geometry Impacts on Incident Solar Radiation on Building Envelopes",
+        "volume": "26",
+        "author": "Wu",
+        "year": "2021",
+        "journal-title": "Environ. Model. Assess."
+      },
+      {
+        "key": "ref_46",
+        "first-page": "117",
+        "article-title": "Urban layout and façade solar potential: A case study in the Mediterranean Region",
+        "volume": "7",
+        "author": "Curreli",
+        "year": "2013",
+        "journal-title": "Arch. City Environ."
+      },
+      {
+        "key": "ref_47",
+        "doi-asserted-by": "crossref",
+        "first-page": "101952",
+        "DOI": "10.1016/j.scs.2019.101952",
+        "article-title": "Urban performance and density: Generative study on interdependencies of urban form and environmental measures",
+        "volume": "53",
+        "author": "Chokhachian",
+        "year": "2020",
+        "journal-title": "Sustain. Cities Soc."
+      },
+      {
+        "key": "ref_48",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Šprah, N., and Košir, M. (2019). Daylight Provision Requirements According to EN 17037 as a Restriction for Sustainable Urban Planning of Residential Developments. Sustainability, 12.",
+        "DOI": "10.3390/su12010315"
+      },
+      {
+        "key": "ref_49",
+        "doi-asserted-by": "crossref",
+        "first-page": "749",
+        "DOI": "10.1016/j.renene.2015.06.070",
+        "article-title": "Feasibility study on the relation between housing density and solar accessibility and potential uses",
+        "volume": "85",
+        "author": "Lee",
+        "year": "2016",
+        "journal-title": "Renew. Energy"
+      },
+      {
+        "key": "ref_50",
+        "doi-asserted-by": "crossref",
+        "first-page": "142",
+        "DOI": "10.1016/j.proeng.2016.10.017",
+        "article-title": "Impact of Urban Morphology Parameters on Microclimate",
+        "volume": "169",
+        "author": "Wei",
+        "year": "2016",
+        "journal-title": "Procedia Eng."
+      },
+      {
+        "key": "ref_51",
+        "doi-asserted-by": "crossref",
+        "first-page": "373",
+        "DOI": "10.1007/s00484-017-1380-7",
+        "article-title": "Effect of urban design on microclimate and thermal comfort outdoors in warm-humid Dar es Salaam, Tanzania",
+        "volume": "62",
+        "author": "Yahia",
+        "year": "2018",
+        "journal-title": "Int. J. Biometeorol."
+      },
+      {
+        "key": "ref_52",
+        "doi-asserted-by": "crossref",
+        "first-page": "240",
+        "DOI": "10.17645/up.v6i3.4223",
+        "article-title": "A Quantitative Morphological Method for Mapping Local Climate Types",
+        "volume": "6",
+        "author": "Maiullari",
+        "year": "2021",
+        "journal-title": "Urban Plan."
+      },
+      {
+        "key": "ref_53",
+        "doi-asserted-by": "crossref",
+        "first-page": "502",
+        "DOI": "10.1016/j.regsciurbeco.2009.02.001",
+        "article-title": "Optimization of floor area ratio regulation in a growing city",
+        "volume": "39",
+        "author": "Joshi",
+        "year": "2009",
+        "journal-title": "Reg. Sci. Urban Econ."
+      },
+      {
+        "key": "ref_54",
+        "unstructured": "DeKay, M. (1992, January 15–18). A comparative review of daylight planning tools and a rule-of-thumb for street width to building height ratio. Proceedings of the 17th National Passive Solar Conference, Cocoa Beach, FL, USA. Available online: https://www.academia.edu/908120/a_comparative_review_of_daylight_planning_tools_and_a_rule_of_thumb_for_street_width_to_building_height_ratio."
+      },
+      {
+        "key": "ref_55",
+        "doi-asserted-by": "crossref",
+        "first-page": "53",
+        "DOI": "10.1016/j.solener.2016.09.005",
+        "article-title": "Urban geometry and solar availability on façades and ground of real urban forms: Using London as a case study",
+        "volume": "138",
+        "author": "Chatzipoulka",
+        "year": "2016",
+        "journal-title": "Sol. Energy"
+      },
+      {
+        "key": "ref_56",
+        "doi-asserted-by": "crossref",
+        "first-page": "107276",
+        "DOI": "10.1016/j.buildenv.2020.107276",
+        "article-title": "Daylight compliance of residential spaces: Comparison of different performance criteria and association with room geometry and urban density",
+        "volume": "185",
+        "author": "Bournas",
+        "year": "2020",
+        "journal-title": "Build. Environ."
+      },
+      {
+        "key": "ref_57",
+        "doi-asserted-by": "crossref",
+        "first-page": "135",
+        "DOI": "10.1016/j.scs.2016.09.006",
+        "article-title": "A parametric sensitivity analysis of the influence of urban form on domestic energy consumption for heating and cooling in a Mediterranean city",
+        "volume": "28",
+        "author": "Vartholomaios",
+        "year": "2017",
+        "journal-title": "Sustain. Cities Soc."
+      },
+      {
+        "key": "ref_58",
+        "doi-asserted-by": "crossref",
+        "first-page": "327",
+        "DOI": "10.1177/0885412213491499",
+        "article-title": "Urban Form and Residential Energy Use: A Review of Design Principles and Research Findings",
+        "volume": "28",
+        "author": "Ko",
+        "year": "2013",
+        "journal-title": "J. Plan. Lit."
+      },
+      {
+        "key": "ref_59",
+        "doi-asserted-by": "crossref",
+        "first-page": "762",
+        "DOI": "10.1016/j.enbuild.2004.10.010",
+        "article-title": "Energy consumption and urban texture",
+        "volume": "37",
+        "author": "Ratti",
+        "year": "2005",
+        "journal-title": "Energy Build."
+      },
+      {
+        "key": "ref_60",
+        "doi-asserted-by": "crossref",
+        "first-page": "15",
+        "DOI": "10.1016/S0378-7788(02)00076-2",
+        "article-title": "The solar envelope: Its meaning for energy and buildings",
+        "volume": "35",
+        "author": "Knowles",
+        "year": "2003",
+        "journal-title": "Energy Build."
+      },
+      {
+        "key": "ref_61",
+        "doi-asserted-by": "crossref",
+        "first-page": "101626",
+        "DOI": "10.1016/j.jobe.2020.101626",
+        "article-title": "The impact of urban form on building energy and cost efficiency in temperate-humid zones",
+        "volume": "33",
+        "author": "Mangan",
+        "year": "2021",
+        "journal-title": "J. Build. Eng."
+      },
+      {
+        "key": "ref_62",
+        "doi-asserted-by": "crossref",
+        "first-page": "49",
+        "DOI": "10.1016/j.enbuild.2019.03.030",
+        "article-title": "Accurate prediction of heating energy demand of courtyard’s surrounding envelopes using temperature correction factor",
+        "volume": "193",
+        "author": "Forouzandeh",
+        "year": "2019",
+        "journal-title": "Energy Build."
+      },
+      {
+        "key": "ref_63",
+        "doi-asserted-by": "crossref",
+        "first-page": "97",
+        "DOI": "10.1016/j.scs.2016.12.004",
+        "article-title": "Influence of height/width proportions on the thermal comfort of courtyard typology for Italian climate zones",
+        "volume": "29",
+        "author": "Martinelli",
+        "year": "2017",
+        "journal-title": "Sustain. Cities Soc."
+      },
+      {
+        "key": "ref_64",
+        "doi-asserted-by": "crossref",
+        "first-page": "449",
+        "DOI": "10.1016/j.scs.2017.08.017",
+        "article-title": "Numerical evaluation of thermal comfort in traditional courtyards to develop new microclimate design in a hot and dry climate",
+        "volume": "35",
+        "author": "Nasrollahi",
+        "year": "2017",
+        "journal-title": "Sustain. Cities Soc."
+      },
+      {
+        "key": "ref_65",
+        "doi-asserted-by": "crossref",
+        "first-page": "840",
+        "DOI": "10.1016/j.renene.2018.01.082",
+        "article-title": "Influence of aspect ratio and orientation on large courtyard thermal conditions in the historical centre of Camagüey-Cuba",
+        "volume": "125",
+        "author": "Tablada",
+        "year": "2018",
+        "journal-title": "Renew. Energy"
+      },
+      {
+        "key": "ref_66",
+        "unstructured": "Berghauser-Pont, M., and Haupt, P.A. (2007). The Spacemate: Density and the typomorphology of the urban fabric. Urbanism Laboratory for Cities and Regions, IOS Press."
+      },
+      {
+        "key": "ref_67",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Zhu, D., Song, D., Shi, J., Fang, J., and Zhou, Y. (2020). The Effect of Morphology on Solar Potential of High-Density Residential Area: A Case Study of Shanghai. Energies, 13.",
+        "DOI": "10.3390/en13092215"
+      },
+      {
+        "key": "ref_68",
+        "doi-asserted-by": "crossref",
+        "first-page": "237",
+        "DOI": "10.1002/joc.3370010304",
+        "article-title": "Canyon geometry and the nocturnal urban heat island: Comparison of scale model and field observations",
+        "volume": "1",
+        "author": "Oke",
+        "year": "1980",
+        "journal-title": "J. Clim."
+      },
+      {
+        "key": "ref_69",
+        "unstructured": "Brown, M.J., Grimmond, S., and Ratti, C. (2001). Comparison of Methodologies for Computing Sky View Factor in Urban Environments."
+      },
+      {
+        "key": "ref_70",
+        "doi-asserted-by": "crossref",
+        "first-page": "100498",
+        "DOI": "10.1016/j.uclim.2019.100498",
+        "article-title": "Sky view factor calculations and its application in urban heat island studies",
+        "volume": "30",
+        "author": "Dirksen",
+        "year": "2019",
+        "journal-title": "Urban Clim."
+      },
+      {
+        "key": "ref_71",
+        "doi-asserted-by": "crossref",
+        "first-page": "521",
+        "DOI": "10.1007/s00704-011-0402-3",
+        "article-title": "Comparison of models calculating the sky view factor used for urban climate investigations",
+        "volume": "105",
+        "author": "Unger",
+        "year": "2011",
+        "journal-title": "Theor. Appl. Climatol."
+      },
+      {
+        "key": "ref_72",
+        "doi-asserted-by": "crossref",
+        "first-page": "799",
+        "DOI": "10.1007/s00484-014-0898-1",
+        "article-title": "The effect of urban geometry on mean radiant temperature under future climate change: A study of three European cities",
+        "volume": "59",
+        "author": "Lau",
+        "year": "2014",
+        "journal-title": "Int. J. Biometeorol."
+      },
+      {
+        "key": "ref_73",
+        "unstructured": "Littlefair, P. (2011). Site Layout Planning for Daylight and Sunlight: A Guide to Good Practice (BR 209), Building Research Establishment."
+      },
+      {
+        "key": "ref_74",
+        "unstructured": "Olina, A., and Zaimi, N. (2018). Daylight Prediction Based on VSC-DF Relation: A Guideline for Daylight in Urban Planning. [Master’s Thesis, Lund University]."
+      },
+      {
+        "key": "ref_75",
+        "first-page": "707",
+        "article-title": "Illumination form a non-uniform sky",
+        "volume": "37",
+        "author": "Moon",
+        "year": "1942",
+        "journal-title": "Illum. Eng."
+      },
+      {
+        "key": "ref_76",
+        "doi-asserted-by": "crossref",
+        "first-page": "254",
+        "DOI": "10.1016/j.buildenv.2019.01.013",
+        "article-title": "Daylight regulation compliance of existing multi-family apartment blocks in Sweden",
+        "volume": "150",
+        "author": "Bournas",
+        "year": "2019",
+        "journal-title": "Build. Environ."
+      },
+      {
+        "key": "ref_77",
+        "doi-asserted-by": "crossref",
+        "first-page": "568",
+        "DOI": "10.1016/j.renene.2010.08.013",
+        "article-title": "Affordable passive solar design in a temperate climate: An experiment in residential building orientation",
+        "volume": "36",
+        "author": "Morrissey",
+        "year": "2011",
+        "journal-title": "Renew. Energy"
+      },
+      {
+        "key": "ref_78",
+        "doi-asserted-by": "crossref",
+        "first-page": "827",
+        "DOI": "10.1016/S0360-1323(02)00063-X",
+        "article-title": "Climatic aspects in urban design-a case study",
+        "volume": "38",
+        "author": "Capeluto",
+        "year": "2003",
+        "journal-title": "Build. Environ."
+      },
+      {
+        "key": "ref_79",
+        "doi-asserted-by": "crossref",
+        "first-page": "395",
+        "DOI": "10.1080/00038628.2017.1331334",
+        "article-title": "A method for the generation of climate-based, context-dependent parametric solar envelopes",
+        "volume": "60",
+        "author": "Capeluto",
+        "year": "2017",
+        "journal-title": "Arch. Sci. Rev."
+      },
+      {
+        "key": "ref_80",
+        "doi-asserted-by": "crossref",
+        "first-page": "13703",
+        "DOI": "10.1063/1.4997888",
+        "article-title": "Solar energy potential estimation by calculating sun illumination hours and sky view factor on building rooftops using digital elevation model",
+        "volume": "10",
+        "author": "Yousuf",
+        "year": "2018",
+        "journal-title": "J. Renew. Sustain. Energy"
+      },
+      {
+        "key": "ref_81",
+        "unstructured": "Grandjean, E., and Gilgen, A. (1976). Environmental Factors in Urban Planning, Taylor & Francis."
+      },
+      {
+        "key": "ref_82",
+        "doi-asserted-by": "crossref",
+        "first-page": "303",
+        "DOI": "10.1016/S1364-0321(97)00009-9",
+        "article-title": "Passive solar urban design: Ensuring the penetration of solar energy into the city",
+        "volume": "2",
+        "author": "Littlefair",
+        "year": "1998",
+        "journal-title": "Renew. Sustain. Energy Rev."
+      },
+      {
+        "key": "ref_83",
+        "doi-asserted-by": "crossref",
+        "first-page": "14",
+        "DOI": "10.3389/fbuil.2018.00014",
+        "article-title": "Solar Energy Potential Assessment on Rooftops and Facades in Large Built Environments Based on LiDAR Data, Image Processing, and Cloud Computing. Methodological Background, Application, and Validation in Geneva (Solar Cadaster)",
+        "volume": "4",
+        "author": "Desthieux",
+        "year": "2018",
+        "journal-title": "Front. Built Environ."
+      },
+      {
+        "key": "ref_84",
+        "unstructured": "Compagnon, R., and Goyette-Pernot, J. (2013, January 10–12). Multishading masks: A new method for assessing solar penetration in open spaces. Proceedings of the PLEA2013—29th Conference, Sustainable Architecture for a Renewable Future, Munich, Germany."
+      },
+      {
+        "key": "ref_85",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Compagnon, R., and Chatzipoulka, C. (2018, January 10–13). A Simple Tool for Assessing Solar and Daylight Access in Urban Canyons. Proceedings of the EuroSun 2018, International Solar Energy Society, Freiburg, Germany.",
+        "DOI": "10.18086/eurosun2018.07.05"
+      },
+      {
+        "key": "ref_86",
+        "doi-asserted-by": "crossref",
+        "first-page": "91",
+        "DOI": "10.1016/0360-1323(76)90025-1",
+        "article-title": "Recommendations for the admission and control of sunlight in buildings",
+        "volume": "11",
+        "author": "Light",
+        "year": "1976",
+        "journal-title": "Build. Environ."
+      },
+      {
+        "key": "ref_87",
+        "unstructured": "Littlefair, P. (1991). Site Layout Planning for Daylight and Sunlight: A Guide to Good Practice, Building Research Establishment."
+      },
+      {
+        "key": "ref_88",
+        "doi-asserted-by": "crossref",
+        "first-page": "1678S",
+        "DOI": "10.1093/ajcn/80.6.1678S",
+        "article-title": "Sunlight and vitamin D for bone health and prevention of autoimmune diseases, cancers, and cardiovascular disease",
+        "volume": "80",
+        "author": "Holick",
+        "year": "2004",
+        "journal-title": "Am. J. Clin. Nutr."
+      },
+      {
+        "key": "ref_89",
+        "doi-asserted-by": "crossref",
+        "first-page": "19782",
+        "DOI": "10.1038/s41598-020-76636-8",
+        "article-title": "Beneficial effects of daytime high-intensity light exposure on daily rhythms, metabolic state and affect",
+        "volume": "10",
+        "author": "Bilu",
+        "year": "2020",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "key": "ref_90",
+        "doi-asserted-by": "crossref",
+        "first-page": "72",
+        "DOI": "10.1001/archpsyc.1984.01790120076010",
+        "article-title": "Seasonal Affective Disorder: A Description of the Syndrome and Preliminary Findings with Light Therapy",
+        "volume": "41",
+        "author": "Rosenthal",
+        "year": "1984",
+        "journal-title": "Arch. Gen. Psychiatry"
+      },
+      {
+        "key": "ref_91",
+        "doi-asserted-by": "crossref",
+        "first-page": "175",
+        "DOI": "10.1186/s40168-018-0559-4",
+        "article-title": "Daylight exposure modulates bacterial communities associated with household dust",
+        "volume": "6",
+        "author": "Fahimipour",
+        "year": "2018",
+        "journal-title": "Microbiome"
+      },
+      {
+        "key": "ref_92",
+        "doi-asserted-by": "crossref",
+        "first-page": "217",
+        "DOI": "10.1016/0360-1323(76)90030-5",
+        "article-title": "Sunlight requirements in buildings—I. Social survey",
+        "volume": "11",
+        "author": "Craddock",
+        "year": "1976",
+        "journal-title": "Build. Environ."
+      },
+      {
+        "key": "ref_93",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Czachura, A. (2020, January 1–3). Integrated Daylight and Energy Evaluation of Passive Solar Shadings in a Nordic Climate. Proceedings of the 13th International Conference on Solar Energy for Buildings and Industry, Online.",
+        "DOI": "10.18086/eurosun.2020.01.01"
+      },
+      {
+        "key": "ref_94",
+        "unstructured": "Illuminating Engineering Society (2012). IES LM-83-12 Approved Method: IES Spatial Daylight Autonomy (sDA) and Annual Sunlight Exposure (ASE), Illuminating Engineering Society."
+      },
+      {
+        "key": "ref_95",
+        "unstructured": "Robinson, D., and Stone, A. (2004, January 19–21). Irradiation modelling made simple: The cumulative sky approach and its applications. Proceedings of the 21st PLEA Conference, Eindhoven, The Netherlands."
+      },
+      {
+        "key": "ref_96",
+        "doi-asserted-by": "crossref",
+        "first-page": "443",
+        "DOI": "10.1002/joc.4717",
+        "article-title": "A diagnostic equation for the daily maximum urban heat island effect for cities in northwestern Europe",
+        "volume": "37",
+        "author": "Theeuwes",
+        "year": "2017",
+        "journal-title": "Int. J. Clim."
+      },
+      {
+        "key": "ref_97",
+        "unstructured": "BSI (2021, May 17). Lighting for Buildings. Code of Practice for Daylighting. BS 8206-2:2008—BSI British Standards, London. Available online: https://shop.bsigroup.com/ProductDetail/?pid=000000000030157088."
+      },
+      {
+        "key": "ref_98",
+        "unstructured": "Littlefair, P., and Aizlewood, M. (1999). Calculating Access to Skylight, Sunlight and Solar Radiation on Obstructed Sites in Europe, Building Research Establishment. Construction Research Communications."
+      },
+      {
+        "key": "ref_99",
+        "unstructured": "Palz, W., and Greif, J. (2016). European Solar Radiation Atlas: Solar Radiation on Horizontal and Inclined Surfaces, Springer. [3rd ed.]."
+      },
+      {
+        "key": "ref_100",
+        "unstructured": "(2021, December 03). Annual Probable Sun Hours. Available online: https://deluminaelab.com/docs/dl-light/en/apsh.html."
+      },
+      {
+        "key": "ref_101",
+        "doi-asserted-by": "crossref",
+        "first-page": "566",
+        "DOI": "10.1016/j.solener.2019.03.023",
+        "article-title": "Simplified vector-based model tailored for urban-scale prediction of solar irradiance",
+        "volume": "183",
+        "author": "Liao",
+        "year": "2019",
+        "journal-title": "Sol. Energy"
+      },
+      {
+        "key": "ref_102",
+        "doi-asserted-by": "crossref",
+        "first-page": "10",
+        "DOI": "10.1016/j.renene.2014.06.028",
+        "article-title": "Solar energy and urban morphology: Scenarios for increasing the renewable energy potential of neighbourhoods in London",
+        "volume": "73",
+        "author": "Sarralde",
+        "year": "2015",
+        "journal-title": "Renew. Energy"
+      },
+      {
+        "key": "ref_103",
+        "doi-asserted-by": "crossref",
+        "first-page": "915",
+        "DOI": "10.1016/j.rser.2014.08.060",
+        "article-title": "Modelling solar potential in the urban environment: State-of-the-art review",
+        "volume": "41",
+        "author": "Freitas",
+        "year": "2015",
+        "journal-title": "Renew. Sustain. Energy Rev."
+      },
+      {
+        "key": "ref_104",
+        "doi-asserted-by": "crossref",
+        "first-page": "598",
+        "DOI": "10.1016/j.energy.2013.12.066",
+        "article-title": "Buildings roofs photovoltaic potential assessment based on LiDAR (Light Detection and Ranging) data",
+        "volume": "66",
+        "author": "Seme",
+        "year": "2014",
+        "journal-title": "Energy"
+      },
+      {
+        "key": "ref_105",
+        "doi-asserted-by": "crossref",
+        "first-page": "264",
+        "DOI": "10.1016/j.enbuild.2012.08.044",
+        "article-title": "Assessing the solar irradiation potential for solar photovoltaic applications in buildings at low latitudes—Making the case for Brazil",
+        "volume": "55",
+        "author": "Cronemberger",
+        "year": "2012",
+        "journal-title": "Energy Build."
+      },
+      {
+        "key": "ref_106",
+        "doi-asserted-by": "crossref",
+        "first-page": "150",
+        "DOI": "10.1016/j.solener.2019.11.062",
+        "article-title": "A calculation method for the BIPV potential of Swiss façades at LOD2.5 in urban areas: A case from Ticino region",
+        "volume": "195",
+        "author": "Saretta",
+        "year": "2020",
+        "journal-title": "Sol. Energy"
+      },
+      {
+        "key": "ref_107",
+        "doi-asserted-by": "crossref",
+        "first-page": "109255",
+        "DOI": "10.1016/j.rser.2019.109255",
+        "article-title": "A digital workflow to quantify regenerative urban design in the context of a changing climate",
+        "volume": "113",
+        "author": "Naboni",
+        "year": "2019",
+        "journal-title": "Renew. Sustain. Energy Rev."
+      },
+      {
+        "key": "ref_108",
+        "doi-asserted-by": "crossref",
+        "first-page": "224",
+        "DOI": "10.1016/j.enbuild.2015.06.051",
+        "article-title": "The potential energy savings from residential passive solar design in Canada",
+        "volume": "103",
+        "author": "Zirnhelt",
+        "year": "2015",
+        "journal-title": "Energy Build."
+      },
+      {
+        "key": "ref_109",
+        "doi-asserted-by": "crossref",
+        "first-page": "347",
+        "DOI": "10.1016/j.solener.2017.04.015",
+        "article-title": "Boosting solar accessibility and potential of urban districts in the Nordic climate: A case study in Trondheim",
+        "volume": "149",
+        "author": "Lobaccaro",
+        "year": "2017",
+        "journal-title": "Sol. Energy"
+      },
+      {
+        "key": "ref_110",
+        "doi-asserted-by": "crossref",
+        "first-page": "283",
+        "DOI": "10.1016/j.apenergy.2019.04.113",
+        "article-title": "Urban solar utilization potential mapping via deep learning technology: A case study of Wuhan, China",
+        "volume": "250",
+        "author": "Huang",
+        "year": "2019",
+        "journal-title": "Appl. Energy"
+      },
+      {
+        "key": "ref_111",
+        "doi-asserted-by": "crossref",
+        "first-page": "861",
+        "DOI": "10.1016/j.solener.2018.08.017",
+        "article-title": "A toolkit for multi-scale mapping of the solar energy-generation potential of buildings in urban environments under uncertainty",
+        "volume": "173",
+        "author": "Peronato",
+        "year": "2018",
+        "journal-title": "Sol. Energy"
+      },
+      {
+        "key": "ref_112",
+        "doi-asserted-by": "crossref",
+        "first-page": "181",
+        "DOI": "10.1111/j.1467-8306.1973.tb00918.x",
+        "article-title": "Solar Radiation and Urban Heat Islands",
+        "volume": "63",
+        "author": "Terjung",
+        "year": "1973",
+        "journal-title": "Ann. Assoc. Am. Geogr."
+      },
+      {
+        "key": "ref_113",
+        "unstructured": "Boverket (2018). Planning and Building Act (2010:900) Planning and Building Ordinance (2011:338), Boverket. Swedish National Board of Housing, Building and Planning."
+      },
+      {
+        "key": "ref_114",
+        "doi-asserted-by": "crossref",
+        "first-page": "489",
+        "DOI": "10.1177/14771535211022145",
+        "article-title": "The implementation of natural lighting for human health from a planning perspective",
+        "volume": "53",
+        "author": "Mardaljevic",
+        "year": "2021",
+        "journal-title": "Light. Res. Technol."
+      },
+      {
+        "key": "ref_115",
+        "unstructured": "Mehaffy, M.W., Kryazheva, Y., Rudd, A., and Salingaros, N.A. (2019). A New Pattern Language for Growing Regions: Places, Networks, Processes, Sustasis Press."
+      }
+    ],
+    "container-title": [
+      "Buildings"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.mdpi.com/2075-5309/12/4/393/pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          10
+        ]
+      ],
+      "date-time": "2025-10-10T22:41:24Z",
+      "timestamp": 1760136084000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.mdpi.com/2075-5309/12/4/393"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          3,
+          23
+        ]
+      ]
+    },
+    "references-count": 115,
+    "journal-issue": {
+      "issue": "4",
+      "published-online": {
+        "date-parts": [
+          [
+            2022,
+            4
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "buildings12040393"
+    ],
+    "URL": "https://doi.org/10.3390/buildings12040393",
+    "relation": {},
+    "ISSN": [
+      "2075-5309"
+    ],
+    "issn-type": [
+      {
+        "value": "2075-5309",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          3,
+          23
+        ]
+      ]
+    }
+  }
+}

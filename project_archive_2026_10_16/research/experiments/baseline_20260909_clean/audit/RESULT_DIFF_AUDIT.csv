@@ -1,0 +1,5 @@
+﻿artifact,historical_rows,current_rows,matched_rows,max_abs_numeric_diff,status,note
+120_canonical_2p5D完整双建筑候选排名.csv,630.0,630.0,630.0,0.0,MATCH,numeric/key audit; regenerated judgement classifications are separate
+131_HB_Radiance合并候选汇总结果.csv,31.0,31.0,31.0,0.0,MATCH,numeric/key audit; regenerated judgement classifications are separate
+132_HB_Radiance已复核候选排名与Pareto.csv,23.0,23.0,23.0,0.0,MATCH,numeric/key audit; regenerated judgement classifications are separate
+SCORING_FORMULA_MIGRATION_AUDIT.csv,,,,0.0,PASS,config-driven four-term formula versus pre-patch clean 630 output

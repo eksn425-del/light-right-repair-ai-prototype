@@ -1,0 +1,202 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          9
+        ]
+      ],
+      "date-time": "2026-06-09T07:09:40Z",
+      "timestamp": 1780988980770,
+      "version": "3.54.1"
+    },
+    "reference-count": 0,
+    "publisher": "Informa UK Limited",
+    "issue": "1",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "LEUKOS"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2006,
+          7,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1582/leukos.2006.03.01.001",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2019,
+          11,
+          7
+        ]
+      ],
+      "date-time": "2019-11-07T09:18:36Z",
+      "timestamp": 1573118316000
+    },
+    "page": "7-31",
+    "source": "Crossref",
+    "is-referenced-by-count": 524,
+    "title": [
+      "Dynamic Daylight Performance Metrics for Sustainable Building Design"
+    ],
+    "prefix": "10.1582",
+    "volume": "3",
+    "author": [
+      {
+        "given": "Christoph F.",
+        "family": "Reinhart",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "National Research Council Canada, 1200 Montreal Road M-24, Ottawa, ON, K1A 0R6, Canada"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "John",
+        "family": "Mardaljevic",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Energy and Sustainable Development, De Montfort University, The Gateway, Leicester, LE1 9BH, UK"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zack",
+        "family": "Rogers",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Architectural Energy Corporation, 2540 Frontier Avenue, Suite 201, Boulder, Colorado 80301, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "301",
+    "published-online": {
+      "date-parts": [
+        [
+          2013,
+          9,
+          16
+        ]
+      ]
+    },
+    "container-title": [
+      "LEUKOS"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.tandfonline.com/doi/pdf/10.1582/LEUKOS.2006.03.01.001",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2019,
+          11,
+          7
+        ]
+      ],
+      "date-time": "2019-11-07T09:18:42Z",
+      "timestamp": 1573118322000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.tandfonline.com/doi/full/10.1582/LEUKOS.2006.03.01.001"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2006,
+          7,
+          1
+        ]
+      ]
+    },
+    "references-count": 0,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2006,
+            7,
+            1
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1582/LEUKOS.2006.03.01.001"
+    ],
+    "URL": "https://doi.org/10.1582/leukos.2006.03.01.001",
+    "relation": {},
+    "ISSN": [
+      "1550-2724",
+      "1550-2716"
+    ],
+    "issn-type": [
+      {
+        "value": "1550-2724",
+        "type": "print"
+      },
+      {
+        "value": "1550-2716",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2006,
+          7,
+          1
+        ]
+      ]
+    }
+  }
+}

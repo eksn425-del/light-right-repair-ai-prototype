@@ -1,0 +1,19 @@
+# Rhino command script. Run inside Rhino if Ladybug component requires Brep/Polysurface.
+# Steps: Tools > Commands > Read Command File, or paste commands line by line.
+# The script imports each Ladybug-ready OBJ, runs MeshToNURB, joins polysurfaces, and saves a 3DM.
+
+_-New None
+_-Import "ladybug_ready_models\baseline_original_full_site_ladybug_ready.obj" _Enter
+_SelAll
+_MeshToNURB _DeleteInput=Yes _Enter
+_SelAll
+_Join
+_-SaveAs "ladybug_ready_models\baseline_original_full_site_ladybug_ready_polysurface.3dm" _Enter
+
+_-New None
+_-Import "ladybug_ready_models\algorithm_after_full_site_only_C6_C33_changed_ladybug_ready.obj" _Enter
+_SelAll
+_MeshToNURB _DeleteInput=Yes _Enter
+_SelAll
+_Join
+_-SaveAs "ladybug_ready_models\algorithm_after_full_site_only_C6_C33_changed_ladybug_ready_polysurface.3dm" _Enter

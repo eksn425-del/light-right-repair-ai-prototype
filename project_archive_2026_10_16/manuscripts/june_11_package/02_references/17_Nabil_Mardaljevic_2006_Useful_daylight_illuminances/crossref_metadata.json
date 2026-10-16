@@ -1,0 +1,364 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          9
+        ]
+      ],
+      "date-time": "2026-06-09T18:59:53Z",
+      "timestamp": 1781031593357,
+      "version": "3.54.1"
+    },
+    "reference-count": 22,
+    "publisher": "Elsevier BV",
+    "issue": "7",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2006,
+              7,
+              1
+            ]
+          ],
+          "date-time": "2006-07-01T00:00:00Z",
+          "timestamp": 1151712000000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Energy and Buildings"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2006,
+          7
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.enbuild.2006.03.013",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2006,
+          4,
+          28
+        ]
+      ],
+      "date-time": "2006-04-28T11:47:52Z",
+      "timestamp": 1146224872000
+    },
+    "page": "905-913",
+    "source": "Crossref",
+    "is-referenced-by-count": 664,
+    "title": [
+      "Useful daylight illuminances: A replacement for daylight factors"
+    ],
+    "prefix": "10.1016",
+    "volume": "38",
+    "author": [
+      {
+        "given": "Azza",
+        "family": "Nabil",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "John",
+        "family": "Mardaljevic",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "issue": "1",
+        "key": "10.1016/j.enbuild.2006.03.013_bib1",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1191/1365782805li128oa",
+        "article-title": "Useful daylight illuminance: a new paradigm for assessing daylight in buildings",
+        "volume": "37",
+        "author": "Nabil",
+        "year": "2005",
+        "journal-title": "Lighting Research and Technology"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.enbuild.2006.03.013_bib2",
+        "doi-asserted-by": "crossref",
+        "first-page": "15",
+        "DOI": "10.1016/j.solener.2004.04.003",
+        "article-title": "Lightswitch-2002: a model for manual and automated control of electric lighting and blinds",
+        "volume": "77",
+        "author": "Reinhart",
+        "year": "2004",
+        "journal-title": "Solar Energy"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.enbuild.2006.03.013_bib3",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/S0378-7788(98)00023-1",
+        "article-title": "Office workers response to an automated Venetian blind and electric lighting system—a pilot study",
+        "volume": "28",
+        "author": "Vine",
+        "year": "1998",
+        "journal-title": "Energy and Buildings"
+      },
+      {
+        "key": "10.1016/j.enbuild.2006.03.013_bib4",
+        "series-title": "Proceedings of Glass Processing Days (GPD) Conference",
+        "article-title": "High performance glazing systems—architectural opportunities for the 21st century",
+        "author": "Selkowitz",
+        "year": "1999"
+      },
+      {
+        "key": "10.1016/j.enbuild.2006.03.013_bib5",
+        "series-title": "Conference Proceedings of the ACEEE Summer Study on Energy Efficient Buildings",
+        "first-page": "1",
+        "article-title": "Effects of interior design on the daylight availability in open plan offices",
+        "author": "Reinhart",
+        "year": "2002"
+      },
+      {
+        "key": "10.1016/j.enbuild.2006.03.013_bib6",
+        "series-title": "Outline of a Standard Procedure for Computing Visual Comfort Ratings for Interior Lighting lm-42-72",
+        "author": "IES",
+        "year": "1991"
+      },
+      {
+        "key": "10.1016/j.enbuild.2006.03.013_bib7",
+        "series-title": "Proceedings of the Solar World Congress, the International Solar Energy Society (ISES)",
+        "article-title": "Building simulation in application: developing concepts for low energy buildings through a co-operation between architect and engineer",
+        "author": "Schuler",
+        "year": "1995"
+      },
+      {
+        "key": "10.1016/j.enbuild.2006.03.013_bib8",
+        "series-title": "Proceedings of PLEA 2000",
+        "article-title": "We are all outdoor animals",
+        "author": "Baker",
+        "year": "2000"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.enbuild.2006.03.013_bib9",
+        "article-title": "Occupant reaction to daylight in offices",
+        "volume": "32",
+        "author": "Roache",
+        "year": "2000",
+        "journal-title": "Lighting Research and Technology"
+      },
+      {
+        "key": "10.1016/j.enbuild.2006.03.013_bib10",
+        "series-title": "Proceedings of the SPIE International Symposium on Optical Materials Technology for Energy Efficiency and Solar Energy Conversion XIII",
+        "article-title": "A review of electrochromic window performance factors",
+        "author": "Selkowitz",
+        "year": "1994"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.enbuild.2006.03.013_bib11",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1080/00994480.1999.10748247",
+        "article-title": "The effect of Venetian blinds on daylight photoelectric control performance",
+        "volume": "28",
+        "author": "Lee",
+        "year": "1999",
+        "journal-title": "Journal of the Illuminating Engineering Society"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.enbuild.2006.03.013_bib12",
+        "article-title": "Summertime performance of an automated lighting and blinds control system",
+        "volume": "34",
+        "author": "Roache",
+        "year": "2002",
+        "journal-title": "Lighting Research and Technology"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.enbuild.2006.03.013_bib13",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1191/1365782804li122oa",
+        "article-title": "Lighting for work: a review of visual and biological effects",
+        "volume": "36",
+        "author": "van Bommel",
+        "year": "2004",
+        "journal-title": "Lighting Research and Technology"
+      },
+      {
+        "issue": "1–3",
+        "key": "10.1016/j.enbuild.2006.03.013_bib14",
+        "article-title": "Bright light improves vitality and alleviates distress in healthy people",
+        "volume": "57",
+        "author": "Partonen",
+        "year": "2000",
+        "journal-title": "Journal of Affective Disorders"
+      },
+      {
+        "key": "10.1016/j.enbuild.2006.03.013_bib15",
+        "doi-asserted-by": "crossref",
+        "unstructured": "S.H.A. Begemann, G.J. den Beld, A.D. Tenner, Daylight, artificial light, and people in an office environment: overview of visual and biological responses, International Journal of Industrial Ergonomics (1997).",
+        "DOI": "10.1016/S0169-8141(96)00053-4"
+      },
+      {
+        "key": "10.1016/j.enbuild.2006.03.013_bib16",
+        "series-title": "Rendering with Radiance: The Art and Science of Lighting Visualization",
+        "author": "Ward Larson",
+        "year": "1998"
+      },
+      {
+        "key": "10.1016/j.enbuild.2006.03.013_bib17",
+        "series-title": "Glass and Transmission Properties of Windows",
+        "author": "Pilkington Glass Ltd.",
+        "year": "1991"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.enbuild.2006.03.013_bib18",
+        "doi-asserted-by": "crossref",
+        "first-page": "65",
+        "DOI": "10.1177/096032718301500201",
+        "article-title": "Daylight coefficients",
+        "volume": "15",
+        "author": "Tregenza",
+        "year": "1983",
+        "journal-title": "Lighting Research and Technology"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.enbuild.2006.03.013_bib19",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1177/096032710003200302",
+        "article-title": "The simulation of annual daylighting profiles for internal illuminance",
+        "volume": "32",
+        "author": "Mardaljevic",
+        "year": "2000",
+        "journal-title": "Lighting Research and Technology"
+      },
+      {
+        "key": "10.1016/j.enbuild.2006.03.013_bib20",
+        "unstructured": "A. Nabil, Performance modelling for advanced envelope systems, Ph.D. Thesis, De Montfort University Leicester, 2002."
+      },
+      {
+        "key": "10.1016/j.enbuild.2006.03.013_bib21",
+        "unstructured": "J. Mardaljevic, Daylight simulation: validation, sky models and daylight coefficients, Ph.D. Thesis, De Montfort University Leicester, 2000."
+      },
+      {
+        "key": "10.1016/j.enbuild.2006.03.013_bib22",
+        "unstructured": "The U.S. Green Building Council, Leed: Leadership in Energy and Environmental Design, 2005."
+      }
+    ],
+    "container-title": [
+      "Energy and Buildings"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0378778806000636?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0378778806000636?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2019,
+          4,
+          18
+        ]
+      ],
+      "date-time": "2019-04-18T11:07:49Z",
+      "timestamp": 1555585669000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0378778806000636"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2006,
+          7
+        ]
+      ]
+    },
+    "references-count": 22,
+    "journal-issue": {
+      "issue": "7",
+      "published-print": {
+        "date-parts": [
+          [
+            2006,
+            7
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "S0378778806000636"
+    ],
+    "URL": "https://doi.org/10.1016/j.enbuild.2006.03.013",
+    "relation": {},
+    "ISSN": [
+      "0378-7788"
+    ],
+    "issn-type": [
+      {
+        "value": "0378-7788",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2006,
+          7
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "docx": "paper_revision_work_2026_06_14\\final_output\\光权修复论文_EI会议中文投稿终稿_v5_规则启发式AI版.docx",
+  "media_count": 11,
+  "table_count_expected": 8,
+  "key_updates": [
+    "title uses rule-based AI wording",
+    "abstract defines AI as rule reasoning + heuristic search + post-simulation + human review",
+    "3m fixed C6/C33 re-simulation retained",
+    "weight sensitivity section and Table 8 added",
+    "0.013 h average sunlight gain framed as near simplified-model interpretation boundary"
+  ],
+  "key_results": {
+    "baseline_6m_dark_zone_percent": 17.55,
+    "conservative_6m_dark_zone_percent": 16.94,
+    "fixed_c6_c33_3m_dark_zone_percent": 15.84,
+    "weight_sensitivity_variants": 7,
+    "c6_c33_weight_variant_count": 2
+  },
+  "status": "pass"
+}

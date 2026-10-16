@@ -1,0 +1,68 @@
+﻿[
+    {
+        "Name":  "Czachura_2022_Solar_Performance_Metrics_in_Urban_Planning.pdf",
+        "Status":  "failed: 远程服务器返回错误: (403) 已禁止。",
+        "Bytes":  0,
+        "Url":  "https://www.mdpi.com/2075-5309/12/4/393/pdf"
+    },
+    {
+        "Name":  "Wang_2024_EvoMass_building_massing_optimization.pdf",
+        "Status":  "downloaded",
+        "Bytes":  6789000,
+        "Url":  "https://journal.hep.com.cn/foar/EN/PDF/10.1016/j.foar.2024.06.001"
+    },
+    {
+        "Name":  "Compagnon_2004_Solar_and_daylight_availability_in_the_urban_fabric.pdf",
+        "Status":  "downloaded",
+        "Bytes":  376861,
+        "Url":  "https://www.archiwatt.ch/______CAMPUS_uni/module_landscape/_34_infrastructures/pdf/Solar_and_daylight_availability_in_the_urban_fabric.pdf"
+    },
+    {
+        "Name":  "Jakubik_2022_Human_in_the_loop_floor_plan_detection.pdf",
+        "Status":  "downloaded",
+        "Bytes":  1099108,
+        "Url":  "https://ojs.aaai.org/index.php/AAAI/article/download/21522/21271"
+    },
+    {
+        "Name":  "Roudsari_Pak_2013_Ladybug_parametric_environmental_plugin.pdf",
+        "Status":  "failed: 基础连接已经关闭: 发送时发生错误。",
+        "Bytes":  0,
+        "Url":  "https://publications.ibpsa.org/proceedings/bs/2013/papers/bs2013_2499.pdf"
+    },
+    {
+        "Name":  "Czachura_2022_Solar_Performance_Metrics_in_Urban_Planning.pdf",
+        "Status":  "downloaded",
+        "Bytes":  1945200,
+        "Url":  "https://mdpi-res.com/d_attachment/buildings/buildings-12-00393/article_deploy/buildings-12-00393-v2.pdf"
+    },
+    {
+        "Name":  "Roudsari_Pak_2013_Ladybug_parametric_environmental_plugin.pdf",
+        "Status":  "failed: 请求被中止: 连接被意外关闭。",
+        "Bytes":  0,
+        "Url":  "https://www.ibpsa.org/proceedings/bs2013/p_2499.pdf"
+    },
+    {
+        "Name":  "Roudsari_Pak_2013_Ladybug_parametric_environmental_plugin_alt.pdf",
+        "Status":  "failed: 基础连接已经关闭: 发送时发生错误。",
+        "Bytes":  0,
+        "Url":  "https://publications.ibpsa.org/proceedings/bs/2013/papers/bs2013_2499.pdf"
+    },
+    {
+        "Name":  "Rafsanjani_2023_Human_centered_AI_in_AEC.pdf",
+        "Status":  "failed: 请求被中止: 连接被意外关闭。",
+        "Bytes":  0,
+        "Url":  "https://www.sciencedirect.com/science/article/pii/S2451958823000520/pdfft?isDTMRedir=true\u0026download=true"
+    },
+    {
+        "Name":  "DeLuca_2021_Reverse_solar_envelope_method.pdf",
+        "Status":  "failed: 请求被中止: 连接被意外关闭。",
+        "Bytes":  0,
+        "Url":  "https://www.sciencedirect.com/science/article/pii/S0926580520310980/pdfft?isDTMRedir=true\u0026download=true"
+    },
+    {
+        "Name":  "Thoring_2023_The_Augmented_Designer.pdf",
+        "Status":  "failed: 请求被中止: 连接被意外关闭。",
+        "Bytes":  0,
+        "Url":  "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/1062E0AE820E79E6ACB886D08D5E247C/S2732527X23003359a.pdf/the-augmented-designer-a-research-agenda-for-generative-ai-enabled-design.pdf"
+    }
+]

@@ -1,0 +1,137 @@
+P001: 光权修复：面向旧街区采光修复的 AI 辅助空间决策工作流研究
+P002: A Lightweight AI-assisted Workflow for Early-stage Daylight Diagnosis and Massing Adjustment in Dense Urban Blocks
+P003: 作者姓名：洪禄
+P004: 摘 要
+P005: 旧街区采光不足通常由高密度建筑、狭窄街巷和长期叠加的空间使用关系共同造成。传统建筑设计流程能够通过经验判断提出改造方向，但在早期阶段较难同时完成暗区定位、体块策略比较、指标复核和团队协作数据整理。本文以厦门灌口沿湖休闲片区为对象，构建一套面向高密度旧街区早期采光诊断与体量调整的轻量化 AI 辅助空间决策工作流。研究将 CAD 标注、SketchUp/OBJ 白模、建筑编号、高度表和人工可改性判断转译为可计算数据，并通过"诊断—生成—复核"的流程组织设计决策。
+P006: 在方法上，算法 A 基于冬至日 8:00 至 16:00 的简化太阳路径和 2.5D 遮挡判断，生成采光热力图、平均采光小时和暗区比例；算法 B 在最小干预原则下生成保守型、均衡型和采光优先型三类候选策略，通过光照增益、干预体量、新增阴影惩罚和保护冲突惩罚进行启发式评分；算法 C 对候选策略进行方案后复算。结果显示，在 6 m 基准网格下，现状平均采光小时为 6.422 h，暗区比例为 17.55%；保守型 AI 方案将暗区比例相对改善约 3.48%，主要干预建筑为 C6 和 C33。3 m 网格敏感性测试揭示当前简化模型的尺度依赖性，说明该方法适合早期问题诊断与候选生成，而非替代专业日照软件。
+P007: 本文不以证明 AI 可以替代设计师为目标，而是梳理一条可复核的人机协同路径：AI 快速识别暗区、生成低干预候选方案并输出量化指标；设计团队判断建筑可改性，完成空间语言转译、人工光照复核和最终取舍。研究表明，在早期设计阶段可获得的轻量化工具条件下，AI 可以作为旧街区采光修复的决策辅助工具，为方案讨论、论文图表和后续专业验证提供较稳定的数据接口。
+P008: 关键词：光权修复；旧街区更新；采光诊断；AI 辅助设计；空间决策；人机协同
+P009: 
+P010: 1  引言
+P011: 旧街区更新不只是对建筑外观或空间功能的再设计，也包含公共环境品质的修复。对于高密度街区而言，采光不足是居民容易感知、设计早期又较难精确处理的问题。狭窄街巷、高低错落的建筑体量和不规则的用地边界，会使局部公共空间长期处于阴影中。若仅依靠经验判断，设计团队可以发现一些明显问题，却难以快速比较不同体块调整策略的影响；若完全依赖专业日照软件，前期建模、参数设置和数据转译成本又较高，不一定适合早期方案阶段的快速迭代。
+P012: 灌口沿湖休闲片区具有典型的旧街区空间特征：建筑密度较高，街巷尺度紧凑，建筑高度和体块关系复杂，高度分布涵盖 3 m 至 21 m 多个层级。研究团队已完成建筑编号（C1—C45）、CAD 标注、SketchUp 白模和高度信息整理，为算法介入提供了基础。经研究团队确认，目前唯一明确不可动的建筑为 C42 幼儿园，其余建筑可作为算法候选对象，但最终是否干预仍需结合结构、产权、功能和设计判断复核。
+P013: 本研究在会议讨论后调整了问题表述：原先的设想是比较 AI 方案与人工方案的优劣，但这一比较容易引入过多不可控变量，人工方案往往包含课程目标、审美判断、功能组织和表达策略，不能简单用采光指标判定优劣。因此本文将研究主线调整为：AI 如何嵌入旧街区采光修复流程，帮助设计团队完成暗区诊断、候选策略生成、指标验证和人工复核。
+P014: 本文因此提出"光权修复 AI 辅助空间决策工作流"。本文所称"光权修复"并不等同于严格法律意义上的日照权裁定，而是指在旧街区更新中，通过体量调整、退台、采光缝和公共空间优化，改善局部街巷与公共活动空间的日照可达性。该工作流把建筑学调研资料转译为可计算数据：先用简化采光诊断识别暗区，再用最小干预策略生成候选方案，最后通过方案后复算、网格敏感性测试和人工同视角光照分析进行复核。既有研究表明，太阳可达性既涉及城市公共环境品质，也涉及法规、产权和邻里协调等复杂议题 [1-2]，因此本文输出仅作为方案前期的辅助决策证据。
+P015: 基于上述问题，本文主要回答以下三个研究问题：
+P016: RQ1：如何将旧街区 CAD/SU/OBJ/CSV 调研资料转译为可计算的采光诊断输入？
+P017: RQ2：如何在最小干预原则下生成可比较的采光修复候选策略？
+P018: RQ3：如何通过全场指标、局部敏感性测试和人工复核共同判断 AI 候选方案的适用性？
+P019: 2  文献综述
+P020: 2.1  城市形态与太阳可达性
+P021: 城市形态会直接改变太阳可达性。Compagnon [4] 对城市肌理中的太阳与自然光可达性进行了研究，指出城市尺度下的光环境评价应把建筑群体、街巷形态和开放空间作为整体考虑。Sanaieian 等 [5] 从热性能、太阳可达性和通风等角度梳理了城市街区形态的环境影响，说明采光问题不应只在单体建筑层面处理。Czachura 等 [3] 对城市规划中的太阳性能指标进行了综述，强调太阳可达性指标适合在早期规划设计中提供反馈，但指标复杂度需要与设计阶段相匹配。对于本研究而言，平均采光小时、暗区比例和采样网格诊断属于低复杂度早期指标，适合用于问题定位和候选策略比较，但不能直接等同于专业日照审查结论。
+P022: 太阳可达性不仅是评价指标，也可以反向塑造建筑体量。Curreli 等 [6] 提出太阳能可以作为城市形态生成的重要依据，说明采光和太阳辐射能够参与空间形态推导。De Luca 等 [10] 提出的反向太阳包络方法进一步表明，建筑体量可以在太阳可达性与法规框架约束下被生成或修正，这一思路与本文的光权修复目标相近：通过局部体块退让、采光缝和屋顶平台释放街巷采光条件。
+P023: 此外，城市设计决策本身会影响街区尺度的太阳能与日照潜力 [14]，因此本文将建筑体量、街巷空间和公共活动界面作为同一套采光诊断对象，而不是只讨论单栋建筑。
+P024: 2.2  性能化设计与体块优化
+P025: 性能化设计研究为本文的算法流程提供了方法基础。Konis、Gamas 与 Kensek [7] 提出的早期被动性能优化框架表明，建筑体量、朝向和局部形态可以通过模拟和优化方法获得反馈。EvoMass 相关研究 [8] 进一步将体块类型探索与性能化优化结合起来，说明计算工具的价值不只在于输出单一最优结果，也在于帮助设计者比较不同候选方案的性能差异。与这些研究和以 Ladybug 为代表的参数化环境分析工具 [9] 相比，本文并不追求复杂的几何布尔或高精度环境模拟，而是强调数据结构稳定、团队可理解和结果可复核。
+P026: 在更高精度的环境模拟研究中，Radiance 及其后续动态采光指标为建筑光环境评价提供了重要基础 [15-19]；建筑性能优化综述也表明，仿真优化工具在早期设计中更适合作为反馈和比较机制，而不是直接替代设计判断 [20-21]。与 Opossum 等参数化优化工具 [22] 相比，本文更强调低门槛数据管线和旧街区团队协作可复核性。
+P027: 2.3  人机协同与 Human-in-the-loop
+P028: 在人机协同方面，Thoring 等 [11] 提出生成式 AI 应当增强设计师能力而不是替代设计师。Nabizadeh Rafsanjani 与 Nabizadeh [13] 从 AEC 行业角度讨论以人为中心的 AI，强调 AI 系统需要保留人的判断、反馈和控制权。Jakubik 等 [12] 在 AEC 平面图对象识别中采用 human-in-the-loop 机制，说明 AI 输出与人工复核结合可以提升系统可信度。本文据此将人工复核纳入方法本身：建筑可改性判断、模型同一性确认、空间转译和最终方案取舍均由人工参与完成。
+P029: 从 AEC 数据化工作流角度看，建筑信息组织、对象属性表和建模数据的一致性是算法介入的前提 [23-24]。因此，本文将 CAD 编号、SU/OBJ 分组、CSV 属性表和人工复核共同视为系统输入的一部分。
+P030: 3  研究对象与数据转译
+P031: 3.1  研究对象
+P032: 本文研究对象为厦门灌口沿湖休闲片区，属于灌口镇旧街区更新研究范围，涵盖 C1—C45 共 45 栋建筑。片区建筑高度差异明显，涵盖 3 m、6 m、9 m、12 m、15 m、18 m、21 m 等多种层级，局部街巷采光不足问题突出。项目数据主要包括 CAD/DXF 标注、SketchUp/OBJ 白模、建筑高度表、建筑变量表、策略对比数据和人工光照复核图。
+P033: 3.2  数据转译关键步骤
+P034: 数据转译是本研究的关键步骤。算法不能直接理解一张 CAD 图或一个 SketchUp 模型，而是依靠统一编号、坐标和属性表识别建筑对象。只有当 CAD 标注、SU 组名和 CSV 表格中的建筑编号能够对应时，算法输出才具有可解释性和可复核性。具体而言：CAD/DXF 文件提供建筑编号、道路图层和高度标注；SketchUp/OBJ 白模提供建筑体块和场地空间关系；建筑变量表记录每栋建筑的边界、高度、底面积、体积、是否可动和是否保护等字段。
+P035: 对于重复编号的建筑组，本文根据组员说明将其作为同一建筑对象处理。对于 C42 幼儿园，因其被组员确认为不可动建筑，在算法中设置为不可干预对象。其余建筑在算法中作为候选对象，但这并不意味着它们在现实中一定可以直接改造，最终是否干预仍需结合结构、产权、功能和现场条件人工复核。
+P036: 表1  项目数据接口与论文表达作用
+P037: 
+P038: 
+P039: 图1  CAD、SU/OBJ 与表格数据向算法输入的转译关系
+P040: 4  方法
+P041: 本文方法由三个算法环节（A/B/C）和两个复核环节（网格敏感性测试、人工同视角光照复核）构成。具体做法是：先把模型和表格转成可计算数据，再诊断暗区、生成候选方案，最后用复算结果、网格测试和人工光照图回到场地模型中校验。
+P042: 表2  简化光照诊断与候选生成的关键参数
+P043: 表3  采光诊断与复核实验矩阵
+P044: 
+P045: 
+P046: 图2  AI 辅助采光修复工作流：数据输入、诊断、候选生成、验证与人工复核
+P047: 4.1  算法 A：采光诊断
+P048: 算法 A 读取场地 OBJ 模型和建筑数据表，建立地面采样网格，并模拟厦门冬至日 8:00 至 16:00 的太阳路径。当前版本采用简化 2.5D 遮挡判断，将建筑近似为具有高度的体块，判断每个网格点在不同时间是否被周边建筑遮挡。算法输出包括采光热力图（颜色映射到采光小时）、全场地平均采光小时和低于阈值的暗区比例。
+P049: 4.2  算法 B：候选策略生成
+P050: 算法 B 以算法 A 的暗区识别结果、gap candidates、建筑属性表和保护约束为输入，在最小干预原则下生成候选方案。候选操作包括 subtract、add 和 reorganize；本文推荐方案主要采用 subtract 的建筑高度削减操作。启发式评分综合光照收益、干预体量、新增阴影惩罚和保护冲突惩罚四项指标，在保守型、均衡型和采光优先型三种权重配置下分别排序候选建筑。
+P051: 4.3  算法 C：后模拟复核
+P052: 算法 C 对候选策略进行方案后复算，重新计算方案调整后的采光指标，并比较现状基准、保守型 AI、均衡型 AI 和采光优先型 AI 之间的差异。可达性和安全规则只作为后续设计复核约束，不作为论文主指标，以避免引入过多不可控变量。
+P053: 4.4  网格敏感性测试
+P054: 为检查算法稳定性，本文采用多尺度复核：原始计算采用 6 m 基准网格，随后补做 3 m 全场网格敏感性测试，并在 C6/C33 周边 18 m 影响区补做 2 m 局部网格复核。3 m 网格用于观察暗区比例和候选建筑排序是否随采样尺度变化；2 m 局部网格用于判断保守型策略在关键干预区是否产生可解释的点位改善。
+P055: 4.5  人工同视角光照复核
+P056: 为检查算法结果能否回到建筑模型中被复核，本文将保守型方案转译为完整 SketchUp 场地模型。该模型保留原场地、道路、建筑位置和其他建筑，仅修改 C6 与 C33 的上部体量，并由研究团队补做算法前后同视角光照分析，作为方向性复核依据。
+P057: 表4  C6、C33 算法干预结果的设计语言转译
+P058: 
+P059: 5  结果
+P060: 5.1  现状基准采光诊断
+P061: 在 6 m 基准网格下，现状平均采光小时为 6.422 h，暗区比例为 17.55%。图3 展示了现状基准状态下场地冬至日简化采光诊断热力图，颜色深浅反映各区域采光时长，可直观定位场地内的主要暗区分布。
+P062: 
+P063: 图3  6 m 网格下现状采光小时热力图（baseline）
+P064: 5.2  三类 AI 策略对比
+P065: 保守型 AI 方案后，平均采光小时提高至 6.435 h，暗区比例降低至 16.94%，暗区比例相对改善约为 3.48%，主要涉及 C6 和 C33 两栋建筑，简化干预体量为 28.125。均衡型和采光优先型在方案后复算中没有表现出明显高于保守型的采光收益，但干预体量和涉及建筑数量更大。因此，本文选择保守型并不是因为其获得绝对最高采光收益，而是因为它在相近采光收益下具有最小干预体量，更符合旧街区有机更新和微更新逻辑。图6 和表5 对四种方案的核心指标进行了对比。
+P066: 
+P067: 图4  保守型 AI 策略后采光小时热力图
+P068: 从差值图看，保守型策略并非全面抬升所有网格的采光小时，而是在 C6、C33 周边形成局部改善。该结果说明当前算法更适合作为早期问题定位和方案讨论工具，不应被解释为专业日照软件的替代结论或审查依据。
+P069: 
+P070: 图5  现状与保守型 AI 策略的采光小时差值图
+P071: 
+P072: 图6  现状基准与三类 AI 策略指标对比
+P073: 表5  baseline 与三类 AI 策略的指标对比
+P074: 
+P075: 5.3  保守型方案的建筑设计转译
+P076: 保守型方案的建筑学意义不应被理解为直接拆除。C6 原高度为 6.0 m，算法建议高度为 4.5 m（削减 1.5 m），可转译为屋顶边缘退台或上部轻量构筑物削减，在设计上形成屋顶平台和面向暗区的采光缝，同时保留底层街巷界面。C33 原高度为 9.0 m，算法建议高度为 6.75 m（削减 2.25 m），可转译为二层以上局部退台、转角采光缝和小型口袋开放空间或半室外灰空间。通过这种转译，算法输出从抽象体量变化转化为建筑学可讨论策略（见表4）。
+P077: 
+P078: 图7  C6、C33 周边局部采光变化示意
+P079: 5.4  网格敏感性测试
+P080: 3 m 网格敏感性测试显示，现状基准平均采光小时为 6.509 h，暗区比例为 16.09%。与 6 m 网格相比，3 m 网格下候选建筑排序发生变化，推荐对象转为 C28、C34、C38 和 C9，且方案后复算后暗区比例没有进一步下降。表6 对两种网格设置的结果进行了汇总，图8 直观展示了网格尺度对候选结果的影响。
+P081: 
+P082: 图8  6 m 与 3 m 网格敏感性测试结果（暗区比例对比）
+P083: 
+P084: 图9  6 m 与 3 m 网格敏感性测试三项指标对比
+P085: 表6  6 m 与 3 m 网格敏感性测试结果
+P086: 
+P087: 该结果说明，当前简化算法对网格尺度存在敏感性，不能被表述为精确找到唯一最优建筑。更稳妥的表述是：该算法适用于早期问题定位和候选策略生成，最终方案仍需通过人工判断和专业光照工具复核。
+P088: 5.5  C6/C33 周边 2 m 局部敏感性测试
+P089: C6/C33 周边 2 m 局部网格结果来自局部影响区复核，分析范围为 C6/C33 周边 18 m 影响区，排除建筑 footprint 内点位。该测试共包含 1609 个地面网格点，现状平均采光小时为 5.555 h，干预后平均采光小时为 5.801 h，平均提升 0.246 h。现状暗区比例为 19.58%，干预后为 19.45%，暗区比例相对改善 0.63%，暗区转亮点数量为 2，最大单点提升为 4.0 h（见表7）。
+P090: 表7  C6/C33 周边 2 m 局部敏感性测试结果
+P091: 局部 2 m 网格结果显示，C6/C33 的削减策略并未造成大范围暗区消除，但在部分关键采样点上产生了明显采光小时提升。该结果与最小干预原则一致：方案目标不是大拆大改，而是在低干预体量下为局部街巷节点释放采光缝和退台空间。因此，本文更倾向于将该策略解释为局部暗区修复的候选方案，而非全场采光条件的显著优化。
+P092: 5.6  人工同视角光照复核
+P093: 人工同视角光照复核主要用于补充证据链。算法后模型不是孤立建筑或空 OBJ，而是由原始完整场地 SKP 转换得到；道路、场地边界、其他建筑和整体空间关系均保留，只调整 C6 与 C33。图10 与图11 分别为算法前后同视角光照分析，复核图显示算法后模型能够被放回完整场地中检查，并与 AI 诊断方向进行对照。该结果应被定位为方向性复核证据，而不是专业日照软件已完全证明算法精确。
+P094: 
+P095: 图10  人工光照复核图：算法前同视角结果
+P096: 
+P097: 图11  人工光照复核图：算法后同视角结果
+P098: 6  讨论
+P099: 6.1  研究方向调整的必要性
+P100: 本文较关键的方法调整，是将研究从"AI 与人工方案谁更好"转向"AI 如何辅助空间决策"。这一转向使变量更可控，也更符合建筑设计研究的逻辑。人工方案包含审美、功能、课程表达和教师反馈等多重因素，若直接与 AI 方案比较，容易把研究问题混杂化。将比较对象改为现状基准、保守型 AI、均衡型 AI 和采光优先型 AI 后，研究能够在同一套指标、同一套模型和同一套规则下讨论算法策略差异。
+P101: 6.2  简化模型的价值与局限
+P102: 简化模型的价值在于轻量化、可解释和易复核。成熟工具如 Ladybug/Honeybee 或专业日照软件更适合高精度模拟和合规审查，而本文工作流的重点在于早期阶段的数据转译、候选生成、指标对比和人工复核。当前流程使用 Python、CSV、OBJ 和 SketchUp 模型，不依赖复杂商业插件，降低了早期设计团队的数据整理和协作门槛。与此同时，模型局限也很明确：2.5D 遮挡判断无法达到专业日照软件精度，网格尺度会影响结果，OBJ 白模几何质量也会影响建筑识别。因此，论文必须保留"早期决策支持"的定位，而不宣称系统已完成专业日照审查。
+P103: 6.3  最小干预原则的建筑学解释力
+P104: 最小干预原则让保守型方案更容易被解释为建筑设计策略。虽然保守型方案带来的指标提升幅度不大，但它涉及建筑少、干预体量小，更符合旧街区更新中的现实约束。C6 和 C33 的局部退台、屋顶平台和采光缝策略，能够在保持街巷结构的前提下释放局部采光条件，比大规模削减更容易进入课程设计讨论，也更符合有机更新和微更新的表达方式。
+P105: 6.4  证据链的完整性
+P106: 从证据链看，本文已形成较完整的工作流：CAD/SU/OBJ 与建筑表构成数据底座，算法 A 提供暗区诊断，算法 B 提供候选策略，算法 C 提供方案后复算，网格敏感性测试揭示模型局限，人工同视角光照分析提供外部复核，C6 和 C33 的设计转译把算法输出转化为空间语言。这条链条能够支撑论文的主论点，但后续研究仍需结合更高精度的日照模拟、专业软件复核和多案例验证进一步校准。
+P107: 6.5  方法贡献与适用边界
+P108: 本研究的主要贡献不在于提出高精度日照模拟算法，而在于建立一个可复核、可替换数据、可嵌入设计流程的早期 AI 决策工作流。该流程将 CAD/SU/OBJ/CSV 与人工可改性判断转译为算法输入，并通过全场 6 m 诊断、全场 3 m 敏感性测试、C6/C33 局部 2 m 复核和人工同视角图像校核形成证据链。当前模型采用 2.5D 简化遮挡判断，适合早期趋势判断和候选生成，但不能替代 Ladybug、Radiance 或法定日照审查软件。未来研究应进一步接入专业环境模拟工具，并在多个旧街区案例中验证方法稳定性。
+P109: 7  结论
+P110: 本文以厦门灌口沿湖休闲片区为对象，构建了一个面向旧街区采光修复的 AI 辅助空间决策工作流。研究将 CAD 标注、SketchUp/OBJ 白模、建筑高度表和人工规则转译为可计算数据，并通过诊断、生成和复核三个环节完成暗区识别、候选策略生成和结果验证。
+P111: 在 6 m 基准网格下，保守型 AI 策略使暗区比例从 17.55% 降至 16.94%，平均采光小时从 6.422 h 提升至 6.435 h。虽然全场提升幅度有限，但该策略干预体量较小，主要涉及 C6 与 C33，适合转译为局部退台、屋顶平台和采光缝等建筑策略。C6/C33 周边 2 m 局部网格进一步显示，局部平均采光小时由 5.555 h 提升至 5.801 h，最大单点提升达到 4.0 h。3 m 网格敏感性测试显示，当前简化模型对采样尺度存在敏感性，因此算法输出应被定位为候选决策支持，而不是唯一最优方案或专业日照审查结论。
+P112: 总体而言，本研究的价值在于建立一套人机协同的旧街区采光修复流程：AI 负责快速诊断、候选生成和指标对比，人工负责可改性判断、设计转译和最终复核。该流程为旧街区更新中的采光问题提供了一种轻量化、可复核、可扩展的早期研究路径。需要强调的是，当前结果仍受简化 2.5D 模型、采样网格和单案例范围限制，后续应结合专业日照工具、多案例验证和更细局部网格进一步校准。
+P113: 参考文献
+P114: [1] SAMPSON T C, CHARO R A. Access to Sunlight: Resolving Legal Issues to Encourage the Use of Solar Energy[J/OL]. Columbia Journal of Environmental Law, 1986, 11(2): 417-445. DOI: 10.7916/cjel.v11i2.5670.
+P115: [2]	BRYAN H, STUEBING S. Natural Light as an Urban Amenity: Three Cities Plan for Solar Access[J]. Lighting Design + Application, 1986, 16(6): 44-48. DOI: 10.1177/036063258601600610.
+P116: [3]	CZACHURA A, KANTERS J, GENTILE N, WALL M. Solar Performance Metrics in Urban Planning: A Review and Taxonomy[J]. Buildings, 2022, 12(4): 393. DOI: 10.3390/buildings12040393.
+P117: [4]	COMPAGNON R. Solar and daylight availability in the urban fabric[J]. Energy and Buildings, 2004, 36(4): 321-328. DOI: 10.1016/j.enbuild.2004.01.009.
+P118: [5]	SANAIEIAN H, TENPIERIK M, VAN DEN LINDEN K, MEHDIZADEH SERAJ F, SHEMRANI S M M. Review of the impact of urban block form on thermal performance, solar access and ventilation[J]. Renewable and Sustainable Energy Reviews, 2014, 38: 551-560. DOI: 10.1016/j.rser.2014.06.007.
+P119: [6]	CURRELI A, SERRA-COCH G, ISALGUE A, CRESPO I, COCH H. Solar Energy as a Form Giver for Future Cities[J]. Energies, 2016, 9(7): 544. DOI: 10.3390/en9070544.
+P120: [7]	KONIS K, GAMAS A, KENSEK K. Passive performance and building form: an optimization framework for early-stage design support[J]. Solar Energy, 2016, 125: 161-179. DOI: 10.1016/j.solener.2015.12.020.
+P121: [8]	WANG L, JANSSEN P, JI G. Optimization-based design exploration of building massing typologies—EvoMass and a typology-oriented computational design optimization method for early-stage performance-based building massing design[J]. Frontiers of Architectural Research, 2024, 13(6): 1400-1422. DOI: 10.1016/j.foar.2024.06.001.
+P122: [9] SADEGHIPOUR ROUDSARI M, PAK M, VIOLA A. Ladybug: A parametric environmental plugin for Grasshopper to help designers create an environmentally-conscious design[C]//Proceedings of BS2013: 13th Conference of International Building Performance Simulation Association. 2013: 3128-3135. DOI: 10.26868/25222708.2013.2499.
+P123: [10]	DE LUCA F, DOGAN T, SEPULVEDA A. Reverse solar envelope method. A new building form-finding method that can take regulatory frameworks into account[J]. Automation in Construction, 2021, 123: 103518. DOI: 10.1016/j.autcon.2020.103518.
+P124: [11]	THORING K, HUETTEMANN S, MUELLER R M. The augmented designer: a research agenda for generative AI-enabled design[C]//Proceedings of the Design Society. 2023, 3: 3345-3354. DOI: 10.1017/pds.2023.335.
+P125: [12]	JAKUBIK J, HEMMER P, VÖSSING M, BLUMENSTIEL B, BARTOS A, MOHR K. Designing a human-in-the-loop system for object detection in floor plans[J]. Proceedings of the AAAI Conference on Artificial Intelligence, 2022, 36(11): 12524-12530. DOI: 10.1609/aaai.v36i11.21522.
+P126: [13]	RAFSANJANI H N, NABIZADEH A H. Towards human-centered artificial intelligence (AI) in architecture, engineering, and construction (AEC) industry[J]. Computers in Human Behavior Reports, 2023, 11: 100319. DOI: 10.1016/j.chbr.2023.100319.
+P127: [14]	KANTERS J, WALL M. The impact of urban design decisions on net zero energy solar potential in cities[J]. Renewable Energy, 2016, 93: 469-482. DOI: 10.1016/j.renene.2016.02.033.
+P128: [15]	WARD G J. The RADIANCE lighting simulation and rendering system[C]//Proceedings of SIGGRAPH '94. New York: ACM, 1994: 459-466. DOI: 10.1145/192161.192286.
+P129: [16]	REINHART C F, WALKENHORST O. Validation of dynamic RADIANCE-based daylight simulations for a test office with external blinds[J]. Energy and Buildings, 2001, 33(7): 683-697. DOI: 10.1016/S0378-7788(01)00058-5.
+P130: [17]	NABIL A, MARDALJEVIC J. Useful daylight illuminances: A replacement for daylight factors[J]. Energy and Buildings, 2006, 38(7): 905-913. DOI: 10.1016/j.enbuild.2006.03.013.
+P131: [18]	REINHART C F, MARDALJEVIC J, ROGERS Z. Dynamic daylight performance metrics for sustainable building design[J]. Leukos, 2006, 3(1): 7-31. DOI: 10.1582/LEUKOS.2006.03.01.001.
+P132: [19]	MARDALJEVIC J. Simulation of annual daylighting profiles for internal illuminance[J]. Lighting Research & Technology, 2000, 32(3): 111-118. DOI: 10.1177/096032710003200302.
+P133: [20]	ATTIA S, HAMDY M, O'BRIEN W, CARLUCCI S. Assessing gaps and needs for integrating building performance optimization tools in net zero energy buildings design[J]. Energy and Buildings, 2013, 60: 110-124. DOI: 10.1016/j.enbuild.2013.01.016.
+P134: [21]	NGUYEN A T, REITER S, RIGO P. A review on simulation-based optimization methods applied to building performance analysis[J]. Applied Energy, 2014, 113: 1043-1058. DOI: 10.1016/j.apenergy.2013.08.061.
+P135: [22] WORTMANN T. Opossum: Introducing and evaluating a model-based optimization tool for Grasshopper[C]//JANSSEN P, LOH P, RAONIC A, SCHNABEL M A, eds. Protocols, Flows and Glitches: Proceedings of the 22nd International Conference of the Association for Computer-Aided Architectural Design Research in Asia. Hong Kong: CAADRIA, 2017: 283-292. DOI: 10.52842/conf.caadria.2017.283.
+P136: [23]	BILAL M, OYEDELE L O, QADIR J, MUNIR K, AJAYI S O, AKINADE O O, OWOLABI H A, ALAKA H A, PASHA M. Big Data in the construction industry: A review of present status, opportunities, and future trends[J]. Advanced Engineering Informatics, 2016, 30(3): 500-521. DOI: 10.1016/j.aei.2016.07.001.
+P137: [24] SACKS R, EASTMAN C, LEE G, TEICHOLZ P. BIM Handbook: A Guide to Building Information Modeling for Owners, Designers, Engineers, Contractors, and Facility Managers[M]. 3rd ed. Hoboken: Wiley, 2018. DOI: 10.1002/9781119287568.

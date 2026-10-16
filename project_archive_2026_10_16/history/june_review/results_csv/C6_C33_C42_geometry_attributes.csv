@@ -1,0 +1,4 @@
+﻿building_id,name,x_min,x_max,y_min,y_max,height_m,floors,movable,protected,facade_type,notes,width_x_m,depth_y_m,footprint_area_m2_rect
+C6,lakeside_building_C6,128.721,172.791,195.356,274.852,6.0,2,True,False,unknown,duplicate OBJ groups merged as one building by user clarification; duplicate DXF labels treated as one large building group by user clarification,44.06999999999999,79.49599999999998,3503.3887199999986
+C33,lakeside_building_C33,157.957,173.332,165.852,197.319,9.0,3,True,False,unknown,"matched by common C id across Excel, DXF, and OBJ",15.375,31.466999999999985,483.80512499999975
+C42,lakeside_building_C42,134.209,166.317,90.516,116.631,9.0,3,False,True,kindergarten,kindergarten; fixed/non-movable by user clarification,32.108000000000004,26.114999999999995,838.50042

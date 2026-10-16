@@ -1,0 +1,29 @@
+# Optional DWG/DXF layer mapping for future CAD ingestion.
+# The current Python pipeline does not parse DWG directly. Convert DWG to DXF
+# first, then map CAD layers into the CSV contracts below.
+
+source_dwg_note: "CAD地形文件_t3(3).dwg is AutoCAD R2004 / AC1018."
+recommended_exchange_format: "DXF R2004 or DXF R2010"
+
+expected_layers:
+  site_boundary:
+    csv_target: "site_zones.csv"
+    notes: "Overall planning boundary or key sub-area boundary."
+  buildings:
+    csv_target: "buildings.csv"
+    notes: "Existing building footprints and height attributes."
+  roads:
+    csv_target: "streets.csv"
+    notes: "Road centerlines and major slow-path axes."
+  water:
+    csv_target: "site_zones.csv"
+    notes: "Fengjing Lake / waterfront edge zones."
+  parking:
+    csv_target: "site_zones.csv"
+    notes: "Parking lots or parking conflict zones."
+  open_space:
+    csv_target: "site_zones.csv"
+    notes: "Ball court, vacant lots, pocket plazas, market forecourts."
+  protected_context:
+    csv_target: "protected_zones.csv"
+    notes: "Historic facades, trees, structures, community-use areas."

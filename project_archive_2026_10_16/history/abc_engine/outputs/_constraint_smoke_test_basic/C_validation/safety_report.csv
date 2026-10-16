@@ -1,0 +1,4 @@
+candidate_id,safety_score,accessible_route_ratio,raw_route_pass_ratio,data_confidence,blocked_path_count,slope_violation_count,width_violation_count,step_violation_count,guardrail_violation_count,passed,notes
+candidate_01,89.92,0.96,1.0,0.96,0,0,0,0,0,True,sparse_route_nodes
+candidate_02,89.92,0.96,1.0,0.96,0,0,0,0,0,True,sparse_route_nodes
+candidate_03,89.92,0.96,1.0,0.96,0,0,0,0,0,True,sparse_route_nodes

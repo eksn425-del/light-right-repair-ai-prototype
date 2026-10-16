@@ -1,0 +1,17 @@
+{
+  "screening_repeats": [
+    52.32868199999939,
+    52.156205399998726,
+    54.09703289999743
+  ],
+  "screening_mean_seconds": 52.86064009999851,
+  "screening_median_seconds": 52.32868199999939,
+  "screening_std_seconds": 1.0742147882541064,
+  "hb_measured_call_count": 53,
+  "hb_median_seconds": 51.106736,
+  "estimated_full_hb_630_seconds": 32197.24368,
+  "estimated_full_hb_630_label": "EXTRAPOLATED, not directly measured",
+  "operational_workflow_hb_calls": 33,
+  "research_only_validation_hb_calls": 20,
+  "high_fidelity_fraction_operational": 0.05238095238095238
+}

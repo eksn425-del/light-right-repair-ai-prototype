@@ -1,0 +1,187 @@
+谢研组沿湖休闲片区：光权修复 ABC 算法真实重算版最终交付说明
+日期：2026-05-25
+
+一、交付版本说明
+
+本次交付不是早期 toy street 框架版，也不是只用启发式评分的预测试版。
+本次版本使用谢研组提交的沿湖休闲片区 OBJ / DXF 转换结果和建筑高度信息，并在 6m 网格下对候选方案进行“干预后重新光照模拟”。
+
+因此，本版本已经修正了之前结果中 100% / 0% 过度绝对化的问题。
+
+二、当前使用的数据
+
+数据目录：
+E:/AI项目/light_equity_project/data/real_guankou/lakeside_leisure_ready
+
+核心输入包括：
+1. site_model.obj：沿湖休闲片区白模。
+2. buildings.csv：C1-C45 建筑表，已合并重复编号建筑组。
+3. streets.csv：包含 road 图层和推断主路轴线。
+4. nodes.csv：当前为少量关键节点，部分仍为 placeholder。
+5. protected_zones.csv：C42 幼儿园保护区。
+
+关键人工确认：
+1. C42 为幼儿园，不可动，不参与改造。
+2. 本片区无其他保护建筑。
+3. C38 按 12m 处理。
+4. C39 组均按 9m 处理，并视为同一建筑组。
+5. C45 按 3m 处理。
+6. 重复编号视为一个大的建筑组。
+
+三、算法 A：诊断层结果
+
+基线模拟条件：
+1. 厦门冬至日。
+2. 8:00-16:00。
+3. 时间步长 1 小时。
+4. 6m 地面网格。
+5. 2.5D 简化遮挡模型。
+
+基线结果：
+1. 总网格数：490。
+2. 暗区网格数：86。
+3. 平均采光小时数：6.422h。
+4. 暗区比例：17.55%。
+
+对应文件：
+outputs/lakeside_leisure_final_6m/A_diagnosis/sunlight_hours.csv
+outputs/lakeside_leisure_final_6m/A_diagnosis/dark_zones.csv
+outputs/lakeside_leisure_final_6m/A_diagnosis/gap_candidates.csv
+outputs/lakeside_leisure_final_6m/A_diagnosis/heatmap.png
+outputs/lakeside_leisure_final_6m/A_diagnosis/A_summary.json
+
+四、算法 B：决策层真实重算结果
+
+早期 B 的 candidate_01 虽然启发式评分高，但带入光照模型重新模拟后，实际改善不明显。
+因此本次重新做了暗区贡献筛选，并对候选方案做完整 6m 网格重算。
+
+三组真实候选：
+
+candidate_real_01：
+1. 综合推荐方案。
+2. 目标建筑：C33、C26、C24。
+3. 方式：上部退台 / 局部减法。
+4. 平均采光：6.506h。
+5. 暗区比例：15.51%。
+6. 干预体量：6556.565 m3。
+7. 暗区比例下降：2.04 个百分点。
+
+candidate_real_02：
+1. 最小体量倾向方案。
+2. 目标建筑：C33、C26、C30。
+3. 平均采光：6.459h。
+4. 暗区比例：16.12%。
+5. 干预体量：2519.975 m3。
+6. 暗区比例下降：1.43 个百分点。
+
+candidate_real_03：
+1. 最大改善倾向方案。
+2. 目标建筑：C24、C33、C26。
+3. 平均采光：6.545h。
+4. 暗区比例：15.31%。
+5. 干预体量：11620.584 m3。
+6. 暗区比例下降：2.24 个百分点。
+
+最终 B 排序采用“真实重算改善 + 干预体量惩罚”的综合口径：
+1. candidate_real_01 综合最优。
+2. candidate_real_02 体量最小但改善偏弱。
+3. candidate_real_03 改善最大但体量过大。
+
+对应文件：
+outputs/lakeside_leisure_realistic_6m/B_candidates_real/candidate_scores.csv
+outputs/lakeside_leisure_realistic_6m/B_candidates_real/interventions.csv
+outputs/lakeside_leisure_realistic_6m/B_candidates_real/candidate_real_01.obj
+outputs/lakeside_leisure_realistic_6m/B_candidates_real/candidate_real_02.obj
+outputs/lakeside_leisure_realistic_6m/B_candidates_real/candidate_real_03.obj
+outputs/lakeside_leisure_realistic_6m/B_candidates_real/B_summary.json
+
+五、算法 C：验证层结果
+
+本次 C 不再给 100 分。
+因为道路中心线和节点仍有 inferred / placeholder 信息，所以安全可达率加入了数据置信度折减。
+
+最终推荐：
+candidate_real_01
+
+安全验证结果：
+1. raw_route_pass_ratio：1.0。
+2. data_confidence：0.78。
+3. accessible_route_ratio：0.78。
+4. safety_score：80.56。
+5. blocked_path_count：0。
+6. 主要风险提示：
+   - road_alignment_inferred
+   - road_centerline_needs_survey
+   - node_locations_partly_placeholder
+   - sparse_route_nodes
+
+解释：
+candidate_real_01 在当前简化规则内没有发现硬性冲突，也没有触碰 C42 幼儿园保护区。
+但由于道路和节点数据仍不够完整，不能写成 100% 安全或完全无障碍。
+
+对应文件：
+outputs/lakeside_leisure_realistic_6m/C_validation_real/safety_report.csv
+outputs/lakeside_leisure_realistic_6m/C_validation_real/safe_routes.csv
+outputs/lakeside_leisure_realistic_6m/C_validation_real/final_recommendation.json
+outputs/lakeside_leisure_realistic_6m/C_validation_real/C_summary.json
+
+六、最终对比结果
+
+最终推荐方案：
+candidate_real_01
+
+改造前：
+1. 平均采光小时数：6.422h。
+2. 暗区比例：17.55%。
+3. 暗区网格数：86 / 490。
+
+算法方案后：
+1. 平均采光小时数：6.506h。
+2. 暗区比例：15.51%。
+3. 暗区网格数：76 / 490。
+4. 暗区减少：10 个网格。
+5. 光权改善指数：0.116。
+6. 干预体量：6556.565 m3。
+7. 安全评分：80.56。
+8. 安全可达覆盖率：0.78。
+
+对应文件：
+outputs/lakeside_leisure_realistic_6m/final_report_real/before_after_metrics.csv
+outputs/lakeside_leisure_realistic_6m/final_report_real/comparison_chart.png
+outputs/lakeside_leisure_realistic_6m/final_report_real/algorithm_heatmap.png
+outputs/lakeside_leisure_realistic_6m/final_report_real/algorithm_sunlight_hours.csv
+outputs/lakeside_leisure_realistic_6m/final_report_real/algorithm_post_simulation_summary.json
+outputs/lakeside_leisure_realistic_6m/final_report_real/final_summary.json
+
+七、论文建议表述
+
+建议写：
+“在 6m 网格、冬至日 8:00-16:00 的简化 2.5D 光照模拟条件下，系统识别出沿湖休闲片区基线暗区比例为 17.55%。通过对候选干预方案进行重新模拟，最终推荐 candidate_real_01，其平均采光小时数由 6.422h 提升至 6.506h，暗区比例由 17.55% 降至 15.51%，暗区网格减少 10 个。该方案未触碰 C42 幼儿园保护区，并在当前道路与节点数据条件下获得 80.56 的安全筛查评分。”
+
+不要写：
+1. 算法完全消除了暗区。
+2. 方案 100% 安全。
+3. 算法方案绝对最优。
+4. 当前结果等同于专业日照软件结论。
+
+八、后续给组员的补充要求
+
+为了让结果更真实，组员后续应继续补：
+1. 真实道路中心线，而不是只给 road 边界线。
+2. 每条主要通行路径的宽度。
+3. 是否有台阶、坡道、高差。
+4. 临水边界是否有护栏。
+5. 主要出入口和活动节点。
+6. 人工设计方案的 OBJ 或 CSV，以便和算法方案做同口径对比。
+
+九、当前交付结论
+
+本次交付已经可以作为论文中的“算法辅助设计实验结果”使用。
+但应明确其性质是：
+真实片区数据 + 简化日照模型 + 候选方案重模拟 + 安全规则初筛。
+
+最稳妥的最终结论：
+candidate_real_01 是当前数据和模型条件下的综合推荐方案；
+candidate_real_03 是光照改善最大但体量较大的方案；
+candidate_real_02 是最小干预但改善较弱的方案。
+

@@ -1,0 +1,141 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          7
+        ]
+      ],
+      "date-time": "2026-06-07T01:12:56Z",
+      "timestamp": 1780794776334,
+      "version": "3.54.1"
+    },
+    "reference-count": 0,
+    "publisher": "SAGE Publications",
+    "issue": "3",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Lighting Research and Technology"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2000,
+          1,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1177/096032710003200302",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2008,
+          12,
+          29
+        ]
+      ],
+      "date-time": "2008-12-29T17:00:49Z",
+      "timestamp": 1230570049000
+    },
+    "page": "111-118",
+    "source": "Crossref",
+    "is-referenced-by-count": 147,
+    "title": [
+      "Simulation of annual daylighting profiles for internal illuminance"
+    ],
+    "prefix": "10.1177",
+    "volume": "32",
+    "author": [
+      {
+        "given": "J.",
+        "family": "Mardaljevic",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "179",
+    "container-title": [
+      "Lighting Research and Technology"
+    ],
+    "original-title": [],
+    "language": "en",
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          1
+        ]
+      ],
+      "date-time": "2026-05-01T22:49:42Z",
+      "timestamp": 1777675782000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://lrt.sagepub.com/cgi/doi/10.1177/096032710003200302"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2000,
+          1,
+          1
+        ]
+      ]
+    },
+    "references-count": 0,
+    "journal-issue": {
+      "issue": "3",
+      "published-print": {
+        "date-parts": [
+          [
+            2000,
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1177/096032710003200302",
+    "relation": {},
+    "ISSN": [
+      "1477-1535"
+    ],
+    "issn-type": [
+      {
+        "value": "1477-1535",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2000,
+          1,
+          1
+        ]
+      ]
+    }
+  }
+}

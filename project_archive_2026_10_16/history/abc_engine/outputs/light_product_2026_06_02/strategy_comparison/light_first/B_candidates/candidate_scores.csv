@@ -1,0 +1,4 @@
+candidate_id,total_score,estimated_light_gain,intervention_volume,new_shadow_penalty,protected_zone_penalty,number_of_interventions,notes
+candidate_01,19.797,16.201,46.095,0.0,0.0,4,simplified candidate generated from Algorithm A diagnosis
+candidate_03,19.216,16.71,57.855,1.478,0.0,4,simplified candidate generated from Algorithm A diagnosis
+candidate_02,18.917,16.434,56.205,1.478,0.0,4,simplified candidate generated from Algorithm A diagnosis

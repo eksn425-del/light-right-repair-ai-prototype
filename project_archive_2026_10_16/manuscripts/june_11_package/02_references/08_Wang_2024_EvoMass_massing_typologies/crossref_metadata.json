@@ -1,0 +1,984 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          25
+        ]
+      ],
+      "date-time": "2026-04-25T10:16:25Z",
+      "timestamp": 1777112185030,
+      "version": "3.51.4"
+    },
+    "reference-count": 73,
+    "publisher": "Elsevier BV",
+    "issue": "6",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              1
+            ]
+          ],
+          "date-time": "2024-12-01T00:00:00Z",
+          "timestamp": 1733011200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              1
+            ]
+          ],
+          "date-time": "2024-12-01T00:00:00Z",
+          "timestamp": 1733011200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              6,
+              6
+            ]
+          ],
+          "date-time": "2024-06-06T00:00:00Z",
+          "timestamp": 1717632000000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Frontiers of Architectural Research"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          12
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.foar.2024.06.001",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          6,
+          25
+        ]
+      ],
+      "date-time": "2024-06-25T17:24:48Z",
+      "timestamp": 1719336288000
+    },
+    "page": "1400-1422",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 20,
+    "title": [
+      "Optimization-based design exploration of building massing typologies—EvoMass and a typology-oriented computational design optimization method for early-stage performance-based building massing design"
+    ],
+    "prefix": "10.1016",
+    "volume": "13",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-4054-649X",
+        "authenticated-orcid": false,
+        "given": "Likai",
+        "family": "Wang",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Patrick",
+        "family": "Janssen",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Guohua",
+        "family": "Ji",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib1",
+        "series-title": "Proceedings of the IEEE International Conference on Computer Vision, 2015 Inter",
+        "first-page": "2425",
+        "article-title": "VQA: visual question answering",
+        "author": "Agrawal",
+        "year": "2015"
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib2",
+        "series-title": "2014 Proceedings of the Symposium on Simulation for Architecture & Urban Design",
+        "first-page": "172",
+        "article-title": "Parameters tell the design story: ideation and abstraction in design optimization",
+        "author": "Bradner",
+        "year": "2014"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.foar.2024.06.001_bib3",
+        "doi-asserted-by": "crossref",
+        "first-page": "40",
+        "DOI": "10.1017/S0890060418000033",
+        "article-title": "Quantifying diversity in parametric design: a comparison of possible metrics",
+        "volume": "33",
+        "author": "Brown",
+        "year": "2019",
+        "journal-title": "AI EDAM (Artif. Intell. Eng. Des. Anal. Manuf.)"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.foar.2024.06.001_bib4",
+        "doi-asserted-by": "crossref",
+        "first-page": "59",
+        "DOI": "10.1016/j.aei.2007.08.012",
+        "article-title": "Generation of energy-efficient architecture solutions applying GENE_ARCH: an evolution-based generative design system",
+        "volume": "22",
+        "author": "Caldas",
+        "year": "2008",
+        "journal-title": "Adv. Eng. Inf."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.foar.2024.06.001_bib5",
+        "doi-asserted-by": "crossref",
+        "first-page": "167",
+        "DOI": "10.1177/1478077116638945",
+        "article-title": "Generating freedom: questions of flexibility in digital design and architectural computation",
+        "volume": "14",
+        "author": "Chaszar",
+        "year": "2016",
+        "journal-title": "Int. J. Architect. Comput."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.foar.2024.06.001_bib6",
+        "doi-asserted-by": "crossref",
+        "first-page": "269",
+        "DOI": "10.14733/cadaps.2019.269-288",
+        "article-title": "Enabling algorithm-assisted architectural design exploration for computational design novices",
+        "volume": "16",
+        "author": "Chen",
+        "year": "2019",
+        "journal-title": "Computer-Aided Design & Applications"
+      },
+      {
+        "issue": "July",
+        "key": "10.1016/j.foar.2024.06.001_bib7",
+        "doi-asserted-by": "crossref",
+        "first-page": "449",
+        "DOI": "10.1016/j.autcon.2018.07.002",
+        "article-title": "Multi-objective optimisation of building form, envelope and cooling system for improved building energy performance",
+        "volume": "94",
+        "author": "Chen",
+        "year": "2018",
+        "journal-title": "Autom. ConStruct."
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib8",
+        "series-title": "Proceedings of the 2021 DigitalFUTURES",
+        "first-page": "189",
+        "article-title": "From separation to incorporation - a full-circle application of computational approaches to performance-based architectural design",
+        "author": "Chen",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib9",
+        "series-title": "Architecture: Form, Space, and Order",
+        "author": "Ching",
+        "year": "2007"
+      },
+      {
+        "issue": "August",
+        "key": "10.1016/j.foar.2024.06.001_bib10",
+        "article-title": "Multi-objective approach to the optimization of shape and envelope in building energy design",
+        "volume": "280",
+        "author": "Ciardiello",
+        "year": "2020",
+        "journal-title": "Appl. Energy"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.foar.2024.06.001_bib11",
+        "first-page": "32",
+        "article-title": "The deep structure of the picturesque",
+        "volume": "84",
+        "author": "Coates",
+        "year": "2014",
+        "journal-title": "Architect. Des"
+      },
+      {
+        "issue": "June",
+        "key": "10.1016/j.foar.2024.06.001_bib12",
+        "article-title": "Versioning for parametric design exploration process",
+        "volume": "129",
+        "author": "Cristie",
+        "year": "2021",
+        "journal-title": "Autom. ConStruct."
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib13",
+        "series-title": "Engineering Design Methods: Strategies for Product Design",
+        "author": "Cross",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib14",
+        "doi-asserted-by": "crossref",
+        "first-page": "131",
+        "DOI": "10.1016/j.autcon.2016.05.020",
+        "article-title": "An evolutionary approach for 3D architectural space layout design exploration",
+        "volume": "69",
+        "author": "Dino",
+        "year": "2016",
+        "journal-title": "Autom. ConStruct."
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.foar.2024.06.001_bib15",
+        "doi-asserted-by": "crossref",
+        "first-page": "425",
+        "DOI": "10.1016/S0142-694X(01)00009-6",
+        "article-title": "Creativity in the design process: Co-evolution of problem-solution",
+        "volume": "22",
+        "author": "Dorst",
+        "year": "2001",
+        "journal-title": "Des. Stud."
+      },
+      {
+        "issue": "September 2018",
+        "key": "10.1016/j.foar.2024.06.001_bib16",
+        "doi-asserted-by": "crossref",
+        "first-page": "499",
+        "DOI": "10.52842/conf.ecaade.2018.2.499",
+        "article-title": "Combining geometries and descriptions A shape grammar plug-in for grasshopper",
+        "volume": "2",
+        "author": "Dy",
+        "year": "2018",
+        "journal-title": "ECAADe 2018"
+      },
+      {
+        "issue": "October 2018",
+        "key": "10.1016/j.foar.2024.06.001_bib17",
+        "doi-asserted-by": "crossref",
+        "first-page": "356",
+        "DOI": "10.1016/j.buildenv.2018.10.023",
+        "article-title": "Performative computational architecture using swarm and evolutionary optimisation: a review",
+        "volume": "147",
+        "author": "Ekici",
+        "year": "2019",
+        "journal-title": "Build. Environ."
+      },
+      {
+        "issue": "11",
+        "key": "10.1016/j.foar.2024.06.001_bib18",
+        "doi-asserted-by": "crossref",
+        "first-page": "1133",
+        "DOI": "10.1177/00375497221109577",
+        "article-title": "Optimization of complex-geometry high-rise buildings based on wind load analysis",
+        "volume": "99",
+        "author": "Estrado",
+        "year": "2023",
+        "journal-title": "SIMULATION"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.foar.2024.06.001_bib19",
+        "doi-asserted-by": "crossref",
+        "first-page": "211",
+        "DOI": "10.1111/j.1467-8667.1996.tb00324.x",
+        "article-title": "An exploration-based evolutionary model of a generative design process",
+        "volume": "11",
+        "author": "Gero",
+        "year": "1996",
+        "journal-title": "Comput. Aided Civ. Infrastruct. Eng."
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib71",
+        "first-page": "59",
+        "article-title": "AI-enhanced performative building design optimization and exploration: a design framework combining computational design optimization and generative AI",
+        "volume": "1",
+        "author": "Zhong",
+        "year": "2024"
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib20",
+        "unstructured": "Greer, E., & Lucas, R. The Most Timeless Design Differentiator Is Technology."
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib21",
+        "series-title": "Advances in Architectural Geometry 2016",
+        "first-page": "204",
+        "article-title": "Advances in architectural geometry 2015 - dimensionality reduction for parametric design exploration",
+        "author": "Harding",
+        "year": "2016"
+      },
+      {
+        "issue": "June",
+        "key": "10.1016/j.foar.2024.06.001_bib22",
+        "doi-asserted-by": "crossref",
+        "first-page": "144",
+        "DOI": "10.1177/1478077118778579",
+        "article-title": "Biomorpher : interactive evolution for parametric design",
+        "volume": "16",
+        "author": "Harding",
+        "year": "2018",
+        "journal-title": "Int. J. Architect. Comput."
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib23",
+        "doi-asserted-by": "crossref",
+        "first-page": "73",
+        "DOI": "10.1016/j.destud.2016.09.005",
+        "article-title": "Meta-parametric design",
+        "volume": "52",
+        "author": "Harding",
+        "year": "2017",
+        "journal-title": "Des. Stud."
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib24",
+        "series-title": "Advances in Architectural Geometry 2012",
+        "first-page": "67",
+        "article-title": "Thinking topologically at early stage parametric design",
+        "author": "Harding",
+        "year": "2013"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.foar.2024.06.001_bib25",
+        "doi-asserted-by": "crossref",
+        "first-page": "344",
+        "DOI": "10.1080/16864360.2014.981465",
+        "article-title": "Building massing optimization in the conceptual design phase",
+        "volume": "12",
+        "author": "Huang",
+        "year": "2015",
+        "journal-title": "Computer-Aided Design and Applications"
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib26",
+        "series-title": "Artificial Intelligence in Urban Planning and Design",
+        "first-page": "293",
+        "article-title": "Möbius evolver: competitive exploration of urban massing strategies",
+        "author": "Janssen",
+        "year": "2022"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.foar.2024.06.001_bib27",
+        "doi-asserted-by": "crossref",
+        "first-page": "4362",
+        "DOI": "10.3390/su15054362",
+        "article-title": "Intelligent parametric optimization of building atrium design: a case study for a sustainable and comfortable environment",
+        "volume": "15",
+        "author": "Ji",
+        "year": "2023",
+        "journal-title": "Sustainability"
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib28",
+        "doi-asserted-by": "crossref",
+        "first-page": "473",
+        "DOI": "10.1016/j.enbuild.2014.09.080",
+        "article-title": "Optimization of a free-form building shape to minimize external thermal load using genetic algorithm",
+        "volume": "85",
+        "author": "Jin",
+        "year": "2014",
+        "journal-title": "Energy Build."
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib29",
+        "series-title": "Disciplines and Disruption - Proceedings Catalog of the 37th Annual Conference of the Association for Computer Aided Design in Architecture, ACADIA 2017",
+        "first-page": "308",
+        "article-title": "Exploring the evolution of meta parametric models",
+        "author": "Joyce",
+        "year": "2017"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.foar.2024.06.001_bib30",
+        "doi-asserted-by": "crossref",
+        "first-page": "15",
+        "DOI": "10.1016/S0378-7788(02)00076-2",
+        "article-title": "The solar envelope: its meaning for energy and buildings",
+        "volume": "35",
+        "author": "Knowles",
+        "year": "2003",
+        "journal-title": "Energy Build."
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.foar.2024.06.001_bib31",
+        "first-page": "1",
+        "article-title": "Integrating urban analysis, generative design, and evolutionary optimization for solving urban design problems",
+        "volume": "47",
+        "author": "Koenig",
+        "year": "2020",
+        "journal-title": "Environ. Plan. B Urban Anal. City Sci."
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib32",
+        "doi-asserted-by": "crossref",
+        "first-page": "161",
+        "DOI": "10.1016/j.solener.2015.12.020",
+        "article-title": "Passive performance and building form: an optimization framework for early-stage design support",
+        "volume": "125",
+        "author": "Konis",
+        "year": "2016",
+        "journal-title": "Sol. Energy"
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib33",
+        "series-title": "How Designers Think: the Design Process Demystified",
+        "author": "Lawson",
+        "year": "1990"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.foar.2024.06.001_bib34",
+        "doi-asserted-by": "crossref",
+        "first-page": "1427",
+        "DOI": "10.3390/su12041427",
+        "article-title": "A review of performance-oriented architectural design and optimization in the context of sustainability: dividends and challenges",
+        "volume": "12",
+        "author": "Li",
+        "year": "2020",
+        "journal-title": "Sustainability"
+      },
+      {
+        "issue": "January",
+        "key": "10.1016/j.foar.2024.06.001_bib35",
+        "article-title": "Moosas – a systematic solution for multiple objective building performance optimization in the early design stage",
+        "volume": "200",
+        "author": "Lin",
+        "year": "2021",
+        "journal-title": "Build. Environ."
+      },
+      {
+        "issue": "September 2020",
+        "key": "10.1016/j.foar.2024.06.001_bib36",
+        "article-title": "Reverse solar envelope method . A new building form-finding method that can take regulatory frameworks into account",
+        "volume": "123",
+        "author": "Luca",
+        "year": "2021",
+        "journal-title": "Autom. ConStruct."
+      },
+      {
+        "issue": "3–4",
+        "key": "10.1016/j.foar.2024.06.001_bib37",
+        "doi-asserted-by": "crossref",
+        "first-page": "195",
+        "DOI": "10.1007/PL00013714",
+        "article-title": "A model of Co-evolutionary design",
+        "volume": "16",
+        "author": "Maher",
+        "year": "2000",
+        "journal-title": "Eng. Comput."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.foar.2024.06.001_bib38",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1088/1742-6596/1343/1/012136",
+        "article-title": "An interactive and generative eco-design tool for architects in the sketch phase",
+        "volume": "1343",
+        "author": "Marsault",
+        "year": "2019",
+        "journal-title": "J. Phys. Conf."
+      },
+      {
+        "issue": "212",
+        "key": "10.1016/j.foar.2024.06.001_bib39",
+        "doi-asserted-by": "crossref",
+        "first-page": "614",
+        "DOI": "10.1145/1179352.1141931",
+        "article-title": "Procedural modeling of buildings",
+        "volume": "1",
+        "author": "Müller",
+        "year": "2006",
+        "journal-title": "ACM SIGGRAPH 2006 Papers on - SIGGRAPH ’06"
+      },
+      {
+        "issue": "March",
+        "key": "10.1016/j.foar.2024.06.001_bib40",
+        "doi-asserted-by": "crossref",
+        "first-page": "58",
+        "DOI": "10.1016/j.buildenv.2018.03.033",
+        "article-title": "Development and test application of the UrbanSOLve decision-support prototype for early-stage neighborhood design",
+        "volume": "137",
+        "author": "Nault",
+        "year": "2018",
+        "journal-title": "Build. Environ."
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib41",
+        "series-title": "DMSB 2019: Impact: Design with All Senses",
+        "first-page": "625",
+        "article-title": "SandBOX - an intuitive conceptual design system BT - impact: design with all senses",
+        "author": "Psarras",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib42",
+        "unstructured": "RAMBOLL. SiteSolve."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.foar.2024.06.001_bib43",
+        "doi-asserted-by": "crossref",
+        "first-page": "3",
+        "DOI": "10.1016/0950-7051(92)90020-G",
+        "article-title": "Designing as reflective conversation with the materials of a design situation",
+        "volume": "5",
+        "author": "Schön",
+        "year": "1992",
+        "journal-title": "Knowl. Base Syst."
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib44",
+        "series-title": "ELEMENTS OF PARAMETRIC DESIGN",
+        "first-page": "275",
+        "article-title": "Design space exploration",
+        "author": "Sheikholeslami",
+        "year": "2010"
+      },
+      {
+        "issue": "April",
+        "key": "10.1016/j.foar.2024.06.001_bib45",
+        "doi-asserted-by": "crossref",
+        "first-page": "93",
+        "DOI": "10.1016/j.aei.2019.03.006",
+        "article-title": "Multi-objective optimization design of a complex building based on an artificial neural network and performance evaluation of algorithms",
+        "volume": "40",
+        "author": "Si",
+        "year": "2019",
+        "journal-title": "Adv. Eng. Inf."
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib46",
+        "unstructured": "Sidewalk Labs. Delve."
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib47",
+        "series-title": "The Language of Architecture: 26 Principles Every Architect Should Know",
+        "author": "Simitch",
+        "year": "2014"
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib48",
+        "doi-asserted-by": "crossref",
+        "first-page": "1306",
+        "DOI": "10.1016/j.enbuild.2017.11.022",
+        "article-title": "Towards adoption of building energy simulation and optimization for passive building design: a survey and a review",
+        "volume": "158",
+        "author": "Tian",
+        "year": "2018",
+        "journal-title": "Energy Build."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.foar.2024.06.001_bib49",
+        "doi-asserted-by": "crossref",
+        "first-page": "656",
+        "DOI": "10.1016/j.aei.2011.07.009",
+        "article-title": "Design explorations of performance driven geometry in architectural design using parametric modeling and genetic algorithms",
+        "volume": "25",
+        "author": "Turrin",
+        "year": "2011",
+        "journal-title": "Adv. Eng. Inf."
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib50",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.enbuild.2022.112303",
+        "article-title": "A methodology to assess the constructibility of free-form buildings using building and surface performance indicators: application to a case study",
+        "volume": "270",
+        "author": "Valiyappurakkal",
+        "year": "2022",
+        "journal-title": "Energy Build."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.foar.2024.06.001_bib73",
+        "doi-asserted-by": "crossref",
+        "first-page": "736",
+        "DOI": "10.1108/OHI-06-2023-0135",
+        "article-title": "Teaching parametric design: fostering algorithmic thinking through incomplete recipes",
+        "volume": "49",
+        "author": "Vazquez",
+        "year": "2023",
+        "journal-title": "Open House Int."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.foar.2024.06.001_bib51",
+        "doi-asserted-by": "crossref",
+        "first-page": "573",
+        "DOI": "10.1016/j.foar.2018.08.002",
+        "article-title": "The ‘Urban Elements’ method for teaching parametric urban design to professionals",
+        "volume": "7",
+        "author": "von Richthofen",
+        "year": "2018",
+        "journal-title": "Frontiers of Architectural Research"
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib52",
+        "series-title": "CAAD Futures 2021: Computer-Aided Architectural Design",
+        "first-page": "288",
+        "article-title": "Understanding the span of design spaces",
+        "volume": "1465",
+        "author": "Wang",
+        "year": "2022"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.foar.2024.06.001_bib53",
+        "doi-asserted-by": "crossref",
+        "first-page": "758",
+        "DOI": "10.1177/14780771221134958",
+        "article-title": "Optimization-aided design: two approaches for reflective exploration of design search space",
+        "volume": "20",
+        "author": "Wang",
+        "year": "2022",
+        "journal-title": "Int. J. Architect. Comput."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.foar.2024.06.001_bib72",
+        "first-page": "41",
+        "article-title": "Workflow for applying optimization-based design exploration to early-stage architectural design – case study based on EvoMass",
+        "volume": "20",
+        "author": "Wang",
+        "year": "2022",
+        "journal-title": "Int. J. Archit. Comput."
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib54",
+        "series-title": "RE: Anthropocene, Design in the Age of Humans - Proceedings of the 25th International Conference on Computer-Aided Architectural Design Research in Asia, CAADRIA 2020",
+        "first-page": "385",
+        "article-title": "Algorithmic generation of architectural massing models for building design optimisation - parametric modelling using subtractive and additive form generation principles",
+        "volume": "1",
+        "author": "Wang",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib55",
+        "series-title": "RE: Anthropocene, Design in the Age of Humans - Proceedings of the 25th International Conference on Computer-Aided Architectural Design Research in Asia, CAADRIA 2020",
+        "first-page": "255",
+        "article-title": "Enabling optimisation-based exploration for building massing design - a coding-free evolutionary building massing design toolkit in rhino-grasshopper",
+        "volume": "1",
+        "author": "Wang",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib56",
+        "series-title": "HUMAN-CENTRIC, Proceedings of the 28th International Conference of the Association for Computer-Aided Architectural Design Research in Asia (CAADRIA)",
+        "first-page": "221",
+        "article-title": "Comparing design strategies: a system for optimization-based design exploration",
+        "volume": "1",
+        "author": "Wang",
+        "year": "2023"
+      },
+      {
+        "issue": "24",
+        "key": "10.1016/j.foar.2024.06.001_bib57",
+        "doi-asserted-by": "crossref",
+        "first-page": "6965",
+        "DOI": "10.3390/su11246965",
+        "article-title": "Subtractive building massing for performance-based architectural design exploration : a case study of daylighting optimization",
+        "volume": "11",
+        "author": "Wang",
+        "year": "2019",
+        "journal-title": "Sustainability"
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib58",
+        "first-page": "177",
+        "article-title": "Utility of evolutionary design in architectural form finding: an investigation into constraint handling strategies",
+        "volume": "18",
+        "author": "Wang",
+        "year": "2018"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.foar.2024.06.001_bib59",
+        "doi-asserted-by": "crossref",
+        "first-page": "458",
+        "DOI": "10.1017/S0890060420000281",
+        "article-title": "SSIEA: a hybrid evolutionary algorithm for supporting conceptual architectural design",
+        "volume": "34",
+        "author": "Wang",
+        "year": "2020",
+        "journal-title": "AI EDAM (Artif. Intell. Eng. Des. Anal. Manuf.)"
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib60",
+        "series-title": "Digital Design Reconsidered - Proceedings of the 41st Conference on Education and Research in Computer Aided Architectural Design in Europe (ECAADe 2023)",
+        "first-page": "179",
+        "article-title": "Teaching Computational Design Optimization - an experimental course for performance-based building massing exploration",
+        "volume": "1",
+        "author": "Wang",
+        "year": "2023"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.foar.2024.06.001_bib61",
+        "doi-asserted-by": "crossref",
+        "first-page": "445",
+        "DOI": "10.1177/14780771231177514",
+        "article-title": "Reverse passive strategy exploration for building massing design-An optimization-aided approach",
+        "volume": "21",
+        "author": "Wang",
+        "year": "2023",
+        "journal-title": "Int. J. Architect. Comput."
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib62",
+        "series-title": "Proceedings of the 21st International Conference on Computer-Aided Architectural Design Research in Asia (CAADRIA 2016)",
+        "first-page": "109",
+        "article-title": "Toward the wind-related building performative design. Living Systems and Micro-Utopias: Towards Continuous Designing",
+        "author": "Wang",
+        "year": "2016"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.foar.2024.06.001_bib63",
+        "first-page": "63",
+        "article-title": "Whither design space?",
+        "volume": "20",
+        "author": "Woodbury",
+        "year": "2006",
+        "journal-title": "AIE EDAM: AI EDAM (Artif. Intell. Eng. Des. Anal. Manuf.)"
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib64",
+        "doi-asserted-by": "crossref",
+        "first-page": "40",
+        "DOI": "10.1016/j.destud.2017.05.001",
+        "article-title": "Interactive design galleries: a general approach to interacting with design alternatives",
+        "volume": "52",
+        "author": "Woodbury",
+        "year": "2017",
+        "journal-title": "Des. Stud."
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib65",
+        "series-title": "City Networks: Collaboration and Planning for Health and Sustainability",
+        "first-page": "259",
+        "article-title": "Introduction to architectural design optimization",
+        "author": "Wortmann",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib66",
+        "series-title": "Generative Design with Building Performance Optimization in the Initial Stage of Architectural Design Process",
+        "author": "Wu",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib67",
+        "doi-asserted-by": "crossref",
+        "first-page": "77",
+        "DOI": "10.1016/j.autcon.2012.05.004",
+        "article-title": "Site-specific optimal energy form generation based on hierarchical geometry relation",
+        "volume": "26",
+        "author": "Yi",
+        "year": "2012",
+        "journal-title": "Autom. ConStruct."
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib68",
+        "first-page": "459",
+        "article-title": "Shape clustering using K-medoids in architectural form finding",
+        "volume": "1028",
+        "author": "Yousif",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib69",
+        "first-page": "451",
+        "article-title": "The Synergy of building massing and facade - an Evo-Devo approach for performance-based design optimization combining facade design with building massing",
+        "volume": "1",
+        "author": "Zhang",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.foar.2024.06.001_bib70",
+        "doi-asserted-by": "crossref",
+        "first-page": "38",
+        "DOI": "10.1016/j.solener.2016.02.053",
+        "article-title": "Shape optimization of free-form buildings based on solar radiation gain and space efficiency using a multi-objective genetic algorithm in the severe cold zones of China",
+        "volume": "132",
+        "author": "Zhang",
+        "year": "2016",
+        "journal-title": "Sol. Energy"
+      }
+    ],
+    "container-title": [
+      "Frontiers of Architectural Research"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S2095263524000797?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S2095263524000797?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          9,
+          17
+        ]
+      ],
+      "date-time": "2025-09-17T16:38:27Z",
+      "timestamp": 1758127107000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S2095263524000797"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          12
+        ]
+      ]
+    },
+    "references-count": 73,
+    "journal-issue": {
+      "issue": "6",
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "S2095263524000797"
+    ],
+    "URL": "https://doi.org/10.1016/j.foar.2024.06.001",
+    "relation": {},
+    "ISSN": [
+      "2095-2635"
+    ],
+    "issn-type": [
+      {
+        "value": "2095-2635",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          12
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Optimization-based design exploration of building massing typologies—EvoMass and a typology-oriented computational design optimization method for early-stage performance-based building massing design",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Frontiers of Architectural Research",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.foar.2024.06.001",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2024 The Author(s). Publishing services by Elsevier B.V. on behalf of KeAi Communications Co. Ltd.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ]
+  }
+}

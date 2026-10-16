@@ -1,0 +1,18 @@
+{
+  "docx": "paper_revision_work_2026_06_14\\final_output\\光权修复论文_EI会议中文终稿_v4_C6C33三米复算版.docx",
+  "media_count": 11,
+  "required_results": {
+    "metrics_csv": "paper_revision_work_2026_06_14\\c6_c33_same_scheme_grid_fast\\c6_c33_same_scheme_grid_metrics.csv",
+    "summary_json": "paper_revision_work_2026_06_14\\c6_c33_same_scheme_grid_fast\\c6_c33_same_scheme_grid_summary.json",
+    "chart_png": "paper_revision_work_2026_06_14\\c6_c33_same_scheme_grid_fast\\c6_c33_same_scheme_grid_chart.png"
+  },
+  "key_result": {
+    "grid_3m_baseline_dark_zone_percent": 16.09,
+    "grid_3m_fixed_c6_c33_post_dark_zone_percent": 15.84,
+    "grid_3m_dark_grid_count_before": 314,
+    "grid_3m_dark_grid_count_after": 309,
+    "grid_3m_average_sunlight_before_h": 6.509,
+    "grid_3m_average_sunlight_after_h": 6.519
+  },
+  "status": "pass"
+}

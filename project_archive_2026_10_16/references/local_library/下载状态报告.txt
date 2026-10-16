@@ -1,0 +1,156 @@
+================================================================================
+论文《光权修复》参考文献PDF下载状态报告
+================================================================================
+生成时间：2026年6月11日
+论文作者：洪禄
+参考文献总数：24篇
+
+================================================================================
+✅ 已成功下载（7篇PDF + 1篇文本）
+================================================================================
+
+[01] Sampson T C, Charo R A. "Access to Sunlight: Resolving Legal Issues to Encourage
+     the Use of Solar Energy." Columbia Journal of Environmental Law, 1986, 11(2): 417-445.
+     DOI: 10.7916/cjel.v11i2.5670
+     ▶ 01_Sampson_1986_Access_to_Sunlight.pdf (1.4 MB) [来源: Columbia University Libraries]
+
+[03] Czachura A, et al. "Solar Performance Metrics in Urban Planning: A Review and
+     Taxonomy." Buildings, 2022, 12(4): 393.
+     DOI: 10.3390/buildings12040393
+     ▶ 03_Czachura_2022_Solar_Performance_Metrics.pdf (1.9 MB) [来源: MDPI Open Access]
+
+[06] Curreli A, et al. "Solar Energy as a Form Giver for Future Cities."
+     Energies, 2016, 9(7): 544.
+     DOI: 10.3390/en9070544
+     ▶ 06_Curreli_2016_Solar_Energy_Form_Giver.pdf (2.9 MB) [来源: MDPI Open Access]
+
+[09] Sadeghipour Roudsari M, et al. "Ladybug: A parametric environmental plugin for
+     Grasshopper." BS2013, 2013: 3128-3135.
+     DOI: 10.26868/25222708.2013.2499
+     ▶ 09_Roudsari_2013_Ladybug.pdf (1.3 MB) [来源: IBPSA Proceedings]
+
+[10] Ward G J. "The RADIANCE Lighting Simulation and Rendering System."
+     SIGGRAPH '94, 1994: 459-466.
+     DOI: 10.1145/192161.192286
+     ▶ 10_Ward_1994_RADIANCE_Lighting_Simulation.pdf (8.4 MB) [来源: LBNL radsite]
+
+[12] Jakubik J, et al. "Designing a human-in-the-loop system for object detection in
+     floor plans." AAAI, 2022, 36(11): 12524-12530.
+     DOI: 10.1609/aaai.v36i11.21522
+     ▶ 12_Jakubik_2022_Human_in_the_loop_Floor_Plans.pdf (1.1 MB) [来源: AAAI Open Access]
+
+[16] Nguyen A T, et al. "A review on simulation-based optimization methods."
+     Applied Energy, 2014, 113: 1043-1058.
+     DOI: 10.1016/j.apenergy.2013.08.061
+     ▶ 16_Nguyen_2014_Simulation_Based_Optimization.pdf (830 KB) [来源: ORBi ULiège]
+
+[15] Attia S, et al. "Assessing gaps and needs for integrating building performance
+     optimization tools in net zero energy buildings design."
+     Energy and Buildings, 2013, 60: 110-124.
+     DOI: 10.1016/j.enbuild.2013.01.016
+     ▶ 15_Attia_2013_Building_Performance_Optimization.txt (文本摘要) [来源: EPFL WebFetch]
+
+
+================================================================================
+❌ 因付费墙/技术限制暂未下载（15篇论文 + 1本书籍）
+================================================================================
+
+--- Elsevier付费期刊（需机构访问权限） ---
+
+[04] Compagnon R. "Solar and daylight availability in the urban fabric."
+     Energy and Buildings, 2004, 36(4): 321-328. DOI: 10.1016/j.enbuild.2004.01.009
+
+[05] Sanaieian H, et al. "Review of the impact of urban block form on thermal
+     performance, solar access and ventilation."
+     Renewable and Sustainable Energy Reviews, 2014, 38: 551-560. DOI: 10.1016/j.rser.2014.06.007
+
+[07] Konis K, et al. "Passive performance and building form."
+     Solar Energy, 2016, 125: 161-179. DOI: 10.1016/j.solener.2015.12.020
+
+[08] Wang L, et al. "Optimization-based design exploration of building massing
+     typologies—EvoMass." Frontiers of Architectural Research, 2024, 13(6): 1400-1422.
+     DOI: 10.1016/j.foar.2024.06.001
+     ※ 该刊为开放获取，但ScienceDirect反爬验证阻止下载。建议通过浏览器手动访问：
+       https://www.sciencedirect.com/science/article/pii/S2095263524000580
+
+[10] De Luca F, et al. "Reverse solar envelope method."
+     Automation in Construction, 2021, 123: 103518. DOI: 10.1016/j.autcon.2020.103518
+
+[13] Rafsanjani H N, Nabizadeh A H. "Towards human-centered AI in AEC industry."
+     Computers in Human Behavior Reports, 2023, 11: 100319. DOI: 10.1016/j.chbr.2023.100319
+     ※ 该刊为开放获取，但ScienceDirect反爬验证阻止下载。建议通过浏览器手动访问
+
+[14] Kanters J, Wall M. "The impact of urban design decisions on net zero energy."
+     Renewable Energy, 2016, 93: 469-482. DOI: 10.1016/j.renene.2016.02.033
+
+[16] Reinhart C F, Walkenhorst O. "Validation of dynamic RADIANCE-based daylight
+     simulations." Energy and Buildings, 2001, 33(7): 683-697. DOI: 10.1016/S0378-7788(01)00058-5
+
+[17] Nabil A, Mardaljevic J. "Useful daylight illuminances."
+     Energy and Buildings, 2006, 38(7): 905-913. DOI: 10.1016/j.enbuild.2006.03.013
+
+[20] Attia S, et al. "Assessing gaps and needs... (同上[15]，PDF版本)"
+     Energy and Buildings, 2013, 60: 110-124. DOI: 10.1016/j.enbuild.2013.01.016
+
+[21] Nguyen A T, et al. "A review on simulation-based optimization methods. (同上[16])"
+     Applied Energy, 2014, 113: 1043-1058. DOI: 10.1016/j.apenergy.2013.08.061
+
+[23] Bilal M, et al. "Big Data in the construction industry."
+     Advanced Engineering Informatics, 2016, 30(3): 500-521. DOI: 10.1016/j.aei.2016.07.001
+
+--- 其他付费期刊 ---
+
+[11] Thoring K, et al. "The augmented designer." Proceedings of the Design Society,
+     2023, 3: 3345-3354. DOI: 10.1017/pds.2023.335 (Cambridge - 限流429)
+
+[17] Reinhart C F, et al. "Dynamic daylight performance metrics for sustainable
+     building design." Leukos, 2006, 3(1): 7-31. DOI: 10.1582/LEUKOS.2006.03.01.001
+
+[18] Mardaljevic J. "Simulation of annual daylighting profiles."
+     Lighting Research & Technology, 2000, 32(3): 111-118. DOI: 10.1177/096032710003200302
+
+[22] Wortmann T. "Opossum." CAADRIA 2017: 283-292.
+     DOI: 10.52842/conf.caadria.2017.283 (CUMINCAD - 限流429)
+
+--- 1986年老期刊 ---
+
+[02] Bryan H, Stuebing S. "Natural Light as an Urban Amenity."
+     Lighting Design + Application, 1986, 16(6): 44-48. DOI: 10.1177/036063258601600610
+     ※ 1986年期刊，Semantic Scholar标注为CLOSED，无电子版
+
+--- 书籍 ---
+
+[24] Sacks R, et al. "BIM Handbook." 3rd ed. Wiley, 2018.
+     DOI: 10.1002/9781119287568
+     ※ 此为Wiley出版的书籍，不属于论文，不纳入文献下载范围
+
+
+================================================================================
+下载方式汇总
+================================================================================
+
+成功渠道：
+  1. MDPI开放获取 (Building, Energies): [03], [06]
+  2. IBPSA会议论文集: [09]
+  3. AAAI开放获取: [12]
+  4. 机构库预印本 (LBNL, ORBi ULiège): [10], [16]
+  5. 哥伦比亚大学图书馆OJS: [01]
+  
+失败原因：
+  1. Elsevier/ScienceDirect付费墙: 12篇 (反爬验证+需机构IP)
+  2. 出版商限流 (Cambridge, CUMINCAD): [11], [22]
+  3. 1986年老期刊无电子版: [02]
+  4. 书籍非论文: [24]
+  5. EPFL人机验证: [15] PDF版本
+
+
+================================================================================
+建议
+================================================================================
+
+对于未下载的15篇论文，建议：
+1. 通过所在学校的图书馆数据库访问下载（校园网/VPN）
+2. 在ResearchGate上搜索作者上传的预印本版本
+3. 在Google Scholar中点击"All X versions"查找开放获取版本
+4. [08]和[13]为开放获取期刊，可直接在浏览器中打开ScienceDirect页面下载
+5. [22]在CUMINCAD上免费获取：https://papers.cumincad.org/cgi-bin/works/paper/caadria2017_283

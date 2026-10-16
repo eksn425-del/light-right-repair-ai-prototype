@@ -1,0 +1,109 @@
+{
+  "source_folder": "E:\\AI项目\\谢研组",
+  "outputs": [
+    "E:\\AI项目\\谢研组\\processed",
+    "E:\\AI项目\\light_equity_project\\data\\real_guankou\\lakeside_leisure_processed"
+  ],
+  "height_source": "沿湖休闲片区建筑高度标注图.xlsx",
+  "label_source": "沿湖休闲片区标号.dxf",
+  "site_dxf_source": "沿湖休闲片区场地说明.dxf",
+  "obj_source": "沿湖休闲片区场地.obj",
+  "building_count": 45,
+  "height_stats": {
+    "min_m": 3.0,
+    "max_m": 21.0,
+    "mean_m": 8.733,
+    "median_m": 9.0
+  },
+  "height_distribution": {
+    "3.0": 8,
+    "4.0": 3,
+    "6.0": 9,
+    "9.0": 10,
+    "12.0": 9,
+    "15.0": 3,
+    "18.0": 1,
+    "21.0": 2
+  },
+  "top_high_buildings": [
+    {
+      "building_id": "C3",
+      "height_m": 21.0,
+      "floors": 7,
+      "x_min": 29.676,
+      "x_max": 38.076,
+      "y_min": 264.207,
+      "y_max": 272.607
+    },
+    {
+      "building_id": "C19",
+      "height_m": 21.0,
+      "floors": 7,
+      "x_min": 260.511,
+      "x_max": 268.911,
+      "y_min": 102.782,
+      "y_max": 111.182
+    },
+    {
+      "building_id": "C26",
+      "height_m": 18.0,
+      "floors": 6,
+      "x_min": 195.074,
+      "x_max": 203.474,
+      "y_min": 62.84,
+      "y_max": 71.24
+    },
+    {
+      "building_id": "C16",
+      "height_m": 15.0,
+      "floors": 5,
+      "x_min": 244.187,
+      "x_max": 252.587,
+      "y_min": 140.558,
+      "y_max": 148.958
+    },
+    {
+      "building_id": "C27",
+      "height_m": 15.0,
+      "floors": 5,
+      "x_min": 175.678,
+      "x_max": 184.078,
+      "y_min": 59.608,
+      "y_max": 68.008
+    },
+    {
+      "building_id": "C35",
+      "height_m": 15.0,
+      "floors": 5,
+      "x_min": 129.861,
+      "x_max": 138.261,
+      "y_min": 137.712,
+      "y_max": 146.112
+    },
+    {
+      "building_id": "C20",
+      "height_m": 12.0,
+      "floors": 4,
+      "x_min": 269.453,
+      "x_max": 277.853,
+      "y_min": 93.465,
+      "y_max": 101.865
+    },
+    {
+      "building_id": "C21",
+      "height_m": 12.0,
+      "floors": 4,
+      "x_min": 246.225,
+      "x_max": 254.625,
+      "y_min": 64.194,
+      "y_max": 72.594
+    }
+  ],
+  "coordinate_notes": "DXF C-label coordinates were converted from apparent millimetres to local metres using the minimum matched circle extent as origin.",
+  "quality_notes": [
+    "Footprints are estimated from label circles, not verified building outlines.",
+    "Kindergarten protected zone is a placeholder from the Word description and must be located accurately by the group.",
+    "Street/node/site-zone coordinates are schematic placeholders for algorithm testing and should be replaced by surveyed CAD polylines/points.",
+    "OBJ file header reports millimeters; coordinate/unit consistency must be checked before final real-site simulation."
+  ]
+}

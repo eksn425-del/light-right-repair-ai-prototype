@@ -1,0 +1,4 @@
+﻿street_id,start_x,start_y,end_x,end_y,width_m,main_direction,pedestrian_priority,notes
+LH_ST001,0.0,144.512,286.286,144.512,6.0,east-west,True,placeholder main route; replace with surveyed street centerline
+LH_ST002,143.143,0.0,143.143,289.025,4.0,north-south,True,placeholder cross route; replace with surveyed path
+LH_ST003,0.0,34.683,286.286,34.683,3.0,waterfront-edge,True,placeholder waterfront/leisure route

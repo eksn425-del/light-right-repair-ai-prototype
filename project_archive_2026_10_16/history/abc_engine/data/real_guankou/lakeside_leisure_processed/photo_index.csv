@@ -1,0 +1,7 @@
+﻿photo_id,file_name,related_node_id,related_zone_id,problem_type,notes
+P001,微信图片_20260520205047.jpg,LH_N003,,cable_problem,auto indexed from submitted photo folder; relation should be confirmed by photographer
+P002,微信图片_20260520205051.jpg,LH_N004,LH_Z003,parking_conflict,auto indexed from submitted photo folder; relation should be confirmed by photographer
+P003,微信图片_20260520205054.jpg,LH_N005,LH_Z002,waterfront_or_green_edge,auto indexed from submitted photo folder; relation should be confirmed by photographer
+P004,微信图片_20260520205056.jpg,LH_N005,LH_Z002,waterfront_or_green_edge,auto indexed from submitted photo folder; relation should be confirmed by photographer
+P005,微信图片_20260520205059.jpg,LH_N002,LH_Z006,lighting_problem,auto indexed from submitted photo folder; relation should be confirmed by photographer
+P006,微信图片_20260520205102.jpg,LH_N002,LH_Z006,lighting_problem,auto indexed from submitted photo folder; relation should be confirmed by photographer

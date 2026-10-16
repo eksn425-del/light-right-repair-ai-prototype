@@ -1,0 +1,33 @@
+论文参考文献PDF下载日志
+下载时间: 2026-06-11 21:47:13
+成功: 6 篇 | 失败: 17 篇 | 书籍: 1 篇
+
+=== 成功下载 ===
+  [03] Czachura A (2022) - Czachura_2022_Solar_Performance_Metrics
+  [06] Curreli A (2016) - Curreli_2016_Solar_Energy_Form_Giver
+  [09] Sadeghipour Roudsari M (2013) - Roudsari_2013_Ladybug
+  [12] Jakubik J (2022) - Jakubik_2022_Human_in_the_loop_Floor_Plans
+  [20] Attia S (2013) - Attia_2013_Building_Performance_Optimization [OA]
+  [21] Nguyen A T (2014) - Nguyen_2014_Simulation_Based_Optimization [OA]
+
+=== 下载失败 ===
+  [08] Wang L (2024) - Wang_2024_EvoMass_Building_Massing (DOI: 10.1016/j.foar.2024.06.001)
+  [11] Thoring K (2023) - Thoring_2023_Augmented_Designer (DOI: 10.1017/pds.2023.335)
+  [13] Rafsanjani H N (2023) - Rafsanjani_2023_Human_Centered_AI_AEC (DOI: 10.1016/j.chbr.2023.100319)
+  [22] Wortmann T (2017) - Wortmann_2017_Opossum (DOI: 10.52842/conf.caadria.2017.283)
+  [04] Compagnon R (2004) - Compagnon_2004_Solar_Daylight_Urban_Fabric (DOI: 10.1016/j.enbuild.2004.01.009)
+  [05] Sanaieian H (2014) - Sanaieian_2014_Urban_Block_Form_Review (DOI: 10.1016/j.rser.2014.06.007)
+  [07] Konis K (2016) - Konis_2016_Passive_Performance_Building_Form (DOI: 10.1016/j.solener.2015.12.020)
+  [10] De Luca F (2021) - DeLuca_2021_Reverse_Solar_Envelope (DOI: 10.1016/j.autcon.2020.103518)
+  [14] Kanters J (2016) - Kanters_2016_Urban_Design_Solar_Potential (DOI: 10.1016/j.renene.2016.02.033)
+  [15] Ward G J (1994) - Ward_1994_RADIANCE_Lighting_Simulation (DOI: 10.1145/192161.192286)
+  [16] Reinhart C F (2001) - Reinhart_2001_Validation_Dynamic_RADIANCE (DOI: 10.1016/S0378-7788(01)00058-5)
+  [17] Nabil A (2006) - Nabil_2006_Useful_Daylight_Illuminances (DOI: 10.1016/j.enbuild.2006.03.013)
+  [18] Reinhart C F (2006) - Reinhart_2006_Dynamic_Daylight_Performance (DOI: 10.1582/LEUKOS.2006.03.01.001)
+  [19] Mardaljevic J (2000) - Mardaljevic_2000_Annual_Daylighting_Profiles (DOI: 10.1177/096032710003200302)
+  [23] Bilal M (2016) - Bilal_2016_Big_Data_Construction (DOI: 10.1016/j.aei.2016.07.001)
+  [01] Sampson T C (1986) - Sampson_1986_Access_to_Sunlight (DOI: 10.7916/cjel.v11i2.5670)
+  [02] Bryan H (1986) - Bryan_1986_Natural_Light_Urban_Amenity (DOI: 10.1177/036063258601600610)
+
+=== 书籍 ===
+  [24] Sacks R (2018) - BIM Handbook (Wiley书籍)

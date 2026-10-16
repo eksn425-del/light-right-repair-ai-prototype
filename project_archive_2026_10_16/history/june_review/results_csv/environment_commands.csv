@@ -1,0 +1,8 @@
+﻿command,path,available_in_path,version_output
+python,D:\python3.10.4\python.EXE,True,['Python 3.12.2']
+pip,D:\python3.10.4\Scripts\pip.EXE,True,['pip 25.3 from D:\\python3.10.4\\Lib\\site-packages\\pip (python 3.12)']
+pandoc,,False,
+soffice,,False,
+rhino,,False,
+rtrace,,False,
+oconv,,False,

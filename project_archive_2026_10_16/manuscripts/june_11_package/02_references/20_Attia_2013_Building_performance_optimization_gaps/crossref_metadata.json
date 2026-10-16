@@ -1,0 +1,1753 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          13
+        ]
+      ],
+      "date-time": "2026-05-13T04:00:11Z",
+      "timestamp": 1778644811775,
+      "version": "3.51.4"
+    },
+    "reference-count": 167,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2013,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2013-05-01T00:00:00Z",
+          "timestamp": 1367366400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2013,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2013-05-01T00:00:00Z",
+          "timestamp": 1367366400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2013,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2013-05-01T00:00:00Z",
+          "timestamp": 1367366400000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-017"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2013,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2013-05-01T00:00:00Z",
+          "timestamp": 1367366400000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2013,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2013-05-01T00:00:00Z",
+          "timestamp": 1367366400000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-012"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2013,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2013-05-01T00:00:00Z",
+          "timestamp": 1367366400000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2013,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2013-05-01T00:00:00Z",
+          "timestamp": 1367366400000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-004"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Energy and Buildings"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2013,
+          5
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.enbuild.2013.01.016",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2013,
+          1,
+          28
+        ]
+      ],
+      "date-time": "2013-01-28T14:33:02Z",
+      "timestamp": 1359383582000
+    },
+    "page": "110-124",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 370,
+    "special_numbering": "C",
+    "title": [
+      "Assessing gaps and needs for integrating building performance optimization tools in net zero energy buildings design"
+    ],
+    "prefix": "10.1016",
+    "volume": "60",
+    "author": [
+      {
+        "given": "Shady",
+        "family": "Attia",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Mohamed",
+        "family": "Hamdy",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "William",
+        "family": "O’Brien",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Salvatore",
+        "family": "Carlucci",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0005",
+        "unstructured": "IEA. TASK 40/Annex 52 (2008). Towards net zero energy solar buildings, IEA SHC Task 40 and ECBCS Annex 52. http://www.ieashc.org/task40/index.html, 2011 (accessed 10.01.2011)."
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0010",
+        "unstructured": "European Parliament Report on the proposal for a directive of the European Parliament and of the Council on the energy performance of buildings (recast) (COM(2008)0780-C6-0413/2008-2008/0223(COD)), 2009."
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0015",
+        "unstructured": "ASHRAE. AHSRAE Vision 2020, ASHRAE Vision 2020 Ad Hoc Committee. http://www.ashrae.org/doclib/20080226 ashraevision2020.pdf, 2008 (accessed 10.10.10)."
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0020",
+        "series-title": "Proceeding of EuroSun 2010",
+        "article-title": "Strategic design, optimisation, and modelling issues of net-zero energy solar buildings",
+        "author": "Athienitis",
+        "year": "2010"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0025",
+        "series-title": "Clima 2000/Napoli 2001 World Congress",
+        "article-title": "The Energy Design Process for Designing and Constructing High-Performance Buildings",
+        "author": "Hayter",
+        "year": "2001"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0030",
+        "series-title": "Building Simulation 2001 Conference",
+        "article-title": "GenOpt®, generic optimisation program",
+        "author": "Wetter",
+        "year": "2001"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0035",
+        "series-title": "Proceedings of PLEA 2006 (Conference on Passive and Low Energy Architecture)",
+        "article-title": "The use of genetic algorithms for a net-zero energy solar home design optimisation tool",
+        "author": "Charron",
+        "year": "2006"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0040",
+        "doi-asserted-by": "crossref",
+        "unstructured": "C. Christensen, R. Anderson, et al. BEopt software for building energy optimisation: features and capabilities. National Renewable Energy Laboratory (NREL) Technical Report NREL, TP-550-39929, 2006.",
+        "DOI": "10.2172/891598"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0045",
+        "series-title": "Proceeding of EuroSun 2010",
+        "article-title": "Design optimisation methodology for a near net zero energy demonstration home",
+        "author": "Bucking",
+        "year": "2010"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0050",
+        "series-title": "SIMBuild fourth National Conference of IBPSA-USA",
+        "article-title": "Toward zero energy buildings: optimized for energy use and cost",
+        "author": "Brown",
+        "year": "2010"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0055",
+        "unstructured": "IBPSA. The International Building Performance Simulation Association. http://www.ibpsa.org/, 2011 (accessed 01.10.2011)."
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0060",
+        "series-title": "ACEEE Summer Study",
+        "article-title": "Zero energy buildings: a critical look at the definition",
+        "author": "Torcellini",
+        "year": "2006"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0065",
+        "series-title": "Practical Mathematical Optimisation—An Introduction to Basic Optimisation Theory and Classical and New Gradient-Based Algorithms",
+        "author": "Snyman",
+        "year": "2005"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0070",
+        "series-title": "Applications of Multi-Objective Evolutionary Algorithms",
+        "author": "Carlos",
+        "year": "2004"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0075",
+        "doi-asserted-by": "crossref",
+        "first-page": "989",
+        "DOI": "10.1016/j.buildenv.2004.01.022",
+        "article-title": "A comparison of deterministic and probabilistic optimisation algorithms for nonsmooth simulation-based optimisation",
+        "volume": "39",
+        "author": "Wetter",
+        "year": "2004",
+        "journal-title": "Building and Environment"
+      },
+      {
+        "issue": "11",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0080",
+        "doi-asserted-by": "crossref",
+        "first-page": "1512",
+        "DOI": "10.1016/j.buildenv.2004.11.017",
+        "article-title": "Applying multi-objective genetic algorithms in green building design optimisation",
+        "volume": "40",
+        "author": "Wang",
+        "year": "2005",
+        "journal-title": "Building and Environment"
+      },
+      {
+        "issue": "2011",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0085",
+        "doi-asserted-by": "crossref",
+        "first-page": "109",
+        "DOI": "10.1016/j.buildenv.2010.07.006",
+        "article-title": "Applying a multi-objective optimisation approach for design of low-emission cost-effective dwellings",
+        "volume": "46",
+        "author": "Hamdy",
+        "year": "2011",
+        "journal-title": "Building and Environment"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0090",
+        "series-title": "GenOpt, Generic Optimisation Program, Release 3.1.0",
+        "author": "Wetter",
+        "year": "2011"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0095",
+        "unstructured": "modeFontier. ESTEC, multi-objective optimisation and design environment. http://www.modefrontier.com/homeMF.html, 2012 (accessed 22.01.2012)."
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0100",
+        "unstructured": "Phoenix Integration. PHX ModelCenter, Graphical environment for automation, integration, and design optimisation. http://www.phoenix-int.com/index.php, 2012 (accessed 22.01.2012)."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0105",
+        "doi-asserted-by": "crossref",
+        "first-page": "428",
+        "DOI": "10.1016/j.buildenv.2010.08.004",
+        "article-title": "Model-predictive control of mixed-mode buildings with rule extraction",
+        "volume": "46",
+        "author": "May-Ostendorp",
+        "year": "2011",
+        "journal-title": "Building and Environment"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0110",
+        "first-page": "2011",
+        "article-title": "A model predictive control optimisation environment for real-time commercial building application",
+        "volume": "6",
+        "author": "Corbin",
+        "year": "2011",
+        "journal-title": "Journal of Building Performance Simulation"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0115",
+        "first-page": "235",
+        "article-title": "Predictive control of radiant floor heating and transmitted irradiance in a room with high solar gains",
+        "volume": "117",
+        "author": "Candanedo",
+        "year": "2011",
+        "journal-title": "ASHRAE Transactions"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0120",
+        "series-title": "Building Performance Simulation for Design and Operation",
+        "author": "Hensen",
+        "year": "2011"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0125",
+        "series-title": "Proceedings of ISES 2005 Solar World Congress",
+        "article-title": "BEoptTM: software for identifying optimal building designs on the path to zero net energy",
+        "author": "Christensen",
+        "year": "2005"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0130",
+        "unstructured": "BPIE. Cost optimality discussing methodology and challenges with the recast energy performance of building directive. The buildings performance institute Europe – BPIE, 2010. http://www.bpie.eu/cost_optimality.html, 2010 (accessed 1.06.2011)."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0135",
+        "doi-asserted-by": "crossref",
+        "first-page": "149",
+        "DOI": "10.1016/0360-1323(92)90019-L",
+        "article-title": "Integrated building performance evaluation in the early design stages",
+        "volume": "27",
+        "author": "Augenbroe",
+        "year": "1992",
+        "journal-title": "Building and Environment"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0140",
+        "series-title": "Proc. 7th International Conference on Design & Decision Support Systems in Architecture and Urban Planning",
+        "article-title": "Towards more effective use of building performance simulation in design",
+        "author": "Hensen",
+        "year": "2004"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0145",
+        "doi-asserted-by": "crossref",
+        "first-page": "661",
+        "DOI": "10.1016/j.buildenv.2006.10.027",
+        "article-title": "Contrasting the capabilities of building energy performance simulation programs",
+        "volume": "43",
+        "author": "Crawley",
+        "year": "2008",
+        "journal-title": "Building and Environment"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0150",
+        "series-title": "Early Design Simulation Tools for Net Zero Energy Buildings: A Comparison of Ten Tools",
+        "author": "Attia",
+        "year": "2011"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0155",
+        "unstructured": "DOE, U.S. Building energy software tools directory. http://apps1.eere.energy.gov/buildings/tools_directory/, 2012 (accessed 1.06.2012)."
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0160",
+        "series-title": "GAlib: A C++ Class Library of Genetic Algorithm Components, Technical Report",
+        "author": "Wall",
+        "year": "1996"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0165",
+        "doi-asserted-by": "crossref",
+        "first-page": "155",
+        "DOI": "10.1080/19401493.2010.549573",
+        "article-title": "Selection criteria for building performance simulation tools: contrasting architects’ and engineers’ needs’",
+        "volume": "5",
+        "author": "Attia",
+        "year": "2011",
+        "journal-title": "Journal of Building Performance Simulation"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0170",
+        "series-title": "Programming Environment for Algorithm Development, Data Analysis, Visualization, and Numerical Computation, Version 6.2",
+        "author": "MATLAB, MathWorks",
+        "year": "2012"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0175",
+        "series-title": "IBPSA BS2009",
+        "first-page": "1382",
+        "article-title": "‘Parallel’ EnergyPlus and the development of a parametric analysis tool",
+        "author": "Zhang",
+        "year": "2009"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0180",
+        "doi-asserted-by": "crossref",
+        "first-page": "28",
+        "DOI": "10.1109/MCI.2006.1597059",
+        "article-title": "Evolutionary multiobjective optimisation: a historical view of the field",
+        "volume": "1",
+        "author": "Coello",
+        "year": "2006",
+        "journal-title": "IEEE Computational Intelligence Magazine"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0185",
+        "doi-asserted-by": "crossref",
+        "first-page": "149",
+        "DOI": "10.1016/S0954-1810(97)00037-X",
+        "article-title": "Space layout planning using an evolutionary approach",
+        "volume": "12",
+        "author": "Jo",
+        "year": "1998",
+        "journal-title": "Artificial Intelligence in Engineering"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0190",
+        "doi-asserted-by": "crossref",
+        "first-page": "163",
+        "DOI": "10.1016/S0954-1810(97)00022-8",
+        "article-title": "Evolving design genes in space layout problems",
+        "volume": "12",
+        "author": "Gero",
+        "year": "1998",
+        "journal-title": "Artificial Intelligence in Engineering"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0195",
+        "doi-asserted-by": "crossref",
+        "first-page": "807",
+        "DOI": "10.1016/j.enbuild.2009.11.019",
+        "article-title": "Optimisation of building form for solar energy utilization using constrained evolutionary algorithms",
+        "volume": "42",
+        "author": "Kämpf",
+        "year": "2010",
+        "journal-title": "Energy and Buildings"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0200",
+        "doi-asserted-by": "crossref",
+        "first-page": "363",
+        "DOI": "10.1016/j.aei.2006.07.001",
+        "article-title": "Floor shape optimisation for green building design",
+        "volume": "20",
+        "author": "Wang",
+        "year": "2006",
+        "journal-title": "Advanced Engineering Informatics"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0205",
+        "doi-asserted-by": "crossref",
+        "first-page": "656",
+        "DOI": "10.1016/j.aei.2011.07.009",
+        "article-title": "Design explorations of performance driven geometry in architectural design using parametric modeling and genetic algorithms",
+        "volume": "25",
+        "author": "Turrin",
+        "year": "2011",
+        "journal-title": "Advanced Engineering Informatics"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0210",
+        "series-title": "IBPSA: 11th International Building Performance Simulation Association Conference",
+        "article-title": "Geometric optimisation of fenestration",
+        "author": "Wright",
+        "year": "2009"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0215",
+        "doi-asserted-by": "crossref",
+        "first-page": "173",
+        "DOI": "10.1016/S0926-5805(00)00096-0",
+        "article-title": "A design optimisation tool based on a genetic algorithm",
+        "volume": "11",
+        "author": "Caldas",
+        "year": "2002",
+        "journal-title": "Automation in Construction"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0220",
+        "doi-asserted-by": "crossref",
+        "first-page": "173",
+        "DOI": "10.1016/S0926-5805(00)00096-0",
+        "article-title": "A design optimisation tool based on a genetic algorithm",
+        "volume": "11",
+        "author": "Caldas",
+        "year": "2002",
+        "journal-title": "Automation in Construction"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0225",
+        "doi-asserted-by": "crossref",
+        "first-page": "503",
+        "DOI": "10.1260/147807703773633509",
+        "article-title": "Shape generation using Pareto genetic algorithms: integrating conflicting design objectives in low-energy architecture",
+        "volume": "1",
+        "author": "Caldas",
+        "year": "2003",
+        "journal-title": "International Journal of Architectural Computing"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0230",
+        "doi-asserted-by": "crossref",
+        "first-page": "109",
+        "DOI": "10.1007/11888598_12",
+        "article-title": "GENE_ARCH: an evolution-based generative design system for sustainable architecture",
+        "volume": "4200",
+        "author": "Caldas",
+        "year": "2006",
+        "journal-title": "Lecture Notes in Computer Science"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0235",
+        "first-page": "595",
+        "article-title": "Multidisciplinary process integration and design optimisation of a classroom building",
+        "volume": "14",
+        "author": "Flager",
+        "year": "2008",
+        "journal-title": "ITcon"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0240",
+        "doi-asserted-by": "crossref",
+        "first-page": "12",
+        "DOI": "10.1016/j.aei.2008.06.008",
+        "article-title": "Component-oriented decomposition for multidisciplinary design optimisation in building design",
+        "volume": "23",
+        "author": "Geyer",
+        "year": "2009",
+        "journal-title": "Advanced Engineering Informatics"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0245",
+        "doi-asserted-by": "crossref",
+        "first-page": "1144",
+        "DOI": "10.1016/j.buildenv.2009.10.021",
+        "article-title": "Structural analysis of Pareto-optimal solution sets for multi-objective optimisation: an application to outer window design problems using multiple objective genetic algorithms",
+        "volume": "45",
+        "author": "Suga",
+        "year": "2010",
+        "journal-title": "Building and Environment"
+      },
+      {
+        "issue": "2011",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0250",
+        "doi-asserted-by": "crossref",
+        "first-page": "189",
+        "DOI": "10.1016/j.enbuild.2011.11.003",
+        "article-title": "Optimisation of curtain wall facades for office buildings by means of PSO algorithm",
+        "volume": "45",
+        "author": "Rapone",
+        "year": "2012",
+        "journal-title": "Energy and Buildings"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0255",
+        "unstructured": "S. Attia, et al. (2012a) Simulation-based decision support tool for early stages of zero-energy building design, energy and buildings. Available online 10 February 2012, ISSN 0378-7788, 10.1016/j.enbuild.2012.01.028."
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0260",
+        "series-title": "Proceedings of Building Simulation",
+        "article-title": "Facade design optimisation for daylight with a simple genetic algorithm",
+        "author": "Torres",
+        "year": "2007"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0265",
+        "doi-asserted-by": "crossref",
+        "first-page": "593",
+        "DOI": "10.1080/09613210802243159",
+        "article-title": "An intuitive daylighting performance analysis and optimisation approach",
+        "volume": "36",
+        "author": "Andersen",
+        "year": "2008",
+        "journal-title": "Building Research and Information"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0270",
+        "doi-asserted-by": "crossref",
+        "first-page": "789",
+        "DOI": "10.1016/S0360-1323(00)00065-2",
+        "article-title": "Simulation-based control of building systems operation",
+        "volume": "36",
+        "author": "Mahdavi",
+        "year": "2001",
+        "journal-title": "Building and Environment"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0275",
+        "series-title": "Building Simulation 2005, Ninth International IBPSA Conference",
+        "first-page": "693",
+        "article-title": "Elements of a simulation-assisted daylight-responsive illumination systems control in buildings",
+        "author": "Mahdavi",
+        "year": "2005"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0280",
+        "first-page": "685",
+        "author": "Mahdavi",
+        "year": "2005",
+        "journal-title": "A model-based method for the integration of natural ventilation in indoor climate systems operation"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0285",
+        "series-title": "Proc. of the 11-th IBPSA Conference",
+        "first-page": "2282",
+        "article-title": "Ensuring desired natural ventilation rate by means of optimized openings",
+        "author": "Stephan",
+        "year": "2009"
+      },
+      {
+        "issue": "12",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0290",
+        "doi-asserted-by": "crossref",
+        "first-page": "1249",
+        "DOI": "10.1016/S0360-1323(01)00100-7",
+        "article-title": "Optimisation of shape and functional structure of buildings as well as heat source utilization example",
+        "volume": "37",
+        "author": "Jedrzejuk",
+        "year": "2002",
+        "journal-title": "Building and Environment"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0295",
+        "first-page": "2133",
+        "article-title": "The formulation, characteristics, and solution of HVAC system optimized design problems",
+        "volume": "93",
+        "author": "Wright",
+        "year": "1987",
+        "journal-title": "ASHRAE Transactions"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0300",
+        "doi-asserted-by": "crossref",
+        "first-page": "7",
+        "DOI": "10.1177/014362449601700102",
+        "article-title": "HVAC optimisation studies: sizing by genetic algorithm",
+        "volume": "17",
+        "author": "Wright",
+        "year": "1996",
+        "journal-title": "Building Services Engineering Research and Technology"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0305",
+        "doi-asserted-by": "crossref",
+        "first-page": "149",
+        "DOI": "10.1080/10789669.2000.10391255",
+        "article-title": "HVAC Duct system design using genetic algorithms",
+        "volume": "6",
+        "author": "Asiedu",
+        "year": "2000",
+        "journal-title": "HVAC&R Research"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0310",
+        "doi-asserted-by": "crossref",
+        "first-page": "343",
+        "DOI": "10.1115/1.1591803",
+        "article-title": "Genetic algorithms for optimisation of building envelopes and the design and control of HVAC systems",
+        "volume": "125",
+        "author": "Caldas",
+        "year": "2003",
+        "journal-title": "Journal of Solar Energy Engineering"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0315",
+        "doi-asserted-by": "crossref",
+        "first-page": "220",
+        "DOI": "10.1016/j.enbuild.2005.05.008",
+        "article-title": "HVAC system optimisation for energy management by evolutionary programming",
+        "volume": "38",
+        "author": "Fong",
+        "year": "2006",
+        "journal-title": "Energy & Buildings"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0320",
+        "doi-asserted-by": "crossref",
+        "first-page": "277",
+        "DOI": "10.1016/S0378-7788(97)00008-X",
+        "article-title": "Using genetic algorithms to optimize controller parameters for HVAC systems",
+        "volume": "26",
+        "author": "Huang",
+        "year": "1997",
+        "journal-title": "Energy and Buildings"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0325",
+        "doi-asserted-by": "crossref",
+        "first-page": "471",
+        "DOI": "10.1016/S0360-1323(99)00032-3",
+        "article-title": "Model-based optimal control of VAV air-conditioning system using genetic algorithm",
+        "volume": "35",
+        "author": "Wang",
+        "year": "2000",
+        "journal-title": "Building and Environment"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0330",
+        "doi-asserted-by": "crossref",
+        "first-page": "103",
+        "DOI": "10.1016/S0378-7788(01)00085-8",
+        "article-title": "Global optimisation of absorption chiller system by genetic algorithm and neural network",
+        "volume": "34",
+        "author": "Chow",
+        "year": "2002",
+        "journal-title": "Energy and Buildings"
+      },
+      {
+        "issue": "2002",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0335",
+        "doi-asserted-by": "crossref",
+        "first-page": "933",
+        "DOI": "10.1016/S0378-7788(02)00068-3",
+        "article-title": "Simulation-assisted control in building energy management systems",
+        "volume": "34",
+        "author": "Clarke",
+        "year": "2002",
+        "journal-title": "Energy and Buildings"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0340",
+        "doi-asserted-by": "crossref",
+        "first-page": "417",
+        "DOI": "10.1016/S0952-1976(02)00090-8",
+        "article-title": "Genetic algorithms optimizedfuzzy controller for the indoor environmental management in buildings implemented using PLC and local operating networks",
+        "volume": "15",
+        "author": "Kolokotsa",
+        "year": "2002",
+        "journal-title": "Engineering Applications of Artificial Intelligence"
+      },
+      {
+        "issue": "10",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0345",
+        "doi-asserted-by": "crossref",
+        "first-page": "223",
+        "DOI": "10.1108/02632770310493599",
+        "article-title": "Optimisation of MVAC systems for energy management by evolutionary algorithm",
+        "volume": "21",
+        "author": "Fong",
+        "year": "2003",
+        "journal-title": "Facilities"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0350",
+        "doi-asserted-by": "crossref",
+        "first-page": "241",
+        "DOI": "10.1191/0143624404bt105oa",
+        "article-title": "Two-objective on-line optimisation of supervisory control strategy",
+        "volume": "25",
+        "author": "Nassif",
+        "year": "2004",
+        "journal-title": "Building Service Engineering"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0355",
+        "series-title": "Processing NAFIPS ‘04. IEEE Annual Meeting of the Fuzzy Information, vol. 1(1)",
+        "first-page": "51",
+        "article-title": "Evolutionary algorithms for multi-objective optimisation in HVAC system control strategy",
+        "author": "Nassif",
+        "year": "2004"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0360",
+        "doi-asserted-by": "crossref",
+        "first-page": "459",
+        "DOI": "10.1080/10789669.2005.10391148",
+        "article-title": "Optimisation of HVAC control system strategy using two-objective genetic algorithm",
+        "volume": "11",
+        "author": "Nassif",
+        "year": "2005",
+        "journal-title": "HVAC&R Research"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0365",
+        "series-title": "Proceedings of the 9th IBPSA Conference, Building Simulation 2005",
+        "article-title": "Simulation of a model-based optimal controller for heating systems under realistic hypothesis",
+        "author": "Kummert",
+        "year": "2005"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0370",
+        "first-page": "58",
+        "volume": "34",
+        "author": "Mossolly",
+        "year": "2009",
+        "journal-title": "Optimal control strategy for a multi-zone air conditioning system using a genetic algorithm"
+      },
+      {
+        "issue": "2–3",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0375",
+        "doi-asserted-by": "crossref",
+        "first-page": "599",
+        "DOI": "10.1016/j.enbuild.2010.10.028",
+        "article-title": "Optimal chiller loading by differential evolution algorithm for reducing energy consumption",
+        "volume": "43",
+        "author": "Lee",
+        "year": "2011",
+        "journal-title": "Energy and Buildings"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0380",
+        "doi-asserted-by": "crossref",
+        "first-page": "313",
+        "DOI": "10.1021/ie00001a042",
+        "article-title": "An MINLP process synthesizer for sequential modular simulator",
+        "volume": "31",
+        "author": "Diwekar",
+        "year": "1992",
+        "journal-title": "Industrial & Engineering Chemical Research"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0385",
+        "doi-asserted-by": "crossref",
+        "first-page": "33",
+        "DOI": "10.1080/10789669.2008.10390992",
+        "article-title": "Evolutionary synthesis of HVAC system configurations: algorithm development (RP-1049)",
+        "volume": "14",
+        "author": "Wright",
+        "year": "2008",
+        "journal-title": "HVAC&R Research"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0390",
+        "doi-asserted-by": "crossref",
+        "first-page": "189",
+        "DOI": "10.1080/10789669.2005.10391134",
+        "article-title": "Experimental analysis of model-based predictive optimal control for active and passive building thermal storage inventory",
+        "volume": "11",
+        "author": "Henze",
+        "year": "2005",
+        "journal-title": "HVAC&R Research"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0395",
+        "unstructured": "G. Henze, M. Krarti, U.S. Department of Energy Cooperative Agreement DE-FC-26-01NT41255, Predictive Optimal Control of Active and Passive Building Thermal Storage Inventory, Final Report. U.S. Department of Energy Information Bridge. http://www.osti.gov/servlets/purl/894509-GH9Mqf/, 2005."
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0400",
+        "series-title": "Proceedings of the 9th International Building Performance Simulation Association (IBPSA) Conference 2005",
+        "article-title": "Calibration of building models for supervisory control of commercial buildings",
+        "author": "Liu",
+        "year": "2005"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0405",
+        "doi-asserted-by": "crossref",
+        "first-page": "142",
+        "DOI": "10.1016/j.enbuild.2005.06.002",
+        "article-title": "Experimental analysis of simulated reinforcement learning control for active and passive building thermal storage inventory. Part 1: theoretical foundation",
+        "volume": "38",
+        "author": "Liu",
+        "year": "2006",
+        "journal-title": "Energy and Buildings"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0410",
+        "series-title": "Proceedings of the 8th International IBPSA Conference",
+        "first-page": "1401",
+        "article-title": "Comparison of a generalized pattern search and a genetic algorithm optimisation method",
+        "author": "Wetter",
+        "year": "2003"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0415",
+        "series-title": "Proceedings of the 7th IBPSA Conference: Building Simulation",
+        "first-page": "1401",
+        "article-title": "The robustness of genetic algorithms in solving unconstrained building optimisation problems",
+        "author": "Wright",
+        "year": "2005"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0420",
+        "unstructured": "R. Pardo, et al. Building envelope optimisation. 12èmes Journées Internationales de Thermique, Tanger, Maroc, 2005."
+      },
+      {
+        "issue": "12",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0425",
+        "doi-asserted-by": "crossref",
+        "first-page": "2022",
+        "DOI": "10.1016/j.buildenv.2007.12.003",
+        "article-title": "Minimisation of life cycle cost of a detached house using combined simulation and optimisation",
+        "volume": "43",
+        "author": "Hasan",
+        "year": "2008",
+        "journal-title": "Building and Environment"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0430",
+        "series-title": "IBPSA 2009, 121th International IBPSA Conference",
+        "article-title": "A genetic algorithm for optimisation of building envelope and HVAC system parameters",
+        "author": "Palonen",
+        "year": "2009"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0435",
+        "series-title": "IBPSA: 11th International Building Performance Simulation Association Conference",
+        "article-title": "Combination of optimisation algorithms for a multi-objective building design problem",
+        "author": "Hamdy",
+        "year": "2009"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0440",
+        "doi-asserted-by": "crossref",
+        "first-page": "120",
+        "DOI": "10.1093/ijlct/ctq010",
+        "article-title": "Optimum design of a house and its HVAC systems using simulation-based optimisation",
+        "volume": "5",
+        "author": "Hamdy",
+        "year": "2010",
+        "journal-title": "International Journal of Low-Carbon Technologies"
+      },
+      {
+        "issue": "12",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0445",
+        "doi-asserted-by": "crossref",
+        "first-page": "3373",
+        "DOI": "10.1016/j.enbuild.2011.08.031",
+        "article-title": "Optimisation of envelope and HVAC systems selection for residential buildings",
+        "volume": "43",
+        "author": "Bichiou",
+        "year": "2011",
+        "journal-title": "Energy and Buildings"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0450",
+        "series-title": "Proc. of the 11th IBPSA Conference",
+        "article-title": "A genetic algorithm for optimisation of building envelope and HVAC system parameters",
+        "author": "Palonen",
+        "year": "2001"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0455",
+        "series-title": "Proceedings of the 7th IBPSA Conference: Building Simulation, vol. 2",
+        "first-page": "865",
+        "article-title": "The simultaneous optimisation of building fabric construction, HVAC system size, and the plant control strategy",
+        "author": "Wright",
+        "year": "2001"
+      },
+      {
+        "issue": "9",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0460",
+        "doi-asserted-by": "crossref",
+        "first-page": "959",
+        "DOI": "10.1016/S0378-7788(02)00071-3",
+        "article-title": "Optimisation of building thermal design and control by multicriterion genetic algorithm",
+        "volume": "34",
+        "author": "Wright",
+        "year": "2002",
+        "journal-title": "Energy & Buildings"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0465",
+        "series-title": "Proc. Building Simulation and Optimisation (BSO12)",
+        "article-title": "Solution analysis in multi-objective optimisation",
+        "author": "Brownlee",
+        "year": "2012"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0470",
+        "doi-asserted-by": "crossref",
+        "first-page": "143",
+        "DOI": "10.1177/1744259107079880",
+        "article-title": "Life cycle optimisation of extremely low energy dwellings",
+        "volume": "31",
+        "author": "Verbeeck",
+        "year": "2007",
+        "journal-title": "Journal of Building Physics"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0475",
+        "doi-asserted-by": "crossref",
+        "first-page": "5483",
+        "DOI": "10.1016/j.energy.2010.05.012",
+        "article-title": "A multi-objective decision model for the improvement of energy efficiency",
+        "volume": "35",
+        "author": "Christina",
+        "year": "2010",
+        "journal-title": "Energy"
+      },
+      {
+        "issue": "12",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0480",
+        "doi-asserted-by": "crossref",
+        "first-page": "5483",
+        "DOI": "10.1016/j.energy.2010.05.012",
+        "article-title": "A multi-objective decision model for the improvement of energy efficiency",
+        "volume": "35",
+        "author": "Diakaki",
+        "year": "2010",
+        "journal-title": "Energy"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0840",
+        "doi-asserted-by": "crossref",
+        "first-page": "189",
+        "DOI": "10.1016/j.enbuild.2012.08.023",
+        "article-title": "A Multi-stage Optimisation Method for Cost-Optimal nearly-Zero-Energy Building Solutions in Line with the EPBD-Recast 2010",
+        "volume": "56",
+        "author": "Hamdy",
+        "year": "2013",
+        "journal-title": "Energy and Buildings"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0845",
+        "unstructured": "M. Hamdy, M. Palonen, A. Hasan. Implementation of Pareto-Archive NSGA-II Algorithms to a Nearly-Zero-Energy Building Optimisation Problem, In: BSO12 IBPSA-England, 10-11 September, Loughborogh University, UK, (2012 181-187)."
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0495",
+        "unstructured": "L. Caldas. An evaluation based generative design system: using adaptation to shape architectural form. PhD Thesis. MIT Press, 2001."
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0500",
+        "unstructured": "T. Nielsen. Optimisation of buildings with respect to energy and indoor environment. PhD Dissertation. Technical University of Denmark, 2002. http://www.byg.dtu.dk/upload/institutter/byg/publications/rapporter/byg-r036.pdf (accessed 22.01.2012)."
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0505",
+        "unstructured": "M. Wetter. PhD Dissertation. University of California at Berkeley, 2004. http://simulationresearch.lbl.gov/wetter/download/mwdiss.pdf (accessed 15.01.2012)."
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0510",
+        "unstructured": "W. Wang. A simulation-based optimisation system for green building design. PhD Thesis. Concordia University, Montreal, Quebec, 2005. http://spectrum.library.concordia.ca/8272/1/NR04054.pdf (accessed 22.01.2011)."
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0515",
+        "unstructured": "F. Pedersen. A method for optimizing the performance of buildings. PhD Dissertation, Technical University of Denmark, 2007. http://www.mek.dtu.dk/Forskning/Publikationer/2008-2001.aspx?lg=showcommon&id=196117 (accessed 22.01.2012)."
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0520",
+        "unstructured": "G. Verbeeck. Optimisation of extremely low energy residential buildings. Ph D Thesis, Department of Civil Engineering, Catholic University of Leuven, Belgium, 2007b. http://bwk.kuleuven.be/bwf/PhDs/PhDVerbeeck (accessed 22.01.2012)."
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0525",
+        "unstructured": "R. Choudhary. A hierarchical design optimisation framework for simulation based architectural design. PhD Dissertation, University of Michigan, USA, 2004."
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0530",
+        "unstructured": "C. Hopfe. Uncertainty and sensitivity analysis in building performance simulation for decision support and design optimisation. PhD Dissertation, Eindhoven University, 2009."
+      },
+      {
+        "issue": "2009",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0535",
+        "doi-asserted-by": "crossref",
+        "first-page": "571",
+        "DOI": "10.1016/j.enbuild.2008.12.004",
+        "article-title": "HVAC system optimisation with CO2 concentration control using genetic algorithms",
+        "volume": "41",
+        "author": "Congradac",
+        "year": "2009",
+        "journal-title": "Energy and Buildings"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0540",
+        "series-title": "Proceedings of the CIB W78-W102: International Conference",
+        "article-title": "Stochastic optimisation based approach for efficient building design",
+        "author": "Talbourdet",
+        "year": "2011"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0850",
+        "doi-asserted-by": "crossref",
+        "first-page": "716",
+        "DOI": "10.1016/j.aei.2012.03.001",
+        "article-title": "Comparative study of multiple criteria decision making methods for building design",
+        "volume": "26",
+        "author": "Mela",
+        "year": "2012",
+        "journal-title": "Advanced Engineering Informatics"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0550",
+        "series-title": "Proceedings of Building Simulation: 12th Conference of International Building Performance Simulation Association",
+        "article-title": "Optimisation of low-energy building design using surrogate models",
+        "author": "Tresidder",
+        "year": "2011"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0555",
+        "doi-asserted-by": "crossref",
+        "first-page": "2055",
+        "DOI": "10.1016/j.enbuild.2011.04.006",
+        "article-title": "Impact of adaptive thermal comfort criteria on building energy use and cooling equipment size using a multi-objective optimisation scheme",
+        "volume": "43",
+        "author": "Hamdy",
+        "year": "2011",
+        "journal-title": "Energy and Buildings"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0560",
+        "series-title": "Proc: Eighth IBPSA Conference: Building Simulation 2003",
+        "article-title": "ArDOT: a tool to optimise environmental design of buildings",
+        "author": "Mourshed",
+        "year": "2003"
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0565",
+        "doi-asserted-by": "crossref",
+        "first-page": "985",
+        "DOI": "10.1016/j.enbuild.2010.01.010",
+        "article-title": "Building energy system optimisations with utilization of waste heat from cogenerations by means of genetic algorithm",
+        "volume": "42",
+        "author": "Kayo",
+        "year": "2010",
+        "journal-title": "Energy and Buildings"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0570",
+        "unstructured": "A. Antoniou, L. Wu-Sheng, Practical Optimisation: Algorithms and Engineering Applications, Springer Science+Business Media, LLC, New York, USA, 2007."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0575",
+        "doi-asserted-by": "crossref",
+        "first-page": "212",
+        "DOI": "10.1145/321062.321069",
+        "article-title": "Direct search solution of numerical and statistical problems",
+        "volume": "8",
+        "author": "Hooke",
+        "year": "1961",
+        "journal-title": "Journal of the ACM"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0580",
+        "series-title": "Proceedings of the 8th Int. Conf. on Adaptive Computing in Design and Manufacture (ACDM)",
+        "first-page": "1",
+        "article-title": "Evaluating optimisation methodologies for future integration in building performance tools",
+        "author": "Emmerich",
+        "year": "2008"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0585",
+        "unstructured": "M. Emmerich, J. Zhou, M. Özdemir. TOP – a toolbox for the optimisation of parameters. Lehrstuhl fuer Systemanalyse, University of Dortmund. http://www.liacs.nl/∼emmerich/topman.pdf, 2003 (accessed 12.06.2012)."
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0590",
+        "series-title": "Proceedings of the 5th Annual Conference on Evolutionary Programming",
+        "first-page": "305",
+        "article-title": "A note on usefulness of geometrical crossover for numerical optimisation problems",
+        "author": "Michalewicz",
+        "year": "1996"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0595",
+        "series-title": "Handbook of Research on Nature Inspired Computing for Economics and Management",
+        "article-title": "Stochastic optimisation algorithms",
+        "author": "Collet",
+        "year": "2006"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0600",
+        "doi-asserted-by": "crossref",
+        "first-page": "1087",
+        "DOI": "10.1063/1.1699114",
+        "article-title": "Equation of State Calculation by Fast Computing Machines",
+        "volume": "21",
+        "author": "Metropolis",
+        "year": "1953",
+        "journal-title": "Journal of Chemical Physics"
+      },
+      {
+        "issue": "4598",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0605",
+        "doi-asserted-by": "crossref",
+        "first-page": "671",
+        "DOI": "10.1126/science.220.4598.671",
+        "article-title": "Optimisation by simulated annealing",
+        "volume": "220",
+        "author": "Kirkpatrick",
+        "year": "1983",
+        "journal-title": "Science"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0610",
+        "doi-asserted-by": "crossref",
+        "first-page": "41",
+        "DOI": "10.1007/BF00940812",
+        "article-title": "Thermodynamical approach to the traveling salesman problem: an efficient simulation algorithm",
+        "volume": "45",
+        "author": "Cerny",
+        "year": "1985",
+        "journal-title": "Journal Optimisation Theory and Application"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0615",
+        "unstructured": "F. Glover, Tabu Search, Kluwer Academic Publishers Norwell, MA, USA (1997) ISBN:079239965X."
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0620",
+        "series-title": "Proceedings of Ecal91 – European Conference on Artificial Life",
+        "first-page": "134",
+        "article-title": "Distributed optimisation by ant colonies",
+        "author": "Colorni",
+        "year": "1991"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0625",
+        "series-title": "IEEE International Conference on Neural Networks, vol. IV",
+        "first-page": "1942",
+        "article-title": "Particle swarm optimisation",
+        "author": "Eberhart",
+        "year": "1995"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0630",
+        "series-title": "Adaptation in Natural and Artificial Systems",
+        "author": "Holland",
+        "year": "1975"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0635",
+        "series-title": "Genetic Algorithms in Search, Optimisation and Machine Learning",
+        "author": "Goldberg",
+        "year": "1989"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0640",
+        "doi-asserted-by": "crossref",
+        "first-page": "182",
+        "DOI": "10.1109/4235.996017",
+        "article-title": "A fast and elitist multiobjective genetic algorithm: NSGA-II IEEE",
+        "volume": "6",
+        "author": "Deb",
+        "year": "2002",
+        "journal-title": "Transactions on Evolutionnary Computation"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0645",
+        "series-title": "2005 International conference on computing in civil engineering (ASCE 2005), vol. 60",
+        "article-title": "Evolving optimized braced steel frameworks for tall buildings using modified pattern",
+        "author": "Baldock",
+        "year": "2005"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0855",
+        "first-page": "627",
+        "article-title": "Multicriteria optimization of paneled building envelopes using ant colony optimization",
+        "author": "Shea",
+        "year": "2006",
+        "journal-title": "Intelligent Computing in Engineering and Architecture"
+      },
+      {
+        "issue": "10",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0655",
+        "doi-asserted-by": "crossref",
+        "first-page": "5935",
+        "DOI": "10.1016/j.energy.2011.08.024",
+        "article-title": "Optimisation of an HVAC system with a strength multi-objective particle-swarm algorithm",
+        "volume": "36",
+        "author": "Kusiak",
+        "year": "2011",
+        "journal-title": "Energy"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0660",
+        "series-title": "An Introduction to Genetic Algorithm",
+        "author": "Mitchell",
+        "year": "1997"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0665",
+        "doi-asserted-by": "crossref",
+        "unstructured": "L. Chambers, The Practical Handbook of Genetic Algorithms, Chapman & Hall/CRC, New York, USA (2001).",
+        "DOI": "10.1201/9781420035568"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0670",
+        "unstructured": "M. Manzan, F. Pinto, O. Saro. Thermal comfort and energy saving optimisation for HVAC systems with night ventilation cooling, pp. 175–180, 2006."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0675",
+        "doi-asserted-by": "crossref",
+        "first-page": "59",
+        "DOI": "10.1016/j.aei.2007.08.012",
+        "article-title": "Generation of energy-efficient architecture solutions applying GENE_ARCH: an evolution-based generative design system",
+        "volume": "22",
+        "author": "Caldas",
+        "year": "2008",
+        "journal-title": "Advanced Engineering Informatics"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0680",
+        "doi-asserted-by": "crossref",
+        "first-page": "739",
+        "DOI": "10.1016/j.buildenv.2009.08.016",
+        "article-title": "Multiobjective optimisation of building design using TRNSYS simulations, genetic algorithms, and artificial neural network",
+        "volume": "45",
+        "author": "Magnier",
+        "year": "2010",
+        "journal-title": "Building and Environment"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0685",
+        "doi-asserted-by": "crossref",
+        "first-page": "173",
+        "DOI": "10.1162/106365600568202",
+        "article-title": "Comparison of multiobjective evolutionary algorithms: empirical results",
+        "volume": "8",
+        "author": "Zitzler",
+        "year": "2000",
+        "journal-title": "Evolutionary Computation"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0690",
+        "series-title": "Building Simulation Proceedings of the 12th Conference of the International Building Performance Simulation Association",
+        "first-page": "1710",
+        "article-title": "Optimizing building designs using a robustness indicator with respect to user behavior",
+        "author": "Hoes",
+        "year": "2011"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0695",
+        "series-title": "Building Simulation 2011: 12th Conference of International Building Performance Simulation Association",
+        "first-page": "2148",
+        "article-title": "Exploring the potential of climate adaptive building shells",
+        "author": "Loonen",
+        "year": "2011"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0700",
+        "unstructured": "M. Wetter. Design Optimisation with GenOpt. Building Energy Simulation User News 21, 2000."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0705",
+        "doi-asserted-by": "crossref",
+        "first-page": "308",
+        "DOI": "10.1093/comjnl/7.4.308",
+        "article-title": "A simplex method for function minimization",
+        "volume": "7",
+        "author": "Nelder",
+        "year": "1965",
+        "journal-title": "The Computer Journal"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0710",
+        "doi-asserted-by": "crossref",
+        "first-page": "308",
+        "DOI": "10.1093/comjnl/7.4.308",
+        "article-title": "Simplex method for function minimization",
+        "volume": "7",
+        "author": "Nelder",
+        "year": "1965",
+        "journal-title": "The Computer Journal"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0715",
+        "unstructured": "M. Wetter. GenOpt® Generic Optimisation Program—User Manual Version 3.0.0. Simulation Research Group Building Technologies Department Environmental Energy Technologies Division Lawrence Berkeley National Laboratory Berkeley, CA, USA, 2009."
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0720",
+        "unstructured": "B. Coffey. A development and testing framework for simulation-based supervisory control with application to optimal zone temperature ramping demand response using a modified genetic algorithm. Master Thesis. Concordia University, Quebec, Canada, 2008."
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0725",
+        "doi-asserted-by": "crossref",
+        "first-page": "1084",
+        "DOI": "10.1016/j.enbuild.2010.01.022",
+        "article-title": "A software framework for model predictive control with GenOpt",
+        "volume": "42",
+        "author": "Coffey",
+        "year": "2010",
+        "journal-title": "Energy and Buildings"
+      },
+      {
+        "issue": "2–3",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0730",
+        "doi-asserted-by": "crossref",
+        "first-page": "621",
+        "DOI": "10.1016/j.enbuild.2010.11.003",
+        "article-title": "Data fusion heat pump performance estimation",
+        "volume": "43",
+        "author": "Djuric",
+        "year": "2011",
+        "journal-title": "Energy and Buildings"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0735",
+        "doi-asserted-by": "crossref",
+        "first-page": "471",
+        "DOI": "10.1016/j.enbuild.2006.08.009",
+        "article-title": "Optimisation of energy consumption in buildings with hydronic heating systems considering thermal comfort by use of computer-based tools",
+        "volume": "39",
+        "author": "Djuric",
+        "year": "2007",
+        "journal-title": "Energy and Buildings"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0740",
+        "series-title": "Fourth National Conference of IBPSA-USA",
+        "article-title": "Optimizing building energy simulation models in the face of uncertainty",
+        "author": "Jacob",
+        "year": "2010"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0745",
+        "series-title": "Using GenOpt with TRNSYS16 and Type 56",
+        "author": "Kummert",
+        "year": "2007"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0750",
+        "series-title": "Proceedings of eSim Conference",
+        "article-title": "Multiobjective optimisation of building design using genetic algorithm and artificial neural network",
+        "author": "Magnier",
+        "year": "2008"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0755",
+        "first-page": "739",
+        "article-title": "Multiobjective optimisation of building design using TRNSYS simulations, genetic algorithm",
+        "volume": "45",
+        "author": "Magnier",
+        "year": "2009",
+        "journal-title": "Artificial Neural Network, Building and Environment"
+      },
+      {
+        "issue": "8",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0760",
+        "doi-asserted-by": "crossref",
+        "first-page": "939",
+        "DOI": "10.1016/j.buildenv.2004.01.018",
+        "article-title": "Real-time optimisation of a double-skin façade based on lumped modeling and occupant preference",
+        "volume": "39",
+        "author": "Park",
+        "year": "2004",
+        "journal-title": "Building and Environment"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0765",
+        "doi-asserted-by": "crossref",
+        "first-page": "173",
+        "DOI": "10.1016/j.ijthermalsci.2003.06.001",
+        "article-title": "Evaluation of optimal control for active and passive building thermal storage",
+        "volume": "43",
+        "author": "Henze",
+        "year": "2004",
+        "journal-title": "International Journal of Thermal Sciences"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0770",
+        "doi-asserted-by": "crossref",
+        "first-page": "1659",
+        "DOI": "10.1016/j.energy.2010.12.064",
+        "article-title": "Design optimisation of insulation usage and space conditioning load using energy simulation and genetic algorithm",
+        "volume": "36",
+        "author": "Xing",
+        "year": "2011",
+        "journal-title": "Energy"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0775",
+        "unstructured": "P. Ellis, B. Griffith, et al. (2006). Automated multivariate optimisation tool for energy analysis, Citeseer."
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0780",
+        "series-title": "1st International High Performance Buildings Conference",
+        "article-title": "Evaluating energy performance and improvement potential of china office buildings in the hot humid climate against U.S. reference buildings",
+        "author": "Herrmann",
+        "year": "2010"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0785",
+        "series-title": "ACEEE Summer Study",
+        "article-title": "Commercial building design pathways using optimisation analysis",
+        "author": "Long",
+        "year": "2010"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0790",
+        "series-title": "Proceedings of the Solar 2004. American Solar Energy Society, vol. 13",
+        "first-page": "14",
+        "article-title": "A sequential search technique for identifying optimal building designs on the path to zero net energy",
+        "author": "Christensen",
+        "year": "2004"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0795",
+        "unstructured": "DOE, U.S., 2010. Building America Homepage. http://www.eere.energy.gov/buildings/building_america/ (accessed 1.06.2012)."
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0800",
+        "unstructured": "Winkelmann, et al. DOE-2 supplement, Version 2.1E. Technical Report LBL-34947, Lawrence Berkeley National Laboratory, Berkeley, CA, USA (1993)."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0805",
+        "first-page": "623",
+        "article-title": "TRNSYS – a transient simulation program",
+        "volume": "82",
+        "author": "Klein",
+        "year": "1976",
+        "journal-title": "ASHRAE Transactions"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0810",
+        "unstructured": "R. Anderson, C. Christensen, S. Horowitz. Program design analysis using BEopt (building energy optimisation) software: defining a technology pathway leading to new homes with zero peak cooling demand, ACEEE summer study on energy efficiency in buildings. http://www.eceee.org/conference_proceedings/ACEEE_buildings/2006/Panel_2/p2_3/paper, 2006 (accessed 1.06.2012)."
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0815",
+        "unstructured": "T. Givler. Evaluating optimal building designs for Habitat for Humanity using BEopt (Building Energy Optimisation) software. MSc Thesis. University of Colorado, Boulder, 2006, 161 pp."
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0820",
+        "doi-asserted-by": "crossref",
+        "unstructured": "B. Polly, M. Gestwick, M. Bianchi, R. Anderson, S. Horowitz, C. Christensen, R. Judkoff. A method for determining optimal residential energy efficiency retrofit packages national renewable energy laboratory, 2011.",
+        "DOI": "10.2172/1015501"
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0825",
+        "unstructured": "S. Attia. Optimisation for zero energy building design: interviews with twenty eight international experts, Architecture et Climat, Louvain La Neuve, Université catholique de Louvain. http://www-climat.arch.ucl.ac.be/s_attia/Attia_Optimisation%20Interviews_2012.pdf, 2012 (accessed 1.06.2012)."
+      },
+      {
+        "key": "10.1016/j.enbuild.2013.01.016_bib0830",
+        "series-title": "Enumerating a Diverse Set of Building Designs Using Discrete Optimisation",
+        "author": "Hale",
+        "year": "2010"
+      },
+      {
+        "issue": "10",
+        "key": "10.1016/j.enbuild.2013.01.016_bib0835",
+        "doi-asserted-by": "crossref",
+        "first-page": "27982805",
+        "DOI": "10.1016/j.enbuild.2011.06.034",
+        "article-title": "Uncertainty analysis in building performance simulation for design support",
+        "volume": "43",
+        "author": "Hopfe",
+        "year": "2011",
+        "journal-title": "Energy and Buildings"
+      }
+    ],
+    "container-title": [
+      "Energy and Buildings"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0378778813000339?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0378778813000339?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          8
+        ]
+      ],
+      "date-time": "2025-10-08T13:35:57Z",
+      "timestamp": 1759930557000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0378778813000339"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2013,
+          5
+        ]
+      ]
+    },
+    "references-count": 167,
+    "alternative-id": [
+      "S0378778813000339"
+    ],
+    "URL": "https://doi.org/10.1016/j.enbuild.2013.01.016",
+    "relation": {},
+    "ISSN": [
+      "0378-7788"
+    ],
+    "issn-type": [
+      {
+        "value": "0378-7788",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2013,
+          5
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Assessing gaps and needs for integrating building performance optimization tools in net zero energy buildings design",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Energy and Buildings",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.enbuild.2013.01.016",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "Copyright © 2013 Elsevier B.V. Published by Elsevier B.V. All rights reserved.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "run_id": "baseline_20260909",
+  "stage": "geometry_audit",
+  "timestamp_utc": "2026-09-09T16:23:03+00:00",
+  "git_commit": "NOT_A_GIT_CHECKOUT",
+  "config_path": "E:\\AI项目\\light-equity-soict-2026\\configs\\research.yaml",
+  "config_sha256": "b15d4644ed7d0b6806c2c9395836fbec25da803c9aa8ff74a8fffcd3bf009c8f",
+  "inputs": [
+    {
+      "path": "E:\\AI项目\\谢研组\\algorithm_ready_lakeside_v2\\buildings.csv",
+      "exists": true,
+      "sha256": "230b04833985dfdf70a9620406ac25fbea6f71aaa0a37d019927cc1d04d62b33"
+    },
+    {
+      "path": "E:\\AI项目\\谢研组\\沿湖休闲片区场地.obj",
+      "exists": true,
+      "sha256": "3094f7f47e15ed7c075d6dbc1a50fba993cbb69bc3c3e5e0cabab59d98f65a37"
+    },
+    {
+      "path": "E:\\AI项目\\谢研组\\沿湖休闲片区标号(新）.dxf",
+      "exists": true,
+      "sha256": "26cfd9867f9e96075e10478a15bd19734d8b6e099f559e66e166d98648aed877"
+    },
+    {
+      "path": "E:\\AI项目\\谢研组\\沿湖休闲片区场地说明.dxf",
+      "exists": true,
+      "sha256": "0e41dbd771ed4310d9cdf3f5434557e59ed143055bfb2d01839b5d59aea243c1"
+    },
+    {
+      "path": "E:\\AI项目\\谢研组\\latest_audit\\dxf_footprint_components.csv",
+      "exists": true,
+      "sha256": "e26fd48f647db57ecd606c9df8ab0c467439daf92f20e9fddb5de0c08136757d"
+    }
+  ],
+  "full_audit_status_counts": {
+    "需解释": 24,
+    "通过": 17,
+    "未通过": 4
+  }
+}

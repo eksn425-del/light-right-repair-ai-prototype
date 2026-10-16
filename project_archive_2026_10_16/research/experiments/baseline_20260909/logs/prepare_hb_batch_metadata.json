@@ -1,0 +1,27 @@
+{
+  "run_id": "baseline_20260909",
+  "stage": "prepare_hb_batch",
+  "timestamp_utc": "2026-09-09T16:25:01+00:00",
+  "git_commit": "NOT_A_GIT_CHECKOUT",
+  "config_path": "E:\\AI项目\\light-equity-soict-2026\\configs\\research.yaml",
+  "config_sha256": "b15d4644ed7d0b6806c2c9395836fbec25da803c9aa8ff74a8fffcd3bf009c8f",
+  "inputs": [
+    {
+      "path": "E:\\AI项目\\light-equity-soict-2026\\experiments\\baseline_20260909\\canonical_site_v2\\canonical_buildings.csv",
+      "exists": true,
+      "sha256": "e50a664e074ac7be5bb7c5b1561e21f35703ccd573075c29abcf29d181ce69e0"
+    },
+    {
+      "path": "E:\\AI项目\\light-equity-soict-2026\\experiments\\baseline_20260909\\canonical_site_v2\\canonical_site_v2.geojson",
+      "exists": true,
+      "sha256": "97021f73c5e0bf831d9696a4b00a967605ec90a329f2bcba828b501ceff2d1b8"
+    },
+    {
+      "path": "E:\\AI项目\\谢研组\\algorithm_ready_lakeside_v2\\streets.csv",
+      "exists": true,
+      "sha256": "69ddcc5e285a376993467bb4948cc8f6d6e4c1db8a7587a9f6897c3b3d3016b7"
+    }
+  ],
+  "scenario_count": 7,
+  "sensor_count": 2031
+}

@@ -1,0 +1,17 @@
+{
+  "source_file": "E:\\AI项目\\NEW-CAD地形文件_.dxf",
+  "dxf_version": "AC1024",
+  "modelspace_entity_count": 38092,
+  "layer_count": 6,
+  "text_count": 10097,
+  "closed_lwpolyline_count": 2982,
+  "overall_bounds": {
+    "x_min": 447100.371,
+    "x_max": 449281.597,
+    "y_min": 2720774.953,
+    "y_max": 2723514.746,
+    "width_m": 2181.226,
+    "height_m": 2739.793
+  },
+  "important_note": "Most entities are on one layer in this CAD file, so algorithm-ready buildings/streets/site_zones still need human verification."
+}

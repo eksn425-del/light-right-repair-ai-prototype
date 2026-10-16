@@ -1,0 +1,11 @@
+{
+  "selected_candidate_id": "candidate_01",
+  "baseline_dark_zone_ratio": 0.1449,
+  "algorithm_dark_zone_ratio": 0.0,
+  "algorithm_light_equity_improvement": 1.0,
+  "outputs": {
+    "before_after_metrics": "E:\\AI项目\\light_equity_project\\outputs\\lakeside_leisure_ready_fulltest\\final_report\\before_after_metrics.csv",
+    "comparison_chart": "E:\\AI项目\\light_equity_project\\outputs\\lakeside_leisure_ready_fulltest\\final_report\\comparison_chart.png"
+  },
+  "notes": "Manual design values are placeholders until the architecture team submits a real comparison scheme."
+}

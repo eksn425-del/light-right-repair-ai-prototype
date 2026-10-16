@@ -1,0 +1,7 @@
+zone_id,name,zone_type,x_min,x_max,y_min,y_max,priority,needs_light_improvement,needs_accessibility_improvement,protected,notes
+DJJ_Z001,村前球场,ball_court,,,,,5,true,true,false,请从CAD或SU中填写包围盒坐标
+DJJ_Z002,主要道路边侧整治段,road_edge,,,,,5,true,true,false,标出最拥挤或最需要人车分流的一段
+DJJ_Z003,停车规整区,parking,,,,,4,false,true,false,标出机动车或非机动车停车混乱区域
+DJJ_Z004,旧公社周边节点,community_node,,,,,4,true,true,false,可作为口袋广场或社区节点
+DJJ_Z005,房前屋后整治片段,residential_edge,,,,,3,true,true,false,标出居民日常使用最强的边界
+

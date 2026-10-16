@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 580">
+  <rect width="1200" height="580" fill="#f7f6ef"/>
+  <text x="60" y="70" font-family="Microsoft YaHei, sans-serif" font-size="34" font-weight="800" fill="#18201d">算法A基线诊断核心指标</text>
+  <g font-family="Microsoft YaHei, sans-serif">
+    <line x1="110" y1="455" x2="1060" y2="455" stroke="#c9d0c8" stroke-width="3"/>
+    <rect x="175" y="255" width="160" height="200" fill="#087f96"/><text x="185" y="230" font-size="34" font-weight="800" fill="#18201d">6.422h</text><text x="170" y="500" font-size="22" fill="#65716b">平均采光小时</text>
+    <rect x="505" y="180" width="160" height="275" fill="#be5776"/><text x="505" y="155" font-size="34" font-weight="800" fill="#18201d">17.55%</text><text x="520" y="500" font-size="22" fill="#65716b">暗区比例</text>
+    <rect x="835" y="85" width="160" height="370" fill="#b78a25"/><text x="870" y="60" font-size="34" font-weight="800" fill="#18201d">86个</text><text x="850" y="500" font-size="22" fill="#65716b">暗区网格数</text>
+  </g>
+</svg>

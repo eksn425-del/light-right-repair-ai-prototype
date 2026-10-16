@@ -1,0 +1,99 @@
+{
+  "source_docx": "E:\\AI项目\\中文导师审阅定稿_工作包_2026_06_20\\data_raw\\光权修复论文_EI会议_最终排版版.docx",
+  "paragraph_count_nonempty": 124,
+  "table_count": 11,
+  "tables": [
+    {
+      "table_index": 1,
+      "row_count": 6,
+      "column_count": 3
+    },
+    {
+      "table_index": 2,
+      "row_count": 8,
+      "column_count": 3
+    },
+    {
+      "table_index": 3,
+      "row_count": 5,
+      "column_count": 5
+    },
+    {
+      "table_index": 4,
+      "row_count": 13,
+      "column_count": 1
+    },
+    {
+      "table_index": 5,
+      "row_count": 12,
+      "column_count": 1
+    },
+    {
+      "table_index": 6,
+      "row_count": 11,
+      "column_count": 1
+    },
+    {
+      "table_index": 7,
+      "row_count": 3,
+      "column_count": 5
+    },
+    {
+      "table_index": 8,
+      "row_count": 8,
+      "column_count": 6
+    },
+    {
+      "table_index": 9,
+      "row_count": 4,
+      "column_count": 6
+    },
+    {
+      "table_index": 10,
+      "row_count": 13,
+      "column_count": 2
+    },
+    {
+      "table_index": 11,
+      "row_count": 4,
+      "column_count": 5
+    }
+  ],
+  "image_count": 12,
+  "media_files": [
+    "word/media/",
+    "word/media/88d6092c1449345fd078ccaef2811e8304d5d546.png",
+    "word/media/d94e7e4ea7418075f75b61c32ee5e2d13d4472c2.png",
+    "word/media/c23f836f8313eb7400a6c93b9e068868053dfd4f.png",
+    "word/media/64bd412d68e915803a5f727fc30261719bcd901d.png",
+    "word/media/3e7a6aaac1522d888418ed1238c725f5687909fb.png",
+    "word/media/f0b1c3979036c849e5075f992c971e2f3f6aa32b.png",
+    "word/media/6d67ac74239fa8c6e402fecfc39391bd1fe40286.png",
+    "word/media/90105076622e4f6c638acabab52b488a42daa2fa.png",
+    "word/media/f520d5faeea0fbb2db0792c651c4ff3781aa1098.png",
+    "word/media/88044b503e54a88a31b2283d588f9cc0fadd8267.png",
+    "word/media/b5606c4fdcc67244505631e579b1672b846d4830.png"
+  ],
+  "section_count": 2,
+  "sections": [
+    {
+      "section_index": 1,
+      "page_width_twips": 11906,
+      "page_height_twips": 16838,
+      "left_margin_twips": 1020,
+      "right_margin_twips": 1020,
+      "top_margin_twips": 1360,
+      "bottom_margin_twips": 1360
+    },
+    {
+      "section_index": 2,
+      "page_width_twips": 11906,
+      "page_height_twips": 16838,
+      "left_margin_twips": 1020,
+      "right_margin_twips": 1020,
+      "top_margin_twips": 1360,
+      "bottom_margin_twips": 1360
+    }
+  ],
+  "xml_part_count": 13
+}

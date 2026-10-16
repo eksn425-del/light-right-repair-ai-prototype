@@ -1,0 +1,9 @@
+# Preserve frozen evidence and inventory SHA256 values across Git checkouts.
+project_archive_2026_10_16/** -text
+paper_assets/** -text
+WEB_HANDOFF_FULL.txt -text
+README.md -text
+START_HERE.md -text
+HANDOFF_TO_CHATGPT.md -text
+PROJECT_STATE.json -text
+.gitattributes -text

@@ -1,0 +1,23 @@
+{
+  "run_id": "baseline_20260909_clean",
+  "stage": "analyze_independent_validation",
+  "timestamp_utc": "2026-09-10T07:14:54+00:00",
+  "git_commit": "bca5d8733dd472eca08d0293de0bdcf4b9ee4c9d",
+  "config_path": "E:\\AI项目\\light-equity-soict-2026\\configs\\research.yaml",
+  "config_sha256": "e6c389dcee933658cb198fb720f840711b248bcd0aa3b1f3f389f1f288cfdcda",
+  "inputs": [
+    {
+      "path": "E:\\AI项目\\light-equity-soict-2026\\experiments\\baseline_20260909_clean\\independent_validation\\VALIDATION_SAMPLE_FROZEN.csv",
+      "exists": true,
+      "sha256": "ad4abb9b89a263edaecc2cb3553f7832ce0ccb460521ba218e0083e05bcb46b2"
+    },
+    {
+      "path": "E:\\AI项目\\light-equity-soict-2026\\experiments\\baseline_20260909_clean\\results\\independent_validation_results.csv",
+      "exists": true,
+      "sha256": "c4771d763f9d969c274861efd2a442d2b98f67387a1df43f1cdae6ae5070bd08"
+    }
+  ],
+  "sample_size": 20,
+  "spearman_rho": 0.997668088547906,
+  "pearson_r": 0.9996232509897169
+}

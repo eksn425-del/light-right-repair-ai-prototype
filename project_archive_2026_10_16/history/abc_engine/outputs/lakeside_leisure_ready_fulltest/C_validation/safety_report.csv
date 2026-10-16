@@ -1,0 +1,4 @@
+candidate_id,safety_score,accessible_route_ratio,blocked_path_count,slope_violation_count,width_violation_count,step_violation_count,guardrail_violation_count,passed,notes
+candidate_01,100.0,1.0,0,0,0,0,0,True,passes simplified checks
+candidate_03,100.0,1.0,0,0,0,0,0,True,passes simplified checks
+candidate_02,100.0,1.0,0,0,0,0,0,True,guardrail_detail_required

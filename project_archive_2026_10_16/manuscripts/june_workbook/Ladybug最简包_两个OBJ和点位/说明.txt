@@ -1,0 +1,7 @@
+﻿给组员：
+
+1. 先导入 01_baseline_original_full_site.obj，跑 Ladybug。
+2. 再导入 02_algorithm_after_full_site_only_C6_C33_changed.obj，跑同样设置的 Ladybug。
+3. 点位用 P01_P20_sampling_points.csv。
+4. 点位放地面上方 0.2m，不是屋顶。
+5. 两次设置保持一致：厦门、冬至日、8:00-16:00，不移动/缩放/旋转模型。

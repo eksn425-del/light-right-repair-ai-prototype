@@ -1,0 +1,7 @@
+item_id,task,deliverable,minimum_standard,owner,notes
+LH_T01,确认片区边界,圈出沿湖休闲片区研究范围,CAD截图或总图标注一张,,边界必须能对应坐标
+LH_T02,标出旧菜市场与闲置公房,填写site_zones.csv和buildings.csv,至少2类可活化建筑/场地,,注明是否可动
+LH_T03,标出滨湖界面,填写site_zones.csv,至少1条waterfront区域,,注明是否需要护栏
+LH_T04,整理慢行与停车冲突,填写streets.csv和site_zones.csv,至少3条路径或停车冲突点,,关注人车分流
+LH_T05,记录景观和公共活动节点,填写nodes.csv,不少于5个节点,,湖边入口/眺望点/休憩点/空地
+

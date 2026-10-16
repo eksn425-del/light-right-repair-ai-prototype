@@ -1,0 +1,29 @@
+{
+  "run_id": "baseline_20260909_clean",
+  "stage": "final_candidate_judgement",
+  "timestamp_utc": "2026-09-09T18:04:49+00:00",
+  "git_commit": "NOT_A_GIT_CHECKOUT",
+  "config_path": "E:\\AI项目\\light-equity-soict-2026\\configs\\research.yaml",
+  "config_sha256": "b15d4644ed7d0b6806c2c9395836fbec25da803c9aa8ff74a8fffcd3bf009c8f",
+  "inputs": [
+    {
+      "path": "E:\\AI项目\\light-equity-soict-2026\\experiments\\baseline_20260909_clean\\results_csv\\132_HB_Radiance已复核候选排名与Pareto.csv",
+      "exists": true,
+      "sha256": "e289f197e335d1c1a00a3e450deef0097ea14cfb583f5e814d38f68725a644a8"
+    },
+    {
+      "path": "E:\\AI项目\\light-equity-soict-2026\\experiments\\baseline_20260909_clean\\results_csv\\131_HB_Radiance合并候选汇总结果.csv",
+      "exists": true,
+      "sha256": "0d55e3016c1fb37ac3cd024bbfb4a7ee3bb479aaf58676a20ba742081aca5c53"
+    }
+  ],
+  "candidate_count": 23,
+  "priority_pairs": [
+    "C9,C15",
+    "C9,C13"
+  ],
+  "review_pairs": [
+    "C9,C24",
+    "C13,C24"
+  ]
+}

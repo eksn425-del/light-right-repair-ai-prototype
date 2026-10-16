@@ -1,0 +1,4 @@
+﻿zone_id,name,zone_type,x_min,x_max,y_min,y_max,priority,needs_light_improvement,needs_accessibility_improvement,protected,notes
+LH_Z001,vacant green land,vacant_land,32.059,132.259,13.676,114.835,5,True,True,False,editable vacant green land; boundary placeholder
+LH_Z002,road layer corridor,main_road_corridor,0.0,354.847,0.0,275.564,5,True,True,False,derived from road layer; represents the middle/main street range
+LH_Z003,kindergarten protected zone C42,protected_public_service,134.209,166.317,90.516,116.631,5,False,True,True,C42 kindergarten fixed/non-movable

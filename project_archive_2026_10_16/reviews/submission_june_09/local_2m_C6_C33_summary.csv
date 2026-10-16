@@ -1,0 +1,2 @@
+﻿grid_size_m,scope,grid_count,baseline_average_sunlight_hours,post_average_sunlight_hours,average_gain_hours,baseline_dark_zone_ratio,post_dark_zone_ratio,dark_zone_improvement_ratio,dark_to_light_grid_count,max_point_gain_hours,intervention_volume_m3,changed_buildings
+2.0,"local 18m buffer around C6 and C33, excluding points inside building footprints",1609,5.555,5.801,0.246,0.1958,0.1945,0.0063,2,4.0,28.125,C6;C33

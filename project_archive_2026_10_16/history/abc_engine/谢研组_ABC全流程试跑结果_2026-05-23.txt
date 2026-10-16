@@ -1,0 +1,210 @@
+谢研组“沿湖休闲片区”ABC 全流程试跑结果
+生成时间：2026-05-23
+
+一、试跑目的
+
+本次不是最终论文精算，而是验证谢研组沿湖休闲片区数据是否已经能完整进入算法A/B/C工程流程。
+
+使用数据包：
+
+E:/AI项目/light_equity_project/data/real_guankou/lakeside_leisure_ready
+
+输出目录：
+
+E:/AI项目/light_equity_project/outputs/lakeside_leisure_ready_fulltest
+
+二、试跑配置
+
+为保证真实数据能在当前电脑上快速跑通，本次使用粗网格工程测试参数：
+
+- grid_size_m = 8.0
+- shadow_ray_step_m = 2.0
+- 厦门冬至日 8:00-16:00
+- 每 1 小时采样一次
+
+说明：
+
+8m 网格适合流程测试，不适合作为最终精确日照结论。后续最终版可以再改回更细网格，例如 4m 或 2m。
+
+三、算法A：诊断层结果
+
+算法A已成功输出：
+
+- sunlight_hours.csv
+- dark_zones.csv
+- gap_candidates.csv
+- zone_diagnosis.csv
+- heatmap.png
+- A_summary.json
+
+核心指标：
+
+- 地面网格点数量：276
+- 暗区网格数量：40
+- 暗区比例：0.1449
+- 平均采光小时数：6.638h
+- 最差暗区位置：x = 162.0, y = 162.0
+- 最差暗区采光小时数：0.0h
+
+分区诊断：
+
+1. road layer corridor
+   - grid_count = 270
+   - average_sunlight_hours = 6.593
+   - dark_zone_ratio = 0.1481
+
+2. vacant green land
+   - grid_count = 22
+   - average_sunlight_hours = 8.636
+   - dark_zone_ratio = 0.0
+
+3. kindergarten protected zone C42
+   - grid_count = 0
+   - 原因：C42 是建筑本体/保护建筑，地面网格不会落在建筑内部，因此该区没有可分析地面点。
+
+判断：
+
+算法A能够正常读取沿湖片区建筑、道路和保护区数据，热力图也能正常生成。
+
+四、算法B：候选方案结果
+
+算法B成功生成 3 个候选方案：
+
+1. candidate_01
+   - total_score = 9.582
+   - estimated_light_gain = 13.5
+   - intervention_volume = 48.975
+   - protected_zone_penalty = 0.0
+   - number_of_interventions = 3
+
+   干预内容：
+   - subtract C33
+   - subtract C35
+   - reorganize zone:LH_Z001
+
+2. candidate_03
+   - total_score = 8.638
+   - estimated_light_gain = 12.326
+   - intervention_volume = 46.095
+   - protected_zone_penalty = 0.0
+
+3. candidate_02
+   - total_score = 7.586
+   - estimated_light_gain = 13.101
+   - intervention_volume = 57.855
+   - protected_zone_penalty = 0.0
+
+重要检查：
+
+- 本轮候选方案没有对 C42 进行干预；
+- protected_zone_penalty 全部为 0；
+- C42 幼儿园不可动约束在本次试跑中没有被破坏。
+
+判断：
+
+算法B可以基于真实沿湖片区数据生成候选方案。当前方案仍是简化框体/参考体块，不是最终建筑设计方案。
+
+五、算法C：验证层结果
+
+算法C已成功输出：
+
+- safety_report.csv
+- safe_routes.csv
+- final_recommendation.json
+- C_summary.json
+
+验证结果：
+
+- 3 个候选方案全部通过简化安全验证；
+- 最终推荐方案：candidate_01；
+- candidate_01 safety_score = 100.0；
+- candidate_01 accessible_route_ratio = 1.0；
+- candidate_01 blocked_path_count = 0；
+- candidate_01 notes = passes simplified checks。
+
+风险提示：
+
+- candidate_02 出现 guardrail_detail_required；
+- 这说明如果后续方案靠近滨水或有高差，仍需要补护栏细节。
+
+判断：
+
+算法C流程正常，能读取 streets.csv、nodes.csv、accessibility_rules.yaml，并输出推荐方案。
+
+六、最终汇总图表
+
+final_report 已成功输出：
+
+- before_after_metrics.csv
+- comparison_chart.png
+- final_summary.json
+
+当前对比指标：
+
+1. baseline
+   - average_sunlight_hours = 6.638
+   - dark_zone_ratio = 0.1449
+   - accessibility_coverage = 0.68
+   - safety_score = 62
+
+2. manual_design
+   - 当前是占位值
+   - 后续需要建筑组提交人工方案后替换
+
+3. algorithm_design
+   - average_sunlight_hours = 8.258
+   - dark_zone_ratio = 0.0
+   - intervention_volume = 48.975
+   - accessibility_coverage = 1.0
+   - safety_score = 100.0
+
+注意：
+
+algorithm_design 的改造后指标是框架版估算结果，用于方法展示和流程验证，不是最终论文实测结论。
+
+七、输出文件位置
+
+算法A：
+E:/AI项目/light_equity_project/outputs/lakeside_leisure_ready_fulltest/A_diagnosis
+
+算法B：
+E:/AI项目/light_equity_project/outputs/lakeside_leisure_ready_fulltest/B_candidates
+
+算法C：
+E:/AI项目/light_equity_project/outputs/lakeside_leisure_ready_fulltest/C_validation
+
+最终报告：
+E:/AI项目/light_equity_project/outputs/lakeside_leisure_ready_fulltest/final_report
+
+八、总体判断
+
+谢研组沿湖休闲片区已经通过“算法工程通路测试”。
+
+可以确认：
+
+1. 数据能读；
+2. OBJ/CSV/DXF 转换后的建筑表能用；
+3. road 图层转出的道路数据能用；
+4. C42 幼儿园保护约束能进入流程；
+5. 算法A/B/C能连续跑通；
+6. 热力图、候选方案、验证报告、最终图表都能正常生成。
+
+九、仍需谨慎的地方
+
+1. 本次是 8m 粗网格，不是最终精算网格。
+2. road 图层目前更像道路边界/范围，不是标准道路中心线。
+3. nodes.csv 仍有占位性质，真实问题节点还需补。
+4. manual_design 仍是占位值，等待建筑组人工方案。
+5. 算法B候选方案是参考框体，不是最终可施工设计。
+
+十、下一步建议
+
+1. 可以把这轮结果作为“沿湖片区阶段性算法试跑成果”。
+2. 等另一组数据到齐后，按同样方式单独跑一轮。
+3. 最终再做两片区综合对比。
+4. 如果要提高精度，再把沿湖片区用 4m 或 2m 网格重跑。
+5. 后续请建筑组补 road_centerline、真实问题节点、人工方案指标。
+
+一句话结论：
+
+谢研组数据已经能完整跑通 ABC 算法流程；当前结果适合做工程验证和阶段展示，最终论文结论需等更细网格、真实节点和人工方案补齐后再定。

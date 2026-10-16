@@ -1,0 +1,7 @@
+{
+  "average_sunlight_hours": 2.613,
+  "dark_zone_ratio": 0.6071,
+  "dark_grid_count": 221,
+  "total_grid_count": 364,
+  "method": "same 2.5D sunlight model re-run with selected intervention boxes"
+}

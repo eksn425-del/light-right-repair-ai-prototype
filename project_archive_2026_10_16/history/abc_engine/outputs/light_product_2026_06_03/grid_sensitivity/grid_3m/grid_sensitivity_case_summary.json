@@ -1,0 +1,16 @@
+{
+  "grid_size_m": 3.0,
+  "baseline_average_sunlight_hours": 6.509,
+  "baseline_dark_zone_ratio": 0.1609,
+  "baseline_dark_grid_count": 314,
+  "total_grid_count": 1951,
+  "selected_candidate_id": "candidate_01",
+  "post_average_sunlight_hours": 6.509,
+  "post_dark_zone_ratio": 0.1609,
+  "post_dark_grid_count": 314,
+  "dark_zone_improvement_ratio": 0.0,
+  "estimated_light_gain": 9.0,
+  "intervention_volume": 13.44,
+  "changed_building_ids": "C28;C34;C38;C9",
+  "output_dir": "E:\\AI项目\\light_equity_project\\outputs\\light_product_2026_06_03\\grid_sensitivity\\grid_3m"
+}

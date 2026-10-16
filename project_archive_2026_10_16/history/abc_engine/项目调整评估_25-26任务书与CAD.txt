@@ -1,0 +1,130 @@
+项目调整评估：25-26新任务书与CAD文件对ABC算法的影响
+生成日期：2026-05-07
+
+一、结论
+
+需要调整，但不需要推翻重做。
+
+原来的 ABC 三层逻辑仍然成立：
+
+算法 A：诊断
+算法 B：决策
+算法 C：验证
+
+但是新任务书的场地对象已经从“灌口老街一条直街”变化为“灌口沿湖片区”，包含：
+
+1. 大井脚里 1 号片区
+2. 沿湖休闲片区
+3. 村前球场
+4. 主要道路
+5. 停车场地
+6. 房前屋后
+7. 旧公社周边
+8. 旧菜市场
+9. 闲置空地
+10. 镇属闲置公房
+11. 风景湖与滨湖界面
+12. 慢行系统与道路交通系统
+
+所以算法不应该再只理解为“直街采光热力图 + 缝隙改造”，而应该升级为“片区多节点诊断 + 公共空间/慢行/停车/闲置空间的最小干预决策”。
+
+二、CAD文件检查结果
+
+收到的 CAD 文件：
+
+D:/xwechat_files/wxid_704kvjfz6b8e11_5286/msg/file/2026-05/CAD地形文件_t3(3).dwg
+
+检查结果：
+
+1. 文件存在。
+2. 文件大小约 2.4 MB。
+3. 文件头为 AC1018。
+4. 这是 AutoCAD R2004 DWG 文件。
+5. 当前 Python 环境中有 ezdxf，但 ezdxf 只能识别 DWG 格式和版本，不能可靠读取 DWG 几何。
+6. 直接扫描 DWG 二进制只能得到乱码，不能负责任地提取道路、水体、建筑边界和图层。
+
+因此当前不能假装已经从 DWG 中读出了真实图层。正确做法是：
+
+先用 AutoCAD、浩辰 CAD、天正或 ODA File Converter 将 DWG 转成 DXF，然后再把图层内容整理成 CSV。
+
+三、已经对工程做的优化
+
+1. 保留原有 ABC 主流程。
+2. 新增 config/cad_layer_mapping.yaml，用来说明 DWG/DXF 图层应转译到哪些 CSV。
+3. 新增 data/real_guankou/site_zones.csv，作为新任务书片区、节点和问题区域接口。
+4. 更新 data/real_guankou/README_FOR_ARCHITECTURE_TEAM.md，加入 25-26 新任务书范围和 CAD 转译说明。
+5. 更新 README.md，说明项目已从直街框架扩展为沿湖片区兼容框架。
+6. 算法 A 新增 zone_diagnosis.csv 输出：
+   - zone_id
+   - name
+   - zone_type
+   - grid_count
+   - average_sunlight_hours
+   - dark_zone_ratio
+   - priority
+   - diagnosis
+   - notes
+7. 算法 B 新增基于 site_zones.csv 的候选干预生成：
+   - ball_court
+   - community_node
+   - lakeside_leisure
+   - old_market
+   - parking
+   - road_edge
+   - street_corridor
+   - vacant_land
+   - vacant_public_building
+   - waterfront
+
+四、ABC算法的新理解
+
+算法 A 不再只回答：
+
+“哪段街道最暗？”
+
+而应回答：
+
+“沿湖片区里哪些公共空间、慢行节点、闲置空间和街巷段最需要优先修复？”
+
+算法 B 不再只生成：
+
+“削角、加小体块、打通灰空间”
+
+还应兼容：
+
+1. 停车场地规整
+2. 慢行路径重组
+3. 旧菜市场活化
+4. 闲置空地植入 3m×3m×3m 微型装置
+5. 滨湖界面打开
+6. 社区节点的口袋广场化
+
+算法 C 不再只验证：
+
+“老人儿童是否能安全走过候选路径”
+
+还应重点验证：
+
+1. 慢行系统净宽
+2. 人车分流
+3. 停车出入口安全
+4. 滨水护栏
+5. 无障碍连续性
+6. 公共活动节点的安全可达覆盖率
+
+五、下一步真实数据接入建议
+
+建筑组需要优先提交：
+
+1. 从 DWG 转出的 DXF 或 CAD 截图标注
+2. site_zones.csv
+3. buildings.csv
+4. streets.csv
+5. nodes.csv
+6. protected_zones.csv
+
+其中 site_zones.csv 对新任务书最关键，因为它能把“村前球场、旧菜市场、闲置空地、停车场、滨湖界面”等任务对象变成算法可读对象。
+
+六、一句话总结
+
+ABC 框架方向不用变，但研究对象必须从“老街线性剖面”升级为“沿湖片区多节点公共空间系统”。这次优化已经把工程接口从直街兼容扩展到片区兼容，后续只要把 DWG 转成 DXF/CSV，就能继续跑真实灌口沿湖片区的数据。

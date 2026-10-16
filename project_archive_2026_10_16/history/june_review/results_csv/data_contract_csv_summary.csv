@@ -1,0 +1,9 @@
+﻿path,exists,row_count,columns,missing_required_columns
+E:\AI项目\light_equity_project\data\real_guankou\lakeside_leisure_ready\buildings.csv,True,45,"building_id,name,x_min,x_max,y_min,y_max,height_m,floors,movable,protected,facade_type,notes",
+E:\AI项目\light_equity_project\data\real_guankou\lakeside_leisure_ready\streets.csv,True,97,"street_id,start_x,start_y,end_x,end_y,width_m,main_direction,pedestrian_priority,notes",
+E:\AI项目\light_equity_project\data\real_guankou\lakeside_leisure_ready\nodes.csv,True,5,"node_id,x,y,z,node_type,importance,notes",
+E:\AI项目\light_equity_project\data\real_guankou\lakeside_leisure_ready\protected_zones.csv,True,1,"zone_id,x_min,x_max,y_min,y_max,z_min,z_max,reason,notes",
+E:\AI项目\light_equity_project\data\real_guankou\lakeside_leisure_ready\site_zones.csv,True,3,"zone_id,name,zone_type,x_min,x_max,y_min,y_max,priority,needs_light_improvement,needs_accessibility_improvement,protected,notes",
+E:\AI项目\light_equity_project\data\real_guankou\lakeside_leisure_ready\road_segments.csv,True,96,"segment_id,start_x,start_y,end_x,end_y,length_m,direction,source_layer,notes",
+E:\AI项目\light_equity_project\data\real_guankou\lakeside_leisure_ready\buildings_with_audit_columns.csv,True,45,"building_id,name,x_min,x_max,y_min,y_max,height_m,floors,movable,protected,facade_type,notes,geometry_source,obj_group_count,obj_vertex_count,dxf_label_count,dxf_component_count",
+E:\AI项目\light_equity_project\data\real_guankou\lakeside_leisure_ready\intervention_levels_checked.csv,True,45,"building_id,name,height_m,current_function,heritage_value,public_service,vacancy_or_low_efficiency,structure_or_property_risk,intervention_level,allowed_operations,intervention_reason,confidence,field_checker,notes",

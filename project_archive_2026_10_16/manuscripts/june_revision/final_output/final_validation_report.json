@@ -1,0 +1,68 @@
+{
+  "file": "paper_revision_work_2026_06_14\\final_output\\final_review_copy_for_validation.docx",
+  "size": 921182,
+  "paragraphs": 138,
+  "refs": 24,
+  "fig_captions": [],
+  "table_captions": [],
+  "media_count": 11,
+  "image_dims": [
+    {
+      "name": "image1.png",
+      "w": 2640,
+      "h": 880
+    },
+    {
+      "name": "image10.png",
+      "w": 640,
+      "h": 480
+    },
+    {
+      "name": "image11.png",
+      "w": 800,
+      "h": 600
+    },
+    {
+      "name": "image2.png",
+      "w": 2640,
+      "h": 880
+    },
+    {
+      "name": "image3.png",
+      "w": 1800,
+      "h": 1327
+    },
+    {
+      "name": "image4.png",
+      "w": 1800,
+      "h": 1327
+    },
+    {
+      "name": "image5.png",
+      "w": 1800,
+      "h": 1282
+    },
+    {
+      "name": "image6.png",
+      "w": 2415,
+      "h": 1150
+    },
+    {
+      "name": "image7.png",
+      "w": 1620,
+      "h": 1710
+    },
+    {
+      "name": "image8.png",
+      "w": 2070,
+      "h": 1305
+    },
+    {
+      "name": "image9.png",
+      "w": 2645,
+      "h": 1058
+    }
+  ],
+  "has_reproducibility": false,
+  "has_strategy_convergence": false
+}

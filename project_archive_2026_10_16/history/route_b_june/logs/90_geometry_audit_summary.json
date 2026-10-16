@@ -1,0 +1,85 @@
+{
+  "generated_at": "2026-06-20T21:29:46",
+  "dxf_to_canonical_matrix": [
+    [
+      0.001,
+      0.0,
+      -317.89012699999995
+    ],
+    [
+      0.0,
+      0.001,
+      -2426.142342
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "obj_to_canonical_matrix_description": "x'=x_mm/1000-obj_x_offset; y'=-z_mm/1000-obj_y_offset; z'=y_mm/1000",
+  "obj_x_offset_m": 191.792,
+  "obj_y_offset_m": 95.982,
+  "dxf_x_offset_m": 317.89012699999995,
+  "dxf_y_offset_m": 2426.142342,
+  "canonical_axes": "X/Y为水平米制坐标，Z为竖向高度米制坐标。",
+  "critical_building_audit": [
+    {
+      "building_id": "C6",
+      "centroid_distance_m": 18.586354694806836,
+      "CSV height_m": 6.0,
+      "OBJ height_m": 6.0,
+      "height_difference_m": 0.0,
+      "CSV footprint_area": 3503.3887199999986,
+      "OBJ footprint_area": 1463.2762124999995,
+      "canonical footprint_area": 2996.3096678379925,
+      "footprint_overlap_iou": 0.4176745229972653,
+      "是否通过": "未通过",
+      "不通过原因": "关键候选建筑质心偏差超过0.5m；关键候选建筑footprint重叠不足；DXF多组件/复合建筑；OBJ多组聚合；DXF组件存在多编号共享"
+    },
+    {
+      "building_id": "C13",
+      "centroid_distance_m": 0.09315509417939985,
+      "CSV height_m": 6.0,
+      "OBJ height_m": 6.0,
+      "height_difference_m": 0.0,
+      "CSV footprint_area": 429.2346659999995,
+      "OBJ footprint_area": 231.40913300000005,
+      "canonical footprint_area": 429.23441516009046,
+      "footprint_overlap_iou": 0.5390228083462464,
+      "是否通过": "未通过",
+      "不通过原因": "关键候选建筑footprint重叠不足"
+    },
+    {
+      "building_id": "C24",
+      "centroid_distance_m": 1.725984506814009,
+      "CSV height_m": 9.0,
+      "OBJ height_m": 9.0,
+      "height_difference_m": 0.0,
+      "CSV footprint_area": 2269.541759999999,
+      "OBJ footprint_area": 1466.0721655,
+      "canonical footprint_area": 1431.1239065840714,
+      "footprint_overlap_iou": 0.643676128994941,
+      "是否通过": "未通过",
+      "不通过原因": "关键候选建筑质心偏差超过0.5m；关键候选建筑footprint重叠不足；DXF多组件/复合建筑；OBJ多组聚合"
+    },
+    {
+      "building_id": "C33",
+      "centroid_distance_m": 2.5593707642248327,
+      "CSV height_m": 9.0,
+      "OBJ height_m": 9.0,
+      "height_difference_m": 0.0,
+      "CSV footprint_area": 483.80512499999975,
+      "OBJ footprint_area": 256.7570049999999,
+      "canonical footprint_area": 483.8179667152873,
+      "footprint_overlap_iou": 0.5307033591262597,
+      "是否通过": "未通过",
+      "不通过原因": "关键候选建筑质心偏差超过0.5m；关键候选建筑footprint重叠不足；DXF组件存在多编号共享"
+    }
+  ],
+  "full_audit_status_counts": {
+    "需解释": 24,
+    "通过": 17,
+    "未通过": 4
+  }
+}

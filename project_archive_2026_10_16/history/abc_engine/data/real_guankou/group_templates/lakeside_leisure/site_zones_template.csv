@@ -1,0 +1,7 @@
+zone_id,name,zone_type,x_min,x_max,y_min,y_max,priority,needs_light_improvement,needs_accessibility_improvement,protected,notes
+LH_Z001,旧菜市场,old_market,,,,,5,true,true,false,标出旧菜市场建筑或场地包围盒
+LH_Z002,沿湖闲置空地,vacant_land,,,,,5,true,true,false,标出适合公共活动或景观介入的空地
+LH_Z003,镇属闲置公房,vacant_public_building,,,,,4,true,true,false,标出可活化建筑
+LH_Z004,滨湖慢行界面,waterfront,,,,,5,false,true,false,标出临水边界和需要护栏/步道的段落
+LH_Z005,沿湖停车组织区,parking,,,,,4,false,true,false,标出停车与人行冲突区域
+

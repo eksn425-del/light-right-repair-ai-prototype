@@ -1,0 +1,20 @@
+{
+  "candidate_count": 3,
+  "best_candidate_id": "candidate_01",
+  "score_weights": {
+    "light_gain": 1.0,
+    "intervention_volume": 0.16,
+    "new_shadow_penalty": 0.9,
+    "protected_zone_penalty": 2.0
+  },
+  "search_iterations": 220,
+  "intervention_level_table": "E:\\AI项目\\light_equity_project\\data\\real_guankou\\lakeside_leisure_ready\\intervention_levels_checked.csv",
+  "intervention_constraints": {
+    "enabled": true,
+    "input_count": 26,
+    "filtered_count": 0,
+    "remaining_count": 26,
+    "blocked_examples": []
+  },
+  "notes": "Framework version: boolean geometry is represented by reference boxes."
+}

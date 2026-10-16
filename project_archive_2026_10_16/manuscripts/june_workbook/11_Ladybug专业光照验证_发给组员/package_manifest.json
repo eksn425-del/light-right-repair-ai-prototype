@@ -1,0 +1,88 @@
+{
+  "created_at": "2026-06-08 11:30:26",
+  "purpose": "Rhino + Grasshopper + Ladybug external daylight validation package",
+  "notes": [
+    "Use same coordinates and same Ladybug settings for baseline and algorithm-after models.",
+    "This package is for external validation, not for changing the algorithm."
+  ],
+  "files": [
+    {
+      "name": "baseline_original_full_site.obj",
+      "exists": true,
+      "path": "E:\\AI项目\\光权修复_论文工作包_2026-06-03\\11_Ladybug专业光照验证_发给组员\\01_models\\baseline_original_full_site.obj",
+      "size": 988268
+    },
+    {
+      "name": "baseline_original_full_site.mtl",
+      "exists": true,
+      "path": "E:\\AI项目\\光权修复_论文工作包_2026-06-03\\11_Ladybug专业光照验证_发给组员\\01_models\\baseline_original_full_site.mtl",
+      "size": 2659
+    },
+    {
+      "name": "algorithm_after_full_site_only_C6_C33_changed.obj",
+      "exists": true,
+      "path": "E:\\AI项目\\光权修复_论文工作包_2026-06-03\\11_Ladybug专业光照验证_发给组员\\01_models\\algorithm_after_full_site_only_C6_C33_changed.obj",
+      "size": 949191
+    },
+    {
+      "name": "README_光照复核模型说明.md",
+      "exists": true,
+      "path": "E:\\AI项目\\光权修复_论文工作包_2026-06-03\\11_Ladybug专业光照验证_发给组员\\01_models\\README_光照复核模型说明.md",
+      "size": 1948
+    },
+    {
+      "name": "algorithm_after_full_site_only_C6_C33_changed.mtl",
+      "exists": true,
+      "path": "E:\\AI项目\\光权修复_论文工作包_2026-06-03\\11_Ladybug专业光照验证_发给组员\\01_models\\algorithm_after_full_site_only_C6_C33_changed.mtl",
+      "size": 2659
+    },
+    {
+      "name": "P01_P20_sampling_points.csv",
+      "exists": true,
+      "path": "E:\\AI项目\\光权修复_论文工作包_2026-06-03\\11_Ladybug专业光照验证_发给组员\\02_validation_template\\P01_P20_sampling_points.csv",
+      "size": 2003
+    },
+    {
+      "name": "professional_light_validation_template.xlsx",
+      "exists": true,
+      "path": "E:\\AI项目\\光权修复_论文工作包_2026-06-03\\11_Ladybug专业光照验证_发给组员\\02_validation_template\\professional_light_validation_template.xlsx",
+      "size": 7303
+    },
+    {
+      "name": "strategy_comparison_metrics.csv",
+      "exists": true,
+      "path": "E:\\AI项目\\光权修复_论文工作包_2026-06-03\\11_Ladybug专业光照验证_发给组员\\03_reference_data\\strategy_comparison_metrics.csv",
+      "size": 906
+    },
+    {
+      "name": "grid_sensitivity_metrics_partial.csv",
+      "exists": true,
+      "path": "E:\\AI项目\\光权修复_论文工作包_2026-06-03\\11_Ladybug专业光照验证_发给组员\\03_reference_data\\grid_sensitivity_metrics_partial.csv",
+      "size": 879
+    },
+    {
+      "name": "candidate_01_height_changes.csv",
+      "exists": true,
+      "path": "E:\\AI项目\\光权修复_论文工作包_2026-06-03\\11_Ladybug专业光照验证_发给组员\\03_reference_data\\candidate_01_height_changes.csv",
+      "size": 311
+    },
+    {
+      "name": "buildings.csv",
+      "exists": true,
+      "path": "E:\\AI项目\\光权修复_论文工作包_2026-06-03\\11_Ladybug专业光照验证_发给组员\\03_reference_data\\buildings.csv",
+      "size": 7054
+    },
+    {
+      "name": "protected_zones.csv",
+      "exists": true,
+      "path": "E:\\AI项目\\光权修复_论文工作包_2026-06-03\\11_Ladybug专业光照验证_发给组员\\03_reference_data\\protected_zones.csv",
+      "size": 216
+    },
+    {
+      "name": "README_组员操作说明.md",
+      "exists": true,
+      "path": "E:\\AI项目\\光权修复_论文工作包_2026-06-03\\11_Ladybug专业光照验证_发给组员\\00_readme\\README_组员操作说明.md",
+      "size": 2263
+    }
+  ]
+}

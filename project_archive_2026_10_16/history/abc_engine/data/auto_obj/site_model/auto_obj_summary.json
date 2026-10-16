@@ -1,0 +1,16 @@
+{
+  "source_obj": "light_equity_project\\data\\sample_toy_street\\site_model.obj",
+  "dataset_dir": "E:\\AI项目\\light_equity_project\\data\\auto_obj\\site_model",
+  "building_count": 12,
+  "group_count": 12,
+  "street_source": "auto-inferred fallback",
+  "node_source": "auto-inferred fallback",
+  "protected_zone_source": "empty auto fallback",
+  "warning": "ok",
+  "required_for_real_use": [
+    "verify buildings.csv IDs and footprints",
+    "replace streets.csv with surveyed road centerlines",
+    "mark protected buildings/zones",
+    "add real accessibility nodes/routes"
+  ]
+}

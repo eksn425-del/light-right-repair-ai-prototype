@@ -1,0 +1,23 @@
+{
+  "source_obj": "沿湖休闲片区场地.obj",
+  "source_dxf": "沿湖休闲片区标号.dxf",
+  "building_count": 45,
+  "all_ids_present": true,
+  "user_clarifications": {
+    "C38": "treat as 12m despite missing face/grouping defect",
+    "C39": "treat all four groups as 9m",
+    "C45": "treat as 3m despite weak geometry",
+    "duplicates": "all duplicate C labels/groups are merged as one large building group"
+  },
+  "remaining_limits": [
+    "building_footprints are LINE components, not closed PLINE",
+    "streets/nodes/site_zones remain placeholders until surveyed routes and public-space problem points are confirmed",
+    "protected/movable fields still need group confirmation"
+  ],
+  "height_stats": {
+    "min": 3.0,
+    "max": 21.0,
+    "mean": 8.733,
+    "median": 9.0
+  }
+}

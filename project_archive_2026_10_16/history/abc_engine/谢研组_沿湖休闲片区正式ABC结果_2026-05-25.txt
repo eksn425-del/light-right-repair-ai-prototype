@@ -1,0 +1,317 @@
+谢研组“沿湖休闲片区”正式 ABC 算法结果
+生成时间：2026-05-25
+
+一、当前项目范围确认
+
+本阶段只做谢研组负责的“沿湖休闲片区”，不再等待或合并其它组片区。
+
+使用数据包：
+E:/AI项目/light_equity_project/data/real_guankou/lakeside_leisure_ready
+
+正式阶段输出目录：
+E:/AI项目/light_equity_project/outputs/lakeside_leisure_final_6m
+
+二、对技术组终版 ABC 步骤的判断
+
+已阅读《技术组——光权修复_项目完整说明_终版.docx》。
+
+其 ABC 三段逻辑是合理的：
+
+1. 算法A：诊断层
+   - 读取场地模型与建筑数据；
+   - 模拟厦门冬至日 8:00-16:00 太阳轨迹；
+   - 输出采光热力图、暗区、可改善缝隙。
+
+2. 算法B：决策层
+   - 读取 A 的暗区和缝隙；
+   - 在“最小干预”原则下生成候选方案；
+   - 干预类型包括减法、加法、重组；
+   - 输出 2-3 个候选方案和评分。
+
+3. 算法C：验证层
+   - 读取候选方案；
+   - 检查老人、儿童、残障人士通行安全；
+   - 输出安全可达覆盖率和最终推荐方案。
+
+本次没有改变 ABC 主逻辑。
+
+但需要说明：终版文档设想的是更高精度体素/射线模拟；当前工程框架采用 2.5D 建筑盒子和简化射线逻辑。它适合论文方法验证和阶段性量化对比，但不等同于专业光环境软件精算。
+
+三、基础数据审查
+
+谢研组沿湖片区数据当前已满足算法输入条件：
+
+1. OBJ
+   - C1-C45 建筑编号完整；
+   - 建筑高度已与编号绑定；
+   - C38 按 12m；
+   - C39 按 9m；
+   - C45 按 3m；
+   - 重复编号合并为同一大建筑组。
+
+2. DXF
+   - C1-C45 标号完整；
+   - building_footprints 图层可用于建筑边界参考；
+   - road 图层已读取，共 96 条 LINE；
+   - road 图层被转为 road_segments.csv 和 streets.csv。
+
+3. 保护/不可动对象
+   - C42 = 幼儿园；
+   - C42 movable = False；
+   - C42 protected = True；
+   - 其它建筑暂按可干预对象处理。
+
+四、本次正式阶段测试配置
+
+使用 6m 粗中等网格：
+
+- grid_size_m = 6.0
+- shadow_ray_step_m = 2.0
+- 冬至日：2026-12-21
+- 时间：8:00-16:00
+- 时间步长：1 小时
+- 场地：厦门灌口沿湖休闲片区
+
+说明：
+
+6m 网格比之前 8m 试跑更细，适合作为当前阶段正式结果；如后续需要更高精度，可继续用 4m 或 2m 重跑，但耗时会明显增加。
+
+五、算法A：诊断层结果
+
+输出目录：
+E:/AI项目/light_equity_project/outputs/lakeside_leisure_final_6m/A_diagnosis
+
+输出文件：
+
+- sunlight_hours.csv
+- dark_zones.csv
+- gap_candidates.csv
+- zone_diagnosis.csv
+- heatmap.png
+- A_summary.json
+
+核心指标：
+
+- total_grid_count = 490
+- dark_grid_count = 86
+- dark_zone_ratio = 0.1755
+- average_sunlight_hours = 6.422
+- worst_dark_zone_location = x 162.0, y 162.0
+- worst_dark_zone sunlight_hours = 0.0
+
+分区诊断：
+
+1. road layer corridor
+   - grid_count = 480
+   - average_sunlight_hours = 6.419
+   - dark_zone_ratio = 0.175
+
+2. vacant green land
+   - grid_count = 31
+   - average_sunlight_hours = 8.581
+   - dark_zone_ratio = 0.0
+
+3. kindergarten protected zone C42
+   - grid_count = 0
+   - 原因：C42 是建筑/保护对象，地面网格不落在建筑内部。
+
+算法A判断：
+
+沿湖休闲片区整体平均采光约 6.422 小时，暗区比例约 17.55%。暗区主要集中在道路廊道内局部高密度建筑邻近区域，最不利点位在 x=162.0, y=162.0。
+
+六、算法B：决策层结果
+
+输出目录：
+E:/AI项目/light_equity_project/outputs/lakeside_leisure_final_6m/B_candidates
+
+输出文件：
+
+- candidate_01.obj
+- candidate_02.obj
+- candidate_03.obj
+- candidate_scores.csv
+- candidate_scores.png
+- interventions.csv
+- B_summary.json
+
+候选方案评分：
+
+1. candidate_01
+   - total_score = 11.4
+   - estimated_light_gain = 15.0
+   - intervention_volume = 45.0
+   - new_shadow_penalty = 0.0
+   - protected_zone_penalty = 0.0
+   - number_of_interventions = 3
+
+   干预内容：
+   - subtract C33
+   - subtract C6
+   - subtract C33
+
+2. candidate_02
+   - total_score = 10.482
+   - estimated_light_gain = 13.5
+   - intervention_volume = 37.725
+   - new_shadow_penalty = 0.0
+   - protected_zone_penalty = 0.0
+   - number_of_interventions = 3
+
+   干预内容：
+   - subtract C6
+   - subtract C33
+   - reorganize zone:LH_Z001
+
+3. candidate_03
+   - total_score = 8.936
+   - estimated_light_gain = 14.001
+   - intervention_volume = 52.23
+   - new_shadow_penalty = 1.478
+   - protected_zone_penalty = 0.0
+   - number_of_interventions = 3
+
+   干预内容：
+   - subtract C33
+   - subtract C33
+   - add C9|C33
+
+重要检查：
+
+- 三个候选方案均未对 C42 幼儿园进行干预；
+- protected_zone_penalty 均为 0；
+- C42 不可动约束在本轮结果中生效。
+
+算法B判断：
+
+当前最优候选为 candidate_01。其策略偏向对 C33、C6 等遮挡相关体块做局部减法，以较小体量改动换取较高光照改善。candidate_02 虽得分略低，但包含 LH_Z001 闲置绿地重组，更贴合建筑设计表达中的公共空间激活，可作为人工深化时重点参考的备选。
+
+七、算法C：验证层结果
+
+输出目录：
+E:/AI项目/light_equity_project/outputs/lakeside_leisure_final_6m/C_validation
+
+输出文件：
+
+- safety_report.csv
+- safe_routes.csv
+- final_recommendation.json
+- C_summary.json
+
+验证规则：
+
+- max_slope_percent = 8
+- min_clear_width_m = 1.2
+- max_step_height_m = 0.16
+- guardrail_required_height_m = 1.0
+- min_accessibility_coverage = 0.8
+
+结果：
+
+1. candidate_01
+   - safety_score = 100.0
+   - accessible_route_ratio = 1.0
+   - blocked_path_count = 0
+   - passed = True
+   - notes = passes simplified checks
+
+2. candidate_02
+   - safety_score = 100.0
+   - accessible_route_ratio = 1.0
+   - blocked_path_count = 0
+   - passed = True
+
+3. candidate_03
+   - safety_score = 100.0
+   - accessible_route_ratio = 1.0
+   - blocked_path_count = 0
+   - passed = True
+   - notes = guardrail_detail_required
+
+最终推荐：
+
+- selected_candidate_id = candidate_01
+- reason = highest combined light/intervention score among candidates that passed accessibility checks
+- total_score = 11.4
+- light_gain = 15.0
+- intervention_volume = 45.0
+- accessible_route_ratio = 1.0
+- safety_score = 100.0
+
+算法C判断：
+
+candidate_01 在简化安全规则下通过，并被选为最终算法推荐方案。candidate_03 虽也通过，但提示需要护栏细节，后续若靠近滨水或高差区域，应谨慎深化。
+
+八、最终对比指标
+
+输出目录：
+E:/AI项目/light_equity_project/outputs/lakeside_leisure_final_6m/final_report
+
+输出文件：
+
+- before_after_metrics.csv
+- comparison_chart.png
+- final_summary.json
+
+当前指标：
+
+1. baseline
+   - average_sunlight_hours = 6.422
+   - dark_zone_ratio = 0.1755
+   - light_equity_improvement = 0.0
+   - intervention_volume = 0.0
+   - accessibility_coverage = 0.68
+   - safety_score = 62.0
+
+2. manual_design
+   - 当前仍是占位值
+   - 后续需要替换为组员人工设计方案指标
+
+3. algorithm_design candidate_01
+   - average_sunlight_hours = 8.222
+   - dark_zone_ratio = 0.0
+   - light_equity_improvement = 1.0
+   - intervention_volume = 45.0
+   - accessibility_coverage = 1.0
+   - safety_score = 100.0
+
+注意：
+
+algorithm_design 是当前简化框架估算结果，可用于论文中的“算法方案”初步对比；manual_design 必须等人工方案建模或指标整理后替换。
+
+九、可用于论文的阶段结论
+
+在谢研组沿湖休闲片区中，基于 6m 网格简化光照诊断，现状平均采光小时数约为 6.422h，暗区比例约为 17.55%。算法A定位出道路廊道内若干暗区，并生成可改善缝隙。算法B在保护 C42 幼儿园不可动的前提下，生成 3 组最小干预候选方案，其中 candidate_01 以局部削减 C33 与 C6 的方式获得最高综合得分。算法C进一步验证 candidate_01 在简化无障碍与安全规则下通过筛选，安全可达覆盖率达到 1.0，最终推荐 candidate_01 作为当前算法方案。
+
+十、使用限制
+
+1. 当前为 2.5D 简化日照模拟，不是专业光环境软件精算。
+2. 6m 网格适合阶段性结果，若用于最终量化结论，建议后续尝试 4m 或 2m 网格。
+3. road 图层目前来自道路范围/边界 LINE，不是完整 road_centerline。
+4. nodes.csv 仍带占位性质，真实问题点后续可继续补。
+5. 算法B candidate OBJ 是参考干预框体，不是最终建筑施工模型。
+6. manual_design 当前是占位值，不能直接用于最终论文对比。
+
+十一、给后续人工方案对比的建议
+
+人工设计提交后，至少补以下指标：
+
+1. 人工方案平均采光小时数；
+2. 人工方案暗区比例；
+3. 人工方案干预体量；
+4. 人工方案安全可达覆盖率；
+5. 人工方案是否触碰 C42；
+6. 人工方案公共空间/停车/慢行改善点。
+
+这些指标填入 final_report/before_after_metrics.csv 后，就可以形成 baseline、manual_design、algorithm_design 三组对比。
+
+十二、最终判断
+
+谢研组沿湖休闲片区已完成正式阶段 ABC 算法运行。
+
+当前推荐结果：
+
+selected_candidate_id = candidate_01
+
+推荐理由：
+
+candidate_01 在不干预 C42 幼儿园的前提下，获得最高综合评分，并通过简化安全可达验证。它适合作为后续与人工设计方案对比的算法基准方案。

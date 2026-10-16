@@ -1,0 +1,38 @@
+{
+  "candidate_id": "candidate_real_01",
+  "source_buildings_csv": "E:\\AI项目\\light_equity_project\\data\\real_guankou\\lakeside_leisure_ready\\buildings.csv",
+  "source_interventions_csv": "E:\\AI项目\\light_equity_project\\outputs\\lakeside_leisure_realistic_6m\\B_candidates_real\\interventions.csv",
+  "baseline_obj": "E:\\AI项目\\light_equity_project\\outputs\\lakeside_leisure_realistic_6m\\modified_models\\xieyan_lakeside_baseline_bbox_C1_C45.obj",
+  "modified_obj": "E:\\AI项目\\light_equity_project\\outputs\\lakeside_leisure_realistic_6m\\modified_models\\xieyan_lakeside_modified_candidate_real_01.obj",
+  "method": "Simplified full-street bbox model. Full-footprint upper subtract boxes are applied as height reductions to their target buildings.",
+  "important_caveat": "This is not a precise boolean operation on the original SketchUp mesh. It is a clean algorithm-facing massing OBJ for viewing and portfolio explanation.",
+  "applied_changes": [
+    {
+      "building_id": "C33",
+      "old_height_m": 9.0,
+      "new_height_m": 7.0,
+      "removed_height_m": 2.0,
+      "intervention_id": "candidate_real_01_I01",
+      "intervention_type": "subtract",
+      "volume_change_m3": -967.61
+    },
+    {
+      "building_id": "C26",
+      "old_height_m": 18.0,
+      "new_height_m": 16.0,
+      "removed_height_m": 2.0,
+      "intervention_id": "candidate_real_01_I02",
+      "intervention_type": "subtract",
+      "volume_change_m3": -1049.871
+    },
+    {
+      "building_id": "C24",
+      "old_height_m": 9.0,
+      "new_height_m": 7.0,
+      "removed_height_m": 2.0,
+      "intervention_id": "candidate_real_01_I03",
+      "intervention_type": "subtract",
+      "volume_change_m3": -4539.084
+    }
+  ]
+}

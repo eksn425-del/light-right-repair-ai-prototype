@@ -1,0 +1,10 @@
+candidate_id,intervention_id,type,target_building_id,x,y,z,size_x,size_y,size_z,volume_change,expected_light_gain,protected_conflict,notes
+candidate_real_01,candidate_real_01_I01,subtract,C33,165.644,181.585,7.0,15.375,31.467,2.0,-967.61,0,False,full-footprint upper setback from dark-point screening
+candidate_real_01,candidate_real_01_I02,subtract,C26,237.195,77.653,16.0,23.317,22.513,2.0,-1049.871,0,False,full-footprint upper setback from dark-point screening
+candidate_real_01,candidate_real_01_I03,subtract,C24,269.861,52.556,7.0,50.24,45.174,2.0,-4539.084,0,False,full-footprint upper setback from dark-point screening
+candidate_real_02,candidate_real_02_I01,subtract,C33,165.644,181.585,7.0,15.375,31.467,2.0,-967.61,0,False,full-footprint upper setback from dark-point screening
+candidate_real_02,candidate_real_02_I02,subtract,C26,237.195,77.653,16.0,23.317,22.513,2.0,-1049.871,0,False,full-footprint upper setback from dark-point screening
+candidate_real_02,candidate_real_02_I03,subtract,C30,191.287,157.973,7.0,14.801,16.975,2.0,-502.494,0,False,full-footprint upper setback from dark-point screening
+candidate_real_03,candidate_real_03_I01,subtract,C24,269.861,52.556,5.0,50.24,45.174,4.0,-9078.167,0,False,full-footprint upper setback from dark-point screening
+candidate_real_03,candidate_real_03_I02,subtract,C33,165.644,181.585,7.0,15.375,31.467,2.0,-967.61,0,False,full-footprint upper setback from dark-point screening
+candidate_real_03,candidate_real_03_I03,subtract,C26,237.195,77.653,15.0,23.317,22.513,3.0,-1574.807,0,False,full-footprint upper setback from dark-point screening

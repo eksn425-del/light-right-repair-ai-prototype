@@ -1,0 +1,7 @@
+﻿zone_id,name,zone_type,x_min,x_max,y_min,y_max,priority,needs_light_improvement,needs_accessibility_improvement,protected,notes
+LH_Z001,vacant green land,vacant_land,0.0,100.2,0.0,101.159,5,True,True,False,editable vacant green land; boundary placeholder
+LH_Z002,discontinuous waterfront path,waterfront,0.0,286.286,0.0,63.585,5,True,True,False,waterfront path continuity problem; boundary placeholder
+LH_Z003,parking conflict area,parking_conflict_area,80.16,206.126,28.902,130.061,4,False,True,False,parking demand overlap; boundary placeholder
+LH_Z004,kindergarten protected zone,protected_public_service,206.126,286.286,208.098,289.025,5,False,True,True,kindergarten non-editable area; exact boundary needed
+LH_Z005,park activity node,activity_node,91.612,194.674,92.488,196.537,4,True,True,False,resident activity/park zone; boundary placeholder
+LH_Z006,night lighting weak street segment,lighting_problem_area,0.0,286.286,216.769,289.025,4,True,False,False,lighting facilities insufficient; boundary placeholder

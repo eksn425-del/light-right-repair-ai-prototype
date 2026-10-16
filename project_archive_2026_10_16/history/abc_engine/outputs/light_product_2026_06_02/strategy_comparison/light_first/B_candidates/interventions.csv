@@ -1,0 +1,13 @@
+candidate_id,intervention_id,type,target_building_id,x,y,z,size_x,size_y,size_z,volume_change,expected_light_gain,protected_conflict,notes
+candidate_01,INT0002,subtract,C6,162.0,274.852,4.5,3.0,2.5,1.5,-11.25,5.0,False,reference void box for local corner/overhang reduction
+candidate_01,INT0005,subtract,C33,173.332,165.852,6.75,3.0,2.5,2.25,-16.875,5.0,False,reference void box for local corner/overhang reduction
+candidate_01,INT0007,subtract,C6,172.791,195.356,4.5,3.0,2.5,1.5,-11.25,3.2,False,reference void box for local corner/overhang reduction
+candidate_01,INT0009,reorganize,C9|C33,176.805,164.852,0.0,5.0,1.6,2.8,-6.72,3.001,False,open ground-level gray space or passage; no boolean geometry yet
+candidate_02,INT0002,subtract,C6,162.0,274.852,4.5,3.0,2.5,1.5,-11.25,5.0,False,reference void box for local corner/overhang reduction
+candidate_02,INT0005,subtract,C33,173.332,165.852,6.75,3.0,2.5,2.25,-16.875,5.0,False,reference void box for local corner/overhang reduction
+candidate_02,INT0020,add,C29|C36,183.404,119.24,0.0,2.8,2.2,3.0,18.48,2.934,False,small inserted light/gray-space block; geometry is a placeholder
+candidate_02,INT0024,reorganize,zone:LH_Z001,82.159,64.255,0.0,12.0,4.0,0.2,-9.6,3.5,False,slow-path / parking / idle-space reorganization for vacant_land
+candidate_03,INT0002,subtract,C6,162.0,274.852,4.5,3.0,2.5,1.5,-11.25,5.0,False,reference void box for local corner/overhang reduction
+candidate_03,INT0005,subtract,C33,173.332,165.852,6.75,3.0,2.5,2.25,-16.875,5.0,False,reference void box for local corner/overhang reduction
+candidate_03,INT0007,subtract,C6,172.791,195.356,4.5,3.0,2.5,1.5,-11.25,3.2,False,reference void box for local corner/overhang reduction
+candidate_03,INT0012,add,C28|C37,185.198,99.497,0.0,2.8,2.2,3.0,18.48,3.51,False,small inserted light/gray-space block; geometry is a placeholder

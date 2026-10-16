@@ -1,0 +1,2 @@
+street_id,start_x,start_y,end_x,end_y,width_m,main_direction,pedestrian_priority,notes
+AUTO_STREET_001,4.0,-0.5,97.0,-0.5,5.64,auto-east-west,True,auto-inferred fallback street; replace with surveyed road centerline

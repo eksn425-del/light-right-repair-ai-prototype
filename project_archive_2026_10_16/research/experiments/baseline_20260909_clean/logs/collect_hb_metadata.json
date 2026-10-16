@@ -1,0 +1,23 @@
+{
+  "run_id": "baseline_20260909_clean",
+  "stage": "collect_hb",
+  "timestamp_utc": "2026-09-09T17:56:33+00:00",
+  "git_commit": "NOT_A_GIT_CHECKOUT",
+  "config_path": "E:\\AI项目\\light-equity-soict-2026\\configs\\research.yaml",
+  "config_sha256": "b15d4644ed7d0b6806c2c9395836fbec25da803c9aa8ff74a8fffcd3bf009c8f",
+  "inputs": [
+    {
+      "path": "E:\\AI项目\\light-equity-soict-2026\\experiments\\baseline_20260909_clean\\results_csv\\100_HB_Radiance传感点.csv",
+      "exists": true,
+      "sha256": "57ba551955a6c854fd8001afbd7bcf276f6c17f5dcc3dd1aaf83a906b99e04e3"
+    },
+    {
+      "path": "E:\\AI项目\\light-equity-soict-2026\\experiments\\baseline_20260909_clean\\results_csv\\120_canonical_2p5D完整双建筑候选排名.csv",
+      "exists": true,
+      "sha256": "6f0d2c9ed13a88c56fc827b2868363613a3b5c70738eaee594292ccada9682ea"
+    }
+  ],
+  "verified_rule_candidates": 23,
+  "spearman_rho": 0.8833992094861661,
+  "spearman_p": 2.3528395660464406e-08
+}

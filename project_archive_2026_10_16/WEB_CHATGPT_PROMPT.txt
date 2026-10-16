@@ -1,0 +1,35 @@
+请接续“光权修复——AI辅助空间决策系统”的论文与研究讨论。
+
+仓库：eksn425-del/light-right-repair-ai-prototype（私有）
+分支：project-handoff-2026-10-16
+先读：START_HERE.md
+
+接着依次阅读：
+1. project_archive_2026_10_16/PROJECT_OVERVIEW_CN.md
+2. project_archive_2026_10_16/EXPERIMENTS_AND_EVIDENCE.md
+3. project_archive_2026_10_16/MANUSCRIPTS_AND_SUBMISSION.md
+4. research_reproducibility/SOICT_2026_PAPER_WRITING_BRIEF.md
+5. research_reproducibility/paper_support/PAPER_NUMBERS.csv
+6. research_reproducibility/paper_support/CLAIMS_LEDGER.csv
+7. research_reproducibility/audit/RESULT_DIFF_AUDIT.csv
+8. paper_assets/FIGURE_CAPTIONS.md、TABLE_CAPTIONS.md、BIBLIOGRAPHY.bib
+9. project_archive_2026_10_16/ARCHIVE_REPORT.md
+
+请只在读取实际文件后评价，不能以对话摘要或文件名“最终稿”推定已验证。
+若无法访问私有仓库或目标分支，先说明实际访问错误，不要凭记忆补结果。
+
+项目研究范围：厦门灌口沿湖片区，地面直射日照，规则式最小干预候选筛选与选择性 HB-Radiance 验证；人工负责约束依据、设计转译与最终判断。不是 AI 与人工方案比赛，没有训练 ML/LLM。
+
+现有事实冻结为 soict-2026-write-ready-v1，源提交 6b64fe43451e2e0330930a5677cbe3432307282b，run ID baseline_20260909_clean。不要改实验数字，不要重新选独立 N=20，不要把旧 6m C6/C33 值与后期规范几何值混用。
+
+先帮助我：
+一、用你自己的话说明当前研究问题、方法、证据和局限；
+二、结合历史中文稿与冻结证据，列出正文需要更新的具体段落和数字；
+三、判断已有材料能够支撑哪些论文主张，哪些需要收敛或新实验；
+四、形成下一轮写作安排，并区分作者/组员的人工工作与可以在代码或文本中完成的工作。
+
+实验目录、所有稿件和文献可通过 project_archive_2026_10_16/indexes/ 查找。Word 原件旁的 readable_manuscripts 文本用于检索，最终格式仍以原 Word 为准。完整图表在根目录 paper_assets/，包含私有场地派生图，保持私有。
+
+数字须引用 PAPER_NUMBERS.csv 的来源、字段、run ID 和状态。rho=1.0 是冻结样本内复合排序相关，不是准确率；630 是限定候选枚举，不是全部 HB 场景；32197.24368 s 是 serial-equivalent extrapolation，不能写成实测整批时间。23 curated 规则候选、33 operational 场景、20 research-only 场景和53个已计时场景必须区分。
+
+请核对当前会议官网后再给出具体截止日期、模板、匿名、页数或出版收录政策；未核对时保留待确认，不要沿用旧描述。

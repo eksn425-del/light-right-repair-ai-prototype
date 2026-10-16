@@ -1,0 +1,7 @@
+item_id,task,deliverable,minimum_standard,owner,notes
+DJJ_T01,确认片区边界,圈出大井脚里1号社区研究范围,CAD截图或总图标注一张,,边界必须能对应坐标
+DJJ_T02,整理建筑高度,填写buildings.csv相关建筑高度/层数,每栋至少有层数和估算高度,,一层可按3m估算
+DJJ_T03,标出球场与停车,填写site_zones.csv,至少球场/停车/道路边侧3类区域,,优先级1-5
+DJJ_T04,标出老人儿童活动点,填写nodes.csv,不少于5个节点,,入口/球场/休息点/狭窄段
+DJJ_T05,记录通行问题,填写streets.csv和notes,至少3条主要路径,,净宽/人车冲突/台阶
+

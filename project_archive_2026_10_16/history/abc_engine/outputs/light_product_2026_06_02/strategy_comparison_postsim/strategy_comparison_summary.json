@@ -1,0 +1,21 @@
+{
+  "research_main_question": "AI-assisted sunlight diagnosis and minimum-intervention strategy comparison.",
+  "comparison_set": [
+    "baseline",
+    "AI_conservative",
+    "AI_balanced",
+    "AI_light_first"
+  ],
+  "manual_design_removed": true,
+  "baseline": {
+    "average_sunlight_hours": 6.422,
+    "dark_zone_ratio": 0.1755,
+    "dark_grid_count": 86,
+    "total_grid_count": 490
+  },
+  "outputs": {
+    "strategy_comparison_metrics": "outputs\\light_product_2026_06_02\\strategy_comparison_postsim\\strategy_comparison_metrics.csv",
+    "strategy_comparison_chart": "outputs\\light_product_2026_06_02\\strategy_comparison_postsim\\strategy_comparison_chart.png"
+  },
+  "notes": "This report compares AI strategy behavior rather than claiming AI beats a manual design. Strategy candidates are post-simulated by default with the simplified 2.5D sunlight model."
+}

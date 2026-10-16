@@ -1,0 +1,9 @@
+{
+    "radiance_path": null,
+    "radbin_path": null,
+    "radlib_path": null,
+    "radiance_version": null,
+    "standards_data_folder": "D:\\python3.10.4\\Lib\\site-packages\\honeybee_standards",
+    "modifier_lib": "D:\\python3.10.4\\Lib\\site-packages\\honeybee_standards\\modifiers",
+    "modifierset_lib": "D:\\python3.10.4\\Lib\\site-packages\\honeybee_standards\\modifiersets"
+}

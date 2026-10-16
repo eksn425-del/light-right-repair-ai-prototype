@@ -1,0 +1,22 @@
+{
+  "grid_size_m": 3.0,
+  "baseline_average_sunlight_hours": 6.509,
+  "post_average_sunlight_hours": 6.519,
+  "average_sunlight_gain_h": 0.01,
+  "baseline_dark_zone_ratio": 0.1609,
+  "post_dark_zone_ratio": 0.1584,
+  "baseline_dark_zone_percent": 16.09,
+  "post_dark_zone_percent": 15.84,
+  "dark_zone_drop_percentage_points": 0.26,
+  "relative_dark_zone_improvement": 0.0159,
+  "baseline_dark_grid_count": 314,
+  "post_dark_grid_count": 309,
+  "total_grid_count": 1951,
+  "dark_to_light_grid_count": 5,
+  "light_to_dark_grid_count": 0,
+  "max_single_point_gain_h": 2.0,
+  "min_single_point_gain_h": 0.0,
+  "intervention_volume": 28.125,
+  "changed_building_ids": "C6;C33",
+  "case_output_dir": "E:\\AI项目\\paper_revision_work_2026_06_14\\c6_c33_same_scheme_grid_fast\\grid_3m_fixed_c6_c33"
+}

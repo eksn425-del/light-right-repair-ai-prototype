@@ -1,0 +1,5 @@
+﻿path,exists,vertices,faces,groups,x_min,x_max,y_min,y_max,z_min,z_max,parse_error
+E:\AI项目\light_equity_project\data\real_guankou\lakeside_leisure_ready\site_model.obj,True,9741,9011,69,-732.662,675781.0,-22.368,21000.0,-467533.0,828.151,
+E:\AI项目\谢研组\沿湖休闲片区场地.obj,True,9741,9011,69,-732.662,675781.0,-22.368,21000.0,-467533.0,828.151,
+E:\AI项目\ladybug_ready_models\baseline_original_full_site_ladybug_ready.obj,True,9741,9011,69,-0.733,675.781,-0.828,467.533,-0.022,21.0,
+E:\AI项目\ladybug_ready_models\algorithm_after_full_site_only_C6_C33_changed_ladybug_ready.obj,True,9741,9011,69,-0.733,675.781,-0.828,467.533,-0.022,21.0,

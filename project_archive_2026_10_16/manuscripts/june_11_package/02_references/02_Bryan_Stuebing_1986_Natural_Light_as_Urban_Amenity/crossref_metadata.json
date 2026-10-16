@@ -1,0 +1,272 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          4
+        ]
+      ],
+      "date-time": "2026-05-04T18:37:46Z",
+      "timestamp": 1777919866924,
+      "version": "3.51.4"
+    },
+    "reference-count": 12,
+    "publisher": "SAGE Publications",
+    "issue": "6",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              1986,
+              6,
+              1
+            ]
+          ],
+          "date-time": "1986-06-01T00:00:00Z",
+          "timestamp": 517968000000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://journals.sagepub.com/page/policies/text-and-data-mining-license"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Lighting Design + Application"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          1986,
+          6
+        ]
+      ]
+    },
+    "DOI": "10.1177/036063258601600610",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          1,
+          13
+        ]
+      ],
+      "date-time": "2025-01-13T06:57:14Z",
+      "timestamp": 1736751434000
+    },
+    "page": "44-48",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "Natural Light as an Urban Amenity: Three cities plan for solar access"
+    ],
+    "prefix": "10.1177",
+    "volume": "16",
+    "author": [
+      {
+        "given": "Harvey",
+        "family": "Bryan",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Susan",
+        "family": "Stuebing",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "179",
+    "published-online": {
+      "date-parts": [
+        [
+          1986,
+          6,
+          1
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "bibr1-036063258601600610",
+        "volume-title": "Owners and Neighbors in Roman Law",
+        "author": "Rodgers A.",
+        "year": "1972"
+      },
+      {
+        "key": "bibr2-036063258601600610",
+        "volume-title": "The Orientation of Buildings or Planning for Sunlight",
+        "author": "Atkinson W",
+        "year": "1912"
+      },
+      {
+        "key": "bibr3-036063258601600610",
+        "volume-title": "Zoning Resolution",
+        "author": "New York City Planning Commission,",
+        "year": "1916"
+      },
+      {
+        "key": "bibr4-036063258601600610",
+        "volume-title": "Building Height, Bulk and Form",
+        "author": "Ford G.",
+        "year": "1931"
+      },
+      {
+        "key": "bibr5-036063258601600610",
+        "volume-title": "Midtown Development ProjectDraft Report,",
+        "author": "New York Department of City Planning",
+        "year": "1980"
+      },
+      {
+        "key": "bibr6-036063258601600610",
+        "unstructured": "BryanH., et al, “The Utilization of Daylighting as an Urban Design Strategy, “The Proceedings of the 1981 Annual Meeting of the American Section of the International Solar Energy Society, Philadelphia, PA., 1981, pp. 83–90."
+      },
+      {
+        "key": "bibr7-036063258601600610",
+        "unstructured": "New York Department of City Planning, Midtown Zoning, City of New York, 1982."
+      },
+      {
+        "key": "bibr8-036063258601600610",
+        "author": "Bosselman P",
+        "year": "1983",
+        "journal-title": "Sunlight and Light for Downtown San Francisco"
+      },
+      {
+        "key": "bibr9-036063258601600610",
+        "author": "Knowles R.",
+        "year": "1981",
+        "journal-title": "Sun Rhythm Form"
+      },
+      {
+        "key": "bibr10-036063258601600610",
+        "volume-title": "Preliminary Report of the Feasibility of Incorporating Daylight and Sunlight Criteria into the City of Boston's Urban Design Guidelines",
+        "author": "Bryan H.",
+        "year": "1984"
+      },
+      {
+        "key": "bibr11-036063258601600610",
+        "volume-title": "Meddelande (Bulletin) No. 25",
+        "author": "Pleijel G.",
+        "year": "1954"
+      },
+      {
+        "key": "bibr12-036063258601600610",
+        "unstructured": "BryanH., and FergieR. “BRADA: A Daylighting Analysis Technique for the Boston Redevelopment Authority,” To be presented at the Second International Daylighting Conference, Long Beach, CA., November 1986."
+      }
+    ],
+    "container-title": [
+      "Lighting Design + Application"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://journals.sagepub.com/doi/pdf/10.1177/036063258601600610",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://journals.sagepub.com/doi/full-xml/10.1177/036063258601600610",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://journals.sagepub.com/doi/pdf/10.1177/036063258601600610",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          1
+        ]
+      ],
+      "date-time": "2026-05-01T19:13:56Z",
+      "timestamp": 1777662836000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://journals.sagepub.com/doi/10.1177/036063258601600610"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          1986,
+          6
+        ]
+      ]
+    },
+    "references-count": 12,
+    "journal-issue": {
+      "issue": "6",
+      "published-print": {
+        "date-parts": [
+          [
+            1986,
+            6
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1177/036063258601600610"
+    ],
+    "URL": "https://doi.org/10.1177/036063258601600610",
+    "relation": {},
+    "ISSN": [
+      "0360-6325",
+      "0360-6325"
+    ],
+    "issn-type": [
+      {
+        "value": "0360-6325",
+        "type": "print"
+      },
+      {
+        "value": "0360-6325",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          1986,
+          6
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "project": "光权修复——AI辅助空间决策系统",
+  "archive_date": "2026-10-16",
+  "repository": "eksn425-del/light-right-repair-ai-prototype",
+  "required_visibility": "private",
+  "archive_branch": "project-handoff-2026-10-16",
+  "archive_tag": "project-handoff-2026-10-16-v1",
+  "entry_point": "START_HERE.md",
+  "archive_path": "project_archive_2026_10_16/",
+  "complete_paper_assets": "paper_assets/",
+  "frozen_evidence": {
+    "branch": "research-repro-v1",
+    "tag": "soict-2026-write-ready-v1",
+    "commit": "6b64fe43451e2e0330930a5677cbe3432307282b",
+    "run_id": "baseline_20260909_clean",
+    "paper_numbers": "research_reproducibility/paper_support/PAPER_NUMBERS.csv",
+    "claims_ledger": "research_reproducibility/paper_support/CLAIMS_LEDGER.csv"
+  },
+  "this_task": {
+    "kind": "private archival handoff",
+    "source_experimental_results_changed": false,
+    "new_simulations_run": false,
+    "independent_sample_reselected": false,
+    "historical_manuscripts_are_submission_ready": "not established",
+    "submission_receipt_linked": false
+  },
+  "local_only_material": [
+    "raw CAD/DXF/DWG/SKP/OBJ",
+    "sensor coordinate tables",
+    "Radiance intermediate files and weather files",
+    "excluded caches, installers and duplicate ZIP packages"
+  ]
+}

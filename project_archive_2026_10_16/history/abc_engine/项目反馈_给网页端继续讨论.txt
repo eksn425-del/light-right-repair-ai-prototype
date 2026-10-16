@@ -1,0 +1,227 @@
+项目反馈：光权修复——AI辅助空间决策系统
+生成日期：2026-05-05
+
+一、当前已经完成了什么
+
+我已经在 E:/AI项目/light_equity_project/ 下搭建了一个可运行的 Python 工程骨架。
+
+这个版本的目标不是直接产出真实论文结论，而是先把“未来能接收真实 SU 白模和现场 CSV 数据”的算法 A/B/C 管线跑通。
+
+项目现在已经包含：
+
+1. 完整目录结构
+   - config/
+   - data/sample_toy_street/
+   - data/real_guankou/
+   - src/io/
+   - src/geometry/
+   - src/solar/
+   - src/algorithm_a_diagnosis/
+   - src/algorithm_b_optimization/
+   - src/algorithm_c_validation/
+   - src/visualization/
+   - outputs/A_diagnosis/
+   - outputs/B_candidates/
+   - outputs/C_validation/
+   - outputs/final_report/
+
+2. toy street 测试数据
+   已自动生成一条简化老街：
+   - 中间一条东西向街道
+   - 两侧各 6 栋盒子建筑
+   - 建筑高度包含 6m、9m、12m、15m
+   - 部分建筑 movable = true
+   - 部分建筑 protected = true
+
+   输出在：
+   E:/AI项目/light_equity_project/data/sample_toy_street/
+
+3. 算法 A：诊断层
+   已实现可运行框架：
+   - 读取 OBJ
+   - 读取 buildings.csv
+   - 建立简化地面网格
+   - 生成厦门冬至日 8:00-16:00 简化太阳路径
+   - 进行 2.5D 简化遮挡判断
+   - 输出采光小时数、暗区、可改善缝隙、热力图和摘要 JSON
+
+   输出在：
+   E:/AI项目/light_equity_project/outputs/A_diagnosis/
+
+   关键文件：
+   - sunlight_hours.csv
+   - dark_zones.csv
+   - gap_candidates.csv
+   - heatmap.png
+   - A_summary.json
+
+4. 算法 B：决策层
+   已实现可运行框架：
+   - 读取算法 A 的 dark_zones.csv 和 gap_candidates.csv
+   - 生成 subtract / add / reorganize 三类干预操作
+   - 每个干预操作包含坐标、尺寸、目标建筑、体积变化、预估采光收益
+   - 使用简化搜索生成 2-3 个候选方案
+   - 输出候选 OBJ、得分表和干预明细
+
+   输出在：
+   E:/AI项目/light_equity_project/outputs/B_candidates/
+
+   关键文件：
+   - candidate_01.obj
+   - candidate_02.obj
+   - candidate_03.obj
+   - candidate_scores.csv
+   - interventions.csv
+   - B_summary.json
+
+5. 算法 C：验证层
+   已实现可运行框架：
+   - 读取候选方案
+   - 读取街道和节点
+   - 读取 accessibility_rules.yaml
+   - 检查坡度、净宽、台阶、护栏、保护区冲突等简化规则
+   - 输出安全报告、可达路线和最终推荐方案
+
+   输出在：
+   E:/AI项目/light_equity_project/outputs/C_validation/
+
+   关键文件：
+   - safety_report.csv
+   - safe_routes.csv
+   - final_recommendation.json
+   - C_summary.json
+
+6. 最终论文图表接口
+   已预留三组对比：
+   - baseline：改造前
+   - manual_design：人工方案，当前为占位数据
+   - algorithm_design：算法方案
+
+   输出在：
+   E:/AI项目/light_equity_project/outputs/final_report/
+
+   关键文件：
+   - before_after_metrics.csv
+   - comparison_chart.png
+   - final_summary.json
+
+7. README 和建筑组提交说明
+   已写好：
+   - E:/AI项目/light_equity_project/README.md
+   - E:/AI项目/light_equity_project/data/real_guankou/README_FOR_ARCHITECTURE_TEAM.md
+
+二、如何运行当前 demo
+
+进入项目目录：
+
+cd E:/AI项目/light_equity_project
+
+运行 toy street demo：
+
+python main.py --dataset sample_toy_street
+
+如果想重新生成 toy 数据：
+
+python main.py --dataset sample_toy_street --regenerate-toy
+
+真实灌口数据未来放入：
+
+E:/AI项目/light_equity_project/data/real_guankou/
+
+然后运行：
+
+python main.py --dataset real_guankou
+
+当前 real_guankou 里还是占位文件，所以运行真实数据时会提示 site_model.obj 没有顶点，需要建筑组替换为 SketchUp 导出的真实白模。
+
+三、当前版本的定位
+
+这是“工程骨架版”，不是最终算法精度版。
+
+它现在解决的是：
+
+1. 目录稳定
+2. 接口稳定
+3. CSV 字段稳定
+4. 输出文件稳定
+5. toy 数据可完整跑通
+6. 后续真实 OBJ 和 CSV 可以替换接入
+
+它暂时不追求：
+
+1. 专业光环境软件级精度
+2. 复杂建筑布尔运算
+3. 高精度路径网络
+4. Web 平台
+5. 数据库
+6. Rhino / Grasshopper / Ladybug / Unity 强依赖
+
+四、当前简化假设
+
+1. 建筑以轴对齐盒子和 CSV 包围盒表达。
+2. 算法 A 使用 2.5D 简化遮挡判断，不是真实体素射线追踪。
+3. 算法 B 的 candidate OBJ 是参考改造框体，不是真实布尔切割后的建筑模型。
+4. 算法 C 的路线是节点间简化路线，不是完整道路网络。
+5. final_report 中 manual_design 是占位数据，等建筑组提交人工方案后替换。
+
+五、当前成果最适合继续讨论的方向
+
+建议网页端下一步重点聊这些问题：
+
+1. 如何把这个工程骨架包装成论文方法论
+   重点不是吹算法精度，而是强调：
+   “从白模与现场表格出发，建立诊断-决策-验证的可复现设计支持流程。”
+
+2. 如何定义论文中的核心实验
+   当前已经预留：
+   - baseline
+   - manual_design
+   - algorithm_design
+
+   后续需要讨论人工方案的数据如何录入，才能和算法方案公平比较。
+
+3. 如何指导建筑组提交真实数据
+   需要把 data/real_guankou/README_FOR_ARCHITECTURE_TEAM.md 转成更适合发给组员的任务说明。
+
+4. 如何升级算法 A
+   可以讨论是否从当前 2.5D 遮挡升级为：
+   - 真体素网格
+   - trimesh ray tracing
+   - 更密集太阳采样
+   - 分立面/地面/居住窗面三类采光评价
+
+5. 如何升级算法 B
+   可以讨论干预类型如何更建筑化：
+   - 削角
+   - 退台
+   - 开缝
+   - 打通底层灰空间
+   - 小型采光井
+   - 口袋平台
+
+6. 如何升级算法 C
+   可以讨论把当前节点间直连路线升级成真实步行路径网络，并补充老人、儿童、残障人士的安全规则。
+
+7. 如何把输出文件变成汇报图纸语言
+   当前已有：
+   - heatmap.png
+   - candidate OBJ
+   - comparison_chart.png
+
+   后续可以继续讨论：
+   - 暗区分级图
+   - 干预策略图
+   - 候选方案对比表
+   - 最终推荐方案逻辑图
+   - 论文方法流程图
+
+六、建议给网页端的继续提问方式
+
+可以直接把下面这段话发给网页端：
+
+“我现在已经有一个 light_equity_project 工程骨架，完成了 toy street 数据、算法 A/B/C 框架、最终对比图表接口和 README。当前版本能运行 python main.py --dataset sample_toy_street，并输出 heatmap、dark_zones、candidate OBJ、safety_report、final_report。请基于这个工程骨架，继续帮我讨论如何把它包装成建筑学论文的方法论、实验设计和后续真实灌口数据接入计划。注意不要把项目扩展成 Web 平台或复杂数字孪生系统，继续保持最小干预 + 光权修复 + 安全验证的核心方向。”
+
+七、最重要的一句话
+
+当前成果已经不是“想法阶段”，而是一个可运行、可替换真实数据、可继续写论文方法论的 ABC 算法工程骨架。下一步重点应该从“能不能做”转向“如何用真实数据验证、如何组织论文叙事、如何让建筑组按格式交付数据”。
+

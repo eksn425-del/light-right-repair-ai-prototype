@@ -1,0 +1,204 @@
+谢研组“沿湖休闲片区”资料提交验收反馈
+生成时间：2026-05-20
+
+一、总体结论
+
+本次提交可以判断为“现场资料收集与问题识别基本有效”，但暂时不能算作“算法可运行数据验收通过”。
+
+简单说：他们不是没做，现场观察方向也对；但目前材料还停留在“人能看懂”的阶段，没有整理成算法A/B/C可以直接读取的 OBJ + CSV 数据包。下一步不建议推倒重做，而是要求他们把现有 SKP、DWG、Excel、照片和文字说明整理成标准数据格式。
+
+建议验收等级：待补齐后复验。
+
+二、已收到材料
+
+1. 沿湖休闲片区场地.skp
+   - 有 SketchUp 场地模型，说明他们已经开始做空间体块。
+   - 但当前没有导出 site_model.obj，算法框架暂时无法直接读取。
+   - 还需要确认模型是否为“极简白模”：只保留建筑体量、道路/场地边界，不要材质、家具、门窗、树、复杂构件。
+
+2. 沿湖休闲片区场地说明.dwg、沿湖休闲片区标号.dwg
+   - 两个 CAD 文件均为 AutoCAD R2018 DWG。
+   - 可以作为人工审图材料，但不适合作为当前 Python 框架的直接解析文件。
+   - 建议另存/导出一份 DXF，优先使用 AutoCAD 2010/LT2010 DXF。
+
+3. 沿湖休闲片区标注图.xlsx
+   - 表格中有 C1-C45 等编号及对应高度，单位为米。
+   - 这是很有用的数据，后续可转成 buildings.csv 的 height_m 字段。
+   - 但目前缺少每栋建筑的 x_min、x_max、y_min、y_max、floors、movable、protected、facade_type、notes 等字段。
+
+4. 沿湖休闲片区说明.docx
+   - 已提出主要问题：
+     - 照明设施偏少，夜间照明不足；
+     - 缺少座椅/口袋空间；
+     - 走线凌乱交错，外露线路杂乱；
+     - 公共临时泊位少，居民与游客停车需求重叠，高峰期易堵；
+     - 滨水步道连续性差，设施不完善；
+     - 可改位置：闲置绿地；
+     - 不可改动位置：幼儿园；
+     - 居民活动点：公园。
+   - 这些判断与沿湖休闲片区任务方向吻合。
+   - 但目前只是文字描述，需要落实到图纸坐标、片区编号、节点编号。
+
+5. 现场照片
+   - 照片能支持以下问题判断：
+     - 夜间照明不足或照明质量不均；
+     - 架空线缆凌乱；
+     - 临时停车占用道路或灰空间；
+     - 部分边角空间、绿地或施工围挡周边可能成为改造节点。
+   - 但照片目前没有命名、编号、拍摄点位、对应问题类型和对应节点坐标，不能直接进入算法。
+
+三、是否符合当前验收标准
+
+1. site_model.obj：未通过
+   - 已有 SKP，但缺少 OBJ。
+   - 需要从 SketchUp 导出 site_model.obj，单位必须是米。
+
+2. buildings.csv：未通过
+   - Excel 中已有 C1-C45 的高度信息，但还没有标准 buildings.csv。
+   - 必须把 C1-C45 对应到 CAD 平面里的建筑边界，并补齐坐标和属性。
+
+3. streets.csv：未通过
+   - 目前没有道路/步道中心线、起终点、宽度、方向和人行优先属性。
+
+4. nodes.csv：未通过
+   - 目前没有把公园、照明不足点、停车冲突点、滨水断点、线缆杂乱点、幼儿园入口等整理成节点。
+
+5. protected_zones.csv：未通过
+   - 文档中提到“幼儿园不可改动”，但还没有形成保护区坐标。
+
+6. site_zones.csv：未通过
+   - 沿湖休闲片区需要把“闲置绿地、滨水步道、停车冲突区、幼儿园保护区、公园活动点”等整理成片区边界。
+
+7. 现场问题识别：基本通过
+   - 问题方向是对的，且与照片能相互印证。
+   - 但需要从“描述”进一步变成“可计算点位和边界”。
+
+四、对算法A/B/C是否需要调整
+
+不需要改变 ABC 三层逻辑。
+
+算法A仍然负责诊断：日照/暗区/地面采光小时数/可改善缝隙。
+算法B仍然负责决策：最小干预、加法、减法、重组。
+算法C仍然负责验证：老人、儿童、残障人士的通行安全与可达性。
+
+但针对“沿湖休闲片区”的真实问题，建议在现有框架中增加或强化几个字段：
+
+1. 在 nodes.csv 中增加或通过 node_type 表达：
+   - lighting_problem：夜间照明不足点；
+   - cable_problem：线缆杂乱点；
+   - parking_conflict：停车冲突点；
+   - waterfront_break：滨水步道断点；
+   - activity_node：居民活动点；
+   - protected_entrance：幼儿园等保护对象入口。
+
+2. 在 site_zones.csv 中明确：
+   - vacant_land：闲置绿地，可作为小型公共空间/口袋空间候选；
+   - waterfront：滨水步道连续性优化范围；
+   - parking_conflict_area：停车冲突区；
+   - kindergarten：保护区，不参与削减或重组；
+   - park：居民活动点或公共活动核心。
+
+3. 算法B候选方案应更偏向：
+   - 补充夜间照明节点；
+   - 补座椅和灰空间；
+   - 利用闲置绿地做口袋空间；
+   - 修复滨水步道连续性；
+   - 梳理停车与慢行冲突；
+   - 不动幼儿园等保护对象。
+
+五、要求谢研组下一轮必须补交的文件
+
+请他们把现有材料整理成以下标准包：
+
+1. site_model.obj
+   - 从“沿湖休闲片区场地.skp”导出。
+   - 只保留简化建筑体量和必要场地边界。
+   - 单位为米。
+   - 坐标尽量保持与 CAD 一致。
+
+2. buildings.csv
+   必须包含字段：
+   building_id,name,x_min,x_max,y_min,y_max,height_m,floors,movable,protected,facade_type,notes
+
+   填写要求：
+   - building_id 可以沿用 C1、C2、C3……C45。
+   - height_m 直接使用 Excel 表里的高度。
+   - x_min/x_max/y_min/y_max 从 CAD 标号图或 SU 模型中读取建筑外接矩形。
+   - floors 可按 height_m / 3 粗略估算。
+   - 幼儿园或明确不可改建筑 protected = true。
+   - 一般居民楼 protected = false，是否 movable 由他们根据现场判断填写。
+
+3. streets.csv
+   必须包含字段：
+   street_id,start_x,start_y,end_x,end_y,width_m,main_direction,pedestrian_priority,notes
+
+   至少要包含：
+   - 主要车行路；
+   - 滨水步道；
+   - 公园/活动点连接路径；
+   - 停车冲突路段。
+
+4. nodes.csv
+   必须包含字段：
+   node_id,x,y,z,node_type,importance,notes
+
+   至少要标出：
+   - 公园居民活动点；
+   - 夜间照明不足点；
+   - 线缆杂乱点；
+   - 停车冲突点；
+   - 滨水步道断点；
+   - 闲置绿地入口；
+   - 幼儿园入口或保护节点。
+
+5. protected_zones.csv
+   必须包含字段：
+   zone_id,x_min,x_max,y_min,y_max,z_min,z_max,reason,notes
+
+   至少要包含：
+   - 幼儿园保护区。
+   如有不可动古树、水体边界、保留公共建筑，也一起写入。
+
+6. site_zones.csv
+   建议包含字段：
+   zone_id,name,zone_type,x_min,x_max,y_min,y_max,priority,needs_light_improvement,needs_accessibility_improvement,protected,notes
+
+   沿湖休闲片区建议至少填：
+   - LH_Z001：闲置绿地，zone_type = vacant_land；
+   - LH_Z002：滨水步道断续段，zone_type = waterfront；
+   - LH_Z003：停车冲突区，zone_type = parking_conflict_area；
+   - LH_Z004：幼儿园保护区，zone_type = protected_public_service；
+   - LH_Z005：公园居民活动点，zone_type = activity_node；
+   - LH_Z006：照明不足街段，zone_type = lighting_problem_area。
+
+7. 现场照片索引表
+   建议新增 photo_index.csv：
+   photo_id,file_name,related_node_id,related_zone_id,problem_type,notes
+
+   例如：
+   P001,微信图片_20260520205047.jpg,LH_N003,,cable_problem,架空线缆杂乱
+   P002,微信图片_20260520205059.jpg,LH_N004,LH_Z003,parking_conflict,停车占用道路
+
+六、对组员的直接反馈话术
+
+你们这组方向是对的，已经找到了沿湖休闲片区几个关键问题：夜间照明、线缆、停车、口袋空间不足、滨水步道不连续、幼儿园保护、公园活动点。现在缺的不是继续拍更多照片，而是把这些发现“编号化、坐标化、表格化”。
+
+下一轮重点：
+1. SKP 导出 OBJ。
+2. DWG 另存 DXF。
+3. 把 C1-C45 的建筑高度表改成 buildings.csv。
+4. 把问题点和可改/不可改范围落实到 nodes.csv、site_zones.csv、protected_zones.csv。
+5. 给每张照片标注对应节点或片区编号。
+
+完成这些后，沿湖休闲片区就可以进入算法A/B/C流程：先诊断采光和暗区，再生成最小干预方案，最后做通行安全验证。
+
+七、给项目负责人的判断
+
+该组不建议判为无效提交。它具备继续整理的基础，尤其是：
+1. 有 SKP 模型；
+2. 有 DWG 标号图；
+3. 有建筑高度表；
+4. 有现场问题说明；
+5. 有现场照片证据。
+
+但当前不能直接放进 light_equity_project/data/real_guankou 运行。需要他们按标准模板补齐 OBJ 和 CSV 后，才算进入算法验收。

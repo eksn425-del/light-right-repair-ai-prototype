@@ -1,0 +1,7 @@
+{
+  "candidate_count": 3,
+  "best_candidate_id": "candidate_real_01",
+  "score_method": "verified 6m sunlight re-simulation, dark-ratio drop and sunlight gain minus intervention volume penalty",
+  "source_screening": "../real_candidate_tests/real_candidate_scores.csv",
+  "notes": "This B output replaces heuristic expected-gain ranking with post-simulation verified ranking."
+}

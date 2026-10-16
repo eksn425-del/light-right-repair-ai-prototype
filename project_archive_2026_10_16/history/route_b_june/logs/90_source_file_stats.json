@@ -1,0 +1,114 @@
+{
+  "original_skp": {
+    "path": "E:\\AI项目\\谢研组\\沿湖休闲片区场地.skp",
+    "exists": true,
+    "size_bytes": 1201857,
+    "modified": "2026-06-04T16:48:36"
+  },
+  "original_dxf_labels": {
+    "path": "E:\\AI项目\\谢研组\\沿湖休闲片区标号(新）.dxf",
+    "exists": true,
+    "size_bytes": 4491822,
+    "modified": "2026-05-22T21:31:22",
+    "raw_extent": {
+      "exists": true,
+      "entity_count": 10552,
+      "layer_counts": {
+        "地形图": 9883,
+        "PUB_TITLE": 3,
+        "0": 23,
+        "文字": 68,
+        "PUB_TEXT": 68,
+        "building_footprints": 411,
+        "road": 96
+      },
+      "x_min": 126100.1228941679,
+      "x_max": 1000756.300832733,
+      "y_min": 2248887.245990753,
+      "y_max": 2797840.275461197,
+      "z_min": 0.0,
+      "z_max": 4999500.0
+    }
+  },
+  "site_dxf": {
+    "path": "E:\\AI项目\\谢研组\\沿湖休闲片区场地说明.dxf",
+    "exists": true,
+    "size_bytes": 15117711,
+    "modified": "2026-05-21T22:37:47",
+    "raw_extent": {
+      "exists": true,
+      "entity_count": 38252,
+      "layer_counts": {
+        "地形图": 36666,
+        "PUB_TITLE": 2,
+        "0": 1437,
+        "DLSS": 1,
+        "JMD": 1,
+        "PUB_DIM": 7,
+        "绿地": 3,
+        "文字": 18,
+        "场地标注": 117
+      },
+      "x_min": 424492.9662055373,
+      "x_max": 1612575.373699605,
+      "y_min": 2712921.286849022,
+      "y_max": 3750477.529343128,
+      "z_min": -128503.8585425382,
+      "z_max": 4999500.0
+    }
+  },
+  "original_obj": {
+    "path": "E:\\AI项目\\谢研组\\沿湖休闲片区场地.obj",
+    "exists": true,
+    "size_bytes": 988268,
+    "modified": "2026-05-21T21:49:40",
+    "raw_extent": {
+      "exists": true,
+      "vertex_count": 9741,
+      "x_min": -732.662,
+      "x_max": 675781.0,
+      "y_min": -22.3678,
+      "y_max": 21000.0,
+      "z_min": -467533.0,
+      "z_max": 828.151
+    }
+  },
+  "ladybug_ready_baseline": {
+    "path": "E:\\AI项目\\ladybug_ready_models\\baseline_original_full_site_ladybug_ready.obj",
+    "exists": true,
+    "size_bytes": 1073795,
+    "modified": "2026-06-09T09:11:58",
+    "raw_extent": {
+      "exists": true,
+      "vertex_count": 9741,
+      "x_min": -0.732662,
+      "x_max": 675.781,
+      "y_min": -0.828151,
+      "y_max": 467.533,
+      "z_min": -0.022368,
+      "z_max": 21.0
+    }
+  },
+  "ladybug_ready_c6_c33": {
+    "path": "E:\\AI项目\\ladybug_ready_models\\algorithm_after_full_site_only_C6_C33_changed_ladybug_ready.obj",
+    "exists": true,
+    "size_bytes": 1073998,
+    "modified": "2026-06-09T09:11:58",
+    "raw_extent": {
+      "exists": true,
+      "vertex_count": 9741,
+      "x_min": -0.732662,
+      "x_max": 675.781,
+      "y_min": -0.828151,
+      "y_max": 467.533,
+      "z_min": -0.022368,
+      "z_max": 21.0
+    }
+  },
+  "buildings_csv": {
+    "path": "E:\\AI项目\\谢研组\\algorithm_ready_lakeside_v2\\buildings.csv",
+    "exists": true,
+    "size_bytes": 7054,
+    "modified": "2026-05-22T19:06:39"
+  }
+}

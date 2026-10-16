@@ -1,0 +1,1246 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          4
+        ]
+      ],
+      "date-time": "2026-06-04T04:32:20Z",
+      "timestamp": 1780547540977,
+      "version": "3.54.1"
+    },
+    "reference-count": 108,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2014,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2014-10-01T00:00:00Z",
+          "timestamp": 1412121600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Renewable and Sustainable Energy Reviews"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2014,
+          10
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.rser.2014.06.007",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2014,
+          7,
+          11
+        ]
+      ],
+      "date-time": "2014-07-11T06:30:52Z",
+      "timestamp": 1405060252000
+    },
+    "page": "551-560",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 162,
+    "special_numbering": "C",
+    "title": [
+      "Review of the impact of urban block form on thermal performance, solar access and ventilation"
+    ],
+    "prefix": "10.1016",
+    "volume": "38",
+    "author": [
+      {
+        "given": "Haniyeh",
+        "family": "Sanaieian",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Martin",
+        "family": "Tenpierik",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kees van den",
+        "family": "Linden",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Fatemeh",
+        "family": "Mehdizadeh Seraj",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Seyed Majid",
+        "family": "Mofidi Shemrani",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib1",
+        "doi-asserted-by": "crossref",
+        "first-page": "18",
+        "DOI": "10.1016/j.landurbplan.2013.06.001",
+        "article-title": "An emergy analysis for urban environmental sustainability assessment, the Island of Montreal, Canada",
+        "volume": "118",
+        "author": "Vega-Azamar",
+        "year": "2013",
+        "journal-title": "Landsc Urban Plan"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib2",
+        "doi-asserted-by": "crossref",
+        "first-page": "40",
+        "DOI": "10.1016/j.landurbplan.2013.06.002",
+        "article-title": "A systematic review of guiding principles for sustainable urban neighborhood development",
+        "volume": "118",
+        "author": "Luederitz",
+        "year": "2013",
+        "journal-title": "Landsc Urban Plan."
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib3",
+        "unstructured": "IEA. International Energy Agency. World energy outlook 2008 International Energy Agency; 2008."
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib4",
+        "unstructured": "Wissen Hayek U, Grêt-Regamey A. Collaborative urban modelling platform – facilitating incorporating of ecosystem services into planning for sustainable urban patterns. TEEB Conference. Leipzig, Germany; 2012."
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib5",
+        "unstructured": "World Energy Outlook 2008. Chapter 8 – energy use in cities; 2009."
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib6",
+        "doi-asserted-by": "crossref",
+        "first-page": "197",
+        "DOI": "10.1016/j.foar.2012.05.002",
+        "article-title": "Urban physics: effect of the micro-climate on comfort, health and energy demand",
+        "volume": "1",
+        "author": "Moonen",
+        "year": "2012",
+        "journal-title": "Front Archit Res"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib7",
+        "series-title": "Design with climate",
+        "author": "Olgyay",
+        "year": "1963"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib8",
+        "first-page": "98",
+        "article-title": "Architect׳s approach to architecture",
+        "author": "Martin",
+        "year": "1967",
+        "journal-title": "RIBA J"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib9",
+        "doi-asserted-by": "crossref",
+        "first-page": "1173",
+        "DOI": "10.1016/j.solener.2012.01.010",
+        "article-title": "Study of thermal comfort in courtyards in a hot arid climate",
+        "volume": "86",
+        "author": "Berkovic",
+        "year": "2012",
+        "journal-title": "Sol Energy"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib10",
+        "doi-asserted-by": "crossref",
+        "first-page": "435",
+        "DOI": "10.1068/b110435",
+        "article-title": "Solar radiation and urban design for hot climates",
+        "volume": "11",
+        "author": "Gupta",
+        "year": "1984",
+        "journal-title": "Environ Plan B: Plan Des"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib11",
+        "series-title": "Planning for a sustainable environment, a report by the town and country planning association",
+        "author": "Blowers",
+        "year": "1993"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib12",
+        "series-title": "Boundary layer climates",
+        "author": "Oke",
+        "year": "1987"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib13",
+        "series-title": "Energy and Urban Built Form",
+        "article-title": "Thermal efficiency of building clusters: an index for non air-conditioned buildings in hot climates",
+        "author": "Gupta",
+        "year": "1987"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib14",
+        "doi-asserted-by": "crossref",
+        "first-page": "189",
+        "DOI": "10.1016/j.enbuild.2011.11.042",
+        "article-title": "The effects of urban and building design parameters on solar access to the urban canyon and the potential for direct passive solar heating strategies",
+        "volume": "47",
+        "author": "van Esch",
+        "year": "2012",
+        "journal-title": "Energy Build"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib15",
+        "series-title": "Man, climate and architecture",
+        "author": "Givoni",
+        "year": "1976"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib16",
+        "doi-asserted-by": "crossref",
+        "first-page": "215",
+        "DOI": "10.1016/j.enbuild.2013.02.018",
+        "article-title": "Envelope-related energy demand: a design indicator of energy performance for residential buildings in early design stages",
+        "volume": "61",
+        "author": "Granadeiro",
+        "year": "2013",
+        "journal-title": "Energy Build"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib17",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1016/S0378-7788(02)00074-9",
+        "article-title": "Cities, energy and comfort: a PLEA 2000 review",
+        "volume": "35",
+        "author": "Steemers",
+        "year": "2003",
+        "journal-title": "Energy Build"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib18",
+        "series-title": "Energy and Urban Built Form",
+        "first-page": "133",
+        "article-title": "Thermal efficiency of building clusters: an index for non air-conditioned buildings in hot climates",
+        "author": "Gupta",
+        "year": "1987"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib19",
+        "doi-asserted-by": "crossref",
+        "first-page": "377",
+        "DOI": "10.1080/08111140903308859",
+        "article-title": "Transport housing and urban form: the life cycle energy consumption and emissions of city centre apartments compared with suburban dwellings",
+        "volume": "27",
+        "author": "Perkins",
+        "year": "2009",
+        "journal-title": "Urban Policy Res."
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib20",
+        "doi-asserted-by": "crossref",
+        "first-page": "165",
+        "DOI": "10.1016/j.eiar.2011.08.002",
+        "article-title": "Towards sustainable urban communities",
+        "volume": "32",
+        "author": "Haapio",
+        "year": "2012",
+        "journal-title": "Environ Impact Assess Rev"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib21",
+        "doi-asserted-by": "crossref",
+        "first-page": "331",
+        "DOI": "10.1016/0960-1481(96)88872-0",
+        "article-title": "Solar access/shading and building form: geometrical study of the traditional housing cluster in Sana׳a",
+        "volume": "8",
+        "author": "Al-Sallal",
+        "year": "1996",
+        "journal-title": "Renew Energy"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib22",
+        "series-title": "Energy and environment in architecture: a technical design guide",
+        "author": "Baker",
+        "year": "2000"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib23",
+        "doi-asserted-by": "crossref",
+        "first-page": "762",
+        "DOI": "10.1016/j.enbuild.2004.10.010",
+        "article-title": "Energy consumption and urban texture",
+        "volume": "37",
+        "author": "Ratti",
+        "year": "2005",
+        "journal-title": "Energy and Build"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib24",
+        "series-title": "Urban design in different climates",
+        "author": "Givoni",
+        "year": "1989"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib25",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1016/j.enbuild.2006.03.031",
+        "article-title": "Transition to a sustainable urban energy system from a long-term perspective: case study in a Japanese business district",
+        "volume": "39",
+        "author": "Yamaguchi",
+        "year": "2007",
+        "journal-title": "Energy and Build"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib26",
+        "doi-asserted-by": "crossref",
+        "first-page": "1864",
+        "DOI": "10.1016/j.solener.2011.04.027",
+        "article-title": "Parametric investigation of geometric form effects on solar potential of housing units",
+        "volume": "85",
+        "author": "Hachem",
+        "year": "2011",
+        "journal-title": "Sol Energy"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib27",
+        "doi-asserted-by": "crossref",
+        "first-page": "2262",
+        "DOI": "10.1016/j.enbuild.2011.05.008",
+        "article-title": "Investigation of solar potential of housing units in different neighborhood designs",
+        "volume": "43",
+        "author": "Hachem",
+        "year": "2011",
+        "journal-title": "Energy Build"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib28",
+        "doi-asserted-by": "crossref",
+        "first-page": "335",
+        "DOI": "10.1016/j.enbuild.2012.02.021",
+        "article-title": "Evaluation of energy supply and demand in solar neighborhood",
+        "volume": "49",
+        "author": "Hachem",
+        "year": "2012",
+        "journal-title": "Energy and Build"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib29",
+        "doi-asserted-by": "crossref",
+        "first-page": "166",
+        "DOI": "10.1016/j.enbuild.2013.08.024",
+        "article-title": "Energy use impact of and thermal comfort in different urban block types in the Netherlands",
+        "volume": "67",
+        "author": "Taleghani",
+        "year": "2013",
+        "journal-title": "Energy and Build"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib30",
+        "doi-asserted-by": "crossref",
+        "first-page": "26",
+        "DOI": "10.1016/j.compenvurbsys.2008.09.005",
+        "article-title": "Sunscapes: ‘Solar envelopes’ and the analysis of urban DEMs",
+        "volume": "33",
+        "author": "Morello",
+        "year": "2009",
+        "journal-title": "Comput Environ Urban Syst"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib31",
+        "unstructured": "ASHRAE. ASHRAE standard 55-2010 Thermal Environmental Conditions for Human Occupancy. Atlanta, GA: ASHRAE; 2010."
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib32",
+        "doi-asserted-by": "crossref",
+        "first-page": "297",
+        "DOI": "10.1068/b2665",
+        "article-title": "Raster analysis of urban form",
+        "volume": "31",
+        "author": "Ratti",
+        "year": "2004",
+        "journal-title": "Environ Plan B: Plan Des"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib33",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Knowles RL, Berry RD, Bank SEID, Institute SER. Solar envelope concepts: moderate density building applications: final report: solar energy information data bank; 1980.",
+        "DOI": "10.2172/6736314"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib34",
+        "first-page": "79",
+        "article-title": "Landscaping as a passive solar strategy",
+        "volume": "4",
+        "author": "Montgomery",
+        "year": "1987",
+        "journal-title": "Passiv Sol J"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib35",
+        "first-page": "6",
+        "article-title": "Urban Form",
+        "author": "Cheng",
+        "year": "2006",
+        "journal-title": "Density Sol Potential"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib36",
+        "first-page": "25",
+        "author": "Ossen",
+        "year": "2009",
+        "journal-title": "Urban morphology to minimize solar insolation on out door urban spaces in the tropics"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib37",
+        "doi-asserted-by": "crossref",
+        "first-page": "1799",
+        "DOI": "10.1016/0167-6105(92)90592-X",
+        "article-title": "Wind tunnel tests of wind pressure on regularly aligned buildings",
+        "volume": "43",
+        "author": "Tsutsumi",
+        "year": "1992",
+        "journal-title": "J Wind Eng Ind Aerod"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib38",
+        "doi-asserted-by": "crossref",
+        "first-page": "219",
+        "DOI": "10.1016/0167-6105(87)90018-3",
+        "article-title": "Prediction of the wind-generated pressure distribution around buildings",
+        "volume": "25",
+        "author": "Mathews",
+        "year": "1987",
+        "journal-title": "J Wind Eng Ind Aerod"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib39",
+        "doi-asserted-by": "crossref",
+        "first-page": "1437",
+        "DOI": "10.1016/j.enbuild.2010.03.013",
+        "article-title": "A holistic approach to energy efficient building forms",
+        "volume": "42",
+        "author": "Okeil",
+        "year": "2010",
+        "journal-title": "Energy Build"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib40",
+        "doi-asserted-by": "crossref",
+        "first-page": "2011",
+        "DOI": "10.1016/j.enbuild.2011.04.007",
+        "article-title": "The urban canyon and building energy use: urban density versus daylight and passive solar gains",
+        "volume": "43",
+        "author": "Strømann-Andersen",
+        "year": "2011",
+        "journal-title": "Energy Build"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib41",
+        "doi-asserted-by": "crossref",
+        "first-page": "1158",
+        "DOI": "10.1016/j.buildenv.2005.11.002",
+        "article-title": "CFD modelling of natural displacement ventilation in an enclosure connected to an atrium",
+        "volume": "42",
+        "author": "Ji",
+        "year": "2007",
+        "journal-title": "Build Environ"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib42",
+        "doi-asserted-by": "crossref",
+        "first-page": "1128",
+        "DOI": "10.1126/science.281.5380.1128",
+        "article-title": "The next oil crisis looms large – and perhaps close",
+        "volume": "281",
+        "author": "Kerr",
+        "year": "1998",
+        "journal-title": "Science"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib43",
+        "series-title": "A history of architecture: settings and rituals",
+        "author": "Kostof",
+        "year": "1995"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib44",
+        "doi-asserted-by": "crossref",
+        "first-page": "627",
+        "DOI": "10.1016/S0960-1481(01)00049-0",
+        "article-title": "Low energy building design in high density urban cities",
+        "volume": "24",
+        "author": "Hui",
+        "year": "2001",
+        "journal-title": "Renew Energy"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib45",
+        "doi-asserted-by": "crossref",
+        "first-page": "21",
+        "DOI": "10.1061/(ASCE)0733-9488(2008)134:1(21)",
+        "article-title": "Metabolism of neighborhoods",
+        "volume": "134",
+        "author": "Codoban",
+        "year": "2008",
+        "journal-title": "J Urban Plan Dev"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib46",
+        "series-title": "Optimisation of urban form by the evaluation of the solar potential",
+        "author": "Montavon",
+        "year": "2010"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib47",
+        "series-title": "The new architecture and the bauhaus",
+        "author": "Gropius",
+        "year": "1965"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib48",
+        "unstructured": "Harzallah A. Émergence et évolution des préconisations solaires dans les théories architecturales et urbaines en France, de la seconde moitié du XIXe siècle à la deuxième guerre mondiale; 2007."
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib49",
+        "series-title": "Some elementary models of built forms",
+        "author": "March",
+        "year": "1971"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib50",
+        "doi-asserted-by": "crossref",
+        "first-page": "49",
+        "DOI": "10.1016/S0378-7788(02)00079-8",
+        "article-title": "Building form and environmental performance: archetypes, analysis and an arid climate",
+        "volume": "35",
+        "author": "Ratti",
+        "year": "2003",
+        "journal-title": "Energy Build"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib51",
+        "series-title": "Urban space and structures",
+        "author": "Martin",
+        "year": "1972"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib52",
+        "first-page": "25",
+        "article-title": "City texture and microclimate",
+        "volume": "3",
+        "author": "Steemers",
+        "year": "1997",
+        "journal-title": "Urban Des Stud"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib53",
+        "series-title": "Sun, wind, and light: architectural design strategies",
+        "author": "Brown",
+        "year": "1985"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib54",
+        "doi-asserted-by": "crossref",
+        "first-page": "73",
+        "DOI": "10.1068/bst7",
+        "article-title": "A classification of built forms",
+        "volume": "27",
+        "author": "Steadman",
+        "year": "2000",
+        "journal-title": "Environ Plan B: Plan Des"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib55",
+        "doi-asserted-by": "crossref",
+        "first-page": "861",
+        "DOI": "10.1175/1520-0450(1979)018<0861:TAOSPI>2.0.CO;2",
+        "article-title": "The assessment of sultriness. part i: a temperature-humidity index based on human physiology and clothing science",
+        "volume": "18",
+        "author": "Steadman",
+        "year": "1979",
+        "journal-title": "J Appl Meteorol Climatol"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib56",
+        "doi-asserted-by": "crossref",
+        "first-page": "38",
+        "DOI": "10.1016/j.buildenv.2012.03.022",
+        "article-title": "Predicting and understanding temporal 3D exterior surface temperature distribution in an ideal courtyard",
+        "volume": "57",
+        "author": "Yang",
+        "year": "2012",
+        "journal-title": "Build Environ"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib57",
+        "unstructured": "Treloar GJT, Selwyn N, Fay. Proceedings of the embodied energy: the current state of play seminar Deakin University. School of Architecture and Building; 1998."
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib58",
+        "doi-asserted-by": "crossref",
+        "first-page": "157",
+        "DOI": "10.1061/(ASCE)1076-0342(2003)9:4(157)",
+        "article-title": "Life-cycle environmental effects of an office building",
+        "volume": "9",
+        "author": "Junnila",
+        "year": "2003",
+        "journal-title": "J Infrastruct Syst"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib59",
+        "doi-asserted-by": "crossref",
+        "first-page": "429",
+        "DOI": "10.1016/S0360-1323(01)00033-6",
+        "article-title": "A low energy building in a life cycle – its embodied energy, energy need for operation and recycling potential",
+        "volume": "37",
+        "author": "Thormark",
+        "year": "2002",
+        "journal-title": "Build Environ"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib60",
+        "unstructured": "Zachariah JAL. Towards sustainable homes through optimisation [microform]: an approach to balancing life cycle environmental impacts and life cycle costs in residential buildings [Ph.D. thesis]. University of Toronto; 2003."
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib61",
+        "doi-asserted-by": "crossref",
+        "first-page": "31",
+        "DOI": "10.1080/096132100369073",
+        "article-title": "Life-cycle energy analysis of buildings: a case study",
+        "volume": "28",
+        "author": "Fay",
+        "year": "2000",
+        "journal-title": "Build Res Inf"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib62",
+        "doi-asserted-by": "crossref",
+        "first-page": "10",
+        "DOI": "10.1061/(ASCE)0733-9488(2006)132:1(10)",
+        "article-title": "Comparing high and low residential density: life-cycle analysis of energy use and greenhouse gas emissions",
+        "volume": "132",
+        "author": "Norman",
+        "year": "2006",
+        "journal-title": "J Urban Plan Dev"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib63",
+        "series-title": "Guidance on selecting energy programs",
+        "author": "Howard",
+        "year": "1994"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib64",
+        "doi-asserted-by": "crossref",
+        "first-page": "37",
+        "DOI": "10.1016/S0378-7788(02)00078-6",
+        "article-title": "Predicting the urban solar fraction: a methodology for energy advisers and planners based on GIS",
+        "volume": "35",
+        "author": "Gadsden",
+        "year": "2003",
+        "journal-title": "Energy Build"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib65",
+        "doi-asserted-by": "crossref",
+        "first-page": "579",
+        "DOI": "10.1016/S0198-9715(00)00032-6",
+        "article-title": "GIS-based decision support for solar energy planning in urban environments",
+        "volume": "25",
+        "author": "Rylatt",
+        "year": "2001",
+        "journal-title": "Comput Environ Urban Syst"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib66",
+        "doi-asserted-by": "crossref",
+        "first-page": "855",
+        "DOI": "10.1080/09640560020001728",
+        "article-title": "Planning for a sustainable city: an energy and environmental prediction model",
+        "volume": "43",
+        "author": "Jones",
+        "year": "2000",
+        "journal-title": "J Environ Plan Manag"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib67",
+        "doi-asserted-by": "crossref",
+        "first-page": "277",
+        "DOI": "10.1016/S0195-9255(00)00040-8",
+        "article-title": "The role of models in arguments about urban sustainability",
+        "volume": "20",
+        "author": "Tweed",
+        "year": "2000",
+        "journal-title": "Environ Impact Assess Rev"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib68",
+        "doi-asserted-by": "crossref",
+        "first-page": "251",
+        "DOI": "10.1016/0378-7788(95)00950-7",
+        "article-title": "LT Method 3.0 – a strategic energy-design tool for Southern Europe",
+        "volume": "23",
+        "author": "Baker",
+        "year": "1996",
+        "journal-title": "Energy Build"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib69",
+        "series-title": "The LT method 2.0: an energy design tool for non-domestic buildings",
+        "author": "Baker",
+        "year": "1994"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib70",
+        "series-title": "Sun rhythm form",
+        "author": "Knowles",
+        "year": "1985"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib71",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Knowles RL, Berry RD. Solar envelope concepts: moderate density building applications. Final report; 1980. p. 144, Medium: X.",
+        "DOI": "10.2172/6736314"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib72",
+        "doi-asserted-by": "crossref",
+        "first-page": "15",
+        "DOI": "10.1016/S0378-7788(02)00076-2",
+        "article-title": "The solar envelope: its meaning for energy and buildings",
+        "volume": "35",
+        "author": "Knowles",
+        "year": "2003",
+        "journal-title": "Energy Build"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib73",
+        "series-title": "Energy and form: an ecological approach to urban growth",
+        "author": "Knowles",
+        "year": "1974"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib74",
+        "doi-asserted-by": "crossref",
+        "first-page": "275",
+        "DOI": "10.1016/S0038-092X(00)00088-8",
+        "article-title": "On the use of ‘solar volume’ for determining the urban fabric",
+        "volume": "70",
+        "author": "Capeluto",
+        "year": "2001",
+        "journal-title": "Sol Energy"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib75",
+        "doi-asserted-by": "crossref",
+        "first-page": "42",
+        "DOI": "10.1016/j.solener.2013.06.002",
+        "article-title": "Solar optimised residential neighborhoods: evaluation and design methodology",
+        "volume": "95",
+        "author": "Hachem",
+        "year": "2013",
+        "journal-title": "Sol Energy"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib76",
+        "doi-asserted-by": "crossref",
+        "first-page": "303",
+        "DOI": "10.1016/S1364-0321(97)00009-9",
+        "article-title": "Passive solar urban design: ensuring the penetration of solar energy into the city",
+        "volume": "2",
+        "author": "Littlefair",
+        "year": "1998",
+        "journal-title": "Renew Sustain Energy Rev"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib77",
+        "doi-asserted-by": "crossref",
+        "first-page": "15",
+        "DOI": "10.1016/S0378-7788(02)00076-2",
+        "article-title": "The solar envelope: its meaning for energy and buildings",
+        "volume": "35",
+        "author": "Knowles",
+        "year": "2003",
+        "journal-title": "Energy Build"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib78",
+        "doi-asserted-by": "crossref",
+        "first-page": "177",
+        "DOI": "10.1016/S0038-092X(00)00099-2",
+        "article-title": "Daylight, sunlight and solar gain in the urban environment",
+        "volume": "70",
+        "author": "Littlefair",
+        "year": "2001",
+        "journal-title": "Sol Energy"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib79",
+        "doi-asserted-by": "crossref",
+        "first-page": "1437",
+        "DOI": "10.1016/j.enbuild.2010.03.013",
+        "article-title": "A holistic approach to energy efficient building forms",
+        "volume": "42",
+        "author": "Okeil",
+        "year": "2010",
+        "journal-title": "Energy Build"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib80",
+        "unstructured": "Huang Y, Musy M, Hégron G, Chen H, Li B. 663: Towards urban design guidelines from urban morphology description and climate adaptability. plea-archorg; 2008."
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib81",
+        "doi-asserted-by": "crossref",
+        "first-page": "807",
+        "DOI": "10.1016/j.enbuild.2009.11.019",
+        "article-title": "Optimisation of building form for solar energy utilisation using constrained evolutionary algorithms",
+        "volume": "42",
+        "author": "Kämpf",
+        "year": "2010",
+        "journal-title": "Energy Build"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib82",
+        "doi-asserted-by": "crossref",
+        "first-page": "3",
+        "DOI": "10.1016/S0378-7788(02)00075-0",
+        "article-title": "Energy and the city: density, buildings and transport",
+        "volume": "35",
+        "author": "Steemers",
+        "year": "2003",
+        "journal-title": "Energy Build"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib83",
+        "doi-asserted-by": "crossref",
+        "first-page": "216",
+        "DOI": "10.1080/14486563.2006.10648689",
+        "article-title": "The potential for solar energy use in a new zealand residential neighbourhood: a case study considering the effect on CO2 emissions and the possible benefits of changing roof form",
+        "volume": "13",
+        "author": "Ghosh",
+        "year": "2006",
+        "journal-title": "Aust J Environ Manag"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib84",
+        "doi-asserted-by": "crossref",
+        "first-page": "1143",
+        "DOI": "10.1016/j.egypro.2012.11.127",
+        "article-title": "Solar energy as a design parameter in urban planning",
+        "volume": "30",
+        "author": "Kanters",
+        "year": "2012",
+        "journal-title": "Energy Proc"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib85",
+        "doi-asserted-by": "crossref",
+        "first-page": "94",
+        "DOI": "10.1016/j.buildenv.2005.01.013",
+        "article-title": "Numerical study on the effects of aspect ratio and orientation of an urban street canyon on outdoor thermal comfort in hot and dry climate",
+        "volume": "41",
+        "author": "Ali-Toudert",
+        "year": "2006",
+        "journal-title": "Build Environ"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib86",
+        "doi-asserted-by": "crossref",
+        "first-page": "563",
+        "DOI": "10.1016/0360-1323(95)00018-2",
+        "article-title": "On the microclimatic behavior of two semi-enclosed attached courtyards in a hot dry region",
+        "volume": "30",
+        "author": "Meir",
+        "year": "1995",
+        "journal-title": "Build Environ"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib87",
+        "unstructured": "Littlefair P. Penetration of solar energy into the city."
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib88",
+        "unstructured": "Morello E, Gori V, Balocco C, Ratti C. Sustainable urban block design through passive architecture (A tool that uses urban geometry optimization to compute energy savings); 2009."
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib89",
+        "doi-asserted-by": "crossref",
+        "first-page": "321",
+        "DOI": "10.1016/j.enbuild.2004.01.009",
+        "article-title": "Solar and daylight availability in the urban fabric",
+        "volume": "36",
+        "author": "Compagnon",
+        "year": "2004",
+        "journal-title": "Energy Build"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib90",
+        "doi-asserted-by": "crossref",
+        "first-page": "332",
+        "DOI": "10.1016/j.solener.2013.08.036",
+        "article-title": "Solar energy potential on roofs and facades in an urban landscape",
+        "volume": "97",
+        "author": "Redweik",
+        "year": "2013",
+        "journal-title": "Sol Energy"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib91",
+        "doi-asserted-by": "crossref",
+        "first-page": "27",
+        "DOI": "10.1016/S0378-7788(02)00077-4",
+        "article-title": "Irradiation mapping of complex urban environments: an image-based approach",
+        "volume": "35",
+        "author": "Mardaljevic",
+        "year": "2003",
+        "journal-title": "Energy Build"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib92",
+        "doi-asserted-by": "crossref",
+        "first-page": "596",
+        "DOI": "10.1016/j.solener.2009.07.013",
+        "article-title": "Optimisation of buildings׳ solar irradiation availability",
+        "volume": "84",
+        "author": "Kämpf",
+        "year": "2010",
+        "journal-title": "Sol Energy"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib93",
+        "doi-asserted-by": "crossref",
+        "first-page": "275",
+        "DOI": "10.1016/S0038-092X(00)00088-8",
+        "article-title": "On the use of ‘solar volume’ for determining the urban fabric",
+        "volume": "70",
+        "author": "Capeluto",
+        "year": "2001",
+        "journal-title": "Sol Energy"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib94",
+        "doi-asserted-by": "crossref",
+        "first-page": "65",
+        "DOI": "10.1016/j.buildenv.2010.07.001",
+        "article-title": "Experimental investigations of the indoor natural ventilation for different building configurations and incidences",
+        "volume": "46",
+        "author": "Bady",
+        "year": "2011",
+        "journal-title": "Build Environ"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib95",
+        "doi-asserted-by": "crossref",
+        "first-page": "891",
+        "DOI": "10.1016/j.jweia.2005.09.001",
+        "article-title": "Numerical simulation of the wind field around different building arrangements",
+        "volume": "93",
+        "author": "Zhang",
+        "year": "2005",
+        "journal-title": "J Wind Eng Ind Aerod"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib96",
+        "doi-asserted-by": "crossref",
+        "first-page": "469",
+        "DOI": "10.1146/annurev.fluid.35.101101.161147",
+        "article-title": "Flow and dispersion in urban areas",
+        "volume": "35",
+        "author": "Britter",
+        "year": "2003",
+        "journal-title": "Ann Rev Fluid Mech"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib97",
+        "doi-asserted-by": "crossref",
+        "first-page": "281",
+        "DOI": "10.1016/S0167-6105(97)00079-2",
+        "article-title": "Numerical simulation of air flow in an urban area with regularly aligned blocks",
+        "volume": "67-68",
+        "author": "He",
+        "year": "1997",
+        "journal-title": "J Wind Eng Ind Aerod"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib98",
+        "doi-asserted-by": "crossref",
+        "first-page": "617",
+        "DOI": "10.1016/S0141-0296(97)00066-7",
+        "article-title": "Wind-induced interference effects on buildings – a review of the state-of-the-art",
+        "volume": "20",
+        "author": "Khanduri",
+        "year": "1998",
+        "journal-title": "Eng Struct"
+      },
+      {
+        "issue": "22",
+        "key": "10.1016/j.rser.2014.06.007_bib99",
+        "first-page": "2691",
+        "article-title": "Wind, temperature and stability conditions in an east-west oriented urban canyon",
+        "volume": "1988",
+        "author": "Nakamura",
+        "year": "1967",
+        "journal-title": "Atmos Environ"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib100",
+        "doi-asserted-by": "crossref",
+        "first-page": "367",
+        "DOI": "10.1016/j.enbuild.2005.07.009",
+        "article-title": "Experimental investigation of air flow and temperature distribution in deep urban canyons for natural ventilation purposes",
+        "volume": "38",
+        "author": "Georgakis",
+        "year": "2006",
+        "journal-title": "Energy Build"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib101",
+        "doi-asserted-by": "crossref",
+        "first-page": "1326",
+        "DOI": "10.1016/j.buildenv.2005.05.022",
+        "article-title": "Influence of urban geometry on outdoor thermal comfort in a hot dry climate: a study in Fez, Morocco",
+        "volume": "41",
+        "author": "Johansson",
+        "year": "2006",
+        "journal-title": "Build Environ"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib102",
+        "doi-asserted-by": "crossref",
+        "first-page": "167",
+        "DOI": "10.1016/0167-6105(96)00031-1",
+        "article-title": "Influence of wind direction on natural ventilation of apartment buildings",
+        "volume": "60",
+        "author": "Jóźwiak",
+        "year": "1996",
+        "journal-title": "J Wind Eng Ind Aerod"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib103",
+        "doi-asserted-by": "crossref",
+        "first-page": "15",
+        "DOI": "10.1016/0167-6105(83)90173-3",
+        "article-title": "Effects of surrounding buildings on wind pressure distributions and ventilative heat losses for a single-family house",
+        "volume": "15",
+        "author": "Wirén",
+        "year": "1983",
+        "journal-title": "J Wind Eng Ind Aerod"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib104",
+        "doi-asserted-by": "crossref",
+        "first-page": "1991",
+        "DOI": "10.1016/j.buildenv.2007.11.013",
+        "article-title": "Towards the application of indoor ventilation efficiency indices to evaluate the air quality of urban areas",
+        "volume": "43",
+        "author": "Bady",
+        "year": "2008",
+        "journal-title": "Build Environ"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib105",
+        "unstructured": "Thapar H, Yannas S. Microclimate and urban form in Dubai. In: Proceedings of the 25th Conference on Passive and Low Energy Architecture, PLEA. Dublin; 2008."
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib106",
+        "doi-asserted-by": "crossref",
+        "first-page": "5640",
+        "DOI": "10.1016/j.atmosenv.2006.04.055",
+        "article-title": "Recent progress in CFD modelling of wind field and pollutant transport in street canyons",
+        "volume": "40",
+        "author": "Li",
+        "year": "2006",
+        "journal-title": "Atmos Environ"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib107",
+        "doi-asserted-by": "crossref",
+        "first-page": "279",
+        "DOI": "10.1016/S1364-8152(98)00028-0",
+        "article-title": "Urban wind flows: wind tunnel and numerical simulations – a preliminary comparison",
+        "volume": "13",
+        "author": "Johnson",
+        "year": "1998",
+        "journal-title": "Environ Model Softw"
+      },
+      {
+        "key": "10.1016/j.rser.2014.06.007_bib108",
+        "doi-asserted-by": "crossref",
+        "first-page": "547",
+        "DOI": "10.1016/S0167-6105(97)00099-8",
+        "article-title": "A numerical study of wind flow around the TTU building and the roof corner vortex",
+        "volume": "67–68",
+        "author": "He",
+        "year": "1997",
+        "journal-title": "J Wind Eng Ind Aerod"
+      }
+    ],
+    "container-title": [
+      "Renewable and Sustainable Energy Reviews"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S1364032114004444?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S1364032114004444?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2019,
+          8,
+          12
+        ]
+      ],
+      "date-time": "2019-08-12T14:40:34Z",
+      "timestamp": 1565620834000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S1364032114004444"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2014,
+          10
+        ]
+      ]
+    },
+    "references-count": 108,
+    "alternative-id": [
+      "S1364032114004444"
+    ],
+    "URL": "https://doi.org/10.1016/j.rser.2014.06.007",
+    "relation": {},
+    "ISSN": [
+      "1364-0321"
+    ],
+    "issn-type": [
+      {
+        "value": "1364-0321",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2014,
+          10
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Review of the impact of urban block form on thermal performance, solar access and ventilation",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Renewable and Sustainable Energy Reviews",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.rser.2014.06.007",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "Copyright © 2014 Elsevier Ltd. All rights reserved.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ]
+  }
+}

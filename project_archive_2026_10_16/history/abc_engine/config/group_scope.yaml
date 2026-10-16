@@ -1,0 +1,45 @@
+project_scope: "灌口沿湖片区：大井脚里1号片区 + 沿湖休闲片区"
+
+groups:
+  dajingjiaoli_1:
+    display_name: "大井脚里1号社区组"
+    primary_focus:
+      - "村前球场提升"
+      - "主要道路与房前屋后整治"
+      - "停车场地规整"
+      - "旧公社周边公共空间"
+      - "居住建筑与街巷采光问题"
+    required_zone_types:
+      - "ball_court"
+      - "road_edge"
+      - "parking"
+      - "community_node"
+      - "residential_edge"
+      - "vacant_public_building"
+    algorithm_focus:
+      - "暗区诊断"
+      - "慢行与停车重组"
+      - "小尺度公共活动节点"
+      - "老人儿童安全可达"
+
+  lakeside_leisure:
+    display_name: "沿湖休闲片区组"
+    primary_focus:
+      - "旧菜市场活化"
+      - "大面积闲置空地利用"
+      - "镇属闲置公房活化"
+      - "滨湖界面与慢行系统"
+      - "停车与游憩节点组织"
+    required_zone_types:
+      - "old_market"
+      - "vacant_land"
+      - "vacant_public_building"
+      - "waterfront"
+      - "lakeside_leisure"
+      - "parking"
+    algorithm_focus:
+      - "片区开敞度与采光诊断"
+      - "滨水安全与护栏"
+      - "闲置空间激活"
+      - "慢行连续性"
+

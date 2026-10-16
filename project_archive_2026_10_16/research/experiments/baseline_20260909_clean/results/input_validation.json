@@ -1,0 +1,91 @@
+{
+  "run_dir": "E:\\AI项目\\light-equity-soict-2026\\experiments\\baseline_20260909_clean",
+  "passed": true,
+  "checks": [
+    {
+      "check": "building_rows",
+      "passed": true,
+      "detail": "rows=45"
+    },
+    {
+      "check": "building_id_unique",
+      "passed": true,
+      "detail": "building_id uniqueness"
+    },
+    {
+      "check": "building_schema",
+      "passed": true,
+      "detail": "required columns present"
+    },
+    {
+      "check": "building_numeric_fields",
+      "passed": true,
+      "detail": "geometry and height columns are numeric"
+    },
+    {
+      "check": "building_bounds",
+      "passed": true,
+      "detail": "positive boxes and heights"
+    },
+    {
+      "check": "eligible_buildings",
+      "passed": true,
+      "detail": "eligible=36"
+    },
+    {
+      "check": "candidate_schema",
+      "passed": true,
+      "detail": "required columns present"
+    },
+    {
+      "check": "candidate_count",
+      "passed": true,
+      "detail": "rows=630 expected=C(36,2)"
+    },
+    {
+      "check": "candidate_id_unique",
+      "passed": true,
+      "detail": "candidate_id uniqueness"
+    },
+    {
+      "check": "candidate_pair_unique",
+      "passed": true,
+      "detail": "building pair uniqueness"
+    },
+    {
+      "check": "nonnegative_geometry_metrics",
+      "passed": true,
+      "detail": "volume >= 0"
+    },
+    {
+      "check": "sensor_schema",
+      "passed": true,
+      "detail": "required columns present"
+    },
+    {
+      "check": "sensor_id_unique",
+      "passed": true,
+      "detail": "grid_id uniqueness"
+    },
+    {
+      "check": "sensor_count",
+      "passed": true,
+      "detail": "rows=2031"
+    },
+    {
+      "check": "hb_total_scenarios",
+      "passed": true,
+      "detail": "rows=31 including baseline, curated, design and independent-support scenes"
+    },
+    {
+      "check": "hb_verified_rule_candidates",
+      "passed": true,
+      "detail": "rows=23"
+    },
+    {
+      "check": "hb_pair_unique",
+      "passed": true,
+      "detail": "verified rule candidate pairs"
+    }
+  ]
+}

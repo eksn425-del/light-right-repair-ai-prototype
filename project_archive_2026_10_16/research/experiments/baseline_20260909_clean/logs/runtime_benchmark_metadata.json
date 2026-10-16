@@ -1,0 +1,30 @@
+{
+  "run_id": "baseline_20260909_clean",
+  "stage": "runtime_benchmark",
+  "timestamp_utc": "2026-09-09T21:06:46+00:00",
+  "git_commit": "491aeb3874646531bb82f4a3f050889d8ae520b4",
+  "config_path": "E:\\AI项目\\light-equity-soict-2026\\configs\\research.yaml",
+  "config_sha256": "226049f0316ba570a9c82bcfdfdc533cb5b1a8fc2fca95bdfa3b6e5348e25d12",
+  "inputs": [
+    {
+      "path": "E:\\AI项目\\light-equity-soict-2026\\experiments\\baseline_20260909_clean\\logs\\runtime_records.csv",
+      "exists": true,
+      "sha256": "d59f25d09791357e4b798c569caefc41d39757d5bf42d2e7def308cd05382ce6"
+    }
+  ],
+  "screening_repeats": [
+    52.32868199999939,
+    52.156205399998726,
+    54.09703289999743
+  ],
+  "screening_mean_seconds": 52.86064009999851,
+  "screening_median_seconds": 52.32868199999939,
+  "screening_std_seconds": 1.0742147882541064,
+  "hb_measured_call_count": 53,
+  "hb_median_seconds": 51.106736,
+  "estimated_full_hb_630_seconds": 32197.24368,
+  "estimated_full_hb_630_label": "EXTRAPOLATED, not directly measured",
+  "operational_workflow_hb_calls": 33,
+  "research_only_validation_hb_calls": 20,
+  "high_fidelity_fraction_operational": 0.05238095238095238
+}

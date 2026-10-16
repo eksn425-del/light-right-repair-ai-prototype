@@ -1,5 +1,10 @@
 # Light Right Repair AI Prototype
 
+> 2026-10-16：本仓库当前为私有。完整项目、实验与论文交接位于
+> `project-handoff-2026-10-16` 分支，请从 [START_HERE.md](START_HERE.md) 阅读。
+> 其中包含团队材料、历史稿件和真实场地派生图，保持私有。
+> 以下演示项目说明保留其历史语境；当前论文以冻结研究台账为准。
+
 AI-assisted spatial decision workflow for light-equity restoration in dense urban blocks.
 
 ## 中文项目简介

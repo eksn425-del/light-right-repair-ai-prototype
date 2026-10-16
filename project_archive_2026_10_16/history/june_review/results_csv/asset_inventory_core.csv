@@ -1,0 +1,29 @@
+﻿category,role,required,exists,path,extension,size_bytes,modified,sha256
+Word母版,本轮唯一正文、图表、编号和排版母版,True,True,C:\Users\洪禄\Desktop\光权修复论文_EI会议_最终排版版.docx,.docx,582925,2026-06-20T19:15:41,bc808c26b25099cf7af13020f91efe9920f913265478cfbdcca5e84495d436de
+Word母版副本,本轮只读母版副本,True,True,E:\AI项目\中文导师审阅定稿_工作包_2026_06_20\data_raw\光权修复论文_EI会议_最终排版版.docx,.docx,582925,2026-06-20T19:15:41,bc808c26b25099cf7af13020f91efe9920f913265478cfbdcca5e84495d436de
+OBJ模型,沿湖休闲片区算法输入白模,True,True,E:\AI项目\light_equity_project\data\real_guankou\lakeside_leisure_ready\site_model.obj,.obj,988268,2026-05-21T21:49:40,3094f7f47e15ed7c075d6dbc1a50fba993cbb69bc3c3e5e0cabab59d98f65a37
+CSV原始数据,建筑编号、矩形边界、高度、可动与保护属性,True,True,E:\AI项目\light_equity_project\data\real_guankou\lakeside_leisure_ready\buildings.csv,.csv,7054,2026-05-22T19:06:39,230b04833985dfdf70a9620406ac25fbea6f71aaa0a37d019927cc1d04d62b33
+CSV原始数据,道路中心线与宽度,True,True,E:\AI项目\light_equity_project\data\real_guankou\lakeside_leisure_ready\streets.csv,.csv,14141,2026-05-22T19:06:39,69ddcc5e285a376993467bb4948cc8f6d6e4c1db8a7587a9f6897c3b3d3016b7
+CSV原始数据,节点/可达性输入,True,True,E:\AI项目\light_equity_project\data\real_guankou\lakeside_leisure_ready\nodes.csv,.csv,443,2026-05-22T19:06:39,1b737e7e7c07f0460d65f5c76c5cd443c0eacf139e3a8a75be81387bc4bf417b
+CSV原始数据,保护区与不可干预约束,True,True,E:\AI项目\light_equity_project\data\real_guankou\lakeside_leisure_ready\protected_zones.csv,.csv,216,2026-05-22T19:06:39,b95879fb862d867efc194532a8ecadbb8110877b8d364901408fdbb9535620b9
+CSV原始数据,场地区域分区,False,True,E:\AI项目\light_equity_project\data\real_guankou\lakeside_leisure_ready\site_zones.csv,.csv,573,2026-05-22T19:06:39,40867d7008c8c567ee405184dc164bda9a381aeed10f0f1ab80e6c84a4221b65
+CSV原始数据,道路分段补充,False,True,E:\AI项目\light_equity_project\data\real_guankou\lakeside_leisure_ready\road_segments.csv,.csv,14164,2026-05-22T19:06:39,f775414611028e4a6ed1113d1a1c5332c1322423e63654e7771ce91ddcdd62e2
+SKP原始模型,原始 SketchUp 场地模型,True,True,E:\AI项目\谢研组\沿湖休闲片区场地.skp,.skp,1201857,2026-06-04T16:48:36,cc16194b7a5c23cdb5238cf91c93e9dd5a6e77b89079d3d8de7bc7cb4ab2671b
+OBJ原始模型,原始导出 OBJ 场地模型,False,True,E:\AI项目\谢研组\沿湖休闲片区场地.obj,.obj,988268,2026-05-21T21:49:40,3094f7f47e15ed7c075d6dbc1a50fba993cbb69bc3c3e5e0cabab59d98f65a37
+DXF原始数据,建筑标号与场地标注,True,True,E:\AI项目\谢研组\沿湖休闲片区标号(新）.dxf,.dxf,4491822,2026-05-22T21:31:22,26cfd9867f9e96075e10478a15bd19734d8b6e099f559e66e166d98648aed877
+DXF原始数据,场地说明与道路/边界信息,True,True,E:\AI项目\谢研组\沿湖休闲片区场地说明.dxf,.dxf,15117711,2026-05-21T22:37:47,0e41dbd771ed4310d9cdf3f5434557e59ed143055bfb2d01839b5d59aea243c1
+DWG原始数据,CAD 标号源文件,False,True,E:\AI项目\谢研组\沿湖休闲片区标号.dwg,.dwg,866627,2026-05-22T18:53:04,079accbd35dc401bb4e4265c290f061795ee703dc18552bd52a6f75d40c68025
+SKP方案模型,既有方案后体块模型,False,True,E:\AI项目\方案后体块.skp,.skp,36732,2026-06-02T14:57:12,4f0c29881316fa267f309d7c72d6f83d2453ee8616491b2055523956d25aa46b
+SKP方案模型,既有候选完整场地模型,False,True,E:\AI项目\candidate_01_modified_full_site.skp,.skp,0,2026-06-02T14:57:33,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+独立模拟准备模型,既有 Ladybug/Rhino ready baseline OBJ,False,True,E:\AI项目\ladybug_ready_models\baseline_original_full_site_ladybug_ready.obj,.obj,1073795,2026-06-09T09:11:58,6b360e1702d208c77209d10931af1492b9152c715c6bc4c530670c9e0377ab3f
+独立模拟准备模型,既有 Ladybug/Rhino ready C6/C33 OBJ,False,True,E:\AI项目\ladybug_ready_models\algorithm_after_full_site_only_C6_C33_changed_ladybug_ready.obj,.obj,1073998,2026-06-09T09:11:58,7df9f2689a267f98c06c53aeaab40c24b0f831b8206146eede91ecfba1bad618
+Python代码,ABC主流程入口,True,True,E:\AI项目\light_equity_project\main.py,.py,7282,2026-05-29T21:51:25,993e98f929305d42f46aa1c330c88c00d69449d7a7387a5ad5b4a8c017886358
+Python代码,算法 A 2.5D遮挡实现,True,True,E:\AI项目\light_equity_project\src\solar\sunlight_simulator.py,.py,7289,2026-06-02T11:25:39,4c4412b89e33325f2cfbc29078628e29706e6b2aab0cd8371b38f035b20d2cdb
+Python代码,简化太阳路径实现,True,True,E:\AI项目\light_equity_project\src\solar\sun_path.py,.py,2332,2026-05-03T17:47:42,949ca81d7972a5a4064e37363ff882c8c36c6878b831f6597b40e2b29827cf63
+Python代码,算法 B 候选搜索入口,True,True,E:\AI项目\light_equity_project\src\algorithm_b_optimization\run_optimization.py,.py,9194,2026-06-01T21:55:39,2470ae0a3491cafeefa817f8d3ab85d395df73e6b14d2df0b1be141eb0560540
+Python代码,算法 B 评分函数,True,True,E:\AI项目\light_equity_project\src\algorithm_b_optimization\scoring.py,.py,1452,2026-05-03T17:50:42,241128b510a0eca0587a310b6e7effb136fb96b6ba44d6142f59a319daaaa926
+Python代码,算法 C 后复算,True,True,E:\AI项目\light_equity_project\src\algorithm_b_optimization\post_simulation_ranker.py,.py,6725,2026-05-29T21:51:55,6c2f3909ea66fba298b02e0816e40e6e836162d35fe404f26dc0a919e52bafb1
+历史实验输出,6m最终包 before/after 指标,False,True,E:\AI项目\light_equity_project\outputs\lakeside_leisure_final_6m\final_report\before_after_metrics.csv,.csv,482,2026-05-25T19:26:48,4d16bf3fb4c1393750f0d24dabed85fbf97dd76845c6f5c6fd122b8de3f2ad71
+历史实验输出,6m候选干预表,False,True,E:\AI项目\light_equity_project\outputs\lakeside_leisure_final_6m\B_candidates\interventions.csv,.csv,1422,2026-05-25T19:26:48,580f47e99f4af8fb1d5cd8b4aa1fd9104de5c8ca1e659cecd5ac4ff53a7d031a
+历史实验输出,C6/C33 3m固定方案候选OBJ,False,True,E:\AI项目\paper_revision_work_2026_06_14\c6_c33_same_scheme_3m\fixed_c6_c33_candidate_input\candidate_01.obj,.obj,710,2026-06-02T11:33:41,33d0ed3823d81c4ac9704cb444746a415c0059d09c4988f6220beda4311476bf
+历史图表,C6/C33 复算图,False,True,E:\AI项目\figure9_C6_C33_resimulation_revised.png,.png,142393,2026-06-19T21:39:01,cbc7797c1180525ee8fb64fbad4632bb24d19107dd39697bcca98eb2e3a3c5c2

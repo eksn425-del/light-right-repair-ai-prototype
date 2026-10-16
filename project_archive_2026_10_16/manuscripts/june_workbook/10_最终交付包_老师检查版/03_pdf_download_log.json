@@ -1,0 +1,145 @@
+[
+  {
+    "no": 1,
+    "key": "sampson_charo_1986",
+    "doi": "10.7916/cjel.v11i2.5670",
+    "official_url": "https://journals.library.columbia.edu/index.php/cjel/article/view/5670",
+    "pdf_url": "",
+    "status": "metadata_only",
+    "file": "",
+    "note": "No open legal PDF URL was assumed; DOI/official URL retained for verification.",
+    "accessed": "2026-06-05"
+  },
+  {
+    "no": 2,
+    "key": "bryan_stuebing_1986",
+    "doi": "10.1177/036063258601600610",
+    "official_url": "https://doi.org/10.1177/036063258601600610",
+    "pdf_url": "",
+    "status": "metadata_only",
+    "file": "",
+    "note": "No open legal PDF URL was assumed; DOI/official URL retained for verification.",
+    "accessed": "2026-06-05"
+  },
+  {
+    "no": 3,
+    "key": "czachura_2022",
+    "doi": "10.3390/buildings12040393",
+    "official_url": "https://www.mdpi.com/2075-5309/12/4/393",
+    "pdf_url": "https://www.mdpi.com/2075-5309/12/4/393/pdf",
+    "status": "metadata_only",
+    "file": "",
+    "note": "not_pdf_or_http_403; content_type=text/html",
+    "accessed": "2026-06-05"
+  },
+  {
+    "no": 4,
+    "key": "compagnon_2004",
+    "doi": "10.1016/j.enbuild.2004.01.009",
+    "official_url": "https://doi.org/10.1016/j.enbuild.2004.01.009",
+    "pdf_url": "",
+    "status": "metadata_only",
+    "file": "",
+    "note": "No open legal PDF URL was assumed; DOI/official URL retained for verification.",
+    "accessed": "2026-06-05"
+  },
+  {
+    "no": 5,
+    "key": "sanaieian_2014",
+    "doi": "10.1016/j.rser.2014.06.007",
+    "official_url": "https://doi.org/10.1016/j.rser.2014.06.007",
+    "pdf_url": "",
+    "status": "metadata_only",
+    "file": "",
+    "note": "No open legal PDF URL was assumed; DOI/official URL retained for verification.",
+    "accessed": "2026-06-05"
+  },
+  {
+    "no": 6,
+    "key": "curreli_2016",
+    "doi": "10.3390/en9070544",
+    "official_url": "https://www.mdpi.com/1996-1073/9/7/544",
+    "pdf_url": "https://www.mdpi.com/1996-1073/9/7/544/pdf",
+    "status": "metadata_only",
+    "file": "",
+    "note": "not_pdf_or_http_403; content_type=text/html",
+    "accessed": "2026-06-05"
+  },
+  {
+    "no": 7,
+    "key": "konis_2016",
+    "doi": "10.1016/j.solener.2015.12.020",
+    "official_url": "https://doi.org/10.1016/j.solener.2015.12.020",
+    "pdf_url": "",
+    "status": "metadata_only",
+    "file": "",
+    "note": "No open legal PDF URL was assumed; DOI/official URL retained for verification.",
+    "accessed": "2026-06-05"
+  },
+  {
+    "no": 8,
+    "key": "wang_2024",
+    "doi": "10.1016/j.foar.2024.06.001",
+    "official_url": "https://doi.org/10.1016/j.foar.2024.06.001",
+    "pdf_url": "",
+    "status": "metadata_only",
+    "file": "",
+    "note": "No open legal PDF URL was assumed; DOI/official URL retained for verification.",
+    "accessed": "2026-06-05"
+  },
+  {
+    "no": 9,
+    "key": "ladybug_2013",
+    "doi": "",
+    "official_url": "https://www.ladybug.tools/publication.html",
+    "pdf_url": "",
+    "status": "metadata_only",
+    "file": "",
+    "note": "No open legal PDF URL was assumed; DOI/official URL retained for verification.",
+    "accessed": "2026-06-05"
+  },
+  {
+    "no": 10,
+    "key": "deluca_2021",
+    "doi": "10.1016/j.autcon.2020.103518",
+    "official_url": "https://doi.org/10.1016/j.autcon.2020.103518",
+    "pdf_url": "",
+    "status": "metadata_only",
+    "file": "",
+    "note": "No open legal PDF URL was assumed; DOI/official URL retained for verification.",
+    "accessed": "2026-06-05"
+  },
+  {
+    "no": 11,
+    "key": "thoring_2023",
+    "doi": "10.1017/pds.2023.335",
+    "official_url": "https://doi.org/10.1017/pds.2023.335",
+    "pdf_url": "",
+    "status": "metadata_only",
+    "file": "",
+    "note": "No open legal PDF URL was assumed; DOI/official URL retained for verification.",
+    "accessed": "2026-06-05"
+  },
+  {
+    "no": 12,
+    "key": "jakubik_2022",
+    "doi": "10.1609/aaai.v36i11.21522",
+    "official_url": "https://ojs.aaai.org/index.php/AAAI/article/view/21522",
+    "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/21522/21271",
+    "status": "downloaded",
+    "file": "E:\\AI项目\\光权修复_论文工作包_2026-06-03\\06_文献与引用\\downloaded_pdfs\\12_jakubik_2022.pdf",
+    "note": "7 pages",
+    "accessed": "2026-06-05"
+  },
+  {
+    "no": 13,
+    "key": "rafsanjani_2023",
+    "doi": "10.1016/j.chbr.2023.100319",
+    "official_url": "https://doi.org/10.1016/j.chbr.2023.100319",
+    "pdf_url": "",
+    "status": "metadata_only",
+    "file": "",
+    "note": "No open legal PDF URL was assumed; DOI/official URL retained for verification.",
+    "accessed": "2026-06-05"
+  }
+]

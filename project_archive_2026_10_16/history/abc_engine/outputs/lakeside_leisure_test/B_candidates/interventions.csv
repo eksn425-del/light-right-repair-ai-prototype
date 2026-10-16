@@ -1,0 +1,10 @@
+candidate_id,intervention_id,type,target_building_id,x,y,z,size_x,size_y,size_z,volume_change,expected_light_gain,protected_conflict,notes
+candidate_01,INT0002,subtract,C37,139.8,101.993,4.5,2.1,2.5,1.5,-7.875,5.0,False,reference void box for local corner/overhang reduction
+candidate_01,INT0007,reorganize,zone:LH_Z001,50.109,51.462,0.0,12.0,4.0,0.2,-9.6,3.5,False,slow-path / parking / idle-space reorganization for vacant_land
+candidate_01,INT0009,reorganize,zone:LH_Z002,139.827,33.017,0.0,12.0,4.0,0.2,-9.6,3.5,False,slow-path / parking / idle-space reorganization for waterfront
+candidate_02,INT0002,subtract,C37,139.8,101.993,4.5,2.1,2.5,1.5,-7.875,5.0,False,reference void box for local corner/overhang reduction
+candidate_02,INT0008,add,zone:LH_Z001,50.109,51.462,0.0,3.0,3.0,3.0,27.0,4.0,False,3m public micro-device / memory container for vacant_land
+candidate_02,INT0009,reorganize,zone:LH_Z002,139.827,33.017,0.0,12.0,4.0,0.2,-9.6,3.5,False,slow-path / parking / idle-space reorganization for waterfront
+candidate_03,INT0002,subtract,C37,139.8,101.993,4.5,2.1,2.5,1.5,-7.875,5.0,False,reference void box for local corner/overhang reduction
+candidate_03,INT0004,subtract,C23,260.164,10.2,1.5,2.1,2.5,1.5,-7.875,3.2,False,reference void box for local corner/overhang reduction
+candidate_03,INT0007,reorganize,zone:LH_Z001,50.109,51.462,0.0,12.0,4.0,0.2,-9.6,3.5,False,slow-path / parking / idle-space reorganization for vacant_land

@@ -1,0 +1,190 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          27
+        ]
+      ],
+      "date-time": "2026-05-27T23:24:04Z",
+      "timestamp": 1779924244124,
+      "version": "3.53.1"
+    },
+    "reference-count": 0,
+    "publisher": "Cambridge University Press (CUP)",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              6,
+              19
+            ]
+          ],
+          "date-time": "2023-06-19T00:00:00Z",
+          "timestamp": 1687132800000
+        },
+        "content-version": "unspecified",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Proc. Des. Soc."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          7
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>Generative AI algorithms that are able to generate creative output are progressing at tremendous speed. This paper presents a research agenda for Generative AI-based support for designers. We present examples of existing applications and thus illustrate the possible application space of Generative AI reflecting the current state of this technology. Furthermore, we provide a theoretical foundation for AI-supported design, based on a typology of design knowledge and the concept of evolutionary creativity. Both concepts are discussed in relation to the changing roles of AI and the human designer. The outlined research agenda presents 10 research opportunities for possible AI-support to augment the designer of the future. The results presented in this paper provide researchers with an introduction to and overview of Generative AI, as well as the theoretical understanding of potential implications for the future of the design discipline.</jats:p>",
+    "DOI": "10.1017/pds.2023.335",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2023,
+          6,
+          19
+        ]
+      ],
+      "date-time": "2023-06-19T03:40:16Z",
+      "timestamp": 1687146016000
+    },
+    "page": "3345-3354",
+    "source": "Crossref",
+    "is-referenced-by-count": 56,
+    "title": [
+      "THE AUGMENTED DESIGNER: A RESEARCH AGENDA FOR GENERATIVE AI-ENABLED DESIGN"
+    ],
+    "prefix": "10.1017",
+    "volume": "3",
+    "author": [
+      {
+        "given": "Katja",
+        "family": "Thoring",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sebastian",
+        "family": "Huettemann",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Roland M.",
+        "family": "Mueller",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "56",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          6,
+          19
+        ]
+      ]
+    },
+    "container-title": [
+      "Proceedings of the Design Society"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/S2732527X23003358",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          3,
+          25
+        ]
+      ],
+      "date-time": "2024-03-25T02:09:51Z",
+      "timestamp": 1711332591000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.cambridge.org/core/product/identifier/S2732527X23003358/type/journal_article"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          6,
+          19
+        ]
+      ]
+    },
+    "references-count": 0,
+    "alternative-id": [
+      "S2732527X23003358"
+    ],
+    "URL": "https://doi.org/10.1017/pds.2023.335",
+    "relation": {},
+    "ISSN": [
+      "2732-527X"
+    ],
+    "issn-type": [
+      {
+        "value": "2732-527X",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          6,
+          19
+        ]
+      ]
+    }
+  }
+}

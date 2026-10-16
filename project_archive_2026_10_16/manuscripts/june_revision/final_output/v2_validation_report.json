@@ -1,0 +1,65 @@
+{
+  "paragraphs": 138,
+  "refs": 24,
+  "media_count": 11,
+  "image_dims": [
+    [
+      "image1.png",
+      2640,
+      880
+    ],
+    [
+      "image10.png",
+      640,
+      480
+    ],
+    [
+      "image11.png",
+      800,
+      600
+    ],
+    [
+      "image2.png",
+      2640,
+      880
+    ],
+    [
+      "image3.png",
+      1800,
+      1327
+    ],
+    [
+      "image4.png",
+      1800,
+      1327
+    ],
+    [
+      "image5.png",
+      1800,
+      1282
+    ],
+    [
+      "image6.png",
+      2867,
+      1034
+    ],
+    [
+      "image7.png",
+      1620,
+      1710
+    ],
+    [
+      "image8.png",
+      2070,
+      1305
+    ],
+    [
+      "image9.png",
+      2645,
+      1058
+    ]
+  ],
+  "has_non_ai_baseline": false,
+  "has_height_priority": false,
+  "has_fig6_caption": false
+}

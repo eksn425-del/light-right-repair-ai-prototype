@@ -1,0 +1,21 @@
+{
+  "run_id": "baseline_20260909_clean",
+  "stage": "compare_2d_hb",
+  "timestamp_utc": "2026-09-10T07:24:51+00:00",
+  "git_commit": "bca5d8733dd472eca08d0293de0bdcf4b9ee4c9d",
+  "config_path": "E:\\AI项目\\light-equity-soict-2026\\configs\\research.yaml",
+  "config_sha256": "e6c389dcee933658cb198fb720f840711b248bcd0aa3b1f3f389f1f288cfdcda",
+  "inputs": [
+    {
+      "path": "E:\\AI项目\\light-equity-soict-2026\\experiments\\baseline_20260909_clean\\results_csv\\130_HB_Radiance合并原始点位结果.csv",
+      "exists": true,
+      "sha256": "dbda5078595301d4a9e4affcfcf28afd8dd0df26fdc15ca85482245bd2ee011d"
+    },
+    {
+      "path": "E:\\AI项目\\light-equity-soict-2026\\experiments\\baseline_20260909_clean\\results_csv\\100_HB_Radiance传感点.csv",
+      "exists": true,
+      "sha256": "57ba551955a6c854fd8001afbd7bcf276f6c17f5dcc3dd1aaf83a906b99e04e3"
+    }
+  ],
+  "scenario_count": 4
+}

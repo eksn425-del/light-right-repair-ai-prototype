@@ -1,0 +1,4 @@
+candidate_id,total_score,estimated_light_gain,intervention_volume,new_shadow_penalty,protected_zone_penalty,number_of_interventions,notes
+candidate_03,0.258,0.014,14.062,0.0,0.0,1,post-simulation verified ranking on the same grid as Algorithm A
+candidate_02,-0.007,0.0,6.0,0.0,0.0,1,post-simulation verified ranking on the same grid as Algorithm A
+candidate_01,-0.024,0.0,20.16,0.0,0.0,3,post-simulation verified ranking on the same grid as Algorithm A

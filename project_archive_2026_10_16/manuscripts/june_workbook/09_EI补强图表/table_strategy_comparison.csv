@@ -1,0 +1,5 @@
+﻿scheme_id,scheme_type,average_sunlight_hours,dark_zone_ratio,estimated_light_gain,intervention_volume,changed_building_count,changed_building_ids,protected_conflict_count,accessible_route_ratio,safety_score,passed,notes,light_equity_improvement
+baseline,baseline,6.422,0.1755,0.0,0.0,0,,0,,,,Existing condition from Algorithm A; no manual-design placeholder.,
+candidate_01,AI_conservative,6.435,0.1694,10.0,28.125,2,C33;C6,0,0.78,80.56,False,保守型 AI selected candidate; post-simulated with simplified 2.5D model.,0.0347578347578347
+candidate_01,AI_balanced,6.435,0.1694,15.0,45.0,2,C33;C6,0,0.78,80.56,False,均衡型 AI selected candidate; post-simulated with simplified 2.5D model.,0.0347578347578347
+candidate_01,AI_light_first,6.435,0.1694,16.201,46.095,3,C33;C6;C9,0,0.78,80.56,False,采光优先型 AI selected candidate; post-simulated with simplified 2.5D model.,0.0347578347578347

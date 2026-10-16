@@ -1,0 +1,302 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          9
+        ]
+      ],
+      "date-time": "2026-06-09T02:06:35Z",
+      "timestamp": 1780970795124,
+      "version": "3.54.1"
+    },
+    "reference-count": 14,
+    "publisher": "Elsevier BV",
+    "issue": "7",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2001,
+              9,
+              1
+            ]
+          ],
+          "date-time": "2001-09-01T00:00:00Z",
+          "timestamp": 999302400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Energy and Buildings"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2001,
+          9
+        ]
+      ]
+    },
+    "DOI": "10.1016/s0378-7788(01)00058-5",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2002,
+          7,
+          25
+        ]
+      ],
+      "date-time": "2002-07-25T16:35:06Z",
+      "timestamp": 1027614906000
+    },
+    "page": "683-697",
+    "source": "Crossref",
+    "is-referenced-by-count": 572,
+    "title": [
+      "Validation of dynamic RADIANCE-based daylight simulations for a test office with external blinds"
+    ],
+    "prefix": "10.1016",
+    "volume": "33",
+    "author": [
+      {
+        "given": "Christoph F.",
+        "family": "Reinhart",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Oliver",
+        "family": "Walkenhorst",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/S0378-7788(01)00058-5_BIB1",
+        "doi-asserted-by": "crossref",
+        "first-page": "167",
+        "DOI": "10.1016/S0378-7788(00)00042-6",
+        "article-title": "The simulation of annual daylight illuminance distributions — a state-of-the-art comparison of six RADIANCE-based methods",
+        "volume": "32",
+        "author": "Reinhart",
+        "year": "2000",
+        "journal-title": "Energy and Buildings"
+      },
+      {
+        "key": "10.1016/S0378-7788(01)00058-5_BIB2",
+        "doi-asserted-by": "crossref",
+        "first-page": "80",
+        "DOI": "10.1080/00994480.1988.10748710",
+        "article-title": "A new technique for computer simulation of illuminated spaces",
+        "volume": "1",
+        "author": "Ward",
+        "year": "1988",
+        "journal-title": "Journal of the Illuminating Engineering Society"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/S0378-7788(01)00058-5_BIB3",
+        "doi-asserted-by": "crossref",
+        "first-page": "65",
+        "DOI": "10.1177/096032718301500201",
+        "article-title": "Daylight coefficients",
+        "volume": "15",
+        "author": "Tregenza",
+        "year": "1983",
+        "journal-title": "Lighting Research and Technology"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/S0378-7788(01)00058-5_BIB4",
+        "doi-asserted-by": "crossref",
+        "first-page": "235",
+        "DOI": "10.1016/0038-092X(93)90017-I",
+        "article-title": "All-weather model for sky luminance distribution — preliminary configuration and validation",
+        "volume": "50",
+        "author": "Perez",
+        "year": "1993",
+        "journal-title": "Solar Energy"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/S0378-7788(01)00058-5_BIB5",
+        "doi-asserted-by": "crossref",
+        "first-page": "271",
+        "DOI": "10.1016/0038-092X(90)90055-H",
+        "article-title": "Modeling daylight availability and irradiance components from direct and global irradiance",
+        "volume": "44",
+        "author": "Perez",
+        "year": "1990",
+        "journal-title": "Solar Energy"
+      },
+      {
+        "key": "10.1016/S0378-7788(01)00058-5_BIB6",
+        "unstructured": "G. Ward, R. Shakespeare, Rendering with RADIANCE. The Art and Science of Lighting Visualization, Morgan Kaufmann, Los Altos, CA, 1998."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/S0378-7788(01)00058-5_BIB7",
+        "doi-asserted-by": "crossref",
+        "first-page": "181",
+        "DOI": "10.1177/14771535950270040701",
+        "article-title": "Validation of a lighting simulation program under real sky conditions",
+        "volume": "27",
+        "author": "Mardaljevic",
+        "year": "1995",
+        "journal-title": "Lighting Research and Technology"
+      },
+      {
+        "key": "10.1016/S0378-7788(01)00058-5_BIB8",
+        "unstructured": "J. Mardaljevic, Validation of a lighting simulation program: a study using measured sky brightness distributions, in: Proceedings of the 8th European Lighting Conference, Amsterdam, 11–14 May 1997, pp. 555–569."
+      },
+      {
+        "key": "10.1016/S0378-7788(01)00058-5_BIB9",
+        "unstructured": "The measurement station of the Fraunhofer institute for solar energy systems is part of the international daylight measurement (IDMP) network, official website http://idmp.entpe.fr/, 1991."
+      },
+      {
+        "key": "10.1016/S0378-7788(01)00058-5_BIB10",
+        "unstructured": "J. Wienold, A.D. Tenner, L. Zonneveldt, M. Klingler, EULISP — evaluation and user assessment of lighting systems performance, Final Report for the European Commission, Contract No. JOR3-CT95-0016, 1999."
+      },
+      {
+        "key": "10.1016/S0378-7788(01)00058-5_BIB11",
+        "doi-asserted-by": "crossref",
+        "first-page": "13",
+        "DOI": "10.1177/096032718701900103",
+        "article-title": "Subdivision of the sky hemisphere for luminance measurements",
+        "volume": "19",
+        "author": "Tregenza",
+        "year": "1987",
+        "journal-title": "Lighting Research and Technology"
+      },
+      {
+        "key": "10.1016/S0378-7788(01)00058-5_BIB12",
+        "unstructured": "J.-J. Delaunay, Contribution à la modélisation de la lumière naturelle en vue de son application a la simulation de l’éclairage de locaux, Ph.D. thesis at the Université Louis Pasteur de Strasbourg I, 1995."
+      },
+      {
+        "key": "10.1016/S0378-7788(01)00058-5_BIB13",
+        "doi-asserted-by": "crossref",
+        "first-page": "135",
+        "DOI": "10.1177/1420326X9400300307",
+        "article-title": "Manual control of window blinds and electric lighting: implications for comfort and energy consumption",
+        "volume": "3",
+        "author": "Newsham",
+        "year": "1994",
+        "journal-title": "Indoor Environment"
+      },
+      {
+        "key": "10.1016/S0378-7788(01)00058-5_BIB14",
+        "unstructured": "A.D. Tenner, S.H.A. Begemann, G.J. van den Beld, Acceptance and preference of illuminances in offices, in: Proceedings of the 8th European Lighting Conference, Amsterdam, 11–14 May 1997, pp. 130–143."
+      }
+    ],
+    "container-title": [
+      "Energy and Buildings"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0378778801000585?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0378778801000585?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2019,
+          4,
+          25
+        ]
+      ],
+      "date-time": "2019-04-25T22:21:19Z",
+      "timestamp": 1556230879000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0378778801000585"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2001,
+          9
+        ]
+      ]
+    },
+    "references-count": 14,
+    "journal-issue": {
+      "issue": "7",
+      "published-print": {
+        "date-parts": [
+          [
+            2001,
+            9
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "S0378778801000585"
+    ],
+    "URL": "https://doi.org/10.1016/s0378-7788(01)00058-5",
+    "relation": {},
+    "ISSN": [
+      "0378-7788"
+    ],
+    "issn-type": [
+      {
+        "value": "0378-7788",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2001,
+          9
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,4 @@
+﻿street_id,start_x,start_y,end_x,end_y,width_m,main_direction,pedestrian_priority,notes
+LH_ST001,1.8,143.694,277.853,143.694,6.0,east-west,True,placeholder main pedestrian/vehicle corridor inferred from C-label extent; survey width needed
+LH_ST002,139.827,1.8,139.827,285.587,4.0,north-south,True,placeholder cross route; align with actual waterfront/activity path later
+LH_ST003,1.8,35.854,277.853,35.854,3.0,waterfront-edge,True,placeholder waterfront/leisure route; group must replace with surveyed polyline

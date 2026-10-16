@@ -1,0 +1,23 @@
+{
+  "final_docx": "E:\\AI项目\\paper_revision_work_2026_06_14\\final_output\\光权修复论文_EI会议中文最终审阅版.docx",
+  "backup_docx": "E:\\AI项目\\paper_revision_work_2026_06_14\\final_output\\光权修复论文_中文初稿_原始备份.docx",
+  "text_changes": [
+    "调整文献综述中 [3]-[5] 的局部引文顺序。",
+    "调整 Human-in-the-loop 段落中 [11]-[13] 的局部引文顺序。",
+    "补强三类 AI 策略结果趋同的原因解释。",
+    "强化论文贡献边界与证据链表述。",
+    "新增可复现性说明段落。"
+  ],
+  "inserted_reproducibility_paragraph": true,
+  "replaced_images": [
+    "word/media/image1.png",
+    "word/media/image2.png",
+    "word/media/image3.png",
+    "word/media/image4.png",
+    "word/media/image5.png",
+    "word/media/image6.png",
+    "word/media/image7.png",
+    "word/media/image8.png",
+    "word/media/image9.png"
+  ]
+}

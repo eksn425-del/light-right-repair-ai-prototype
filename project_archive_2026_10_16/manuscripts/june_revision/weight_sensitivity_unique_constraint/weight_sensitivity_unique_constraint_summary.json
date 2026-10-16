@@ -1,0 +1,12 @@
+{
+  "baseline_average_sunlight_hours": 6.422,
+  "baseline_dark_zone_percent": 17.55,
+  "variant_count": 7,
+  "duplicate_target_count": 0,
+  "c6_c33_variant_count": 5,
+  "best_dark_zone_percent": 16.94,
+  "notes": "Supplementary weight-sensitivity rerun with a unique-target constraint inside each candidate set. This is used as a robustness check and does not replace the main reported conservative strategy.",
+  "metrics_csv": "E:\\AI项目\\paper_revision_work_2026_06_14\\weight_sensitivity_unique_constraint\\weight_sensitivity_unique_constraint_metrics.csv",
+  "base_weight_output": "E:\\AI项目\\paper_revision_work_2026_06_14\\weight_sensitivity",
+  "base_config_dir": "E:\\AI项目\\light_equity_project\\outputs\\light_product_2026_06_02\\strategy_comparison_postsim\\_configs\\conservative"
+}

@@ -1,0 +1,587 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          1
+        ]
+      ],
+      "date-time": "2026-05-01T09:27:35Z",
+      "timestamp": 1777627655241,
+      "version": "3.51.4"
+    },
+    "reference-count": 34,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              8,
+              1
+            ]
+          ],
+          "date-time": "2016-08-01T00:00:00Z",
+          "timestamp": 1470009600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      }
+    ],
+    "funder": [
+      {
+        "name": "Firat University Research Foundation",
+        "award": [
+          "FUNAF-1038"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "FUNAF-1038"
+            ]
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Renewable Energy"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          8
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.renene.2016.02.033",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          2,
+          27
+        ]
+      ],
+      "date-time": "2016-02-27T00:15:20Z",
+      "timestamp": 1456532120000
+    },
+    "page": "77-86",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 70,
+    "special_numbering": "C",
+    "title": [
+      "Drying of sweet basil with solar air collectors"
+    ],
+    "prefix": "10.1016",
+    "volume": "93",
+    "author": [
+      {
+        "given": "Fevzi",
+        "family": "Gulcimen",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Hakan",
+        "family": "Karakaya",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Aydın",
+        "family": "Durmus",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.renene.2016.02.033_bib1",
+        "doi-asserted-by": "publisher",
+        "first-page": "615",
+        "DOI": "10.1016/S0196-8904(98)00093-4",
+        "article-title": "Review of solar energy drying systems II: an overview of solar drying technology",
+        "volume": "40",
+        "author": "Ekechukwu",
+        "year": "1999",
+        "journal-title": "Energy Convers. Manag."
+      },
+      {
+        "key": "10.1016/j.renene.2016.02.033_bib2",
+        "doi-asserted-by": "publisher",
+        "first-page": "4650",
+        "DOI": "10.1016/j.ijheatmasstransfer.2009.03.018",
+        "article-title": "Experimental study on the effect of heat transfer enhancement devices in flat-plate solar collectors",
+        "volume": "52",
+        "author": "Hobbi",
+        "year": "2009",
+        "journal-title": "Int. J. Heat Mass Transf."
+      },
+      {
+        "key": "10.1016/j.renene.2016.02.033_bib3",
+        "doi-asserted-by": "publisher",
+        "first-page": "1929",
+        "DOI": "10.1016/j.solener.2010.07.007",
+        "article-title": "Performance of a double pass solar air collector",
+        "volume": "84",
+        "author": "Ramani",
+        "year": "2010",
+        "journal-title": "Sol. Energy"
+      },
+      {
+        "key": "10.1016/j.renene.2016.02.033_bib4",
+        "doi-asserted-by": "publisher",
+        "first-page": "864",
+        "DOI": "10.1016/j.applthermaleng.2009.12.018",
+        "article-title": "Application of folded sheet metal in flat bed solar air collectors",
+        "volume": "30",
+        "author": "El-Sawi",
+        "year": "2010",
+        "journal-title": "Appl. Therm. Eng."
+      },
+      {
+        "key": "10.1016/j.renene.2016.02.033_bib5",
+        "doi-asserted-by": "publisher",
+        "first-page": "1489",
+        "DOI": "10.1016/j.renene.2004.01.006",
+        "article-title": "Efficiency and exergy analysis of a new solar air heater",
+        "volume": "29",
+        "author": "Kurtbas",
+        "year": "2004",
+        "journal-title": "Renew. Energy"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.renene.2016.02.033_bib6",
+        "first-page": "577",
+        "article-title": "Investigation of efficiency and exergy loss in plate heat exchangers having spiral surface profiles",
+        "volume": "28",
+        "author": "Karakaya",
+        "year": "2012",
+        "journal-title": "Energy Educ. Sci. Technol."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.renene.2016.02.033_bib7",
+        "doi-asserted-by": "publisher",
+        "first-page": "1754",
+        "DOI": "10.1016/j.energy.2009.12.028",
+        "article-title": "Energy and exergy analyses of thin layer drying of mulberry in a forced solar dryer",
+        "volume": "35",
+        "author": "Akbulut",
+        "year": "2010",
+        "journal-title": "Energy"
+      },
+      {
+        "key": "10.1016/j.renene.2016.02.033_bib8",
+        "doi-asserted-by": "publisher",
+        "first-page": "99",
+        "DOI": "10.1016/S0260-8774(02)00425-9",
+        "article-title": "Thin layer drying of red pepper",
+        "volume": "55",
+        "author": "Akpinar",
+        "year": "2003",
+        "journal-title": "J. Food Eng."
+      },
+      {
+        "key": "10.1016/j.renene.2016.02.033_bib9",
+        "doi-asserted-by": "publisher",
+        "first-page": "1594",
+        "DOI": "10.1016/j.energy.2009.07.005",
+        "article-title": "Mathematical modelling of the thin layer solar drying of banana, mango and cassava",
+        "volume": "34",
+        "author": "Koua",
+        "year": "2009",
+        "journal-title": "Energy"
+      },
+      {
+        "key": "10.1016/j.renene.2016.02.033_bib10",
+        "doi-asserted-by": "publisher",
+        "first-page": "359",
+        "DOI": "10.1016/S0260-8774(03)00142-0",
+        "article-title": "Convective air drying characteristics of thin layer carrots",
+        "volume": "61",
+        "author": "Doymaz",
+        "year": "2004",
+        "journal-title": "J. Food Eng."
+      },
+      {
+        "key": "10.1016/j.renene.2016.02.033_bib11",
+        "doi-asserted-by": "publisher",
+        "first-page": "351",
+        "DOI": "10.1016/j.enconman.2012.12.003",
+        "article-title": "The effect of acoustic and solar energy on drying process of pistachios",
+        "volume": "67",
+        "author": "Kouchakzadeh",
+        "year": "2013",
+        "journal-title": "Energy Convers. Manag."
+      },
+      {
+        "key": "10.1016/j.renene.2016.02.033_bib12",
+        "doi-asserted-by": "publisher",
+        "first-page": "225",
+        "DOI": "10.1016/S0260-8774(99)00126-0",
+        "article-title": "The thin layer drying characteristics of hazelnuts during roasting",
+        "volume": "42",
+        "author": "Ozdemir",
+        "year": "1999",
+        "journal-title": "J. Food Eng."
+      },
+      {
+        "key": "10.1016/j.renene.2016.02.033_bib13",
+        "doi-asserted-by": "publisher",
+        "first-page": "2407",
+        "DOI": "10.1016/j.enconman.2010.05.005",
+        "article-title": "Drying of mint leaves in a solar dryer and under open sun: modelling, performance analyses",
+        "volume": "51",
+        "author": "Akpinar",
+        "year": "2010",
+        "journal-title": "Energy Convers. Manag."
+      },
+      {
+        "key": "10.1016/j.renene.2016.02.033_bib14",
+        "doi-asserted-by": "publisher",
+        "first-page": "457",
+        "DOI": "10.1016/S0360-5442(01)00018-4",
+        "article-title": "Mathematical modeling of thin layer solar drying of sultana grapes",
+        "volume": "26",
+        "author": "Yaldiz",
+        "year": "2001",
+        "journal-title": "Energy"
+      },
+      {
+        "key": "10.1016/j.renene.2016.02.033_bib15",
+        "doi-asserted-by": "publisher",
+        "first-page": "209",
+        "DOI": "10.1016/S0260-8774(02)00065-1",
+        "article-title": "Mathematical modelling of solar drying of apricots in thin layers",
+        "volume": "55",
+        "author": "Turktogrul",
+        "year": "2002",
+        "journal-title": "J. Food Eng."
+      },
+      {
+        "key": "10.1016/j.renene.2016.02.033_bib16",
+        "doi-asserted-by": "publisher",
+        "first-page": "2941",
+        "DOI": "10.1016/j.enconman.2008.06.036",
+        "article-title": "Determination of temperature dependent drying parameters for potato cylinders and slices during solar drying",
+        "volume": "49",
+        "author": "Tripathy",
+        "year": "2008",
+        "journal-title": "Energy Convers. Manag."
+      },
+      {
+        "key": "10.1016/j.renene.2016.02.033_bib17",
+        "doi-asserted-by": "publisher",
+        "first-page": "539",
+        "DOI": "10.1016/S0360-5442(02)00158-5",
+        "article-title": "Energy and exergy analyses of solar drying process of pistachio",
+        "volume": "28",
+        "author": "Midilli",
+        "year": "2003",
+        "journal-title": "Energy"
+      },
+      {
+        "key": "10.1016/j.renene.2016.02.033_bib18",
+        "doi-asserted-by": "publisher",
+        "first-page": "121",
+        "DOI": "10.1016/j.enbuild.2013.07.072",
+        "article-title": "Energy and exergy analyses of solar drying system of red seaweed",
+        "volume": "68",
+        "author": "Sopian",
+        "year": "2014",
+        "journal-title": "Energy Build."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.renene.2016.02.033_bib19",
+        "doi-asserted-by": "publisher",
+        "first-page": "350",
+        "DOI": "10.1016/j.rser.2011.07.162",
+        "article-title": "Exergy analysis of solar energy applications",
+        "volume": "16",
+        "author": "BoroumandJazi",
+        "year": "2012",
+        "journal-title": "Renew. Sustain. Energy Rev."
+      },
+      {
+        "issue": "10",
+        "key": "10.1016/j.renene.2016.02.033_bib20",
+        "doi-asserted-by": "publisher",
+        "first-page": "2953",
+        "DOI": "10.1016/j.apenergy.2010.04.016",
+        "article-title": "Experimental investigation of three different solar air heaters: energy and exergy analyses",
+        "volume": "87",
+        "author": "Alta",
+        "year": "2010",
+        "journal-title": "Appl. Energy"
+      },
+      {
+        "key": "10.1016/j.renene.2016.02.033_bib21",
+        "doi-asserted-by": "publisher",
+        "first-page": "109",
+        "DOI": "10.1016/j.enconman.2013.05.006",
+        "article-title": "Experimental investigation of an indirect-mode forced convection solar dryer for drying thymus and mint",
+        "volume": "74",
+        "author": "El-Sebaii",
+        "year": "2013",
+        "journal-title": "Energy Convers. Manag."
+      },
+      {
+        "key": "10.1016/j.renene.2016.02.033_bib22",
+        "doi-asserted-by": "publisher",
+        "first-page": "2139",
+        "DOI": "10.1016/j.renene.2011.01.017",
+        "article-title": "Mathematical modeling of sun and solar drying of chilli pepper",
+        "volume": "36",
+        "author": "Tunde-Akintunde",
+        "year": "2011",
+        "journal-title": "Renew. Energy"
+      },
+      {
+        "key": "10.1016/j.renene.2016.02.033_bib23",
+        "doi-asserted-by": "publisher",
+        "first-page": "1931",
+        "DOI": "10.1016/j.applthermaleng.2006.12.020",
+        "article-title": "Mathematical modeling of drying characteristics of tropical fruits",
+        "volume": "27",
+        "author": "Ceylan",
+        "year": "2007",
+        "journal-title": "Appl. Therm. Eng."
+      },
+      {
+        "key": "10.1016/j.renene.2016.02.033_bib24",
+        "doi-asserted-by": "publisher",
+        "first-page": "845",
+        "DOI": "10.1016/S0360-5442(02)00021-X",
+        "article-title": "Empirical correlations for drying kinetics of some fruits and vegetables",
+        "volume": "27",
+        "author": "El-Sebaii",
+        "year": "2002",
+        "journal-title": "Energy"
+      },
+      {
+        "key": "10.1016/j.renene.2016.02.033_bib25",
+        "series-title": "Handbook of Industrial Drying",
+        "author": "Mujumdar",
+        "year": "1987"
+      },
+      {
+        "key": "10.1016/j.renene.2016.02.033_bib26",
+        "series-title": "Factors Influencing the Maximum Rates of Air Drying Shelled Corn in Thin Layers",
+        "author": "Page",
+        "year": "1949"
+      },
+      {
+        "key": "10.1016/j.renene.2016.02.033_bib27",
+        "doi-asserted-by": "publisher",
+        "first-page": "466",
+        "DOI": "10.13031/2013.34276",
+        "article-title": "Fully exposed drying of popcorn",
+        "volume": "24",
+        "author": "White",
+        "year": "1981",
+        "journal-title": "Trans. Am. Soc. Agric. Eng."
+      },
+      {
+        "key": "10.1016/j.renene.2016.02.033_bib28",
+        "doi-asserted-by": "publisher",
+        "first-page": "610",
+        "DOI": "10.13031/2013.32837",
+        "article-title": "Evaluation of selected mathematical models for describing thin layer drying of in-shell pecans",
+        "volume": "27",
+        "author": "Chinnan",
+        "year": "1984",
+        "journal-title": "Trans. Am. Soc. Agric. Eng."
+      },
+      {
+        "key": "10.1016/j.renene.2016.02.033_bib29",
+        "series-title": "Proceedings of the Seventh International Congress on Agricultural Mechanization and Energy, 26–27 May, Adana, Turkey",
+        "first-page": "565",
+        "article-title": "Drying characteristics of laurel leaves under different conditions",
+        "author": "Yagcioglu",
+        "year": "1999"
+      },
+      {
+        "key": "10.1016/j.renene.2016.02.033_bib30",
+        "series-title": "A Single Layer Drying Equation for Rough Rice, American Society of Agricultural Engineers",
+        "author": "Wang",
+        "year": "1978"
+      },
+      {
+        "key": "10.1016/j.renene.2016.02.033_bib31",
+        "doi-asserted-by": "publisher",
+        "first-page": "99",
+        "DOI": "10.1111/j.1365-2621.1991.tb01145.x",
+        "article-title": "Mathematical modeling of hot air drying of sweet potato slices",
+        "volume": "26",
+        "author": "Diamante",
+        "year": "1991",
+        "journal-title": "Int. J. Food Sci. Technol."
+      },
+      {
+        "key": "10.1016/j.renene.2016.02.033_bib32",
+        "series-title": "13th International Congress on Agricultural Engineering, Morocco; 2–6 February",
+        "article-title": "Comparative studies on thin layer drying models for wheat",
+        "author": "Kassem",
+        "year": "1998"
+      },
+      {
+        "key": "10.1016/j.renene.2016.02.033_bib33",
+        "doi-asserted-by": "publisher",
+        "first-page": "1503",
+        "DOI": "10.1081/DRT-120005864",
+        "article-title": "A new model for single layer drying",
+        "volume": "20",
+        "author": "Midilli",
+        "year": "2002",
+        "journal-title": "Dry. Technol."
+      },
+      {
+        "key": "10.1016/j.renene.2016.02.033_bib34",
+        "series-title": "Drying of the Mint and Sweet Basil with New Desıgned Air Collectors and Determining of the Drying Parameters",
+        "author": "Gulcimen",
+        "year": "2008"
+      }
+    ],
+    "container-title": [
+      "Renewable Energy"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0960148116301343?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0960148116301343?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2018,
+          9,
+          14
+        ]
+      ],
+      "date-time": "2018-09-14T17:01:14Z",
+      "timestamp": 1536944474000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0960148116301343"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          8
+        ]
+      ]
+    },
+    "references-count": 34,
+    "alternative-id": [
+      "S0960148116301343"
+    ],
+    "URL": "https://doi.org/10.1016/j.renene.2016.02.033",
+    "relation": {},
+    "ISSN": [
+      "0960-1481"
+    ],
+    "issn-type": [
+      {
+        "value": "0960-1481",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2016,
+          8
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Drying of sweet basil with solar air collectors",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Renewable Energy",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.renene.2016.02.033",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "Copyright © 2016 Elsevier Ltd. All rights reserved.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ]
+  }
+}

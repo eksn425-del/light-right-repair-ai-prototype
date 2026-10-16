@@ -1,0 +1,8 @@
+variant_id,variant_label,changed_building_ids,intervention_count,intervention_volume,score_total,post_average_sunlight_hours,post_dark_zone_percent,dark_zone_drop_percentage_points,sunlight_gain_h
+base,基准权重,C6;C33,2,28.125,5.5,6.435,16.94,0.61,0.012
+light_minus_50,光照收益 -50%,C6;C28|C37,2,17.97,0.941,6.424,17.55,0.0,0.002
+light_plus_50,光照收益 +50%,C6;C33,2,28.125,10.5,6.435,16.94,0.61,0.012
+volume_minus_50,体量惩罚 -50%,C6;C33,2,28.125,7.75,6.435,16.94,0.61,0.012
+volume_plus_50,体量惩罚 +50%,C6;C9|C34,2,17.97,3.688,6.424,17.55,0.0,0.002
+shadow_minus_50,新阴影惩罚 -50%,C6;C33,2,28.125,5.5,6.435,16.94,0.61,0.012
+shadow_plus_50,新阴影惩罚 +50%,C6;C33,2,28.125,5.5,6.435,16.94,0.61,0.012

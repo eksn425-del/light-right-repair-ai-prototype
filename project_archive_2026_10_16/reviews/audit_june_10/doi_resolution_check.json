@@ -1,0 +1,152 @@
+[
+  {
+    "num": 1,
+    "doi": "10.7916/cjel.v11i2.5670",
+    "status": "ok",
+    "http": 200,
+    "final_url": "https://data.crosscite.org/10.7916%2Fcjel.v11i2.5670",
+    "content_type": "application/vnd.citationstyles.csl+json; charset=utf-8"
+  },
+  {
+    "num": 2,
+    "doi": "10.1177/036063258601600610",
+    "status": "ok",
+    "http": 200,
+    "final_url": "https://api.crossref.org/v1/works/10.1177%2F036063258601600610/transform",
+    "content_type": "application/vnd.citationstyles.csl+json"
+  },
+  {
+    "num": 3,
+    "doi": "10.3390/buildings12040393",
+    "status": "ok",
+    "http": 200,
+    "final_url": "https://api.crossref.org/v1/works/10.3390%2Fbuildings12040393/transform",
+    "content_type": "application/vnd.citationstyles.csl+json"
+  },
+  {
+    "num": 4,
+    "doi": "10.1016/j.enbuild.2004.01.009",
+    "status": "ok",
+    "http": 200,
+    "final_url": "https://api.crossref.org/v1/works/10.1016%2Fj.enbuild.2004.01.009/transform",
+    "content_type": "application/vnd.citationstyles.csl+json"
+  },
+  {
+    "num": 5,
+    "doi": "10.1016/j.rser.2014.06.007",
+    "status": "ok",
+    "http": 200,
+    "final_url": "https://api.crossref.org/v1/works/10.1016%2Fj.rser.2014.06.007/transform",
+    "content_type": "application/vnd.citationstyles.csl+json"
+  },
+  {
+    "num": 6,
+    "doi": "10.3390/en9070544",
+    "status": "ok",
+    "http": 200,
+    "final_url": "https://api.crossref.org/v1/works/10.3390%2Fen9070544/transform",
+    "content_type": "application/vnd.citationstyles.csl+json"
+  },
+  {
+    "num": 7,
+    "doi": "10.1016/j.solener.2015.12.020",
+    "status": "ok",
+    "http": 200,
+    "final_url": "https://api.crossref.org/v1/works/10.1016%2Fj.solener.2015.12.020/transform",
+    "content_type": "application/vnd.citationstyles.csl+json"
+  },
+  {
+    "num": 8,
+    "doi": "10.1016/j.foar.2024.06.001",
+    "status": "ok",
+    "http": 200,
+    "final_url": "https://api.crossref.org/v1/works/10.1016%2Fj.foar.2024.06.001/transform",
+    "content_type": "application/vnd.citationstyles.csl+json"
+  },
+  {
+    "num": 10,
+    "doi": "10.1016/j.autcon.2020.103518",
+    "status": "ok",
+    "http": 200,
+    "final_url": "https://api.crossref.org/v1/works/10.1016%2Fj.autcon.2020.103518/transform",
+    "content_type": "application/vnd.citationstyles.csl+json"
+  },
+  {
+    "num": 11,
+    "doi": "10.1017/pds.2023.335",
+    "status": "ok",
+    "http": 200,
+    "final_url": "https://api.crossref.org/v1/works/10.1017%2Fpds.2023.335/transform",
+    "content_type": "application/vnd.citationstyles.csl+json"
+  },
+  {
+    "num": 12,
+    "doi": "10.1609/aaai.v36i11.21522",
+    "status": "ok",
+    "http": 200,
+    "final_url": "https://api.crossref.org/v1/works/10.1609%2Faaai.v36i11.21522/transform",
+    "content_type": "application/vnd.citationstyles.csl+json"
+  },
+  {
+    "num": 13,
+    "doi": "10.1016/j.chbr.2023.100319",
+    "status": "ok",
+    "http": 200,
+    "final_url": "https://api.crossref.org/v1/works/10.1016%2Fj.chbr.2023.100319/transform",
+    "content_type": "application/vnd.citationstyles.csl+json"
+  },
+  {
+    "num": 14,
+    "doi": "10.1016/j.renene.2016.02.033",
+    "status": "timeout",
+    "error": "doi.org did not respond within audit timeout"
+  },
+  {
+    "num": 15,
+    "doi": "10.1145/192161.192286",
+    "status": "timeout",
+    "error": "doi.org did not respond within audit timeout"
+  },
+  {
+    "num": 16,
+    "doi": "10.1016/S0378-7788(01)00058-5",
+    "status": "timeout",
+    "error": "doi.org did not respond within audit timeout"
+  },
+  {
+    "num": 17,
+    "doi": "10.1016/j.enbuild.2006.03.013",
+    "status": "timeout",
+    "error": "doi.org did not respond within audit timeout"
+  },
+  {
+    "num": 18,
+    "doi": "10.1582/LEUKOS.2006.03.01.001",
+    "status": "timeout",
+    "error": "doi.org did not respond within audit timeout"
+  },
+  {
+    "num": 19,
+    "doi": "10.1177/096032710003200302",
+    "status": "timeout",
+    "error": "doi.org did not respond within audit timeout"
+  },
+  {
+    "num": 20,
+    "doi": "10.1016/j.enbuild.2013.01.016",
+    "status": "timeout",
+    "error": "doi.org did not respond within audit timeout"
+  },
+  {
+    "num": 21,
+    "doi": "10.1016/j.apenergy.2013.08.061",
+    "status": "timeout",
+    "error": "doi.org did not respond within audit timeout"
+  },
+  {
+    "num": 23,
+    "doi": "10.1016/j.aei.2016.07.001",
+    "status": "timeout",
+    "error": "doi.org did not respond within audit timeout"
+  }
+]

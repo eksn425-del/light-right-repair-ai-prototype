@@ -1,0 +1,23 @@
+{
+  "run_id": "baseline_20260909_clean",
+  "stage": "paper_figures",
+  "timestamp_utc": "2026-09-10T07:36:54+00:00",
+  "git_commit": "bca5d8733dd472eca08d0293de0bdcf4b9ee4c9d",
+  "config_path": "E:\\AI项目\\light-equity-soict-2026\\configs\\research.yaml",
+  "config_sha256": "e6c389dcee933658cb198fb720f840711b248bcd0aa3b1f3f389f1f288cfdcda",
+  "inputs": [
+    {
+      "path": "E:\\AI项目\\light-equity-soict-2026\\experiments\\baseline_20260909_clean\\results\\independent_validation_metrics.csv",
+      "exists": true,
+      "sha256": "f75bacbda4e28bcbbb89f96fbda06f7add3a51c60530ec1ff1f7e5df58e688ae"
+    },
+    {
+      "path": "E:\\AI项目\\light-equity-soict-2026\\experiments\\baseline_20260909_clean\\results_csv\\132_HB_Radiance已复核候选排名与Pareto.csv",
+      "exists": true,
+      "sha256": "e289f197e335d1c1a00a3e450deef0097ea14cfb583f5e814d38f68725a644a8"
+    }
+  ],
+  "figure_count": 9,
+  "dpi": 320,
+  "composite_figure": "F09_independent_composite_ranking.png"
+}

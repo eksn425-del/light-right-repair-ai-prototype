@@ -1,0 +1,40 @@
+{
+  "package": "soict-paper-assets-v1",
+  "source_branch": "research-repro-v1",
+  "source_commit": "6b64fe43451e2e0330930a5677cbe3432307282b",
+  "source_tag": "soict-2026-write-ready-v1",
+  "run_id": "baseline_20260909_clean",
+  "figures_png": [
+    "F01_workflow.png",
+    "F02_baseline_field.png",
+    "F03_curated_rank_agreement.png",
+    "F04_design_translation_comparison.png",
+    "F05_candidate_change_map.png",
+    "F06_independent_validation_scatter.png",
+    "F07_runtime_comparison_v2.png",
+    "F08_weight_robustness_v2.png",
+    "F09_independent_composite_ranking.png"
+  ],
+  "tables_csv": [
+    "table_01_geometry_audit.csv",
+    "table_02_analysis_protocol.csv",
+    "table_03_candidate_universe.csv",
+    "table_04_curated_hb_verification.csv",
+    "table_05_independent_metric_validation.csv",
+    "table_06_design_translation.csv",
+    "table_07_runtime_semantics.csv",
+    "table_08_independent_composite_metrics.csv",
+    "table_08_independent_composite_ranking.csv",
+    "table_09_candidate_rank_stability.csv",
+    "table_09_weight_sensitivity_summary.csv"
+  ],
+  "private_only_figures": [
+    "F02_baseline_field.png",
+    "F05_candidate_change_map.png"
+  ],
+  "private_only_tables": [
+    "table_01_geometry_audit.csv",
+    "table_03_candidate_universe.csv",
+    "table_04_curated_hb_verification.csv"
+  ]
+}

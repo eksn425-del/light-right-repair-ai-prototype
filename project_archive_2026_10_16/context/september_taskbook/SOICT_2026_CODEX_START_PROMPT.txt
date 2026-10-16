@@ -1,0 +1,26 @@
+请执行我提供的 `SOICT_2026_FINAL_PATCH_EXECUTION.md`，把它视为本轮最高优先级任务书。
+
+要求：
+
+1. 先完整读取任务书、当前 `research-repro-v1` 研究分支、`HANDOFF_TO_CHATGPT.md`、`PAPER_NUMBERS.csv`、`CLAIMS_LEDGER.csv`、`RESULT_DIFF_AUDIT.csv` 和当前 Route B 核心代码。
+2. 不要重写项目方向，不要新增 ML/LLM，不要写最终论文正文。
+3. 本轮重点修复：
+   - production 四项评分公式与 config single source of truth；
+   - Route B 的高度规则、timezone、timestep、strict bool 参数化；
+   - N=12 fallback sampling bug；
+   - 新增基于已冻结 20 个独立 HB 样本的 composite-ranking validation；
+   - 以真实四项公式重做 weight sensitivity；
+   - 修正 runtime 的 measured / serial-equivalent extrapolated / operational / research-only 语义；
+   - 加强 regression tests；
+   - 补齐公开安全结果与最终 paper ledger。
+4. 不重新选择 20 个 independent candidates；没有必要不要重跑这 20 个 HB。
+5. 任何结果变化都必须真实保留和审计，禁止为了匹配旧论文硬编码。
+6. 630 candidate clean ranking 在参数迁移后必须做 regression audit。
+7. 所有用于论文的新数字必须进入 `PAPER_NUMBERS.csv`；所有可写/禁写主张进入 `CLAIMS_LEDGER.csv`。
+8. 生成 `SOICT_2026_PAPER_WRITING_BRIEF.md`，但只做事实/结构/证据交接，不写 polished paper。
+9. 完成全部 tests、audit、public-safe outputs 后 push 到 GitHub；不要修改 main，不要上传私有几何、传感点坐标或 Radiance 中间文件。
+10. 最终创建/推送 tag `soict-2026-write-ready-v1`（如果无冲突），更新 `HANDOFF_TO_CHATGPT.md` 和 `RESULTS_SUMMARY.json` 里的最终 branch/commit/tag。
+11. 只有所有 P0 条件通过才标记 `SOICT_WRITE_READY = TRUE`。
+12. 完成后严格按任务书第 21 节格式回复我，然后停止。
+
+现在开始执行。不要在可自行判断的工程细节上反复询问我；只有真实缺文件、外部可执行环境缺失、权限/凭据缺失或会改变科学定义的问题才暂停并报告。

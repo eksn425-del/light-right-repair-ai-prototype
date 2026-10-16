@@ -1,0 +1,2 @@
+"""Algorithm A: sunlight diagnosis."""
+

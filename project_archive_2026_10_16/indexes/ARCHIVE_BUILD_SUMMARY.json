@@ -1,0 +1,67 @@
+{
+  "scanned_files": 8343,
+  "eligible_files_before_deduplication": 1658,
+  "eligible_mib": 230.32,
+  "exclusions": {
+    "cache_or_simulation_intermediates": 5959,
+    "not_a_selected_handoff_format": 383,
+    "raw_geometry_sensor_or_radiance_source": 157,
+    "sensor_or_point_coordinate_table": 185,
+    "oversized_binary_inventory_only": 1
+  },
+  "largest": [
+    [
+      "灌口镇第一、第二社区城中村整治规划及项目策划-市级评审后修改.pdf",
+      26.64
+    ],
+    [
+      "250321灌口镇第一第二社区城中村改造节点征集.pdf",
+      12.28
+    ],
+    [
+      "论文参考文献PDF\\10_Ward_1994_RADIANCE_Lighting_Simulation.pdf",
+      8.18
+    ],
+    [
+      "光权修复_论文工作包_2026-06-03\\06_文献与引用\\old_pdfs_archive_重新下载前备份_20260605_185516\\Wang_2024_EvoMass_building_massing_optimization.pdf",
+      6.47
+    ],
+    [
+      "谢研组\\微信图片_20260520205051.jpg",
+      6.06
+    ],
+    [
+      "谢研组\\微信图片_20260520205047.jpg",
+      5.67
+    ],
+    [
+      "final_chinese_paper_package_2026_06_11\\02_references\\22_Wortmann_2017_Opossum\\22_Wortmann_2017_Opossum.pdf",
+      5.56
+    ],
+    [
+      "光权修复论文和参考文献PDF_最终简化版\\参考文献PDF\\[22]_Wortmann_2017_Opossum.pdf",
+      5.56
+    ],
+    [
+      "建创坊技术组_A4过程册_光权修复项目_2026-06-24_优化版.docx",
+      4.65
+    ],
+    [
+      "谢研组\\微信图片_20260520205059.jpg",
+      4.38
+    ],
+    [
+      "谢研组\\微信图片_20260520205102.jpg",
+      4.02
+    ],
+    [
+      "光权修复_线上会议_2026-05-31\\assets\\showcase\\team_site_photo.jpg",
+      3.7
+    ]
+  ],
+  "unique_copied_files": 1067,
+  "unique_copied_mib": 180.08,
+  "duplicate_references": 591,
+  "registered_run_directories": 30,
+  "docx_extraction_errors": []
+}

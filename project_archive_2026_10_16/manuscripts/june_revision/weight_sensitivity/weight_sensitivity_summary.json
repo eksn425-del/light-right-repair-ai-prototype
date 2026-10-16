@@ -1,0 +1,13 @@
+{
+  "baseline_average_sunlight_hours": 6.422,
+  "baseline_dark_zone_percent": 17.55,
+  "variant_count": 7,
+  "c6_c33_variant_count": 2,
+  "c6_c33_variant_ratio": 0.286,
+  "post_dark_zone_percent_min": 16.94,
+  "post_dark_zone_percent_max": 17.55,
+  "intervention_volume_min": 17.97,
+  "intervention_volume_max": 28.125,
+  "method": "Algorithm B re-run under ±50% single-factor weight perturbations; post metrics use vectorized reproduction of the same simplified 2.5D effective-height model.",
+  "metrics_csv": "E:\\AI项目\\paper_revision_work_2026_06_14\\weight_sensitivity\\weight_sensitivity_metrics.csv"
+}

@@ -1,0 +1,24 @@
+{
+  "candidate_count": 3,
+  "passed_candidate_count": 3,
+  "selected_candidate_id": "candidate_01",
+  "rules_used": {
+    "max_slope_percent": 8,
+    "min_clear_width_m": 1.2,
+    "max_step_height_m": 0.16,
+    "guardrail_required_height_m": 1.0,
+    "min_accessibility_coverage": 0.8,
+    "min_slow_path_width_m": 1.8,
+    "min_pedestrian_vehicle_separation_m": 0.5,
+    "waterfront_guardrail_required": true,
+    "parking_entry_visibility_required": true
+  },
+  "risk_flags": {
+    "candidate_01": [],
+    "candidate_03": [],
+    "candidate_02": [
+      "guardrail_detail_required"
+    ]
+  },
+  "notes": "Framework version: route graph is node-to-node and can be replaced by surveyed paths later."
+}

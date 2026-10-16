@@ -1,0 +1,11 @@
+case_id,case_label,average_sunlight_hours,dark_zone_ratio,dark_zone_ratio_percent,dark_zone_drop,relative_dark_improvement,sunlight_gain_hours,intervention_volume,changed_building_count,changed_building_ids,notes
+random_01,随机基线01,6.422,0.1755,17.55,0.0,0.0,0.0,22.5,2,C41;C8,fast vectorized reproduction of the same 2.5D height-reduction post-simulation logic
+random_02,随机基线02,6.422,0.1755,17.55,0.0,0.0,0.0,33.75,2,C2;C18,fast vectorized reproduction of the same 2.5D height-reduction post-simulation logic
+random_03,随机基线03,6.445,0.1714,17.14,0.0041,0.0233,0.022,33.75,2,C16;C15,fast vectorized reproduction of the same 2.5D height-reduction post-simulation logic
+random_04,随机基线04,6.457,0.1612,16.12,0.0143,0.0814,0.035,39.375,2,C9;C7,fast vectorized reproduction of the same 2.5D height-reduction post-simulation logic
+random_05,随机基线05,6.449,0.1755,17.55,0.0,0.0,0.027,33.75,2,C45;C35,fast vectorized reproduction of the same 2.5D height-reduction post-simulation logic
+random_06,随机基线06,6.431,0.1755,17.55,0.0,0.0,0.008,33.75,2,C6;C38,fast vectorized reproduction of the same 2.5D height-reduction post-simulation logic
+random_07,随机基线07,6.422,0.1755,17.55,0.0,0.0,0.0,39.375,2,C28;C3,fast vectorized reproduction of the same 2.5D height-reduction post-simulation logic
+random_08,随机基线08,6.424,0.1755,17.55,0.0,0.0,0.002,22.5,2,C2;C6,fast vectorized reproduction of the same 2.5D height-reduction post-simulation logic
+random_09,随机基线09,6.445,0.1714,17.14,0.0041,0.0233,0.022,17.849,2,C14;C15,fast vectorized reproduction of the same 2.5D height-reduction post-simulation logic
+random_10,随机基线10,6.433,0.1694,16.94,0.0061,0.0349,0.01,33.75,2,C33;C39,fast vectorized reproduction of the same 2.5D height-reduction post-simulation logic

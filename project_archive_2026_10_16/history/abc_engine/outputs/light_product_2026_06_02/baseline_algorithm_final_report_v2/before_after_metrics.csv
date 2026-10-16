@@ -1,0 +1,3 @@
+scheme_id,scheme_type,average_sunlight_hours,dark_zone_ratio,light_equity_improvement,intervention_volume,accessibility_coverage,safety_score,notes
+baseline_01,baseline,6.422,0.1755,0.0,0.0,0.68,62.0,pre-intervention result from Algorithm A
+candidate_01,algorithm_design,6.435,0.1694,0.035,45.0,0.78,80.56,selected by Algorithm C; sunlight metrics re-simulated with intervention boxes

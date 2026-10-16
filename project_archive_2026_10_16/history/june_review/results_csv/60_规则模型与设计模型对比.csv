@@ -1,0 +1,4 @@
+﻿model,avg_direct_sun_h_reference,low_direct_sun_area_m2_reference,low_direct_sun_ratio_reference,intervention_volume_m3_approx,street_continuity,ground_floor_interface,obj_path
+baseline,6.72245,954.0,0.054331,0.0,需设计师复核,原状,E:\AI项目\ladybug_ready_models\baseline_original_full_site_ladybug_ready.obj
+规则模型：整体高度削减,6.758073,936.0,0.053306,5750.321,需设计师复核,底层界面随整体削减抽象处理,E:\AI项目\中文导师审阅定稿_工作包_2026_06_20\data_processed\reference_models\C13_C24_rule_flat.obj
+设计转译模型：上部局部退台/转角切削,6.744746,945.0,0.053819,2185.122,需设计师复核,保留底层街巷界面,E:\AI项目\中文导师审阅定稿_工作包_2026_06_20\data_processed\reference_models\C13_C24_design_stepback.obj

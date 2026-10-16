@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 580">
+  <rect width="1200" height="580" fill="#f7f6ef"/>
+  <text x="60" y="70" font-family="Microsoft YaHei, sans-serif" font-size="34" font-weight="800" fill="#18201d">论文表达边界</text>
+  <g font-family="Microsoft YaHei, sans-serif">
+    <rect x="70" y="150" width="300" height="260" fill="#fff" stroke="#427d51" stroke-width="4"/><text x="100" y="220" font-size="30" font-weight="800" fill="#427d51">可以说</text><text x="100" y="285" font-size="21" fill="#18201d">候选排序</text><text x="100" y="325" font-size="21" fill="#18201d">暗区变化</text><text x="100" y="365" font-size="21" fill="#18201d">安全初筛</text>
+    <rect x="450" y="150" width="300" height="260" fill="#fff" stroke="#b78a25" stroke-width="4"/><text x="480" y="220" font-size="30" font-weight="800" fill="#b78a25">需要复核</text><text x="480" y="285" font-size="21" fill="#18201d">道路中心线</text><text x="480" y="325" font-size="21" fill="#18201d">坡度台阶</text><text x="480" y="365" font-size="21" fill="#18201d">护栏与出入口</text>
+    <rect x="830" y="150" width="300" height="260" fill="#fff" stroke="#be5776" stroke-width="4"/><text x="860" y="220" font-size="30" font-weight="800" fill="#be5776">不要说</text><text x="860" y="285" font-size="21" fill="#18201d">100%安全</text><text x="860" y="325" font-size="21" fill="#18201d">暗区完全消除</text><text x="860" y="365" font-size="21" fill="#18201d">专业审查精度</text>
+  </g>
+  <text x="60" y="510" font-family="Microsoft YaHei, sans-serif" font-size="19" fill="#65716b">系统输出是 AI 辅助空间决策实验结果，不替代人工设计判断和专业日照/安全审查。</text>
+</svg>

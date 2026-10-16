@@ -1,0 +1,3 @@
+﻿candidate_id,building_id,old_height_m,new_height_m,height_reduction_m,notes
+candidate_01,C6,6.0,4.5,1.5,simplified full-site box model for daylight re-check; not a precise boolean SU model
+candidate_01,C33,9.0,6.75,2.25,simplified full-site box model for daylight re-check; not a precise boolean SU model

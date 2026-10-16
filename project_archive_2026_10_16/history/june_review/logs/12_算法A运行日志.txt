@@ -1,0 +1,13 @@
+Run started: 2026-06-20T20:59:53
+3m base grid points: 1951
+3m baseline avg=5.840082, low_sun_ratio=0.185546
+{
+  "data_read_s": 0.008114500000374392,
+  "main_grid_generation_s": 0.018860599999243277,
+  "main_algorithm_A_s": 0.035351300000002084,
+  "candidate_enumeration_3m_s": 0.33511189999990165,
+  "scale_origin_threshold_sensitivity_s": 3.841172800000095,
+  "independent_reference_s": 35.588343299999906,
+  "design_translation_reference_s": 17.99127959999987,
+  "total_run_s": 59.162078100000144
+}

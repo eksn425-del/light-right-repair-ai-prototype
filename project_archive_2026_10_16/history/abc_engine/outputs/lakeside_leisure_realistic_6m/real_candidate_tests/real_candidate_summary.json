@@ -1,0 +1,7 @@
+{
+  "baseline_average_sunlight_hours": 6.422,
+  "baseline_dark_zone_ratio": 0.1755,
+  "candidate_count": 3,
+  "selected_candidate_id": "candidate_real_03",
+  "notes": "Candidates are selected by post-intervention 6m grid re-simulation, not only heuristic expected gain."
+}

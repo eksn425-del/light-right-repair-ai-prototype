@@ -1,0 +1,360 @@
+阶段反馈：等待组员建模与数据提交
+生成日期：2026-05-07
+
+一、现在是不是等组员建模？
+
+是，但不能只等“体块模型”。
+
+后续真实流程要等组员提交：
+
+1. SU 极简白模
+2. 建筑信息 CSV
+3. 片区分区 CSV
+4. 道路与慢行 CSV
+5. 节点 CSV
+6. 保护区 CSV
+7. 必要的 CAD 截图/边界标注
+
+也就是说，模型负责“空间体量”，CSV 负责“算法能读懂的判断依据”。
+
+如果只有 SU 体块模型，没有 CSV，算法只能看到几何，无法知道：
+
+- 哪栋建筑可以动；
+- 哪栋建筑不能动；
+- 哪里是旧菜市场；
+- 哪里是村前球场；
+- 哪里是滨湖界面；
+- 哪里是停车冲突点；
+- 哪些节点对老人儿童更重要；
+- 哪些区域是保护区；
+- 哪些空间是组员认为最需要改造的重点。
+
+所以接下来不是单纯等建模，而是等“建模 + 数据标注”。
+
+二、组员需要提交什么
+
+总文件夹仍然是：
+
+E:/AI项目/light_equity_project/data/real_guankou/
+
+最终需要有：
+
+1. site_model.obj
+
+从 SketchUp 导出的极简白模。
+
+要求：
+
+- 只保留建筑体量；
+- 不要门窗、家具、栏杆、树、人、材质；
+- 单位统一为米；
+- 坐标尽量和 CAD/DXF 保持一致；
+- 建筑高度按层数估算也可以，一层先按 3m。
+
+2. buildings.csv
+
+每栋建筑一行。
+
+核心字段：
+
+- building_id
+- name
+- x_min
+- x_max
+- y_min
+- y_max
+- height_m
+- floors
+- movable
+- protected
+- facade_type
+- notes
+
+用途：
+
+算法 A 用它判断遮挡；
+算法 B 用它判断哪些建筑可削减、可退台、可微改；
+算法 C 用它避开保护建筑。
+
+3. site_zones.csv
+
+这是这次 25-26 新任务书最重要的新表。
+
+每一行是一个片区、节点或问题区域。
+
+例如：
+
+大井脚里1号社区组：
+
+- 村前球场：ball_court
+- 主要道路边侧整治段：road_edge
+- 停车规整区：parking
+- 旧公社周边节点：community_node
+- 房前屋后整治片段：residential_edge
+
+沿湖休闲片区组：
+
+- 旧菜市场：old_market
+- 沿湖闲置空地：vacant_land
+- 镇属闲置公房：vacant_public_building
+- 滨湖慢行界面：waterfront
+- 沿湖停车组织区：parking
+
+核心字段：
+
+- zone_id
+- name
+- zone_type
+- x_min
+- x_max
+- y_min
+- y_max
+- priority
+- needs_light_improvement
+- needs_accessibility_improvement
+- protected
+- notes
+
+用途：
+
+算法 A 会输出 zone_diagnosis.csv，告诉我们每个分区的采光和暗区问题；
+算法 B 会根据这些 zone 生成候选微更新策略。
+
+4. streets.csv
+
+每条主要道路或慢行路径一行。
+
+核心字段：
+
+- street_id
+- start_x
+- start_y
+- end_x
+- end_y
+- width_m
+- main_direction
+- pedestrian_priority
+- notes
+
+用途：
+
+算法 A 用它确定主要分析范围；
+算法 C 用它检查慢行宽度和可达性。
+
+5. nodes.csv
+
+每个重要节点一行。
+
+例如：
+
+- 片区入口；
+- 球场入口；
+- 旧菜市场入口；
+- 滨湖停留点；
+- 老人活动点；
+- 儿童活动点；
+- 阴暗点；
+- 停车冲突点；
+- 人车混行点；
+- 台阶/坡道问题点。
+
+核心字段：
+
+- node_id
+- x
+- y
+- z
+- node_type
+- importance
+- notes
+
+用途：
+
+算法 C 用它生成安全可达路线；
+后续论文图表也可以用它表达“问题节点”。
+
+6. protected_zones.csv
+
+每个不可动或需谨慎处理区域一行。
+
+例如：
+
+- 历史立面；
+- 老树；
+- 滨水危险边界；
+- 结构不可动区；
+- 居民强使用空间；
+- 不建议拆改的建筑。
+
+核心字段：
+
+- zone_id
+- x_min
+- x_max
+- y_min
+- y_max
+- z_min
+- z_max
+- reason
+- notes
+
+用途：
+
+算法 B 会避开保护区；
+算法 C 会把保护区冲突作为风险。
+
+三、两组具体怎么分
+
+1. 大井脚里1号社区组
+
+主要负责：
+
+- 村前球场；
+- 主要道路；
+- 停车场地；
+- 房前屋后；
+- 旧公社周边；
+- 居民日常活动空间。
+
+他们重点交：
+
+- 大井脚里1号片区边界；
+- 球场 zone；
+- 停车 zone；
+- 道路边侧整治 zone；
+- 旧公社周边 node；
+- 主要建筑体块；
+- 老人儿童活动节点；
+- 人车混行或停车冲突节点。
+
+模板位置：
+
+E:/AI项目/light_equity_project/data/real_guankou/group_templates/dajingjiaoli_1/
+
+2. 沿湖休闲片区组
+
+主要负责：
+
+- 旧菜市场；
+- 闲置空地；
+- 镇属闲置公房；
+- 滨湖界面；
+- 停车与慢行系统；
+- 沿湖公共活动节点。
+
+他们重点交：
+
+- 沿湖休闲片区边界；
+- 旧菜市场 zone；
+- 闲置空地 zone；
+- 闲置公房 zone；
+- 滨湖 waterfront zone；
+- 停车冲突 zone；
+- 滨湖慢行路径；
+- 临水安全节点。
+
+模板位置：
+
+E:/AI项目/light_equity_project/data/real_guankou/group_templates/lakeside_leisure/
+
+四、组员最容易误解的地方
+
+1. 误解一：只要建 SU 模型就够了
+
+不够。
+
+SU 模型只能告诉算法“这里有体块”，不能告诉算法“这里是什么、能不能动、重要不重要、是不是保护区”。
+
+2. 误解二：CSV 很麻烦，可以后面再说
+
+不建议。
+
+CSV 是这套算法真正的输入接口。建模时同步填 CSV，后续会省很多返工。
+
+3. 误解三：CAD 已经有图，可以自动识别
+
+目前不能完全自动识别。
+
+NEW-CAD DXF 可以读取，但大多数实体都在“地形图”一个图层里，建筑、道路、水体、停车没有被清楚分层，所以必须人工核对。
+
+4. 误解四：算法会直接给最终建筑方案
+
+不会。
+
+算法输出的是：
+
+- 问题位置；
+- 暗区热力图；
+- 候选干预坐标；
+- 建议体块 OBJ；
+- 安全验证结果；
+- 数据图表。
+
+建筑组还要把这些结果转译成真正有建筑语言的设计方案。
+
+五、当前工程已经准备好的东西
+
+工程位置：
+
+E:/AI项目/light_equity_project/
+
+已经完成：
+
+1. ABC 算法框架；
+2. toy street demo；
+3. NEW-CAD DXF 参考提取；
+4. cad_reference 输出；
+5. site_zones.csv 接口；
+6. 两组模板；
+7. 两组协作说明；
+8. README；
+9. 最终图表接口。
+
+CAD 参考输出位置：
+
+E:/AI项目/light_equity_project/data/cad_reference/
+
+组员说明位置：
+
+E:/AI项目/light_equity_project/data/real_guankou/GROUP_WORK_GUIDE.md
+
+两组模板位置：
+
+E:/AI项目/light_equity_project/data/real_guankou/group_templates/
+
+六、下一步推荐节奏
+
+第一步：先让两组圈边界
+
+每组先确定自己的研究范围，并在 CAD 或截图上圈出来。
+
+第二步：每组先填 site_zones.csv
+
+不要一开始就追求完整白模，先把重点片区、节点、问题区域列出来。
+
+第三步：同步建 SU 极简白模
+
+只拉体块，不做细节。
+
+第四步：补 buildings.csv / streets.csv / nodes.csv
+
+每组按照自己负责范围补表。
+
+第五步：合并到 real_guankou
+
+由统筹同学把两组数据合并。
+
+第六步：运行真实流程
+
+python main.py --dataset real_guankou
+
+七、可以发给网页端的继续提问
+
+可以把下面这段话直接发给网页端：
+
+“现在项目已经根据25-26新任务书和NEW-CAD DXF更新为两组片区协作版。ABC算法不推翻，但从单条老街升级为大井脚里1号社区组与沿湖休闲片区组共同提交数据。DXF已经可读，但大多数实体在‘地形图’一个图层里，不能全自动识别建筑/道路/水体，所以后续需要组员提交SU极简白模 + buildings.csv + site_zones.csv + streets.csv + nodes.csv + protected_zones.csv。请继续帮我优化组员分工、数据提交规范、以及后续如何把这些真实数据转成论文里的方法论和图表表达。”
+
+八、一句话总结
+
+后续不是单纯等组员建模，而是等组员提交“极简白模 + 坐标化数据表 + 片区问题判断”。只有这三件事齐了，算法 A/B/C 才能从 toy demo 进入真实灌口沿湖片区分析。
+

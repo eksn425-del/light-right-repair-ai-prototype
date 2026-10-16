@@ -1,0 +1,24 @@
+{
+  "source_dxf": "沿湖休闲片区标号(新）.dxf",
+  "source_obj": "沿湖休闲片区场地.obj",
+  "building_count": 45,
+  "protected_buildings": [
+    "C42"
+  ],
+  "movable_rule": "all buildings except C42 are treated as movable/intervention-eligible for algorithm exploration",
+  "road_layer": {
+    "line_count": 96,
+    "component_count": 1,
+    "used_as": "road range/boundary segments plus inferred main axis"
+  },
+  "remaining_limits": [
+    "road layer appears as LINE range/boundary, not surveyed centerline",
+    "photo nodes ignored by current instruction",
+    "building_footprints remain LINE components, not closed PLINE"
+  ],
+  "height_overrides": {
+    "C38": 12,
+    "C39": 9,
+    "C45": 3
+  }
+}

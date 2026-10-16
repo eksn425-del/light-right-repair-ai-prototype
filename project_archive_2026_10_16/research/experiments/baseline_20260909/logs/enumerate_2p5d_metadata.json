@@ -1,0 +1,29 @@
+{
+  "run_id": "baseline_20260909",
+  "stage": "enumerate_2p5d",
+  "timestamp_utc": "2026-09-09T16:27:45+00:00",
+  "git_commit": "NOT_A_GIT_CHECKOUT",
+  "config_path": "E:\\AI项目\\light-equity-soict-2026\\configs\\research.yaml",
+  "config_sha256": "b15d4644ed7d0b6806c2c9395836fbec25da803c9aa8ff74a8fffcd3bf009c8f",
+  "inputs": [
+    {
+      "path": "E:\\AI项目\\light-equity-soict-2026\\experiments\\baseline_20260909\\canonical_site_v2\\canonical_buildings.csv",
+      "exists": true,
+      "sha256": "e50a664e074ac7be5bb7c5b1561e21f35703ccd573075c29abcf29d181ce69e0"
+    },
+    {
+      "path": "E:\\AI项目\\light-equity-soict-2026\\experiments\\baseline_20260909\\canonical_site_v2\\canonical_site_v2.geojson",
+      "exists": true,
+      "sha256": "97021f73c5e0bf831d9696a4b00a967605ec90a329f2bcba828b501ceff2d1b8"
+    },
+    {
+      "path": "E:\\AI项目\\light-equity-soict-2026\\experiments\\baseline_20260909\\results_csv\\100_HB_Radiance传感点.csv",
+      "exists": true,
+      "sha256": "57ba551955a6c854fd8001afbd7bcf276f6c17f5dcc3dd1aaf83a906b99e04e3"
+    }
+  ],
+  "eligible_building_count": 36,
+  "candidate_count": 630,
+  "cell_area_m2": 9.0,
+  "seed": 20260909
+}

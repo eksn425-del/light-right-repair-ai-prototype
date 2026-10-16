@@ -1,0 +1,14 @@
+numpy==1.26.4
+pandas==2.3.3
+scipy==1.17.1
+matplotlib==3.10.8
+shapely==2.1.2
+pvlib==0.15.2
+python-docx==1.2.0
+reportlab==4.4.10
+ladybug-core==0.44.52
+ladybug-geometry==1.35.1
+honeybee-core==1.64.54
+honeybee-radiance==1.66.273
+honeybee-radiance-command==1.23.0
+lbt-recipes==0.28.2

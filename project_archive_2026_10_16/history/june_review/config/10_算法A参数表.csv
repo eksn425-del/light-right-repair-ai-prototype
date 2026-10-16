@@ -1,0 +1,20 @@
+﻿parameter,value,unit,note
+site_latitude,24.55,deg,厦门灌口近似纬度，沿用项目配置
+site_longitude,118.03,deg,厦门灌口近似经度，沿用项目配置
+timezone,Asia/Shanghai,,中国标准时间
+north_direction,模型 +Y 方向按项目约定视作北向；未发现可复核北向旋转参数,,未发现独立北向校核文件
+coordinate_system,项目局部平面坐标，单位 m；Ladybug-ready OBJ 使用 x+191.792/y+95.982 的经验平移与 CSV 对齐,,CSV 与 Ladybug-ready OBJ 使用经验平移对齐
+unit,m,m,CSV、诊断网格和 ready OBJ 均按 m 记录
+winter_solstice_date,2026-12-21,date,本轮统一模拟日期
+analysis_period,"08:00-16:00, midpoint samples",,30分钟区间中点采样
+time_step,30,min,由原1小时升级为30分钟
+main_grid_size,3.0,m,主分析尺度
+quick_grid_size,6.0,m,快速筛查与效率对照
+extra_grid_sizes,"4,5",m,尺度稳定性测试
+local_grid_size,2,m,仅用于局部重点区复核
+low_direct_sun_thresholds,"2,3,4",h,敏感性测试阈值
+solar_position_method,pvlib 0.15.2,,apparent_elevation + azimuth
+building_footprint_method,buildings.csv axis-aligned x/y rectangles,,算法A 2.5D规则模型
+building_height_source,buildings.csv height_m,m,C6/C33/C42 等均从CSV读取
+mask_rule,exclude building footprints; include street buffer width/2 + 5m,,无独立水体多边形文件
+invalid_point_rule,outside street/open-space mask or inside footprint excluded,,边界点按 footprint covers 排除

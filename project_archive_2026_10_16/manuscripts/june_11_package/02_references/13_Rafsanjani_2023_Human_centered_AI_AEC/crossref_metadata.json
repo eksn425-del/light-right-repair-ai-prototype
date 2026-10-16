@@ -1,0 +1,638 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          9
+        ]
+      ],
+      "date-time": "2026-06-09T19:00:24Z",
+      "timestamp": 1781031624758,
+      "version": "3.54.1"
+    },
+    "reference-count": 42,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              8,
+              1
+            ]
+          ],
+          "date-time": "2023-08-01T00:00:00Z",
+          "timestamp": 1690848000000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              8,
+              1
+            ]
+          ],
+          "date-time": "2023-08-01T00:00:00Z",
+          "timestamp": 1690848000000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              8,
+              9
+            ]
+          ],
+          "date-time": "2023-08-09T00:00:00Z",
+          "timestamp": 1691539200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 8,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100007250",
+        "name": "Mississippi State University",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/100007250",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Computers in Human Behavior Reports"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          8
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.chbr.2023.100319",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2023,
+          8,
+          10
+        ]
+      ],
+      "date-time": "2023-08-10T21:47:58Z",
+      "timestamp": 1691704078000
+    },
+    "page": "100319",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 97,
+    "special_numbering": "C",
+    "title": [
+      "Towards human-centered artificial intelligence (AI) in architecture, engineering, and construction (AEC) industry"
+    ],
+    "prefix": "10.1016",
+    "volume": "11",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-0306-0853",
+        "authenticated-orcid": false,
+        "given": "Hamed",
+        "family": "Nabizadeh Rafsanjani",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Amir Hossein",
+        "family": "Nabizadeh",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.chbr.2023.100319_bib1",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.jobe.2021.103299",
+        "article-title": "Artificial intelligence in the construction industry: A review of present status, opportunities and future challenges",
+        "volume": "44",
+        "author": "Abioye",
+        "year": "2021",
+        "journal-title": "Journal of Building Engineering"
+      },
+      {
+        "key": "10.1016/j.chbr.2023.100319_bib2",
+        "series-title": "Proceedings of the 2019 CHI conference on human factors in computing systems",
+        "first-page": "1",
+        "article-title": "Guidelines for human-AI interaction",
+        "author": "Amershi",
+        "year": "2019"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.chbr.2023.100319_bib4",
+        "doi-asserted-by": "crossref",
+        "first-page": "306",
+        "DOI": "10.1177/1478077118800982",
+        "article-title": "Artificial intelligence in architecture: Generating conceptual design via deep learning",
+        "volume": "16",
+        "author": "As",
+        "year": "2018",
+        "journal-title": "International Journal of Architectural Computing"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.chbr.2023.100319_bib5",
+        "first-page": "4",
+        "article-title": "Modeling and interpreting expert disagreement about artificial superintelligence",
+        "volume": "41",
+        "author": "Baum",
+        "year": "2017",
+        "journal-title": "Informatica"
+      },
+      {
+        "key": "10.1016/j.chbr.2023.100319_bib6",
+        "series-title": "IEEE spectrum: Technology, engineering, and science news",
+        "article-title": "The big problem with self-driving cars is people",
+        "author": "Brooks",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.chbr.2023.100319_bib7",
+        "series-title": "Artificial intelligence aided architectural design. MOST wiedzy - portal z wiedzą dla ciebie; eCAADe (education and research in computer aided architectural design in europe) and faculty of civil engineering, architecture and environmental engineering",
+        "author": "Cudzik",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.chbr.2023.100319_bib8",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.autcon.2020.103081",
+        "article-title": "Artificial intelligence in the AEC industry: Scientometric analysis and visualization of research activities",
+        "volume": "112",
+        "author": "Darko",
+        "year": "2020",
+        "journal-title": "Automation in Construction"
+      },
+      {
+        "key": "10.1016/j.chbr.2023.100319_bib9",
+        "author": "Dilmegani"
+      },
+      {
+        "issue": "9",
+        "key": "10.1016/j.chbr.2023.100319_bib10",
+        "doi-asserted-by": "crossref",
+        "first-page": "1845",
+        "DOI": "10.1007/s00170-015-7339-0",
+        "article-title": "Automation in construction scheduling: A review of the literature",
+        "volume": "81",
+        "author": "Faghihi",
+        "year": "2015",
+        "journal-title": "The International Journal of Advanced Manufacturing Technology"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.chbr.2023.100319_bib11",
+        "doi-asserted-by": "crossref",
+        "first-page": "118",
+        "DOI": "10.1016/j.habitatint.2010.06.003",
+        "article-title": "Role of construction in economic development: Review of key concepts in the past 40 years",
+        "volume": "35",
+        "author": "Giang",
+        "year": "2011",
+        "journal-title": "Habitat International"
+      },
+      {
+        "key": "10.1016/j.chbr.2023.100319_bib12",
+        "series-title": "80+ AI statistics: Market size, growth & business use",
+        "author": "Howarth",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.chbr.2023.100319_bib13",
+        "unstructured": "Human-Centered Artificial Intelligence – HCIL. (n.d.). https://hcil.umd.edu/human-centered-ai/."
+      },
+      {
+        "key": "10.1016/j.chbr.2023.100319_bib14",
+        "doi-asserted-by": "crossref",
+        "first-page": "934",
+        "DOI": "10.1016/j.eswa.2013.06.061",
+        "article-title": "Intelligent systems research in the construction industry",
+        "volume": "41",
+        "author": "Irani",
+        "year": "2014",
+        "journal-title": "Expert Systems with Applications"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.chbr.2023.100319_bib15",
+        "doi-asserted-by": "crossref",
+        "first-page": "329",
+        "DOI": "10.1061/(ASCE)0733-9364(1988)114:3(329)",
+        "article-title": "Artificial intelligence techniques for generating construction project plans",
+        "volume": "114",
+        "author": "Levitt",
+        "year": "1988",
+        "journal-title": "Journal of Construction Engineering and Management"
+      },
+      {
+        "key": "10.1016/j.chbr.2023.100319_bib16",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1155/2012/145974",
+        "article-title": "Artificial intelligence in civil engineering",
+        "author": "Lu",
+        "year": "2012",
+        "journal-title": "Mathematical Problems in Engineering"
+      },
+      {
+        "key": "10.1016/j.chbr.2023.100319_bib17",
+        "doi-asserted-by": "crossref",
+        "first-page": "518",
+        "DOI": "10.1016/j.proeng.2016.04.039",
+        "article-title": "Text analytics for supporting stakeholder opinion mining for large-scale highway projects",
+        "volume": "145",
+        "author": "Lv",
+        "year": "2016",
+        "journal-title": "Procedia Engineering"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.chbr.2023.100319_bib18",
+        "doi-asserted-by": "crossref",
+        "first-page": "3",
+        "DOI": "10.3390/asi4030052",
+        "article-title": "Influence of artificial intelligence in civil engineering toward sustainable development—a systematic literature review",
+        "volume": "4",
+        "author": "Manzoor",
+        "year": "2021",
+        "journal-title": "Applied System Innovation"
+      },
+      {
+        "key": "10.1016/j.chbr.2023.100319_bib19",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.autcon.2020.103150",
+        "article-title": "Automated staff assignment for building maintenance using natural language processing",
+        "volume": "113",
+        "author": "Mo",
+        "year": "2020",
+        "journal-title": "Automation in Construction"
+      },
+      {
+        "key": "10.1016/j.chbr.2023.100319_bib20",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.compedu.2019.103777",
+        "article-title": "Adaptive learning path recommender approach using auxiliary learning objects",
+        "volume": "147",
+        "author": "Nabizadeh",
+        "year": "2020",
+        "journal-title": "Computers & Education"
+      },
+      {
+        "key": "10.1016/j.chbr.2023.100319_bib21",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.eswa.2020.113596",
+        "article-title": "Learning path personalization and recommendation methods: A survey of the state-of-the-art",
+        "volume": "159",
+        "author": "Nabizadeh",
+        "year": "2020",
+        "journal-title": "Expert Systems with Applications"
+      },
+      {
+        "key": "10.1016/j.chbr.2023.100319_bib22",
+        "series-title": "GEOBIM market in AEC industry report by",
+        "author": "Narain",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.chbr.2023.100319_bib23",
+        "series-title": "Embracing artificial intelligence in architecture—AIA",
+        "author": "O'Donnell",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.chbr.2023.100319_bib24",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.autcon.2020.103517",
+        "article-title": "Roles of artificial intelligence in construction engineering and management: A critical review and future trends",
+        "volume": "122",
+        "author": "Pan",
+        "year": "2021",
+        "journal-title": "Automation in Construction"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.chbr.2023.100319_bib25",
+        "doi-asserted-by": "crossref",
+        "first-page": "286",
+        "DOI": "10.1109/3468.844354",
+        "article-title": "A model for types and levels of human interaction with automation",
+        "volume": "30",
+        "author": "Parasuraman",
+        "year": "2000",
+        "journal-title": "IEEE Transactions on Systems, Man, and Cybernetics - Part A: Systems and Humans"
+      },
+      {
+        "key": "10.1016/j.chbr.2023.100319_bib26",
+        "series-title": "Gartner top 5 marketing Predictions for 2018. Gartner",
+        "author": "Pemberton",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.chbr.2023.100319_bib27",
+        "doi-asserted-by": "crossref",
+        "first-page": "77",
+        "DOI": "10.1016/j.buildenv.2018.03.037",
+        "article-title": "Understanding the recurring patterns of occupants' energy-use behaviors at entry and departure events in office buildings",
+        "volume": "136",
+        "author": "Rafsanjani",
+        "year": "2018",
+        "journal-title": "Building and Environment"
+      },
+      {
+        "key": "10.1016/j.chbr.2023.100319_bib28",
+        "series-title": "Towards digital architecture, engineering, and construction (AEC) industry through virtual design and construction (VDC) and digital twin",
+        "author": "Rafsanjani",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.chbr.2023.100319_bib29",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1007/s40692-021-00215-7",
+        "article-title": "Automatic learning styles prediction: A survey of the state-of-the-art (2006–2021)",
+        "author": "Raleiras",
+        "year": "2022",
+        "journal-title": "Journal of Computers in Education"
+      },
+      {
+        "key": "10.1016/j.chbr.2023.100319_bib30",
+        "series-title": "Reshaping business with artificial intelligence",
+        "author": "Reeves",
+        "year": "2017"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.chbr.2023.100319_bib31",
+        "doi-asserted-by": "crossref",
+        "first-page": "33",
+        "DOI": "10.1002/hbe2.117",
+        "article-title": "Human-centered artificial intelligence and machine learning",
+        "volume": "1",
+        "author": "Riedl",
+        "year": "2019",
+        "journal-title": "Human Behavior and Emerging Technologies"
+      },
+      {
+        "key": "10.1016/j.chbr.2023.100319_bib32",
+        "series-title": "Artificial intelligence: A modern approach",
+        "author": "Russell",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.chbr.2023.100319_bib33",
+        "series-title": "Proceedings of the international conference on advanced visual interfaces",
+        "first-page": "1",
+        "article-title": "Interactive human centered artificial intelligence: A definition and research challenges",
+        "author": "Schmidt",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.chbr.2023.100319_bib34",
+        "series-title": "Human and computer control of undersea teleoperators",
+        "author": "Sheridan",
+        "year": "1978"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.chbr.2023.100319_bib35",
+        "doi-asserted-by": "crossref",
+        "first-page": "495",
+        "DOI": "10.1080/10447318.2020.1741118",
+        "article-title": "Human-centered artificial intelligence: Reliable, safe & trustworthy",
+        "volume": "36",
+        "author": "Shneiderman",
+        "year": "2020",
+        "journal-title": "International Journal of Human-Computer Interaction"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.chbr.2023.100319_bib36",
+        "doi-asserted-by": "crossref",
+        "first-page": "109",
+        "DOI": "10.17705/1thci.00131",
+        "article-title": "Human-centered artificial intelligence: Three fresh ideas",
+        "volume": "12",
+        "author": "Shneiderman",
+        "year": "2020",
+        "journal-title": "AIS Transactions on Human-Computer Interaction"
+      },
+      {
+        "key": "10.1016/j.chbr.2023.100319_bib37",
+        "first-page": "586",
+        "article-title": "NLP and deep learning-based analysis of building regulations to support automated rule checking system",
+        "author": "Song",
+        "year": "2018",
+        "journal-title": "ISARC Proceedings"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.chbr.2023.100319_bib38",
+        "doi-asserted-by": "crossref",
+        "first-page": "221",
+        "DOI": "10.1007/s42524-019-0026-3",
+        "article-title": "Common biases in client involved decision-making in the AEC industry",
+        "volume": "6",
+        "author": "Sujan",
+        "year": "2019",
+        "journal-title": "Frontiers of Engineering Management"
+      },
+      {
+        "key": "10.1016/j.chbr.2023.100319_bib39",
+        "series-title": "Taxonomy and definitions for terms related to on-road motor vehicle automated driving systems",
+        "year": "2014"
+      },
+      {
+        "key": "10.1016/j.chbr.2023.100319_bib40",
+        "series-title": "Towards Artificial Intelligence in Architecture: How machine learning can change the way we approach design",
+        "author": "Tsigkari",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.chbr.2023.100319_bib41",
+        "doi-asserted-by": "crossref",
+        "first-page": "130",
+        "DOI": "10.1016/j.ssci.2018.10.015",
+        "article-title": "Causal factors and connections in construction accidents",
+        "volume": "112",
+        "author": "Winge",
+        "year": "2019",
+        "journal-title": "Safety Science"
+      },
+      {
+        "key": "10.1016/j.chbr.2023.100319_bib42",
+        "doi-asserted-by": "crossref",
+        "first-page": "302",
+        "DOI": "10.29007/f8r3",
+        "article-title": "Challenges involved in adopting BIM on the construction jobsite",
+        "volume": "2",
+        "author": "Young",
+        "year": "2021",
+        "journal-title": "EPiC Series in Built Environment"
+      },
+      {
+        "key": "10.1016/j.chbr.2023.100319_bib43",
+        "doi-asserted-by": "crossref",
+        "first-page": "45",
+        "DOI": "10.1016/j.autcon.2016.08.027",
+        "article-title": "Integrating semantic NLP and logic reasoning into a unified system for fully-automated code checking",
+        "volume": "73",
+        "author": "Zhang",
+        "year": "2017",
+        "journal-title": "Automation in Construction"
+      }
+    ],
+    "container-title": [
+      "Computers in Human Behavior Reports"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S2451958823000520?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S2451958823000520?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          11,
+          7
+        ]
+      ],
+      "date-time": "2025-11-07T14:47:35Z",
+      "timestamp": 1762526855000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S2451958823000520"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          8
+        ]
+      ]
+    },
+    "references-count": 42,
+    "alternative-id": [
+      "S2451958823000520"
+    ],
+    "URL": "https://doi.org/10.1016/j.chbr.2023.100319",
+    "relation": {},
+    "ISSN": [
+      "2451-9588"
+    ],
+    "issn-type": [
+      {
+        "value": "2451-9588",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          8
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Towards human-centered artificial intelligence (AI) in architecture, engineering, and construction (AEC) industry",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Computers in Human Behavior Reports",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.chbr.2023.100319",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2023 The Authors. Published by Elsevier Ltd.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "article-number": "100319"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "obj_file": "沿湖休闲片区场地.obj",
+  "dxf_file": "沿湖休闲片区标号.dxf",
+  "obj_unique_building_ids": 43,
+  "dxf_unique_label_ids": 45,
+  "dxf_label_text_count": 68,
+  "dxf_footprint_components": 46,
+  "line_count_on_building_footprints": 411,
+  "missing_obj_ids": [
+    "C23",
+    "C32"
+  ],
+  "critical_notes": [
+    "OBJ now preserves C IDs and heights, so semantic linkage is mostly possible.",
+    "DXF building_footprints layer exists but is made of LINE entities; it is usable for audit, but closed polylines would be cleaner.",
+    "C23 and C32 are present in DXF labels/footprints but missing in OBJ.",
+    "C1 OBJ aggregate is spatially abnormal and should be checked.",
+    "C45 OBJ has very few vertices and may not be a valid mass."
+  ]
+}

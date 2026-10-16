@@ -1,0 +1,17 @@
+{
+  "docx": "paper_revision_work_2026_06_14\\final_output\\光权修复论文_EI会议中文最终审阅版_v3_同行评审增强版.docx",
+  "paragraph_count": 295,
+  "media_count": 11,
+  "marker_hits": {
+    "v3_title": true,
+    "table5_caption": true,
+    "dark_nearest_volume": true,
+    "random_mean_volume": true,
+    "height_priority": true,
+    "dark_nearest": true,
+    "random_mean": true,
+    "scale_sensitivity": true,
+    "human_review": true
+  },
+  "status": "pass"
+}

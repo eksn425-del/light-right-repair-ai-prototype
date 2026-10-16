@@ -1,0 +1,22 @@
+{
+  "run_id": "baseline_20260909_clean",
+  "stage": "prepare_independent_validation",
+  "timestamp_utc": "2026-09-09T18:10:49+00:00",
+  "git_commit": "NOT_A_GIT_CHECKOUT",
+  "config_path": "E:\\AI项目\\light-equity-soict-2026\\configs\\research.yaml",
+  "config_sha256": "b15d4644ed7d0b6806c2c9395836fbec25da803c9aa8ff74a8fffcd3bf009c8f",
+  "inputs": [
+    {
+      "path": "E:\\AI项目\\light-equity-soict-2026\\experiments\\baseline_20260909_clean\\independent_validation\\VALIDATION_SAMPLE_FROZEN.csv",
+      "exists": true,
+      "sha256": "ad4abb9b89a263edaecc2cb3553f7832ce0ccb460521ba218e0083e05bcb46b2"
+    },
+    {
+      "path": "E:\\AI项目\\light-equity-soict-2026\\experiments\\baseline_20260909_clean\\canonical_site_v2\\canonical_site_v2.geojson",
+      "exists": true,
+      "sha256": "97021f73c5e0bf831d9696a4b00a967605ec90a329f2bcba828b501ceff2d1b8"
+    }
+  ],
+  "sample_size": 20,
+  "sensor_count": 2031
+}

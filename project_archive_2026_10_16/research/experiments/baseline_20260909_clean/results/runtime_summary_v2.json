@@ -1,0 +1,52 @@
+{
+  "screening_repeat_count": 3,
+  "screening_repeat_seconds": [
+    55.32469019999917,
+    55.492603800001234,
+    55.39783389999866
+  ],
+  "screening_mean_seconds": 55.40504263333302,
+  "screening_median_seconds": 55.39783389999866,
+  "screening_iqr_seconds": 0.08395680000103312,
+  "hb_measured_scene_count": 53,
+  "hb_median_seconds_per_scene": 51.106736,
+  "hb_iqr_seconds_per_scene": 0.2205589999999944,
+  "hb_min_seconds_per_scene": 43.083838,
+  "hb_max_seconds_per_scene": 55.375767,
+  "rule_candidate_universe_count": 630,
+  "rule_candidate_verification_count": 23,
+  "rule_candidate_verification_fraction": 0.03650793650793651,
+  "operational_hb_scene_count": 33,
+  "research_only_validation_scene_count": 20,
+  "total_measured_hb_scene_count": 53,
+  "serial_equivalent_hb_630_seconds": 32197.24368,
+  "serial_equivalent_hb_630_label": "serial-equivalent extrapolation from the measured per-scene median; not directly measured",
+  "operational_batch_elapsed_status": "NOT_MEASURED",
+  "workers_by_scope": {
+    "curated_extra": [
+      4
+    ],
+    "curated_initial": [
+      2
+    ],
+    "design_translation": [
+      4
+    ],
+    "independent_validation": [
+      4
+    ]
+  },
+  "worker_record_status": "historical records inferred from invocation documentation",
+  "host_os": "Windows-11-10.0.22000-SP0",
+  "python_version": "3.12.2",
+  "cpu_count": 16,
+  "ram_gb": "NOT_AVAILABLE",
+  "radiance_version": "NOT_AVAILABLE",
+  "lbt_recipes_version": "lbt-recipes, version 0.28.2",
+  "measurement_semantics": {
+    "screening": "measured wall-clock time for one complete 630-candidate 2.5D screening run",
+    "hb_scene": "measured wall-clock time for one sequentially launched HB scene; each scene used its recorded worker count",
+    "serial_equivalent_hb_630": "not a completed batch; 630 multiplied by measured per-scene median",
+    "operational_vs_research": "33 operational workflow HB scenes; 20 independent validation scenes counted as research-only evidence"
+  }
+}

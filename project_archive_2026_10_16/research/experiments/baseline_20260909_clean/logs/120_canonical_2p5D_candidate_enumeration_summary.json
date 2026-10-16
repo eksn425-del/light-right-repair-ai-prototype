@@ -1,0 +1,20 @@
+{
+  "generated_candidate_count": 630,
+  "legal_building_count": 36,
+  "baseline_low_area_h3_m2": 3051.0,
+  "baseline_mean_direct_sun_hours": 5.960118168389956,
+  "top10_count": 10,
+  "pareto_nonzero_count": 12,
+  "must_hb_unique_count": 23,
+  "random_seed_for_future_sampling": 20260909,
+  "score_formula": "four_term_config_driven_v1",
+  "score_weights": {
+    "low_area_drop_weight": 0.45,
+    "avg_gain_weight": 0.35,
+    "intervention_volume_economy_weight": 0.15,
+    "new_low_area_avoidance_weight": 0.05
+  },
+  "height_floor_m": 3.0,
+  "height_reduction_cap_m": 3.0,
+  "height_reduction_fraction": 0.25
+}

@@ -1,0 +1,26 @@
+Energy and Buildings 60 (2013) 110–124
+ELSEVIER
+Contents lists available at SciVerse ScienceDirect Energy and Buildings
+journal homepage: www.elsevier.com/locate/enbuild
+
+Assessing gaps and needs for integrating building performance optimization
+tools in net zero energy buildings design
+
+Shady Attia a,b,*, Mohamed Hamdy c, William O'Brien d, Salvatore Carlucci e
+
+a Interdisciplinary Laboratory of Performance-Integrated Design (LIPID), Ecole Polytechnique Federale de Lausanne (EPFL), Switzerland
+b Universite Catholique de Louvain-la-Neuve, Architecture et climat, Louvain-la-Neuve 1348, Belgium
+c Aalto University, School of Engineering, Department of Energy Technology, PO Box 14400, FI-00076 Aalto, Finland
+d Department of Building and Civil & Environmental Engineering, Carlton University, Toronto, Canada
+e Dipartimento di Energia, Politecnico di Milano, Milan, Italy
+
+ARTICLE INFO
+Article history: Received 8 January 2013, Accepted 19 January 2013
+Keywords: Simulation-based optimization, Zero energy buildings, Evolutionary algorithms, Needs, Gaps, Review, Interview
+
+ABSTRACT
+This paper summarizes a study undertaken to reveal potential challenges and opportunities for integrating optimization tools in net zero energy buildings (NZEB) design. The paper reviews current trends in simulation-based building performance optimization (BPO) and outlines major criteria for optimization tools selection and evaluation. This is based on analyzing user's needs for tools capabilities and requirement specifications. The review is carried out by means of a literature review of 165 publications and interviews with 28 optimization experts. The findings are based on an inter-group comparison between experts. The aim is to assess the gaps and needs for integrating BPO tools in NZEB design. The findings indicate a breakthrough in using evolutionary algorithms in solving highly constrained envelope, HVAC and renewable optimization problems. Simple genetic algorithm solved many design and operation problems and allowed measuring the improvement in the optimality of a solution against a base case. Evolutionary algorithms are also easily adapted to enable them to solve a particular optimization problem more effectively. However, existing limitations including model uncertainty, computation time, difficulty of use and steep learning curve. Some future directions anticipated or needed for improvement of current tools are presented.
+
+[注：本文全文共15页，此为从EPFL机构库获取的预印本版本]
+[DOI: 10.1016/j.enbuild.2013.01.016]
+[Full text available at: https://infoscience.epfl.ch/record/184816]

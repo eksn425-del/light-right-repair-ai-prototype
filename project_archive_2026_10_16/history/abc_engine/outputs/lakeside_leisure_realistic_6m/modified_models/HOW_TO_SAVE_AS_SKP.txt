@@ -1,0 +1,20 @@
+OBJ to SKP conversion note
+
+A real .skp file must be saved by SketchUp or a SketchUp-compatible converter.
+This folder contains a SketchUp-friendly Collada file:
+
+xieyan_lakeside_modified_candidate_real_01_for_sketchup.dae
+
+Recommended steps:
+1. Open SketchUp.
+2. File > Import.
+3. Choose Collada Files (*.dae).
+4. Import xieyan_lakeside_modified_candidate_real_01_for_sketchup.dae.
+5. Check model units as meters.
+6. File > Save As.
+7. Save as xieyan_lakeside_modified_candidate_real_01.skp.
+
+Source OBJ:
+xieyan_lakeside_modified_candidate_real_01.obj
+
+Note: This is the simplified C1-C45 massing model generated from buildings.csv, with candidate_real_01 height reductions applied to C24, C26, and C33.

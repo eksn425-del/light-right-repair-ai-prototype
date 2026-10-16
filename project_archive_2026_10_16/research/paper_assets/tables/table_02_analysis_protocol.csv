@@ -1,0 +1,8 @@
+﻿scenario,pair,model_type,sensor_count,date,time_range,timestep,grid_size_m,sensor_height_m,north_deg,radiance_recipe,intervention_volume_m3,note
+baseline,,baseline,2031,12-21,08:15-15:45,2,3.0,0.1,0.0,lbt-recipes direct-sun-hours,0.0,现状规范几何
+C6_C33_rule_flat,"C6,C33",rule_flat,2031,12-21,08:15-15:45,2,3.0,0.1,0.0,lbt-recipes direct-sun-hours,5583.054926866385,C6/C33整体减高规则模型
+C6_C33_design_stepback,"C6,C33",design_stepback,2031,12-21,08:15-15:45,2,3.0,0.1,0.0,lbt-recipes direct-sun-hours,5583.054926866385,C6/C33保留底层界面的上部退台转译模型
+C13_C24_rule_flat,"C13,C24",rule_flat,2031,12-21,08:15-15:45,2,3.0,0.1,0.0,lbt-recipes direct-sun-hours,3863.880412554296,C13/C24整体减高规则模型
+C13_C24_design_stepback,"C13,C24",design_stepback,2031,12-21,08:15-15:45,2,3.0,0.1,0.0,lbt-recipes direct-sun-hours,3863.880412554296,C13/C24保留底层界面的上部退台转译模型
+height_priority_C3_C19,"C3,C19",rule_flat,2031,12-21,08:15-15:45,2,3.0,0.1,0.0,lbt-recipes direct-sun-hours,5953.189146925456,高度优先公平基线
+low_sun_nearest_C26_C35,"C26,C35",rule_flat,2031,12-21,08:15-15:45,2,3.0,0.1,0.0,lbt-recipes direct-sun-hours,4546.838632587093,低日照邻近公平基线

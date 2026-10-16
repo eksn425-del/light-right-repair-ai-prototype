@@ -1,0 +1,1230 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          9
+        ]
+      ],
+      "date-time": "2026-06-09T19:02:07Z",
+      "timestamp": 1781031727285,
+      "version": "3.54.1"
+    },
+    "reference-count": 111,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2014,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2014-01-01T00:00:00Z",
+          "timestamp": 1388534400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2014,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2014-01-01T00:00:00Z",
+          "timestamp": 1388534400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Applied Energy"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2014,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.apenergy.2013.08.061",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2013,
+          9,
+          12
+        ]
+      ],
+      "date-time": "2013-09-12T21:46:50Z",
+      "timestamp": 1379022410000
+    },
+    "page": "1043-1058",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 1138,
+    "special_numbering": "C",
+    "title": [
+      "A review on simulation-based optimization methods applied to building performance analysis"
+    ],
+    "prefix": "10.1016",
+    "volume": "113",
+    "author": [
+      {
+        "given": "Anh-Tuan",
+        "family": "Nguyen",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sigrid",
+        "family": "Reiter",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Philippe",
+        "family": "Rigo",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "issue": "2",
+        "key": "10.1016/j.apenergy.2013.08.061_b0005",
+        "first-page": "6",
+        "article-title": "Optimisation stories: the impact of building information modelling on contemporary design practice",
+        "volume": "79",
+        "author": "Garber",
+        "year": "2009",
+        "journal-title": "Archit Des"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0010",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wetter M. GenOpt, generic optimization program – user manual, version 3.0.0. Technical report LBNL-5419. Lawrence Berkeley National Laboratory; 2009.",
+        "DOI": "10.2172/962948"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0015",
+        "unstructured": "Wright JA. The optimised design of HVAC systems. PhD thesis. Loughborough University of Technology; 1986."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.apenergy.2013.08.061_b0020",
+        "doi-asserted-by": "crossref",
+        "first-page": "1753",
+        "DOI": "10.1016/j.rser.2010.12.008",
+        "article-title": "Optimization methods applied to renewable and sustainable energy: a review",
+        "volume": "15",
+        "author": "Baños",
+        "year": "2011",
+        "journal-title": "Renew Sustain Energy Rev"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0025",
+        "doi-asserted-by": "crossref",
+        "first-page": "989",
+        "DOI": "10.1016/j.buildenv.2004.01.022",
+        "article-title": "A comparison of deterministic and probabilistic optimization algorithms for nonsmooth simulation-based optimization",
+        "volume": "39",
+        "author": "Wetter",
+        "year": "2004",
+        "journal-title": "Build Environ"
+      },
+      {
+        "issue": "8",
+        "key": "10.1016/j.apenergy.2013.08.061_b0030",
+        "doi-asserted-by": "crossref",
+        "first-page": "954",
+        "DOI": "10.1016/j.enbuild.2006.10.011",
+        "article-title": "Facade design optimization for naturally ventilated residential buildings in Singapore",
+        "volume": "39",
+        "author": "Wang",
+        "year": "2007",
+        "journal-title": "Energy Build"
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.apenergy.2013.08.061_b0035",
+        "doi-asserted-by": "crossref",
+        "first-page": "1702",
+        "DOI": "10.1016/j.enbuild.2011.03.013",
+        "article-title": "Design optimisation for a low energy home in Sydney",
+        "volume": "43",
+        "author": "Bambrook",
+        "year": "2011",
+        "journal-title": "Energy Build"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.apenergy.2013.08.061_b0040",
+        "doi-asserted-by": "crossref",
+        "first-page": "273",
+        "DOI": "10.1016/S0378-7788(02)00089-0",
+        "article-title": "Optimization of architectural design elements in tropical humid region with thermal comfort approach",
+        "volume": "35",
+        "author": "Prianto",
+        "year": "2003",
+        "journal-title": "Energy Build"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0045",
+        "doi-asserted-by": "crossref",
+        "first-page": "515",
+        "DOI": "10.1016/j.apenergy.2013.02.063",
+        "article-title": "Optimizing the configuration of a façade module for office buildings by means of integrated thermal and lighting simulations in a total energy perspective",
+        "volume": "108",
+        "author": "Goia",
+        "year": "2013",
+        "journal-title": "Appl Energy"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0050",
+        "doi-asserted-by": "crossref",
+        "first-page": "2030",
+        "DOI": "10.1016/j.renene.2009.02.016",
+        "article-title": "Application of sensitivity analysis in design of sustainable buildings",
+        "volume": "34",
+        "author": "Heiselberg",
+        "year": "2009",
+        "journal-title": "Renew Energy"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0055",
+        "first-page": "595",
+        "article-title": "Multidisciplinary process integration and design optimization of a classroom building",
+        "volume": "14",
+        "author": "Flager",
+        "year": "2009",
+        "journal-title": "J Inform Technol Constr"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.apenergy.2013.08.061_b0060",
+        "doi-asserted-by": "crossref",
+        "first-page": "883",
+        "DOI": "10.1016/j.renene.2008.06.011",
+        "article-title": "Economic optimization and sensitivity analysis of photovoltaic system in residential buildings",
+        "volume": "34",
+        "author": "Ren",
+        "year": "2009",
+        "journal-title": "Renew Energy"
+      },
+      {
+        "issue": "12",
+        "key": "10.1016/j.apenergy.2013.08.061_b0065",
+        "doi-asserted-by": "crossref",
+        "first-page": "2022",
+        "DOI": "10.1016/j.buildenv.2007.12.003",
+        "article-title": "Minimisation of life cycle cost of a detached house using combined simulation and optimisation",
+        "volume": "43",
+        "author": "Hasan",
+        "year": "2008",
+        "journal-title": "Build Environ"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.apenergy.2013.08.061_b0070",
+        "doi-asserted-by": "crossref",
+        "first-page": "697",
+        "DOI": "10.1016/j.cirp.2008.09.007",
+        "article-title": "Recent advances in engineering design optimisation: challenges and future trends",
+        "volume": "57",
+        "author": "Roy",
+        "year": "2008",
+        "journal-title": "CIRP Ann – Manuf Technol"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0075",
+        "unstructured": "Attia S. Computational optimization zero energy building design: interviews with 28 international experts. International energy agency (IEA) task 40: towards net zero energy buildings subtask B. Louvain la Neuve. Université Catholique de Louvain; 2012."
+      },
+      {
+        "issue": "11",
+        "key": "10.1016/j.apenergy.2013.08.061_b0080",
+        "doi-asserted-by": "crossref",
+        "first-page": "1512",
+        "DOI": "10.1016/j.buildenv.2004.11.017",
+        "article-title": "Applying multi-objective genetic algorithms in green building design optimization",
+        "volume": "40",
+        "author": "Wang",
+        "year": "2005",
+        "journal-title": "Build Environ"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.apenergy.2013.08.061_b0085",
+        "doi-asserted-by": "crossref",
+        "first-page": "5",
+        "DOI": "10.1016/j.aei.2005.03.002",
+        "article-title": "An object-oriented framework for simulation-based green building design optimization with genetic algorithms",
+        "volume": "19",
+        "author": "Wang",
+        "year": "2005",
+        "journal-title": "Adv Eng Inform"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0090",
+        "doi-asserted-by": "crossref",
+        "first-page": "245",
+        "DOI": "10.1016/j.buildenv.2011.09.030",
+        "article-title": "Design of low-emission and energy-efficient residential buildings using a multi-objective optimization algorithm",
+        "volume": "49",
+        "author": "Fesanghary",
+        "year": "2012",
+        "journal-title": "Build Environ"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.apenergy.2013.08.061_b0095",
+        "doi-asserted-by": "crossref",
+        "first-page": "1162",
+        "DOI": "10.1016/j.buildenv.2008.08.009",
+        "article-title": "Optimization model for the selection of materials using a LEED-based green building rating system in Colombia",
+        "volume": "44",
+        "author": "Castro-Lacouture",
+        "year": "2009",
+        "journal-title": "Build Environ"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0100",
+        "doi-asserted-by": "crossref",
+        "first-page": "126",
+        "DOI": "10.1016/j.buildenv.2012.02.012",
+        "article-title": "A case study exploring regulated energy use in domestic buildings using design-of-experiments and multi-objective optimisation",
+        "volume": "54",
+        "author": "Evins",
+        "year": "2012",
+        "journal-title": "Build Environ"
+      },
+      {
+        "issue": "9",
+        "key": "10.1016/j.apenergy.2013.08.061_b0105",
+        "doi-asserted-by": "crossref",
+        "first-page": "3333",
+        "DOI": "10.1016/j.buildenv.2006.08.029",
+        "article-title": "Optimization of indoor climate conditioning with passive and active methods using GA and CFD",
+        "volume": "42",
+        "author": "Lee",
+        "year": "2007",
+        "journal-title": "Build Environ"
+      },
+      {
+        "issue": "9",
+        "key": "10.1016/j.apenergy.2013.08.061_b0110",
+        "doi-asserted-by": "crossref",
+        "first-page": "2055",
+        "DOI": "10.1016/j.enbuild.2011.04.006",
+        "article-title": "Impact of adaptive thermal comfort criteria on building energy use and cooling equipment size using a multi-objective optimization scheme",
+        "volume": "43",
+        "author": "Hamdy",
+        "year": "2011",
+        "journal-title": "Energy Build"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0115",
+        "doi-asserted-by": "crossref",
+        "first-page": "292",
+        "DOI": "10.1016/j.enbuild.2011.12.001",
+        "article-title": "A methodology for meta-model based optimization in building energy models",
+        "volume": "47",
+        "author": "Eisenhower",
+        "year": "2012",
+        "journal-title": "Energy Build"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0120",
+        "unstructured": "Nguyen AT. Sustainable housing in Vietnam: climate responsive design strategies to optimize thermal comfort. PhD thesis. Université de Liège; 2013."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.apenergy.2013.08.061_b0125",
+        "doi-asserted-by": "crossref",
+        "first-page": "383",
+        "DOI": "10.1016/S0306-2619(03)00153-3",
+        "article-title": "Optimization of solar systems using artificial neural-networks and genetic algorithms",
+        "volume": "77",
+        "author": "Kalogirou",
+        "year": "2004",
+        "journal-title": "Appl Energy"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0130",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chen L, Fang QS, Zhang ZY. Research on the identification of temperature in intelligent building based on feed forward neural network and particle swarm optimization algorithm. In: Proceedings of 2010 sixth international conference on natural computation (ICNC). Yantai: Institute of Electrical and Electronics Engineers (IEEE); 2010. p. 1816–20.",
+        "DOI": "10.1109/ICNC.2010.5584480"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.apenergy.2013.08.061_b0135",
+        "doi-asserted-by": "crossref",
+        "first-page": "739",
+        "DOI": "10.1016/j.buildenv.2009.08.016",
+        "article-title": "Multiobjective optimization of building design using TRNSYS simulations, genetic algorithm, and artificial neural network",
+        "volume": "45",
+        "author": "Magnier",
+        "year": "2010",
+        "journal-title": "Build Environ"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0140",
+        "unstructured": "Tresidder E, Zhang Y, Forrester AIJ. Optimisation of low-energy building design using surrogate models. In: Proceedings of the 12th conference of international building performance simulation association. Sydney: IBPSA; 2011. p. 1012–6."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.apenergy.2013.08.061_b0145",
+        "doi-asserted-by": "crossref",
+        "first-page": "95",
+        "DOI": "10.1007/s12273-012-0059-6",
+        "article-title": "Genetic algorithms based optimization of artificial neural network architecture for buildings’ indoor discomfort and energy consumption prediction",
+        "volume": "5",
+        "author": "Boithias",
+        "year": "2012",
+        "journal-title": "Build Simul"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0150",
+        "doi-asserted-by": "crossref",
+        "first-page": "1574",
+        "DOI": "10.1016/j.buildenv.2010.01.005",
+        "article-title": "Genetic-algorithm based approach to optimize building envelope design for residential buildings",
+        "volume": "45",
+        "author": "Tuhus-Dubrow",
+        "year": "2010",
+        "journal-title": "Build Environ"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0155",
+        "unstructured": "Pérez MV. Orientacion y sistemas ecologicos mediante senales locales. PhD thesis. Universidad Complutense de Madrid; 2011."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.apenergy.2013.08.061_b0160",
+        "doi-asserted-by": "crossref",
+        "first-page": "327",
+        "DOI": "10.1191/0143624404bt097oa",
+        "article-title": "A convergent optimization method using pattern search algorithms with adaptive precision simulation",
+        "volume": "25",
+        "author": "Wetter",
+        "year": "2004",
+        "journal-title": "Build Serv Eng Res Technol"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0165",
+        "unstructured": "Wright JA, Alajmi A. The robustness of genetic algorithms in solving unconstrained building optimization problems. In: Proceedings of the 9th international building performance simulation association conference. Montreal: IBPSA; 2005. p. 1361–8."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.apenergy.2013.08.061_b0170",
+        "doi-asserted-by": "crossref",
+        "first-page": "189",
+        "DOI": "10.1016/S0378-7788(98)00055-3",
+        "article-title": "Multivariate optimization of design trade-offs for solar low energy buildings",
+        "volume": "29",
+        "author": "Peippo",
+        "year": "1999",
+        "journal-title": "Energy Build"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0175",
+        "series-title": "Metaheuristic applications in structures and infrastructures",
+        "first-page": "25",
+        "article-title": "A review on traditional and modern structural optimization: problems and techniques",
+        "author": "Sahab",
+        "year": "2013"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0180",
+        "series-title": "Proceedings of the 2012 building simulation and optimization conference",
+        "first-page": "118",
+        "article-title": "Robust multi-criteria design optimisation in building design",
+        "author": "Hopfe",
+        "year": "2012"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0185",
+        "series-title": "Proceedings of the 2012 building simulation and optimization conference",
+        "first-page": "378",
+        "article-title": "Facade renovation for a public building based on a whole-life value approach",
+        "author": "Jin",
+        "year": "2012"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.apenergy.2013.08.061_b0190",
+        "doi-asserted-by": "crossref",
+        "first-page": "1386",
+        "DOI": "10.1016/j.apenergy.2010.10.002",
+        "article-title": "Development of a multicriteria tool for optimizing the renovation of buildings",
+        "volume": "88",
+        "author": "Chantrelle",
+        "year": "2011",
+        "journal-title": "Appl Energy"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0195",
+        "series-title": "Proceedings of the 2012 building simulation and optimization conference",
+        "first-page": "181",
+        "article-title": "Implementation of pareto-archive NSGA-II algorithms to a nearly-zero-energy building optimisation problem",
+        "author": "Hamdy",
+        "year": "2012"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.apenergy.2013.08.061_b0200",
+        "doi-asserted-by": "crossref",
+        "first-page": "661",
+        "DOI": "10.1016/j.buildenv.2006.10.027",
+        "article-title": "Contrasting the capabilities of building energy performance simulation programs",
+        "volume": "43",
+        "author": "Crawley",
+        "year": "2008",
+        "journal-title": "Build Environ"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0205",
+        "unstructured": "The MathWorks. MATLAB program v. 2012b. Natick, MA: The MathWorks, Inc.; 2012."
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0210",
+        "series-title": "DAKOTA, a multilevel parallel object-oriented framework for design optimization, parameter estimation, uncertainty quantification, and sensitivity analysis: version 5.0 user’s manual",
+        "author": "Adams",
+        "year": "2009"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0215",
+        "unstructured": "Palonen M. MOBO A new software for multi-objective building performance optimization; 2013. <http://www.ibpsa-nordic.org/tools.php> [accessed 25.03.13]."
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0220",
+        "unstructured": "ESTECO SpA. modeFRONTIER 3 User Manual. Trieste: ESTECO SpA; 2003."
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0225",
+        "unstructured": "Suh WJ, Park CS, Kim DW. Heuristic vs. meta-heuristic optimization for energy performance of a post office building. In: Proceedings of the 12th conference of international building performance simulation association. Sydney: IBPSA; 2011. p. 704–11."
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0230",
+        "unstructured": "Wetter M, Wright JA. Comparison of a generalized pattern search and a genetic algorithm optimization method. In: Augenbroe G, Hensen J, editors. Proceedings of the 8th IBPSA conference, vol. 3. Eindhoven: IBPSA; 2003. p. 1401–8."
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0235",
+        "doi-asserted-by": "crossref",
+        "first-page": "103",
+        "DOI": "10.1080/19401490903494597",
+        "article-title": "A comparison of global optimisation algorithms with standard benchmark functions and real-world applications using EnergyPlus",
+        "volume": "3",
+        "author": "Kämpf",
+        "year": "2010",
+        "journal-title": "J Build Perform Simul"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0240",
+        "series-title": "Proceedings of the building simulation and optimization conference",
+        "first-page": "372",
+        "article-title": "Combined energy simulation and multi-criteria optimisation of a LEED-certified building",
+        "author": "Salminen",
+        "year": "2012"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0245",
+        "unstructured": "Wetter M. Simulation-based building energy optimization. PhD Thesis. Berkeley: University of California; 2004."
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0250",
+        "unstructured": "Nielsen TR. Optimization of buildings with respect to energy and indoor environment. PhD thesis. Danmarks Techniske Universitet; 2002."
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0255",
+        "doi-asserted-by": "crossref",
+        "first-page": "341",
+        "DOI": "10.1007/s11081-008-9048-0",
+        "article-title": "A mixed-integer simulation-based optimization approach with surrogate functions in water resources management",
+        "volume": "9",
+        "author": "Hemker",
+        "year": "2008",
+        "journal-title": "Optimiz Eng"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0260",
+        "first-page": "779",
+        "article-title": "Optimization, algorithms and consistent approximations",
+        "volume": "124",
+        "author": "Polak",
+        "year": "1997",
+        "journal-title": "Appl Math Sci"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0265",
+        "unstructured": "Battiti R, Brunato M, Mascia, F. Reactive search and intelligent optimization. Technical report # DIT-07-049. Università Degli studi di Trento; 2007."
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0270",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Nguyen AT, Reiter S. Passive designs and strategies for low-cost housing using simulation-based optimization and different thermal comfort criteria. J Build Perform Simul (ahead-of-print). 2013 doi: 10.1080/19401493.2013.770067.",
+        "DOI": "10.1080/19401493.2013.770067"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.apenergy.2013.08.061_b0275",
+        "doi-asserted-by": "crossref",
+        "first-page": "205",
+        "DOI": "10.1162/evco.1999.7.3.205",
+        "article-title": "Multi-objective genetic algorithms: problem difficulties and construction of test problems",
+        "volume": "7",
+        "author": "Deb",
+        "year": "1999",
+        "journal-title": "Evolut Comput"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0280",
+        "series-title": "Proceedings of the first international workshop on parallel problem solving from nature",
+        "first-page": "55",
+        "article-title": "Genetic algorithms and highly constrained problems: the time-table case",
+        "author": "Colorni",
+        "year": "1990"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.apenergy.2013.08.061_b0285",
+        "doi-asserted-by": "crossref",
+        "first-page": "43",
+        "DOI": "10.1016/j.aei.2005.01.004",
+        "article-title": "Comparison among five evolutionary-based optimization algorithms",
+        "volume": "19",
+        "author": "Elbeltagi",
+        "year": "2005",
+        "journal-title": "Adv Eng Inform"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0290",
+        "unstructured": "Palonen M, Hasan A, Siren K. A genetic algorithm for optimization of building envelope and HVAC system parameters. In: IBPSA, editor. Proceedings of the eleventh international IBPSA conference. Glasgow: University of Strathclyde; 2009. p. 159–66."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.apenergy.2013.08.061_b0295",
+        "doi-asserted-by": "crossref",
+        "first-page": "738",
+        "DOI": "10.1016/j.asoc.2008.09.009",
+        "article-title": "A hybrid CMA-ES and HDE optimisation algorithm with application to solar energy potential",
+        "volume": "9",
+        "author": "Kämpf",
+        "year": "2009",
+        "journal-title": "Appl Soft Comput"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0300",
+        "unstructured": "Nguyen AT, Reiter S. Optimum design of low-cost housing in developing countries using nonsmooth simulation-based optimization. In: Proceedings of the 28th international PLEA conference. Lima, Peru: Pontificia Universidad Catolica del Peru; 2012."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.apenergy.2013.08.061_b0305",
+        "doi-asserted-by": "crossref",
+        "first-page": "67",
+        "DOI": "10.1109/4235.585893",
+        "article-title": "No free lunch theorems for optimization",
+        "volume": "1",
+        "author": "Wolpert",
+        "year": "1997",
+        "journal-title": "IEEE Trans Evol Comput"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0310",
+        "doi-asserted-by": "crossref",
+        "first-page": "230",
+        "DOI": "10.1016/j.rser.2013.02.004",
+        "article-title": "A review of computational optimisation methods applied to sustainable building design",
+        "volume": "22",
+        "author": "Evins",
+        "year": "2013",
+        "journal-title": "Renew Sustain Energy Rev"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.apenergy.2013.08.061_b0315",
+        "doi-asserted-by": "crossref",
+        "first-page": "109",
+        "DOI": "10.1016/j.buildenv.2010.07.006",
+        "article-title": "Applying a multi-objective optimization approach for design of low-emission cost-effective dwellings",
+        "volume": "46",
+        "author": "Hamdy",
+        "year": "2011",
+        "journal-title": "Build Environ"
+      },
+      {
+        "issue": "9",
+        "key": "10.1016/j.apenergy.2013.08.061_b0320",
+        "doi-asserted-by": "crossref",
+        "first-page": "959",
+        "DOI": "10.1016/S0378-7788(02)00071-3",
+        "article-title": "Optimization of building thermal design and control by multi-criterion genetic algorithm",
+        "volume": "34",
+        "author": "Wright",
+        "year": "2002",
+        "journal-title": "Energy Build"
+      },
+      {
+        "issue": "12",
+        "key": "10.1016/j.apenergy.2013.08.061_b0325",
+        "doi-asserted-by": "crossref",
+        "first-page": "3668",
+        "DOI": "10.1016/j.apenergy.2010.06.021",
+        "article-title": "Particle swarm optimization for redundant building cooling heating and power system",
+        "volume": "87",
+        "author": "Wang",
+        "year": "2010",
+        "journal-title": "Appl Energy"
+      },
+      {
+        "issue": "12",
+        "key": "10.1016/j.apenergy.2013.08.061_b0330",
+        "doi-asserted-by": "crossref",
+        "first-page": "5483",
+        "DOI": "10.1016/j.energy.2010.05.012",
+        "article-title": "A multi-objective decision model for the improvement of energy efficiency in buildings",
+        "volume": "35",
+        "author": "Diakaki",
+        "year": "2010",
+        "journal-title": "Energy"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0335",
+        "unstructured": "Triantaphyllou E. Multi-criteria decision making: a comparative study. Dordrecht: Kluwer Academic Publishers (now Springer); 2000. p. 320. ISBN: 0-7923-6607-7."
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0340",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wright JA, Brownlee AE, Mourshed MM, Wang M. Multi-objective optimization of cellular fenestration by an evolutionary algorithm. J Build Perform Simul (ahead-of-print). 2013. doi: 10.1080/19401493.2012.762808.",
+        "DOI": "10.1080/19401493.2012.762808"
+      },
+      {
+        "issue": "9",
+        "key": "10.1016/j.apenergy.2013.08.061_b0345",
+        "doi-asserted-by": "crossref",
+        "first-page": "992",
+        "DOI": "10.1016/j.ress.2005.11.018",
+        "article-title": "Multi-objective optimization using genetic algorithms: a tutorial",
+        "volume": "91",
+        "author": "Konak",
+        "year": "2006",
+        "journal-title": "Reliab Eng Syst Safety"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0350",
+        "series-title": "Proceedings of the international conference on genetic algorithm and their applications 1985",
+        "first-page": "93",
+        "article-title": "Multiple objective optimization with vector evaluated genetic algorithms",
+        "author": "Schaffer",
+        "year": "1987"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0355",
+        "unstructured": "Fonseca CM, Fleming PJ. Multi-objective genetic algorithms. In: IEE colloquium on ‘genetic algorithms for control systems engineering’ (Digest No. 1993/130). London: IEE; 1993."
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0360",
+        "series-title": "Proceedings of the first IEEE conference on evolutionary computation – IEEE world congress on computational intelligence",
+        "first-page": "82",
+        "article-title": "A niched Pareto genetic algorithm for multiobjective optimization",
+        "author": "Horn",
+        "year": "1994"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.apenergy.2013.08.061_b0365",
+        "doi-asserted-by": "crossref",
+        "first-page": "99",
+        "DOI": "10.1007/BF01759923",
+        "article-title": "Genetic search strategies in multicriterion optimal design",
+        "volume": "4",
+        "author": "Hajela",
+        "year": "1992",
+        "journal-title": "Struct Optimiz"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.apenergy.2013.08.061_b0370",
+        "doi-asserted-by": "crossref",
+        "first-page": "221",
+        "DOI": "10.1162/evco.1994.2.3.221",
+        "article-title": "Multiobjective optimization using nondominated sorting in genetic algorithms",
+        "volume": "2",
+        "author": "Srinivas",
+        "year": "1994",
+        "journal-title": "Evolut Comput"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.apenergy.2013.08.061_b0375",
+        "doi-asserted-by": "crossref",
+        "first-page": "182",
+        "DOI": "10.1109/4235.996017",
+        "article-title": "A fast and elitist multiobjective genetic algorithm: NSGA-II",
+        "volume": "6",
+        "author": "Deb",
+        "year": "2002",
+        "journal-title": "IEEE Trans Evolut Comput"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.apenergy.2013.08.061_b0380",
+        "doi-asserted-by": "crossref",
+        "first-page": "12",
+        "DOI": "10.1016/S0377-2217(01)00190-4",
+        "article-title": "A new multiobjective evolutionary algorithm",
+        "volume": "140",
+        "author": "Sarker",
+        "year": "2002",
+        "journal-title": "Eur J Oper Res"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0385",
+        "series-title": "IEEE power and energy society general meeting",
+        "first-page": "1",
+        "article-title": "Multi-objective particle swarm optimization for decision-making in building automation",
+        "author": "Yang",
+        "year": "2011"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.apenergy.2013.08.061_b0390",
+        "doi-asserted-by": "crossref",
+        "first-page": "60",
+        "DOI": "10.1504/IJCAT.2012.045842",
+        "article-title": "An improved multi-objective ant colony algorithm for building life cycle energy consumption optimisation",
+        "volume": "43",
+        "author": "Yuan",
+        "year": "2012",
+        "journal-title": "Int J Comput Appl Technol"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0395",
+        "unstructured": "Battiti R, Brunato M. LIONsolver 2.0 – reference guide and user manual. Trento: Reactive Search Srl; 2012."
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0400",
+        "unstructured": "Holst JN. Using whole building simulation models and optimizing procedures to optimize building envelope design with respect to energy consumption and indoor environment. In: Proceedings of the 8th international IBPSA conference. Eindhoven: IBPSA; 2003. p. 507–14."
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.apenergy.2013.08.061_b0405",
+        "doi-asserted-by": "crossref",
+        "first-page": "1144",
+        "DOI": "10.1016/j.buildenv.2009.10.021",
+        "article-title": "Structural analysis of Pareto-optimal solution sets for multi-objective optimization: an application to outer window design problems using multiple objective genetic algorithms",
+        "volume": "45",
+        "author": "Suga",
+        "year": "2010",
+        "journal-title": "Build Environ"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0410",
+        "unstructured": "Frontline Systems, Inc. Premium Solver platform for Mac: user Guide. Incline Village, NV: Frontline Systems, Inc.; 2011."
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0415",
+        "unstructured": "Ng KM. A continuation approach for solving nonlinear optimization problems with discrete variables. PhD thesis. Stanford University; 2002."
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0420",
+        "unstructured": "Nesterov Y. Presentation: complexity and simplicity of optimization. <http://www.montefiore.ulg.ac.be> [accessed 10.01.13]."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.apenergy.2013.08.061_b0425",
+        "doi-asserted-by": "crossref",
+        "first-page": "409",
+        "DOI": "10.1002/nme.1620230307",
+        "article-title": "Structural optimization: a new dual method using mixed variables",
+        "volume": "23",
+        "author": "Fleury",
+        "year": "1986",
+        "journal-title": "Int J Numer Meth Eng"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0430",
+        "series-title": "Genetic algorithms in search, optimization, and machine learning",
+        "author": "Goldberg",
+        "year": "1989"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0435",
+        "unstructured": "Joint Research Centre – European commission. Simlab 2.2 reference manual. Brussels: JRC; 2008."
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0440",
+        "doi-asserted-by": "crossref",
+        "first-page": "2798",
+        "DOI": "10.1016/j.enbuild.2011.06.034",
+        "article-title": "Uncertainty analysis in building performance simulation for design support",
+        "volume": "43",
+        "author": "Hopfe",
+        "year": "2011",
+        "journal-title": "Energy Build"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0445",
+        "doi-asserted-by": "crossref",
+        "first-page": "290",
+        "DOI": "10.1007/s12273-008-8129-5",
+        "article-title": "Application of global sensitivity analysis of model output to building thermal simulations",
+        "volume": "1",
+        "author": "Mara",
+        "year": "2008",
+        "journal-title": "Build Simul"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0450",
+        "doi-asserted-by": "crossref",
+        "first-page": "411",
+        "DOI": "10.1016/j.rser.2012.12.014",
+        "article-title": "A review of sensitivity analysis methods in building energy analysis",
+        "volume": "20",
+        "author": "Tian",
+        "year": "2013",
+        "journal-title": "Renew Sustain Energy Rev"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0455",
+        "unstructured": "Joint Research Centre – European commission. Simlab – Software package for uncertainty and sensitivity analysis. <http://simlab.jrc.ec.europa.eu> [accessed 10.12.12]."
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0460",
+        "series-title": "Proceedings of the 2012 building simulation and optimization conference",
+        "first-page": "9",
+        "article-title": "Multi-objective optimization of the ventilation system design in a two-bed ward with an emphasis on infection control",
+        "author": "Khan",
+        "year": "2012"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.apenergy.2013.08.061_b0465",
+        "doi-asserted-by": "crossref",
+        "first-page": "887",
+        "DOI": "10.1016/j.renene.2007.04.014",
+        "article-title": "Optimization of the urban building efficiency potential for mid-latitude climates using a genetic algorithm approach",
+        "volume": "33",
+        "author": "Panão",
+        "year": "2008",
+        "journal-title": "Renew Energy"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.apenergy.2013.08.061_b0470",
+        "doi-asserted-by": "crossref",
+        "first-page": "81",
+        "DOI": "10.1007/BF01637664",
+        "article-title": "CONLIN: an efficient dual optimizer based on convex approximation concepts",
+        "volume": "1",
+        "author": "Fleury",
+        "year": "1989",
+        "journal-title": "Struct Optimiz"
+      },
+      {
+        "issue": "12",
+        "key": "10.1016/j.apenergy.2013.08.061_b0475",
+        "doi-asserted-by": "crossref",
+        "first-page": "1761",
+        "DOI": "10.1002/1097-0207(20000830)48:12<1761::AID-NME963>3.0.CO;2-R",
+        "article-title": "Dual methods for discrete structural optimization problems",
+        "volume": "48",
+        "author": "Beckers",
+        "year": "2000",
+        "journal-title": "Int J Numer Meth Eng"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.apenergy.2013.08.061_b0480",
+        "doi-asserted-by": "crossref",
+        "first-page": "537",
+        "DOI": "10.1016/S0360-1323(99)00046-3",
+        "article-title": "Multicriteria optimisation of the building arrangement with application of numerical simulation",
+        "volume": "35",
+        "author": "Klemm",
+        "year": "2000",
+        "journal-title": "Build Environ"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0485",
+        "series-title": "Proceedings of building simulation and optimization 2012",
+        "first-page": "1",
+        "article-title": "Acceleration of building design optimisation through the use of Kriging surrogate models",
+        "author": "Tresidder",
+        "year": "2012"
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.apenergy.2013.08.061_b0490",
+        "doi-asserted-by": "crossref",
+        "first-page": "1101",
+        "DOI": "10.1080/17415977.2012.727084",
+        "article-title": "A Kriging constrained efficient global optimization approach applied to low-energy building design problems",
+        "volume": "20",
+        "author": "Gengembre",
+        "year": "2012",
+        "journal-title": "Inverse Probl Sci Eng"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.apenergy.2013.08.061_b0495",
+        "doi-asserted-by": "crossref",
+        "first-page": "450",
+        "DOI": "10.1016/j.paerosci.2011.05.001",
+        "article-title": "Review of uncertainty-based multidisciplinary design optimization methods for aerospace vehicles",
+        "volume": "47",
+        "author": "Yao",
+        "year": "2011",
+        "journal-title": "Prog Aerosp Sci"
+      },
+      {
+        "issue": "11",
+        "key": "10.1016/j.apenergy.2013.08.061_b0500",
+        "doi-asserted-by": "crossref",
+        "first-page": "2218",
+        "DOI": "10.1016/j.buildenv.2009.02.002",
+        "article-title": "Optimum design for smoke-control system in buildings considering robustness using CFD and genetic algorithms",
+        "volume": "44",
+        "author": "Huang",
+        "year": "2009",
+        "journal-title": "Build Environ"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0505",
+        "doi-asserted-by": "crossref",
+        "first-page": "455",
+        "DOI": "10.1016/j.energy.2012.10.011",
+        "article-title": "Robust optimization of distributed generation investment in buildings",
+        "volume": "48",
+        "author": "Rezvan",
+        "year": "2012",
+        "journal-title": "Energy"
+      },
+      {
+        "issue": "3–4",
+        "key": "10.1016/j.apenergy.2013.08.061_b0510",
+        "doi-asserted-by": "crossref",
+        "first-page": "197",
+        "DOI": "10.1287/mnsc.1.3-4.197",
+        "article-title": "Linear programming under uncertainty",
+        "volume": "1",
+        "author": "Dantzig",
+        "year": "1955",
+        "journal-title": "Manage Sci"
+      },
+      {
+        "issue": "33",
+        "key": "10.1016/j.apenergy.2013.08.061_b0515",
+        "doi-asserted-by": "crossref",
+        "first-page": "3190",
+        "DOI": "10.1016/j.cma.2007.03.003",
+        "article-title": "Robust optimization – a comprehensive survey",
+        "volume": "196",
+        "author": "Beyer",
+        "year": "2007",
+        "journal-title": "Comput Methods Appl Mech Eng"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0520",
+        "series-title": "2010 IEEE congress on evolutionary computation",
+        "first-page": "1",
+        "article-title": "A robust optimization approach using Kriging metamodels for robustness approximation in the CMA-ES",
+        "author": "Kruisselbrink",
+        "year": "2010"
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.apenergy.2013.08.061_b0525",
+        "doi-asserted-by": "crossref",
+        "first-page": "397",
+        "DOI": "10.1016/S0045-7949(03)00020-8",
+        "article-title": "Life-cycle reliability-based optimization of civil and aerospace structures",
+        "volume": "81",
+        "author": "Frangopol",
+        "year": "2003",
+        "journal-title": "Comput Struct"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0530",
+        "unstructured": "Zang TA, Hemsch MJ, Hilburger MW, Kenny SP, Luckring JM, Maghami P, et al. Needs and opportunities for uncertainty-based multidisciplinary design methods for aerospace vehicles. Langley Research Center: National Aeronautics and Space Administration; 2002."
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0535",
+        "unstructured": "Zhou G, Ihm P, Krarti M, Liu S, Henze GP. Integration of a internal optimization module within EnergyPlus. In: Proceedings of the eighth international IBPSA conference. Eindhoven: IBPSA; 2003. p. 1475–82."
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0540",
+        "series-title": "Proceedings of the 8th international IBPSA conference",
+        "first-page": "919",
+        "article-title": "ArDOT: a tool to optimize environmental design of buildings",
+        "author": "Monjour",
+        "year": "2003"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0545",
+        "doi-asserted-by": "crossref",
+        "first-page": "2",
+        "DOI": "10.1016/j.enbuild.2012.01.028",
+        "article-title": "Simulation-based decision support tool for early stages of zero-energy building design",
+        "volume": "49",
+        "author": "Attia",
+        "year": "2012",
+        "journal-title": "Energy Build"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0550",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Christensen C, Anderson R, Horowitz S, Courtney A, Spencer J. BEopt software for building energy optimization: features and capabilities. Technical report NREL/TP-550-39929. Boulder: National Renewable Energy Laboratory/University of Colorado; 2006.",
+        "DOI": "10.2172/891598"
+      },
+      {
+        "key": "10.1016/j.apenergy.2013.08.061_b0555",
+        "unstructured": "NREL (National Renewable Energy Laboratory). Opt-E-Plus Software for commercial building optimization (Fact Sheet). Golden, Colo.: NREL; 2010."
+      }
+    ],
+    "container-title": [
+      "Applied Energy"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0306261913007058?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0306261913007058?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          5
+        ]
+      ],
+      "date-time": "2025-10-05T10:55:15Z",
+      "timestamp": 1759661715000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0306261913007058"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2014,
+          1
+        ]
+      ]
+    },
+    "references-count": 111,
+    "alternative-id": [
+      "S0306261913007058"
+    ],
+    "URL": "https://doi.org/10.1016/j.apenergy.2013.08.061",
+    "relation": {},
+    "ISSN": [
+      "0306-2619"
+    ],
+    "issn-type": [
+      {
+        "value": "0306-2619",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2014,
+          1
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "A review on simulation-based optimization methods applied to building performance analysis",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Applied Energy",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.apenergy.2013.08.061",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "Copyright © 2013 Elsevier Ltd. All rights reserved.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ]
+  }
+}

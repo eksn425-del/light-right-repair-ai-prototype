@@ -1,0 +1,7 @@
+{
+  "height_priority_buildings": "C19;C3",
+  "dark_nearest_buildings": "C27;C6",
+  "random_seed": 42,
+  "random_trial_count": 10,
+  "important_caveat": "Non-AI baselines use a vectorized reproduction of the same simplified 2.5D height-reduction logic; the AI row uses the existing official slow post-simulation result."
+}

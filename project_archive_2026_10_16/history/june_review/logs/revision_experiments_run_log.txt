@@ -1,0 +1,6 @@
+Run started: 2026-06-20T20:59:53
+3m base grid points: 1951
+3m baseline avg=5.840082, low_sun_ratio=0.185546
+2.5D first candidate: C13_C24
+Unique final supported: False
+Run completed: 2026-06-20T21:00:52

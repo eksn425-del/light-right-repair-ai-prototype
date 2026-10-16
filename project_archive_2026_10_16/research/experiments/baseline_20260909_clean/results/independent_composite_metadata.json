@@ -1,0 +1,33 @@
+{
+  "sample_size": 20,
+  "frozen_sample_sha256": "ad4abb9b89a263edaecc2cb3553f7832ce0ccb460521ba218e0083e05bcb46b2",
+  "normalization_bounds_from_630_2p5d_universe": {
+    "low_area_drop_h3_m2": {
+      "min": 0.0,
+      "max": 396.0
+    },
+    "avg_gain_vs_baseline_h": {
+      "min": 0.0,
+      "max": 0.0635155096011816
+    },
+    "intervention_volume_m3": {
+      "min": 387.3824354304028,
+      "max": 10891.474417736685
+    },
+    "new_low_area_h3_m2": {
+      "min": 0.0,
+      "max": 0.0
+    }
+  },
+  "score_weights": {
+    "low_area_drop_weight": 0.45,
+    "avg_gain_weight": 0.35,
+    "intervention_volume_economy_weight": 0.15,
+    "new_low_area_avoidance_weight": 0.05
+  },
+  "threshold_h": 3.0,
+  "grid_size_m": 3.0,
+  "timezone": "Asia/Shanghai",
+  "timestep_minutes": 30,
+  "status": "within-independent-sample_composite-ranking_agreement"
+}

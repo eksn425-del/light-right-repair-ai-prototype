@@ -1,0 +1,32 @@
+{
+  "candidate_count": 3,
+  "passed_candidate_count": 3,
+  "selected_candidate_id": "candidate_01",
+  "rules_used": {
+    "max_slope_percent": 8,
+    "min_clear_width_m": 1.2,
+    "max_step_height_m": 0.16,
+    "guardrail_required_height_m": 1.0,
+    "min_accessibility_coverage": 0.8,
+    "min_slow_path_width_m": 1.8,
+    "min_pedestrian_vehicle_separation_m": 0.5,
+    "waterfront_guardrail_required": true,
+    "parking_entry_visibility_required": true
+  },
+  "data_confidence": 0.96,
+  "data_flags": [
+    "sparse_route_nodes"
+  ],
+  "risk_flags": {
+    "candidate_01": [
+      "sparse_route_nodes"
+    ],
+    "candidate_02": [
+      "sparse_route_nodes"
+    ],
+    "candidate_03": [
+      "sparse_route_nodes"
+    ]
+  },
+  "notes": "Safety score is confidence-adjusted because some road alignments/nodes are inferred or placeholder."
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Light Equity Restoration"
+  short_description: "Run and validate the AI light-right restoration ABC workflow."
+  default_prompt: "Use this skill to validate a light equity restoration dataset, run ABC diagnosis/optimization/validation, and package paper-ready outputs."

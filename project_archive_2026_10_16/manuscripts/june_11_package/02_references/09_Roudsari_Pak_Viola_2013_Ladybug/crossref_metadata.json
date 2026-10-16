@@ -1,0 +1,153 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          9
+        ]
+      ],
+      "date-time": "2026-06-09T18:40:40Z",
+      "timestamp": 1781030440465,
+      "version": "3.54.1"
+    },
+    "reference-count": 0,
+    "publisher": "IBPSA",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2013,
+          8,
+          28
+        ]
+      ]
+    },
+    "DOI": "10.26868/25222708.2013.2499",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2022,
+          9,
+          3
+        ]
+      ],
+      "date-time": "2022-09-03T16:46:37Z",
+      "timestamp": 1662223597000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 127,
+    "title": [
+      "Ladybug: A Parametric Environmental Plugin For Grasshopper To Help Designers Create An Environmentally-conscious Design"
+    ],
+    "prefix": "10.26868",
+    "volume": "13",
+    "author": [
+      {
+        "given": "Mostapha",
+        "family": "SADEGHIPOUR ROUDSARI",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michelle",
+        "family": "PAK",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Anthony",
+        "family": "VIOLA",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "11415",
+    "event": {
+      "name": "2017 Building Simulation Conference",
+      "acronym": "BS 2013"
+    },
+    "container-title": [
+      "Building Simulation Conference Proceedings",
+      "Proceedings of Building Simulation 2013: 13th Conference of IBPSA"
+    ],
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2022,
+          9,
+          3
+        ]
+      ],
+      "date-time": "2022-09-03T16:50:41Z",
+      "timestamp": 1662223841000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://publications.ibpsa.org/conference/paper/?id=bs2013_2499"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2013,
+          8,
+          28
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.26868/25222708.2013.2499",
+    "relation": {},
+    "ISSN": [
+      "2522-2708"
+    ],
+    "issn-type": [
+      {
+        "value": "2522-2708",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2013,
+          8,
+          28
+        ]
+      ]
+    }
+  }
+}

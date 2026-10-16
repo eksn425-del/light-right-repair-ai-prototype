@@ -1,0 +1,4 @@
+candidate_id,total_score,estimated_light_gain,intervention_volume,new_shadow_penalty,protected_zone_penalty,number_of_interventions,notes
+candidate_real_01,14.212,0.084,6556.565,0.0,0.0,3,"verified_6m_post_sim: avg=6.506, dark_ratio=0.1551, dark_drop=0.0204"
+candidate_real_02,12.016,0.037,2519.975,0.0,0.0,3,"verified_6m_post_sim: avg=6.459, dark_ratio=0.1612, dark_drop=0.0143"
+candidate_real_03,10.895,0.122,11620.584,0.0,0.0,3,"verified_6m_post_sim: avg=6.545, dark_ratio=0.1531, dark_drop=0.0224"

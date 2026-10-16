@@ -1,0 +1,13 @@
+{
+  "output_dir_name": "validation_script_auto_obj",
+  "total_grid_count": 301,
+  "dark_grid_count": 204,
+  "baseline_dark_zone_ratio": 0.6777,
+  "baseline_average_sunlight_hours": 2.073,
+  "selected_candidate_id": "candidate_01",
+  "algorithm_average_sunlight_hours": 2.113,
+  "algorithm_dark_zone_ratio": 0.6744,
+  "algorithm_accessibility_coverage": 0.83,
+  "algorithm_safety_score": 83.16,
+  "passed_candidate_count": 3
+}

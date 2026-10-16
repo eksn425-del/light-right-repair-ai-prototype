@@ -1,0 +1,9 @@
+{
+    "radiance_path": "E:\\AI\u9879\u76ee\\\u8def\u7ebfB_\u4e2d\u6587\u5bfc\u5e08\u5ba1\u9605\u5b9a\u7a3f_\u5de5\u4f5c\u5305_2026_06_20\\tools\\radiance_6_0_2",
+    "radbin_path": "E:\\AI\u9879\u76ee\\\u8def\u7ebfB_\u4e2d\u6587\u5bfc\u5e08\u5ba1\u9605\u5b9a\u7a3f_\u5de5\u4f5c\u5305_2026_06_20\\tools\\radiance_6_0_2\\bin",
+    "radlib_path": "E:\\AI\u9879\u76ee\\\u8def\u7ebfB_\u4e2d\u6587\u5bfc\u5e08\u5ba1\u9605\u5b9a\u7a3f_\u5de5\u4f5c\u5305_2026_06_20\\tools\\radiance_6_0_2\\lib",
+    "radiance_version": "'",
+    "standards_data_folder": "D:\\python3.10.4\\Lib\\site-packages\\honeybee_standards",
+    "modifier_lib": "D:\\python3.10.4\\Lib\\site-packages\\honeybee_standards\\modifiers",
+    "modifierset_lib": "D:\\python3.10.4\\Lib\\site-packages\\honeybee_standards\\modifiersets"
+}

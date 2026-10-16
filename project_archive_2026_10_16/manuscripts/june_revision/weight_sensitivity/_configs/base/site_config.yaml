@@ -1,0 +1,36 @@
+site_name: Guankou Lakeside Area - Light Equity Framework
+project_scope: district_lake_area
+task_book_version: 2025-2026
+latitude: 24.55
+longitude: 118.03
+utc_offset: 8
+dataset_units: m
+grid_size_m: 6.0
+ground_z: 0.0
+bounds_padding_m: 6.0
+street_analysis_margin_m: 5.0
+dark_sunlight_threshold_hours: 3.0
+nearest_building_search_radius_m: 20.0
+zone_dark_ratio_threshold: 0.35
+zone_priority_light_weight: 0.5
+candidate_count: 3
+search_iterations: 220
+max_interventions_per_candidate: 2
+random_seed: 42
+score_weight_light_gain: 1.0
+score_weight_intervention_volume: 0.16
+score_weight_new_shadow_penalty: 0.9
+score_weight_protected_zone_penalty: 2.0
+report_light_gain_scale: 0.12
+baseline_accessibility_coverage: 0.68
+baseline_safety_score: 62
+manual_design_avg_sunlight_gain: 0.45
+manual_design_dark_ratio_drop: 0.06
+manual_design_accessibility_coverage: 0.76
+manual_design_safety_score: 74
+default_micro_device_size_m: 3.0
+default_slow_path_width_m: 2.0
+waterfront_guardrail_required: true
+product_strategy: conservative
+product_strategy_label: 保守型 AI
+sensitivity_case: weight_sensitivity_base

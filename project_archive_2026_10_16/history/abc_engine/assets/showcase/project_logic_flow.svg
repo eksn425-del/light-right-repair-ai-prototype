@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 580">
+  <rect width="1200" height="580" fill="#f7f6ef"/>
+  <text x="48" y="68" font-family="Microsoft YaHei, sans-serif" font-size="34" font-weight="800" fill="#18201d">AI光权修复 ABC 工作流</text>
+  <text x="48" y="520" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#65716b">从组员资料到论文图表：每一步都有 CSV / PNG / OBJ 输出，可被复核和替换。</text>
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#65716b"/>
+    </marker>
+  </defs>
+  <g font-family="Microsoft YaHei, sans-serif">
+    <rect x="55" y="150" width="235" height="250" fill="#fff" stroke="#087f96" stroke-width="4"/>
+    <text x="82" y="215" font-size="30" font-weight="800" fill="#087f96">资料接入</text>
+    <text x="82" y="275" font-size="19" fill="#18201d">CAD / SU / CSV</text>
+    <text x="82" y="315" font-size="19" fill="#18201d">对象编号与坐标统一</text>
+    <text x="82" y="375" font-size="44" font-weight="800" fill="#d8ddd7">01</text>
+    <line x1="310" y1="275" x2="350" y2="275" stroke="#65716b" stroke-width="4" marker-end="url(#arrow)"/>
+    <rect x="365" y="150" width="235" height="250" fill="#fff" stroke="#b78a25" stroke-width="4"/>
+    <text x="392" y="215" font-size="30" font-weight="800" fill="#b78a25">A 诊断</text>
+    <text x="392" y="275" font-size="19" fill="#18201d">冬至日光照模拟</text>
+    <text x="392" y="315" font-size="19" fill="#18201d">暗区与缝隙识别</text>
+    <text x="392" y="375" font-size="44" font-weight="800" fill="#d8ddd7">02</text>
+    <line x1="620" y1="275" x2="660" y2="275" stroke="#65716b" stroke-width="4" marker-end="url(#arrow)"/>
+    <rect x="675" y="150" width="235" height="250" fill="#fff" stroke="#be5776" stroke-width="4"/>
+    <text x="702" y="215" font-size="30" font-weight="800" fill="#be5776">B 决策</text>
+    <text x="702" y="275" font-size="19" fill="#18201d">最小干预候选</text>
+    <text x="702" y="315" font-size="19" fill="#18201d">减法 / 加法 / 重组</text>
+    <text x="702" y="375" font-size="44" font-weight="800" fill="#d8ddd7">03</text>
+    <line x1="930" y1="275" x2="970" y2="275" stroke="#65716b" stroke-width="4" marker-end="url(#arrow)"/>
+    <rect x="985" y="150" width="160" height="250" fill="#fff" stroke="#427d51" stroke-width="4"/>
+    <text x="1012" y="215" font-size="30" font-weight="800" fill="#427d51">C 验证</text>
+    <text x="1012" y="275" font-size="19" fill="#18201d">安全可达筛查</text>
+    <text x="1012" y="315" font-size="19" fill="#18201d">最终推荐方案</text>
+    <text x="1012" y="375" font-size="44" font-weight="800" fill="#d8ddd7">04</text>
+  </g>
+</svg>
