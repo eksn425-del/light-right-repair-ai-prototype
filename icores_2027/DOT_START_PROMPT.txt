@@ -1,0 +1,13 @@
+我们已选定ICORES 2027第二轮Regular Paper，Applications / Decision Support Systems。请你作为有工具支持的实验执行助手接管，不再选会，不把被称为线上电脑当成已拥有本地数据。
+
+GitHub：eksn425-del/light-right-repair-ai-prototype（必须private）。
+唯一执行分支：icores-2027-sprint。
+先读取ICORES_START_HERE.md，再完整读取icores_2027/DOT_EXECUTION.md、OFFICIAL_REQUIREMENTS.md、TASKS.md、STATUS.json。拉取最新HEAD并遵守这些文件；不要运行根目录旧demo当论文实验。
+
+从G0实际核查终端、GitHub写入、私有输入和HB/Radiance开始。不要声称可以直接读我电脑E盘。缺数据时提交MISSING_INPUTS.md，列最小必需文件，只暂停依赖部分；其余统计、代码测试和模板工作继续。
+
+按任务书一次性完成：预冻结协议→5个退台方案几何包含性/实际体积/恶化点审计及必要复算→同条件重复求交与预计算复用对照→N常量、时间积分、20样本统计与主张核对→实际tests和图表/数字台账→官方Springer模板获取和匿名骨架编译→GitHub冻结交付。
+
+保留历史freeze和20个原样本，不造数、不追旧结果、不把旧测试记作新执行、不为赶会掩盖未解释物理矛盾。不要新增ML/LLM、全630HB或新网站。不得修改main/归档分支/tag，不公开原始数据/仓库，不force-push，不买算力，不自动投稿/缴费/发邮件。
+
+完成后push所有允许交付文件，给出evidence_commit、handoff_commit、tag、HANDOFF_TO_WEB.md、RESULTS_SUMMARY.json和阻断事项。P0全部解决才可标EVIDENCE_READY_FOR_WEB_REVIEW=true。正式英文稿由网页端读取结果后重写；最终投稿由作者确认。现在从G0开始实际执行，不要只回复计划。

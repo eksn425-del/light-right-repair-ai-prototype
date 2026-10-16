@@ -1,0 +1,20 @@
+{
+  "recorded_on": "2026-10-16",
+  "purpose": "Identify the previous 12-page writing source; registration does not imply GitHub binary upload or scientific validation",
+  "source_location": "Current ChatGPT conversation attachments and author copy; binary not uploaded in this setup commit",
+  "pdf": {
+    "filename": "SOICT_2026_Full_Paper_Submission_Draft.pdf",
+    "bytes": 749944,
+    "sha256": "9a11ec3a77e841e8764e35d14b00cabebb328b51af759939d091bb6e68eaddb7",
+    "pages": 12
+  },
+  "docx": {
+    "filename": "SOICT_2026_Full_Paper_Submission_Draft.docx",
+    "bytes": 2012589,
+    "sha256": "1b5a1f8da5601b7aea50a36419a143ff67cc4080e2d45cb0c6f2f97e9ffa52a1"
+  },
+  "is_submission_ready": false,
+  "dot_can_execute_experiments_without_this_binary": true,
+  "scientific_source_of_truth": "Frozen ledgers plus new ICORES audit and experiment outputs after review",
+  "known_revision_topics": ["design translation containment and adverse points", "constant fourth scoring term", "time-bin interpretation", "matched runtime ablation", "sample-selection scope", "private repository availability", "remove For SOICT wording", "ICORES double-blind and non-whitespace character rules"]
+}
