@@ -1,0 +1,255 @@
+{
+  "schema_version": 1,
+  "checked_date_utc": "2026-10-16",
+  "entry_url": "https://icores.scitevents.org/Templates.aspx",
+  "entry_link": "https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines",
+  "landing_url": "https://link.springer.com/series/558/information-for-authors-and-editors",
+  "scope": "Current Springer Computer Science proceedings template, including CCIS",
+  "latex_class_version": "2.25",
+  "latex_class_date": "2026-09-03",
+  "word_package_version": "splnproc2510 (ZIP members dated 2025-10-15)",
+  "instructions_visible_date": "2026-08-28 14:50 (document footer; timezone unspecified)",
+  "downloads": [
+    {
+      "cache_name": "latex.zip",
+      "kind": "official_template",
+      "url": "https://cms-resources.apps.public.k8s.springernature.io/springer-cms/rest/v1/content/27851904/data/LaTeX2e%20Proceedings%20Template%20ZIP",
+      "fetched_utc": "2026-10-16T05:14:17.817248+00:00",
+      "bytes": 515408,
+      "sha256": "42afb32ed4fadc9e209134ec65dab1bd2a7ead42f9a3f8abb184f250c4a197b9",
+      "repository_copy": false,
+      "members": [
+        {
+          "name": "DescriptionTexts.txt",
+          "bytes": 153,
+          "archive_timestamp": [
+            2026,
+            9,
+            3,
+            8,
+            19,
+            32
+          ],
+          "sha256": "31666ccea9072ad9b6af59624f50e239e6d663cb952d894891ed1cff2efb7868"
+        },
+        {
+          "name": "samplepaper.pdf",
+          "bytes": 177220,
+          "archive_timestamp": [
+            2026,
+            9,
+            3,
+            8,
+            19,
+            32
+          ],
+          "sha256": "eca3d6e563297b74ca4f75357b24444443abf33ef0c6d0bf952b1f3e04e122c1"
+        },
+        {
+          "name": "llncsdoc.pdf",
+          "bytes": 204097,
+          "archive_timestamp": [
+            2026,
+            9,
+            3,
+            8,
+            19,
+            32
+          ],
+          "sha256": "bda75de93cd92490d678172e98a11bcbb0dc76a88831333bf0ef2aa9fdb4d006"
+        },
+        {
+          "name": "history.txt",
+          "bytes": 8956,
+          "archive_timestamp": [
+            2026,
+            9,
+            3,
+            8,
+            19,
+            32
+          ],
+          "sha256": "9a4a85d0e7ab49fa35c638fee5e4083ae2b5bd0f5a943113098dc2e86e62d261"
+        },
+        {
+          "name": "fig1.eps",
+          "bytes": 357553,
+          "archive_timestamp": [
+            2026,
+            9,
+            3,
+            8,
+            19,
+            32
+          ],
+          "sha256": "e0da72903f4ba3ae2307869fd2f1d2ad460281725e0a3205862e91c8d6daf831"
+        },
+        {
+          "name": "splncs04.bst",
+          "bytes": 32146,
+          "archive_timestamp": [
+            2026,
+            9,
+            3,
+            8,
+            19,
+            32
+          ],
+          "sha256": "f36c3a17e5304a692706359aafa9de709395a085e579eb47c027095aeaa35174"
+        },
+        {
+          "name": "samplepaper.tex",
+          "bytes": 6748,
+          "archive_timestamp": [
+            2026,
+            9,
+            3,
+            8,
+            19,
+            32
+          ],
+          "sha256": "08142e057525c0edcab3e62a7028084a136cdbd7a66af8eb5157c2e5ae1806a6"
+        },
+        {
+          "name": "readme.txt",
+          "bytes": 573,
+          "archive_timestamp": [
+            2026,
+            9,
+            3,
+            8,
+            19,
+            32
+          ],
+          "sha256": "d5a69ddfcd5d316877c301e9504c6302d1f1dc7b2c8f128d8066cdd0b0a7e21a"
+        },
+        {
+          "name": "llncs.cls",
+          "bytes": 43700,
+          "archive_timestamp": [
+            2026,
+            9,
+            3,
+            8,
+            19,
+            32
+          ],
+          "sha256": "04ec99046ad9867f6cd54ffd1ef8c47c767b327d1baec77536db0528cd492fa2"
+        }
+      ]
+    },
+    {
+      "cache_name": "word.zip",
+      "kind": "official_template",
+      "url": "https://cms-resources.apps.public.k8s.springernature.io/springer-cms/rest/v1/content/27852136/data/Microsoft%20Word%20Proceedings%20Template%20ZIP",
+      "fetched_utc": "2026-10-16T05:14:48.910207+00:00",
+      "bytes": 554378,
+      "sha256": "8165e9dbe5c18fa1aabb80d806178f69dd3b743f942f66415727d0fe1331576e",
+      "repository_copy": false,
+      "members": [
+        {
+          "name": "Quick Start.pdf",
+          "bytes": 118539,
+          "archive_timestamp": [
+            2025,
+            10,
+            15,
+            11,
+            35,
+            4
+          ],
+          "sha256": "787eb7d0a3f0ab542962271ad76eb5de5106d91c5c9324dcb0c606cf404a0e85"
+        },
+        {
+          "name": "SPLNPROC Technical Instructions.pdf",
+          "bytes": 290922,
+          "archive_timestamp": [
+            2025,
+            10,
+            15,
+            11,
+            34,
+            4
+          ],
+          "sha256": "76560c6ab3d19da542df56572ec4cc1e65ea3cef37090c923e6193940585428e"
+        },
+        {
+          "name": "splnproc2510.docm",
+          "bytes": 93543,
+          "archive_timestamp": [
+            2025,
+            10,
+            15,
+            11,
+            50,
+            44
+          ],
+          "sha256": "257ec3d1c458f8b8c7438edb35ff3ace39d62bece9aad3009f272782902005bb"
+        },
+        {
+          "name": "splnproc2510_mac.docm",
+          "bytes": 104431,
+          "archive_timestamp": [
+            2025,
+            10,
+            15,
+            11,
+            38,
+            16
+          ],
+          "sha256": "e67fba79770e973a042753629009d326bc8825231a3dc5bb632397af6d6f9ba6"
+        }
+      ]
+    },
+    {
+      "cache_name": "instructions.pdf",
+      "kind": "official_template",
+      "url": "https://cms-resources.apps.public.k8s.springernature.io/springer-cms/rest/v1/content/27852130/data/Instructions%20for%20Authors%20PDF",
+      "fetched_utc": "2026-10-16T05:14:52.854331+00:00",
+      "bytes": 312570,
+      "sha256": "b6a56391a68e64c06d2d9f4173f5260d123a3277eb9cd1a36d0e74b4702ca385",
+      "repository_copy": false
+    },
+    {
+      "cache_name": "newtx.zip",
+      "kind": "private_build_dependency",
+      "url": "https://mirrors.ctan.org/fonts/newtx.zip",
+      "fetched_utc": "2026-10-16T05:17:05.862492+00:00",
+      "bytes": 9704591,
+      "sha256": "bbe07d4ad91ade9f61326e59f2f3bf389b4ace1c0c1ef2e8c85377e4e2535f4e",
+      "repository_copy": false
+    },
+    {
+      "cache_name": "kastrup.zip",
+      "kind": "private_build_dependency",
+      "url": "https://ftp.fau.de/ctan/macros/generic/kastrup.zip",
+      "fetched_utc": "2026-10-16T05:20:47.513317+00:00",
+      "bytes": 147569,
+      "sha256": "c3ec4e73ca69bc2f8e813c01618b670a936e24a465228ccf06b8c6ae28f7220e",
+      "repository_copy": false
+    },
+    {
+      "cache_name": "tex-gyre.zip",
+      "kind": "private_build_dependency",
+      "url": "https://ftp.fau.de/ctan/fonts/tex-gyre.zip",
+      "fetched_utc": "2026-10-16T05:21:21.434363+00:00",
+      "bytes": 21661540,
+      "sha256": "1773c470f9e388e087b68e3426e115af2cd236845a7e05ceb25b2a503409a7a3",
+      "repository_copy": false
+    }
+  ],
+  "font_selection": {
+    "used": "newtxtext + newtxmath[varvw] from official 2026-09-03 sample",
+    "conflict": "2026-08-28 author instructions say CMR for LaTeX; class history explicitly says sample changed to Times on 2026-09-03. Follow current template, flag for final author review.",
+    "no_font_files_in_repository": true
+  },
+  "template_geometry": {
+    "class_textwidth_cm": 12.2,
+    "class_textheight_cm": 19.3,
+    "body_font_pt": 10,
+    "title_font_pt": 14,
+    "layout_overrides": false
+  },
+  "release_scope": "Private review proof only. No public anonymous repository, submission, or author/legal approval performed."
+}
+

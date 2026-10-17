@@ -1,0 +1,31 @@
+{
+  "suggested_directory": "icores_2027/manuscript_author_review/",
+  "text_files": [
+    "manuscript.tex",
+    "references.bib",
+    "manuscript.bbl",
+    "SOURCE_README.md",
+    "AUTHOR_REVIEW.md",
+    "AI_USE_RECORD.md",
+    "CLAIM_SOURCE_MAP.csv",
+    "DELIVERY_README.md",
+    "make_figures.py",
+    "create_review_records.py",
+    "verify_final.py",
+    "build_portable.sh",
+    "llncs.cls",
+    "splncs04.bst",
+    "figures/PUBLICATION_FIGURE_MANIFEST.json",
+    "qa/FINAL_QA.json",
+    "qa/FINAL_VISUAL_QA.md",
+    "qa/NUMERIC_TRANSCRIPTION_CHECK.json"
+  ],
+  "binary_files": [
+    "manuscript.pdf",
+    "figures/agreement_publication.pdf",
+    "figures/translation_publication.pdf",
+    "figures/runtime_publication.pdf"
+  ],
+  "no_frozen_evidence_changes": true,
+  "no_font_distribution": true
+}

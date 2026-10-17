@@ -1,0 +1,20 @@
+Title:           Auditable Solar-Access Decision Support through Exact Blocker Reuse and Containment-Constrained Translation
+Subject:         Anonymous regular-paper manuscript for author review
+Keywords:        solar access, decision support, exhaustive screening, geometry validation
+Author:          
+Creator:         LaTeX
+Producer:        pdfTeX-1.40.26
+Custom Metadata: yes
+Metadata Stream: no
+Tagged:          no
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           15
+Encrypted:       no
+Page size:       612 x 792 pts (letter)
+Page rot:        0
+File size:       284396 bytes
+Optimized:       no
+PDF version:     1.4

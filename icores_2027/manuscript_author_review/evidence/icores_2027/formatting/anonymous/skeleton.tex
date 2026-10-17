@@ -1,0 +1,114 @@
+% Formatting proof only. No measured experimental results are supplied.
+% Uses the official Springer sample's 2026-09-03 font packages unchanged.
+\documentclass{llncs}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext}
+\usepackage[varvw]{newtxmath}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Anonymous Formatting Skeleton},pdfauthor={},
+  pdfsubject={Template compilation proof only},pdfkeywords={},pdfcreator={LaTeX}}
+\pdfinfoomitdate=1
+\pdftrailerid{}
+\begin{document}
+\title{Decision Support for Urban Solar Access Anonymous Formatting Skeleton}
+\author{}
+\institute{}
+\maketitle
+\begin{abstract}
+This document is a formatting proof for a future research manuscript. It tests
+an anonymous title block, editable equations and tables, a vector diagram,
+figure alternative text, numbered citations, and the bibliography style in the
+current Springer proceedings class. It contains no experimental results and
+must not be submitted as a research paper. The final abstract must be written
+from reviewed evidence after the geometry, temporal, and matched runtime
+checks have been resolved. Claims require traceable sources and a distinction
+between historical evidence and new measurements. The sections below identify
+their intended scope without filling missing observations with illustrative
+numbers. This short proof is deliberately below the conference's minimum
+character count; successful compilation establishes only that the template
+can be built. Author approval, scientific review, disclosure placement, and
+a submission-stage anonymity check remain necessary. The provisional
+disclosure records the artificial-intelligence assistance used for this proof
+and requires confirmation of the conference's placement requirements.
+\keywords{Decision support \and Solar access \and Reproducibility}
+\end{abstract}
+
+\section{Introduction}
+Define the decision problem, setting, and evidence-supported contribution.
+The Ladybug paper describes an environmental analysis
+tool~\cite{roudsari2013ladybug}. It demonstrates citation formatting here;
+it does not validate this study.
+
+\section{Methods}
+\subsection{Decision Variables and Sunlight Duration}
+Equation~\ref{eq:selection} illustrates the editable binary decision model.
+The eligible set $E$ must be defined by explicit research constraints; it does
+not represent legal permission to alter a building.
+\begin{equation}
+ z_i\in\{0,1\}\quad(i\in E),\qquad \sum_{i\in E}z_i=2.
+ \label{eq:selection}
+\end{equation}
+Table~\ref{tab:symbols} defines the symbols used in
+Eq.~\ref{eq:duration}. For fixed sample times, the direct-sunlight duration at
+receiver $j$ is represented by
+\begin{equation}
+ D_j(z)=\sum_{t\in T}\Delta t\,v_{jt}(z)
+ \mathbf{1}\{\alpha_t>0\}.
+ \label{eq:duration}
+\end{equation}
+State the interval interpretation, solar-position source, visibility
+tolerances, receiver mapping, and geometry treatment. The notation asserts
+no agreement with an external solver.
+
+\begin{table}[t]
+\caption{Editable notation example with no experimental values}
+\label{tab:symbols}
+\centering
+\begin{tabular}{l@{\quad}l@{\quad}l}
+\hline
+Symbol & Meaning & Unit \\
+\hline
+$z_i$ & Selection of eligible building $i$ & dimensionless \\
+$T$ & Fixed set of analysis samples & index set \\
+$\Delta t$ & Duration represented by each sample & h \\
+$v_{jt}(z)$ & Direct visibility at receiver $j$ and sample $t$ & binary \\
+$\alpha_t$ & Solar elevation at sample $t$ & angle \\
+$D_j(z)$ & Direct-sunlight duration at receiver $j$ & h \\
+\hline
+\end{tabular}
+\end{table}
+
+Figure~\ref{fig:workflow} illustrates the evidence sequence. Describe
+containment, volume, matched runtime, and validation checks separately.
+
+\begin{figure}[t]
+\centering
+\setlength{\unitlength}{1mm}
+\begin{picture}(114,16)
+\put(0,3){\framebox(30,10){Fixed protocol}}
+\put(30,8){\vector(1,0){10}}
+\put(40,3){\framebox(30,10){Audits and tests}}
+\put(70,8){\vector(1,0){10}}
+\put(80,3){\framebox(34,10){Evidence review}}
+\end{picture}
+\Description{Three boxes connected from left to right: Fixed protocol, Audits and tests, and Evidence review. This is a conceptual workflow with no measured data.}
+\caption{Conceptual vector workflow with no measured data. AI tool: OpenAI assistant. Prompt: show fixed protocol, audits and tests, and evidence review in sequence.}
+\label{fig:workflow}
+\end{figure}
+
+\section{Results, Limitations, and Conclusions}
+Insert reviewed evidence, retain unresolved effects, and separate measurements
+from extrapolations. Write conclusions only after scientific review.
+
+\section*{Provisional AI Use Disclosure}
+An OpenAI assistant~\cite{openai2026} generated this proof, including its
+prose, equations, table, and conceptual diagram. No experimental values were
+generated. Final AI-use disclosure and its anonymous placement require author
+review. Human authors must also declare competing interests; none are
+asserted on their behalf here.
+
+\bibliographystyle{splncs04}
+\bibliography{references}
+\end{document}
+
