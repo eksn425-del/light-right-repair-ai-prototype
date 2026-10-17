@@ -1,13 +1,13 @@
 {
   "manuscript.pdf": {
-    "bytes": 249753,
-    "sha256": "9bb6386f4c57f0b3b97a72093a854a14c65fea5dd79deae8d95ffd9c099c334f",
-    "git_blob_sha": "7cd8f50b271f3dca486ffb724be0d38a65dae640"
+    "bytes": 249736,
+    "sha256": "bce253562c52bf9f115f0cde4364b1274679a279e8edfef4155040bd129f74e7",
+    "git_blob_sha": "f7f7f4d131dc9277f689c291ca879bd1a9b490ce"
   },
   "manuscript.tex": {
-    "bytes": 39607,
-    "sha256": "e805eaad81946abbc93d2d973ba299031e4670821ec04d240fe890ba2fbfc1c8",
-    "git_blob_sha": "860deee57ae6282de5bc53af3d07a079ff90fcf9"
+    "bytes": 39628,
+    "sha256": "a47acc61b83c340d714c564235c838dc846fd2892a574470fa5db738fed1ff15",
+    "git_blob_sha": "41c0aea5d1c15e5f46b543a13bd0e1c6e4d96ba5"
   },
   "references.bib": {
     "bytes": 3328,
@@ -43,5 +43,20 @@
     "bytes": 700,
     "sha256": "a7004cb439887c014a5b10bd1cc42365c4b65e70b8be5a1c49208ea0c86c4bca",
     "git_blob_sha": "ff54b04d7b12057036be3917ba934b7e5c2af58e"
+  },
+  "ICORES2027_Anonymous_Final_20261017_v3.pdf": {
+    "bytes": 249736,
+    "sha256": "bce253562c52bf9f115f0cde4364b1274679a279e8edfef4155040bd129f74e7",
+    "git_blob_sha": "f7f7f4d131dc9277f689c291ca879bd1a9b490ce"
+  },
+  "qa/V3_QA.json": {
+    "bytes": 415,
+    "sha256": "00e941309f6d390365ea11c32d17fd961171afcf1dc7cfaeea870213ee011d93",
+    "git_blob_sha": "bbce21ed3280e74bc1cd215fec1c83ed754b50c1"
+  },
+  "V3_DIFF.patch": {
+    "bytes": 5914,
+    "sha256": "b988dde1171dac1e016b5d115570cd0634b9677ea5a5e5db1acf6c94688bdd85",
+    "git_blob_sha": "65b8e0ab1693fab56f1687d1d7abf5c8f4109d58"
   }
 }

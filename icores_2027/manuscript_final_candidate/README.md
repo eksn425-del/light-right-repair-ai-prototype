@@ -18,3 +18,5 @@ Official second-stage Regular deadline: 22 October 2026 AoE, equivalent to 23 Oc
 The earlier original manuscript and all 92 review files remain untouched in `../manuscript_author_review/`. The candidate is private review material; supporting audit files contain repository identifiers and must not be submitted as an anonymous supplement.
 
 Latest PDF includes the final bounded prose pass after review of version 710120. See FINAL_PASS_DIFF.patch and qa/FINAL_PASS_QA.json. Earlier QA/delivery records document the preceding candidate and are retained as historical checks; this pass introduces no new measurements.
+
+Current delivery is v3, ICORES2027_Anonymous_Final_20261017_v3.pdf, byte-identical to manuscript.pdf. qa/V3_QA.json is the latest PDF check; earlier checks refer to earlier versions.

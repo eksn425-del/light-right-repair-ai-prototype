@@ -1,0 +1,15 @@
+{
+  "table": true,
+  "equation": true,
+  "align": true,
+  "pages": 15,
+  "pdf_sha256": "bce253562c52bf9f115f0cde4364b1274679a279e8edfef4155040bd129f74e7",
+  "narrative_rounded_only": true,
+  "all_pages_render_review": "PASS",
+  "unindexed_scope": true,
+  "exact_vs_cross_route": true,
+  "workflow_contribution": true,
+  "restricted_reproduction": true,
+  "winter_design_day": true,
+  "labelled_AI_citations": true
+}

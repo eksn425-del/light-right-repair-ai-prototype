@@ -20,3 +20,7 @@ Authorship/order/affiliation/contact details; data/publication rights; originali
 ## Final bounded prose pass, 17 October 2026
 
 Baseline: 710120e05d36c5d3abbc91ce9a42dbd06a9f3c1b. Shortened abstract; scoped the measured ratio to two unindexed single-thread Python implementations; foregrounded same-primitive equivalence versus approximate cross-route agreement; clarified engineering rather than mathematical novelty, winter design-day interpretation, and restricted end-to-end reproducibility. Section citations now explicitly label writing assistance. Consolidated repetitive caveats without removing their substantive boundaries. No experiment, new statistic, sample, table, equation, figure or bibliography change. All 15 pages rebuilt and rendered. See FINAL_PASS_DIFF.patch and qa/FINAL_PASS_QA.json.
+
+## v3: narrative rounding correction
+
+Relative to 626f31131880b049a9790d1062686b731b96efb5, only abstract and conclusion change 482.927-fold to approximately 483-fold. Table 2 retains the exact reported 482.927 value. All earlier bounded prose edits remain. No experimental or statistical change. Distinct delivery filename: ICORES2027_Anonymous_Final_20261017_v3.pdf. All 15 rendered pages checked.
