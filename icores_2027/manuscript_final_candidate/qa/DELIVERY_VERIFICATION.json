@@ -1,0 +1,11 @@
+{
+  "compiler_sha256": "a2aa8ccead323a61699d85453e30623ef8ca7c4a53b70bceda83b856fafa4110",
+  "retained_sha256": "6bb7e1cdd683e4954f90154bc2ab1cefddb744272a288882dd71902976752cb0",
+  "compiler_bytes": 249428,
+  "retained_bytes": 301561,
+  "page_count_equal": true,
+  "all_page_text_equal": true,
+  "all_page_pixels_equal": true,
+  "metadata_equal": true,
+  "library_file_id": "libfile_3c25255011d8819197e2cca461c9e381"
+}

@@ -1,0 +1,32 @@
+{
+  "manuscript.pdf": {
+    "bytes": 249428,
+    "sha256": "a2aa8ccead323a61699d85453e30623ef8ca7c4a53b70bceda83b856fafa4110",
+    "git_blob_sha": "aee2800163712e80b8b65892145ab9076f79c248"
+  },
+  "manuscript.tex": {
+    "bytes": 40393,
+    "sha256": "a7306c84ce5d9b5dee34b01ee4d1bd16c878c3b3f3cd7f2eee919a131652bceb",
+    "git_blob_sha": "b3f3a67cd91149fcec371b0337cf468a7d192a1d"
+  },
+  "references.bib": {
+    "bytes": 3328,
+    "sha256": "15c79419807ca20a8655cd0e3d30fa04a8cbc6b4739fe0e6bf9071e1e95ff2d6",
+    "git_blob_sha": "4199d79460b2ebcf0977cf7b2a76c3f13a3cd5fd"
+  },
+  "manuscript.bbl": {
+    "bytes": 2909,
+    "sha256": "00bddc6a31f473f1da7a6766da5ed0c97b7ca8884fa89b4b0d6023ef7c7fdf86",
+    "git_blob_sha": "c320a1fc6666b4689d1725d5508499270460d36f"
+  },
+  "llncs.cls": {
+    "bytes": 43700,
+    "sha256": "04ec99046ad9867f6cd54ffd1ef8c47c767b327d1baec77536db0528cd492fa2",
+    "git_blob_sha": "056b4d4bb2a5c6aa85a258b1b045651607820634"
+  },
+  "splncs04.bst": {
+    "bytes": 32146,
+    "sha256": "f36c3a17e5304a692706359aafa9de709395a085e579eb47c027095aeaa35174",
+    "git_blob_sha": "7d63c492d92fd1aa5db77c3f18b469e1c359ff93"
+  }
+}

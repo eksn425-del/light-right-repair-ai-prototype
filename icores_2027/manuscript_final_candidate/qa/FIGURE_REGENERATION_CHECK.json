@@ -1,0 +1,23 @@
+[
+  {
+    "figure": "runtime_publication.pdf",
+    "original_sha256": "4534fe7656371474affe2b05c66378eb725e954da9ae2894e6f0b663e8846cb5",
+    "regenerated_sha256": "4534fe7656371474affe2b05c66378eb725e954da9ae2894e6f0b663e8846cb5",
+    "text_equal": true,
+    "pixels_equal": true
+  },
+  {
+    "figure": "agreement_publication.pdf",
+    "original_sha256": "996e8d9a6343a8f48245672544ec0087a4a4ebec5933dee984a78ca0f0db9019",
+    "regenerated_sha256": "996e8d9a6343a8f48245672544ec0087a4a4ebec5933dee984a78ca0f0db9019",
+    "text_equal": true,
+    "pixels_equal": true
+  },
+  {
+    "figure": "translation_publication.pdf",
+    "original_sha256": "2d3fdb4e6c540334f2f9185c06efd90f1c3d2247bb24e02b04528e07eadfe6df",
+    "regenerated_sha256": "2d3fdb4e6c540334f2f9185c06efd90f1c3d2247bb24e02b04528e07eadfe6df",
+    "text_equal": true,
+    "pixels_equal": true
+  }
+]

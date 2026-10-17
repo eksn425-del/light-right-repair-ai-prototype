@@ -1,0 +1,52 @@
+[
+  {
+    "object": "Table 1",
+    "source_path": "../manuscript_author_review/evidence/icores_2027/runs/statistics_20261016/normalization_bounds.csv",
+    "sha256": "626c176ab39835b42a8d164025c4fb2cc145972152bb9f7e9a30a928e81633ea",
+    "run_ids": [
+      "statistics_20261016"
+    ],
+    "measurement_origin": "frozen full630 normalization, historical results",
+    "cloud_revision_operation": "read/check CSV; figures regenerated only; no physical simulation"
+  },
+  {
+    "object": "Table 2 / Figure 1",
+    "source_path": "../manuscript_author_review/evidence/icores_2027/runs/local_ablation_20261016/ablation_summary.csv",
+    "sha256": "381d238bc9c130857a86ea0e26c836c7ea930a6c9ccaee6e2a90dcfa4b1b4ec8",
+    "run_ids": [
+      "local_ablation_20261016"
+    ],
+    "measurement_origin": "measured author-side Windows runs, medians rechecked from retained repeats",
+    "cloud_revision_operation": "read/check CSV; figures regenerated only; no physical simulation"
+  },
+  {
+    "object": "Table 3",
+    "source_path": "../manuscript_author_review/evidence/icores_2027/runs/statistics_20261016/same_metric_agreement.csv",
+    "sha256": "b66e7ee46eb0c219e211f36a2016ab744e48c4cae11584879e1fc7edc98922ca",
+    "run_ids": [
+      "statistics_20261016"
+    ],
+    "measurement_origin": "statistical recomputation of archived curated23 and coverage20 aggregates; not new cohort simulations",
+    "cloud_revision_operation": "read/check CSV; figures regenerated only; no physical simulation"
+  },
+  {
+    "object": "Figure 2",
+    "source_path": "../manuscript_author_review/evidence/icores_2027/runs/statistics_20261016/comparison_values.csv",
+    "sha256": "9a08b8834b5b4eaa4679032e6a0900aff57ef46e92e3637d9776debfce97923d",
+    "run_ids": [
+      "statistics_20261016"
+    ],
+    "measurement_origin": "archived same-site cohorts23/20",
+    "cloud_revision_operation": "read/check CSV; figures regenerated only; no physical simulation"
+  },
+  {
+    "object": "Table 4 / Figure 3",
+    "source_path": "../manuscript_author_review/evidence/icores_2027/runs/local_hb_20261016/translation_outcome_comparison.csv",
+    "sha256": "2354461754e88c09c7d21e4758b045f1f371f15bf0f283792c8b26505b0666b1",
+    "run_ids": [
+      "local_hb_20261016"
+    ],
+    "measurement_origin": "author-side Windows: six historical replays plus four corrected scenes; C9/C13 reused unchanged",
+    "cloud_revision_operation": "read/check CSV; figures regenerated only; no physical simulation"
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "pages": 15,
+  "nonwhitespace_pdf_characters": 33238,
+  "official_initial_range": [
+    10000,
+    50000
+  ],
+  "table_count": 4,
+  "tables_byte_equal": true,
+  "equations_byte_equal": true,
+  "references": 11,
+  "section_ai_citation_count": 8,
+  "pdf_author": "",
+  "metadata": {
+    "format": "PDF 1.7",
+    "title": "Auditable Solar-Access Decision Support through Exact Blocker Reuse and Containment-Constrained Translation",
+    "author": "",
+    "subject": "Anonymous regular-paper manuscript for author review",
+    "keywords": "solar access, decision support, exhaustive screening, geometry validation",
+    "creator": "LaTeX",
+    "producer": "pdfTeX-1.40.26",
+    "creationDate": "",
+    "modDate": "",
+    "trapped": "",
+    "encryption": null
+  },
+  "identity_scan_hits": [],
+  "overfull_boxes": false,
+  "unresolved_citations_or_refs": false,
+  "warnings": [
+    "Package amsmath Warning: Unable to redefine math accent \\vec."
+  ],
+  "sha256": "a2aa8ccead323a61699d85453e30623ef8ca7c4a53b70bceda83b856fafa4110",
+  "visual_review": "All 15 final pages inspected via four rendered contact sheets; no clipping/overlap observed; all four tables, three plots, equations and 11-reference bibliography fit; page 15 includes disclosure/references.",
+  "scientific_experiments_rerun_in_cloud": false,
+  "figures_regenerated_in_cloud": true,
+  "author_approved": false,
+  "submitted": false,
+  "ai_disclosure_placement": "author/venue clarification still required; not certified",
+  "all_fonts_embedded": true
+}

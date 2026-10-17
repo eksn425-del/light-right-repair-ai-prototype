@@ -1,0 +1,343 @@
+{
+  "audit_time_utc": "2026-10-17T11:21:15Z",
+  "scope": "Read-only numerical consistency and provenance audit of current candidate against retained evidence; no manuscript edits, external sharing, new physical or solver experiments. Statistical recomputation uses frozen aggregate CSVs.",
+  "repo": "eksn425-del/light-right-repair-ai-prototype",
+  "ref": "8f9bb4c",
+  "candidate_source_sha256": "a7306c84ce5d9b5dee34b01ee4d1bd16c878c3b3f3cd7f2eee919a131652bceb",
+  "conclusion": "Core main numerical claims and three figures are consistent with retained outputs and source records. One abstract precision clarification identified. No data-fabrication or misconduct clearance can be inferred from this audit.",
+  "findings": [
+    {
+      "severity": "MINOR_PRECISION",
+      "location": "Abstract",
+      "original": "arising from one 9 m² grid-cell discrepancy",
+      "recommendation": "arising from one candidate-level difference of 9 m²",
+      "reason": "Aggregate net area difference does not identify a unique spatial cell discrepancy.",
+      "status": "RESOLVED_IN_CANDIDATE"
+    }
+  ],
+  "checks": [
+    {
+      "name": "Runtime table and Figure 1",
+      "status": "PASS_RECOMPUTED",
+      "details": [
+        {
+          "candidates": 5,
+          "repeats": 3,
+          "A_seconds": 109.7057993999988,
+          "B_seconds": 23.35865460000059,
+          "ratio": 4.696580401509769
+        },
+        {
+          "candidates": 20,
+          "repeats": 3,
+          "A_seconds": 373.81169129999944,
+          "B_seconds": 23.41790029999902,
+          "ratio": 15.96264765462406
+        },
+        {
+          "candidates": 60,
+          "repeats": 3,
+          "A_seconds": 1085.9834762000028,
+          "B_seconds": 23.974909299999126,
+          "ratio": 45.296666719821225
+        },
+        {
+          "candidates": 630,
+          "repeats": 3,
+          "A_seconds": 11608.183055399997,
+          "B_seconds": 24.037127599996893,
+          "ratio": 482.92721362437237
+        }
+      ],
+      "sources": [
+        "runs/local_ablation_20261016/ablation_runtime_records.csv",
+        "runs/local_ablation_20261016/ablation_summary.csv"
+      ]
+    },
+    {
+      "name": "12 formal equivalence comparisons",
+      "status": "PASS_RETAINED_CHECKS",
+      "details": {
+        "formal": 12,
+        "excluded_warmup_pilot": 2,
+        "all_equal": true,
+        "independent_raw_pointwise_recalculation": false
+      },
+      "sources": [
+        "runs/local_ablation_20261016/ablation_equivalence.csv"
+      ]
+    },
+    {
+      "name": "Agreement table, Figure 2, and sample counts",
+      "status": "PASS_RECOMPUTED",
+      "details": {
+        "statistics": [
+          {
+            "cohort": "curated23",
+            "metric": "A",
+            "n": 23,
+            "rho": 0.9992582518450251,
+            "mae": 0.391304347826087,
+            "exact": 22
+          },
+          {
+            "cohort": "curated23",
+            "metric": "H",
+            "n": 23,
+            "rho": 0.9915966386554622,
+            "mae": 0.0011774024361526744,
+            "exact": 3
+          },
+          {
+            "cohort": "curated23",
+            "metric": "score",
+            "n": 23,
+            "rho": 0.9990118577075099,
+            "mae": 0.006932699083861882,
+            "exact": 3
+          },
+          {
+            "cohort": "heldout20",
+            "metric": "A",
+            "n": 20,
+            "rho": 0.997668088547906,
+            "mae": 0.45,
+            "exact": 19
+          },
+          {
+            "cohort": "heldout20",
+            "metric": "H",
+            "n": 20,
+            "rho": 0.9996239894584121,
+            "mae": 0.00029542097488923,
+            "exact": 9
+          },
+          {
+            "cohort": "heldout20",
+            "metric": "score",
+            "n": 20,
+            "rho": 1.0,
+            "mae": 0.0021392706131078978,
+            "exact": 9
+          }
+        ],
+        "cohorts_disjoint": true,
+        "coverage_single_aggregate_difference": {
+          "pair": "C27,C36",
+          "screening_minus_hb_m2": -9
+        }
+      },
+      "sources": [
+        "runs/statistics_20261016/comparison_values.csv",
+        "runs/statistics_20261016/same_metric_agreement.csv"
+      ]
+    },
+    {
+      "name": "Top-five tie sensitivity",
+      "status": "PASS_RETAINED_TABLE",
+      "details": [
+        {
+          "tie_policy": "pair_key_natural_numeric",
+          "size_2p5d": "5",
+          "size_hb": "5",
+          "overlap": "5",
+          "recall_hb_set": "1"
+        },
+        {
+          "tie_policy": "pair_key_lexicographic",
+          "size_2p5d": "5",
+          "size_hb": "5",
+          "overlap": "5",
+          "recall_hb_set": "1"
+        },
+        {
+          "tie_policy": "source_row_order",
+          "size_2p5d": "5",
+          "size_hb": "5",
+          "overlap": "4",
+          "recall_hb_set": "0.80000000000000004"
+        },
+        {
+          "tie_policy": "include_boundary_ties",
+          "size_2p5d": "6",
+          "size_hb": "7",
+          "overlap": "6",
+          "recall_hb_set": "0.8571428571428571"
+        }
+      ],
+      "sources": [
+        "runs/statistics_20261016/topk_tie_audit.csv"
+      ]
+    },
+    {
+      "name": "Ten HB scenes and translation outcome",
+      "status": "PASS_RETAINED_CHECKS",
+      "details": {
+        "scenes": 10,
+        "historical": 6,
+        "corrected": 4,
+        "all_historical_matrices_exact": true,
+        "all_corrections_monotonic": true,
+        "C9_C13_correction_run": false,
+        "independent_solver_rerun": false
+      },
+      "sources": [
+        "runs/local_hb_20261016/hb_runtime_records.csv",
+        "runs/local_hb_20261016/design_translation_recheck.csv"
+      ]
+    },
+    {
+      "name": "C9/C24 and C13/C24 adverse-wall attribution",
+      "status": "PASS_RETAINED_RAY_RECORDS",
+      "details": {
+        "records": 8,
+        "per_scene": 4,
+        "blocking_building": "C24",
+        "wall": "C24_p1_upper_stepback_wall_6_3_9",
+        "all_baseline_visible_then_obstructed": true
+      },
+      "sources": [
+        "runs/local_hb_20261016/adverse_ray_explanation.csv"
+      ]
+    },
+    {
+      "name": "Volume table and Figure 3 joins",
+      "status": "PASS_SOURCE_JOIN",
+      "details": {
+        "volume_cells_matched_to_geometry_records": 15,
+        "nominal_cells": "5 checked against retained translation aggregate source",
+        "legacy_noncontained_scenes": 4,
+        "retained_pending_geometry_labels": "Historical stage labels are not final status; final recheck results provide later validation."
+      },
+      "sources": [
+        "runs/local_hb_20261016/translation_outcome_comparison.csv",
+        "runs/local_hb_20261016/geometry_recheck.csv",
+        "runs/local_hb_20261016/design_translation_recheck.csv"
+      ]
+    },
+    {
+      "name": "Frozen 630 ranking and numerical differences",
+      "status": "PASS_RETAINED_ROWS",
+      "details": {
+        "row_count": 630,
+        "all_ranks_equal": true,
+        "max_absolute_differences": {
+          "A_difference": 0.0,
+          "H_difference": 0.0,
+          "V_difference": 9.094947017729282e-13,
+          "N_difference": 0.0,
+          "score_difference": 4.440892098500626e-16
+        }
+      },
+      "sources": [
+        "runs/local_quality_20261016/canonical630_frozen_regression.csv"
+      ]
+    },
+    {
+      "name": "Retained release manifest checks",
+      "status": "PASS_HASHES",
+      "details": {
+        "matched_files": [
+          "icores_2027/runs/local_ablation_20261016/ablation_equivalence.csv",
+          "icores_2027/runs/local_hb_20261016/adverse_ray_explanation.csv",
+          "icores_2027/runs/local_hb_20261016/design_translation_recheck.csv",
+          "icores_2027/runs/local_hb_20261016/historical_scene_mapping.csv",
+          "icores_2027/runs/local_hb_20261016/geometry_recheck.csv",
+          "icores_2027/runs/local_inputs_20261016/local_input_validation.json",
+          "icores_2027/runs/local_protocol_20261016/actual_recipe_weather_summary.csv",
+          "icores_2027/runs/local_hb_20261016/hb_runtime_records.csv",
+          "icores_2027/runs/local_quality_20261016/canonical630_frozen_regression.csv",
+          "icores_2027/runs/local_hb_20261016/historical_input_hashes.csv",
+          "icores_2027/runs/local_hb_20261016/historical_solar_mapping.csv",
+          "icores_2027/runs/local_protocol_20261016/protocol_semantics.json"
+        ],
+        "count": 12,
+        "meaning": "Byte consistency only; neither execution authenticity nor chronology is proved by these hashes."
+      },
+      "sources": [
+        "runs/local_quality_20261016/PUBLIC_SAFE_FILE_MANIFEST.csv"
+      ]
+    },
+    {
+      "name": "Historical benchmark source identity",
+      "status": "PASS_RESOLVED",
+      "details": {
+        "source_commit": "1ea4e57a858a23702f3fa8950e9e4e0734bfb7c3",
+        "windows_crlf_sha256": "0b493f8df65c5f3ecde9cda27199cc9d53102aa94a6141dd18ad1f5c28f5b46c",
+        "current_source_diff": "Later compatibility amendment accepts multiple exact protocol byte hashes. Current HEAD script is not the measured historical byte sequence."
+      },
+      "sources": [
+        "scripts/matched_ablation.py",
+        "runs/local_ablation_20261016/ablation_environment.json"
+      ]
+    },
+    {
+      "name": "Frozen original 20 sample identity",
+      "status": "PASS_HASH_AND_SELECTION_REVIEW",
+      "details": {
+        "sha256": "ad4abb9b89a263edaecc2cb3553f7832ce0ccb460521ba218e0083e05bcb46b2",
+        "selection_source": "Uses screening score strata, volume, identifier diversity; archived HB table supplies exclusion pair identities only.",
+        "chronology_limit": "Archived metadata reports freezing at 2026-09-09T18:10:36Z. This audit does not independently authenticate that timestamp."
+      },
+      "sources": [
+        "project_archive_2026_10_16/research/experiments/baseline_20260909_clean/independent_validation/VALIDATION_SAMPLE_FROZEN.csv",
+        "research_reproducibility/scripts/freeze_independent_sample.py"
+      ]
+    },
+    {
+      "name": "Final figure provenance",
+      "status": "PASS_HASHES_AND_SCRIPT_REVIEW",
+      "details": {
+        "figures": [
+          {
+            "figure": "runtime_publication.pdf",
+            "sha256": "4534fe7656371474affe2b05c66378eb725e954da9ae2894e6f0b663e8846cb5",
+            "source_sha256": "381d238bc9c130857a86ea0e26c836c7ea930a6c9ccaee6e2a90dcfa4b1b4ec8"
+          },
+          {
+            "figure": "agreement_publication.pdf",
+            "sha256": "996e8d9a6343a8f48245672544ec0087a4a4ebec5933dee984a78ca0f0db9019",
+            "source_sha256": "9a08b8834b5b4eaa4679032e6a0900aff57ef46e92e3637d9776debfce97923d"
+          },
+          {
+            "figure": "translation_publication.pdf",
+            "sha256": "2d3fdb4e6c540334f2f9185c06efd90f1c3d2247bb24e02b04528e07eadfe6df",
+            "source_sha256": "2354461754e88c09c7d21e4758b045f1f371f15bf0f283792c8b26505b0666b1"
+          }
+        ],
+        "creation": "Matplotlib plots from recorded aggregate CSVs; no generative illustration or inferred measurement path in reviewed script."
+      },
+      "sources": [
+        "figures/PUBLICATION_FIGURE_MANIFEST.json",
+        "make_figures.py"
+      ]
+    },
+    {
+      "name": "Environment, sensor/time protocol, tests",
+      "status": "PASS_RETAINED_RECORDS",
+      "details": {
+        "environment": "Author-local Windows 11, Python 3.12.2; not cloud measurement",
+        "grid_points": 2031,
+        "solar_samples": 16,
+        "integration_hours": 8,
+        "analytic_blocker_storage_bytes": 2924640,
+        "integrated_test_log": "112 passed in 5.46s; log SHA256 agrees with test_execution.json",
+        "limits": "Private input geometry, receiver coordinates, per-cell solver matrices and solver logs were not reopened or rerun."
+      },
+      "sources": [
+        "runs/local_ablation_20261016/ablation_environment.json",
+        "runs/local_inputs_20261016/local_input_validation.json",
+        "runs/local_protocol_20261016/protocol_semantics.json",
+        "runs/local_quality_20261016/integrated_final.log",
+        "runs/local_quality_20261016/test_execution.json"
+      ]
+    }
+  ],
+  "limitations": [
+    "Run records, timestamps and hashes were inspected for internal consistency. They do not independently prove that execution occurred, rule out manipulated original data, or prove pre-execution freezing.",
+    "Restricted raw geometry, receiver coordinates, HB models, per-cell matrices and solver logs were not directly available in this review; no physical accuracy or as-built validation is certified.",
+    "The source of the historical normalization-source hash error remains undocumented; its retained amendment and unchanged numerical comparisons support the reported correction, not a retrospective explanation of its origin.",
+    "Bibliography additions were assigned to a separate primary-source reviewer; this audit checked claim scope and available bibliography records, not every original paper independently.",
+    "Authorship, rights, single-submission status, venue compliance and the accuracy/completeness of historical AI-use disclosure remain author responsibilities."
+  ]
+}
