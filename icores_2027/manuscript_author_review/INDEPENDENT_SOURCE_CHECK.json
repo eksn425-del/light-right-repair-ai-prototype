@@ -1,0 +1,237 @@
+{
+  "source_checks": [
+    {
+      "path": "icores_2027/paper_support/METHOD_SPEC.md",
+      "git_blob_sha": "0353f20cd81672efb4a2348fa88911028e62b5ec",
+      "newline_normalized_equal": false,
+      "content_equal_ignoring_line_endings_and_terminal_blank_lines": true
+    },
+    {
+      "path": "icores_2027/paper_support/PAPER_NUMBERS_ICORES.csv",
+      "git_blob_sha": "b327ee04a5f089ac05225e035ae046d88e479edd",
+      "newline_normalized_equal": false,
+      "content_equal_ignoring_line_endings_and_terminal_blank_lines": true
+    },
+    {
+      "path": "icores_2027/runs/local_ablation_20261016/ablation_summary.csv",
+      "git_blob_sha": "da0b37f8d42b1f12176024815a0129c62a257794",
+      "newline_normalized_equal": false,
+      "content_equal_ignoring_line_endings_and_terminal_blank_lines": true
+    },
+    {
+      "path": "icores_2027/runs/local_hb_20261016/translation_outcome_comparison.csv",
+      "git_blob_sha": "27b810929d0506d54116549ffc86a7dd4ee19fbb",
+      "newline_normalized_equal": false,
+      "content_equal_ignoring_line_endings_and_terminal_blank_lines": true
+    },
+    {
+      "path": "icores_2027/runs/statistics_20261016/same_metric_agreement.csv",
+      "git_blob_sha": "9ae9207f38a08b0a97a598526093604504b3d1f4",
+      "newline_normalized_equal": false,
+      "content_equal_ignoring_line_endings_and_terminal_blank_lines": true
+    }
+  ],
+  "pdf_sha256": "eb5a94fbe9e82d24a96babecb34b9af0c05803cfeba7129a8a6e9c6dc0dcbf22",
+  "pages": 15,
+  "nonspace_chars": 32804,
+  "independent_numeric_transcription_checks": [
+    {
+      "source": "A_median_end_to_end_seconds",
+      "subset": "5",
+      "value": "109.706",
+      "in_tex": true
+    },
+    {
+      "source": "B_median_end_to_end_seconds",
+      "subset": "5",
+      "value": "23.359",
+      "in_tex": true
+    },
+    {
+      "source": "measured_speedup",
+      "subset": "5",
+      "value": "4.697",
+      "in_tex": true
+    },
+    {
+      "source": "A_median_end_to_end_seconds",
+      "subset": "20",
+      "value": "373.812",
+      "in_tex": true
+    },
+    {
+      "source": "B_median_end_to_end_seconds",
+      "subset": "20",
+      "value": "23.418",
+      "in_tex": true
+    },
+    {
+      "source": "measured_speedup",
+      "subset": "20",
+      "value": "15.963",
+      "in_tex": true
+    },
+    {
+      "source": "A_median_end_to_end_seconds",
+      "subset": "60",
+      "value": "1,085.983",
+      "in_tex": true
+    },
+    {
+      "source": "B_median_end_to_end_seconds",
+      "subset": "60",
+      "value": "23.975",
+      "in_tex": true
+    },
+    {
+      "source": "measured_speedup",
+      "subset": "60",
+      "value": "45.297",
+      "in_tex": true
+    },
+    {
+      "source": "A_median_end_to_end_seconds",
+      "subset": "630",
+      "value": "11,608.183",
+      "in_tex": true
+    },
+    {
+      "source": "B_median_end_to_end_seconds",
+      "subset": "630",
+      "value": "24.037",
+      "in_tex": true
+    },
+    {
+      "source": "measured_speedup",
+      "subset": "630",
+      "value": "482.927",
+      "in_tex": true
+    },
+    {
+      "source": "target_rule_volume_m3",
+      "case": "C9,C24",
+      "value": "5,551.333",
+      "in_tex": true
+    },
+    {
+      "source": "rule_union_removed_m3",
+      "case": "C9,C24",
+      "value": "5,470.406",
+      "in_tex": true
+    },
+    {
+      "source": "legacy_union_removed_m3",
+      "case": "C9,C24",
+      "value": "5,259.615",
+      "in_tex": true
+    },
+    {
+      "source": "corrected_union_removed_m3",
+      "case": "C9,C24",
+      "value": "5,474.582",
+      "in_tex": true
+    },
+    {
+      "source": "target_rule_volume_m3",
+      "case": "C9,C15",
+      "value": "3,127.755",
+      "in_tex": true
+    },
+    {
+      "source": "rule_union_removed_m3",
+      "case": "C9,C15",
+      "value": "3,065.681",
+      "in_tex": true
+    },
+    {
+      "source": "legacy_union_removed_m3",
+      "case": "C9,C15",
+      "value": "2,927.693",
+      "in_tex": true
+    },
+    {
+      "source": "corrected_union_removed_m3",
+      "case": "C9,C15",
+      "value": "2,937.931",
+      "in_tex": true
+    },
+    {
+      "source": "target_rule_volume_m3",
+      "case": "C9,C13",
+      "value": "2,975.156",
+      "in_tex": true
+    },
+    {
+      "source": "rule_union_removed_m3",
+      "case": "C9,C13",
+      "value": "2,918.246",
+      "in_tex": true
+    },
+    {
+      "source": "legacy_union_removed_m3",
+      "case": "C9,C13",
+      "value": "2,785.422",
+      "in_tex": true
+    },
+    {
+      "source": "corrected_union_removed_m3",
+      "case": "C9,C13",
+      "value": "2,785.422",
+      "in_tex": true
+    },
+    {
+      "source": "target_rule_volume_m3",
+      "case": "C13,C24",
+      "value": "3,863.880",
+      "in_tex": true
+    },
+    {
+      "source": "rule_union_removed_m3",
+      "case": "C13,C24",
+      "value": "3,726.044",
+      "in_tex": true
+    },
+    {
+      "source": "legacy_union_removed_m3",
+      "case": "C13,C24",
+      "value": "3,534.257",
+      "in_tex": true
+    },
+    {
+      "source": "corrected_union_removed_m3",
+      "case": "C13,C24",
+      "value": "3,749.224",
+      "in_tex": true
+    },
+    {
+      "source": "target_rule_volume_m3",
+      "case": "C6,C33",
+      "value": "5,583.055",
+      "in_tex": true
+    },
+    {
+      "source": "rule_union_removed_m3",
+      "case": "C6,C33",
+      "value": "1,909.864",
+      "in_tex": true
+    },
+    {
+      "source": "legacy_union_removed_m3",
+      "case": "C6,C33",
+      "value": "2,553.509",
+      "in_tex": true
+    },
+    {
+      "source": "corrected_union_removed_m3",
+      "case": "C6,C33",
+      "value": "2,554.767",
+      "in_tex": true
+    }
+  ],
+  "pdf_retention_vs_original": {
+    "original_sha256": "09c362af34cba12b5752b724b8d698a5e20dd6d7847b891a920bdccbde358028",
+    "all_15_page_text_equal": true,
+    "all_15_page_render_pixels_equal": true,
+    "metadata_equal": true
+  }
+}

@@ -1,3 +1,9 @@
+# Submission handoff update (17 October 2026)
+
+Start with [SUBMISSION_HANDOFF.md](SUBMISSION_HANDOFF.md), [full readable English manuscript](FULL_MANUSCRIPT_READABLE.txt), and [15-page PDF](solar_access_decision_support.pdf). These are complete author-review materials; author approvals and final submission remain outstanding. The PDF is now stored natively in this private branch. ZIPs remain Library attachments and are not currently committed. See [independent source verification](INDEPENDENT_SOURCE_CHECK.json).
+
+The following records the earlier text-archive delivery; statements below about intentionally omitting binaries describe that historical snapshot. The update above supersedes those statements for the PDF only.
+
 # ICORES 2027 manuscript: author-review draft
 
 This additive archive contains the final 15-page manuscript source and review evidence prepared on 2026-10-16. Status: COMPLETE_AUTHOR_REVIEW_DRAFT. Author approval: false. Submitted: false. It is a private working archive, not an anonymous supplementary submission.
