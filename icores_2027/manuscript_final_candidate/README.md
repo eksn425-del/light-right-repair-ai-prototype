@@ -16,3 +16,5 @@ The dedicated identity-free AI disclosure plus section citations is a reasoned h
 Official second-stage Regular deadline: 22 October 2026 AoE, equivalent to 23 October 19:59:59 UTC+8. Recheck official dates and enter PRIMORIS through https://icores.scitevents.org/ImportantDates.aspx . Initial range is 10,000–50,000 non-whitespace characters, not a 12-page cap. See preserved `../manuscript_author_review/SUBMISSION_HANDOFF.md` for author form preparation and verified official entry.
 
 The earlier original manuscript and all 92 review files remain untouched in `../manuscript_author_review/`. The candidate is private review material; supporting audit files contain repository identifiers and must not be submitted as an anonymous supplement.
+
+Latest PDF includes the final bounded prose pass after review of version 710120. See FINAL_PASS_DIFF.patch and qa/FINAL_PASS_QA.json. Earlier QA/delivery records document the preceding candidate and are retained as historical checks; this pass introduces no new measurements.

@@ -1,0 +1,18 @@
+{
+  "baseline_commit": "710120e05d36c5d3abbc91ce9a42dbd06a9f3c1b",
+  "pages": 15,
+  "non_whitespace_characters": 32680,
+  "abstract_source_whitespace_words": 184,
+  "unchanged_environments": {
+    "table": true,
+    "equation": true,
+    "align": true
+  },
+  "embedded_raster_images": 0,
+  "anonymous_author_metadata": true,
+  "identity_strings_found": [],
+  "render_review": "All 15 pages inspected in four contact sheets; no clipping, overlap or orphan reference page.",
+  "new_experiments": false,
+  "new_statistics": false,
+  "pdf_sha256": "9bb6386f4c57f0b3b97a72093a854a14c65fea5dd79deae8d95ffd9c099c334f"
+}

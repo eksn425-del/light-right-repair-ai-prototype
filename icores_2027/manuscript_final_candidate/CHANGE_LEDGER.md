@@ -16,3 +16,7 @@ All four table environments and all equation/align environments are byte-identic
 
 ## Required author gates
 Authorship/order/affiliation/contact details; data/publication rights; originality/overlap with earlier manuscripts; conflicts; no simultaneous submission; complete earlier AI-use accounting; final AI disclosure placement; final scientific approval. The earlier full other-venue manuscript was not read in this bounded pass, so a full overlap check is not claimed. No certification of zero misconduct or guaranteed acceptance is possible.
+
+## Final bounded prose pass, 17 October 2026
+
+Baseline: 710120e05d36c5d3abbc91ce9a42dbd06a9f3c1b. Shortened abstract; scoped the measured ratio to two unindexed single-thread Python implementations; foregrounded same-primitive equivalence versus approximate cross-route agreement; clarified engineering rather than mathematical novelty, winter design-day interpretation, and restricted end-to-end reproducibility. Section citations now explicitly label writing assistance. Consolidated repetitive caveats without removing their substantive boundaries. No experiment, new statistic, sample, table, equation, figure or bibliography change. All 15 pages rebuilt and rendered. See FINAL_PASS_DIFF.patch and qa/FINAL_PASS_QA.json.
