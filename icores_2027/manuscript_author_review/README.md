@@ -1,3 +1,9 @@
+# Complete review contents now available (17 October 2026)
+
+See [WEB_REVIEW_START_HERE.md](WEB_REVIEW_START_HERE.md). All 92 files inside the private author-review archive are now expanded directly here, including every QA render, figure, evidence record and build log. The original single review ZIP container is absent, but none of its member files requires returning to chat. [Inventory](REVIEW_PACKAGE_INVENTORY.json) records every path and hash. Native manuscript PDF and anonymous source ZIP remain available.
+
+This completion update supersedes historical missing-binary statements below and in earlier handoff notes. Scientific/author-approval/submission status is unchanged.
+
 # Submission handoff update (17 October 2026)
 
 Start with [SUBMISSION_HANDOFF.md](SUBMISSION_HANDOFF.md), [full readable English manuscript](FULL_MANUSCRIPT_READABLE.txt), and [15-page PDF](solar_access_decision_support.pdf). These are complete author-review materials; author approvals and final submission remain outstanding. The PDF is now stored natively in this private branch. The [anonymous source ZIP](icores_2027_anonymous_source.zip) is now committed natively. The larger private author-review ZIP remains a Library attachment; its archive upload did not complete. Author-review findings, claim maps, provenance and QA reports are directly readable in this directory. See [independent source verification](INDEPENDENT_SOURCE_CHECK.json).
