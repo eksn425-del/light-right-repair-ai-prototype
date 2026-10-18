@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "project": "Light Equity - architect-first candidate screening",
+  "conference": "ICORES 2027",
+  "track": "Regular Paper / Applications / Decision Support Systems",
+  "prepared_on": "2026-10-18",
+  "repository": "eksn425-del/light-right-repair-ai-prototype",
+  "branch": "icores-2027-architect-first-cloud",
+  "base_commit": "df2f5ef28975c6a11376c1389f1773d215c9446c",
+  "cloud_execution_started": false,
+  "gates": {
+    "C0": "NOT_STARTED",
+    "C1": "NOT_STARTED",
+    "C2": "NOT_STARTED",
+    "C3": "NOT_STARTED",
+    "C4": "NOT_STARTED",
+    "C5": "NOT_STARTED",
+    "C6": "NOT_STARTED",
+    "C7": "NOT_STARTED",
+    "A1": "WAIT_AUTHOR"
+  },
+  "existing_prior_evidence_tag": "icores-2027-evidence-v1",
+  "new_cloud_site_HB_simulations": "NOT_RUN",
+  "new_cloud_candidate_aggregate_analysis": "NOT_RUN",
+  "manuscript_ready": false,
+  "submitted": false,
+  "author_approved": false,
+  "deadline_AoE": "2026-10-22",
+  "release_approved": false
+}
