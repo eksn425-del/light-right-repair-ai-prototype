@@ -1,0 +1,9 @@
+{
+  "status": "PROTOCOL_REVIEW_BEFORE_FREEZE",
+  "source_head": "52aee8ed48e30da0ffdaba5809e63d51a45b8b2d",
+  "branch": "icores-2027-solar-priority-final",
+  "cloud_only": true,
+  "no_new_physical_simulation": true,
+  "old_artifacts_preserved": true,
+  "updated_utc": "2026-10-18T17:13:09.724228+00:00"
+}

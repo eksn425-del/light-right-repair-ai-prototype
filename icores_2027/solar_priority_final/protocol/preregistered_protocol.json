@@ -1,0 +1,204 @@
+{
+  "version": "1.0",
+  "status": "PENDING_FREEZE_NO_NEW_OUTCOMES",
+  "source_commit": "52aee8ed48e30da0ffdaba5809e63d51a45b8b2d",
+  "branch": "icores-2027-solar-priority-final",
+  "written_utc": "2026-10-18T17:12:23.079994+00:00",
+  "question": "Under author-declared solar priority, can ten candidates preserve more preference-specific high-ranked opportunities than historical fixed weights without losing best-option coverage or unacceptable solar benefits? No benefit is assumed.",
+  "hypotheses": {
+    "H1": "Expected-Top10-recovery selection improves held-out Top10 recovery relative to historical10.",
+    "H2": "Protecting every observed training winner can preserve best-option coverage while improving recovery. Neither implies continuous-domain guarantees until independently audited.",
+    "H3": "Minimum A filters expose an explicit sunlight/intervention trade-off; positive or negative results are descriptive, not evidence for regulatory thresholds."
+  },
+  "inputs": [
+    {
+      "path": "icores_2027/runs/local_ablation_20261016/aggregate_B_m630_r1_run.csv",
+      "sha256": "b07225c7f0bf43348a867934a7b71fb097d30975dcef8f571a5ccc0f0ff96387",
+      "bytes": 557838
+    },
+    {
+      "path": "icores_2027/architect_first_cloud/analysis/top10_rule_candidates.csv",
+      "sha256": "9d9a764a2fe2b5dbaa59f341c9412f498ac939c38bd0058c90e569cab83edca2",
+      "bytes": 5542
+    },
+    {
+      "path": "icores_2027/architect_first_cloud/analysis/decision_evidence_matrix.csv",
+      "sha256": "1506d4da6ab9440635b01137d22f89c9a0803404858365893f7981d24977397a",
+      "bytes": 315850
+    },
+    {
+      "path": "icores_2027/architect_first_cloud/analysis/selection_policy_frozen.md",
+      "sha256": "2242c155489cec5d2d79258e41a3fd3d237752c2bd4ffce50494184dbdf833f4",
+      "bytes": 1420
+    },
+    {
+      "path": "research_reproducibility/configs/research.yaml",
+      "sha256": "08921b59e8c2115f20fc32e6f0973d99af0cb002dd9abbe883527bad6ef202e0",
+      "bytes": 934
+    },
+    {
+      "path": "research_reproducibility/results_public/weight_sensitivity_summary_v2.csv",
+      "sha256": "f9d4b4237006bd368a459386f0d65533d0124882cca7368e7529588984033b84",
+      "bytes": 870
+    },
+    {
+      "path": "icores_2027/preference_robust/results/shortlists_evidence.csv",
+      "sha256": "5c4736d3f48e2bc7644070d2e8f47ec66392b84fbeb36de55aa4f9d3782d8a6c",
+      "bytes": 18456
+    },
+    {
+      "path": "icores_2027/runs/statistics_20261016/comparison_values.csv",
+      "sha256": "9890c9ec0c751d24f4154008cf6e8fe680ef753e94ebf504a8702769dcadd16a",
+      "bytes": 17977
+    }
+  ],
+  "freeze_gate": "Protocol must be committed to GitHub before generating any new weight sample, rank, count under a new threshold, new selection or evaluation. Corrections preserve original artifacts; any methodological change after outcomes is exploratory.",
+  "metrics": {
+    "normalization": "Use existing normalization_bounds_json min/max bounds without clipping or refitting. A_norm=(A-Amin)/(Amax-Amin), H_norm likewise, benefit V=1-(V-Vmin)/(Vmax-Vmin). Zero-range normalized raw metric is 0.",
+    "three_criterion": "u_i(w)=wA*A_norm_i+wH*H_norm_i+wV*(1-V_norm_i)",
+    "historical": "0.45*A_norm+0.35*H_norm+0.15*(1-V_norm)+0.05*(1-N_norm); preserve archived Top10 exactly; do not relabel three-criterion values as historical scores.",
+    "effective_historical_weights": [
+      0.47368421052631576,
+      0.3684210526315789,
+      0.15789473684210525
+    ],
+    "correlation": "Full-universe Pearson r and Spearman rho(A,H), with average ranks for ties; descriptive, no independence-based p-value claim."
+  },
+  "universe": {
+    "size": 630,
+    "N": "Verify exactly zero; if not zero stop and request protocol amendment before outcomes. N retained as geometry/translation validity signal, not active ranking criterion.",
+    "normalization": "Exactly archived global min-max bounds; never refit after A filtering.",
+    "A_H_V": "A m2 low-sun area reduction, H hours mean duration gain, V m3 nominal additive intervention volume; lower V is not validated cost.",
+    "rank_ties": "Natural numeric pair order ascending after descending unrounded float64 utility; exact ties only."
+  },
+  "contexts": [
+    {
+      "name": "ordered",
+      "space": "ordered",
+      "A_min": null,
+      "eligible": "all630"
+    },
+    {
+      "name": "solar70",
+      "space": "solar70",
+      "A_min": null,
+      "eligible": "all630"
+    },
+    {
+      "name": "solar80",
+      "space": "solar80",
+      "A_min": null,
+      "eligible": "all630"
+    },
+    {
+      "name": "A90_solar70",
+      "space": "solar70",
+      "A_min": 90,
+      "eligible": "A>=90 m2"
+    },
+    {
+      "name": "A180_solar70",
+      "space": "solar70",
+      "A_min": 180,
+      "eligible": "A>=180 m2"
+    },
+    {
+      "name": "A270_solar70",
+      "space": "solar70",
+      "A_min": 270,
+      "eligible": "A>=270 m2"
+    }
+  ],
+  "priority_semantics": "Ordered means wA>=wH>=wV>=0, sum1. solar70/80 mean wA+wH>=.70/.80, nonnegative,sum1; they do not order A vs H and do not impose lexicographic sunlight priority. Weight restrictions alone do not guarantee a minimum physical A improvement. Layered thresholds90,180,270m2 are predeclared round multiples of the9m2 receiver cell, not codes/expert preferences. They span distinct improvement requirements without choosing outcomes. Primary layered scenarios use solar70 only; no post hoc best threshold.",
+  "sampling": {
+    "generator": "NumPy PCG64 float64",
+    "n_per_space_split": 20000,
+    "splits": [
+      "train",
+      "test",
+      "replication"
+    ],
+    "spaces": {
+      "ordered": {
+        "method": "sort IID Dirichlet(1,1,1) descending",
+        "seeds": {
+          "train": 2026101901,
+          "test": 2026101911,
+          "replication": 2026101921
+        }
+      },
+      "solar70": {
+        "method": "rejection IID Dirichlet(1,1,1) where wV<=.30; batches100000, keep first20000 in generated order",
+        "seeds": {
+          "train": 2026101902,
+          "test": 2026101912,
+          "replication": 2026101922
+        }
+      },
+      "solar80": {
+        "method": "rejection IID Dirichlet(1,1,1) where wV<=.20; batches100000, keep first20000 in generated order",
+        "seeds": {
+          "train": 2026101903,
+          "test": 2026101913,
+          "replication": 2026101923
+        }
+      }
+    },
+    "layer_pairing": "Reuse the exact solar70 arrays in all three layered contexts, for paired threshold comparisons. 180000 unique kept weights total. Uniform measures are scenario assumptions, not observed human probabilities."
+  },
+  "shortlists": {
+    "k": 10,
+    "primary_contexts": "First three contexts use unchanged archived historical10, previous robust10, AV10 and AHV10. New lists are trained separately for each context; do not choose a single best context after results.",
+    "layered_baselines": "For each A-filtered universe, historical10_layer is best historical-ranked10 eligible; robust10_layer retains eligible previous robust10 in original insertion order then fills by historical rank; AV10_layer and AHV10_layer compute fronts within eligible universe then truncate by historical rank, padding historical-ranked nonfront if needed. Explicitly label these adaptations and also report each original fixed list number violating A threshold. Original four lists are never silently relabeled as filtered. If eligible<10 report infeasible and do not run same-k experiment for that context.",
+    "coverage10": {
+      "objective": "Maximize Q_train(S)=mean_m |S intersect T10(w_m)|/10 with |S|=10 over eligible candidates. Q is modular: choose ten largest training Top10 counts. This is exact empirical maximization for this objective, not general new algorithm.",
+      "tie": "Descending Top10 count, then descending training winner count, then ascending training mean rank, then natural numeric pair ID."
+    },
+    "protected_coverage10": {
+      "objective": "Same Q_train objective subject to containing all distinct deterministic rank1 IDs observed in training. Include required winners, then fill remaining slots in coverage10 tie order. Exact empirical constrained optimum when at most10 required winners.",
+      "infeasible": "If more than10 distinct training winners, mark method infeasible; no fallback or tuning. Never use test/replication/grid/LP winners to amend selection.",
+      "interpretation": "Protects sampled training winner identities only; no continuous or unseen guarantee. Compare independent continuous fixed-set audit."
+    },
+    "no_pooling": "No pooled cross-space optimized primary set; each scenario gives an explicitly contextual list."
+  },
+  "evaluation": {
+    "same_universe": "Each context ranks and computes regret against its eligible universe, same10slots for all methods. Layered results also report opportunity loss against all630 to expose benefit discarded by A filter; never directly compare conditional regrets as same universe. Explicit loss decomposition: F(w)=max_all630 u−max_eligible u; R_cond(S,w)=max_eligible u−max_S u; R_total(S,w)=F(w)+R_cond(S,w). Report all three, not just conditional regret.",
+    "metrics": [
+      "deterministic rank1 coverage",
+      "utility winner coverage regret<=1e-12",
+      "regret mean,median,p95,observed maximum",
+      "Top10 mean recovery |intersection|/10 and anyTop10 coverage",
+      "best utility mean",
+      "list A,H,V min,q25,median,mean,q75,max and all10 raw values",
+      "scenario-selected best-list candidate A,H,V distribution",
+      "list size, uniqueIDs",
+      "HB rule-review count, missing IDs; translated geometry review count/status separately"
+    ],
+    "paired_precision": "For new methods minus historical baseline, paired per-scenario recovery and regret differences with mean, sampleSE(ddof1)/sqrt(n), normal95%MC interval on test and independent replication separately. These are conditional integration errors, not generalization across sites or human preference uncertainty.",
+    "stability": "Split the 20000 training draws into10 consecutive disjoint blocks of2000, independently reselect both new methods on each block using identical definitions; report block/full Jaccard and pairwise Jaccard, membership frequency, infeasibility. Do not reselect on test/replication. Also report scenarioTop10 Jaccard versus historical list and test/replication acceptability differences.",
+    "stress": "Resolution100 simplex grid5151 weights restricted by context space. Evaluate frozen sets only; not used for selection; archive sample rank memberships and all weights.",
+    "continuous": "For each feasible fixed set and context, maximize t for each eligible i subject to t<=w dot(x_i-x_s) all s, sumw1,w>=0, plus ordered or wV<=.3/.2. Take max over eligible i. scipy linprog highs primal/dual1e-9, all status/witness/residuals retained; direct own-objective and global maximizer checks1e-8; maximum must bound grid/sample. Deduplicate identical set/space/universe for computing, retain every label. No claim of global set optimality.",
+    "report_all": "All six contexts and all feasible methods, all failures/negative outcomes, no outcome-selected main threshold."
+  },
+  "claim_rules": {
+    "practical_recovery_threshold": 0.02,
+    "sunlight_guard": "For a particular context, list mean A and mean H must each be at least95% of that context historical10 baseline to call replacement supported; no lower minimum A requirement beyond explicit layeredthreshold. Also report full distributions and tradeoffs. 5% is analyst-declared decision guard, not expert standard.",
+    "supported_replacement": "Within a context, protected_coverage10 must improve test AND replication Top10 recovery by >=.02 absolute, paired95%MC lower bound>0 each; utility winner coverage not lower than baseline by more than1e-4; mean regret not greater by more than1e-8; continuous worst regret not greater by more than1e-8; sunlight_guard satisfied. All conditions necessary. Every holdout-dependent winner, mean-regret and solar-benefit guard must hold separately in BOTH test and replication.",
+    "partial_result": "If recovery improves but any guard fails, call explicit tradeoff, not superior replacement. If gain<.02 call negligible under declared threshold, not discovery. If no context passes, retain best-supported earlier selection and report sensitivity/failure without forcing algorithm innovation.",
+    "aggregate_claim": "No universal superiority unless every feasible context passes. Improvements isolated to a context must be named. Conditions cannot be relaxed after outcomes.",
+    "interpretation": "These are prospectively declared descriptive authoring/decision criteria, not familywise statistical discovery claims across contexts or methods."
+  },
+  "provenance": "New computation = decision analysis on archived performances, NOT new HB/Radiance. Preserve frozen23 and20 samples, original timing and geometry results. Rule candidate/HBreview/translateddesign/construction are separate. No physical or legal approval.",
+  "deliverables": [
+    "protocol freeze commit and hashes",
+    "full reproducible code/environment/runlog",
+    "all630 inputs with SHA and evidence status",
+    "all sampled weights and rankTop10 memberships",
+    "all candidate acceptability and ranks",
+    "all shortlists and stepwise counts",
+    "scenario-level metrics CSV.gz bycontext/split/method",
+    "continuousLP rows/status/witness",
+    "stability,paired comparisons,threshold attrition",
+    "results+failure report to guide manuscript rather than assume innovation"
+  ]
+}

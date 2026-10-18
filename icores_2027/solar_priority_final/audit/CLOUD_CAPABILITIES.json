@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-18T17:11:20.618366+00:00",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "python": "3.12.14",
+  "tools": {
+    "python": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "pdflatex": "/usr/bin/pdflatex",
+    "bibtex": "/usr/bin/bibtex",
+    "pdftoppm": "/opt/codex/runtimes/codex-primary-runtime/dependencies/bin/override/pdftoppm",
+    "pdftotext": "/usr/bin/pdftotext",
+    "ffmpeg": "/usr/bin/ffmpeg"
+  },
+  "source_head_verified": "52aee8ed48e30da0ffdaba5809e63d51a45b8b2d",
+  "cloud_only": true,
+  "new_physical_simulations": false
+}
