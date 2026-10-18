@@ -16,7 +16,7 @@
     "C4": "PASS",
     "C5": "PASS",
     "C6": "PASS",
-    "C7": "RUNNING",
+    "C7": "PASS",
     "A1": "WAIT_AUTHOR"
   },
   "existing_prior_evidence_tag": "icores-2027-evidence-v1",
@@ -27,5 +27,9 @@
   "author_approved": false,
   "deadline_AoE": "2026-10-22",
   "release_approved": false,
-  "input_head": "5dc805a2962f7f21836b4a4f64a5db3e483958e9"
+  "input_head": "5dc805a2962f7f21836b4a4f64a5db3e483958e9",
+  "delivery_content_commit": "e60842a32bd87b4627a50e27b695d65ccaf7ec33",
+  "remote_artifact_hashes_verified": 105,
+  "repository_private_verified": true,
+  "execution_stopped_for_author_review": true
 }

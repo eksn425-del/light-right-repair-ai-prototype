@@ -1,5 +1,5 @@
 {
-  "STATUS": "COMPLETE_AUTHOR_REVIEW_PACKAGE_AWAITING_FINAL_REMOTE_VERIFICATION",
+  "STATUS": "COMPLETE_AUTHOR_REVIEW_PACKAGE_REMOTE_VERIFIED_STOPPED",
   "repo": "eksn425-del/light-right-repair-ai-prototype",
   "branch": "icores-2027-architect-first-cloud",
   "source_input_head": "5dc805a2962f7f21836b4a4f64a5db3e483958e9",
@@ -24,5 +24,12 @@
   "automated_output_checks_passed": 55,
   "independent_scientific_and_visual_review": "PASS",
   "earliest_submit_ready_date": "Not fixed: complete author/rights/originality/competing-interest and AI-placement confirmations first. Package prepared 2026-10-18; deadline 2026-10-22 AoE remains author responsibility.",
-  "stop_condition": "Stop after delivery and wait for user plus web ChatGPT review; no submission or further experiments."
+  "stop_condition": "Stop after delivery and wait for user plus web ChatGPT review; no submission or further experiments.",
+  "delivery_content_commit": "e60842a32bd87b4627a50e27b695d65ccaf7ec33",
+  "remote_branch_verified_at_utc": "2026-10-18T11:21:25Z",
+  "remote_artifact_hashes_verified": 105,
+  "repository_visibility": "private",
+  "repository_visibility_verified_at_utc": "2026-10-18T11:02:14Z",
+  "C7": "PASS",
+  "final_status_commit_resolution": "This final status is recorded in a subsequent metadata-only commit; use the verified final commit supplied in the handoff message."
 }
