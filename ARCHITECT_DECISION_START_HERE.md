@@ -21,7 +21,7 @@
 - 论文“面向建筑师筛选候选”中期主线：`project_archive_2026_10_16/readable_manuscripts/history/route_b_june/光权修复论文_EI会议_中文学术定稿版_投稿前小修.md`。
 - 科学实验冻结：`icores-2027-evidence-v1` (evidence SHA `af486946b210b12853b83f9dbdaf708255754d56`)；不得覆盖。
 - 本分支起点 `df2f5ef28975c6a11376c1389f1773d215c9446c`，之前的ICORES v3论文可为写作素材，但必须先核对与本分支源文件版本/用户提供的v3 PDF是否相同。
-- 630-candidate derived data: `icores_2027/runs/local_ablation_20261016/aggregate_B_m630_r1_run.csv`（与另外两次全量A/B记录、原2016?否：2026冻结论文 ledger交叉核对）。**不要把文件年份误写。**
+- 630-candidate derived data: `icores_2027/runs/local_ablation_20261016/aggregate_B_m630_r1_run.csv`（与另外两次全量A/B记录及2026年冻结论文数字台账交叉核对）。**不要把文件年份误写。**
 - 当前仅要求云端工作；不得访问/要求远程控制用户Windows、E盘、USB或本地Codex。
 
 ## 工程目录
