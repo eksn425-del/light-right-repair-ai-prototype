@@ -1,0 +1,77 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{https://doi.org/#1}
+
+\bibitem{BoutilierEtAl2006}
+Boutilier, C., Patrascu, R., Poupart, P., Schuurmans, D.: Constraint-based
+  optimization and utility elicitation using the minimax decision criterion.
+  Artificial Intelligence  \textbf{170}(8--9),  686--713 (2006).
+  \doi{10.1016/j.artint.2006.02.003}
+
+\bibitem{compagnon2004urban}
+Compagnon, R.: Solar and daylight availability in the urban fabric. Energy and
+  Buildings  \textbf{36}(4),  321--328 (2004).
+  \doi{10.1016/j.enbuild.2004.01.009}
+
+\bibitem{czachura2022metrics}
+Czachura, A., Kanters, J., Gentile, N., Wall, M.: Solar performance metrics in
+  urban planning: A review and taxonomy. Buildings  \textbf{12}(4), ~393
+  (2022). \doi{10.3390/buildings12040393}
+
+\bibitem{GrecoMousseauSlowinski2008}
+Greco, S., Mousseau, V., S{\l}owi{\'n}ski, R.: Ordinal regression revisited:
+  Multiple criteria ranking using a set of additive value functions. European
+  Journal of Operational Research  \textbf{191}(2),  415--435 (2008).
+  \doi{10.1016/j.ejor.2007.08.013}
+
+\bibitem{holmgren2018pvlib}
+Holmgren, W.F., Hansen, C.W., Mikofski, M.A.: pvlib python: a python package
+  for modeling solar energy systems. Journal of Open Source Software
+  \textbf{3}(29), ~884 (2018). \doi{10.21105/joss.00884}
+
+\bibitem{LahdelmaSalminen2001}
+Lahdelma, R., Salminen, P.: {SMAA-2}: Stochastic multicriteria acceptability
+  analysis for group decision making. Operations Research  \textbf{49}(3),
+  444--454 (2001). \doi{10.1287/opre.49.3.444.11220}
+
+\bibitem{NanongkaiEtAl2010}
+Nanongkai, D., {Das Sarma}, A., Lall, A., Lipton, R.J., Xu, J.:
+  Regret-minimizing representative databases. Proceedings of the VLDB Endowment
+   \textbf{3},  1114--1124 (2010). \doi{10.14778/1920841.1920980}
+
+\bibitem{NguyenReiterRigo2014}
+Nguyen, A.T., Reiter, S., Rigo, P.: A review on simulation-based optimization
+  methods applied to building performance analysis. Applied Energy
+  \textbf{113},  1043--1058 (2014). \doi{10.1016/j.apenergy.2013.08.061}
+
+\bibitem{openai2026}
+{OpenAI}: {OpenAI} assistant. \url{https://openai.com/} (2026), {AI}-assisted
+  drafting and editing tool; exact underlying model/version not recorded. Used
+  October 2026
+
+\bibitem{roudsari2013ladybug}
+Sadeghipour~Roudsari, M., Pak, M.: {Ladybug}: A parametric environmental plugin
+  for {Grasshopper} to help designers create an environmentally-conscious
+  design. In: Proceedings of BS2013: 13th Conference of International Building
+  Performance Simulation Association. pp. 3128--3135 (2013).
+  \doi{10.26868/25222708.2013.2499}
+
+\bibitem{TervonenLahdelma2007}
+Tervonen, T., Lahdelma, R.: Implementing stochastic multicriteria acceptability
+  analysis. European Journal of Operational Research  \textbf{178}(2),
+  500--513 (2007). \doi{10.1016/j.ejor.2005.12.037}
+
+\bibitem{WangJanssenJi2024}
+Wang, L., Janssen, P., Ji, G.: Optimization-based design exploration of
+  building massing typologies---{EvoMass} and a typology-oriented computational
+  design optimization method for early-stage performance-based building massing
+  design. Frontiers of Architectural Research  \textbf{13}(6),  1400--1422
+  (2024). \doi{10.1016/j.foar.2024.06.001}
+
+\bibitem{ward1994radiance}
+Ward, G.J.: The {RADIANCE} lighting simulation and rendering system. In:
+  Proceedings of the 21st Annual Conference on Computer Graphics and
+  Interactive Techniques. pp. 459--472. ACM (1994). \doi{10.1145/192161.192286}
+
+\end{thebibliography}

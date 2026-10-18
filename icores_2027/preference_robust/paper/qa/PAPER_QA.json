@@ -1,0 +1,23 @@
+{
+  "pages": 21,
+  "nonwhite_characters_pypdf": 45095,
+  "nonwhite_characters_poppler": 44968,
+  "fonts": 18,
+  "all_fonts_embedded": true,
+  "overfull_boxes": 0,
+  "undefined_references_or_citations": 0,
+  "clean_rebuild_byte_identical": true,
+  "author_metadata": "empty",
+  "equations": 21,
+  "tables": 7,
+  "figures": 2,
+  "references": 13,
+  "visual_review": "All pages 1-21 rendered at 1000px and reviewed in four labelled six-page montages; no clipped text, overlap, missing glyphs, table overflow or figure defects observed.",
+  "sha256": {
+    "manuscript.tex": "caf2da25e3373aeb680a20e7082034694703a6e55ce591d8623c5367528c44ff",
+    "manuscript_expanded_for_translation.tex": "92b9346bdbddc7d6bc6ce617819f35f9c87716d692f47713546952ebbb4e3ca1",
+    "anonymous_regular_submission.pdf": "d5d1730c6463ec9301dbf524dcf995ce047bfdce00e9c43827ca827b6fe3813a",
+    "llncs.cls": "04ec99046ad9867f6cd54ffd1ef8c47c767b327d1baec77536db0528cd492fa2",
+    "splncs04.bst": "f36c3a17e5304a692706359aafa9de709395a085e579eb47c027095aeaa35174"
+  }
+}

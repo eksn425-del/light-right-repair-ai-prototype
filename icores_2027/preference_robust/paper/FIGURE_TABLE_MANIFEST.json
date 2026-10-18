@@ -1,0 +1,16 @@
+{
+  "tables": {
+    "bounds": "results/metric_audit.json",
+    "ranks": "results/all630_rank_acceptability.csv; test split, six explicitly selected illustrative candidates",
+    "evaluation": "results/shortlist_evaluation.csv; test split, four k10 sets",
+    "audit": "results/continuous_worst_regret.csv",
+    "historical": "results/shortlists_evidence.csv; historical10",
+    "robust": "results/shortlists_evidence.csv; robust10",
+    "agreement": "architect_first_cloud/analysis/same_metric_recomputed.csv"
+  },
+  "figures": {
+    "1": "../figures/continuous_regret.pdf generated from results/continuous_worst_regret.csv; see ../figures/PROVENANCE.json",
+    "2": "Editable workflow schematic in manuscript.tex; not observed workflow performance or generated site imagery"
+  },
+  "rounding": "CSV precision retained in calculation; paper tables intentionally rounded; regenerate with generate_tables.py."
+}
