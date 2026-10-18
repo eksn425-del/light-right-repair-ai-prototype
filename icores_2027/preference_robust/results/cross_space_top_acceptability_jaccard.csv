@@ -1,0 +1,10 @@
+split,space_a,space_b,top_acceptability_top10_jaccard
+train,full,ordered,0.6666666666666666
+train,full,local,0.8181818181818182
+train,ordered,local,0.8181818181818182
+test,full,ordered,0.6666666666666666
+test,full,local,0.8181818181818182
+test,ordered,local,0.8181818181818182
+replication,full,ordered,0.6666666666666666
+replication,full,local,0.8181818181818182
+replication,ordered,local,0.8181818181818182

@@ -1,0 +1,22 @@
+{
+  "all_frozen_input_hashes_match": true,
+  "all_180000_weights_recreated_exactly": true,
+  "AV_front_size": 12,
+  "AHV_front_size": 41,
+  "all_rank_histogram_margins_and_statistics_verified": true,
+  "independent_python_sort_rank_samples_verified": 549,
+  "all_shortlist_HB_and_translation_status_joins_verified": true,
+  "greedy_steps_1_and_10_verified_exhaustively": true,
+  "all_LP_witness_objectives_and_space_constraints_verified": 11340,
+  "maximum_independent_LP_objective_error": 4.579669976578771e-16,
+  "scenario_metrics_independently_verified_samples": 3294,
+  "all_summary_regret_coverage_and_paired_differences_verified": true,
+  "all_cross_space_changes_including_signed_worst_rank_verified": 5670,
+  "final_run_identity": {
+    "manifest_sha256": "14e2c4d69a771010722f3d42abec33498c0982e16dcfc76f357bb2218d2df690",
+    "analysis_script_sha256": "bad6fc270e5f34d0de9b59bbbc6fc9917ba01689f2c8b5ea8fe182bde5571e3f",
+    "protocol_sha256": "e154588c9f3d22c98c9fb632c459c129d50a83ef5108aabd2319289b8b30ebc0",
+    "freeze_commit": "cff3e81eebf93a16df6da8a21fe735c1554a5a8f",
+    "manifest_output_hashes_verified": 114
+  }
+}

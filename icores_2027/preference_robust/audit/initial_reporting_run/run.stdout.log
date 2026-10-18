@@ -1,0 +1,75 @@
+Metric audit: {"pearson_A_H": 0.6409782174691201, "spearman_A_H": 0.7683599468346374, "N_all_zero": true, "N_unique": [0], "n": 630, "normalization_bounds": {"A": [0.0, 396.0], "H": [0.0, 0.0635155096011816], "N": [0.0, 0.0], "V": [387.3824354304028, 10891.474417736685]}}
+Greedy {'k': 1, 'pair': 'C9,C12', 'max_train_regret': 0.3415771120841671, 'mean_train_regret': 0.12521814744411025}
+Greedy {'k': 2, 'pair': 'C12,C15', 'max_train_regret': 0.233528025783303, 'mean_train_regret': 0.11724469131219979}
+Greedy {'k': 3, 'pair': 'C12,C24', 'max_train_regret': 0.2269530792636032, 'mean_train_regret': 0.1075845467400939}
+Greedy {'k': 4, 'pair': 'C9,C24', 'max_train_regret': 0.19626596487257764, 'mean_train_regret': 0.0047742299508335955}
+Greedy {'k': 5, 'pair': 'C15,C25', 'max_train_regret': 0.09619050194415624, 'mean_train_regret': 0.0026764307726967643}
+Greedy {'k': 6, 'pair': 'C9,C15', 'max_train_regret': 0.05317480880112602, 'mean_train_regret': 0.0005355484058654739}
+Greedy {'k': 7, 'pair': 'C25,C29', 'max_train_regret': 0.020510316270599294, 'mean_train_regret': 0.0003376395226598002}
+Greedy {'k': 8, 'pair': 'C13,C15', 'max_train_regret': 0.01863210903044954, 'mean_train_regret': 0.00016074447461415637}
+Greedy {'k': 9, 'pair': 'C24,C35', 'max_train_regret': 0.01180886219020838, 'mean_train_regret': 3.20229732523778e-05}
+Greedy {'k': 10, 'pair': 'C15,C24', 'max_train_regret': 0.007268886627267879, 'mean_train_regret': 1.7340501035516112e-05}
+Sets: {"historical10": ["C9,C24", "C9,C15", "C9,C12", "C15,C24", "C9,C35", "C9,C13", "C12,C24", "C9,C21", "C9,C26", "C9,C27"], "AV10": ["C9,C24", "C9,C15", "C9,C13", "C15,C26", "C9,C29", "C9,C25", "C13,C15", "C15,C28", "C15,C29", "C13,C29"], "AHV10": ["C9,C24", "C9,C15", "C9,C12", "C15,C24", "C9,C35", "C9,C13", "C12,C24", "C9,C26", "C24,C35", "C13,C24"], "robust10": ["C9,C12", "C12,C15", "C12,C24", "C9,C24", "C15,C25", "C9,C15", "C25,C29", "C13,C15", "C24,C35", "C15,C24"], "AV_full": ["C9,C13", "C9,C15", "C9,C24", "C9,C25", "C9,C29", "C13,C15", "C13,C25", "C13,C29", "C15,C26", "C15,C28", "C15,C29", "C25,C29"], "AHV_full": ["C9,C12", "C9,C13", "C9,C15", "C9,C17", "C9,C22", "C9,C24", "C9,C25", "C9,C26", "C9,C29", "C9,C35", "C12,C13", "C12,C15", "C12,C22", "C12,C24", "C12,C26", "C12,C35", "C13,C15", "C13,C20", "C13,C22", "C13,C24", "C13,C25", "C13,C26", "C13,C29", "C15,C17", "C15,C21", "C15,C22", "C15,C24", "C15,C25", "C15,C26", "C15,C28", "C15,C29", "C15,C35", "C17,C25", "C17,C29", "C22,C25", "C22,C29", "C24,C26", "C24,C27", "C24,C35", "C25,C29", "C25,C31"]}
+Evaluated full/train
+Evaluated full/test
+Evaluated full/replication
+Evaluated ordered/train
+Evaluated ordered/test
+Evaluated ordered/replication
+Evaluated local/train
+Evaluated local/test
+Evaluated local/replication
+/workspace/scratch/8f97152a4ac6/preference-robust/repo/icores_2027/preference_robust/analysis/run_analysis.py:130: RuntimeWarning: overflow encountered in scalar subtract
+  for p in ids:cross.append({'split':split,'space_a':a,'space_b':b,'pair':p,**{v+'_delta_b_minus_a':bb.loc[p,v]-aa.loc[p,v] for v in ['winner_acceptability','top10_acceptability','average_rank','worst_observed_rank']}})
+Starting fixed-set continuous LP audit
+LP {'space': 'full', 'set': 'historical10', 'all_630_lps_success': True, 'continuous_worst_regret': np.float64(0.246358581570572), 'raw_objective': np.float64(0.246358581570572), 'wA': np.float64(0.0), 'wH': np.float64(0.0), 'wV': np.float64(1.0), 'witness_candidate': 'C25,C29', 'witness_regret': 0.246358581570572, 'sample_max_including_train': np.float64(0.24246459619622995), 'grid_max': 0.246358581570572}
+LP {'space': 'full', 'set': 'AV10', 'all_630_lps_success': True, 'continuous_worst_regret': np.float64(0.23255813953488313), 'raw_objective': np.float64(0.23255813953488313), 'wA': np.float64(0.0), 'wH': np.float64(1.0), 'wV': np.float64(0.0), 'witness_candidate': 'C24,C35', 'witness_regret': 0.23255813953488313, 'sample_max_including_train': np.float64(0.23187090773432828), 'grid_max': 0.23255813953488313}
+LP {'space': 'full', 'set': 'AHV10', 'all_630_lps_success': True, 'continuous_worst_regret': np.float64(0.246358581570572), 'raw_objective': np.float64(0.246358581570572), 'wA': np.float64(0.0), 'wH': np.float64(0.0), 'wV': np.float64(1.0), 'witness_candidate': 'C25,C29', 'witness_regret': 0.246358581570572, 'sample_max_including_train': np.float64(0.24246459619622995), 'grid_max': 0.246358581570572}
+LP {'space': 'full', 'set': 'robust10', 'all_630_lps_success': True, 'continuous_worst_regret': np.float64(0.007655659271333039), 'raw_objective': np.float64(0.007655659271333039), 'wA': np.float64(0.21183660917777153), 'wH': np.float64(0.0), 'wV': np.float64(0.7881633908222285), 'witness_candidate': 'C13,C29', 'witness_regret': 0.0076556592713330485, 'sample_max_including_train': np.float64(0.007612872836587403), 'grid_max': 0.007576365892115633}
+LP {'space': 'full', 'set': 'AV_full', 'all_630_lps_success': True, 'continuous_worst_regret': np.float64(0.23255813953488313), 'raw_objective': np.float64(0.23255813953488313), 'wA': np.float64(0.0), 'wH': np.float64(1.0), 'wV': np.float64(0.0), 'witness_candidate': 'C24,C35', 'witness_regret': 0.23255813953488313, 'sample_max_including_train': np.float64(0.23187090773432828), 'grid_max': 0.23255813953488313}
+LP {'space': 'full', 'set': 'AHV_full', 'all_630_lps_success': True, 'continuous_worst_regret': 0, 'raw_objective': np.float64(-0.0), 'wA': np.float64(0.17366447041131214), 'wH': np.float64(0.24253418287913742), 'wV': np.float64(0.5838013467095504), 'witness_candidate': 'C9,C15', 'witness_regret': 0.0, 'sample_max_including_train': np.float64(0.0), 'grid_max': 0.0}
+LP {'space': 'ordered', 'set': 'historical10', 'all_630_lps_success': True, 'continuous_worst_regret': 0, 'raw_objective': np.float64(-0.0), 'wA': np.float64(1.0), 'wH': np.float64(0.0), 'wV': np.float64(0.0), 'witness_candidate': 'C9,C24', 'witness_regret': 0.0, 'sample_max_including_train': np.float64(0.0), 'grid_max': 0.0}
+LP {'space': 'ordered', 'set': 'AV10', 'all_630_lps_success': True, 'continuous_worst_regret': 0, 'raw_objective': np.float64(-0.0), 'wA': np.float64(1.0), 'wH': np.float64(0.0), 'wV': np.float64(0.0), 'witness_candidate': 'C9,C24', 'witness_regret': 0.0, 'sample_max_including_train': np.float64(0.0), 'grid_max': 0.0}
+LP {'space': 'ordered', 'set': 'AHV10', 'all_630_lps_success': True, 'continuous_worst_regret': 0, 'raw_objective': np.float64(-0.0), 'wA': np.float64(1.0), 'wH': np.float64(0.0), 'wV': np.float64(0.0), 'witness_candidate': 'C9,C24', 'witness_regret': 0.0, 'sample_max_including_train': np.float64(0.0), 'grid_max': 0.0}
+LP {'space': 'ordered', 'set': 'robust10', 'all_630_lps_success': True, 'continuous_worst_regret': 0, 'raw_objective': np.float64(-0.0), 'wA': np.float64(1.0), 'wH': np.float64(0.0), 'wV': np.float64(0.0), 'witness_candidate': 'C9,C24', 'witness_regret': 0.0, 'sample_max_including_train': np.float64(0.0), 'grid_max': 0.0}
+LP {'space': 'ordered', 'set': 'AV_full', 'all_630_lps_success': True, 'continuous_worst_regret': 0, 'raw_objective': np.float64(-0.0), 'wA': np.float64(1.0), 'wH': np.float64(0.0), 'wV': np.float64(0.0), 'witness_candidate': 'C9,C24', 'witness_regret': 0.0, 'sample_max_including_train': np.float64(0.0), 'grid_max': 0.0}
+LP {'space': 'ordered', 'set': 'AHV_full', 'all_630_lps_success': True, 'continuous_worst_regret': 0, 'raw_objective': np.float64(-0.0), 'wA': np.float64(1.0), 'wH': np.float64(0.0), 'wV': np.float64(0.0), 'witness_candidate': 'C9,C24', 'witness_regret': 0.0, 'sample_max_including_train': np.float64(0.0), 'grid_max': 0.0}
+LP {'space': 'local', 'set': 'historical10', 'all_630_lps_success': True, 'continuous_worst_regret': 0, 'raw_objective': np.float64(-0.0), 'wA': np.float64(0.37368421052631573), 'wH': np.float64(0.368421052631579), 'wV': np.float64(0.2578947368421053), 'witness_candidate': 'C9,C24', 'witness_regret': 0.0, 'sample_max_including_train': np.float64(0.0), 'grid_max': 0.0}
+LP {'space': 'local', 'set': 'AV10', 'all_630_lps_success': True, 'continuous_worst_regret': 0, 'raw_objective': np.float64(-0.0), 'wA': np.float64(0.37368421052631573), 'wH': np.float64(0.368421052631579), 'wV': np.float64(0.2578947368421053), 'witness_candidate': 'C9,C24', 'witness_regret': 0.0, 'sample_max_including_train': np.float64(0.0), 'grid_max': 0.0}
+LP {'space': 'local', 'set': 'AHV10', 'all_630_lps_success': True, 'continuous_worst_regret': 0, 'raw_objective': np.float64(-0.0), 'wA': np.float64(0.37368421052631573), 'wH': np.float64(0.368421052631579), 'wV': np.float64(0.2578947368421053), 'witness_candidate': 'C9,C24', 'witness_regret': 0.0, 'sample_max_including_train': np.float64(0.0), 'grid_max': 0.0}
+LP {'space': 'local', 'set': 'robust10', 'all_630_lps_success': True, 'continuous_worst_regret': 0, 'raw_objective': np.float64(-0.0), 'wA': np.float64(0.37368421052631573), 'wH': np.float64(0.368421052631579), 'wV': np.float64(0.2578947368421053), 'witness_candidate': 'C9,C24', 'witness_regret': 0.0, 'sample_max_including_train': np.float64(0.0), 'grid_max': 0.0}
+LP {'space': 'local', 'set': 'AV_full', 'all_630_lps_success': True, 'continuous_worst_regret': 0, 'raw_objective': np.float64(-0.0), 'wA': np.float64(0.37368421052631573), 'wH': np.float64(0.368421052631579), 'wV': np.float64(0.2578947368421053), 'witness_candidate': 'C9,C24', 'witness_regret': 0.0, 'sample_max_including_train': np.float64(0.0), 'grid_max': 0.0}
+LP {'space': 'local', 'set': 'AHV_full', 'all_630_lps_success': True, 'continuous_worst_regret': 0, 'raw_objective': np.float64(-0.0), 'wA': np.float64(0.37368421052631573), 'wH': np.float64(0.368421052631579), 'wV': np.float64(0.2578947368421053), 'witness_candidate': 'C9,C24', 'witness_regret': 0.0, 'sample_max_including_train': np.float64(0.0), 'grid_max': 0.0}
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-xv1walvg because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+COMPLETE {"stable_improvement_rule_met": true, "claim": "Preference robustness under declared weight distributions only; heuristic shortlist, no global optimality.", "wall_seconds": 36.038694858551025, "front_sizes": {"AV": 12, "AHV": 41}, "robust10_pairs": ["C9,C12", "C12,C15", "C12,C24", "C9,C24", "C15,C25", "C9,C15", "C25,C29", "C13,C15", "C24,C35", "C15,C24"], "historical10_pairs": ["C9,C24", "C9,C15", "C9,C12", "C15,C24", "C9,C35", "C9,C13", "C12,C24", "C9,C21", "C9,C26", "C9,C27"], "robust10_reviewed": 7, "zero_train_regret_first_prefix": null}

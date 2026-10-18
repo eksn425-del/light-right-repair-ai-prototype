@@ -1,0 +1,5 @@
+{
+  "regret_comparison": "results/shortlist_evaluation.csv",
+  "continuous_regret": "results/continuous_worst_regret.csv",
+  "acceptability_heatmap": "results/all630_rank_acceptability.csv"
+}

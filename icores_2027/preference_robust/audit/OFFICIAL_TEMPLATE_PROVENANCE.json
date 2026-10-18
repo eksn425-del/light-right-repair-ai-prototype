@@ -1,0 +1,18 @@
+{
+  "url": "https://cms-resources.apps.public.k8s.springernature.io/springer-cms/rest/v1/content/27851904/data/LaTeX2e%20Proceedings%20Template%20ZIP",
+  "retrieved_utc": "2026-10-18T16:17:32.178124+00:00",
+  "archive_sha256": "42afb32ed4fadc9e209134ec65dab1bd2a7ead42f9a3f8abb184f250c4a197b9",
+  "archive_bytes": 515408,
+  "files": {
+    "splncs04.bst": "f36c3a17e5304a692706359aafa9de709395a085e579eb47c027095aeaa35174",
+    "llncs.cls": "04ec99046ad9867f6cd54ffd1ef8c47c767b327d1baec77536db0528cd492fa2",
+    "llncsdoc.pdf": "bda75de93cd92490d678172e98a11bcbb0dc76a88831333bf0ef2aa9fdb4d006",
+    "samplepaper.pdf": "eca3d6e563297b74ca4f75357b24444443abf33ef0c6d0bf952b1f3e04e122c1",
+    "DescriptionTexts.txt": "31666ccea9072ad9b6af59624f50e239e6d663cb952d894891ed1cff2efb7868",
+    "readme.txt": "d5a69ddfcd5d316877c301e9504c6302d1f1dc7b2c8f128d8066cdd0b0a7e21a",
+    "history.txt": "9a4a85d0e7ab49fa35c638fee5e4083ae2b5bd0f5a943113098dc2e86e62d261",
+    "samplepaper.tex": "08142e057525c0edcab3e62a7028084a136cdbd7a66af8eb5157c2e5ae1806a6",
+    "fig1.eps": "e0da72903f4ba3ae2307869fd2f1d2ad460281725e0a3205862e91c8d6daf831"
+  },
+  "style_note": "Official ZIP supplies splncs04.bst. Current linked PDF says MathPhySci; document discrepancy and use supplied LNCS class/style."
+}

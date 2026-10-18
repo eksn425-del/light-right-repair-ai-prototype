@@ -1,0 +1,35 @@
+{
+  "stable_improvement_rule_met": true,
+  "claim": "Preference robustness under declared weight distributions only; heuristic shortlist, no global optimality.",
+  "wall_seconds": 47.258368253707886,
+  "front_sizes": {
+    "AV": 12,
+    "AHV": 41
+  },
+  "robust10_pairs": [
+    "C9,C12",
+    "C12,C15",
+    "C12,C24",
+    "C9,C24",
+    "C15,C25",
+    "C9,C15",
+    "C25,C29",
+    "C13,C15",
+    "C24,C35",
+    "C15,C24"
+  ],
+  "historical10_pairs": [
+    "C9,C24",
+    "C9,C15",
+    "C9,C12",
+    "C15,C24",
+    "C9,C35",
+    "C9,C13",
+    "C12,C24",
+    "C9,C21",
+    "C9,C26",
+    "C9,C27"
+  ],
+  "robust10_reviewed": 7,
+  "zero_train_regret_first_prefix": null
+}

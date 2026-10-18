@@ -1,0 +1,416 @@
+{
+  "lossless_weight_verification": true,
+  "lossless_scenario_verification": true,
+  "scenario_rows": 1080000,
+  "excluded_redundant_monoliths": [
+    "results/weight_samples.npz",
+    "results/set_scenario_metrics.csv.gz"
+  ],
+  "shards": [
+    {
+      "path": "results/weight_samples/full_replication.npz",
+      "sha256": "0e1885986c32e144ca2f51363db06603ac873438b3ecfca7328e27652ca3e216",
+      "bytes": 453859,
+      "shape": [
+        20000,
+        3
+      ]
+    },
+    {
+      "path": "results/weight_samples/full_test.npz",
+      "sha256": "63c1a758193e90c1a3519f267a4a3a60b33f5f7db684668e90e311c2af79166c",
+      "bytes": 453844,
+      "shape": [
+        20000,
+        3
+      ]
+    },
+    {
+      "path": "results/weight_samples/full_train.npz",
+      "sha256": "8be38e9c429ffa23e73d96a60e3161c3042c3726616479ab07e8afc0d4676a57",
+      "bytes": 453857,
+      "shape": [
+        20000,
+        3
+      ]
+    },
+    {
+      "path": "results/weight_samples/local_replication.npz",
+      "sha256": "35929da256742f60a1e2581426b894e111d3df63bc81db02add53d4ea40aa31e",
+      "bytes": 451995,
+      "shape": [
+        20000,
+        3
+      ]
+    },
+    {
+      "path": "results/weight_samples/local_test.npz",
+      "sha256": "220d4e0b03b77299951487003e7f5ee236d98de0d3acce0a6bf412798cb570f3",
+      "bytes": 451956,
+      "shape": [
+        20000,
+        3
+      ]
+    },
+    {
+      "path": "results/weight_samples/local_train.npz",
+      "sha256": "66d8cb092182e5afdbfa9019a69ad361f5a03e333b483c49c9bce684cac81ab3",
+      "bytes": 451934,
+      "shape": [
+        20000,
+        3
+      ]
+    },
+    {
+      "path": "results/weight_samples/ordered_replication.npz",
+      "sha256": "aca7c229b1110049dab363ecd7c81bc9e8e6f311eb1b24bcc9d0f8082681772f",
+      "bytes": 453828,
+      "shape": [
+        20000,
+        3
+      ]
+    },
+    {
+      "path": "results/weight_samples/ordered_test.npz",
+      "sha256": "14a1530f36693a350145a0df041ca37dfa09848a4379fe27be6d6e158c5d11a7",
+      "bytes": 453831,
+      "shape": [
+        20000,
+        3
+      ]
+    },
+    {
+      "path": "results/weight_samples/ordered_train.npz",
+      "sha256": "0a86c173f333e1d63ddfb69663ffc7d0c5f254feae5bf8e9c3e14a7b18676ec3",
+      "bytes": 453912,
+      "shape": [
+        20000,
+        3
+      ]
+    },
+    {
+      "path": "results/set_scenario_metrics/full_replication_AHV10.csv.gz",
+      "sha256": "9d78852b92b1af09892756fe38c3688b1d4c67e6aa95e6341fc7694d4c9a8ec1",
+      "bytes": 301244,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/full_replication_AHV_full.csv.gz",
+      "sha256": "e62acda8127dbe5733910d537bdfbc4b4517d6e9d35193636d28aa0037bbab8e",
+      "bytes": 258838,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/full_replication_AV10.csv.gz",
+      "sha256": "5bb19c558a53dfff33e51b7453fcbe64eeb02af8838223fae5973827ade1dff3",
+      "bytes": 331377,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/full_replication_AV_full.csv.gz",
+      "sha256": "961e4677155ef42f7371e0b71860271497441808f55139fe77adf0cf68a7cc57",
+      "bytes": 326904,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/full_replication_historical10.csv.gz",
+      "sha256": "05b6a856385b1e74faf5ebfe9b35286cb21b83e8eb80d5e1d1085db2fa0a64b4",
+      "bytes": 315696,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/full_replication_robust10.csv.gz",
+      "sha256": "6b32d4699034cee2f4858fde192412931c23bfad2024264644b997d1366cea4c",
+      "bytes": 265214,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/full_test_AHV10.csv.gz",
+      "sha256": "5956f94ec57d0cf07eb6d0170371120e5c97dd2ee344c5f1cc0426ebd7da4dc1",
+      "bytes": 296579,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/full_test_AHV_full.csv.gz",
+      "sha256": "fa293cfc00edffc70f4f839deec50b8ed885826362b4ba69e6af287cfe35d85d",
+      "bytes": 255301,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/full_test_AV10.csv.gz",
+      "sha256": "d4991a5e019fc80fbb74325c8ef8bfaae4f32f959cbde45b3c51abc7feeb2105",
+      "bytes": 327500,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/full_test_AV_full.csv.gz",
+      "sha256": "9a963113a1354ac746e8529512d155219bcc1c99625b92035e87a08a7f1a0b51",
+      "bytes": 322729,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/full_test_historical10.csv.gz",
+      "sha256": "b871d0de2e0851348753f5eea17e9312803cee04ce9f29bd9a4bf6a9630d1d09",
+      "bytes": 312090,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/full_test_robust10.csv.gz",
+      "sha256": "c569aa9c43c508d2a493992b4badb96df44402eb82a761f04210fd9c95030d04",
+      "bytes": 261609,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/full_train_AHV10.csv.gz",
+      "sha256": "93dbedd90d06f8d90de0d0355bf94800c717da93577ed75227df9816372dcf1f",
+      "bytes": 298297,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/full_train_AHV_full.csv.gz",
+      "sha256": "28bdd7bdeafe64a5fb7eedc8d8e1fbf18eafdd80b70f6466ffc92c24732c6d16",
+      "bytes": 254879,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/full_train_AV10.csv.gz",
+      "sha256": "53d30e191b01cd2877fb948d9e43a72620a2f27b7464b8cec1d02f805d4fdc27",
+      "bytes": 328771,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/full_train_AV_full.csv.gz",
+      "sha256": "b848b5d254a79a8da1461317deeefec25052890c2b701a55b7bfa00c9ca03341",
+      "bytes": 323347,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/full_train_historical10.csv.gz",
+      "sha256": "0ce7f5c127226b66f4e85e6451abb575516b7e51b8620bea4c0f530d611717e6",
+      "bytes": 313678,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/full_train_robust10.csv.gz",
+      "sha256": "a4b68abf52ddf21d8867d8036796780bfe1e0b559dbcc49a8e984346de9097a6",
+      "bytes": 261581,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/local_replication_AHV10.csv.gz",
+      "sha256": "a6b63f774cfb28f303c75379a6387533eb31fbcfa33f464b39a3ef6e0ef0902a",
+      "bytes": 250138,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/local_replication_AHV_full.csv.gz",
+      "sha256": "be3db779a98ac441da5397b7b0f7ec221cccd85498dc435237fda349db078b1a",
+      "bytes": 249956,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/local_replication_AV10.csv.gz",
+      "sha256": "37d323d0180ffaaa9a02bbdb2bb1e82bf31180052a2f8c403a5abf5f3d17be0a",
+      "bytes": 244141,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/local_replication_AV_full.csv.gz",
+      "sha256": "5d3402db50e997f3dcbf2f5f52f7517cd843507d415a4ec41108b7fd6b75caa0",
+      "bytes": 246075,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/local_replication_historical10.csv.gz",
+      "sha256": "79cfd9693046be3fe1024e5c44555685f07060dfbb6eec9a4e18c0e88e4075a5",
+      "bytes": 252456,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/local_replication_robust10.csv.gz",
+      "sha256": "90eed31a9ff1e91fb29ff11e0cddbd6f6248f4ca2e685cfb49ea175a019b3c68",
+      "bytes": 247778,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/local_test_AHV10.csv.gz",
+      "sha256": "bd3c029f1e3cad2e39c1a3381f1b79cfbaa20cddb2805eb2f5374cb06c951737",
+      "bytes": 247138,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/local_test_AHV_full.csv.gz",
+      "sha256": "e50e1cb5378b0398ab6436cb7ec0512abf545d163e4813c3533fab4108d5d0d4",
+      "bytes": 247226,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/local_test_AV10.csv.gz",
+      "sha256": "0949341e8e38653da5e4d87213302d005de2b2a551793b4fec3a17337c85c538",
+      "bytes": 241295,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/local_test_AV_full.csv.gz",
+      "sha256": "51e6f2d783ae40986a5008d33d7c83f4b5a50983b222602b8adef21de949a61a",
+      "bytes": 243394,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/local_test_historical10.csv.gz",
+      "sha256": "78efa5838af61aac253e9ed92dd2fbd7b19eabe670b7941f9f36e8292745ae8a",
+      "bytes": 250695,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/local_test_robust10.csv.gz",
+      "sha256": "b33eeda5b0d107ac214f575b35a9a9f4f761b99e12b58d5f9b42315046f1fe4f",
+      "bytes": 245258,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/local_train_AHV10.csv.gz",
+      "sha256": "e73c4edbb123f04effea578df107d0649076dccb557cbaeae4bbf848530884fd",
+      "bytes": 247557,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/local_train_AHV_full.csv.gz",
+      "sha256": "91983465b2052c7bf47202ad7d400970deba8bcf58a130ea41d2d7a3c8c4ba03",
+      "bytes": 247655,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/local_train_AV10.csv.gz",
+      "sha256": "8fee0652a9dc2a627fc06486c049cb7f66ba7f5ccb2849d10901ce21401dcea6",
+      "bytes": 241476,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/local_train_AV_full.csv.gz",
+      "sha256": "1e4bfe85f192643ac16de1c153b2676224e1b9f2b03f1e643e24e7170133ce8f",
+      "bytes": 243960,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/local_train_historical10.csv.gz",
+      "sha256": "021d6db2eaf9fd045d20e2fb879fb26860da54d5fd37eac02d1293fed8abb92e",
+      "bytes": 250798,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/local_train_robust10.csv.gz",
+      "sha256": "81ce1d687d82065ba8a0cdf0b1d9574bdc57ff3d2e64454f1e0c4876951636f6",
+      "bytes": 245420,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/ordered_replication_AHV10.csv.gz",
+      "sha256": "0354d7ac309834c83f10cb9f7f0437dd1f478ff0676c9c4806b222817072e2b3",
+      "bytes": 255218,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/ordered_replication_AHV_full.csv.gz",
+      "sha256": "fd3dfed1e441a82bebabd4455e652a3537ab3903c3331f52a3ccb8d74195e8a2",
+      "bytes": 254544,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/ordered_replication_AV10.csv.gz",
+      "sha256": "107f053283de930c595aff9d5d3aa8366fe4824c3bd2dcf6359a685f866f6764",
+      "bytes": 246633,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/ordered_replication_AV_full.csv.gz",
+      "sha256": "a6699233f72fa78d5708f5c2813dc489cfa4c50c999bb438e9b85c6590ce2d41",
+      "bytes": 248698,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/ordered_replication_historical10.csv.gz",
+      "sha256": "c32503826e179e0f185ef0b51fd5caa1f7c39e9a481dd6c0bf05a676bec078c1",
+      "bytes": 254822,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/ordered_replication_robust10.csv.gz",
+      "sha256": "c8103f77da8aef60b046c3a53efb726059604e95bec1e6cb167c1ffbcac55878",
+      "bytes": 254105,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/ordered_test_AHV10.csv.gz",
+      "sha256": "5040d6cd36e05a8f1a00a772a959fa0dd2d51d33cca72b431e6ffff272a7150f",
+      "bytes": 253857,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/ordered_test_AHV_full.csv.gz",
+      "sha256": "bfe267c3b47f6ead93a8fb7dc454100d656e7b43843293693447c5bb5472732d",
+      "bytes": 253394,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/ordered_test_AV10.csv.gz",
+      "sha256": "75ba0885d9e27453fa5da0c0d450782c56db50bd8bacdafd1e70de5d61f1e62a",
+      "bytes": 244665,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/ordered_test_AV_full.csv.gz",
+      "sha256": "d1133e3c58f1aa1119298b23ef5f11cca0af2b894b4a9dd4ba639a0df5c79a34",
+      "bytes": 247421,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/ordered_test_historical10.csv.gz",
+      "sha256": "4a31a6d7b4fe50b8b55ed2629177510d206bf52bc17272e6d7b3ba5b02751c41",
+      "bytes": 253399,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/ordered_test_robust10.csv.gz",
+      "sha256": "d7dd70c0b30b67d4002d344578a3a91d9d48b836b44131780482e688cb1d7781",
+      "bytes": 252982,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/ordered_train_AHV10.csv.gz",
+      "sha256": "fcca37e407358f8c72e81e81ca284d80e61115681314eabb2ab9ddede1546f13",
+      "bytes": 254269,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/ordered_train_AHV_full.csv.gz",
+      "sha256": "97710e7b6cfc2a9ef6368b3f0cb52fc9b88539364f7804c94dd8dca1cd1112b2",
+      "bytes": 253512,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/ordered_train_AV10.csv.gz",
+      "sha256": "0908b8df47db3ed404da68d1ff43a9f862d7e36bbd48d755cd8e63de7328c3c5",
+      "bytes": 245151,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/ordered_train_AV_full.csv.gz",
+      "sha256": "65042328f9ddc43a2ff6da98c7bf113c9778d29e0dcae7ad04de7ecba3bdae5b",
+      "bytes": 247530,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/ordered_train_historical10.csv.gz",
+      "sha256": "cd95310b6df511a3bf433425d55a05932caa1c1e55aef3d4d72634fe8e7354f8",
+      "bytes": 253499,
+      "rows": 20000
+    },
+    {
+      "path": "results/set_scenario_metrics/ordered_train_robust10.csv.gz",
+      "sha256": "0188970798f5c3bac31cb0a46f1def551b7d55e7f416dc0c868a92fafb032b38",
+      "bytes": 253189,
+      "rows": 20000
+    }
+  ]
+}

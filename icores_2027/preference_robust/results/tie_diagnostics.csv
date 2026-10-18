@@ -1,0 +1,10 @@
+space,split,winner_exact_ties,winner_near_ties_1e12,top10_boundary_exact_ties,top10_boundary_near_ties_1e12
+full,train,0,0,0,0
+full,test,0,0,0,0
+full,replication,0,0,0,0
+ordered,train,0,0,0,0
+ordered,test,0,0,0,0
+ordered,replication,0,0,0,0
+local,train,0,0,0,0
+local,test,0,0,0,0
+local,replication,0,0,0,0

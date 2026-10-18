@@ -1,0 +1,21 @@
+{
+  "checked_utc": "2026-10-18T16:17:00.206152+00:00",
+  "execution": "Current dot cloud terminal and GitHub connector only",
+  "user_computer_used": false,
+  "cloud_codex_created": false,
+  "prior_input_head": "df9001858ceb9d6014eedfd35c8bfc3b7f0c0221",
+  "protocol_commit": "cff3e81eebf93a16df6da8a21fe735c1554a5a8f",
+  "system": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "cpu_count": 9,
+  "tools": {
+    "python": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "pdflatex": "/usr/bin/pdflatex",
+    "bibtex": "/usr/bin/bibtex",
+    "pdftoppm": "/opt/codex/runtimes/codex-primary-runtime/dependencies/bin/override/pdftoppm",
+    "pdffonts": "/usr/bin/pdffonts",
+    "pdfinfo": "/opt/codex/runtimes/codex-primary-runtime/dependencies/bin/override/pdfinfo"
+  },
+  "git_clone": "No credentials in terminal; approved GitHub connector reads/writes used instead",
+  "input_transfer": "56 files restored and verified against Git blob identities; newline normalization repaired to exact source bytes",
+  "new_hb_simulation": "NOT_RUN; task relies on archived simulation evidence, missing raw site inputs not substituted"
+}

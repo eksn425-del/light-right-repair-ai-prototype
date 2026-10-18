@@ -1,0 +1,7 @@
+space,metric,median_absolute_delta,p95_absolute_delta,max_absolute_delta
+full,winner_acceptability,0.0,0.0,0.006500000000000006
+full,top10_acceptability,0.0,0.0015500000000000097,0.010150000000000048
+ordered,winner_acceptability,0.0,0.0,0.0
+ordered,top10_acceptability,0.0,0.0,0.0072500000000000064
+local,winner_acceptability,0.0,0.0,0.0
+local,top10_acceptability,0.0,0.0,0.009199999999999986
