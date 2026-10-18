@@ -1,0 +1,202 @@
+{
+  "protocol_version": "1.0.0",
+  "status": "PREFREEZE_PENDING_PARENT_COMMIT_NO_NEW_OUTCOMES_COMPUTED",
+  "written_utc": "2026-10-18T16:15:15.923574+00:00",
+  "source_repository": "eksn425-del/light-right-repair-ai-prototype",
+  "source_commit": "df9001858ceb9d6014eedfd35c8bfc3b7f0c0221",
+  "target_branch": "icores-2027-preference-robust",
+  "freeze_gate": "Commit this protocol and input manifest before generating weights, new rankings, new Pareto sets, or new shortlist outcomes. Record freeze commit in run manifest. Any later amendment must be dated, justified and labeled exploratory; retain original protocol.",
+  "inputs": [
+    {
+      "path": "icores_2027/runs/local_ablation_20261016/aggregate_B_m630_r1_run.csv",
+      "sha256": "b07225c7f0bf43348a867934a7b71fb097d30975dcef8f571a5ccc0f0ff96387",
+      "bytes": 557838
+    },
+    {
+      "path": "icores_2027/architect_first_cloud/analysis/top10_rule_candidates.csv",
+      "sha256": "9d9a764a2fe2b5dbaa59f341c9412f498ac939c38bd0058c90e569cab83edca2",
+      "bytes": 5542
+    },
+    {
+      "path": "icores_2027/architect_first_cloud/analysis/decision_evidence_matrix.csv",
+      "sha256": "1506d4da6ab9440635b01137d22f89c9a0803404858365893f7981d24977397a",
+      "bytes": 315850
+    },
+    {
+      "path": "icores_2027/architect_first_cloud/analysis/selection_policy_frozen.md",
+      "sha256": "2242c155489cec5d2d79258e41a3fd3d237752c2bd4ffce50494184dbdf833f4",
+      "bytes": 1420
+    },
+    {
+      "path": "research_reproducibility/configs/research.yaml",
+      "sha256": "08921b59e8c2115f20fc32e6f0973d99af0cb002dd9abbe883527bad6ef202e0",
+      "bytes": 934
+    },
+    {
+      "path": "research_reproducibility/results_public/weight_sensitivity_summary_v2.csv",
+      "sha256": "f9d4b4237006bd368a459386f0d65533d0124882cca7368e7529588984033b84",
+      "bytes": 870
+    }
+  ],
+  "universe": {
+    "n": 630,
+    "eligible_buildings": 36,
+    "id": "pair, natural numeric tuple of building IDs, e.g. C2,C10 sorts before C3,C4",
+    "eligibility": "All 630 archived candidates for new analyses, including A=0. Do not add or remove candidates based on outcomes. Historical baseline retains original A>0 eligibility.",
+    "assertions": [
+      "630 unique unordered pairs from 36 building IDs",
+      "A,H,V,N finite",
+      "N exactly zero in all 630 rows; otherwise stop and amend before outcomes",
+      "archived normalization bounds common to all rows",
+      "recomputed historical score matches archive to absolute 1e-12",
+      "historical Top10 IDs exactly match archived Top10 file",
+      "normalized utility components lie within [0,1] up to 1e-12"
+    ]
+  },
+  "utilities": {
+    "normalization": "Use existing normalization_bounds_json min/max bounds without clipping or refitting. A_norm=(A-Amin)/(Amax-Amin), H_norm likewise, benefit V=1-(V-Vmin)/(Vmax-Vmin). Zero-range normalized raw metric is 0.",
+    "three_criterion": "u_i(w)=wA*A_norm_i+wH*H_norm_i+wV*(1-V_norm_i)",
+    "historical": "0.45*A_norm+0.35*H_norm+0.15*(1-V_norm)+0.05*(1-N_norm); preserve archived Top10 exactly; do not relabel three-criterion values as historical scores.",
+    "effective_historical_weights": [
+      0.47368421052631576,
+      0.3684210526315789,
+      0.15789473684210525
+    ],
+    "correlation": "Full-universe Pearson r and Spearman rho(A,H), with average ranks for ties; descriptive, no independence-based p-value claim."
+  },
+  "sampling": {
+    "generator": "numpy.random.Generator(numpy.random.PCG64(seed))",
+    "dtype": "float64",
+    "samples_per_space_per_split": 20000,
+    "splits": [
+      "train",
+      "test",
+      "replication"
+    ],
+    "total_kept": 180000,
+    "space_order": [
+      "full",
+      "ordered",
+      "local"
+    ],
+    "spaces": {
+      "full": {
+        "distribution": "IID Dirichlet(1,1,1), uniform area measure on closed simplex; boundary has probability zero",
+        "seeds": {
+          "train": 2026101801,
+          "test": 2026101811,
+          "replication": 2026101821
+        }
+      },
+      "ordered": {
+        "distribution": "IID Dirichlet(1,1,1), sort each sample descending to assign wA>=wH>=wV; uniform area measure on that simplex sector",
+        "seeds": {
+          "train": 2026101802,
+          "test": 2026101812,
+          "replication": 2026101822
+        }
+      },
+      "local": {
+        "distribution": "IID Dirichlet(1,1,1) rejection sample where abs(w_j-w0_j)<=0.10 each coordinate; uniform area on intersection, not independent coordinate jitter or renormalized jitter",
+        "center": [
+          0.47368421052631576,
+          0.3684210526315789,
+          0.15789473684210525
+        ],
+        "coordinate_half_width": 0.1,
+        "proposal_batch_size": 100000,
+        "acceptance_order": "Keep accepted samples in generated order; stop at first 20000; preserve proposed count and acceptance diagnostics",
+        "seeds": {
+          "train": 2026101803,
+          "test": 2026101813,
+          "replication": 2026101823
+        }
+      }
+    },
+    "interpretation": "Declared scenario distributions, not empirical architect preferences. Equal weighting of spaces is a design assumption. No tuning after results. Store all kept weight arrays."
+  },
+  "ranks": {
+    "order": "Descending unrounded float64 utility, exact numerical ties broken by natural numeric pair ID ascending; no tolerance in total ordering",
+    "reporting": [
+      "Full rank histogram 1..630 for every candidate, every space, test and replication (train also archived)",
+      "winner acceptability=count(rank=1)/20000",
+      "Top10 acceptability=count(rank<=10)/20000",
+      "average rank",
+      "worst observed rank",
+      "95% Wilson marginal confidence intervals for winner and Top10 acceptability, z=1.959963984540054",
+      "per-scenario Top10 Jaccard to fixed historical Top10, intersection/(20-intersection), summary mean/p05/p50/p95/min/max",
+      "cross-space differences in candidate acceptability and mean rank; full pairwise tables; top-acceptability Top10 Jaccard, with ties resolved by mean rank then ID"
+    ],
+    "ci_caveat": "Marginal Monte Carlo intervals conditional on declared distribution and fixed performances; not simultaneous confidence or model/user uncertainty. Worst observed rank is not worst possible rank.",
+    "tie_diagnostic": "Record exact utility ties and near ties within 1e-12 at winner and Top10 boundary; primary ranks remain deterministic. Add tie-aware set winner coverage separately."
+  },
+  "shortlists": {
+    "k": 10,
+    "historical": "Use exact archived Top10 IDs unchanged",
+    "AV10": "Full-universe Pareto maximize raw A, minimize raw V, at least one strict improvement; retain duplicate-objective candidates. Sort nondominated candidates by archived historical rank and take first 10. If front has fewer than 10, retain all front then fill from remaining universe by archived historical rank; label padding.",
+    "AHV10": "As AV10, adding maximize H",
+    "full_fronts": "Report complete AV and AHV fronts separately, with cardinalities; evaluate as diagnostic larger/smaller sets, never label same-k comparison",
+    "robust10": {
+      "name": "Greedy sampled minimax absolute-utility-regret heuristic",
+      "training": "Concatenate 20000 train weights in each fixed space order, equal mass 1/3 per space; no test/replication/grid used for selection",
+      "regret": "R(S,w)=max_{i in all630}u_i(w)-max_{j in S}u_j(w)",
+      "objective": "At each of 10 additions, select remaining candidate giving smallest maximum R over pooled 60000 training scenarios. Ties in maximum resolved by smallest mean regret over the same pool; remaining ties by natural numeric pair ID. Comparisons use unrounded float64 values, exact equality.",
+      "initialization": "Empty-set best utility=0; valid because normalized utilities are nonnegative. Always complete 10 additions even if regret reaches zero.",
+      "claims": "Heuristic, no global-optimality or continuous-space minimax guarantee. Preserve each greedy step including objective values.",
+      "monotonicity": "Adding candidates cannot increase regret. If zero regret appears early, remaining slots are determined by tie rules; do not imply all ten are necessary. Report minimum prefix reaching max train regret<=1e-12 and evaluate all prefix sizes1..10."
+    }
+  },
+  "evaluation": {
+    "primary": "Independent test split, each space separately; equal-space pooled test summary secondary",
+    "replication": "Repeat identical evaluation with independent replication weights; never reselect shortlist",
+    "metrics": [
+      "best attainable utility mean,p05,p50,p95,min,max",
+      "absolute regret mean,p50,p95,max; numpy quantile method=linear",
+      "deterministic winner coverage = fraction whose rank1 ID in set",
+      "utility winner coverage = fraction regret<=1e-12",
+      "any-Top10 coverage = fraction set intersects scenario Top10",
+      "Top10 recovery = mean |set intersect scenario Top10|/10",
+      "shortlist overlap/Jaccard with fixed historical10",
+      "regret and coverage for greedy prefixes1..10"
+    ],
+    "monte_carlo_error": [
+      "For each candidate and space, publish test vs replication acceptability deltas and both Wilson intervals; summarize median,p95,max absolute differences",
+      "For each shortlist and space, report Monte Carlo standard errors of means from sample SD(ddof=1)/sqrt(n); winner and any-Top10 coverage Wilson intervals",
+      "Paired per-scenario regret difference robust10 minus each same-k comparator: mean, standard error, 95% normal MC interval on each split; descriptive conditional MC precision only",
+      "p95 and maximum from both splits separately; maximum is observed, not a population bound; no unsupported inferential precision for maxima"
+    ],
+    "stress_grid": {
+      "mandatory": true,
+      "resolution": 100,
+      "weights": "All (i/100,j/100,(100-i-j)/100), integers i,j>=0,i+j<=100, 5151 points; restricted ordered/local subsets using same inequalities with 1e-12 boundary tolerance",
+      "role": "Deterministic held-out boundary/interior stress evaluation of frozen sets, not IID or confidence samples; store all grid results and grid worst regret; never optimize shortlist on grid"
+    },
+    "interpretation_rule": "Report all outcomes including worsening. Claim descriptive stable improvement over historical only if mean and p95 regret are no larger in all three spaces in both test and replication, at least one strict improvement>1e-12, and explicitly disclose any max-regret or coverage deterioration. Do not assert general dominance or optimality. If this fails, frame as preference sensitivity/transparent trade-offs. No architects or physics accuracy inferred.",
+    "continuous_worst_case_audit": {
+      "method": "For every fixed shortlist S and each of the three closed polyhedral spaces, solve for each candidate i: maximize t subject to t <= w dot (x_i-x_s) for every s in S and w in the space. Maximum objective over all 630 candidate-specific LPs is the continuous worst-case regret of that fixed set, up to solver numerical tolerance.",
+      "solver": "scipy.optimize.linprog(method=highs), dual_feasibility_tolerance=1e-9, primal_feasibility_tolerance=1e-9; record scipy/HiGHS version, every LP status, maximizing weight and residuals. LP failure is a reported missing audit, not a zero regret result.",
+      "constraints": "All spaces: sum w=1, w>=0. Ordered adds wA>=wH>=wV. Local uses w0_j-0.10<=w_j<=w0_j+0.10. t is unrestricted.",
+      "sets": "Historical10, AV10, AHV10, robust10, and full AV/AHV fronts. Deduplicate identical sets computationally but report each label.",
+      "validation": "Recompute regret at each maximizing witness directly; check feasibility and agreement <=1e-8. Continuous worst regret must be at least grid and observed sample maxima minus1e-8. Record tiny negative solver values without hiding them; reported regret may be clipped to zero only if >=-1e-8 and accompanied by raw value.",
+      "limits": "This evaluates a fixed set exactly in the specified linear utility model up to numerical tolerances. It does not prove that greedy10 is the globally minimax-optimal shortlist. No LP outcomes used to reselect candidates."
+    }
+  },
+  "evidence": {
+    "join": "Join shortlisted pairs to archived decision_evidence_matrix and original curated23/frozen20 evidence; preserve rule-level HB versus translated-geometry status separately",
+    "missing": "Unreviewed new candidate = missing validation, never passed. No new Honeybee/Radiance runs; no reselecting frozen20.",
+    "scope": "Robustness only to declared preference weights on fixed archived performance, not performance/model uncertainty, property rights, structural feasibility or construction readiness."
+  },
+  "deliverables": [
+    "Input SHA256 manifest and freeze commit",
+    "Reproducible Python script, versions, run log and script hash",
+    "All weight samples and full rank histograms",
+    "All630 candidate stats, all cross-space changes and rank memberships",
+    "All Pareto membership flags and shortlist IDs with evidence status",
+    "Per-scenario set metrics including regret for test/replication/grid",
+    "Shortlist summary, paired differences, MC diagnostics, greedy trace and prefix diagnostics",
+    "Figures generated only from saved CSVs with provenance",
+    "Results and limitations report including null/negative results",
+    "Continuous worst-case LP objectives, solver statuses, maximizing weight witnesses and audit checks"
+  ],
+  "changes": "Implementation errors may be corrected transparently with original output retained and rerun labeled. Any change to selection, spaces, seeds, counts or claims after outcomes is exploratory, never a silent protocol replacement."
+}
