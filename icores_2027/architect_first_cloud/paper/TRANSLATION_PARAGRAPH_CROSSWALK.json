@@ -1,0 +1,527 @@
+[
+  {
+    "english_id": "ABS-P01",
+    "chinese_anchor": "[摘要-P1]",
+    "section": "Abstract",
+    "subsection": "",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S1-P01",
+    "chinese_anchor": "[§1-P1]",
+    "section": "Introduction",
+    "subsection": "",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S1-P02",
+    "chinese_anchor": "[§1-P2]",
+    "section": "Introduction",
+    "subsection": "",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S1-P03",
+    "chinese_anchor": "[§1-P3]",
+    "section": "Introduction",
+    "subsection": "",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S1-P04",
+    "chinese_anchor": "[§1-P4]",
+    "section": "Introduction",
+    "subsection": "",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S1-P05",
+    "chinese_anchor": "[§1-P5]",
+    "section": "Introduction",
+    "subsection": "",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S2-P01",
+    "chinese_anchor": "[§2-P1]",
+    "section": "Related Work and Positioning",
+    "subsection": "",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S2-P02",
+    "chinese_anchor": "[§2-P2]",
+    "section": "Related Work and Positioning",
+    "subsection": "",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S2-P03",
+    "chinese_anchor": "[§2-P3]",
+    "section": "Related Work and Positioning",
+    "subsection": "",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S3-P01",
+    "chinese_anchor": "[§3.1-P1]",
+    "section": "Case, Decision Universe and Solar Setup",
+    "subsection": "Bounded Candidate Universe",
+    "kind": "equation"
+  },
+  {
+    "english_id": "S3-P02",
+    "chinese_anchor": "[§3.1-P2]",
+    "section": "Case, Decision Universe and Solar Setup",
+    "subsection": "Bounded Candidate Universe",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S3-P03",
+    "chinese_anchor": "[§3.2-P1]",
+    "section": "Case, Decision Universe and Solar Setup",
+    "subsection": "Receiving Grid, Time Samples and Visibility",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S3-P04",
+    "chinese_anchor": "[§3.2-P2]",
+    "section": "Case, Decision Universe and Solar Setup",
+    "subsection": "Receiving Grid, Time Samples and Visibility",
+    "kind": "equation"
+  },
+  {
+    "english_id": "S3-P05",
+    "chinese_anchor": "[§3.2-P3]",
+    "section": "Case, Decision Universe and Solar Setup",
+    "subsection": "Receiving Grid, Time Samples and Visibility",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S3-P06",
+    "chinese_anchor": "[§3.3-P1]",
+    "section": "Case, Decision Universe and Solar Setup",
+    "subsection": "Metrics and Preferences",
+    "kind": "equation"
+  },
+  {
+    "english_id": "S3-P07",
+    "chinese_anchor": "[§3.3-P2]",
+    "section": "Case, Decision Universe and Solar Setup",
+    "subsection": "Metrics and Preferences",
+    "kind": "equation"
+  },
+  {
+    "english_id": "S3-P09",
+    "chinese_anchor": "[§3.3-P3]",
+    "section": "Case, Decision Universe and Solar Setup",
+    "subsection": "Metrics and Preferences",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S4-P01",
+    "chinese_anchor": "[§4.1-P1]",
+    "section": "Screening and Decision Workflow",
+    "subsection": "From the Full Universe to a Reviewable Choice Set",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S4-P03",
+    "chinese_anchor": "[§4.1-P2]",
+    "section": "Screening and Decision Workflow",
+    "subsection": "From the Full Universe to a Reviewable Choice Set",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S4-P04",
+    "chinese_anchor": "[§4.1-P3]",
+    "section": "Screening and Decision Workflow",
+    "subsection": "From the Full Universe to a Reviewable Choice Set",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S4-P05",
+    "chinese_anchor": "[§4.1-P4]",
+    "section": "Screening and Decision Workflow",
+    "subsection": "From the Full Universe to a Reviewable Choice Set",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S4-P06",
+    "chinese_anchor": "[§4.2-P1]",
+    "section": "Screening and Decision Workflow",
+    "subsection": "Reusable Building Contributions",
+    "kind": "equation"
+  },
+  {
+    "english_id": "S4-P07",
+    "chinese_anchor": "[§4.2-P2]",
+    "section": "Screening and Decision Workflow",
+    "subsection": "Reusable Building Contributions",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S4-P08",
+    "chinese_anchor": "[§4.2-P3]",
+    "section": "Screening and Decision Workflow",
+    "subsection": "Reusable Building Contributions",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S4-P09",
+    "chinese_anchor": "[§4.3-P1]",
+    "section": "Screening and Decision Workflow",
+    "subsection": "Computational Cost and Accounting",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S4-P10",
+    "chinese_anchor": "[§4.3-P2]",
+    "section": "Screening and Decision Workflow",
+    "subsection": "Computational Cost and Accounting",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S4-P11",
+    "chinese_anchor": "[§4.3-P3]",
+    "section": "Screening and Decision Workflow",
+    "subsection": "Computational Cost and Accounting",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S4-P12",
+    "chinese_anchor": "[§4.4-P1]",
+    "section": "Screening and Decision Workflow",
+    "subsection": "Containment as a Physical Invariant",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S4-P13",
+    "chinese_anchor": "[§4.4-P2]",
+    "section": "Screening and Decision Workflow",
+    "subsection": "Containment as a Physical Invariant",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S5-P01",
+    "chinese_anchor": "[§5.1-P1]",
+    "section": "Validation and Experimental Setup",
+    "subsection": "Evidence Layers and Frozen Inputs",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S5-P02",
+    "chinese_anchor": "[§5.1-P2]",
+    "section": "Validation and Experimental Setup",
+    "subsection": "Evidence Layers and Frozen Inputs",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S5-P03",
+    "chinese_anchor": "[§5.1-P3]",
+    "section": "Validation and Experimental Setup",
+    "subsection": "Evidence Layers and Frozen Inputs",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S5-P04",
+    "chinese_anchor": "[§5.2-P1]",
+    "section": "Validation and Experimental Setup",
+    "subsection": "Matched Runtime and Equivalence",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S5-P05",
+    "chinese_anchor": "[§5.2-P2]",
+    "section": "Validation and Experimental Setup",
+    "subsection": "Matched Runtime and Equivalence",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S5-P06",
+    "chinese_anchor": "[§5.3-P1]",
+    "section": "Validation and Experimental Setup",
+    "subsection": "Cross-Route Agreement and Temporal Audit",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S5-P07",
+    "chinese_anchor": "[§5.3-P2]",
+    "section": "Validation and Experimental Setup",
+    "subsection": "Cross-Route Agreement and Temporal Audit",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S5-P08",
+    "chinese_anchor": "[§5.3-P3]",
+    "section": "Validation and Experimental Setup",
+    "subsection": "Cross-Route Agreement and Temporal Audit",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S5-P09",
+    "chinese_anchor": "[§5.4-P1]",
+    "section": "Validation and Experimental Setup",
+    "subsection": "Controlled Translation Replays",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S6-P01",
+    "chinese_anchor": "[§6.1-P1]",
+    "section": "Results",
+    "subsection": "The Actual Rule-Candidate Shortlist",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S6-P03",
+    "chinese_anchor": "[§6.1-P2]",
+    "section": "Results",
+    "subsection": "The Actual Rule-Candidate Shortlist",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S6-P04",
+    "chinese_anchor": "[§6.1-P3]",
+    "section": "Results",
+    "subsection": "The Actual Rule-Candidate Shortlist",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S6-P06",
+    "chinese_anchor": "[§6.1-P4]",
+    "section": "Results",
+    "subsection": "The Actual Rule-Candidate Shortlist",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S6-P07",
+    "chinese_anchor": "[§6.1-P5]",
+    "section": "Results",
+    "subsection": "The Actual Rule-Candidate Shortlist",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S6-P08",
+    "chinese_anchor": "[§6.2-P1]",
+    "section": "Results",
+    "subsection": "Agreement within Preserved Cohorts",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S6-P10",
+    "chinese_anchor": "[§6.2-P2]",
+    "section": "Results",
+    "subsection": "Agreement within Preserved Cohorts",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S6-P11",
+    "chinese_anchor": "[§6.2-P3]",
+    "section": "Results",
+    "subsection": "Agreement within Preserved Cohorts",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S6-P12",
+    "chinese_anchor": "[§6.3-P1]",
+    "section": "Results",
+    "subsection": "Measured Reuse Efficiency",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S6-P14",
+    "chinese_anchor": "[§6.3-P2]",
+    "section": "Results",
+    "subsection": "Measured Reuse Efficiency",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S6-P15",
+    "chinese_anchor": "[§6.3-P3]",
+    "section": "Results",
+    "subsection": "Measured Reuse Efficiency",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S6-P16",
+    "chinese_anchor": "[§6.4-P1]",
+    "section": "Results",
+    "subsection": "Translation Failure and Controlled Correction",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S6-P17",
+    "chinese_anchor": "[§6.4-P2]",
+    "section": "Results",
+    "subsection": "Translation Failure and Controlled Correction",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S6-P19",
+    "chinese_anchor": "[§6.4-P3]",
+    "section": "Results",
+    "subsection": "Translation Failure and Controlled Correction",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S7-P01",
+    "chinese_anchor": "[§7.1-P1]",
+    "section": "Discussion and Limitations",
+    "subsection": "Using the Shortlist in Architectural Work",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S7-P02",
+    "chinese_anchor": "[§7.1-P2]",
+    "section": "Discussion and Limitations",
+    "subsection": "Using the Shortlist in Architectural Work",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S7-P03",
+    "chinese_anchor": "[§7.1-P3]",
+    "section": "Discussion and Limitations",
+    "subsection": "Using the Shortlist in Architectural Work",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S7-P04",
+    "chinese_anchor": "[§7.1-P4]",
+    "section": "Discussion and Limitations",
+    "subsection": "Using the Shortlist in Architectural Work",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S7-P05",
+    "chinese_anchor": "[§7.2-P1，规范几何]",
+    "section": "Discussion and Limitations",
+    "subsection": "Threats to Validity",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S7-P06",
+    "chinese_anchor": "[§7.2-P2，物理范围受限]",
+    "section": "Discussion and Limitations",
+    "subsection": "Threats to Validity",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S7-P07",
+    "chinese_anchor": "[§7.2-P3，比较设计]",
+    "section": "Discussion and Limitations",
+    "subsection": "Threats to Validity",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S7-P08",
+    "chinese_anchor": "[§7.2-P4，样本组与指标]",
+    "section": "Discussion and Limitations",
+    "subsection": "Threats to Validity",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S7-P09",
+    "chinese_anchor": "[§7.2-P5，修正范围]",
+    "section": "Discussion and Limitations",
+    "subsection": "Threats to Validity",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S7-P10",
+    "chinese_anchor": "[§7.3-P1]",
+    "section": "Discussion and Limitations",
+    "subsection": "Reproducibility and Responsible Release",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S7-P11",
+    "chinese_anchor": "[§7.3-P2]",
+    "section": "Discussion and Limitations",
+    "subsection": "Reproducibility and Responsible Release",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S8-P01",
+    "chinese_anchor": "[§8-P1]",
+    "section": "Conclusion",
+    "subsection": "",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S8-P02",
+    "chinese_anchor": "[§8-P2]",
+    "section": "Conclusion",
+    "subsection": "",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S8-P03",
+    "chinese_anchor": "[§8-P3]",
+    "section": "Conclusion",
+    "subsection": "",
+    "kind": "prose"
+  },
+  {
+    "english_id": "AI-P01",
+    "chinese_anchor": "[披露-P1]",
+    "section": "Acknowledgments: AI-Assistance Disclosure",
+    "subsection": "",
+    "kind": "prose"
+  },
+  {
+    "english_id": "S3-P08",
+    "chinese_anchor": "表1",
+    "section": "Case, Decision Universe and Solar Setup",
+    "subsection": "Metrics and Preferences",
+    "kind": "table"
+  },
+  {
+    "english_id": "S4-P02",
+    "chinese_anchor": "图1",
+    "section": "Screening and Decision Workflow",
+    "subsection": "From the Full Universe to a Reviewable Choice Set",
+    "kind": "figure"
+  },
+  {
+    "english_id": "S6-P02",
+    "chinese_anchor": "表2",
+    "section": "Results",
+    "subsection": "The Actual Rule-Candidate Shortlist",
+    "kind": "table"
+  },
+  {
+    "english_id": "S6-P05",
+    "chinese_anchor": "图2",
+    "section": "Results",
+    "subsection": "The Actual Rule-Candidate Shortlist",
+    "kind": "figure"
+  },
+  {
+    "english_id": "S6-P09",
+    "chinese_anchor": "表3",
+    "section": "Results",
+    "subsection": "Agreement within Preserved Cohorts",
+    "kind": "table"
+  },
+  {
+    "english_id": "S6-P13",
+    "chinese_anchor": "表4",
+    "section": "Results",
+    "subsection": "Measured Reuse Efficiency",
+    "kind": "table"
+  },
+  {
+    "english_id": "S6-P18",
+    "chinese_anchor": "图3",
+    "section": "Results",
+    "subsection": "Translation Failure and Controlled Correction",
+    "kind": "figure"
+  },
+  {
+    "english_id": "S6-P20",
+    "chinese_anchor": "表5",
+    "section": "Results",
+    "subsection": "Translation Failure and Controlled Correction",
+    "kind": "table"
+  }
+]

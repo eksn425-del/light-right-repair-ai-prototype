@@ -1,0 +1,233 @@
+{
+  "status": "PASS",
+  "pdf_sha256": "27f20bc85c92403d24c5567bc55fd3a126603f044c0a2b259af19e0584f5df0f",
+  "tex_sha256": "fc4cd28bfac0d5f67e41a39d4c4623148168af3ec8d9440f002afd047286d680",
+  "pages": 18,
+  "pdf_nonwhitespace_characters_pdftotext_layout": 40926,
+  "checks": [
+    {
+      "check": "630 unique candidate decisions",
+      "passed": true
+    },
+    {
+      "check": "Top10 ranks1to10",
+      "passed": true
+    },
+    {
+      "check": "12 AV-front identities",
+      "passed": true
+    },
+    {
+      "check": "23 curated selected identities",
+      "passed": true
+    },
+    {
+      "check": "allTop10ruleHB reviewed",
+      "passed": true
+    },
+    {
+      "check": "only3Top10translatedreview",
+      "passed": true
+    },
+    {
+      "check": "shortlisttableidentity",
+      "passed": true
+    },
+    {
+      "check": "table_1_396",
+      "passed": true
+    },
+    {
+      "check": "table_1_0.04874",
+      "passed": true
+    },
+    {
+      "check": "table_1_5,551",
+      "passed": true
+    },
+    {
+      "check": "table_1_0.84486",
+      "passed": true
+    },
+    {
+      "check": "table_2_351",
+      "passed": true
+    },
+    {
+      "check": "table_2_0.03496",
+      "passed": true
+    },
+    {
+      "check": "table_2_3,128",
+      "passed": true
+    },
+    {
+      "check": "table_2_0.75237",
+      "passed": true
+    },
+    {
+      "check": "table_3_306",
+      "passed": true
+    },
+    {
+      "check": "table_3_0.04357",
+      "passed": true
+    },
+    {
+      "check": "table_3_4,031",
+      "passed": true
+    },
+    {
+      "check": "table_3_0.73582",
+      "passed": true
+    },
+    {
+      "check": "table_4_243",
+      "passed": true
+    },
+    {
+      "check": "table_4_0.05367",
+      "passed": true
+    },
+    {
+      "check": "table_4_4,016",
+      "passed": true
+    },
+    {
+      "check": "table_4_0.72005",
+      "passed": true
+    },
+    {
+      "check": "table_5_297",
+      "passed": true
+    },
+    {
+      "check": "table_5_0.04481",
+      "passed": true
+    },
+    {
+      "check": "table_5_5,303",
+      "passed": true
+    },
+    {
+      "check": "table_5_0.71420",
+      "passed": true
+    },
+    {
+      "check": "table_6_333",
+      "passed": true
+    },
+    {
+      "check": "table_6_0.03028",
+      "passed": true
+    },
+    {
+      "check": "table_6_2,975",
+      "passed": true
+    },
+    {
+      "check": "table_6_0.70832",
+      "passed": true
+    },
+    {
+      "check": "table_7_198",
+      "passed": true
+    },
+    {
+      "check": "table_7_0.06228",
+      "passed": true
+    },
+    {
+      "check": "table_7_4,919",
+      "passed": true
+    },
+    {
+      "check": "table_7_0.70350",
+      "passed": true
+    },
+    {
+      "check": "table_8_333",
+      "passed": true
+    },
+    {
+      "check": "table_8_0.03250",
+      "passed": true
+    },
+    {
+      "check": "table_8_4,252",
+      "passed": true
+    },
+    {
+      "check": "table_8_0.70229",
+      "passed": true
+    },
+    {
+      "check": "table_9_315",
+      "passed": true
+    },
+    {
+      "check": "table_9_0.03520",
+      "passed": true
+    },
+    {
+      "check": "table_9_3,906",
+      "passed": true
+    },
+    {
+      "check": "table_9_0.70170",
+      "passed": true
+    },
+    {
+      "check": "table_10_324",
+      "passed": true
+    },
+    {
+      "check": "table_10_0.03890",
+      "passed": true
+    },
+    {
+      "check": "table_10_7,341",
+      "passed": true
+    },
+    {
+      "check": "table_10_0.68323",
+      "passed": true
+    },
+    {
+      "check": "official_character_range",
+      "passed": true
+    },
+    {
+      "check": "anonymous_PDF_author",
+      "passed": true
+    },
+    {
+      "check": "no_identifying_repo_paths",
+      "passed": true
+    },
+    {
+      "check": "AI_disclosure_present",
+      "passed": true
+    },
+    {
+      "check": "no_unresolved_refs_cites",
+      "passed": true
+    },
+    {
+      "check": "no_overfull_boxes",
+      "passed": true
+    },
+    {
+      "check": "all_fonts_embedded",
+      "passed": true
+    },
+    {
+      "check": "all_pages_rendered",
+      "passed": true
+    }
+  ],
+  "visual_review": "Recorded separately in QA_REPORT.md and independent final review",
+  "new_physical_simulation": false,
+  "author_approval": false,
+  "submitted": false
+}

@@ -16,7 +16,7 @@
     "source": "icores_2027/runs/local_ablation_20261016/ablation_summary.csv",
     "source_sha256": "01c05a9cad3b7974a286589d2a2d03f4d56e168e06a472a09344400657cc5e84",
     "script": "analysis/make_supporting_figures.py",
-    "output_sha256": "5f46f38f5b241eae276e874012e741862de68dd6b2d8eca0cc009508b8ff12b2",
+    "output_sha256": "9d405e0c2a23c609c174bbb08ed9580817cfedd1062d910347813132d899af25",
     "new_physical_simulation": false
   },
   "agreement_publication": {
@@ -24,7 +24,7 @@
     "source": "icores_2027/runs/statistics_20261016/comparison_values.csv",
     "source_sha256": "9890c9ec0c751d24f4154008cf6e8fe680ef753e94ebf504a8702769dcadd16a",
     "script": "analysis/make_supporting_figures.py",
-    "output_sha256": "3459280b03ca33627a47372bf6c8c08906fefcc7439b1864c72f93e0cd2df718",
+    "output_sha256": "e9fb77141818e9fe65da34d86ae7fecdc113ddc0763fd78606863a4e6c9ea7d6",
     "new_physical_simulation": false
   },
   "translation_publication": {
@@ -32,7 +32,7 @@
     "source": "icores_2027/runs/local_hb_20261016/translation_outcome_comparison.csv",
     "source_sha256": "f853657ef9e8884b936c3a288fea8599deb69f7244adfde38b28a9ae4f7f7578",
     "script": "analysis/make_supporting_figures.py",
-    "output_sha256": "44daceec3381180c162146d95dea4b782c4e18bb08417aacfaa6f45db508bc72",
+    "output_sha256": "8d238e7174b65cd0188bd6dbb5ad032513a6adc92360ada2faf153ec18117909",
     "new_physical_simulation": false
   }
 }

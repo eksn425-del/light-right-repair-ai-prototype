@@ -1,0 +1,2 @@
+1 (Fig. 2) - Full candidate universe plotted by nominal volume proxy and low-sun-area reduction, with the top ten and nondominated candidates highlighted. The plot displays the finite modeled choice set, not site geometry.
+2 (Fig. 3) - Five paired historical and corrected displays. C9/C24 and C13/C24 improve area reduction by nine square metres and reduce worsened points from four to zero. The C9/C13 corrected display reuses an unchanged historical result.

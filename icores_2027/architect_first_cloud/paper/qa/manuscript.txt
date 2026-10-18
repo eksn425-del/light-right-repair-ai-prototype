@@ -1,0 +1,811 @@
+ Efficient Solar-Access Intervention Screening for Early
+    Urban Renewal: An Auditable Decision-Support
+                        Workflow
+
+
+
+        Abstract. Architects considering solar-access improvements in an existing urban
+        block need a manageable set of alternatives before investing in detailed design
+        and simulation. This paper presents a bounded, auditable screening workflow: 630
+        rule-based two-building height-reduction candidates are ranked by declared pref-
+        erences and an area–volume Pareto analysis; a curated set of 23 receives archived
+        Honeybee/Radiance review; geometric translation and professional judgment re-
+        main separate gates. The case contains 45 building groups, of which 36 are
+        eligible under research constraints. We report the actual top-ten shortlist with its
+        performance, nominal volume costs and review status, rather than treating the
+        candidates as completed architectural designs. A separately frozen 20-candidate
+        same-site coverage cohort has low-sun-area mean absolute error of 0.45 m2 , re-
+        sulting from one 9 m2 grid-cell discrepancy. Historical matched tests support
+        fast exhaustive screening: median full-universe runtime falls from 11,608.183
+        to 24.037 s through blocker reuse, including precomputation, for two specific
+        single-thread implementations. Historical translation replays also expose outside-
+        footprint walls; four contained corrections remove the observed adverse sunlight
+        events. Current cloud work reanalyses archived aggregates and does not perform
+        new site simulations. The contribution is an evidence-linked choice set for further
+        architectural assessment, conditional on approximate canonical geometry, a fixed
+        sampling protocol and explicit preferences. AI assistance in preparing this abstract
+        is disclosed [6].
+
+        Keywords: Decision support · Solar access · Urban renewal · Candidate screening
+        · Multi-criteria evaluation
+
+
+1    Introduction
+
+An architect investigating an existing block rarely begins with a single intervention
+whose consequences are already known.1 Several building groups may be eligible for
+study, and a modest rule such as reducing the height of two groups immediately creates
+hundreds of combinations. Detailed modeling and simulation of every alternative can
+consume effort before the useful trade-offs are clear. The early decision is therefore which
+candidates deserve closer examination, with what evidence, and under which unresolved
+constraints. A useful computational output is a traceable shortlist that preserves the
+architect’s ability to question the assumptions and choose a next step.
+    Solar access is one part of that decision. Urban environmental analysis distinguishes
+irradiation, illuminance and duration of direct exposure [1,2]. We use sampled outdoor
+ 1 Substantial AI-assisted text preparation in this section [6]; see the AI-Assistance Disclosure.
+direct-sun hours and a research threshold to describe low-sun grid area. These quantities
+do not measure indoor daylight, annual energy performance or statutory compliance.
+Nor do they establish a right to alter the buildings represented by a model. Making these
+boundaries visible is part of the decision-support task rather than an incidental caveat.
+    This paper asks: under a fixed canonical block model and explicit low-intervention
+height rules, can the complete set of 630 building-pair candidates be evaluated efficient-
+ly and reduced to an auditable set for further architectural judgment? The workflow
+follows a deliberate sequence: define the rule universe; evaluate and rank all candidates;
+expose a top-ten list and complementary nondominated alternatives; review a curated
+set of 23 through an archived Honeybee/Radiance route; and separately assess translated
+geometry before any professional decision. A separately frozen 20-candidate same-site
+coverage cohort provides additional, limited agreement evidence. Neither cohort estab-
+lishes general accuracy across cities.
+    The case contains 45 building groups and a research-defined eligible subset of 36.
+Each candidate changes exactly two heights according to one fixed rule and leaves foot-
+prints unchanged. Four metrics describe benefits and nominal intervention cost, while
+fixed weights express one preference scenario. These are 630 rule-based volumetric
+alternatives, not 630 complete designs. Likewise, the top ten are candidates for further
+assessment rather than ten construction-ready solutions. Ownership, use, structural safe-
+ty, heritage constraints and implementation remain matters for the architect and other
+responsible professionals.
+    Three contributions serve that decision sequence. First, a fully enumerated and repro-
+ducible shortlist connects candidate identities to metrics, score, Pareto membership and
+review status. Second, the evidence distinguishes screening agreement, computational
+equivalence and design-translation validity, so that a high rank does not silently be-
+come a claim of professional approval. Third, historical matched runtime and controlled
+translation experiments show how reuse and containment checks support a usable, au-
+ditable screening process. The algorithm is application-specific exhaustive screening,
+not a trained AI system or a new general optimization method. No architect user study
+or realized improvement to a built street is claimed.
+
+
+2    Related Work and Positioning
+
+Urban solar-performance assessment has long considered the interaction between built
+form and the availability of sunlight and daylight.2 Compagnon [1] evaluates solar and
+daylight availability in urban fabric through surface-based performance analysis. The
+taxonomy of Czachura et al. [2] helps distinguish the metrics used in urban planning. This
+distinction matters here: a threshold on sampled direct-sun hours cannot be substituted
+for irradiation, daylight autonomy or a jurisdiction-specific compliance test.
+    Simulation-based design-support methods already connect changes in building form
+to environmental objectives. Konis et al. [5] present an optimization framework for early-
+stage passive-design support. De Luca et al. [3] develop a reverse solar-envelope form-
+finding method that can accommodate regulatory frameworks. Our study has a narrower
+ 2 Substantial AI-assisted text preparation in this section [6]; see the AI-Assistance Disclosure.
+search space: it exhaustively ranks a fixed set of two-building height-reduction rules,
+then treats stepback generation as a separate, fallible translation. We do not benchmark
+against those systems or infer that exhaustive enumeration outperforms their broader
+form-finding methods.
+    The software ecosystem also supplies distinct computational roles. Ladybug supports
+parametric environmental analysis [7]; Radiance provides a lighting simulation and
+rendering system based on ray tracing [8]; and pvlib supplies solar-energy modeling
+implementations including solar-position calculation [4]. These references establish the
+context of the tools, not the validity of our particular inputs or recipe. In particular,
+the effective solar vectors recovered from the archived Honeybee/Ladybug route are
+not numerically identical to the saved pvlib vectors. Cross-route agreement therefore
+concerns the actual archived configurations, whereas the efficiency comparison isolates
+two implementations using exactly the same geometric primitive and vectors.
+
+
+3     Case, Decision Universe and Solar Setup
+3.1   Bounded Candidate Universe
+Let B denote the 45 building groups, each represented by a footprint 𝐹𝑖 and height ℎ𝑖 .3
+The eligible subset 𝐸 ⊂ B contains 36 groups selected using source flags for movable
+and protected buildings, strict Boolean parsing and ℎ𝑖 > 3 m. A feasible rule decision
+satisfies                                         ∑︁
+                          𝑧 𝑖 ∈ {0, 1} (𝑖 ∈ 𝐸),       𝑧𝑖 = 2,                       (1)
+                                                         𝑖 ∈𝐸
+
+with 𝑧𝑖 = 0 outside 𝐸. For a selected building, the rule height is
+
+           ℎ𝑟𝑖 = max{3, ℎ𝑖 − min(3, 0.25ℎ𝑖 )},            ℎ𝑖 (𝑧) = (1 − 𝑧𝑖 )ℎ𝑖 + 𝑧𝑖 ℎ𝑟𝑖 ,       (2)
+                                         36
+where heights are in metres. Thus 2 = 630 unordered pairs constitute the complete
+declared universe. Exhaustive evaluation establishes an optimum only for a specified
+score within this finite universe. It says nothing about other numbers of altered buildings,
+alternative height rules, footprint changes, structural feasibility or legal rights.
+    The canonical footprints are unions of bounding boxes associated with DXF com-
+ponents. Some building identifiers share components and some footprints overlap. The
+archived OBJ representation also disagrees with the canonical model for important can-
+didates. We retain the frozen canonical input for reproducibility, but do not describe it
+as a surveyed or as-built boundary model. This distinction affects both visibility and
+volume interpretation.
+
+3.2   Receiving Grid, Time Samples and Visibility
+The protocol fixes 2,031 receiving points on a 3 m horizontal grid at height 0.1 m.
+The geographic parameters are latitude 24.55◦ N and longitude 118.03◦ E, with UTC+8
+local time and an assumed north angle of zero. The declared analysis date for the pvlib
+ 3 Substantial AI-assisted text preparation in this section [6]; see the AI-Assistance Disclosure.
+sequence is 21 December 2026, a near-solstice winter design-day scenario rather than
+observed future weather or a demonstrated worst case across dates. Sixteen half-hour
+samples are centred at 08:15, 08:45, . . ., 15:45. Each carries weight Δ𝑡 = 0.5 h, so the
+total integration weight is 8 h, despite the 7.5 h span between the first and last sample
+centres. These are discrete samples, not continuous-time exposure measurements.
+     For receiver 𝑗 and sample 𝑡, let 𝑑𝑡 = 1{𝛼𝑡 > 0} indicate an above-horizon solar
+altitude and let 𝑏 𝑗𝑡 (𝑧) indicate obstruction by at least one building. Direct-sun duration
+is
+                                          𝑇
+                                         ∑︁
+                               𝐷 𝑗 (𝑧) =    Δ𝑡 𝑡 𝑑𝑡 [1 − 𝑏 𝑗𝑡 (𝑧)].                      (3)
+                                                𝑡=1
+The geometric primitive intersects a horizontal ray with a footprint and uses the first
+positive projected distance ℓ to compare the ray height 0.1 + ℓ tan 𝛼𝑡 against the building
+height. The source primitive ignores distances at most 10−7 m and uses a 10−9 m
+height tolerance. Point ordering, footprint construction, direction convention, tolerances
+and solar vectors are held identical in the matched comparison. The actual canonical
+case has no polygon holes; all receiving points were verified outside the canonical
+building footprints and off their boundaries. Those case-specific checks do not establish
+correctness for arbitrary polygon holes or boundary configurations.
+    The explicit active-sun factor in Eq. 3 is important. A reproduced latent defect in the
+legacy routine skips constructing below-horizon rays but then counts their unblocked
+entries as visible. All 16 saved samples are above the horizon, so this defect is not
+evidence of a wrong frozen exposure value. It is nevertheless a reason to require an
+active-sun mask for extensions to other schedules.
+
+3.3   Metrics and Preferences
+Let 𝐷 0𝑗 be baseline duration, 𝑃 = 2031, 𝑎 = 9 m2 the grid-area weight and 𝜏 = 3 h the
+research threshold. Four candidate metrics are
+                                ∑︁ 
+                                     1{𝐷 0𝑗 < 𝜏} − 1{𝐷 𝑗 (𝑧) < 𝜏} ,
+                                                                 
+                       𝐴(𝑧) = 𝑎                                                    (4)
+                                      𝑗
+                                          ∑︁
+                                  −1
+                      𝐻 (𝑧) = 𝑃                 [𝐷 𝑗 (𝑧) − 𝐷 0𝑗 ],                      (5)
+                                            𝑗
+                                ∑︁
+                      𝑉 (𝑧) =             |𝐹𝑖 | [ℎ𝑖 − ℎ𝑖 (𝑧)],                          (6)
+                                  𝑖
+                                  ∑︁
+                      𝑁 (𝑧) = 𝑎             1{𝐷 0𝑗 ≥ 𝜏, 𝐷 𝑗 (𝑧) < 𝜏}.                   (7)
+                                      𝑗
+
+Here 𝐴 is net reduction of low-sun grid area, 𝐻 is mean duration change, 𝑉 is the
+nominal per-building volume proxy and 𝑁 is newly low-sun grid area. In a model
+with nonoverlapping fixed-footprint prisms, Eq. 6 measures removed volume. With the
+present overlapping footprints it is an additive proxy, not actual whole-scene net union-
+volume reduction or a construction quantity. Translated solids require a separate net
+union-volume calculation. The 3 h threshold defines this analysis; no statutory status is
+claimed.
+          Table 1. Full-universe normalization bounds. 𝑉 is a nominal additive proxy.
+
+                              Metric Minimum         Maximum Unit
+                              𝐴              0          396 m2
+                              𝐻              0 0.06351551 h
+                              𝑉      387.38244 10,891.47442 m3
+                              𝑁              0            0 m2
+
+
+
+   For each 𝑞 ∈ { 𝐴, 𝐻, 𝑉, 𝑁 }, normalization bounds are fixed from the full 630-rule
+universe:          (
+                     (𝑞 − 𝑞 min )/(𝑞 max − 𝑞 min ), 𝑞 max − 𝑞 min ≥ 10−12 ,
+             𝑛𝑞 =                                                                 (8)
+                     0,                             otherwise.
+The preference score is
+
+                  𝑆 = 0.45𝑛 𝐴 + 0.35𝑛 𝐻 + 0.15(1 − 𝑛𝑉 ) + 0.05(1 − 𝑛 𝑁 ).                       (9)
+
+The weights are declared preferences, not learned parameters or probabilities. Bounds
+are not refitted to the review cohorts or Honeybee outcomes, and out-of-range values are
+not silently clipped. Table 1 reports the frozen bounds. All rule candidates have 𝑁 = 0;
+hence the final term contributes a constant 0.05 and has no discriminating power in this
+universe. Changing only its weight cannot change the ordering. A historical sensitivity
+scenario that also changed the 𝐴/𝐻 weights does not isolate the effect of 𝑁.
+     Production candidates are sorted by descending 𝑆, then descending 𝐴 and 𝐻; the top-
+ten selection retains positive-𝐴 candidates before taking ten. The archived 630 candidates
+have no exact score ties, so the secondary keys do not affect this shortlist. Natural-pair tie
+handling below applies to cohort top-𝐾 comparisons, not to a replacement production
+ranking rule. The accompanying Pareto analysis maximizes 𝐴 and minimizes 𝑉, with
+at least one strict improvement required for domination. It is a two-objective front, not
+a four-objective optimization. A high score, Pareto membership, geometric validity and
+professional acceptability remain different judgments.
+
+
+4     Screening and Decision Workflow
+4.1   From the Full Universe to a Reviewable Choice Set
+The workflow separates four decisions: what is eligible to be studied, which rule can-
+didates merit review, whether a translated solid implements its rule, and whether an
+intervention is acceptable in practice.4 The first three can be supported by explicit mod-
+el records; the last requires professional and stakeholder judgment beyond the present
+data. Figure 1 summarizes the progression without implying that every shortlisted can-
+didate has a completed design translation.
+    The top-ten list answers a preference-specific question: which ten rule candidates
+score highest under Eq. 9? The nondominated list answers a different question: which
+ 4 Substantial AI-assisted text preparation in this section [6]; see the AI-Assistance Disclosure.
+                                 45 canonical building groups
+                             ↓ Research flags and height condition
+                        36 eligible groups −→ all 630 unordered pairs
+                        ↓ Fixed height rule, 2.5D exposure, 𝐴/𝐻/𝑉/𝑁
+              Top ten by frozen score + area–volume nondominated alternatives
+                    ↓ Deduplicate with historical and reference selections
+             23 curated rule candidates with archived Honeybee/Radiance review
+                     ↓ Selected design translations need their own checks
+             Architect’s further assessment of geometry, rights, structure and use
+
+Fig. 1. The decision-support sequence. A separate frozen 20-candidate coverage cohort assesses
+same-site agreement; it is not an additional stage of design approval. The boxes are workflow
+states, not claims that detailed designs exist for all candidates.
+
+
+candidates cannot improve low-sun-area reduction without increasing the nominal vol-
+ume proxy, or reduce that proxy without losing area benefit? A candidate outside the
+top ten can remain useful when a decision maker places greater importance on inter-
+vention cost. Conversely, a score-selected candidate need not belong to the area–volume
+front because the score also rewards mean exposure gain. Reporting both views avoids
+concealing trade-offs behind one number.
+    The historical review pool combines ten score-selected candidates, twelve nonzero-
+benefit Pareto candidates, two historical cases and two reference selections. These mem-
+berships total 26 before three overlaps are removed, yielding 23 distinct candidates. This
+is purposive review, not a random draw from 630. Membership and archived review
+results must be joined by the building pair rather than by row position; a pair can have
+more than one selection rationale. A frozen same-site coverage sample of 20 is kept
+separate and is not reselected in response to the translation findings.
+    For an architect-facing handoff, each shortlist record should carry the pair identity,
+exact rule, area and mean-duration benefits, nominal volume proxy, score and Pareto
+membership, together with its rule-review and translation status. These fields answer
+distinct questions. An available Honeybee rule result means that the simplified rule has
+been evaluated by that route; it does not mean that a detailed stepback has been evaluated,
+is contained in the baseline solid or is feasible to construct. Missing translation evidence
+must remain visible rather than being inferred from a shared pair label.
+
+
+4.2   Reusable Building Contributions
+
+For each building 𝑖, receiver 𝑗 and time 𝑡, precompute Boolean occlusion arrays 𝑂 𝑖 𝑗𝑡
+and 𝑅𝑖Í𝑗𝑡 at the original and rule-reduced heights using the common primitive. Let
+𝐶 𝑗𝑡 = 𝑖 𝑂 𝑖 𝑗𝑡 be the original number of blockers. For selected pair (𝑎, 𝑏),
+                         (𝑎,𝑏)
+                       𝐶 𝑗𝑡    = 𝐶 𝑗𝑡 − 𝑂 𝑎 𝑗𝑡 − 𝑂 𝑏 𝑗𝑡 + 𝑅 𝑎 𝑗𝑡 + 𝑅𝑏 𝑗𝑡 ,               (10)
+                       𝑏 (𝑎,𝑏)
+                         𝑗𝑡
+                                     (𝑎,𝑏)
+                               = 1{𝐶 𝑗𝑡    > 0}.                                         (11)
+These updates use a signed integer count type sufficiently wide for the building count.
+Subtraction in Boolean or unsigned storage can silently corrupt counts and is not an
+acceptable implementation of Eq. 10.
+    The identity follows directly by partitioning the sum of building blockers into the two
+selected buildings and the unchanged remainder. Removing the original contributions of
+𝑎, 𝑏 and adding their reduced-height contributions yields the same count as recomputing
+every building contribution. The threshold in Eq. 11 then gives the same visibility. This is
+an algebraic equivalence conditional on identical primitive outputs, independent building
+contributions and unchanged unselected geometry. It does not equate the primitive to
+a different ray tracer, nor does it apply to a translated footprint merely because that
+translation shares a candidate label.
+    The implementation validates ordered inputs, computes the two blocker arrays and
+baseline counts, streams the pair updates into Eq. 3, and derives Eqs. 4–7. Scores
+use fixed full-universe bounds, followed by deterministic ranking and the 𝐴/𝑉 Pareto
+scan. Streaming avoids storing a full candidate–receiver–time cube. Geometry, time and
+candidate identities accompany the aggregate outputs so that a later score is not detached
+from the model that produced it.
+
+4.3   Computational Cost and Accounting
+Let 𝐵, 𝑃, 𝑇, 𝑀 be the building, receiver, time-sample and candidate counts, and let
+𝐺 denote the cost of a ray–footprint intersection. Repeated candidate intersection has
+work of order 𝑂 (𝑀 𝐵𝑃𝑇𝐺) before early exits. Reuse requires 𝑂 (𝐵𝑃𝑇𝐺) preparation
+and 𝑂 (𝑀 𝑃𝑇) candidate updates and metrics. Polygon complexity and possible indexing
+affect 𝐺; it is not a universal constant. Score sorting adds 𝑂 (𝑀 log 𝑀) and the present
+direct Pareto scan adds 𝑂 (𝑀 2 ) comparisons.
+     Two byte-valued blocker arrays require 2𝐵𝑃𝑇 bytes. At the present dimensions this
+is 2,924,640 bytes, approximately 2.79 MiB. This analytic storage count excludes geom-
+etry, solar data, integer count arrays, temporaries, indexes and Python overhead. It is not
+measured peak process memory. Input preparation, precomputation, candidate process-
+ing and output costs must be included consistently when evaluating actual efficiency.
+     We therefore compare two specific implementations: A repeats the primitive for each
+candidate, retaining first-blocker short-circuiting; B precomputes building blockers and
+reuses them. Neither implementation uses a spatial index in this experiment. B’s end-
+to-end runtime includes independent precomputation for each repeat. A warm-cache
+update-only time would answer a different question and is not used as the denominator
+of the reported speedup.
+
+4.4   Containment as a Physical Invariant
+Let Ω0 be the baseline opaque solid and Ω𝑐 a translated candidate solid. A genuine
+subtraction satisfies Ω𝑐 ⊆ Ω0 . For fixed receiving points and solar rays, a ray unob-
+structed by Ω0 cannot become obstructed by a subset of Ω0 . Thus containment implies
+nondecreasing sampled direct-sun exposure. An adverse event under these assumptions
+requires examination of geometry, ray mapping, receiving-point mapping or computa-
+tion; it cannot simply be justified as an unavoidable trade-off of subtraction.
+    Historical stepback generation is therefore audited independently of score ranking.
+The audit checks containment of generated solids, preservation of expected faces, actual
+ray intersections for adverse visibility events, and whole-scene union volumes. The
+corrected generator constrains the translated geometry to the original solid footprint and
+is evaluated in separate runs. Containment is not volume matching: clipping an outside
+region may change the amount removed, and overlapping building footprints make per-
+building sums differ from scene-union differences. We preserve both the original and
+corrected outputs rather than replacing the history with the favorable result.
+
+
+5     Validation and Experimental Setup
+
+5.1   Evidence Layers and Frozen Inputs
+
+Three historical evidence layers and the current aggregate reanalysis are kept separate.5
+The matched implementation experiment uses the canonical real-case input and the com-
+plete fixed candidate order. The same-metric agreement study recomputes statistics from
+frozen archived aggregates for a curated cohort of 23 and a separately preserved cover-
+age cohort of 20. Finally, controlled Honeybee/Radiance replays revisit a baseline and
+five historical translations, followed by four corrected scenes. The original 20-candidate
+sample was neither reselected nor rerun in the correction experiment. The present cloud
+analysis reads archived candidate and validation tables, recomputes selection outputs
+and checks their consistency. Original site geometry, ordered coordinates and complete
+solver scenes are not available to this cloud analysis, so it performs no new site Honey-
+bee/Radiance simulation. The historical timing and scene-replay measurements reported
+below retain their original execution context.
+    The coverage cohort was selected for score-stratum, volume and identifier coverage
+and held out from curated review. It is an outcome-blind same-site coverage sample,
+not a probability sample or an independent site. Archived timestamps report freezing
+before its Honeybee execution; a file hash verifies unchanged bytes but does not by itself
+prove that chronology. We use descriptive agreement measures without a population-
+generalization claim.
+    A pre-benchmark amendment repaired a normalization-source hash mismatch, pin-
+ning the actual committed bytes and an independent frozen reference. All 630 candidate
+identities and metrics agreed within existing tolerance. The original failed check was
+retained; score bounds were not adapted to outcomes.
+
+
+5.2   Matched Runtime and Equivalence
+
+The runtime experiment uses nested fixed prefixes of 5, 20, 60 and 630 candidates,
+with three measured A/B repeats at each size. Warm-up and pilot runs are excluded
+from the reported medians. Each comparison fixes geometry, ordered receivers, solar
+vectors, tolerance, candidate order, score bounds and phase accounting. Equivalence
+is checked for pointwise duration, 𝐴/𝐻/𝑉/𝑁, scores, ranks and Pareto membership
+ 5 Substantial AI-assisted text preparation in this section [6]; see the AI-Assistance Disclosure.
+before reporting runtime ratios. The 630-candidate A runs were completed; their times
+are measured rather than extrapolated.
+    The environment is Windows 11, Python 3.12.2, NumPy 2.4.6, Shapely 2.1.2 with
+GEOS 3.13.1, and pvlib 0.15.2. The processor is recorded as AMD64 Family 25 Model
+80 Stepping 0, with 16 logical CPUs available. The experiment uses one process and
+one thread; common numerical-library thread environment variables are fixed to one.
+Elapsed time is measured with time.perf_counter. The record does not supply a veri-
+fied commercial CPU model name, and unavailable Windows resident-set measurements
+are left unknown rather than reported as zero.
+
+
+5.3   Cross-Route Agreement and Temporal Audit
+
+Within each preserved cohort, the screening route is compared to the archived Honeybee
+route using the same metric on both sides: 𝐴 with 𝐴, 𝐻 with 𝐻 and 𝑆 with 𝑆. Scores use
+unchanged full-universe bounds. We report Spearman correlation with average ranks for
+ties and candidate-level mean absolute error (MAE). Shared 𝑉 inputs and the constant
+𝑁 term restrict the independence of the composite-score comparison.
+    Exact-𝐾 sets use descending metric followed by natural numeric pair order. The
+legacy source-row-order tie rule and inclusion of all boundary ties are reported as
+sensitivities. Every such result belongs to its comparison cohort; no selected-cohort
+statistic is interpreted as recall across all 630 candidates. Numerical zero p-values are
+not interpreted as exact probability zero, and significance claims are unnecessary for
+these nonprobability cohorts.
+    Actual archived WEA records, hour-of-year labels, solar-source names and all 16
+visibility columns were reconciled across the six historical scenes. Every cumulative
+exposure equals its binary visibility sum multiplied by 0.5 h. The WEA inputs have
+constant direct-normal irradiance of 1000 W/m2 and diffuse-horizontal irradiance of
+zero. They carry the direct-sun-hours analysis rather than measured weather. WEA/hour-
+of-year records lack a calendar-year field, so the archived Ladybug reconstruction is
+not an identical year-specific astronomical input to the declared 2026 pvlib sequence.
+Effective rays are shared across the controlled historical scenes but differ measurably
+from the saved pvlib rays. North zero remains an assumption.
+
+
+5.4   Controlled Translation Replays
+
+Six controlled replays comprise the baseline and five historical translated pairs: C9/C24,
+C9/C15, C9/C13, C13/C24 and C6/C33. Their ordered receiver grid, solar sources, time
+columns and archived scene identity are checked. Those controlled historical runs used
+one CPU and one worker. All six reproduce their historical pointwise visibility matrices
+exactly. Four contained corrections are then simulated separately. C9/C13 was already
+contained and is not simulated again as a correction; its unchanged value is reused only
+for comparison. That experiment therefore contains ten scene runs, not eleven, and no
+full 630-scene Honeybee experiment.
+Table 2. Top ten rule candidates under the frozen production score. All ten have archived rule-
+level Honeybee review. 𝑃: membership of the full 630-candidate 𝐴/𝑉 front. 𝑇: translated-design
+evidence (C, contained correction checked historically; U, unchanged already-contained result
+reused; –, no archived translated-design verification). Values describe screening rules, not trans-
+lated solids.
+
+                  Rank Pair          𝐴 (m2 )     𝐻 (h) 𝑉 (m3 )          𝑆 𝑃 𝑇
+                      1   C9/C24        396    0.04874   5,551   0.84486   Y   C
+                      2   C9/C15        351    0.03496   3,128   0.75237   Y   C
+                      3   C9/C12        306    0.04357   4,031   0.73582   N   –
+                      4   C15/C24       243    0.05367   4,016   0.72005   N   –
+                      5   C9/C35        297    0.04481   5,303   0.71420   N   –
+                      6   C9/C13        333    0.03028   2,975   0.70832   Y   U
+                      7   C12/C24       198    0.06228   4,919   0.70350   N   –
+                      8   C9/C21        333    0.03250   4,252   0.70229   N   –
+                      9   C9/C26        315    0.03520   3,906   0.70170   N   –
+                     10   C9/C27        324    0.03890   7,341   0.68323   N   –
+
+
+
+6     Results
+
+6.1   The Actual Rule-Candidate Shortlist
+
+The central output is the score-ordered choice set in Table 2.6 The table keeps the original
+production preference weights and full-universe normalization bounds; it is not retuned
+to favor particular pairs. Its performance columns describe uniform-height rules on the
+fixed canonical model. They must not be replaced with similarly named translated-
+design outcomes. The complete candidate and selection records support inspection of
+alternatives outside the displayed ten.
+     C9/C24 ranks first with 𝐴 = 396 m2 , 𝐻 = 0.04874 h and nominal 𝑉 = 5551.333 m3 .
+Its rule reduces the modeled heights of C9 and C24 from 12 and 9 m to 9 and 6.75 m.
+C9/C15 offers 351 m2 with a smaller nominal proxy of 3127.755 m3 , while C9/C13
+offers 333 m2 at 2975.156 m3 . These three are also on the full-universe area–volume
+front. The values give an architect reasons to inspect different benefit–cost positions; they
+do not establish actual removal quantities, legal eligibility or construction feasibility.
+     The score is not an area-only ranking. For example, C15/C24 ranks fourth with
+243 m2 of area reduction and 0.05367 h mean gain, while C9/C13 ranks sixth with
+333 m2 and 0.03028 h. C12/C24 ranks seventh despite a smaller area benefit of 198 m2 ,
+because its mean gain is 0.06228 h. This is a consequence of the declared normalization
+and weights rather than an error to be corrected by substituting an area ranking. Figure 2
+shows the complementary 𝐴/𝑉 view across all 630 candidates.
+     All twelve nondominated candidates have nonzero area benefit. Three also appear
+in the top ten, giving nineteen distinct score-selected or Pareto candidates. Adding
+historical pairs C6/C33 and C13/C24 and reference pairs C3/C19 and C26/C35 yields
+the curated 23. The reference pairs are interventions used for comparison; they are not
+ 6 Substantial AI-assisted text preparation in this section [6]; see the AI-Assistance Disclosure.
+                                                                             C9/C24
+                                 400                                                               630 rule candidates
+                                                                                                   12 A/V non-dominated
+                                                             C9/C15
+                                                                                                   Top 10 preference shortlist
+                                 350                        C9/C13
+ Low-sun-area reduction A (m²)
+
+
+                                 300
+
+                                 250
+
+                                 200
+
+                                 150
+
+                                 100
+
+                                  50
+                                           C25/C29
+
+                                   0
+
+                                       0             2000      4000          6000           8000             10000
+                                                            Nominal volume-reduction proxy (m³)
+
+
+
+
+Fig. 2. The complete area–nominal-volume choice set, recomputed from archived candidate ag-
+gregates. The top ten follow the four-term score; the Pareto front uses only 𝐴 and 𝑉. This aggregate
+plot contains no site coordinates or newly simulated observations.
+
+
+the unchanged baseline scene. This review pool covers 23/630, or approximately 3.65%,
+of the rule universe. The fraction describes selection effort, not verified global recall or
+a measured saving in the whole design process.
+    Every top-ten rule has an archived Honeybee result. Area reduction agrees exactly
+for nine of the ten; C9/C27 has 324 m2 in screening and 333 m2 in the archived rule
+review. Design-translation evidence is much narrower: only C9/C24 and C9/C15 have
+checked contained corrections, while C9/C13 reuses an already-contained result. The
+other seven rows have no archived translated-design verification. In particular, the first-
+ranked rule’s 396 m2 result must not be mistaken for the corrected translation’s 351 m2 .
+A reviewed rule is evidence for further assessment, not a completed design.
+
+6.2                               Agreement within Preserved Cohorts
+Table 3 separates the two cohorts and the three compared metrics. For low-sun-area
+reduction, the curated cohort has Spearman 𝜌 = 0.999258 and the coverage cohort
+𝜌 = 0.997668. In the latter, 19 candidates agree exactly and one differs by 9 m2 ,
+yielding MAE 0.45 m2 . This is an average candidate-aggregate error on a grid with 9 m2
+cell weights; it is not sub-grid spatial precision.
+    Coverage-cohort score ranks agree perfectly, but the score values do not: MAE is
+0.002139 and only 9 of 20 scores agree exactly. Moreover, 𝑉 is shared between routes
+and 𝑁 is constant. The score comparison cannot validate four independent performance
+criteria, and correlation one cannot be read as 100% predictive accuracy. The exposure
+Table 3. Descriptive same-metric agreement with archived Honeybee aggregates. Statistics are
+recomputed from frozen tables; no new cohort simulations are implied.
+
+               Cohort             Metric Spearman 𝜌           MAE Exact matches
+               Curated (𝑛 = 23)     𝐴 (m2 )     0.999258 0.391304           22/23
+                                 𝐻 (h)          0.991597 0.001177            3/23
+                                 𝑆              0.999012 0.006933            3/23
+               Coverage (𝑛 = 20) 𝐴 (m2 )        0.997668 0.450000           19/20
+                                 𝐻 (h)          0.999624 0.000295            9/20
+                                 𝑆              1.000000 0.002139            9/20
+
+Table 4. Measured end-to-end runtime medians from three single-thread repeats at each size. B
+includes precomputation. Ratios compare these implementations only.
+
+                        Candidates Repeats           A (s)   B (s)   A/B
+                                5             3    109.706 23.359 4.697
+                               20             3    373.812 23.418 15.963
+                               60             3 1,085.983 23.975 45.297
+                              630             3 11,608.183 24.037 482.927
+
+
+
+routes also have different effective solar vectors. Their high aggregate agreement is
+useful evidence for this frozen screening task, with those qualifications.
+    Tie handling materially affects the top-five 𝐴 comparison within the 20-candidate
+coverage cohort. Here overlap is divided by five for exact-five sets. The retained legacy
+source-order result of 0.8 becomes 1.0 under the specified natural-pair exact-five rule,
+while including all boundary ties produces sets of six and seven candidates. This is a
+change in set definition, not an improvement in the physical model. We consequently
+avoid presenting a single top-five overlap as a universal selection guarantee. Likewise,
+an older correlation that compared score ranks to area ranks is not compared to the
+present same-metric correlations as evidence of progress.
+
+
+6.3   Measured Reuse Efficiency
+
+All 12 measured scale/repeat comparisons pass pointwise and aggregate equivalence
+checks. Table 4 reports the scale-level medians. At 630 candidates, repeated intersection
+takes 11,608.183 s and reuse takes 24.037 s including precomputation; their ratio is
+482.927. The relative benefit increases with the candidate count as repeated geometry
+work accumulates while preparation is amortized.
+    This is an implementation comparison, not a general solver comparison. In partic-
+ular, the repeated-intersection implementation is not a spatial-index baseline, and the
+experiment does not time equivalent Honeybee scenes against B. Historical screening
+and Honeybee timings with different machines, solver semantics or worker counts are
+excluded from the ratio. The result supports the benefit of reuse in the measured setting,
+while leaving the benefit relative to other optimized implementations unmeasured.
+Table 5. Volume distinctions in the canonical model (m3 ). The nominal column is additive
+per building; other columns use signed whole-scene net union-volume reductions. C9/C13’s
+correction column reuses its already-contained result.
+
+              Pair      Nominal rule Rule union Legacy union Corrected union
+              C9/C24       5,551.333   5,470.406    5,259.615       5,474.582
+              C9/C15       3,127.755   3,065.681    2,927.693       2,937.931
+              C9/C13       2,975.156   2,918.246    2,785.422       2,785.422
+              C13/C24      3,863.880   3,726.044    3,534.257       3,749.224
+              C6/C33       5,583.055   1,909.864    2,553.509       2,554.767
+
+
+
+    The current archive reanalysis preserves the historical candidate ordering, all ten
+shortlist identities and the twelve-member Pareto front. The six saved full-universe
+A/B aggregate files are byte-identical. Recomputed scores agree with saved scores to
+floating-point rounding, with a maximum absolute discrepancy below 10−14 . These are
+consistency checks on archived numbers, not a new execution of geometric intersections
+or evidence of fidelity to the physical site.
+
+
+6.4   Translation Failure and Controlled Correction
+Four of five historical translations fail the solid-containment check. In C9/C24 and
+C13/C24, rays that were clear in the baseline intersect upper walls of C24 outside its
+original footprint. Each of these scenes has four worsened receiving points and 9 m2 of
+newly low-sun grid area in the retained historical result. The actual ray hits identify added
+obstructions as the cause. Synthetic tests had also exposed hole-handling and silent-face
+risks, but the canonical site has no holes and the six archived face dictionaries regenerate
+exactly; those synthetic defects are not asserted as the cause of this case.
+    The four contained corrections have no adverse visibility events, worsened receiving
+points or newly low-sun grid area on the fixed model, rays and grid. Figure 3 retains
+the before/after distinction. Low-sun-area reduction changes from 342 to 351 m2 for
+C9/C24 and from 207 to 216 m2 for C13/C24. C9/C15 and C6/C33 remain at 342 and
+18 m2 . The already-contained C9/C13 remains at 333 m2 through reuse of its unchanged
+historical result, not an additional correction run.
+    For any translated solid, the signed net union-volume reduction is |Ω0 | − |Ω𝑐 |. For
+a noncontained legacy solid, this equals removed baseline volume minus added outside
+volume; it is not gross removed material. Table 5 shows why containment correction
+must not be called a volume-matched comparison. Nominal rule budgets, rule-solid net
+union-volume reduction and translated-solid net union-volume reduction differ. C6/C33
+is particularly informative: its nominal additive proxy is 5,583.055 m3 , while uniform-
+rule net union-volume reduction is 1,909.864 m3 and corrected translation net union-
+volume reduction is 2,554.767 m3 . These quantities characterize the frozen approximate
+solids, not verified demolition or construction quantities. Similar area outcomes do not
+imply geometrically equivalent interventions.
+                                                                           Legacy translated geometry
+                                                                           Contained result (C9/C13 reused)
+                          300
+ Area reduction (m²)
+
+
+
+
+                          200
+
+
+
+                          100
+
+
+
+                                         0
+
+                                         4
+                       Worsened points
+
+
+
+
+                                         3
+
+
+                                         2
+
+
+                                         1
+
+
+                                         0
+                                             C9/C24   C9/C15   C9/C13   C13/C24            C6/C33
+
+
+
+
+Fig. 3. Controlled translation recheck. Top: low-sun-area reduction relative to baseline. Bottom:
+worsened receiving-point count. Four corrections were simulated in the historical recheck; C9/C13
+is already contained and reuses its unchanged result. The historical adverse results remain visible;
+the comparisons are not volume matched.
+7     Discussion and Limitations
+
+7.1   Using the Shortlist in Architectural Work
+
+The immediate value of the workflow is a smaller, documented choice set.7 An architect
+can compare candidate identities and benefits without manually creating 630 detailed
+models, while retaining the option to inspect the whole universe. The score provides one
+declared ordering; the Pareto set keeps lower-volume alternatives visible. The review
+status identifies which numbers have a second computational route and which translated
+forms still require assessment. This is a proposed use of the outputs, not a measured
+reduction in architects’ working time or evidence from a user study.
+    The next practical decision is not necessarily to select rank one. The architect may
+reject a highly ranked pair because the modeled eligibility flag does not reflect ownership,
+function, protected fabric or structural constraints. A lower-ranked candidate may merit
+further work for reasons not represented in 𝐴/𝐻/𝑉/𝑁. Those judgments should be
+recorded alongside, rather than hidden inside, an unexplained change to the score. If the
+team changes the modeled eligibility, geometry, rule, threshold or preference scenario,
+the result becomes a new explicitly versioned analysis; the frozen results should remain
+available for comparison.
+    Translation is a further decision gate. The historical C9/C24 result illustrates why
+adverse sunlight cannot be accepted uncritically as the natural price of a subtractive
+intervention. Actual rays hit walls that had been generated outside the baseline footprint.
+Containment and re-evaluation corrected that error, while volume accounting showed
+that clipping was not volume matching. Consequently, the updated evidence does not
+justify a permanent rule that only previously favored pairs may proceed. It supplies
+corrected outcomes for comparison and requires the architect to examine the intended
+intervention, verified boundaries and relevant costs.
+    Fast evaluation makes this bounded review process computationally practical under
+the measured conditions, but it does not solve omitted decisions. The 24.037 s historical
+implementation time concerns the canonical 630-rule calculation and includes block-
+er preparation. It excludes an architect’s model preparation, stakeholder consultation,
+structural investigation and detailed design. The broader human workflow was not timed.
+The contribution is therefore an auditable computational component for early selection,
+with explicit handoff information and limits.
+
+
+7.2   Threats to Validity
+
+Canonical geometry. The DXF component-bounding-box unions, shared components,
+overlapping footprints and OBJ disagreements are the most important external-validity
+limits. Reproducing a canonical model across implementations cannot validate its as-
+built fidelity. Correcting those boundaries would define a new input version and require
+an explicit assessment of affected results. Current cohort agreement must not be trans-
+ferred to that new geometry without evidence.
+ 7 Substantial AI-assisted text preparation in this section [6]; see the AI-Assistance Disclosure.
+Restricted physical scope. A single day, 16 samples, a 3 m grid, a 0.1 m receiving
+height and an assumed north orientation delimit the reported performance. Threshold
+counts can change discontinuously near 3 h. The constant WEA carrier is not measured
+meteorology, and the study does not validate indoor illuminance, glare, annual weather,
+energy production or regulatory compliance. The distinction between saved pvlib rays
+and archived Ladybug rays remains part of the cross-route comparison rather than being
+suppressed to imply identical astronomical inputs.
+
+Comparison design. The matched timing comparison controls the geometric primitive
+and single-thread execution, but covers only one canonical model and two implementa-
+tions without spatial indexing. Three repeats quantify the recorded execution conditions;
+they do not characterize hardware populations or arbitrary polygon complexity. We do
+not claim a measured memory reduction from the analytic blocker-array size or unavail-
+able RSS values. A stronger efficiency comparison would include indexed and compiled
+baselines with the same accounting contract.
+
+Cohorts and metrics. Curated review and outcome-blind coverage serve different pur-
+poses and remain separate. Neither is a random multi-site sample. Shared volume inputs,
+constant 𝑁, discretized area, ties and preference weights constrain the interpretation of
+rank agreement. Candidate-level aggregate errors can mask spatial differences. The
+frozen 20 were not selectively rerun after the translation audit because no shared re-
+ceiver, temporal-parser or missing-face defect was found in the actual scenes. A newly
+demonstrated shared defect would require an affected-scope review rather than selective
+retention of favorable outputs.
+
+Correction scope. Four corrected translations remove the observed adverse events under
+fixed rays and receivers. This supports the tested containment correction on this canonical
+model, not a guarantee for arbitrary imported meshes. Containment does not ensure
+equal volume, structural feasibility or a preferred design. The nominal 𝑉 proxy should
+be replaced or supplemented by an appropriate audited quantity if the decision requires
+physical removal costs.
+
+7.3   Reproducibility and Responsible Release
+The evidence separates historically measured runtime and scene replays, current frozen-
+table recomputation and reused historical results. Run identifiers, source, configuration
+and input hashes, raw timing repeats, aggregate tables, equivalence checks, correction
+ledgers and figure-source manifests are retained. The final integrated test record contains
+112 passing tests; this supports software regression coverage, not physical ground truth.
+Failures and amendments remain part of the record rather than being overwritten.
+    Raw CAD, DXF, SKP and OBJ inputs, receiver coordinates, WEA carriers, Honey-
+bee models and Radiance intermediate data remain restricted. Figures in this manuscript
+show aggregate evidence without site geometry or receiver coordinates. No public arti-
+fact release or unrestricted replication right is asserted. Any external evidence package
+must be reviewed for rights and anonymity before distribution. This restriction limit-
+s independent reproduction of the site-specific experiment and should remain visible
+alongside the available aggregate and algorithmic detail.
+8    Conclusion
+
+This study returns a bounded solar-access search to the architectural decision it supports:
+which interventions deserve further examination?8 Under fixed research eligibility and
+height rules, all 630 building-pair candidates are evaluated, a score-based top ten and
+area–volume alternatives are exposed, and a curated 23-candidate review pool links
+screening to archived Honeybee/Radiance evidence. The resulting choice set preserves
+the distinction between a ranked rule, a reviewed rule, a checked translation and a
+professionally acceptable intervention.
+    Historical supporting experiments make that workflow more auditable. Two matched
+implementations preserve pointwise and aggregate results while reducing the full-
+universe median runtime from 11,608.183 to 24.037 s, including reuse preparation.
+Preserved same-site cohorts show strong aggregate agreement within their sampling
+and metric limits. Controlled translation replays identify erroneous outside-footprint
+obstructions, and four contained corrections remove the observed adverse events on the
+fixed rays and grid. The current cloud reanalysis reorganizes and recomputes archived
+evidence; it adds no new site simulation.
+    The workflow does not establish as-built accuracy, statutory compliance, volume-
+matched construction quantities or an automatically approved design. Its next substantive
+extensions are verified boundaries, broader site and preference coverage, additional op-
+timized computational baselines and direct evaluation of how architects use the shortlist.
+For the present case, its defensible output is a transparent range of candidates and review
+evidence that an architect can scrutinize before deciding what to develop.
+
+
+Acknowledgments: AI-Assistance Disclosure
+
+An OpenAI assistant [6] provided substantial assistance with the abstract and Sections 1–
+8, including evidence organization, narrative restructuring, text generation and editing,
+mathematical presentation, table preparation, figure descriptions, bibliography checks,
+and analysis and LaTeX quality-control code. Section-specific citations identify this
+assistance. Numerical tables derive from archived measurements and explicit aggregate
+recomputation; no observations were invented to complete missing experiments. Dia-
+gram and chart preparation uses workflow descriptions and recorded aggregates rather
+than generated site imagery. The exact underlying model version was not recorded.
+This statement describes preparation of this draft and does not assert that the authors
+have completed independent verification or approved its content. Author review and
+responsibility remain required before submission.
+
+
+References
+
+1. Compagnon, R.: Solar and daylight availability in the urban fabric. Energy and Buildings
+   36(4), 321–328 (2004). https://doi.org/10.1016/j.enbuild.2004.01.009
+ 8 Substantial AI-assisted text preparation in this section [6]; see the AI-Assistance Disclosure.
+2. Czachura, A., Kanters, J., Gentile, N., Wall, M.: Solar performance metrics in urban plan-
+   ning: A review and taxonomy. Buildings 12(4), 393 (2022). https://doi.org/10.3390/
+   buildings12040393
+3. De Luca, F., Dogan, T., Sepúlveda, A.: Reverse solar envelope method. a new building form-
+   finding method that can take regulatory frameworks into account. Automation in Construction
+   123, 103518 (2021). https://doi.org/10.1016/j.autcon.2020.103518
+4. Holmgren, W.F., Hansen, C.W., Mikofski, M.A.: pvlib python: a python package for modeling
+   solar energy systems. Journal of Open Source Software 3(29), 884 (2018). https://doi.
+   org/10.21105/joss.00884
+5. Konis, K., Gamas, A., Kensek, K.: Passive performance and building form: An optimization
+   framework for early-stage design support. Solar Energy 125, 161–179 (2016). https://doi.
+   org/10.1016/j.solener.2015.12.020
+6. OpenAI: OpenAI assistant. https://openai.com/ (2026), AI-assisted drafting and editing
+   tool; exact underlying model/version not recorded. Used October 2026
+7. Sadeghipour Roudsari, M., Pak, M.: Ladybug: A parametric environmental plugin for
+   Grasshopper to help designers create an environmentally-conscious design. In: Proceedings of
+   BS2013: 13th Conference of International Building Performance Simulation Association. pp.
+   3128–3135 (2013). https://doi.org/10.26868/25222708.2013.2499
+8. Ward, G.J.: The RADIANCE lighting simulation and rendering system. In: Proceedings of
+   the 21st Annual Conference on Computer Graphics and Interactive Techniques. pp. 459–472.
+   ACM (1994). https://doi.org/10.1145/192161.192286
+

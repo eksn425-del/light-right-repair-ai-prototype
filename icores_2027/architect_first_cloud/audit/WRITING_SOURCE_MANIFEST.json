@@ -1,0 +1,62 @@
+[
+  {
+    "path": "icores_2027/manuscript_final_candidate/manuscript.tex",
+    "sha256": "a47acc61b83c340d714c564235c838dc846fd2892a574470fa5db738fed1ff15",
+    "bytes": 39628
+  },
+  {
+    "path": "icores_2027/manuscript_author_review/manuscript.tex",
+    "sha256": "80a8ec9cc672cbfde811d661e083baa75c2992632b7a547101558623aab0512b",
+    "bytes": 39860
+  },
+  {
+    "path": "icores_2027/paper_support/CLAIM_CORRECTIONS.csv",
+    "sha256": "ed155690daa1180b1a6bee8cd66cffc011a0ba2b8483ad3a3097750272b6c319",
+    "bytes": 7313
+  },
+  {
+    "path": "icores_2027/paper_support/CLAIMS_LEDGER_ICORES.csv",
+    "sha256": "d334cd12ad9ac9a33d81f98d6b64ece522754ee0ac258ce91c0ca7e5a8a12c4d",
+    "bytes": 7383
+  },
+  {
+    "path": "icores_2027/paper_support/PAPER_NUMBERS_ICORES.csv",
+    "sha256": "324642e52b051aa74f2d78c31bf0f56d1a6b6a4d1a96a62a616d13911a034aa9",
+    "bytes": 71167
+  },
+  {
+    "path": "icores_2027/paper_support/METHOD_SPEC.md",
+    "sha256": "162eca4c6e5dee3e077f978aa3752fd0ba8fb34f908d7c3fed95a178a8f3aee8",
+    "bytes": 14531
+  },
+  {
+    "path": "project_archive_2026_10_16/context/source_documents/光权修复AI项目完整介绍_给网页端AI_2026-06-05.txt",
+    "sha256": "0a8faabe9c20334ae4c9cc5a290228a49e3e18b8a36cc09e77d3d7d7b133f5f6",
+    "bytes": 30690
+  },
+  {
+    "path": "project_archive_2026_10_16/readable_manuscripts/context/source_documents/光权修复_终版执行大纲.md",
+    "sha256": "9f8fa2328724a87e8d73e42e871d50e6f2de69ec3eda08652321db557b9b2aff",
+    "bytes": 16163
+  },
+  {
+    "path": "project_archive_2026_10_16/readable_manuscripts/manuscripts/june_workbook/10_最终交付包_老师检查版/光权修复论文_初稿.md",
+    "sha256": "e44e74f32cb17d0bd0142a911202c0532dc82a0226ba9ef7cbd9ca6ed34895f2",
+    "bytes": 24122
+  },
+  {
+    "path": "project_archive_2026_10_16/readable_manuscripts/history/route_b_june/光权修复论文_EI会议_中文学术定稿版_投稿前小修.md",
+    "sha256": "1231d45c420bf5906b00664a29fabba2c054c940eb04f3101249c5a9d21b758d",
+    "bytes": 20328
+  },
+  {
+    "path": "research_reproducibility/paper_support/PAPER_NUMBERS.csv",
+    "sha256": "00279be5519c8776376a192fec98adf2bbe56dec048d845167daea69eb08817c",
+    "bytes": 12836
+  },
+  {
+    "path": "research_reproducibility/paper_support/CLAIMS_LEDGER.csv",
+    "sha256": "164add1f0d0c2ee50bd39a4f9aa1a5d780d45c17183f8c1343d7a6ee114de223",
+    "bytes": 3860
+  }
+]

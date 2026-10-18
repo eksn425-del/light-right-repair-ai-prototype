@@ -1,0 +1,76 @@
+paragraph_id,section,subsection,kind
+ABS-P01,Abstract,,prose
+S1-P01,Introduction,,prose
+S1-P02,Introduction,,prose
+S1-P03,Introduction,,prose
+S1-P04,Introduction,,prose
+S1-P05,Introduction,,prose
+S2-P01,Related Work and Positioning,,prose
+S2-P02,Related Work and Positioning,,prose
+S2-P03,Related Work and Positioning,,prose
+S3-P01,"Case, Decision Universe and Solar Setup",Bounded Candidate Universe,equation
+S3-P02,"Case, Decision Universe and Solar Setup",Bounded Candidate Universe,prose
+S3-P03,"Case, Decision Universe and Solar Setup","Receiving Grid, Time Samples and Visibility",prose
+S3-P04,"Case, Decision Universe and Solar Setup","Receiving Grid, Time Samples and Visibility",equation
+S3-P05,"Case, Decision Universe and Solar Setup","Receiving Grid, Time Samples and Visibility",prose
+S3-P06,"Case, Decision Universe and Solar Setup",Metrics and Preferences,equation
+S3-P07,"Case, Decision Universe and Solar Setup",Metrics and Preferences,equation
+S3-P08,"Case, Decision Universe and Solar Setup",Metrics and Preferences,table
+S3-P09,"Case, Decision Universe and Solar Setup",Metrics and Preferences,prose
+S4-P01,Screening and Decision Workflow,From the Full Universe to a Reviewable Choice Set,prose
+S4-P02,Screening and Decision Workflow,From the Full Universe to a Reviewable Choice Set,figure
+S4-P03,Screening and Decision Workflow,From the Full Universe to a Reviewable Choice Set,prose
+S4-P04,Screening and Decision Workflow,From the Full Universe to a Reviewable Choice Set,prose
+S4-P05,Screening and Decision Workflow,From the Full Universe to a Reviewable Choice Set,prose
+S4-P06,Screening and Decision Workflow,Reusable Building Contributions,equation
+S4-P07,Screening and Decision Workflow,Reusable Building Contributions,prose
+S4-P08,Screening and Decision Workflow,Reusable Building Contributions,prose
+S4-P09,Screening and Decision Workflow,Computational Cost and Accounting,prose
+S4-P10,Screening and Decision Workflow,Computational Cost and Accounting,prose
+S4-P11,Screening and Decision Workflow,Computational Cost and Accounting,prose
+S4-P12,Screening and Decision Workflow,Containment as a Physical Invariant,prose
+S4-P13,Screening and Decision Workflow,Containment as a Physical Invariant,prose
+S5-P01,Validation and Experimental Setup,Evidence Layers and Frozen Inputs,prose
+S5-P02,Validation and Experimental Setup,Evidence Layers and Frozen Inputs,prose
+S5-P03,Validation and Experimental Setup,Evidence Layers and Frozen Inputs,prose
+S5-P04,Validation and Experimental Setup,Matched Runtime and Equivalence,prose
+S5-P05,Validation and Experimental Setup,Matched Runtime and Equivalence,prose
+S5-P06,Validation and Experimental Setup,Cross-Route Agreement and Temporal Audit,prose
+S5-P07,Validation and Experimental Setup,Cross-Route Agreement and Temporal Audit,prose
+S5-P08,Validation and Experimental Setup,Cross-Route Agreement and Temporal Audit,prose
+S5-P09,Validation and Experimental Setup,Controlled Translation Replays,prose
+S6-P01,Results,The Actual Rule-Candidate Shortlist,prose
+S6-P02,Results,The Actual Rule-Candidate Shortlist,table
+S6-P03,Results,The Actual Rule-Candidate Shortlist,prose
+S6-P04,Results,The Actual Rule-Candidate Shortlist,prose
+S6-P05,Results,The Actual Rule-Candidate Shortlist,figure
+S6-P06,Results,The Actual Rule-Candidate Shortlist,prose
+S6-P07,Results,The Actual Rule-Candidate Shortlist,prose
+S6-P08,Results,Agreement within Preserved Cohorts,prose
+S6-P09,Results,Agreement within Preserved Cohorts,table
+S6-P10,Results,Agreement within Preserved Cohorts,prose
+S6-P11,Results,Agreement within Preserved Cohorts,prose
+S6-P12,Results,Measured Reuse Efficiency,prose
+S6-P13,Results,Measured Reuse Efficiency,table
+S6-P14,Results,Measured Reuse Efficiency,prose
+S6-P15,Results,Measured Reuse Efficiency,prose
+S6-P16,Results,Translation Failure and Controlled Correction,prose
+S6-P17,Results,Translation Failure and Controlled Correction,prose
+S6-P18,Results,Translation Failure and Controlled Correction,figure
+S6-P19,Results,Translation Failure and Controlled Correction,prose
+S6-P20,Results,Translation Failure and Controlled Correction,table
+S7-P01,Discussion and Limitations,Using the Shortlist in Architectural Work,prose
+S7-P02,Discussion and Limitations,Using the Shortlist in Architectural Work,prose
+S7-P03,Discussion and Limitations,Using the Shortlist in Architectural Work,prose
+S7-P04,Discussion and Limitations,Using the Shortlist in Architectural Work,prose
+S7-P05,Discussion and Limitations,Threats to Validity,prose
+S7-P06,Discussion and Limitations,Threats to Validity,prose
+S7-P07,Discussion and Limitations,Threats to Validity,prose
+S7-P08,Discussion and Limitations,Threats to Validity,prose
+S7-P09,Discussion and Limitations,Threats to Validity,prose
+S7-P10,Discussion and Limitations,Reproducibility and Responsible Release,prose
+S7-P11,Discussion and Limitations,Reproducibility and Responsible Release,prose
+S8-P01,Conclusion,,prose
+S8-P02,Conclusion,,prose
+S8-P03,Conclusion,,prose
+AI-P01,Acknowledgments: AI-Assistance Disclosure,,prose

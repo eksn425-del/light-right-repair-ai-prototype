@@ -1,0 +1,52 @@
+{
+  "source_manuscript_sha256": "fc4cd28bfac0d5f67e41a39d4c4623148168af3ec8d9440f002afd047286d680",
+  "mapped_source_blocks": 75,
+  "mapped_prose_equation_blocks": 67,
+  "mapped_float_blocks": 8,
+  "all_75_source_blocks_mapped": true,
+  "equations": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "tables": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "figures": [
+    1,
+    2,
+    3
+  ],
+  "bibliography_numbers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "notes": "Full translation, not reader-summary substitution. Citation and float numbers checked against final aux/bbl. Scientific statements translated from manuscript; no new simulation claim.",
+  "CHINESE_FAITHFUL_TRANSLATION.md": {
+    "bytes": 43518,
+    "sha256": "fc4df48a7218a5df0dc7506cb066f7e21e010b325f2514c7820a4c9956c4a5f9"
+  },
+  "CHINESE_READER_VERSION.md": {
+    "bytes": 18930,
+    "sha256": "44ec07e48a39885917e077bfcd616a26e9df19b5857ae8f2e2a5aadcc2006e52"
+  },
+  "preamble_only_cleanup": "Removed redundant explicit amsmath import per current official template guidance; compiled PDF SHA and all extracted text byte-identical."
+}

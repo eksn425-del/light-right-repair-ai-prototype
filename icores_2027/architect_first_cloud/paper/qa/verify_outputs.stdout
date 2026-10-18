@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "pdf_sha256": "27f20bc85c92403d24c5567bc55fd3a126603f044c0a2b259af19e0584f5df0f",
+  "tex_sha256": "fc4cd28bfac0d5f67e41a39d4c4623148168af3ec8d9440f002afd047286d680",
+  "pages": 18,
+  "pdf_nonwhitespace_characters_pdftotext_layout": 40926,
+  "visual_review": "Recorded separately in QA_REPORT.md and independent final review",
+  "new_physical_simulation": false,
+  "author_approval": false,
+  "submitted": false
+}
+55 checks passed

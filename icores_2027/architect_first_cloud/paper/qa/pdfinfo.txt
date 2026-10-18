@@ -1,0 +1,20 @@
+Title:           Efficient Solar-Access Intervention Screening for Early Urban Renewal: An Auditable Decision-Support Workflow
+Subject:         Anonymous regular-paper manuscript for author review
+Keywords:        solar access, decision support, exhaustive screening, geometry validation
+Author:          
+Creator:         LaTeX
+Producer:        pdfTeX-1.40.26
+Custom Metadata: yes
+Metadata Stream: no
+Tagged:          no
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           18
+Encrypted:       no
+Page size:       612 x 792 pts (letter)
+Page rot:        0
+File size:       257045 bytes
+Optimized:       no
+PDF version:     1.7

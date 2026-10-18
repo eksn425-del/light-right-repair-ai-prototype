@@ -1,0 +1,33 @@
+{
+  "verified_on_utc": "2026-10-18",
+  "official_template_zip_url": "https://cms-resources.apps.public.k8s.springernature.io/springer-cms/rest/v1/content/27851904/data/LaTeX2e%20Proceedings%20Template%20ZIP",
+  "official_zip_sha256": "42afb32ed4fadc9e209134ec65dab1bd2a7ead42f9a3f8abb184f250c4a197b9",
+  "class_git_blob": "056b4d4bb2a5c6aa85a258b1b045651607820634",
+  "class_sha256": "04ec99046ad9867f6cd54ffd1ef8c47c767b327d1baec77536db0528cd492fa2",
+  "bibliography_style_sha256": "f36c3a17e5304a692706359aafa9de709395a085e579eb47c027095aeaa35174",
+  "class_and_bst_byte_identical_to_current_official": true,
+  "official_sample_page_size_pt": [
+    612,
+    792
+  ],
+  "manuscript_page_size_pt": [
+    612,
+    792
+  ],
+  "inspected_pdf_sha256": "27f20bc85c92403d24c5567bc55fd3a126603f044c0a2b259af19e0584f5df0f",
+  "extracted_pdf_nonwhitespace_characters": 40864,
+  "initial_character_range": [
+    10000,
+    50000
+  ],
+  "no_a4_change_needed": true,
+  "source_cleanup": "Remove separate amsmath package loading when newtxmath is loaded, per official llncsdoc p.5.",
+  "author_pending": [
+    "AI disclosure placement clarification",
+    "Final authorship, rights, originality, competing interests and content approval"
+  ],
+  "repository_edited": false,
+  "source_cleanup_completed": true,
+  "final_pdf_unchanged_after_cleanup": true,
+  "final_source_sha256": "fc4cd28bfac0d5f67e41a39d4c4623148168af3ec8d9440f002afd047286d680"
+}
