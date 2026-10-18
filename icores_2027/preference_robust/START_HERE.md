@@ -14,4 +14,10 @@ The research question is whether a ten-candidate set can preserve useful choices
 
 New computations use the genuine archived 630-candidate performance table. They do not constitute new Honeybee/Radiance simulation, physical-model validation, architect preference elicitation, or construction approval. Previously frozen 23- and 20-candidate review cohorts remain unchanged. Missing validation on newly selected candidates remains missing.
 
-The final handoff will identify the English PDF and source, two complete Chinese manuscripts, reproducible scripts and samples, full candidate statistics, independent QA, and unresolved author decisions. No conference submission, payment, authorship entry, repository publication, or legal/academic declaration is authorized by this workflow.
+The completed handoff identifies the English PDF and source, two complete Chinese manuscripts, reproducible scripts and samples, full candidate statistics, independent QA, and unresolved author decisions. No conference submission, payment, authorship entry, repository publication, or legal/academic declaration is authorized by this workflow.
+
+## Completed delivery
+
+All 231 packaged artifacts were verified against GitHub blob identities. All 1,797 prior repository files remain unchanged. English PDF: 21 pages; source-only rebuild byte identical. See `handoff/AUTHOR_REVIEW.md` first, then `results/SUMMARY.json`, `paper/anonymous_regular_submission.pdf`, both `paper/CHINESE_*.md` files, and the QA reports.
+
+Verified content commit: `ec313ef7ed329eca807ab984bba82fd0dcb8f44d`. Work has stopped for author and web review. No conference submission was made.

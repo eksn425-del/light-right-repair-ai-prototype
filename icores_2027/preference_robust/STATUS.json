@@ -1,11 +1,11 @@
 {
-  "status": "COMPLETE_CLOUD_ANALYSIS_AND_BILINGUAL_AUTHOR_REVIEW_PACKAGE_PENDING_REMOTE_VERIFICATION",
+  "status": "COMPLETE_REMOTE_VERIFIED_STOPPED_FOR_AUTHOR_REVIEW",
   "repository": "eksn425-del/light-right-repair-ai-prototype",
   "branch": "icores-2027-preference-robust",
   "source_head": "df9001858ceb9d6014eedfd35c8bfc3b7f0c0221",
   "protocol_freeze_commit": "cff3e81eebf93a16df6da8a21fe735c1554a5a8f",
   "scientific_results_commit": "b30b73ed5c19c20fd1650bc331305a94e22ff695",
-  "updated_utc": "2026-10-18T16:32:38.619148+00:00",
+  "updated_utc": "2026-10-18T16:36:00.107620+00:00",
   "weights": 180000,
   "candidate_count": 630,
   "continuous_LPs": 11340,
@@ -33,5 +33,9 @@
     "AI disclosure placement",
     "official bibliography wording discrepancy",
     "author declarations and final submission"
-  ]
+  ],
+  "delivery_content_commit": "ec313ef7ed329eca807ab984bba82fd0dcb8f44d",
+  "remote_artifacts_verified": 231,
+  "prior_repository_files_preserved": 1797,
+  "execution_stopped_for_author_review": true
 }

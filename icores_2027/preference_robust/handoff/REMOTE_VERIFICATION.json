@@ -1,0 +1,9 @@
+{
+  "content_commit": "ec313ef7ed329eca807ab984bba82fd0dcb8f44d",
+  "artifacts_verified": 231,
+  "original_files_unchanged": 1797,
+  "tree_truncated": false,
+  "private_repository": true,
+  "verification": "Local Git blob SHA1 for every delivered file equals remote tree blob identity",
+  "verified_utc": "2026-10-18T16:36:00.108114+00:00"
+}

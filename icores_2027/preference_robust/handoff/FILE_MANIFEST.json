@@ -11,13 +11,13 @@
   },
   {
     "path": "START_HERE.md",
-    "bytes": 1792,
-    "sha256": "0034b024b2ef023105e245b98548d80d81c4259787e9b54e946e597b8b0c207e"
+    "bytes": 2311,
+    "sha256": "4de5627659c45142894776f0dee70c87f86e6f45d4e7ed46ba80345cee130737"
   },
   {
     "path": "STATUS.json",
-    "bytes": 1378,
-    "sha256": "0fb7eaa062c30e88fd917222337f1f1450b64c5361a140b130f1fbc2570f8637"
+    "bytes": 1541,
+    "sha256": "4c280df341f284870eb876a5d5531800daed1cbda06f11241c337b554ae502ec"
   },
   {
     "path": "analysis/OUTPUT_README.md",
@@ -141,8 +141,8 @@
   },
   {
     "path": "handoff/FINAL_STATUS.json",
-    "bytes": 1378,
-    "sha256": "0fb7eaa062c30e88fd917222337f1f1450b64c5361a140b130f1fbc2570f8637"
+    "bytes": 1541,
+    "sha256": "4c280df341f284870eb876a5d5531800daed1cbda06f11241c337b554ae502ec"
   },
   {
     "path": "paper/CHINESE_FAITHFUL_TRANSLATION.md",
@@ -1148,5 +1148,10 @@
     "path": "results/weight_samples/ordered_train.npz",
     "bytes": 453912,
     "sha256": "0a86c173f333e1d63ddfb69663ffc7d0c5f254feae5bf8e9c3e14a7b18676ec3"
+  },
+  {
+    "path": "handoff/REMOTE_VERIFICATION.json",
+    "bytes": 341,
+    "sha256": "2ff91b9b017c0cd5eaa75759072f3766588537c5278e4ca9f23130afa54c0f11"
   }
 ]
