@@ -1,0 +1,38 @@
+{
+  "candidate_tradeoff": {
+    "source": "icores_2027/runs/local_ablation_20261016/aggregate_B_m630_r1_run.csv",
+    "classification": "CLOUD_RECOMPUTED_FROM_ARCHIVE",
+    "run_id": "cloud_archive_reanalysis_20261018",
+    "script": "analysis/recompute_candidates.py",
+    "shows": "630 archived candidate A/V values, frozen top10 and recomputed 12-member front; no site geometry",
+    "outputs": {
+      "paper/figures/candidate_tradeoff.pdf": "4a6703775676e3d450d8f970e08afd3b684d9ba97ebb7b6ba1dd7a1df59b6d73",
+      "paper/figures/candidate_tradeoff.png": "4f4bafa9a51fc84977dbe91ad3893679052ec49109638fa44a26fea0be9bfef0",
+      "paper/figures/candidate_tradeoff.svg": "3c170456aa5d808eab08e8206d512a16f2f7f7d28cd4533ee8aae7f3c68f0127"
+    }
+  },
+  "runtime_publication": {
+    "classification": "CLOUD_RECOMPUTED_FROM_ARCHIVE",
+    "source": "icores_2027/runs/local_ablation_20261016/ablation_summary.csv",
+    "source_sha256": "01c05a9cad3b7974a286589d2a2d03f4d56e168e06a472a09344400657cc5e84",
+    "script": "analysis/make_supporting_figures.py",
+    "output_sha256": "5f46f38f5b241eae276e874012e741862de68dd6b2d8eca0cc009508b8ff12b2",
+    "new_physical_simulation": false
+  },
+  "agreement_publication": {
+    "classification": "CLOUD_RECOMPUTED_FROM_ARCHIVE",
+    "source": "icores_2027/runs/statistics_20261016/comparison_values.csv",
+    "source_sha256": "9890c9ec0c751d24f4154008cf6e8fe680ef753e94ebf504a8702769dcadd16a",
+    "script": "analysis/make_supporting_figures.py",
+    "output_sha256": "3459280b03ca33627a47372bf6c8c08906fefcc7439b1864c72f93e0cd2df718",
+    "new_physical_simulation": false
+  },
+  "translation_publication": {
+    "classification": "CLOUD_RECOMPUTED_FROM_ARCHIVE",
+    "source": "icores_2027/runs/local_hb_20261016/translation_outcome_comparison.csv",
+    "source_sha256": "f853657ef9e8884b936c3a288fea8599deb69f7244adfde38b28a9ae4f7f7578",
+    "script": "analysis/make_supporting_figures.py",
+    "output_sha256": "44daceec3381180c162146d95dea4b782c4e18bb08417aacfaa6f45db508bc72",
+    "new_physical_simulation": false
+  }
+}

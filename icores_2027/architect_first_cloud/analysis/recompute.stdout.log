@@ -1,0 +1,13 @@
+{
+  "full": 630,
+  "eligible_ids": 36,
+  "top10": 10,
+  "pareto": 12,
+  "top10_pareto_overlap": 3,
+  "selected23": 23,
+  "coverage20": 20,
+  "top10_rule_hb_reviewed": 10,
+  "top10_translations_checked": 3
+}
+score max error 5.551115123125783e-16
+All candidate/reconciliation assertions PASSED. No physical simulator run.

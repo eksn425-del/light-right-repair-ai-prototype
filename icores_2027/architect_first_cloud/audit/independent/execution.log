@@ -1,0 +1,398 @@
+{
+  "scope": "Independent cloud recomputation of archived aggregates only; no new site physics or raw pointwise verification",
+  "checks": {
+    "rows": 630,
+    "unique_pairs": 630,
+    "unique_building_ids": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      44
+    ],
+    "complete_combination_universe": true,
+    "missing_numeric": 0,
+    "nonfinite_numeric": 0,
+    "bounds": {
+      "A": [
+        0.0,
+        396.0
+      ],
+      "H": [
+        0.0,
+        0.06351550960118169
+      ],
+      "V": [
+        387.3824354304028,
+        10891.474417736685
+      ],
+      "N": [
+        0.0,
+        0.0
+      ]
+    },
+    "score_max_error": 4.440892098500626e-16,
+    "recomputed_score_rank_mismatches": 0,
+    "exact_score_tied_groups": 0,
+    "pareto_count": 12,
+    "pareto_flag_mismatches": 0,
+    "top10_pareto_count": 3,
+    "cohort_sizes": {
+      "curated23": 23,
+      "heldout20": 20
+    },
+    "cohort_overlap": [],
+    "all_top10_curated": true,
+    "all_pareto_curated": true,
+    "cohort_score_recompute_max_error": {
+      "two_d": 4.440892098500626e-16,
+      "hb": 4.440892098500626e-16
+    },
+    "cohort_shared_V_all": false,
+    "cohort_N_zero": true
+  },
+  "full630_ab_comparisons": [
+    {
+      "file": "icores_2027/runs/local_ablation_20261016/aggregate_A_m630_r1_run.csv",
+      "unique_pairs": 630,
+      "same_pair_order": true,
+      "max_abs": {
+        "A": 0.0,
+        "H": 0.0,
+        "V": 0.0,
+        "N": 0.0,
+        "score": 0.0,
+        "rank": 0.0
+      },
+      "pareto_mismatches": 0
+    },
+    {
+      "file": "icores_2027/runs/local_ablation_20261016/aggregate_A_m630_r2_run.csv",
+      "unique_pairs": 630,
+      "same_pair_order": true,
+      "max_abs": {
+        "A": 0.0,
+        "H": 0.0,
+        "V": 0.0,
+        "N": 0.0,
+        "score": 0.0,
+        "rank": 0.0
+      },
+      "pareto_mismatches": 0
+    },
+    {
+      "file": "icores_2027/runs/local_ablation_20261016/aggregate_A_m630_r3_run.csv",
+      "unique_pairs": 630,
+      "same_pair_order": true,
+      "max_abs": {
+        "A": 0.0,
+        "H": 0.0,
+        "V": 0.0,
+        "N": 0.0,
+        "score": 0.0,
+        "rank": 0.0
+      },
+      "pareto_mismatches": 0
+    },
+    {
+      "file": "icores_2027/runs/local_ablation_20261016/aggregate_B_m630_r1_run.csv",
+      "unique_pairs": 630,
+      "same_pair_order": true,
+      "max_abs": {
+        "A": 0.0,
+        "H": 0.0,
+        "V": 0.0,
+        "N": 0.0,
+        "score": 0.0,
+        "rank": 0.0
+      },
+      "pareto_mismatches": 0
+    },
+    {
+      "file": "icores_2027/runs/local_ablation_20261016/aggregate_B_m630_r2_run.csv",
+      "unique_pairs": 630,
+      "same_pair_order": true,
+      "max_abs": {
+        "A": 0.0,
+        "H": 0.0,
+        "V": 0.0,
+        "N": 0.0,
+        "score": 0.0,
+        "rank": 0.0
+      },
+      "pareto_mismatches": 0
+    },
+    {
+      "file": "icores_2027/runs/local_ablation_20261016/aggregate_B_m630_r3_run.csv",
+      "unique_pairs": 630,
+      "same_pair_order": true,
+      "max_abs": {
+        "A": 0.0,
+        "H": 0.0,
+        "V": 0.0,
+        "N": 0.0,
+        "score": 0.0,
+        "rank": 0.0
+      },
+      "pareto_mismatches": 0
+    }
+  ],
+  "cohort_agreement": [
+    {
+      "cohort": "curated23",
+      "metric": "A",
+      "n": 23,
+      "rho": 0.9992582518450251,
+      "mae": 0.391304347826087,
+      "exact_equal": 22
+    },
+    {
+      "cohort": "curated23",
+      "metric": "H",
+      "n": 23,
+      "rho": 0.9915966386554622,
+      "mae": 0.0011774024361526744,
+      "exact_equal": 3
+    },
+    {
+      "cohort": "curated23",
+      "metric": "score",
+      "n": 23,
+      "rho": 0.9990118577075099,
+      "mae": 0.006932699083861882,
+      "exact_equal": 3
+    },
+    {
+      "cohort": "heldout20",
+      "metric": "A",
+      "n": 20,
+      "rho": 0.997668088547906,
+      "mae": 0.45,
+      "exact_equal": 19
+    },
+    {
+      "cohort": "heldout20",
+      "metric": "H",
+      "n": 20,
+      "rho": 0.9996239894584121,
+      "mae": 0.00029542097488923,
+      "exact_equal": 9
+    },
+    {
+      "cohort": "heldout20",
+      "metric": "score",
+      "n": 20,
+      "rho": 1.0,
+      "mae": 0.0021392706131078978,
+      "exact_equal": 9
+    }
+  ],
+  "runtime_recomputed": [
+    {
+      "size": 5,
+      "n_A": 3,
+      "n_B": 3,
+      "median_A": 109.7057993999988,
+      "median_B": 23.35865460000059,
+      "ratio_medians": 4.696580401509769
+    },
+    {
+      "size": 20,
+      "n_A": 3,
+      "n_B": 3,
+      "median_A": 373.81169129999944,
+      "median_B": 23.41790029999902,
+      "ratio_medians": 15.96264765462406
+    },
+    {
+      "size": 60,
+      "n_A": 3,
+      "n_B": 3,
+      "median_A": 1085.9834762000028,
+      "median_B": 23.974909299999126,
+      "ratio_medians": 45.296666719821225
+    },
+    {
+      "size": 630,
+      "n_A": 3,
+      "n_B": 3,
+      "median_A": 11608.183055399997,
+      "median_B": 24.037127599996893,
+      "ratio_medians": 482.92721362437237
+    }
+  ]
+}
+
+EXTENDED_CHECKS
+{
+  "rows": 630,
+  "unique_pairs": 630,
+  "unique_building_ids": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    44
+  ],
+  "complete_combination_universe": true,
+  "missing_numeric": 0,
+  "nonfinite_numeric": 0,
+  "bounds": {
+    "A": [
+      0.0,
+      396.0
+    ],
+    "H": [
+      0.0,
+      0.06351550960118169
+    ],
+    "V": [
+      387.3824354304028,
+      10891.474417736685
+    ],
+    "N": [
+      0.0,
+      0.0
+    ]
+  },
+  "score_max_error": 4.440892098500626e-16,
+  "recomputed_score_rank_mismatches": 0,
+  "exact_score_tied_groups": 0,
+  "pareto_count": 12,
+  "pareto_flag_mismatches": 0,
+  "top10_pareto_count": 3,
+  "cohort_sizes": {
+    "curated23": 23,
+    "heldout20": 20
+  },
+  "cohort_overlap": [],
+  "all_top10_curated": true,
+  "all_pareto_curated": true,
+  "cohort_score_recompute_max_error": {
+    "two_d": 4.440892098500626e-16,
+    "hb": 4.440892098500626e-16
+  },
+  "cohort_shared_V_all": false,
+  "cohort_N_zero": true,
+  "frozen_universe_comparison": {
+    "A": 0.0,
+    "H": 9.974659986866641e-17,
+    "V": 1.8189894035458565e-12,
+    "N": 0.0,
+    "score": 4.440892098500626e-16,
+    "rank": 0.0
+  },
+  "frozen_reference_hash_matches_embedded": true,
+  "production_rank_mismatches": 0,
+  "production_tie_policy": "score DESC, A DESC, H DESC; no explicit final total-order key; current scores untied",
+  "selected_23_exact_match": true,
+  "selection_composition": "10 Top10 + 12 nonzero A/V Pareto + 2 historical (C6/C33,C13/C24) + 2 controls (C3/C19,C26/C35) - 3 Top10/Pareto overlap = 23",
+  "cohort_V_max_difference": 9.094947017729282e-13,
+  "cohort_shared_V_with_rounding": true,
+  "curated_hb_values_max_difference": {
+    "A": 0.0,
+    "H": 0.0,
+    "V": 0.0,
+    "N": 0.0
+  },
+  "translation_legacy_noncontained": 4,
+  "translation_contained_corrections": 4,
+  "translation_reused": [
+    "C9,C13"
+  ],
+  "translation_new_low_zero": true,
+  "top10_design_translation_reviewed": [
+    "C9,C24",
+    "C9,C15",
+    "C9,C13"
+  ],
+  "top10_no_translation_evidence": [
+    "C9,C12",
+    "C15,C24",
+    "C9,C35",
+    "C12,C24",
+    "C9,C21",
+    "C9,C26",
+    "C9,C27"
+  ],
+  "geometry_recheck.csv_hash_match": true,
+  "design_translation_recheck.csv_hash_match": true
+}
+
+FROZEN20_AND_BYTES
+{
+  "frozen20_sha256": "ad4abb9b89a263edaecc2cb3553f7832ce0ccb460521ba218e0083e05bcb46b2",
+  "frozen20_hash_preserved": true,
+  "frozen20_identity_order_match": true,
+  "frozen20_strata": {
+    "Q1": 4,
+    "Q2": 4,
+    "Q3": 4,
+    "Q4": 4,
+    "Q5": 4
+  },
+  "materialized_blob_count": 95,
+  "materialized_blob_mismatches": []
+}

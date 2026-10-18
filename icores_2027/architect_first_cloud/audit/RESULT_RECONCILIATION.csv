@@ -1,0 +1,13 @@
+check,max_absolute_difference,tolerance,pass,classification
+frozen_full630_A,0.0,1e-10,True,CLOUD_RECOMPUTED_FROM_ARCHIVE
+frozen_full630_H,0.0,1e-10,True,CLOUD_RECOMPUTED_FROM_ARCHIVE
+frozen_full630_V,9.094947017729282e-13,1e-10,True,CLOUD_RECOMPUTED_FROM_ARCHIVE
+frozen_full630_N,0.0,1e-10,True,CLOUD_RECOMPUTED_FROM_ARCHIVE
+frozen_full630_score,4.440892098500626e-16,1e-10,True,CLOUD_RECOMPUTED_FROM_ARCHIVE
+frozen_full630_rank,0.0,1e-10,True,CLOUD_RECOMPUTED_FROM_ARCHIVE
+six_run_equivalence_aggregate_A_m630_r1_run.csv,0.0,0.0,True,CLOUD_RECOMPUTED_FROM_ARCHIVE
+six_run_equivalence_aggregate_A_m630_r2_run.csv,0.0,0.0,True,CLOUD_RECOMPUTED_FROM_ARCHIVE
+six_run_equivalence_aggregate_A_m630_r3_run.csv,0.0,0.0,True,CLOUD_RECOMPUTED_FROM_ARCHIVE
+six_run_equivalence_aggregate_B_m630_r1_run.csv,0.0,0.0,True,CLOUD_RECOMPUTED_FROM_ARCHIVE
+six_run_equivalence_aggregate_B_m630_r2_run.csv,0.0,0.0,True,CLOUD_RECOMPUTED_FROM_ARCHIVE
+six_run_equivalence_aggregate_B_m630_r3_run.csv,0.0,0.0,True,CLOUD_RECOMPUTED_FROM_ARCHIVE

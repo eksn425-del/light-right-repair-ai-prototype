@@ -1,0 +1,92 @@
+[
+  {
+    "path": "icores_2027/runs/local_ablation_20261016/aggregate_B_m630_r1_run.csv",
+    "sha256": "b07225c7f0bf43348a867934a7b71fb097d30975dcef8f571a5ccc0f0ff96387",
+    "bytes": 557838,
+    "rows": 630
+  },
+  {
+    "path": "icores_2027/runs/local_ablation_20261016/aggregate_A_m630_r1_run.csv",
+    "sha256": "b07225c7f0bf43348a867934a7b71fb097d30975dcef8f571a5ccc0f0ff96387",
+    "bytes": 557838,
+    "rows": 630
+  },
+  {
+    "path": "icores_2027/runs/local_ablation_20261016/aggregate_A_m630_r2_run.csv",
+    "sha256": "b07225c7f0bf43348a867934a7b71fb097d30975dcef8f571a5ccc0f0ff96387",
+    "bytes": 557838,
+    "rows": 630
+  },
+  {
+    "path": "icores_2027/runs/local_ablation_20261016/aggregate_A_m630_r3_run.csv",
+    "sha256": "b07225c7f0bf43348a867934a7b71fb097d30975dcef8f571a5ccc0f0ff96387",
+    "bytes": 557838,
+    "rows": 630
+  },
+  {
+    "path": "icores_2027/runs/local_ablation_20261016/aggregate_B_m630_r1_run.csv",
+    "sha256": "b07225c7f0bf43348a867934a7b71fb097d30975dcef8f571a5ccc0f0ff96387",
+    "bytes": 557838,
+    "rows": 630
+  },
+  {
+    "path": "icores_2027/runs/local_ablation_20261016/aggregate_B_m630_r2_run.csv",
+    "sha256": "b07225c7f0bf43348a867934a7b71fb097d30975dcef8f571a5ccc0f0ff96387",
+    "bytes": 557838,
+    "rows": 630
+  },
+  {
+    "path": "icores_2027/runs/local_ablation_20261016/aggregate_B_m630_r3_run.csv",
+    "sha256": "b07225c7f0bf43348a867934a7b71fb097d30975dcef8f571a5ccc0f0ff96387",
+    "bytes": 557838,
+    "rows": 630
+  },
+  {
+    "path": "icores_2027/runs/statistics_20261016/comparison_values.csv",
+    "sha256": "9890c9ec0c751d24f4154008cf6e8fe680ef753e94ebf504a8702769dcadd16a",
+    "bytes": 17977,
+    "rows": 43
+  },
+  {
+    "path": "icores_2027/runs/local_ablation_20261016/ablation_runtime_records.csv",
+    "sha256": "c99ed2fc53ddf037f1a2be4caf4e0a6ba5ae19e5aefead7a17b606071fd5632e",
+    "bytes": 34582,
+    "rows": 28
+  },
+  {
+    "path": "paper_assets/tables/table_03_candidate_universe.csv",
+    "sha256": "3779555e4b63cb6b47a81b24bb7aa60eb09f622f85b81f71dfc0914beb2bb3a6",
+    "bytes": 171864,
+    "rows": 630
+  },
+  {
+    "path": "paper_assets/tables/table_04_curated_hb_verification.csv",
+    "sha256": "1a82e82647746f46ab8b8587daaf091c18a999217b9a7b7425633cf9975ef72e",
+    "bytes": 7256,
+    "rows": 23
+  },
+  {
+    "path": "icores_2027/runs/local_hb_20261016/translation_outcome_comparison.csv",
+    "sha256": "f853657ef9e8884b936c3a288fea8599deb69f7244adfde38b28a9ae4f7f7578",
+    "bytes": 3560,
+    "rows": 5
+  },
+  {
+    "path": "icores_2027/runs/local_hb_20261016/geometry_recheck.csv",
+    "sha256": "a8f7ce5e48a24eb64695c4dc3c686a145a18bc94a15326d9f310c83fcaff8a0c",
+    "bytes": 20739,
+    "rows": 45
+  },
+  {
+    "path": "icores_2027/runs/local_hb_20261016/design_translation_recheck.csv",
+    "sha256": "d8c5757546117cd1b6abdee684d327ebf93995b99030069be3772fa40bdaa0ff",
+    "bytes": 4574,
+    "rows": 10
+  },
+  {
+    "path": "project_archive_2026_10_16/research/experiments/baseline_20260909_clean/independent_validation/VALIDATION_SAMPLE_FROZEN.csv",
+    "sha256": "ad4abb9b89a263edaecc2cb3553f7832ce0ccb460521ba218e0083e05bcb46b2",
+    "bytes": 6830,
+    "rows": 20
+  }
+]
