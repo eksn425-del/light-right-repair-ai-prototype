@@ -1,0 +1,16 @@
+{
+  "content_commit": "63da6f64f3aeb130cc98beca1fd13f6915b8175c",
+  "branch": "icores-2027-final-submission-review",
+  "checked_tree": "b5e02ece76aa2c191e78ffdadf89f83f47388fb8",
+  "old_files_unchanged": 2112,
+  "new_files_exact_blob_hash_matches": 206,
+  "solar_original_run_outputs": 159,
+  "solar_derived_comparison": 1,
+  "final_review_files": 46,
+  "tree_truncated": false,
+  "technical_qa": "passed with disclosed scope limits",
+  "author_academic_review": "pending",
+  "submission_performed": false,
+  "history_status_note": "Historical STATUS files are retained unchanged. Numeric results formerly missing on solar-priority-final are completed on this final review branch; read this receipt and final_submission_review/README.md for current state.",
+  "english_pdf_sha256": "26bc586c4601f6e5d500d515f972d72a30bfdd2d63dcc2c55f20b0843b3fa671"
+}
