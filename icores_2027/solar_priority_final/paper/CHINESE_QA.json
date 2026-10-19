@@ -1,0 +1,61 @@
+{
+  "status": "COMPLETE_TRANSLATION_RECONCILED_TO_FINAL_ENGLISH",
+  "source_expanded_sha256": "c3b1a056d21e531ac0173208380335d6904dd77ac831303bef684159c1766c02",
+  "source_main_sha256": "42c45b01a2f0c426be3d22baa7b60a52473c267f839a7e23624ab2fa17143f58",
+  "equation_count": 15,
+  "table_count": 5,
+  "figure_count": 2,
+  "bibliography_count": 15,
+  "table_numeric_transfer": "All five tables parsed directly from final English TeX; cell numbers unchanged. Headers/captions translated. Continuous maximum explicitly distinguished from observed test maximum.",
+  "plain_numeric_transfer": "All6contexts×6methods test comparisons and120 baseline/new candidate rows generated directly from finalCSV; missingHB identities generated from evidenceCSV.",
+  "scope": "Faithful entire supplementary report including abstract7sectionsallsubsectionsAI15references; priorformalpaper unchanged; no new submission manuscript claimed.",
+  "manual_checks": [
+    "Frozen sourcehash reconciled",
+    "Printed normalization rounding reconciled",
+    "All six replacement failures preserved",
+    "10504executed LP vs12708 labeled rows distinguished",
+    "Solar70 single candidate swap and missingHB preserved",
+    "A270 filter opportunity loss preserved",
+    "MC uncertainty interpretation preserved",
+    "Training only selection and scenario floors retained"
+  ],
+  "artifacts": {
+    "CHINESE_FAITHFUL_TRANSLATION.md": {
+      "bytes": 33320,
+      "sha256": "292accca89f51cdba1dd414b59872dd0047acb0fdc73222dc6cda7d3c99e7305"
+    },
+    "CHINESE_READER_VERSION.md": {
+      "bytes": 42348,
+      "sha256": "0a78090565870de324f0f3fd0ff3d7d104d2378601628099498849dfc66cfa0d"
+    }
+  },
+  "machine_table_numeric_checks": [
+    {
+      "table": "comparison1",
+      "tokens": 84,
+      "equal": true
+    },
+    {
+      "table": "comparison2",
+      "tokens": 90,
+      "equal": true
+    },
+    {
+      "table": "gate_table",
+      "tokens": 42,
+      "equal": true
+    },
+    {
+      "table": "evidence_table",
+      "tokens": 59,
+      "equal": true
+    },
+    {
+      "table": "shortlist_table",
+      "tokens": 53,
+      "equal": true
+    }
+  ],
+  "equation_markers_verified": true,
+  "image_paths_exist": true
+}

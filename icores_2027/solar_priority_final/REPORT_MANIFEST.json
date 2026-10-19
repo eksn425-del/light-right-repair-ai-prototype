@@ -1,0 +1,47 @@
+[
+  {
+    "path": "analysis/make_report.py",
+    "sha256": "475ad3658d03b4222b9d84a82baef7a3c7dbc8155685d99d86d6c73724716247",
+    "bytes": 8914
+  },
+  {
+    "path": "RESULTS_AND_FAILURES.md",
+    "sha256": "2072a9f6c0807e6643be6a5bcfb845ca8392f0b1c9b95d54192a85778284a630",
+    "bytes": 16396
+  },
+  {
+    "path": "NEW_OLD_TOP10_COMPARISON.md",
+    "sha256": "3cb31d94e22663510734786364c77cadda3bfdf9cd8ed9f1e5c9f7ce249f6b25",
+    "bytes": 14044
+  },
+  {
+    "path": "results/old_new_top10_comparison.csv",
+    "sha256": "f08259dfd799e0ecbac6a42ed38e2075d4a9dd42de97e699e009d176711c88f4",
+    "bytes": 13499
+  },
+  {
+    "path": "FIGURE_MANIFEST.json",
+    "sha256": "07d69beafe7a16c7a4c503fb2e48c8bfce8bd8fb190a9de8a84b9d650060a7c5",
+    "bytes": 928
+  },
+  {
+    "path": "figures/solar_benefit_tradeoff.png",
+    "sha256": "0feca9f221017f4367fe9bde36a66340956995a806e92b929574d6da0e10d5f0",
+    "bytes": 34655
+  },
+  {
+    "path": "figures/coverage_tradeoff.png",
+    "sha256": "74a1eb75a7de07643da1c7f893514ed56190df499e708a6b2bddb9d7533dc2e8",
+    "bytes": 50949
+  },
+  {
+    "path": "figures/solar_benefit_tradeoff.pdf",
+    "sha256": "0799ed0380362253a212bc0a0a4d619835dfe32561f308b2680b13d190b5c099",
+    "bytes": 10242
+  },
+  {
+    "path": "figures/coverage_tradeoff.pdf",
+    "sha256": "8e9a6fe43e1748f4cf6ba83cd0f4c90d7baafecadfb5abc69975dceac0787853",
+    "bytes": 12338
+  }
+]

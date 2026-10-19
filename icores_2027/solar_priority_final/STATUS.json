@@ -1,9 +1,31 @@
 {
-  "status": "PROTOCOL_REVIEW_BEFORE_FREEZE",
+  "status": "COMPLETE_CLOUD_ANALYSIS_NEGATIVE_ADOPTION_REPORT_PENDING_REMOTE_VERIFICATION",
   "source_head": "52aee8ed48e30da0ffdaba5809e63d51a45b8b2d",
   "branch": "icores-2027-solar-priority-final",
+  "protocol_freeze_commit": "94ba70a567030b9736140b3c7ac69c6160e44d49",
+  "protocol_sha256": "f3b0c3657c9f39d2fc819994f5d8245fc0521c4c0544ccea57f07b4136679f29",
+  "updated_utc": "2026-10-18T17:30:20.995535+00:00",
   "cloud_only": true,
-  "no_new_physical_simulation": true,
+  "weights": 180000,
+  "contexts": 6,
+  "same_budget_k": 10,
+  "supported_replacement_contexts": 0,
+  "actual_unique_LP_solves": 10504,
+  "labeled_LP_witnesses": 12708,
+  "new_physical_simulations": 0,
+  "independent_QA": "PASS",
+  "new_manuscript_decision": "Preserve prior formal manuscript; deliver complete supplementary experiment report and revision choices under author-authorized negative-result path.",
+  "english_report_pages": 15,
+  "english_report_nonwhitespace_characters": 32406,
+  "paper_pdf": "paper/solar_priority_experiment_report.pdf",
+  "chinese_faithful": "paper/CHINESE_FAITHFUL_TRANSLATION.md",
+  "chinese_plain": "paper/CHINESE_READER_VERSION.md",
   "old_artifacts_preserved": true,
-  "updated_utc": "2026-10-18T17:13:09.724228+00:00"
+  "unresolved": [
+    "Author choice on integrating solar-priority sensitivity into final manuscript",
+    "Missing HB and translated geometry evidence",
+    "AI disclosure placement and bibliography-template wording",
+    "Authorship/data-rights/prior-publication/conflicts/academic declarations"
+  ],
+  "stop_after_verified_delivery": true
 }

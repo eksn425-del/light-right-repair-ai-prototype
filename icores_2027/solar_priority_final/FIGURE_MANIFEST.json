@@ -1,0 +1,26 @@
+[
+  {
+    "path": "figures/coverage_tradeoff.pdf",
+    "sha256": "8e9a6fe43e1748f4cf6ba83cd0f4c90d7baafecadfb5abc69975dceac0787853",
+    "source": "results/shortlist_evaluation.csv",
+    "generator": "analysis/make_report.py"
+  },
+  {
+    "path": "figures/coverage_tradeoff.png",
+    "sha256": "74a1eb75a7de07643da1c7f893514ed56190df499e708a6b2bddb9d7533dc2e8",
+    "source": "results/shortlist_evaluation.csv",
+    "generator": "analysis/make_report.py"
+  },
+  {
+    "path": "figures/solar_benefit_tradeoff.pdf",
+    "sha256": "0799ed0380362253a212bc0a0a4d619835dfe32561f308b2680b13d190b5c099",
+    "source": "results/shortlist_evaluation.csv",
+    "generator": "analysis/make_report.py"
+  },
+  {
+    "path": "figures/solar_benefit_tradeoff.png",
+    "sha256": "0feca9f221017f4367fe9bde36a66340956995a806e92b929574d6da0e10d5f0",
+    "source": "results/shortlist_evaluation.csv",
+    "generator": "analysis/make_report.py"
+  }
+]
