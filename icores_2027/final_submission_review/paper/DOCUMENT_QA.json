@@ -1,0 +1,13 @@
+{
+  "title": "Solar-Access Intervention Screening and Preference-Sensitivity Decision Support for Urban Renewal",
+  "pages": 22,
+  "nonwhitespace_pdf_text_characters": 45609,
+  "character_limit": 50000,
+  "count_method": "pdftotext -layout output, Python str.isspace exclusion; local proxy, not portal count",
+  "overfull_box_warnings": 0,
+  "undefined_reference_or_citation": false,
+  "visual_review": "All 22 rendered pages inspected in contact sheet; no clipping or overlap observed.",
+  "new_experiments": false,
+  "pdf_sha256": "26bc586c4601f6e5d500d515f972d72a30bfdd2d63dcc2c55f20b0843b3fa671",
+  "source_sha256": "c5ca5b9d9f15eb585b32de6ea400575e6ee8f3e03c2e9386d1a6cb9dcff0a354"
+}

@@ -1,0 +1,88 @@
+{
+  "english_expanded_sha256": "cb0d349d602e74a03e01e101033be32102a672d269b45651cda2ed5a9cf2aea9",
+  "english_pdf_sha256": "26bc586c4601f6e5d500d515f972d72a30bfdd2d63dcc2c55f20b0843b3fa671",
+  "faithful_pages": 20,
+  "plain_pages": 8,
+  "sections": 9,
+  "numbered_equations": 23,
+  "tables": 8,
+  "figures": 1,
+  "references": 13,
+  "table_numeric_checks": [
+    {
+      "table": 1,
+      "numeric_tokens": 9,
+      "match": true
+    },
+    {
+      "table": 2,
+      "numeric_tokens": 48,
+      "match": true
+    },
+    {
+      "table": 3,
+      "numeric_tokens": 30,
+      "match": true
+    },
+    {
+      "table": 4,
+      "numeric_tokens": 50,
+      "match": true
+    },
+    {
+      "table": 5,
+      "numeric_tokens": 50,
+      "match": true
+    },
+    {
+      "table": 6,
+      "numeric_tokens": 60,
+      "match": true
+    },
+    {
+      "table": 7,
+      "numeric_tokens": 36,
+      "match": true
+    },
+    {
+      "table": 8,
+      "numeric_tokens": 24,
+      "match": true
+    }
+  ],
+  "visual_qa": "All final pages inspected; equation 19 and tables corrected and rerendered.",
+  "files": {
+    "faithful.md": {
+      "bytes": 49253,
+      "sha256": "9dc1ab2784b9d1952d1f101211139f1dd992fad8a637f83bd1ec296c561dab74"
+    },
+    "faithful.docx": {
+      "bytes": 156559,
+      "sha256": "771ae4dacfa3c6eb913175480a09ac4ef5993f56d6d6043d17b5cc1c8d8c3bbd"
+    },
+    "faithful.pdf": {
+      "bytes": 976691,
+      "sha256": "c4d039724f5ff099436b2a0649c8d6c0752fadeeeb74796c260d13430706bbcb"
+    },
+    "plain.md": {
+      "bytes": 18096,
+      "sha256": "439eb4329bb6e9672575f003adeeb38e535ef1d99bfb92c6a036b07d1bbe71f3"
+    },
+    "plain.docx": {
+      "bytes": 33425,
+      "sha256": "d835cdf257d000add6b4c83e17209be144853d5cd2b6580dcbdb514d395d6a02"
+    },
+    "plain.pdf": {
+      "bytes": 513460,
+      "sha256": "154a06ecc5933698e5b9fd4b0444098890978d27b27e8f16300ad3742d53ced5"
+    },
+    "figures/workflow.png": {
+      "bytes": 119453,
+      "sha256": "5dcedc08ef0e77d190fddb26f651d8e00a1e38e0d648eac0f40f4209ef0ada0e"
+    },
+    "translation_correspondence.md": {
+      "bytes": 4462,
+      "sha256": "82e5e9354a3d5ee7269b172067a1212e4ade581d6e93b562110380379680a945"
+    }
+  }
+}

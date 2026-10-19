@@ -1,0 +1,322 @@
+# Factual claim ledger
+Read-only comparisons of archived records. No experiments or outcome recalculations.
+
+## rule_universe_count
+630
+Source: /workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv
+
+
+## N_unique
+[0.0]
+Source: /workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv
+
+
+## A_zero_count
+210
+Source: /workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv
+
+
+## A_range
+[0.0, 396.0]
+Source: /workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv
+
+
+## H_range
+[0.0, 0.0635155096011816]
+Source: /workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv
+
+
+## V_range
+[387.3824354304028, 10891.474417736685]
+Source: /workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv
+
+
+## N_range
+[0.0, 0.0]
+Source: /workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv
+
+
+## Historical10_membership
+["C9,C24", "C9,C15", "C9,C12", "C15,C24", "C9,C35", "C9,C13", "C12,C24", "C9,C21", "C9,C26", "C9,C27"]
+Source: /workspace/shared/icores-final-review/evidence/architect/analysis/top10_rule_candidates.csv
+
+
+## Historical10_rule_HB_reviewed
+10
+Source: /workspace/shared/icores-final-review/evidence/architect/analysis/top10_rule_candidates.csv
+
+
+## Historical10_translation_checked
+3
+Source: /workspace/shared/icores-final-review/evidence/architect/analysis/top10_rule_candidates.csv
+
+
+## Original21page_evaluation_table_numeric_cells
+48
+Source: /workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv
+All 48 cells agree at printed precision.
+
+## preference_full_test_historical10
+{"regret_mean": 0.01075906994184864, "regret_p95": 0.08060088454065614, "regret_max": 0.24108699481789642, "winner_coverage": 0.77695, "top10_recovery": 0.5156, "utility_mean": 0.8090015935506275}
+Source: /workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv
+
+
+## preference_full_test_robust10
+{"regret_mean": 5.383338988590955e-05, "regret_p95": 0.0, "regret_max": 0.007539363244524089, "winner_coverage": 0.9794, "top10_recovery": 0.4224799999999999, "utility_mean": 0.8197068301025904}
+Source: /workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv
+
+
+## preference_full_replication_historical10
+{"regret_mean": 0.01135070526795779, "regret_p95": 0.0827433423120089, "regret_max": 0.2406580828590401, "winner_coverage": 0.76635, "top10_recovery": 0.51017, "utility_mean": 0.8085370843730936}
+Source: /workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv
+
+
+## preference_full_replication_robust10
+{"regret_mean": 5.5063245962991956e-05, "regret_p95": 0.0, "regret_max": 0.007612872836587403, "winner_coverage": 0.97885, "top10_recovery": 0.41994499999999996, "utility_mean": 0.8198327263950883}
+Source: /workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv
+
+
+## preference_ordered_test_historical10
+{"regret_mean": 0.0, "regret_p95": 0.0, "regret_max": 0.0, "winner_coverage": 1.0, "top10_recovery": 0.8961800000000001, "utility_mean": 0.8808379083484688}
+Source: /workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv
+
+
+## preference_ordered_test_robust10
+{"regret_mean": 0.0, "regret_p95": 0.0, "regret_max": 0.0, "winner_coverage": 1.0, "top10_recovery": 0.44342, "utility_mean": 0.8808379083484688}
+Source: /workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv
+
+
+## preference_ordered_replication_historical10
+{"regret_mean": 0.0, "regret_p95": 0.0, "regret_max": 0.0, "winner_coverage": 1.0, "top10_recovery": 0.895265, "utility_mean": 0.880918853051523}
+Source: /workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv
+
+
+## preference_ordered_replication_robust10
+{"regret_mean": 0.0, "regret_p95": 0.0, "regret_max": 0.0, "winner_coverage": 1.0, "top10_recovery": 0.44477999999999995, "utility_mean": 0.880918853051523}
+Source: /workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv
+
+
+## preference_local_test_historical10
+{"regret_mean": 0.0, "regret_p95": 0.0, "regret_max": 0.0, "winner_coverage": 1.0, "top10_recovery": 0.8995300000000002, "utility_mean": 0.8364959966573402}
+Source: /workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv
+
+
+## preference_local_test_robust10
+{"regret_mean": 0.0, "regret_p95": 0.0, "regret_max": 0.0, "winner_coverage": 1.0, "top10_recovery": 0.53373, "utility_mean": 0.8364959966573402}
+Source: /workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv
+
+
+## preference_local_replication_historical10
+{"regret_mean": 0.0, "regret_p95": 0.0, "regret_max": 0.0, "winner_coverage": 1.0, "top10_recovery": 0.8982600000000001, "utility_mean": 0.8366799355675022}
+Source: /workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv
+
+
+## preference_local_replication_robust10
+{"regret_mean": 0.0, "regret_p95": 0.0, "regret_max": 0.0, "winner_coverage": 1.0, "top10_recovery": 0.5347850000000001, "utility_mean": 0.8366799355675022}
+Source: /workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv
+
+
+## preference_LP_full_historical10
+{"continuous_worst_regret": "0.246358581570572", "wA": "0.0", "wH": "0.0", "wV": "1.0", "witness_candidate": "C25,C29", "grid_max": "0.246358581570572"}
+Source: /workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv
+Fixed-set audit, not globally optimal shortlist.
+
+## preference_LP_full_AV10
+{"continuous_worst_regret": "0.23255813953488313", "wA": "0.0", "wH": "1.0", "wV": "0.0", "witness_candidate": "C24,C35", "grid_max": "0.23255813953488313"}
+Source: /workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv
+Fixed-set audit, not globally optimal shortlist.
+
+## preference_LP_full_AHV10
+{"continuous_worst_regret": "0.246358581570572", "wA": "0.0", "wH": "0.0", "wV": "1.0", "witness_candidate": "C25,C29", "grid_max": "0.246358581570572"}
+Source: /workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv
+Fixed-set audit, not globally optimal shortlist.
+
+## preference_LP_full_robust10
+{"continuous_worst_regret": "0.007655659271333039", "wA": "0.21183660917777153", "wH": "0.0", "wV": "0.7881633908222285", "witness_candidate": "C13,C29", "grid_max": "0.007576365892115633"}
+Source: /workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv
+Fixed-set audit, not globally optimal shortlist.
+
+## preference_LP_full_AV_full
+{"continuous_worst_regret": "0.23255813953488313", "wA": "0.0", "wH": "1.0", "wV": "0.0", "witness_candidate": "C24,C35", "grid_max": "0.23255813953488313"}
+Source: /workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv
+Fixed-set audit, not globally optimal shortlist.
+
+## preference_LP_full_AHV_full
+{"continuous_worst_regret": "0.0", "wA": "0.17366447041131214", "wH": "0.24253418287913742", "wV": "0.5838013467095504", "witness_candidate": "C9,C15", "grid_max": "0.0"}
+Source: /workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv
+Fixed-set audit, not globally optimal shortlist.
+
+## preference_LP_ordered_historical10
+{"continuous_worst_regret": "0.0", "wA": "1.0", "wH": "0.0", "wV": "0.0", "witness_candidate": "C9,C24", "grid_max": "0.0"}
+Source: /workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv
+Fixed-set audit, not globally optimal shortlist.
+
+## preference_LP_ordered_AV10
+{"continuous_worst_regret": "0.0", "wA": "1.0", "wH": "0.0", "wV": "0.0", "witness_candidate": "C9,C24", "grid_max": "0.0"}
+Source: /workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv
+Fixed-set audit, not globally optimal shortlist.
+
+## preference_LP_ordered_AHV10
+{"continuous_worst_regret": "0.0", "wA": "1.0", "wH": "0.0", "wV": "0.0", "witness_candidate": "C9,C24", "grid_max": "0.0"}
+Source: /workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv
+Fixed-set audit, not globally optimal shortlist.
+
+## preference_LP_ordered_robust10
+{"continuous_worst_regret": "0.0", "wA": "1.0", "wH": "0.0", "wV": "0.0", "witness_candidate": "C9,C24", "grid_max": "0.0"}
+Source: /workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv
+Fixed-set audit, not globally optimal shortlist.
+
+## preference_LP_ordered_AV_full
+{"continuous_worst_regret": "0.0", "wA": "1.0", "wH": "0.0", "wV": "0.0", "witness_candidate": "C9,C24", "grid_max": "0.0"}
+Source: /workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv
+Fixed-set audit, not globally optimal shortlist.
+
+## preference_LP_ordered_AHV_full
+{"continuous_worst_regret": "0.0", "wA": "1.0", "wH": "0.0", "wV": "0.0", "witness_candidate": "C9,C24", "grid_max": "0.0"}
+Source: /workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv
+Fixed-set audit, not globally optimal shortlist.
+
+## preference_LP_local_historical10
+{"continuous_worst_regret": "0.0", "wA": "0.37368421052631573", "wH": "0.368421052631579", "wV": "0.2578947368421053", "witness_candidate": "C9,C24", "grid_max": "0.0"}
+Source: /workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv
+Fixed-set audit, not globally optimal shortlist.
+
+## preference_LP_local_AV10
+{"continuous_worst_regret": "0.0", "wA": "0.37368421052631573", "wH": "0.368421052631579", "wV": "0.2578947368421053", "witness_candidate": "C9,C24", "grid_max": "0.0"}
+Source: /workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv
+Fixed-set audit, not globally optimal shortlist.
+
+## preference_LP_local_AHV10
+{"continuous_worst_regret": "0.0", "wA": "0.37368421052631573", "wH": "0.368421052631579", "wV": "0.2578947368421053", "witness_candidate": "C9,C24", "grid_max": "0.0"}
+Source: /workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv
+Fixed-set audit, not globally optimal shortlist.
+
+## preference_LP_local_robust10
+{"continuous_worst_regret": "0.0", "wA": "0.37368421052631573", "wH": "0.368421052631579", "wV": "0.2578947368421053", "witness_candidate": "C9,C24", "grid_max": "0.0"}
+Source: /workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv
+Fixed-set audit, not globally optimal shortlist.
+
+## preference_LP_local_AV_full
+{"continuous_worst_regret": "0.0", "wA": "0.37368421052631573", "wH": "0.368421052631579", "wV": "0.2578947368421053", "witness_candidate": "C9,C24", "grid_max": "0.0"}
+Source: /workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv
+Fixed-set audit, not globally optimal shortlist.
+
+## preference_LP_local_AHV_full
+{"continuous_worst_regret": "0.0", "wA": "0.37368421052631573", "wH": "0.368421052631579", "wV": "0.2578947368421053", "witness_candidate": "C9,C24", "grid_max": "0.0"}
+Source: /workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv
+Fixed-set audit, not globally optimal shortlist.
+
+## curated23_count
+23
+Source: /workspace/shared/icores-final-review/recovered/icores_2027/runs/statistics_20261016/comparison_values.csv
+
+
+## curated23_A_exact_and_MAE
+{"exact_within_1e-10": 22, "MAE": 0.391304347826087}
+Source: /workspace/shared/icores-final-review/recovered/icores_2027/runs/statistics_20261016/comparison_values.csv
+
+
+## curated23_H_exact_and_MAE
+{"exact_within_1e-10": 3, "MAE": 0.0011774024361526744}
+Source: /workspace/shared/icores-final-review/recovered/icores_2027/runs/statistics_20261016/comparison_values.csv
+
+
+## curated23_score_exact_and_MAE
+{"exact_within_1e-10": 3, "MAE": 0.006932699083861882}
+Source: /workspace/shared/icores-final-review/recovered/icores_2027/runs/statistics_20261016/comparison_values.csv
+
+
+## heldout20_count
+20
+Source: /workspace/shared/icores-final-review/recovered/icores_2027/runs/statistics_20261016/comparison_values.csv
+
+
+## heldout20_A_exact_and_MAE
+{"exact_within_1e-10": 19, "MAE": 0.45}
+Source: /workspace/shared/icores-final-review/recovered/icores_2027/runs/statistics_20261016/comparison_values.csv
+
+
+## heldout20_H_exact_and_MAE
+{"exact_within_1e-10": 9, "MAE": 0.00029542097488923}
+Source: /workspace/shared/icores-final-review/recovered/icores_2027/runs/statistics_20261016/comparison_values.csv
+
+
+## heldout20_score_exact_and_MAE
+{"exact_within_1e-10": 9, "MAE": 0.0021392706131078978}
+Source: /workspace/shared/icores-final-review/recovered/icores_2027/runs/statistics_20261016/comparison_values.csv
+
+
+## HB_curated23_A
+{"n": "23", "spearman_rho_average_ties": "0.9992582518450251", "MAE": "0.391304347826087"}
+Source: /workspace/shared/icores-final-review/evidence/architect/analysis/same_metric_recomputed.csv
+Same-site nonprobability cohorts; 23 and 20 reported separately.
+
+## HB_curated23_H
+{"n": "23", "spearman_rho_average_ties": "0.9915966386554622", "MAE": "0.0011774024361526875"}
+Source: /workspace/shared/icores-final-review/evidence/architect/analysis/same_metric_recomputed.csv
+Same-site nonprobability cohorts; 23 and 20 reported separately.
+
+## HB_curated23_score
+{"n": "23", "spearman_rho_average_ties": "0.9990118577075099", "MAE": "0.006932699083861885"}
+Source: /workspace/shared/icores-final-review/evidence/architect/analysis/same_metric_recomputed.csv
+Same-site nonprobability cohorts; 23 and 20 reported separately.
+
+## HB_heldout20_A
+{"n": "20", "spearman_rho_average_ties": "0.997668088547906", "MAE": "0.45"}
+Source: /workspace/shared/icores-final-review/evidence/architect/analysis/same_metric_recomputed.csv
+Same-site nonprobability cohorts; 23 and 20 reported separately.
+
+## HB_heldout20_H
+{"n": "20", "spearman_rho_average_ties": "0.9996239894584121", "MAE": "0.00029542097488922985"}
+Source: /workspace/shared/icores-final-review/evidence/architect/analysis/same_metric_recomputed.csv
+Same-site nonprobability cohorts; 23 and 20 reported separately.
+
+## HB_heldout20_score
+{"n": "20", "spearman_rho_average_ties": "1.0", "MAE": "0.0021392706131079034"}
+Source: /workspace/shared/icores-final-review/evidence/architect/analysis/same_metric_recomputed.csv
+Same-site nonprobability cohorts; 23 and 20 reported separately.
+
+## matched_runtime_5
+{"completed_matched_repetitions": "3", "all_equal": "True", "A_median_end_to_end_seconds": "109.7057993999988", "B_median_end_to_end_seconds": "23.35865460000059", "measured_speedup": "4.696580401509769"}
+Source: /workspace/shared/icores-final-review/evidence/architect/analysis/historical_runtime_rechecked.csv
+Implementation comparison, not HB speedup or architect time saving.
+
+## matched_runtime_20
+{"completed_matched_repetitions": "3", "all_equal": "True", "A_median_end_to_end_seconds": "373.8116912999994", "B_median_end_to_end_seconds": "23.41790029999902", "measured_speedup": "15.96264765462406"}
+Source: /workspace/shared/icores-final-review/evidence/architect/analysis/historical_runtime_rechecked.csv
+Implementation comparison, not HB speedup or architect time saving.
+
+## matched_runtime_60
+{"completed_matched_repetitions": "3", "all_equal": "True", "A_median_end_to_end_seconds": "1085.9834762000028", "B_median_end_to_end_seconds": "23.974909299999126", "measured_speedup": "45.296666719821225"}
+Source: /workspace/shared/icores-final-review/evidence/architect/analysis/historical_runtime_rechecked.csv
+Implementation comparison, not HB speedup or architect time saving.
+
+## matched_runtime_630
+{"completed_matched_repetitions": "3", "all_equal": "True", "A_median_end_to_end_seconds": "11608.183055399995", "B_median_end_to_end_seconds": "24.037127599996893", "measured_speedup": "482.9272136243724"}
+Source: /workspace/shared/icores-final-review/evidence/architect/analysis/historical_runtime_rechecked.csv
+Implementation comparison, not HB speedup or architect time saving.
+
+## geometry_C9,C24
+{"target_rule_volume_m3": "5551.33280395222", "rule_union_removed_m3": "5470.406370323472", "corrected_union_removed_m3": "5474.581897596858", "legacy_solid_contained": "False", "corrected_solid_contained": "True", "legacy_low_area_reduction_m2": "342.0", "corrected_low_area_reduction_m2": "351.0", "legacy_worsened_point_count": "4", "corrected_worsened_point_count": "0"}
+Source: /workspace/shared/icores-final-review/evidence/architect/analysis/historical_translation_rechecked.csv
+Translated geometry, not rule metrics; nominal V is not construction cost.
+
+## geometry_C9,C15
+{"target_rule_volume_m3": "3127.7553243151942", "rule_union_removed_m3": "3065.6813178274606", "corrected_union_removed_m3": "2937.9314917077136", "legacy_solid_contained": "False", "corrected_solid_contained": "True", "legacy_low_area_reduction_m2": "342.0", "corrected_low_area_reduction_m2": "342.0", "legacy_worsened_point_count": "0", "corrected_worsened_point_count": "0"}
+Source: /workspace/shared/icores-final-review/evidence/architect/analysis/historical_translation_rechecked.csv
+Translated geometry, not rule metrics; nominal V is not construction cost.
+
+## geometry_C9,C13
+{"target_rule_volume_m3": "2975.1556368781958", "rule_union_removed_m3": "2918.2458993767505", "corrected_union_removed_m3": "2785.422316074284", "legacy_solid_contained": "True", "corrected_solid_contained": "True", "legacy_low_area_reduction_m2": "333.0", "corrected_low_area_reduction_m2": "333.0", "legacy_worsened_point_count": "0", "corrected_worsened_point_count": "0"}
+Source: /workspace/shared/icores-final-review/evidence/architect/analysis/historical_translation_rechecked.csv
+Translated geometry, not rule metrics; nominal V is not construction cost.
+
+## geometry_C13,C24
+{"target_rule_volume_m3": "3863.880412554296", "rule_union_removed_m3": "3726.044241424068", "corrected_union_removed_m3": "3749.2238769970136", "legacy_solid_contained": "False", "corrected_solid_contained": "True", "legacy_low_area_reduction_m2": "207.0", "corrected_low_area_reduction_m2": "216.0", "legacy_worsened_point_count": "4", "corrected_worsened_point_count": "0"}
+Source: /workspace/shared/icores-final-review/evidence/architect/analysis/historical_translation_rechecked.csv
+Translated geometry, not rule metrics; nominal V is not construction cost.
+
+## geometry_C6,C33
+{"target_rule_volume_m3": "5583.054926866385", "rule_union_removed_m3": "1909.8635659347929", "corrected_union_removed_m3": "2554.767324471381", "legacy_solid_contained": "False", "corrected_solid_contained": "True", "legacy_low_area_reduction_m2": "18.0", "corrected_low_area_reduction_m2": "18.0", "legacy_worsened_point_count": "0", "corrected_worsened_point_count": "0"}
+Source: /workspace/shared/icores-final-review/evidence/architect/analysis/historical_translation_rechecked.csv
+Translated geometry, not rule metrics; nominal V is not construction cost.

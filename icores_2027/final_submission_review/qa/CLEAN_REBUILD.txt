@@ -1,0 +1,2 @@
+Executed self-contained sourceZIP in fresh directory with bash build.sh. Exit0. Final PDF SHA256: 26bc586c4601f6e5d500d515f972d72a30bfdd2d63dcc2c55f20b0843b3fa671
+Byte identical: True

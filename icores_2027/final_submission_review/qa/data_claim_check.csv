@@ -1,0 +1,274 @@
+location,claim,printed,source_value,source,status
+tab:evaluation,full historical10 regret_mean,0.010759,0.01075906994184864,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,full historical10 regret_p95,0.080601,0.08060088454065614,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,full historical10 winner_coverage,0.77695,0.77695,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,full historical10 top10_recovery,0.51560,0.5156,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,full AV10 regret_mean,0.022996,0.022995530497623897,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,full AV10 regret_p95,0.138778,0.13877754127546227,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,full AV10 winner_coverage,0.66215,0.66215,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,full AV10 top10_recovery,0.26599,0.265995,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,full AHV10 regret_mean,0.010378,0.010378433520815161,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,full AHV10 regret_p95,0.080601,0.08060088454065614,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,full AHV10 winner_coverage,0.83170,0.8317,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,full AHV10 top10_recovery,0.53123,0.5312349999999999,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,full robust10 regret_mean,0.000054,5.383338988590955e-05,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,full robust10 regret_p95,0.000000,0.0,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,full robust10 winner_coverage,0.97940,0.9794,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,full robust10 top10_recovery,0.42248,0.4224799999999999,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,ordered historical10 regret_mean,0.000000,0.0,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,ordered historical10 regret_p95,0.000000,0.0,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,ordered historical10 winner_coverage,1.00000,1.0,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,ordered historical10 top10_recovery,0.89618,0.8961800000000001,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,ordered AV10 regret_mean,0.000000,0.0,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,ordered AV10 regret_p95,0.000000,0.0,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,ordered AV10 winner_coverage,1.00000,1.0,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,ordered AV10 top10_recovery,0.29140,0.2914049999999999,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,ordered AHV10 regret_mean,0.000000,0.0,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,ordered AHV10 regret_p95,0.000000,0.0,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,ordered AHV10 winner_coverage,1.00000,1.0,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,ordered AHV10 top10_recovery,0.74120,0.741195,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,ordered robust10 regret_mean,0.000000,0.0,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,ordered robust10 regret_p95,0.000000,0.0,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,ordered robust10 winner_coverage,1.00000,1.0,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,ordered robust10 top10_recovery,0.44342,0.44342,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,local historical10 regret_mean,0.000000,0.0,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,local historical10 regret_p95,0.000000,0.0,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,local historical10 winner_coverage,1.00000,1.0,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,local historical10 top10_recovery,0.89953,0.8995300000000002,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,local AV10 regret_mean,0.000000,0.0,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,local AV10 regret_p95,0.000000,0.0,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,local AV10 winner_coverage,1.00000,1.0,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,local AV10 top10_recovery,0.28136,0.28135999999999994,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,local AHV10 regret_mean,0.000000,0.0,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,local AHV10 regret_p95,0.000000,0.0,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,local AHV10 winner_coverage,1.00000,1.0,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,local AHV10 top10_recovery,0.83615,0.83615,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,local robust10 regret_mean,0.000000,0.0,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,local robust10 regret_p95,0.000000,0.0,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,local robust10 winner_coverage,1.00000,1.0,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:evaluation,local robust10 top10_recovery,0.53373,0.53373,/workspace/shared/icores-final-review/evidence/preference/results/shortlist_evaluation.csv,PASS
+tab:solar,ordered historical10 top10_recovery,.894950,0.89495,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,ordered historical10 utility_winner_coverage,1,1.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,ordered historical10 regret_mean,0,0.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,ordered historical10 continuous_max,0,0.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/continuous_worst_regret.csv,PASS
+tab:solar,ordered robust10 top10_recovery,.444360,0.44436000000000003,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,ordered robust10 utility_winner_coverage,1,1.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,ordered robust10 regret_mean,0,0.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,ordered robust10 continuous_max,0,0.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/continuous_worst_regret.csv,PASS
+tab:solar,ordered AV10 top10_recovery,.290815,0.290815,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,ordered AV10 utility_winner_coverage,1,1.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,ordered AV10 regret_mean,0,0.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,ordered AV10 continuous_max,0,0.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/continuous_worst_regret.csv,PASS
+tab:solar,ordered AHV10 top10_recovery,.741410,0.74141,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,ordered AHV10 utility_winner_coverage,1,1.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,ordered AHV10 regret_mean,0,0.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,ordered AHV10 continuous_max,0,0.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/continuous_worst_regret.csv,PASS
+tab:solar,ordered protected_coverage10 top10_recovery,.899380,0.89938,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,ordered protected_coverage10 utility_winner_coverage,1,1.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,ordered protected_coverage10 regret_mean,0,0.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,ordered protected_coverage10 continuous_max,0,0.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/continuous_worst_regret.csv,PASS
+tab:solar,solar70 historical10 top10_recovery,.649650,0.64965,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,solar70 historical10 utility_winner_coverage,.89080,0.8908,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,solar70 historical10 regret_mean,.000750,0.0007504171800898891,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,solar70 historical10 continuous_max,.019380,0.019379844961239234,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/continuous_worst_regret.csv,PASS
+tab:solar,solar70 robust10 top10_recovery,.456385,0.45638500000000004,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,solar70 robust10 utility_winner_coverage,1,1.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,solar70 robust10 regret_mean,0,0.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,solar70 robust10 continuous_max,0,0.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/continuous_worst_regret.csv,PASS
+tab:solar,solar70 AV10 top10_recovery,.211580,0.21158000000000002,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,solar70 AV10 utility_winner_coverage,.68505,0.68505,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,solar70 AV10 regret_mean,.030440,0.030440339545998653,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,solar70 AV10 continuous_max,.232558,0.23255813953488313,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/continuous_worst_regret.csv,PASS
+tab:solar,solar70 AHV10 top10_recovery,.656835,0.656835,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,solar70 AHV10 utility_winner_coverage,1,1.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,solar70 AHV10 regret_mean,0,0.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,solar70 AHV10 continuous_max,0,0.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/continuous_worst_regret.csv,PASS
+tab:solar,solar70 protected_coverage10 top10_recovery,.660935,0.660935,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,solar70 protected_coverage10 utility_winner_coverage,1,1.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,solar70 protected_coverage10 regret_mean,0,0.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,solar70 protected_coverage10 continuous_max,0,0.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/continuous_worst_regret.csv,PASS
+tab:solar,solar80 historical10 top10_recovery,.655725,0.655725,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,solar80 historical10 utility_winner_coverage,.84435,0.84435,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,solar80 historical10 regret_mean,.001073,0.0010733733887054939,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,solar80 historical10 continuous_max,.019380,0.019379844961239234,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/continuous_worst_regret.csv,PASS
+tab:solar,solar80 robust10 top10_recovery,.450710,0.45071000000000006,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,solar80 robust10 utility_winner_coverage,1,1.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,solar80 robust10 regret_mean,0,0.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,solar80 robust10 continuous_max,0,0.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/continuous_worst_regret.csv,PASS
+tab:solar,solar80 AV10 top10_recovery,.205810,0.20581,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,solar80 AV10 utility_winner_coverage,.68975,0.68975,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,solar80 AV10 regret_mean,.031419,0.0314191107808967,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,solar80 AV10 continuous_max,.232558,0.23255813953488313,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/continuous_worst_regret.csv,PASS
+tab:solar,solar80 AHV10 top10_recovery,.649560,0.6495599999999999,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,solar80 AHV10 utility_winner_coverage,1,1.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,solar80 AHV10 regret_mean,0,0.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,solar80 AHV10 continuous_max,0,0.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/continuous_worst_regret.csv,PASS
+tab:solar,solar80 protected_coverage10 top10_recovery,.669465,0.669465,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,solar80 protected_coverage10 utility_winner_coverage,1,1.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,solar80 protected_coverage10 regret_mean,0,0.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:solar,solar80 protected_coverage10 continuous_max,0,0.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/continuous_worst_regret.csv,PASS
+tab:gates,ordered test gain,0.00443,0.004429999999999993,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/paired_differences.csv,PASS
+tab:gates,ordered test MC low,0.00307,0.0030682228739047227,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/paired_differences.csv,PASS
+tab:gates,ordered test MC high,0.00579,0.005791777126095263,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/paired_differences.csv,PASS
+tab:gates,ordered rep gain,0.00381,0.0038149999999999933,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/paired_differences.csv,PASS
+tab:gates,ordered A percentage change,+3.20\%,3.1976744186046346,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:gates,ordered H percentage change,-8.23\%,-8.227114716106653,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:gates,solar70 test gain,0.01128,0.011284999999999991,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/paired_differences.csv,PASS
+tab:gates,solar70 test MC low,0.01001,0.010010678841939786,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/paired_differences.csv,PASS
+tab:gates,solar70 test MC high,0.01256,0.012559321158060197,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/paired_differences.csv,PASS
+tab:gates,solar70 rep gain,0.01038,0.01038499999999999,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/paired_differences.csv,PASS
+tab:gates,solar70 A percentage change,-4.36\%,-4.360465116279066,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:gates,solar70 H percentage change,+5.79\%,5.793742757821541,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:gates,solar80 test gain,0.01374,0.013739999999999988,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/paired_differences.csv,PASS
+tab:gates,solar80 test MC low,0.00972,0.009718647218537858,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/paired_differences.csv,PASS
+tab:gates,solar80 test MC high,0.01776,0.01776135278146212,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/paired_differences.csv,PASS
+tab:gates,solar80 rep gain,0.01477,0.01476999999999999,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/paired_differences.csv,PASS
+tab:gates,solar80 A percentage change,-11.92\%,-11.9186046511628,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:gates,solar80 H percentage change,+18.13\%,18.13441483198146,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:gates,A90_solar70 test gain,0.01128,0.011284999999999991,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/paired_differences.csv,PASS
+tab:gates,A90_solar70 test MC low,0.01001,0.010010678841939786,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/paired_differences.csv,PASS
+tab:gates,A90_solar70 test MC high,0.01256,0.012559321158060197,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/paired_differences.csv,PASS
+tab:gates,A90_solar70 rep gain,0.01038,0.01038499999999999,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/paired_differences.csv,PASS
+tab:gates,A90_solar70 A percentage change,-4.36\%,-4.360465116279066,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:gates,A90_solar70 H percentage change,+5.79\%,5.793742757821541,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:gates,A180_solar70 test gain,0.01350,0.013504999999999975,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/paired_differences.csv,PASS
+tab:gates,A180_solar70 test MC low,0.01094,0.010944307919939469,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/paired_differences.csv,PASS
+tab:gates,A180_solar70 test MC high,0.01607,0.016065692080060482,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/paired_differences.csv,PASS
+tab:gates,A180_solar70 rep gain,0.01164,0.011639999999999975,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/paired_differences.csv,PASS
+tab:gates,A180_solar70 A percentage change,-7.85\%,-7.848837209302328,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:gates,A180_solar70 H percentage change,+9.68\%,9.675550405561983,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:gates,A270_solar70 test gain,0.00000,0.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/paired_differences.csv,PASS
+tab:gates,A270_solar70 test MC low,0.00000,0.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/paired_differences.csv,PASS
+tab:gates,A270_solar70 test MC high,0.00000,0.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/paired_differences.csv,PASS
+tab:gates,A270_solar70 rep gain,0.00000,0.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/paired_differences.csv,PASS
+tab:gates,A270_solar70 A percentage change,+0.00\%,0.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:gates,A270_solar70 H percentage change,+0.00\%,2.220446049250313e-14,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+tab:historical,"C9,C24 rank",1,1,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C24 A",396,396.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C24 H",0.04874,0.0487444608567208,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C24 V",5551.3,5551.33280395222,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C24 score",0.84486,0.8448626697918128,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C15 rank",2,2,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C15 A",351,351.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C15 H",0.03496,0.034958148695224,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C15 V",3127.8,3127.7553243151942,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C15 score",0.75237,0.7523663617487346,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C12 rank",3,3,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C12 A",306,306.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C12 H",0.04357,0.0435745937961595,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C12 V",4030.5,4030.542903227826,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C12 score",0.73582,0.7358186770063277,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C15,C24 rank",4,4,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C15,C24 A",243,243.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C15,C24 H",0.05367,0.0536681437715411,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C15,C24 V",4016.5,4016.480099991295,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C15,C24 score",0.72005,0.7200487418816053,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C35 rank",5,5,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C35 A",297,297.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C35 H",0.04481,0.0448055145248646,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C35 V",5303.3,5303.319767447678,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C35 score",0.71420,0.7141989065831041,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C13 rank",6,6,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C13 A",333,333.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C13 H",0.03028,0.0302806499261447,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C13 V",2975.2,2975.1556368781958,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C13 score",0.70832,0.7083157687897844,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C12,C24 rank",7,7,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C12,C24 A",198,198.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C12,C24 H",0.06228,0.0622845888724766,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C12,C24 V",4919.3,4919.267678903927,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C12,C24 score",0.70350,0.7035010571391985,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C21 rank",8,8,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C21 A",333,333.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C21 H",0.03250,0.0324963072378138,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C21 V",4252.0,4251.977482318209,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C21 score",0.70229,0.702291864747922,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C26 rank",9,9,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C26 A",315,315.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C26 H",0.03520,0.035204332840965,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C26 V",3906.1,3906.126893415535,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C26 score",0.70170,0.7016985979003341,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C27 rank",10,10,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C27 A",324,324.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C27 H",0.03890,0.0388970950270802,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C27 V",7340.9,7340.881193203204,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:historical,"C9,C27 score",0.68323,0.6832259042053334,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C9,C12 rank",3,3,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C9,C12 A",306,306.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C9,C12 H",0.04357,0.0435745937961595,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C9,C12 V",4030.5,4030.542903227826,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C12,C15 rank",20,20,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C12,C15 A",153,153.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C12,C15 H",0.04850,0.0484982767109798,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C12,C15 V",2495.7,2495.690199266902,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C12,C24 rank",7,7,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C12,C24 A",198,198.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C12,C24 H",0.06228,0.0622845888724766,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C12,C24 V",4919.3,4919.267678903927,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C9,C24 rank",1,1,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C9,C24 A",396,396.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C9,C24 H",0.04874,0.0487444608567208,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C9,C24 V",5551.3,5551.33280395222,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C15,C25 rank",125,125,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C15,C25 A",99,99.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C15,C25 H",0.02265,0.0226489414081733,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C15,C25 V",964.9,964.8573279061384,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C9,C15 rank",2,2,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C9,C15 A",351,351.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C9,C15 H",0.03496,0.034958148695224,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C9,C15 V",3127.8,3127.7553243151942,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C25,C29 rank",397,397,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C25,C29 A",18,18.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C25,C29 H",0.00320,0.0032003938946331,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C25,C29 V",387.4,387.3824354304028,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C13,C15 rank",55,55,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C13,C15 A",135,135.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C13,C15 H",0.03520,0.035204332840965,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C13,C15 V",1440.3,1440.3029329172705,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C24,C35 rank",11,11,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C24,C35 A",189,189.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C24,C35 H",0.06352,0.0635155096011816,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C24,C35 V",6192.0,6192.044543123779,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C15,C24 rank",4,4,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C15,C24 A",243,243.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C15,C24 H",0.05367,0.0536681437715411,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+tab:robust,"C15,C24 V",4016.5,4016.480099991295,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/all630_archived_metrics.csv,PASS
+layered prose,A270 filter mean,.030440,0.030440339545998653,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+layered prose,A270 filter max,.228607,0.2286072291730793,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/shortlist_evaluation.csv,PASS
+stability prose,ordered,1,1.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/selection_stability.csv,PASS
+stability prose,solar70,.945455,0.9454545454545455,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/selection_stability.csv,PASS
+stability prose,solar80,.893939,0.8939393939393939,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/selection_stability.csv,PASS
+stability prose,A90_solar70,.945455,0.9454545454545455,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/selection_stability.csv,PASS
+stability prose,A180_solar70,.890909,0.890909090909091,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/selection_stability.csv,PASS
+stability prose,A270_solar70,1,1.0,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/selection_stability.csv,PASS
+replacement prose,failed contexts,6,6,/workspace/shared/icores-final-review/recovered/icores_2027/solar_priority_final/results/CONCLUSIONS.json,PASS
+tab:audit,historical10 full continuous_worst_regret,0.246359,0.246358581570572,/workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv,PASS
+tab:audit,historical10 full grid_max,0.246359,0.246358581570572,/workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv,PASS
+tab:audit,historical10 ordered continuous_worst_regret,0,0.0,/workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv,PASS
+tab:audit,historical10 local continuous_worst_regret,0,0.0,/workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv,PASS
+tab:audit,historical10 size,10,10,/workspace/shared/icores-final-review/evidence/preference/results/CONCLUSIONS.json,PASS
+tab:audit,AV10 full continuous_worst_regret,0.232558,0.23255813953488313,/workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv,PASS
+tab:audit,AV10 full grid_max,0.232558,0.23255813953488313,/workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv,PASS
+tab:audit,AV10 ordered continuous_worst_regret,0,0.0,/workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv,PASS
+tab:audit,AV10 local continuous_worst_regret,0,0.0,/workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv,PASS
+tab:audit,AV10 size,10,10,/workspace/shared/icores-final-review/evidence/preference/results/CONCLUSIONS.json,PASS
+tab:audit,AHV10 full continuous_worst_regret,0.246359,0.246358581570572,/workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv,PASS
+tab:audit,AHV10 full grid_max,0.246359,0.246358581570572,/workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv,PASS
+tab:audit,AHV10 ordered continuous_worst_regret,0,0.0,/workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv,PASS
+tab:audit,AHV10 local continuous_worst_regret,0,0.0,/workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv,PASS
+tab:audit,AHV10 size,10,10,/workspace/shared/icores-final-review/evidence/preference/results/CONCLUSIONS.json,PASS
+tab:audit,robust10 full continuous_worst_regret,0.007656,0.007655659271333039,/workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv,PASS
+tab:audit,robust10 full grid_max,0.007576,0.007576365892115633,/workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv,PASS
+tab:audit,robust10 ordered continuous_worst_regret,0,0.0,/workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv,PASS
+tab:audit,robust10 local continuous_worst_regret,0,0.0,/workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv,PASS
+tab:audit,robust10 size,10,10,/workspace/shared/icores-final-review/evidence/preference/results/CONCLUSIONS.json,PASS
+tab:audit,AV_full full continuous_worst_regret,0.232558,0.23255813953488313,/workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv,PASS
+tab:audit,AV_full full grid_max,0.232558,0.23255813953488313,/workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv,PASS
+tab:audit,AV_full ordered continuous_worst_regret,0,0.0,/workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv,PASS
+tab:audit,AV_full local continuous_worst_regret,0,0.0,/workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv,PASS
+tab:audit,AV_full size,12,12,/workspace/shared/icores-final-review/evidence/preference/results/CONCLUSIONS.json,PASS
+tab:audit,AHV_full full continuous_worst_regret,0.000000,0.0,/workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv,PASS
+tab:audit,AHV_full full grid_max,0.000000,0.0,/workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv,PASS
+tab:audit,AHV_full ordered continuous_worst_regret,0,0.0,/workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv,PASS
+tab:audit,AHV_full local continuous_worst_regret,0,0.0,/workspace/shared/icores-final-review/evidence/preference/results/continuous_worst_regret.csv,PASS
+tab:audit,AHV_full size,41,41,/workspace/shared/icores-final-review/evidence/preference/results/CONCLUSIONS.json,PASS

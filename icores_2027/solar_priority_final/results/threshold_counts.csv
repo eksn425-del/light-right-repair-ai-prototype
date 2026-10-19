@@ -1,0 +1,7 @@
+context,A_min,eligible_count,excluded_count,feasible_k10
+ordered,,630,0,True
+solar70,,630,0,True
+solar80,,630,0,True
+A90_solar70,90.0,166,464,True
+A180_solar70,180.0,50,580,True
+A270_solar70,270.0,12,618,True

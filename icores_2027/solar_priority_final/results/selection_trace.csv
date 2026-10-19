@@ -1,0 +1,13 @@
+context,method,distinct_training_winners,required_winner_pairs,feasible,training_recovery
+ordered,coverage10,1,,True,0.900995
+ordered,protected_coverage10,1,"C9,C24",True,0.900995
+solar70,coverage10,3,,True,0.663405
+solar70,protected_coverage10,3,"C9,C24;C12,C24;C24,C35",True,0.663405
+solar80,coverage10,3,,True,0.66559
+solar80,protected_coverage10,3,"C9,C24;C12,C24;C24,C35",True,0.66559
+A90_solar70,coverage10,3,,True,0.663405
+A90_solar70,protected_coverage10,3,"C9,C24;C12,C24;C24,C35",True,0.663405
+A180_solar70,coverage10,3,,True,0.707115
+A180_solar70,protected_coverage10,3,"C9,C24;C12,C24;C24,C35",True,0.707115
+A270_solar70,coverage10,1,,True,0.996675
+A270_solar70,protected_coverage10,1,"C9,C24",True,0.996675

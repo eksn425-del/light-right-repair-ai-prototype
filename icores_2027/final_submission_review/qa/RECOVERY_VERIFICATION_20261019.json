@@ -1,0 +1,1382 @@
+{
+  "scope": "Read-only recovery of existing archives; no experiment or analysis reruns",
+  "manifest": "icores_2027/solar_priority_final/RUN_MANIFEST.json",
+  "groups": {
+    "inputs": {
+      "count": 8,
+      "matched": 8,
+      "files": [
+        {
+          "path": "icores_2027/runs/local_ablation_20261016/aggregate_B_m630_r1_run.csv",
+          "exists": true,
+          "expected_sha256": "b07225c7f0bf43348a867934a7b71fb097d30975dcef8f571a5ccc0f0ff96387",
+          "actual_sha256": "b07225c7f0bf43348a867934a7b71fb097d30975dcef8f571a5ccc0f0ff96387",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "icores_2027/architect_first_cloud/analysis/top10_rule_candidates.csv",
+          "exists": true,
+          "expected_sha256": "9d9a764a2fe2b5dbaa59f341c9412f498ac939c38bd0058c90e569cab83edca2",
+          "actual_sha256": "9d9a764a2fe2b5dbaa59f341c9412f498ac939c38bd0058c90e569cab83edca2",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "icores_2027/architect_first_cloud/analysis/decision_evidence_matrix.csv",
+          "exists": true,
+          "expected_sha256": "1506d4da6ab9440635b01137d22f89c9a0803404858365893f7981d24977397a",
+          "actual_sha256": "1506d4da6ab9440635b01137d22f89c9a0803404858365893f7981d24977397a",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "icores_2027/architect_first_cloud/analysis/selection_policy_frozen.md",
+          "exists": true,
+          "expected_sha256": "2242c155489cec5d2d79258e41a3fd3d237752c2bd4ffce50494184dbdf833f4",
+          "actual_sha256": "2242c155489cec5d2d79258e41a3fd3d237752c2bd4ffce50494184dbdf833f4",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "research_reproducibility/configs/research.yaml",
+          "exists": true,
+          "expected_sha256": "08921b59e8c2115f20fc32e6f0973d99af0cb002dd9abbe883527bad6ef202e0",
+          "actual_sha256": "08921b59e8c2115f20fc32e6f0973d99af0cb002dd9abbe883527bad6ef202e0",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "research_reproducibility/results_public/weight_sensitivity_summary_v2.csv",
+          "exists": true,
+          "expected_sha256": "f9d4b4237006bd368a459386f0d65533d0124882cca7368e7529588984033b84",
+          "actual_sha256": "f9d4b4237006bd368a459386f0d65533d0124882cca7368e7529588984033b84",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "icores_2027/preference_robust/results/shortlists_evidence.csv",
+          "exists": true,
+          "expected_sha256": "5c4736d3f48e2bc7644070d2e8f47ec66392b84fbeb36de55aa4f9d3782d8a6c",
+          "actual_sha256": "5c4736d3f48e2bc7644070d2e8f47ec66392b84fbeb36de55aa4f9d3782d8a6c",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "icores_2027/runs/statistics_20261016/comparison_values.csv",
+          "exists": true,
+          "expected_sha256": "9890c9ec0c751d24f4154008cf6e8fe680ef753e94ebf504a8702769dcadd16a",
+          "actual_sha256": "9890c9ec0c751d24f4154008cf6e8fe680ef753e94ebf504a8702769dcadd16a",
+          "sha256_matches": true,
+          "size_matches": true
+        }
+      ]
+    },
+    "outputs": {
+      "count": 159,
+      "matched": 159,
+      "files": [
+        {
+          "path": "results/CONCLUSIONS.json",
+          "exists": true,
+          "expected_sha256": "3d518e2232654f4a151534dcc5d86e35dc7f6272e3ba756bbb7fcf70e652593a",
+          "actual_sha256": "3d518e2232654f4a151534dcc5d86e35dc7f6272e3ba756bbb7fcf70e652593a",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/acceptability_replication_differences.csv",
+          "exists": true,
+          "expected_sha256": "7aa7ea26637120a3cccd192a847a27397444a1f42f661299a14111490520cb21",
+          "actual_sha256": "7aa7ea26637120a3cccd192a847a27397444a1f42f661299a14111490520cb21",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/all630_archived_metrics.csv",
+          "exists": true,
+          "expected_sha256": "c4dbd9742308bfa07f5337bfd5b379f984ea8a15dc64ccff3b4551e53ed5c128",
+          "actual_sha256": "c4dbd9742308bfa07f5337bfd5b379f984ea8a15dc64ccff3b4551e53ed5c128",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/block_membership_frequency.csv",
+          "exists": true,
+          "expected_sha256": "7e064f049f58ad115d2fccb713715208e3528e5b9b8f703b01127cf57bf87410",
+          "actual_sha256": "7e064f049f58ad115d2fccb713715208e3528e5b9b8f703b01127cf57bf87410",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/candidate_acceptability.csv",
+          "exists": true,
+          "expected_sha256": "517518ce2e00024af7111624f7ceb29647aac368ec1fa2504f953f543be94cb6",
+          "actual_sha256": "517518ce2e00024af7111624f7ceb29647aac368ec1fa2504f953f543be94cb6",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/continuous_lp_candidates.csv.gz",
+          "exists": true,
+          "expected_sha256": "c11b9c14fd9ed1fb58d3ec075647068d0bd6a22e32b19731679ba630342c9a19",
+          "actual_sha256": "c11b9c14fd9ed1fb58d3ec075647068d0bd6a22e32b19731679ba630342c9a19",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/continuous_worst_regret.csv",
+          "exists": true,
+          "expected_sha256": "9a0e4159e14dcf7abef55faca302fe46181fb82fd22471f6d51c386e13fdbb94",
+          "actual_sha256": "9a0e4159e14dcf7abef55faca302fe46181fb82fd22471f6d51c386e13fdbb94",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/grid_evaluation.csv",
+          "exists": true,
+          "expected_sha256": "805014a05d9436c52ee6a5ddc240cc5219c7d2666ddeac2a1e266b5f3cba897c",
+          "actual_sha256": "805014a05d9436c52ee6a5ddc240cc5219c7d2666ddeac2a1e266b5f3cba897c",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/original_list_threshold_violations.csv",
+          "exists": true,
+          "expected_sha256": "41792af8b132285cf51923176a59dda433f9ba80b1d3f455bf8250fa20b9e4f4",
+          "actual_sha256": "41792af8b132285cf51923176a59dda433f9ba80b1d3f455bf8250fa20b9e4f4",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/paired_differences.csv",
+          "exists": true,
+          "expected_sha256": "ea14ace5eef51162069f2f26f708c9cb932e8aa3664626a5e5d1068d5801fb73",
+          "actual_sha256": "ea14ace5eef51162069f2f26f708c9cb932e8aa3664626a5e5d1068d5801fb73",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/rank_memberships/A180_solar70_grid.npz",
+          "exists": true,
+          "expected_sha256": "7c65abc54722af6019b024b5fed4e4c748433d11b7c2315e84d9f15e2b8375c4",
+          "actual_sha256": "7c65abc54722af6019b024b5fed4e4c748433d11b7c2315e84d9f15e2b8375c4",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/rank_memberships/A180_solar70_replication.npz",
+          "exists": true,
+          "expected_sha256": "c7f3e0b4b606fb8ebafa944cfe4f180b202f1a5bd42a26e2939d59fff7d2b1a6",
+          "actual_sha256": "c7f3e0b4b606fb8ebafa944cfe4f180b202f1a5bd42a26e2939d59fff7d2b1a6",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/rank_memberships/A180_solar70_test.npz",
+          "exists": true,
+          "expected_sha256": "0cf311585b64008c1e44b74612a122b3ff265831f9cfd98a5e074e19d8d37555",
+          "actual_sha256": "0cf311585b64008c1e44b74612a122b3ff265831f9cfd98a5e074e19d8d37555",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/rank_memberships/A180_solar70_train.npz",
+          "exists": true,
+          "expected_sha256": "8cd6e80ba408a32aeffb67a6de5db40bcb4a04e29798b3013a047d1bb58910d2",
+          "actual_sha256": "8cd6e80ba408a32aeffb67a6de5db40bcb4a04e29798b3013a047d1bb58910d2",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/rank_memberships/A270_solar70_grid.npz",
+          "exists": true,
+          "expected_sha256": "13b0dff0c14ac8cc50e7112ed0a289612fba42437eeff7634e535fde8f2498ea",
+          "actual_sha256": "13b0dff0c14ac8cc50e7112ed0a289612fba42437eeff7634e535fde8f2498ea",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/rank_memberships/A270_solar70_replication.npz",
+          "exists": true,
+          "expected_sha256": "576c7ecfefd026351cc0bde306f65b773e3c267886949b16564868dfcf636b4a",
+          "actual_sha256": "576c7ecfefd026351cc0bde306f65b773e3c267886949b16564868dfcf636b4a",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/rank_memberships/A270_solar70_test.npz",
+          "exists": true,
+          "expected_sha256": "431d08d5e5ec66573a47c13787c73d2174a8a144ba71c94031cb839391392d77",
+          "actual_sha256": "431d08d5e5ec66573a47c13787c73d2174a8a144ba71c94031cb839391392d77",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/rank_memberships/A270_solar70_train.npz",
+          "exists": true,
+          "expected_sha256": "641496f76dddb089b2e314bb1b51283ab1a38d0cc1c362b21d7af6e2862aa5ee",
+          "actual_sha256": "641496f76dddb089b2e314bb1b51283ab1a38d0cc1c362b21d7af6e2862aa5ee",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/rank_memberships/A90_solar70_grid.npz",
+          "exists": true,
+          "expected_sha256": "2a7fe90ade3fe66faee2312cc5abb571f785a51eb54a3278576d82e462ed02cf",
+          "actual_sha256": "2a7fe90ade3fe66faee2312cc5abb571f785a51eb54a3278576d82e462ed02cf",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/rank_memberships/A90_solar70_replication.npz",
+          "exists": true,
+          "expected_sha256": "73e85bb52b27e97507b1e1ddba62741031c82798deacd829052a31836598d17b",
+          "actual_sha256": "73e85bb52b27e97507b1e1ddba62741031c82798deacd829052a31836598d17b",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/rank_memberships/A90_solar70_test.npz",
+          "exists": true,
+          "expected_sha256": "3e7f93672cb9bf6253a5ffe36bc9f2df95f033d80fb845aec77f31db632d1cf2",
+          "actual_sha256": "3e7f93672cb9bf6253a5ffe36bc9f2df95f033d80fb845aec77f31db632d1cf2",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/rank_memberships/A90_solar70_train.npz",
+          "exists": true,
+          "expected_sha256": "e3826f48b0ac8a29402c00e0bd5d0f6ab12294b77bacf6f74688993bb5dda02f",
+          "actual_sha256": "e3826f48b0ac8a29402c00e0bd5d0f6ab12294b77bacf6f74688993bb5dda02f",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/rank_memberships/ordered_grid.npz",
+          "exists": true,
+          "expected_sha256": "0a5ccb010eb86e56245a712bcf87fc23773bd96fd8e73bd851400c717de5a95e",
+          "actual_sha256": "0a5ccb010eb86e56245a712bcf87fc23773bd96fd8e73bd851400c717de5a95e",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/rank_memberships/ordered_replication.npz",
+          "exists": true,
+          "expected_sha256": "52670172e141860cbff882df7e54a6698e46445a133141c884efb03f8b80aa9b",
+          "actual_sha256": "52670172e141860cbff882df7e54a6698e46445a133141c884efb03f8b80aa9b",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/rank_memberships/ordered_test.npz",
+          "exists": true,
+          "expected_sha256": "c7ca3d1bc0cb49f1cdb87eb23bcc83f4726219635ba612b3886973ddac67290c",
+          "actual_sha256": "c7ca3d1bc0cb49f1cdb87eb23bcc83f4726219635ba612b3886973ddac67290c",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/rank_memberships/ordered_train.npz",
+          "exists": true,
+          "expected_sha256": "53cf8a0b5caea74484b51770f19f9b0721c4266e3640d38546fc14009d2d903b",
+          "actual_sha256": "53cf8a0b5caea74484b51770f19f9b0721c4266e3640d38546fc14009d2d903b",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/rank_memberships/solar70_grid.npz",
+          "exists": true,
+          "expected_sha256": "c101a3ac96d7391d823269f600eebbd9af080f4da37e6e3a8ba0912088100de7",
+          "actual_sha256": "c101a3ac96d7391d823269f600eebbd9af080f4da37e6e3a8ba0912088100de7",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/rank_memberships/solar70_replication.npz",
+          "exists": true,
+          "expected_sha256": "1e4c18cb3f4cdfab5c4059bb301e9805df351491d804b009b1dcb01d82614c1f",
+          "actual_sha256": "1e4c18cb3f4cdfab5c4059bb301e9805df351491d804b009b1dcb01d82614c1f",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/rank_memberships/solar70_test.npz",
+          "exists": true,
+          "expected_sha256": "a307afcafd8990c7a20748da60b366149e97210eff1fa65e88cd4bda7ef2ed30",
+          "actual_sha256": "a307afcafd8990c7a20748da60b366149e97210eff1fa65e88cd4bda7ef2ed30",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/rank_memberships/solar70_train.npz",
+          "exists": true,
+          "expected_sha256": "ac3466c06e7955e13281aaa3528f21fde13f36c4690d28e93e35a0bc9c96ba1f",
+          "actual_sha256": "ac3466c06e7955e13281aaa3528f21fde13f36c4690d28e93e35a0bc9c96ba1f",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/rank_memberships/solar80_grid.npz",
+          "exists": true,
+          "expected_sha256": "9411ff759604a47374f6f01ee83485f0d52e1673b9a12fadd79b06e95245b7e6",
+          "actual_sha256": "9411ff759604a47374f6f01ee83485f0d52e1673b9a12fadd79b06e95245b7e6",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/rank_memberships/solar80_replication.npz",
+          "exists": true,
+          "expected_sha256": "d37d39105abc50376d50ccc56c5fda8e404af95d3f1429858de83e8b3cd70bb7",
+          "actual_sha256": "d37d39105abc50376d50ccc56c5fda8e404af95d3f1429858de83e8b3cd70bb7",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/rank_memberships/solar80_test.npz",
+          "exists": true,
+          "expected_sha256": "d4900aeccc9d9c95d336c273f845b5de3fd1ab6701b8a6df4c7cab1e81db80a1",
+          "actual_sha256": "d4900aeccc9d9c95d336c273f845b5de3fd1ab6701b8a6df4c7cab1e81db80a1",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/rank_memberships/solar80_train.npz",
+          "exists": true,
+          "expected_sha256": "5a3fb89f531174898d45afc489b609d78ac88dc90036b383034ef60db9e452af",
+          "actual_sha256": "5a3fb89f531174898d45afc489b609d78ac88dc90036b383034ef60db9e452af",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/sampling_diagnostics.csv",
+          "exists": true,
+          "expected_sha256": "63ae8e0c1339bb674991ca77cde9c04da0676233498beaf9e5db18df2ab17b1b",
+          "actual_sha256": "63ae8e0c1339bb674991ca77cde9c04da0676233498beaf9e5db18df2ab17b1b",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A180_solar70_replication_AHV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "b0621bb6ac975fce97ca3a682a806cdb4640e2978e490999af1063a591c32223",
+          "actual_sha256": "b0621bb6ac975fce97ca3a682a806cdb4640e2978e490999af1063a591c32223",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A180_solar70_replication_AV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "851a5de5da635d47cac1fe72a330257cdce5be157aacc6661193eefd1109a360",
+          "actual_sha256": "851a5de5da635d47cac1fe72a330257cdce5be157aacc6661193eefd1109a360",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A180_solar70_replication_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "a9133d9c5a729bcef5a658168f0ae2db592a3306e8c6516e080c2f49cfacb8ed",
+          "actual_sha256": "a9133d9c5a729bcef5a658168f0ae2db592a3306e8c6516e080c2f49cfacb8ed",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A180_solar70_replication_historical10.csv.gz",
+          "exists": true,
+          "expected_sha256": "61db881ca4e06a3f0eaca1ec17a4c316ce14be0324582808ca4c76888fc21af6",
+          "actual_sha256": "61db881ca4e06a3f0eaca1ec17a4c316ce14be0324582808ca4c76888fc21af6",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A180_solar70_replication_protected_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "a36c7f1fcd2541bb12ea6253533a60537caebbd784a03106abfb2f986a09d2a8",
+          "actual_sha256": "a36c7f1fcd2541bb12ea6253533a60537caebbd784a03106abfb2f986a09d2a8",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A180_solar70_replication_robust10.csv.gz",
+          "exists": true,
+          "expected_sha256": "814e732af0ca46b65c625515d64d27c3adcc41b3e4e48532d890e8ec7bc5601b",
+          "actual_sha256": "814e732af0ca46b65c625515d64d27c3adcc41b3e4e48532d890e8ec7bc5601b",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A180_solar70_test_AHV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "e7807292f6ec79adab92cd82e14a335457049ed3037a4f7cad36891ba147aaeb",
+          "actual_sha256": "e7807292f6ec79adab92cd82e14a335457049ed3037a4f7cad36891ba147aaeb",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A180_solar70_test_AV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "e3d53255441152cafd4f158fc7d301b4f58d4d69d3d7d53e5849d4a918a16b60",
+          "actual_sha256": "e3d53255441152cafd4f158fc7d301b4f58d4d69d3d7d53e5849d4a918a16b60",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A180_solar70_test_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "e1ab8d5a8810a32cc214c7f95ed6decd523d7a0daf394676d957922ee8df7d05",
+          "actual_sha256": "e1ab8d5a8810a32cc214c7f95ed6decd523d7a0daf394676d957922ee8df7d05",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A180_solar70_test_historical10.csv.gz",
+          "exists": true,
+          "expected_sha256": "58b9bf24ce89dfe48fec5207be26a9672d832a51b27803b15829f110261ebc81",
+          "actual_sha256": "58b9bf24ce89dfe48fec5207be26a9672d832a51b27803b15829f110261ebc81",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A180_solar70_test_protected_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "2d10986e3e87c3c98436e7cce6623b1a9f57ccd26830778799fcda8443b6d1fb",
+          "actual_sha256": "2d10986e3e87c3c98436e7cce6623b1a9f57ccd26830778799fcda8443b6d1fb",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A180_solar70_test_robust10.csv.gz",
+          "exists": true,
+          "expected_sha256": "8d080c4f7dfe1f1295fbd2a3ac8d857d3923c3e5e85369882b468077e9411766",
+          "actual_sha256": "8d080c4f7dfe1f1295fbd2a3ac8d857d3923c3e5e85369882b468077e9411766",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A180_solar70_train_AHV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "6a4a1f8dacab6f00ad605650a84522c37e2dfb658216e940ed1afc4b6e6148ff",
+          "actual_sha256": "6a4a1f8dacab6f00ad605650a84522c37e2dfb658216e940ed1afc4b6e6148ff",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A180_solar70_train_AV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "49b635b47a5447056d88dc67c5efeba0e3db300b59370ee8de4a0a5e0ace0802",
+          "actual_sha256": "49b635b47a5447056d88dc67c5efeba0e3db300b59370ee8de4a0a5e0ace0802",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A180_solar70_train_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "741b7a4e2e90e0934afbc33d6622bb4ce0871c215535fe26e33e5b1c03b0b851",
+          "actual_sha256": "741b7a4e2e90e0934afbc33d6622bb4ce0871c215535fe26e33e5b1c03b0b851",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A180_solar70_train_historical10.csv.gz",
+          "exists": true,
+          "expected_sha256": "7683649164358bd87cec461f499955bb941711cccf6e459b53dab945ee6fdd4c",
+          "actual_sha256": "7683649164358bd87cec461f499955bb941711cccf6e459b53dab945ee6fdd4c",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A180_solar70_train_protected_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "e06c4d79d068e527eef8b656b606c37e17c69c90758fbca331e25662d76c45c7",
+          "actual_sha256": "e06c4d79d068e527eef8b656b606c37e17c69c90758fbca331e25662d76c45c7",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A180_solar70_train_robust10.csv.gz",
+          "exists": true,
+          "expected_sha256": "36028e37e706038c3b7a624382974fe756ff480c2f852e18d776d3650b78cfe5",
+          "actual_sha256": "36028e37e706038c3b7a624382974fe756ff480c2f852e18d776d3650b78cfe5",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A270_solar70_replication_AHV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "de6c070904c315eb62ef40ef50b23e22a357c58ab203d132def8591f326fab20",
+          "actual_sha256": "de6c070904c315eb62ef40ef50b23e22a357c58ab203d132def8591f326fab20",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A270_solar70_replication_AV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "7b1401c25424f80ce92ad4e3675545832fe4bd8d77e9673666b31e01e9225b03",
+          "actual_sha256": "7b1401c25424f80ce92ad4e3675545832fe4bd8d77e9673666b31e01e9225b03",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A270_solar70_replication_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "27b7ccceef38d7af349c829b35106bec66650497d1b3b7eb1e1c7176e7546a19",
+          "actual_sha256": "27b7ccceef38d7af349c829b35106bec66650497d1b3b7eb1e1c7176e7546a19",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A270_solar70_replication_historical10.csv.gz",
+          "exists": true,
+          "expected_sha256": "213b0b25cbf62be65f520814a4d1d3fcfc59903e30f39887edcd8042d29f9ec6",
+          "actual_sha256": "213b0b25cbf62be65f520814a4d1d3fcfc59903e30f39887edcd8042d29f9ec6",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A270_solar70_replication_protected_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "1c453f9512e283c51679a64f8f41a63a9d3eee004e965b17f6f512cd726f0e80",
+          "actual_sha256": "1c453f9512e283c51679a64f8f41a63a9d3eee004e965b17f6f512cd726f0e80",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A270_solar70_replication_robust10.csv.gz",
+          "exists": true,
+          "expected_sha256": "9d1f64a9c43cfc6c978779c51570c0762f623012828f9c908a50f61f1be9f36a",
+          "actual_sha256": "9d1f64a9c43cfc6c978779c51570c0762f623012828f9c908a50f61f1be9f36a",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A270_solar70_test_AHV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "48aca432fdd47864220301473146e5b114ea179e88adb08e1ee1608b2c4a2e5d",
+          "actual_sha256": "48aca432fdd47864220301473146e5b114ea179e88adb08e1ee1608b2c4a2e5d",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A270_solar70_test_AV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "7e6bce487e2b58baca96f3c322b6d41efbce1b678d6a3c71a26d28ab84752ebd",
+          "actual_sha256": "7e6bce487e2b58baca96f3c322b6d41efbce1b678d6a3c71a26d28ab84752ebd",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A270_solar70_test_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "69a9c3f5245e7bc41e698cbcd878351d40c8e93511e29de1fcaca5f63385cd39",
+          "actual_sha256": "69a9c3f5245e7bc41e698cbcd878351d40c8e93511e29de1fcaca5f63385cd39",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A270_solar70_test_historical10.csv.gz",
+          "exists": true,
+          "expected_sha256": "e9b6c65b1b3f5929828f350660433d2f90564a413437428aa0e2030a18d8a54a",
+          "actual_sha256": "e9b6c65b1b3f5929828f350660433d2f90564a413437428aa0e2030a18d8a54a",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A270_solar70_test_protected_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "bf703f728b22b2c7035be360500137f4fc3c302995482fd0227b6cc9c6bc7417",
+          "actual_sha256": "bf703f728b22b2c7035be360500137f4fc3c302995482fd0227b6cc9c6bc7417",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A270_solar70_test_robust10.csv.gz",
+          "exists": true,
+          "expected_sha256": "0a58493161ecba724ae75d70027a0ee0fdeaae05532ca7375c7a894fc3d7fa2f",
+          "actual_sha256": "0a58493161ecba724ae75d70027a0ee0fdeaae05532ca7375c7a894fc3d7fa2f",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A270_solar70_train_AHV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "44aba5c7924c2efa9c60d01d0bd058c09d35abbd568d4fcfe894fe4e290b7e0d",
+          "actual_sha256": "44aba5c7924c2efa9c60d01d0bd058c09d35abbd568d4fcfe894fe4e290b7e0d",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A270_solar70_train_AV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "a46af6efa3336610d61cc1463348e38082d56f559e050b1235e485836015e03d",
+          "actual_sha256": "a46af6efa3336610d61cc1463348e38082d56f559e050b1235e485836015e03d",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A270_solar70_train_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "f2b0e7957e80a919ed3290c078dc94fb5ae362993864e034f95750b4a62dcade",
+          "actual_sha256": "f2b0e7957e80a919ed3290c078dc94fb5ae362993864e034f95750b4a62dcade",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A270_solar70_train_historical10.csv.gz",
+          "exists": true,
+          "expected_sha256": "b7baef0123bda2a3e6b9df0d1eddaa268b38f029675d7687342e9a3e308b58db",
+          "actual_sha256": "b7baef0123bda2a3e6b9df0d1eddaa268b38f029675d7687342e9a3e308b58db",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A270_solar70_train_protected_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "237a3c5aeac9634513cdddd115716ba7d842c54a78a59ad8da8ffe1a10d3c37f",
+          "actual_sha256": "237a3c5aeac9634513cdddd115716ba7d842c54a78a59ad8da8ffe1a10d3c37f",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A270_solar70_train_robust10.csv.gz",
+          "exists": true,
+          "expected_sha256": "fb404b4206d73d773318a3182b6d46f7e3042f61345106def515ff6c262b574f",
+          "actual_sha256": "fb404b4206d73d773318a3182b6d46f7e3042f61345106def515ff6c262b574f",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A90_solar70_replication_AHV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "708ec05c7634f44bf3ef26670a58995afc317424932b20b14510e025dc294ba9",
+          "actual_sha256": "708ec05c7634f44bf3ef26670a58995afc317424932b20b14510e025dc294ba9",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A90_solar70_replication_AV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "d202317934c42130492deef24b5941424932281d8ade6cc29f9073ee94e5e731",
+          "actual_sha256": "d202317934c42130492deef24b5941424932281d8ade6cc29f9073ee94e5e731",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A90_solar70_replication_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "51ea48fe882e9882e16bf9aef31ef8de5ac4dc2fc3d35f4f383e9dbd85249e03",
+          "actual_sha256": "51ea48fe882e9882e16bf9aef31ef8de5ac4dc2fc3d35f4f383e9dbd85249e03",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A90_solar70_replication_historical10.csv.gz",
+          "exists": true,
+          "expected_sha256": "1b4806531bfafecf89f40e70c7cd3105b8ae63a2bbd2a40ff156585f834cedd6",
+          "actual_sha256": "1b4806531bfafecf89f40e70c7cd3105b8ae63a2bbd2a40ff156585f834cedd6",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A90_solar70_replication_protected_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "fdefe0998a3cf9ded98344119237f0372beaa442ae15de7cc929a76c9eeccab3",
+          "actual_sha256": "fdefe0998a3cf9ded98344119237f0372beaa442ae15de7cc929a76c9eeccab3",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A90_solar70_replication_robust10.csv.gz",
+          "exists": true,
+          "expected_sha256": "dc7adfe33e31db3faccc4b486a24fd30646e453b319845f7cc401299272bbbdf",
+          "actual_sha256": "dc7adfe33e31db3faccc4b486a24fd30646e453b319845f7cc401299272bbbdf",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A90_solar70_test_AHV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "b8c5596ca813bf89cc20d30db975c956ead31930ceedc13211f1b996df2ca7d0",
+          "actual_sha256": "b8c5596ca813bf89cc20d30db975c956ead31930ceedc13211f1b996df2ca7d0",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A90_solar70_test_AV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "36e4a545df9e885c06489d6b0838d13727bd41474e1fd0d42751a78db95ab794",
+          "actual_sha256": "36e4a545df9e885c06489d6b0838d13727bd41474e1fd0d42751a78db95ab794",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A90_solar70_test_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "767d96b23d6014b4b6399e81c96e75ef617c3711db6b6f393d4b97d1257f883a",
+          "actual_sha256": "767d96b23d6014b4b6399e81c96e75ef617c3711db6b6f393d4b97d1257f883a",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A90_solar70_test_historical10.csv.gz",
+          "exists": true,
+          "expected_sha256": "1dc0190bbda9193a60c0eff7d34684df912711321b6ac87b851dd9f87c547809",
+          "actual_sha256": "1dc0190bbda9193a60c0eff7d34684df912711321b6ac87b851dd9f87c547809",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A90_solar70_test_protected_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "7a55841dfbfd4dd0267adaba670ae95dd38b9c6f1da96675527fbd9df3c12408",
+          "actual_sha256": "7a55841dfbfd4dd0267adaba670ae95dd38b9c6f1da96675527fbd9df3c12408",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A90_solar70_test_robust10.csv.gz",
+          "exists": true,
+          "expected_sha256": "9597419afa3613602bc80cdc6895a8918b95792a1049d976a81c91942ec7dcad",
+          "actual_sha256": "9597419afa3613602bc80cdc6895a8918b95792a1049d976a81c91942ec7dcad",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A90_solar70_train_AHV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "1e460c69708a2cf00f57aede15b733a24f103b7a72ef243bba7b436aaaaeb983",
+          "actual_sha256": "1e460c69708a2cf00f57aede15b733a24f103b7a72ef243bba7b436aaaaeb983",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A90_solar70_train_AV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "18db3882c603103f907611f22db4dbb0e7ba4b698a670d93cac1c64b61d27924",
+          "actual_sha256": "18db3882c603103f907611f22db4dbb0e7ba4b698a670d93cac1c64b61d27924",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A90_solar70_train_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "202d000dbd91372a6247625cd65d7e9e1990dbfde23bfb9e8ece72dd90cc0c3b",
+          "actual_sha256": "202d000dbd91372a6247625cd65d7e9e1990dbfde23bfb9e8ece72dd90cc0c3b",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A90_solar70_train_historical10.csv.gz",
+          "exists": true,
+          "expected_sha256": "57dd772c4726aada3f254e015c51850b33429348b3abd1032796d7863f9ed2e9",
+          "actual_sha256": "57dd772c4726aada3f254e015c51850b33429348b3abd1032796d7863f9ed2e9",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A90_solar70_train_protected_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "9bb2b61fb9d3897c41a7d2a3474b8be4523fb6fa661fd7fe375ce012a9945b6a",
+          "actual_sha256": "9bb2b61fb9d3897c41a7d2a3474b8be4523fb6fa661fd7fe375ce012a9945b6a",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/A90_solar70_train_robust10.csv.gz",
+          "exists": true,
+          "expected_sha256": "f78607eaabffbdd922ddb1ef2011f9cc88ff453a94c5db85e0361d336b2d570d",
+          "actual_sha256": "f78607eaabffbdd922ddb1ef2011f9cc88ff453a94c5db85e0361d336b2d570d",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/ordered_replication_AHV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "4bf43613841757d134b16ba5e1071464a70fdfc629e048980f74c681799c3950",
+          "actual_sha256": "4bf43613841757d134b16ba5e1071464a70fdfc629e048980f74c681799c3950",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/ordered_replication_AV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "b4c2fb103e024a2a6f10855ef6c29c3aae23cdaac78256ac6bd1b4517d4a018b",
+          "actual_sha256": "b4c2fb103e024a2a6f10855ef6c29c3aae23cdaac78256ac6bd1b4517d4a018b",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/ordered_replication_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "9c11365aac62c9fc82e6c6bfae6de4fb972d1f840a3273d7c64891e8d6a2c67a",
+          "actual_sha256": "9c11365aac62c9fc82e6c6bfae6de4fb972d1f840a3273d7c64891e8d6a2c67a",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/ordered_replication_historical10.csv.gz",
+          "exists": true,
+          "expected_sha256": "3cfc63376dbe9c06979a45dbb6f2ef72adee468891b2fda61d38e9ab3837ad8b",
+          "actual_sha256": "3cfc63376dbe9c06979a45dbb6f2ef72adee468891b2fda61d38e9ab3837ad8b",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/ordered_replication_protected_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "af3dc2aa5f62d95530ab6e1af1bc8d3a6414abe4edd3c660f836fefb9b091b18",
+          "actual_sha256": "af3dc2aa5f62d95530ab6e1af1bc8d3a6414abe4edd3c660f836fefb9b091b18",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/ordered_replication_robust10.csv.gz",
+          "exists": true,
+          "expected_sha256": "23a10dc67590ecc3e769ec92fc5938d24bb7741da15ac038dc0549cf9ee9ac77",
+          "actual_sha256": "23a10dc67590ecc3e769ec92fc5938d24bb7741da15ac038dc0549cf9ee9ac77",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/ordered_test_AHV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "d1366cdbca656c6df6fb7bf15213d96eb29cfea07139543bedbc9acf04b02946",
+          "actual_sha256": "d1366cdbca656c6df6fb7bf15213d96eb29cfea07139543bedbc9acf04b02946",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/ordered_test_AV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "826dd7e6bacef180d669bcf6f0ab4e650d3d5c380e9f4f7943c78a45ac355b20",
+          "actual_sha256": "826dd7e6bacef180d669bcf6f0ab4e650d3d5c380e9f4f7943c78a45ac355b20",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/ordered_test_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "de14e1b3ea419efa3d752c224f0ee7241b25f9d6ec33b0320a0bb86bf1ae6d45",
+          "actual_sha256": "de14e1b3ea419efa3d752c224f0ee7241b25f9d6ec33b0320a0bb86bf1ae6d45",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/ordered_test_historical10.csv.gz",
+          "exists": true,
+          "expected_sha256": "a08d308248e06b5f7c81c46f59ecc28a7bb14fbbda223f432659ec0aa4f14784",
+          "actual_sha256": "a08d308248e06b5f7c81c46f59ecc28a7bb14fbbda223f432659ec0aa4f14784",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/ordered_test_protected_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "914d1c72409d6563ba594e3db5331d02dce6a018f19e958181b05dca22563427",
+          "actual_sha256": "914d1c72409d6563ba594e3db5331d02dce6a018f19e958181b05dca22563427",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/ordered_test_robust10.csv.gz",
+          "exists": true,
+          "expected_sha256": "ac2515e6aa8142ae699ac51a5927db676a61261f50381fc73c7869030d3c01d1",
+          "actual_sha256": "ac2515e6aa8142ae699ac51a5927db676a61261f50381fc73c7869030d3c01d1",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/ordered_train_AHV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "532a985e1b508d0c931fd642c33a066de2e0214b770891db2c824179d0241935",
+          "actual_sha256": "532a985e1b508d0c931fd642c33a066de2e0214b770891db2c824179d0241935",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/ordered_train_AV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "a349793e7609fa5d7110bc94b303ca16aeb62063afdfd8f0d0bf1f5a67737f44",
+          "actual_sha256": "a349793e7609fa5d7110bc94b303ca16aeb62063afdfd8f0d0bf1f5a67737f44",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/ordered_train_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "32b4b8be334207d4e908a04c71f384b8c3577ba9e1c875fe23bfb31458a8f386",
+          "actual_sha256": "32b4b8be334207d4e908a04c71f384b8c3577ba9e1c875fe23bfb31458a8f386",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/ordered_train_historical10.csv.gz",
+          "exists": true,
+          "expected_sha256": "155adbe2bcfa6a55a8176c30c5d43741eb255fa84a9256f585eff1a625397561",
+          "actual_sha256": "155adbe2bcfa6a55a8176c30c5d43741eb255fa84a9256f585eff1a625397561",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/ordered_train_protected_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "85a69ae4cde84be8525f8eb9b45b9b7adb11b34bb23dac3977eac83754595e9e",
+          "actual_sha256": "85a69ae4cde84be8525f8eb9b45b9b7adb11b34bb23dac3977eac83754595e9e",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/ordered_train_robust10.csv.gz",
+          "exists": true,
+          "expected_sha256": "ce59d59c281ad591739e0adafd5e681d3cfd395d6d0811bf413b6eefa4ecf24f",
+          "actual_sha256": "ce59d59c281ad591739e0adafd5e681d3cfd395d6d0811bf413b6eefa4ecf24f",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar70_replication_AHV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "1dcb861a519835ebda72124889e474006369e1ae6ac7decaa8aad728802fb338",
+          "actual_sha256": "1dcb861a519835ebda72124889e474006369e1ae6ac7decaa8aad728802fb338",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar70_replication_AV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "1c1107a0d636777ceb620bf786881a16a46c3ff4886d9f782b0473084142cbe7",
+          "actual_sha256": "1c1107a0d636777ceb620bf786881a16a46c3ff4886d9f782b0473084142cbe7",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar70_replication_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "d5af56942f1e6378a9c9741f8bc6e9372d3e34b5ccececbb5f6f30615004bf3b",
+          "actual_sha256": "d5af56942f1e6378a9c9741f8bc6e9372d3e34b5ccececbb5f6f30615004bf3b",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar70_replication_historical10.csv.gz",
+          "exists": true,
+          "expected_sha256": "319783d82f521045d7bc4a2b8c163f45cd003fc6915a57379a3d9d60610dc1dd",
+          "actual_sha256": "319783d82f521045d7bc4a2b8c163f45cd003fc6915a57379a3d9d60610dc1dd",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar70_replication_protected_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "4bab375c862a95d30ee3e12d1300936783429c7debdeaa6c625173add0f6c8f4",
+          "actual_sha256": "4bab375c862a95d30ee3e12d1300936783429c7debdeaa6c625173add0f6c8f4",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar70_replication_robust10.csv.gz",
+          "exists": true,
+          "expected_sha256": "0ad4b9e93e002b8e4d6e1974ec5336cdf04570b9895fbad741226de5e74a6643",
+          "actual_sha256": "0ad4b9e93e002b8e4d6e1974ec5336cdf04570b9895fbad741226de5e74a6643",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar70_test_AHV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "c02cafa1dfb2b63e43ffad2244d1feaee057d4037c66dc13bb08071e7a552a8d",
+          "actual_sha256": "c02cafa1dfb2b63e43ffad2244d1feaee057d4037c66dc13bb08071e7a552a8d",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar70_test_AV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "e2fd828653f96e7fee2eedd965c6edff2a9a774b6c2a1751b16623c8fdfcbbb1",
+          "actual_sha256": "e2fd828653f96e7fee2eedd965c6edff2a9a774b6c2a1751b16623c8fdfcbbb1",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar70_test_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "e7388bbd97999f54887fc50fe248dc0ab6c89350ae043dfb6e1797e36e11831d",
+          "actual_sha256": "e7388bbd97999f54887fc50fe248dc0ab6c89350ae043dfb6e1797e36e11831d",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar70_test_historical10.csv.gz",
+          "exists": true,
+          "expected_sha256": "c8ce8704647c3d0b3d6ce4a57f3516d0a3c6c10cc17579a9aebc39c6d605f3db",
+          "actual_sha256": "c8ce8704647c3d0b3d6ce4a57f3516d0a3c6c10cc17579a9aebc39c6d605f3db",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar70_test_protected_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "47ea4d276eab08c1af8dac8d34d0890263ced15ac649c53ea49c8aac278eb859",
+          "actual_sha256": "47ea4d276eab08c1af8dac8d34d0890263ced15ac649c53ea49c8aac278eb859",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar70_test_robust10.csv.gz",
+          "exists": true,
+          "expected_sha256": "d774469477775b5210b8edff62ab3e30db19ad6040fa6aadb572dbfe31b4b050",
+          "actual_sha256": "d774469477775b5210b8edff62ab3e30db19ad6040fa6aadb572dbfe31b4b050",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar70_train_AHV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "77f02501b94f80d68a30525ddde1694d9346f567c4dbe6a2bb1364909b7906e2",
+          "actual_sha256": "77f02501b94f80d68a30525ddde1694d9346f567c4dbe6a2bb1364909b7906e2",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar70_train_AV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "19919d09923be7f34137c688cebd539916238aefd7c093214e094941aa281340",
+          "actual_sha256": "19919d09923be7f34137c688cebd539916238aefd7c093214e094941aa281340",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar70_train_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "ee1984ad12936a5fb7fa6c9ed92222315fe5983673fe481334bf1f7d372e1943",
+          "actual_sha256": "ee1984ad12936a5fb7fa6c9ed92222315fe5983673fe481334bf1f7d372e1943",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar70_train_historical10.csv.gz",
+          "exists": true,
+          "expected_sha256": "70a4ae7185f175832d30b615582b0c6f1a7d919b1a163f5740c5f7a7a1ccd25e",
+          "actual_sha256": "70a4ae7185f175832d30b615582b0c6f1a7d919b1a163f5740c5f7a7a1ccd25e",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar70_train_protected_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "92b17a511ad43e19af362414f822e4b1a24c4f10814267a314946d670e274778",
+          "actual_sha256": "92b17a511ad43e19af362414f822e4b1a24c4f10814267a314946d670e274778",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar70_train_robust10.csv.gz",
+          "exists": true,
+          "expected_sha256": "bca2acf3f62eef9d86af3ab90eec244cd61b3f5b94283de396a6b544778626c4",
+          "actual_sha256": "bca2acf3f62eef9d86af3ab90eec244cd61b3f5b94283de396a6b544778626c4",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar80_replication_AHV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "0ed38621e94096965599d8d38374098ae4b08b8198cb05479cdb097095765d89",
+          "actual_sha256": "0ed38621e94096965599d8d38374098ae4b08b8198cb05479cdb097095765d89",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar80_replication_AV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "33591ad73ef58dfb48eab69c8cbe97acf1f0f551eff5c51a3f5fc70fca8d65e3",
+          "actual_sha256": "33591ad73ef58dfb48eab69c8cbe97acf1f0f551eff5c51a3f5fc70fca8d65e3",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar80_replication_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "4128b6f704a3bfb2feaac0b171f5351850bcccb68b9d1e173be15e3398a4bde9",
+          "actual_sha256": "4128b6f704a3bfb2feaac0b171f5351850bcccb68b9d1e173be15e3398a4bde9",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar80_replication_historical10.csv.gz",
+          "exists": true,
+          "expected_sha256": "42682b97a8a77cf232850d7a0927e7e0a4c71f0be4411f995b82332aacd31739",
+          "actual_sha256": "42682b97a8a77cf232850d7a0927e7e0a4c71f0be4411f995b82332aacd31739",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar80_replication_protected_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "fa17c8452216505db2ac1de079ccdc451e10b225139d767ddc55b84373042ee1",
+          "actual_sha256": "fa17c8452216505db2ac1de079ccdc451e10b225139d767ddc55b84373042ee1",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar80_replication_robust10.csv.gz",
+          "exists": true,
+          "expected_sha256": "572f514d978ddefd495792da30073bc60cddaffa65c041388a2ad11320f001a4",
+          "actual_sha256": "572f514d978ddefd495792da30073bc60cddaffa65c041388a2ad11320f001a4",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar80_test_AHV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "f66cad94a88c56d84fd0b5b9c578dbec41d35c759c9152eb656f03baed771dd0",
+          "actual_sha256": "f66cad94a88c56d84fd0b5b9c578dbec41d35c759c9152eb656f03baed771dd0",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar80_test_AV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "5791c939ce85a3884454bd3897621afc1f9a80f930f9fd9ce7886ecdaa66427f",
+          "actual_sha256": "5791c939ce85a3884454bd3897621afc1f9a80f930f9fd9ce7886ecdaa66427f",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar80_test_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "bb579315e5136d044f109ba9c21e5c1be37eec48aae4cc66f68399c6e9848279",
+          "actual_sha256": "bb579315e5136d044f109ba9c21e5c1be37eec48aae4cc66f68399c6e9848279",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar80_test_historical10.csv.gz",
+          "exists": true,
+          "expected_sha256": "85810a2d12558e3d35331bbc659e86aa48414fec5b4a59ca2786b5519a56a218",
+          "actual_sha256": "85810a2d12558e3d35331bbc659e86aa48414fec5b4a59ca2786b5519a56a218",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar80_test_protected_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "6b9b59abc339f06a6fb524bbf7de8466ae6aa1e00318cb17b6af66a26e97e50c",
+          "actual_sha256": "6b9b59abc339f06a6fb524bbf7de8466ae6aa1e00318cb17b6af66a26e97e50c",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar80_test_robust10.csv.gz",
+          "exists": true,
+          "expected_sha256": "fa9ab042ed034fa4a2af04f71be0061b01361556ab2886cd523cfb7c77a895a0",
+          "actual_sha256": "fa9ab042ed034fa4a2af04f71be0061b01361556ab2886cd523cfb7c77a895a0",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar80_train_AHV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "3fd7fbbea6d3612dcb11b7aa80e49ea75e72b60ab94bc3988d95ddabcd4c5237",
+          "actual_sha256": "3fd7fbbea6d3612dcb11b7aa80e49ea75e72b60ab94bc3988d95ddabcd4c5237",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar80_train_AV10.csv.gz",
+          "exists": true,
+          "expected_sha256": "49cd8bac65eecb2a9a16ff41acdc51b683860ec91402c6ea9e6b8a4b6e8d4bcf",
+          "actual_sha256": "49cd8bac65eecb2a9a16ff41acdc51b683860ec91402c6ea9e6b8a4b6e8d4bcf",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar80_train_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "72261224ac62f904806cb9b28ade7831e605d96f707685bb058934635780dffa",
+          "actual_sha256": "72261224ac62f904806cb9b28ade7831e605d96f707685bb058934635780dffa",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar80_train_historical10.csv.gz",
+          "exists": true,
+          "expected_sha256": "45c0ee919afc5ab9ee605ee90b17633c8576e831b1c3a71b5dfbe0743f7e6c5a",
+          "actual_sha256": "45c0ee919afc5ab9ee605ee90b17633c8576e831b1c3a71b5dfbe0743f7e6c5a",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar80_train_protected_coverage10.csv.gz",
+          "exists": true,
+          "expected_sha256": "d3a1b3d45d6b1c599d49c83d16dac727436d2cba1f9d8a33d2dfb9f244692fac",
+          "actual_sha256": "d3a1b3d45d6b1c599d49c83d16dac727436d2cba1f9d8a33d2dfb9f244692fac",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_metrics/solar80_train_robust10.csv.gz",
+          "exists": true,
+          "expected_sha256": "cec72652ffa8752666bfee140989bbdce232cd28702749c7e4bedef3e11e8388",
+          "actual_sha256": "cec72652ffa8752666bfee140989bbdce232cd28702749c7e4bedef3e11e8388",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/scenario_top10_stability.csv",
+          "exists": true,
+          "expected_sha256": "b3f58fbd9b497ff5d715d97d3cfd41b4cf44106862e42c49d8296d0bed7e5ed4",
+          "actual_sha256": "b3f58fbd9b497ff5d715d97d3cfd41b4cf44106862e42c49d8296d0bed7e5ed4",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/selection_stability.csv",
+          "exists": true,
+          "expected_sha256": "044d741b29f81b00da118dd8693cb9bdfd9d372175c5de9b6fc353bc9a522715",
+          "actual_sha256": "044d741b29f81b00da118dd8693cb9bdfd9d372175c5de9b6fc353bc9a522715",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/selection_trace.csv",
+          "exists": true,
+          "expected_sha256": "4d1d48d7de624619e9e9db5db337e819ce231f91983c8d22c21d73681103b175",
+          "actual_sha256": "4d1d48d7de624619e9e9db5db337e819ce231f91983c8d22c21d73681103b175",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/shortlist_evaluation.csv",
+          "exists": true,
+          "expected_sha256": "0f53230ccb6527222725dafdce252606a64c0b90358edd29643cf1f1192bcd71",
+          "actual_sha256": "0f53230ccb6527222725dafdce252606a64c0b90358edd29643cf1f1192bcd71",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/shortlists_evidence.csv",
+          "exists": true,
+          "expected_sha256": "9ce889208d30388b198e9a313674a54aeea6dd2496e110abdef22b04173c2eec",
+          "actual_sha256": "9ce889208d30388b198e9a313674a54aeea6dd2496e110abdef22b04173c2eec",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/threshold_counts.csv",
+          "exists": true,
+          "expected_sha256": "e4418d7d851fa528ca45f8b3af79fd1e3ddd5a6c152eff9057ee968ada18fbda",
+          "actual_sha256": "e4418d7d851fa528ca45f8b3af79fd1e3ddd5a6c152eff9057ee968ada18fbda",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/tie_diagnostics.csv",
+          "exists": true,
+          "expected_sha256": "0efbb72d373adde5ba1baac851a85830549a34f72d6265c7cd1654bad6178895",
+          "actual_sha256": "0efbb72d373adde5ba1baac851a85830549a34f72d6265c7cd1654bad6178895",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/weights/ordered_replication.npz",
+          "exists": true,
+          "expected_sha256": "7516bf11a89ef10c8e393fff1209a5cea302179d4029d8d832eb7358fbfb1f16",
+          "actual_sha256": "7516bf11a89ef10c8e393fff1209a5cea302179d4029d8d832eb7358fbfb1f16",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/weights/ordered_test.npz",
+          "exists": true,
+          "expected_sha256": "b3144726166f7191a43a47148f0a61f94c072121f2cbc420c4de08068dcb1317",
+          "actual_sha256": "b3144726166f7191a43a47148f0a61f94c072121f2cbc420c4de08068dcb1317",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/weights/ordered_train.npz",
+          "exists": true,
+          "expected_sha256": "709883d04cff97c11dd13d9f49afadc0a5011e18f3a5a047a4dcbf62c1a96f90",
+          "actual_sha256": "709883d04cff97c11dd13d9f49afadc0a5011e18f3a5a047a4dcbf62c1a96f90",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/weights/solar70_replication.npz",
+          "exists": true,
+          "expected_sha256": "eede436a05f80a772d9b7664136d90813710ed6592e89a81e8506ae0e4fc3d86",
+          "actual_sha256": "eede436a05f80a772d9b7664136d90813710ed6592e89a81e8506ae0e4fc3d86",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/weights/solar70_test.npz",
+          "exists": true,
+          "expected_sha256": "6d8a3283aafafb19bd30477d1a4cda973825903f275e4c50d9b45e52bb7b38a6",
+          "actual_sha256": "6d8a3283aafafb19bd30477d1a4cda973825903f275e4c50d9b45e52bb7b38a6",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/weights/solar70_train.npz",
+          "exists": true,
+          "expected_sha256": "ffdc6bb7e1d45b1fbd214e990b7df0040a108516d195ab4862a62ec61110cc9c",
+          "actual_sha256": "ffdc6bb7e1d45b1fbd214e990b7df0040a108516d195ab4862a62ec61110cc9c",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/weights/solar80_replication.npz",
+          "exists": true,
+          "expected_sha256": "a93daabc627989b4d0c93026b89b96e818a898fd6ee6f141567d4aa865d54088",
+          "actual_sha256": "a93daabc627989b4d0c93026b89b96e818a898fd6ee6f141567d4aa865d54088",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/weights/solar80_test.npz",
+          "exists": true,
+          "expected_sha256": "9820dd0f66564c7d0de7a63b88a4fe77c442050d0337ec3bc7777b6e182fd54a",
+          "actual_sha256": "9820dd0f66564c7d0de7a63b88a4fe77c442050d0337ec3bc7777b6e182fd54a",
+          "sha256_matches": true,
+          "size_matches": true
+        },
+        {
+          "path": "results/weights/solar80_train.npz",
+          "exists": true,
+          "expected_sha256": "fc924313e9b480cd6ed5880b9c85431db17097efb61b63a70acf40d09a168690",
+          "actual_sha256": "fc924313e9b480cd6ed5880b9c85431db17097efb61b63a70acf40d09a168690",
+          "sha256_matches": true,
+          "size_matches": true
+        }
+      ]
+    }
+  },
+  "script_sha256": {
+    "path": "analysis/run_analysis.py",
+    "matches": true,
+    "actual": "30865b77cbac781e179ff4e7035c4a6ce3a93bbaa62ffcdf3f282e285e0668dd",
+    "expected": "30865b77cbac781e179ff4e7035c4a6ce3a93bbaa62ffcdf3f282e285e0668dd"
+  },
+  "protocol_sha256": {
+    "path": "protocol/preregistered_protocol.json",
+    "matches": true,
+    "actual": "f3b0c3657c9f39d2fc819994f5d8245fc0521c4c0544ccea57f07b4136679f29",
+    "expected": "f3b0c3657c9f39d2fc819994f5d8245fc0521c4c0544ccea57f07b4136679f29"
+  },
+  "prior_recovery_provenance": {
+    "recovered_utc": "2026-10-19T04:01:04.407420+00:00",
+    "method": "Re-executed byte-identical frozen script on all eight hash-verified original inputs, same package versions and seeds. For gzip files only, restored original header mtime by matching the pre-existing original SHA256. No scientific values, thresholds or selections modified. Separate reproduction runtime and log retained.",
+    "count": 159,
+    "matched": 159
+  },
+  "archive_members": 215,
+  "output_counts": {
+    "root_result_files": 18,
+    "rank_memberships": 24,
+    "scenario_metrics": 108,
+    "weights": 9
+  },
+  "archive_branch": "icores-2027-final-submission-review",
+  "base_commit": "8ffb85e56ef5810fd9f9599646e80edacc52407b",
+  "provenance_note": "This final-review task only downloaded existing Library ZIP backups, extracted them, and verified SHA256 and sizes. No experiments, analysis reruns, reweighting, threshold changes, or output regeneration occurred. Existing RECOVERY_REPRODUCTION.json records that an earlier recovery at 2026-10-19T04:01:04Z reproduced the byte-identical frozen script and restored gzip header mtimes to match original hashes; that prior provenance is retained rather than represented as newly executed work."
+}

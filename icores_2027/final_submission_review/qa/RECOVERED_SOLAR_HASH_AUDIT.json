@@ -1,0 +1,962 @@
+{
+  "total_manifest_outputs": 159,
+  "verified": 159,
+  "missing": [],
+  "mismatches": [],
+  "checks": [
+    {
+      "path": "results/CONCLUSIONS.json",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/acceptability_replication_differences.csv",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/all630_archived_metrics.csv",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/block_membership_frequency.csv",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/candidate_acceptability.csv",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/continuous_lp_candidates.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/continuous_worst_regret.csv",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/grid_evaluation.csv",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/original_list_threshold_violations.csv",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/paired_differences.csv",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/rank_memberships/A180_solar70_grid.npz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/rank_memberships/A180_solar70_replication.npz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/rank_memberships/A180_solar70_test.npz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/rank_memberships/A180_solar70_train.npz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/rank_memberships/A270_solar70_grid.npz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/rank_memberships/A270_solar70_replication.npz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/rank_memberships/A270_solar70_test.npz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/rank_memberships/A270_solar70_train.npz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/rank_memberships/A90_solar70_grid.npz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/rank_memberships/A90_solar70_replication.npz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/rank_memberships/A90_solar70_test.npz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/rank_memberships/A90_solar70_train.npz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/rank_memberships/ordered_grid.npz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/rank_memberships/ordered_replication.npz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/rank_memberships/ordered_test.npz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/rank_memberships/ordered_train.npz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/rank_memberships/solar70_grid.npz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/rank_memberships/solar70_replication.npz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/rank_memberships/solar70_test.npz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/rank_memberships/solar70_train.npz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/rank_memberships/solar80_grid.npz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/rank_memberships/solar80_replication.npz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/rank_memberships/solar80_test.npz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/rank_memberships/solar80_train.npz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/sampling_diagnostics.csv",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A180_solar70_replication_AHV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A180_solar70_replication_AV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A180_solar70_replication_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A180_solar70_replication_historical10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A180_solar70_replication_protected_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A180_solar70_replication_robust10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A180_solar70_test_AHV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A180_solar70_test_AV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A180_solar70_test_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A180_solar70_test_historical10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A180_solar70_test_protected_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A180_solar70_test_robust10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A180_solar70_train_AHV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A180_solar70_train_AV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A180_solar70_train_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A180_solar70_train_historical10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A180_solar70_train_protected_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A180_solar70_train_robust10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A270_solar70_replication_AHV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A270_solar70_replication_AV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A270_solar70_replication_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A270_solar70_replication_historical10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A270_solar70_replication_protected_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A270_solar70_replication_robust10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A270_solar70_test_AHV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A270_solar70_test_AV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A270_solar70_test_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A270_solar70_test_historical10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A270_solar70_test_protected_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A270_solar70_test_robust10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A270_solar70_train_AHV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A270_solar70_train_AV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A270_solar70_train_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A270_solar70_train_historical10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A270_solar70_train_protected_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A270_solar70_train_robust10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A90_solar70_replication_AHV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A90_solar70_replication_AV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A90_solar70_replication_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A90_solar70_replication_historical10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A90_solar70_replication_protected_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A90_solar70_replication_robust10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A90_solar70_test_AHV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A90_solar70_test_AV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A90_solar70_test_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A90_solar70_test_historical10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A90_solar70_test_protected_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A90_solar70_test_robust10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A90_solar70_train_AHV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A90_solar70_train_AV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A90_solar70_train_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A90_solar70_train_historical10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A90_solar70_train_protected_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/A90_solar70_train_robust10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/ordered_replication_AHV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/ordered_replication_AV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/ordered_replication_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/ordered_replication_historical10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/ordered_replication_protected_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/ordered_replication_robust10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/ordered_test_AHV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/ordered_test_AV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/ordered_test_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/ordered_test_historical10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/ordered_test_protected_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/ordered_test_robust10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/ordered_train_AHV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/ordered_train_AV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/ordered_train_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/ordered_train_historical10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/ordered_train_protected_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/ordered_train_robust10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar70_replication_AHV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar70_replication_AV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar70_replication_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar70_replication_historical10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar70_replication_protected_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar70_replication_robust10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar70_test_AHV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar70_test_AV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar70_test_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar70_test_historical10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar70_test_protected_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar70_test_robust10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar70_train_AHV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar70_train_AV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar70_train_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar70_train_historical10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar70_train_protected_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar70_train_robust10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar80_replication_AHV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar80_replication_AV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar80_replication_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar80_replication_historical10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar80_replication_protected_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar80_replication_robust10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar80_test_AHV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar80_test_AV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar80_test_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar80_test_historical10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar80_test_protected_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar80_test_robust10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar80_train_AHV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar80_train_AV10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar80_train_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar80_train_historical10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar80_train_protected_coverage10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_metrics/solar80_train_robust10.csv.gz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/scenario_top10_stability.csv",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/selection_stability.csv",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/selection_trace.csv",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/shortlist_evaluation.csv",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/shortlists_evidence.csv",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/threshold_counts.csv",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/tie_diagnostics.csv",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/weights/ordered_replication.npz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/weights/ordered_test.npz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/weights/ordered_train.npz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/weights/solar70_replication.npz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/weights/solar70_test.npz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/weights/solar70_train.npz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/weights/solar80_replication.npz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/weights/solar80_test.npz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    },
+    {
+      "path": "results/weights/solar80_train.npz",
+      "exists": true,
+      "hash_match": true,
+      "size_match": true
+    }
+  ]
+}

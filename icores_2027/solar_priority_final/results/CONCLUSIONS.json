@@ -1,0 +1,116 @@
+[
+  {
+    "context": "ordered",
+    "supported_replacement": false,
+    "checks": {
+      "test_recovery_gain_ge_002": false,
+      "test_recovery_MC_lower_positive": true,
+      "test_winner_no_loss": true,
+      "test_mean_regret_no_loss": true,
+      "test_mean_A_guard": true,
+      "test_mean_H_guard": false,
+      "replication_recovery_gain_ge_002": false,
+      "replication_recovery_MC_lower_positive": true,
+      "replication_winner_no_loss": true,
+      "replication_mean_regret_no_loss": true,
+      "replication_mean_A_guard": true,
+      "replication_mean_H_guard": false,
+      "continuous_regret_no_loss": true
+    }
+  },
+  {
+    "context": "solar70",
+    "supported_replacement": false,
+    "checks": {
+      "test_recovery_gain_ge_002": false,
+      "test_recovery_MC_lower_positive": true,
+      "test_winner_no_loss": true,
+      "test_mean_regret_no_loss": true,
+      "test_mean_A_guard": true,
+      "test_mean_H_guard": true,
+      "replication_recovery_gain_ge_002": false,
+      "replication_recovery_MC_lower_positive": true,
+      "replication_winner_no_loss": true,
+      "replication_mean_regret_no_loss": true,
+      "replication_mean_A_guard": true,
+      "replication_mean_H_guard": true,
+      "continuous_regret_no_loss": true
+    }
+  },
+  {
+    "context": "solar80",
+    "supported_replacement": false,
+    "checks": {
+      "test_recovery_gain_ge_002": false,
+      "test_recovery_MC_lower_positive": true,
+      "test_winner_no_loss": true,
+      "test_mean_regret_no_loss": true,
+      "test_mean_A_guard": false,
+      "test_mean_H_guard": true,
+      "replication_recovery_gain_ge_002": false,
+      "replication_recovery_MC_lower_positive": true,
+      "replication_winner_no_loss": true,
+      "replication_mean_regret_no_loss": true,
+      "replication_mean_A_guard": false,
+      "replication_mean_H_guard": true,
+      "continuous_regret_no_loss": true
+    }
+  },
+  {
+    "context": "A90_solar70",
+    "supported_replacement": false,
+    "checks": {
+      "test_recovery_gain_ge_002": false,
+      "test_recovery_MC_lower_positive": true,
+      "test_winner_no_loss": true,
+      "test_mean_regret_no_loss": true,
+      "test_mean_A_guard": true,
+      "test_mean_H_guard": true,
+      "replication_recovery_gain_ge_002": false,
+      "replication_recovery_MC_lower_positive": true,
+      "replication_winner_no_loss": true,
+      "replication_mean_regret_no_loss": true,
+      "replication_mean_A_guard": true,
+      "replication_mean_H_guard": true,
+      "continuous_regret_no_loss": true
+    }
+  },
+  {
+    "context": "A180_solar70",
+    "supported_replacement": false,
+    "checks": {
+      "test_recovery_gain_ge_002": false,
+      "test_recovery_MC_lower_positive": true,
+      "test_winner_no_loss": true,
+      "test_mean_regret_no_loss": true,
+      "test_mean_A_guard": false,
+      "test_mean_H_guard": true,
+      "replication_recovery_gain_ge_002": false,
+      "replication_recovery_MC_lower_positive": true,
+      "replication_winner_no_loss": true,
+      "replication_mean_regret_no_loss": true,
+      "replication_mean_A_guard": false,
+      "replication_mean_H_guard": true,
+      "continuous_regret_no_loss": true
+    }
+  },
+  {
+    "context": "A270_solar70",
+    "supported_replacement": false,
+    "checks": {
+      "test_recovery_gain_ge_002": false,
+      "test_recovery_MC_lower_positive": false,
+      "test_winner_no_loss": true,
+      "test_mean_regret_no_loss": true,
+      "test_mean_A_guard": true,
+      "test_mean_H_guard": true,
+      "replication_recovery_gain_ge_002": false,
+      "replication_recovery_MC_lower_positive": false,
+      "replication_winner_no_loss": true,
+      "replication_mean_regret_no_loss": true,
+      "replication_mean_A_guard": true,
+      "replication_mean_H_guard": true,
+      "continuous_regret_no_loss": true
+    }
+  }
+]
