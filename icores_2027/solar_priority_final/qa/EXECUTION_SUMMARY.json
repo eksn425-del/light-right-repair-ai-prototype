@@ -1,0 +1,18 @@
+{
+  "freeze_commit": "94ba70a567030b9736140b3c7ac69c6160e44d49",
+  "execution_started_utc": "2026-10-18T17:15:07Z",
+  "actual_numerical_runtime_seconds": 52.01311635971069,
+  "unique_LP_set_space_universe_groups": 26,
+  "actual_LPs_solved_after_dedup": 10504,
+  "labeled_LP_rows": 12708,
+  "all_labeled_LPs_success": true,
+  "max_feasibility_residual": 2.220446049250313e-16,
+  "max_objective_residual": 2.220446049250313e-16,
+  "new_method_identical_membership_all_contexts": true,
+  "replacement_passed_contexts": 0,
+  "reporting_events": [
+    "Initial report generation hit missing optional tabulate; replaced with dependency-free Markdown renderer; numerical results unchanged.",
+    "Initial plotting cache was read-only; redirected to /tmp; final charts generated.",
+    "One tool process launch transport error retried; no outcome calculation interrupted."
+  ]
+}

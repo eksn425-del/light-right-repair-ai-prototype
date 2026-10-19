@@ -1,0 +1,23 @@
+{
+  "source_script": "generate_tables_figures.py",
+  "input_sha256": {
+    "shortlist_evaluation.csv": "0f53230ccb6527222725dafdce252606a64c0b90358edd29643cf1f1192bcd71",
+    "continuous_worst_regret.csv": "9a0e4159e14dcf7abef55faca302fe46181fb82fd22471f6d51c386e13fdbb94",
+    "shortlists_evidence.csv": "9ce889208d30388b198e9a313674a54aeea6dd2496e110abdef22b04173c2eec",
+    "paired_differences.csv": "ea14ace5eef51162069f2f26f708c9cb932e8aa3664626a5e5d1068d5801fb73",
+    "selection_stability.csv": "044d741b29f81b00da118dd8693cb9bdfd9d372175c5de9b6fc353bc9a522715"
+  },
+  "tables": {
+    "comparison1.tex": "All630context test recovery/winner/meanregret plus continuous worst LP audit;18rows",
+    "comparison2.tex": "Filteredcontext samek adaptedbaselines;18rows;conditionalregret",
+    "gate_table.tex": "Pairedtest/repeat recovery, testMCintervals,listmeanA/Hchanges",
+    "evidence_table.tex": "ListmeansA/H/V,HB/translationcoverage,blockstability",
+    "shortlist_table.tex": "Solar70protectedall10rawmetrics/evidencestates"
+  },
+  "figures": {
+    "figures/recovery_and_winners.pdf": "Actualtest/repeat recoverygains andtestwinnercoverage acrossall6contexts",
+    "figures/solar_benefit.pdf": "ActualrawmeanAthreecomparedlistsall6contexts"
+  },
+  "all_charts_generated_from_saved_results": true,
+  "synthetic_observations_used": false
+}

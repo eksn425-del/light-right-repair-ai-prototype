@@ -1,0 +1,27 @@
+{
+  "document_type": "Supplementary experiment report and revision options; NOT replacement submission manuscript",
+  "pages": 15,
+  "nonwhite_characters_pypdf": 32407,
+  "nonwhite_characters_poppler": 32406,
+  "font_count": 19,
+  "all_fonts_embedded": true,
+  "overfull_boxes": 0,
+  "undefined_refs": 0,
+  "missing_glyphs": 0,
+  "author_metadata": "empty",
+  "anonymous_content_scan_pass": true,
+  "clean_build_byte_identical": true,
+  "unchanged_official_class_style": true,
+  "equations": 15,
+  "tables": 5,
+  "figures": 2,
+  "references": 15,
+  "visual_review": "All15pages reviewed in3 labeled montages; finalupdatedpage3 reviewedseparately. No clipping, overlaps, missingglyphs or tableoverflow. Actual vectorcharts inspected.",
+  "scientific_qa": "../qa/INDEPENDENT_ANALYSIS_REVIEW.md passed independently; all6predeclaredreplacementconditionsfailed, no methodclaimeduniversallysuperior",
+  "sha256": {
+    "manuscript.tex": "42c45b01a2f0c426be3d22baa7b60a52473c267f839a7e23624ab2fa17143f58",
+    "manuscript_expanded_for_translation.tex": "c3b1a056d21e531ac0173208380335d6904dd77ac831303bef684159c1766c02",
+    "solar_priority_experiment_report.pdf": "1a69bfefa004a5324b44c9efa66b4fe617173ad3b37d875a74839fb7cc01a7df",
+    "references.bib": "3ebc0daba35b9016e0fd2abd448ceba6fde1ba4b19b13d83832cb9294f7f2f2b"
+  }
+}

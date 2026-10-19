@@ -1,0 +1,43 @@
+{
+  "context": "solar70",
+  "overlap": 9,
+  "removed": [
+    {
+      "context": "solar70",
+      "set": "historical10",
+      "adapted_baseline": false,
+      "position": 10,
+      "pair": "C9,C27",
+      "historical_rank": 10,
+      "A": 324.0,
+      "H": 0.0388970950270802,
+      "V": 7340.881193203204,
+      "N": 0.0,
+      "HB_cohort": "curated23",
+      "hb_A": 333.0,
+      "hb_H": 0.0408665681930083,
+      "HB_review_status": "ARCHIVED_RULE_HB_REVIEWED",
+      "translation_status": "NO_ARCHIVED_TRANSLATED_DESIGN_VERIFICATION"
+    }
+  ],
+  "added": [
+    {
+      "context": "solar70",
+      "set": "protected_coverage10",
+      "adapted_baseline": false,
+      "position": 3,
+      "pair": "C24,C35",
+      "historical_rank": 11,
+      "A": 189.0,
+      "H": 0.0635155096011816,
+      "V": 6192.044543123779,
+      "N": 0.0,
+      "HB_cohort": "MISSING",
+      "hb_A": null,
+      "hb_H": null,
+      "HB_review_status": "2P5D_ONLY",
+      "translation_status": "NO_ARCHIVED_TRANSLATED_DESIGN_VERIFICATION"
+    }
+  ],
+  "interpretation": "Descriptive set difference of already frozen selected results, not a new tuned algorithm. C24,C35 supplies H-oriented winner opportunity; archived rule-level HB is missing. No new physical simulation."
+}

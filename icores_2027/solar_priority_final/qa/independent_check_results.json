@@ -1,0 +1,17 @@
+{
+  "input_hashes": 8,
+  "output_hashes": 159,
+  "weights_recreated": 180000,
+  "all_scenario_set_rows": 2160000,
+  "all_main_selections": 12,
+  "all_training_block_selections": 120,
+  "lp_witness_rows": 12708,
+  "max_lp_objective_error": 2.220446049250313e-16,
+  "paired_rows_verified": 108,
+  "adoption_decisions_verified": 6,
+  "evidence_rows_verified": 360,
+  "status": "PASS",
+  "manifest_sha256": "dd8220699136078ec99bb2ac3432ca43ba24dc792ae46c5568a8678968fcb36e",
+  "protocol_sha256": "f3b0c3657c9f39d2fc819994f5d8245fc0521c4c0544ccea57f07b4136679f29",
+  "script_sha256": "30865b77cbac781e179ff4e7035c4a6ce3a93bbaa62ffcdf3f282e285e0668dd"
+}

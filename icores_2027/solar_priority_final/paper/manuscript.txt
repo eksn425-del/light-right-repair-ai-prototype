@@ -1,0 +1,731 @@
+            Solar-Access-Priority Screening:
+        Supplementary Decision Experiment and
+                   Revision Options
+
+
+
+        Abstract. Solar-access repair should prioritize sunlight improvement
+        before minimizing nominal building intervention. We test whether a ten-
+        candidate shortlist can retain more high-ranked alternatives under that
+        objective than a historical fixed-weight list. A prospectively frozen exper-
+        iment uses 630 archived two-building height-reduction candidates, three
+        constrained weight spaces, three minimum-area-benefit filters, and inde-
+        pendent training, test and replication weights. Two acceptability-based
+        selectors maximize empirical top-ten recovery, with or without protec-
+        tion of observed training winners. None of six contexts satisfies the pre-
+        declared conditions for replacing the historical method: recovery gains
+        remain below 0.02, and some lists reduce mean area or duration benefits
+        beyond the declared guard. Nevertheless, useful conditional effects occur.
+        Under a 70% total sunlight-weight constraint, winner coverage increas-
+        es from 89.08% to 100%, and continuous worst-case normalized regret
+        decreases from 0.019380 to zero. Under ordered weights, the historical
+        list already has zero regret. A stringent area filter leaves only twelve
+        candidates and conceals opportunity loss if evaluated only within that
+        subset. These are new decision analyses of archived performances, not
+        new physical simulations. This supplementary report preserves the prior
+        manuscript and provides evidence-based revision choices; it is not a re-
+        placement submission manuscript or a claim of a new general algorithm.
+        AI assistance is disclosed [11].
+
+        Keywords: Solar access · Decision support · Preference sensitivity ·
+        Candidate screening · Negative results
+
+
+1     Research Decision and Scope
+
+The author has clarified the project objective: improve insufficient sunlight in a
+dense existing urban block first, prefer smaller interventions second, and leave
+final design selection to architects.1 This is a different decision contract from
+unrestricted uncertainty over all benefit–cost weights. A method that protects a
+very low-volume alternative with almost no sunlight benefit can be useful under
+an open preference model while being poorly aligned with solar-access repair.
+    The previous experiment used the same 630 archived candidates and found
+that a greedy regret-oriented Robust10 improved opportunity preservation over
+the full weight simplex. It also found that the historical top ten already had
+1
+    AI-assisted preparation [11]; scope is stated in the AI Use Disclosure.
+zero regret over ordered sunlight-priority and local historical spaces, while Ro-
+bust10 recovered fewer members of preference-specific top tens. Those findings
+are retained, not reinterpreted as proof of superiority under the author’s new
+priority.
+    The present question is narrower: can ten review slots preserve more highly
+ranked sunlight-priority alternatives without losing a best option or sacrificing
+too much sunlight benefit? The answer must be determined by independent
+evaluation. The prospective replacement criteria failed in every tested context.
+Therefore this report documents the new experiment and revision options while
+preserving the prior formal manuscript. Retention is an archival decision, not an
+endorsement of submitting that manuscript unchanged under the newly clarified
+framing.
+    The outcome is not “nothing improved.” Several selectors improve winner
+coverage in duration-dominant sunlight scenarios, and all new lists improve or
+match empirical recovery. The important distinction is between a measurable
+conditional benefit and the stronger, predeclared claim that a new method merits
+replacing the historical shortlist. Changing the success threshold after seeing
+those small gains would erase that distinction.
+
+
+
+2     Evidence, Metrics and Established Foundations
+
+
+2.1     Frozen Physical Evidence
+
+
+The canonical model contains 45 building groups, of which 36 satisfy the archived
+research eligibility flags and height condition.2 Every unordered   pair receives
+the same fixed-footprint height-reduction rule, giving 36
+                                                           
+                                                         2   =   630  candidates.
+Selected heights are
+
+                          hri = max{3, hi − min(3, 0.25hi )}.                 (1)
+
+Unselected heights and all footprints remain fixed. Eligibility is not permis-
+sion to demolish, an assessment of ownership or a structural feasibility decision.
+Footprints are unions of component bounding boxes with known overlap and
+representation limitations; they are not verified as-built boundaries.
+    Archived direct-sun duration uses 2,031 receivers on a 3 m grid at 0.1 m
+height, a near-solstice 21 December 2026 design-day scenario, and sixteen half-
+hour sample centres between 08:15 and 15:45. Let Dj0 and Dj (i) be baseline and
+candidate durations. With cell area a = 9 m2 , P = 2031 and research threshold
+
+2
+    AI-assisted preparation [11]; scope is stated in the AI Use Disclosure.
+τ = 3 h,
+                               X
+                      Ai = a            [1{Dj0 < τ } − 1{Dj (i) < τ }],            (2)
+                                   j
+                                        X
+                     Hi = P −1               [Dj (i) − Dj0 ],                      (3)
+                                         j
+                             X
+                      Vi =             |Fb |[hb − hb (i)],                         (4)
+                               b
+                               X
+                     Ni = a             1{Dj0 ≥ τ, Dj (i) < τ }.                   (5)
+                                   j
+
+
+Thus A is net low-sun-area reduction, H mean exposure gain, V nominal additive
+removal volume, and N newly low-sun area. V is neither a verified whole-scene
+union-volume change nor a measured construction cost. The exposure threshold
+is not claimed as a legal compliance test.
+    The new run verifies exactly N = 0 for all 630 archived rows. It is omitted
+from active ranking discrimination but retained as a translation-validity signal.
+Global normalization bounds remain A ∈ [0, 396] m2 , H ∈ [0, 0.06351551] h
+and V ∈ [387.382435, 10891.474418] m3 (printed rounding; calculations retain
+the complete archived precision). No bound is refitted after filtering. Define
+normalized benefits
+
+                  xi = (nA,i , nH,i , 1 − nV,i ),               ui (w) = w⊤ xi .   (6)
+
+The unchanged historical score is
+
+              Si = .45nA,i + .35nH,i + .15(1 − nV,i ) + .05(1 − nN,i ).            (7)
+
+Its effective three-criterion centre is (9/19, 7/19, 3/19), since Si = .95ui (w0 )+.05.
+This algebra preserves ordering; it does not validate the weights as architect pref-
+erences. A and H are related but distinct: their archived Pearson correlation is
+0.640978 and Spearman correlation is 0.768360. One measures threshold cross-
+ings, the other duration changes across all receivers.
+
+
+2.2   What Is Established Mathematics?
+
+MCDA provides a mature framework for multiple criteria and incomplete prefer-
+ences [4]. SMAA-2 examines rank acceptability across preference conditions [6],
+with established Monte Carlo implementations [13]. We use a restricted fixed-
+performance version: sampled weight frequencies are properties of a declared
+integration measure, not probabilities that real architects prefer an option.
+    Robust ordinal regression uses preference information to restrict compatible
+additive value functions [5]. No elicited pairwise architect comparisons are avail-
+able here, so imposing weight inequalities is not fitting an ordinal-regression
+model. Minimax regret and representative subsets are also established [1,9].
+Their theoretical guarantees cannot be transferred automatically to this finite,
+normalized absolute-regret implementation.
+    Building-performance optimization, designer-led massing exploration and ur-
+ban solar optimization all have substantial precedents [10,14,7,8]. The solar met-
+rics literature distinguishes exposure, irradiation, daylight and their normaliza-
+tion [3,2]. The possible contribution here is the explicit solar-priority decision
+formulation, controlled comparison and connection to evidence states in one con-
+strained intervention case. It is not the invention of SMAA, Pareto screening,
+regret minimization, or architect-in-the-loop design.
+
+
+3     Prospectively Frozen Experiment
+3.1     Three Meanings of Sunlight Priority
+The protocol was committed before any new threshold count, weight draw, rank-
+ing or shortlist outcome.3 Let W = {w ≥ 0 : j wj = 1}. Three primary spaces
+                                           P
+are
+
+                          WO = {w ∈ W : wA ≥ wH ≥ wV },                        (8)
+                          W70 = {w ∈ W : wA + wH ≥ .70},                       (9)
+                          W80 = {w ∈ W : wA + wH ≥ .80}.                      (10)
+
+Ordered weights prioritize the normalized area coefficient over duration and vol-
+ume. Total-sunlight constraints instead cap the volume coefficient while allowing
+duration to dominate area. Neither formulation is strict lexicographic optimiza-
+tion of sunlight, and neither guarantees a minimum physical area benefit. The
+70% and 80% bounds are research scenarios, not industry standards.
+    Three layered contexts use W70 after requiring A ≥ 90, 180 or 270 m2 . These
+round multiples of the 9 m2 cell were frozen prospectively. They are minimum-
+benefit scenarios, not regulations or surveyed expert thresholds. The surviving
+universes contain 166, 50 and 12 candidates respectively, compared with 630 in
+each unfiltered context. Raising a floor can remove an otherwise useful duration-
+beneficial candidate; success within the smaller universe must not conceal that
+loss.
+
+3.2     Independent Samples and Equal Budgets
+Each primary space has 20,000 training, 20,000 test and 20,000 replication
+weights. NumPy PCG64 generates float64 IID Dirichlet(1, 1, 1) draws. Sorting
+exchangeable coordinates gives uniform area in the ordered sector. Rejection
+with wV ≤ .30 or .20, using batches of 100,000 and retaining accepted draws in
+order, gives uniform area in each truncated simplex. Seeds are 2026101901–03
+for training, 2026101911–13 for test, and 2026101921–23 for replication, in or-
+dered, Solar70, Solar80 order. Layered contexts reuse the exact Solar70 arrays,
+3
+    AI-assisted preparation [11]; scope is stated in the AI Use Disclosure.
+enabling paired comparisons without pretending they are additional independent
+preference samples. There are 180,000 unique retained weights.
+    Every utility ranking uses unrounded values and ascending natural pair iden-
+tity for exact ties. All six comparators receive ten slots. In the three primary con-
+texts, Historical10, prior Robust10, AV10 and AHV10 are unchanged archived
+lists. AV10 and AHV10 are historically ranked truncations of their respective
+Pareto fronts, not optimized ten-member Pareto representatives.
+    Filtered comparisons explicitly adapt those baselines. Historical10 takes the
+highest historical-ranked eligible ten. Robust10 retains eligible prior members in
+insertion order and fills remaining slots by historical rank. AV10 and AHV10 re-
+compute fronts inside the eligible universe, truncate by historical rank, and pad
+by historical-ranked nonfront members if needed. Original-list threshold viola-
+tions are separately retained. These are labeled adaptations, not the original lists
+silently relabeled as feasible. Every filtered universe has at least ten candidates.
+
+
+3.3   Two Selection Objectives
+
+Let T10 (w) be the deterministic preference-specific top ten. For a ten-member
+set S, expected recovery is
+                                       
+                          |S ∩ T10 (w)|     1 X
+              Q(S) = E                    =       Pr{i ∈ T10 (w)}.         (11)
+                               10           10
+                                                 i∈S
+
+Linearity of expectation makes this objective modular. Coverage10 therefore
+takes the ten largest training top-ten counts. Ties use training winner count, then
+smaller training mean rank, then natural pair identity. This is exact empirical
+optimization of the stated objective, not a new general algorithm or proof of
+optimal population recovery.
+    ProtectedCoverage10 additionally requires every distinct deterministic train-
+ing winner to be included. It fills the remaining slots in the same acceptability
+order. When the required set has at most ten elements this exactly solves the
+constrained empirical modular problem. If it had more than ten, the frozen rule
+would declare infeasibility rather than invent a fallback. No test, replication,
+grid or continuous-audit winner can change selection. In the actual run both
+methods produce identical memberships in every context: the recovery-optimal
+lists already contain the observed training winners. Thus there is no observed
+incremental benefit to the protection constraint here.
+    Recovery is different from any-top-ten coverage, winner coverage, architec-
+tural diversity, or regret. For the eligible universe Dc ,
+
+                       Rc (S, w) = max ui (w) − max us (w).                     (12)
+                                   i∈Dc           s∈S
+
+A list can have zero regret while recovering few other top-ranked candidates.
+Conversely, maximizing recovery alone does not generally guarantee preservation
+of every possible winner.
+3.4   Evaluation, Stability and Claim Gates
+Held-out comparisons report deterministic and utility-based winner coverage,
+mean and worst observed regret, recovery, any-top-ten coverage, raw list and
+scenario-chosen A/H/V distributions, and archived review coverage. Paired
+scenario-level differences use sample standard errors and normal 95% Monte
+Carlo intervals. These intervals characterize integration precision conditional on
+fixed inputs and distributions, not cross-site or human-preference uncertainty.
+     For each selector, ten disjoint 2,000-weight training blocks independently
+reselect a list. Block-to-full and pairwise Jaccard overlaps describe sensitivity of
+membership to training samples. This diagnostic never alters the full-training
+list. A 5,151-point simplex grid, restricted to each space, probes boundaries
+independently of selection.
+     A fixed-set continuous audit maximizes, for every eligible candidate i,
+
+          max t    subject to w ∈ Wc ,     t ≤ w⊤ (xi − xs ) for all s ∈ S.    (13)
+           w,t
+
+Taking the maximum over i gives continuous worst-case regret for that fixed list
+and universe. HiGHS uses primal and dual tolerances 10−9 ; witnesses and direct
+regret are checked within 10−8 . There are 10,504 actually executed candidate LPs
+after deduplicating identical set/space/universe combinations, corresponding to
+12,708 labeled witness rows. All solve successfully. This is a fixed-set audit, not
+a proof of globally optimal shortlist construction.
+    For layered contexts, the full-universe loss is decomposed rather than hidden:
+
+                           Fc (w) = max ui (w) − max ui (w),                   (14)
+                                     i∈D           i∈Dc
+
+                     Rtotal (S, w) = Fc (w) + Rc (S, w).                       (15)
+
+A zero conditional regret does not imply a zero loss relative to all 630 alterna-
+tives.
+    The protocol permits a supported replacement claim only if ProtectedCov-
+erage10 gains at least 0.02 absolute recovery in both test and replication, with
+positive paired interval lower bounds; loses no utility winner coverage beyond
+10−4 ; increases neither mean nor continuous worst regret beyond 10−8 ; and re-
+tains at least 95% of both historical-list mean A and mean H. The 0.02 and 95%
+gates are declared analytical safeguards, not expert-validated standards. They
+were not relaxed after outcomes. A universal superiority claim would require all
+feasible contexts to pass.
+
+
+4     Results and Failure of the Replacement Hypothesis
+4.1   Same-Budget Comparisons
+Tables 1 and 2 retain all methods and contexts.4 Coverage and Protected have
+identical membership and results, so their duplicate rows document the lack of
+an incremental protection effect rather than two independent successes.
+Table 1. Independent test comparison on all 630 candidates. All lists contain exactly
+ten candidates. The final column is the continuous fixed-set maximum, not the largest
+sampled test loss.
+
+            Context List            Recovery Winner Mean R Cont. max R
+            Ordered Historical       0.89495   1.0000 0.000000    0.000000
+            Ordered Prior robust     0.44436   1.0000 0.000000    0.000000
+            Ordered AV               0.29081   1.0000 0.000000    0.000000
+            Ordered AHV              0.74141   1.0000 0.000000    0.000000
+            Ordered Coverage         0.89938   1.0000 0.000000    0.000000
+            Ordered Protected        0.89938   1.0000 0.000000    0.000000
+            Solar70 Historical       0.64965   0.8908 0.000750    0.019380
+            Solar70 Prior robust     0.45638   1.0000 0.000000    0.000000
+            Solar70 AV               0.21158   0.6851 0.030440    0.232558
+            Solar70 AHV              0.65683   1.0000 0.000000    0.000000
+            Solar70 Coverage         0.66094   1.0000 0.000000    0.000000
+            Solar70 Protected        0.66094   1.0000 0.000000    0.000000
+            Solar80 Historical       0.65573   0.8444 0.001073    0.019380
+            Solar80 Prior robust     0.45071   1.0000 0.000000    0.000000
+            Solar80 AV               0.20581   0.6897 0.031419    0.232558
+            Solar80 AHV              0.64956   1.0000 0.000000    0.000000
+            Solar80 Coverage         0.66946   1.0000 0.000000    0.000000
+            Solar80 Protected        0.66946   1.0000 0.000000    0.000000
+
+Table 2. Layered comparison within each filtered universe. Baselines are explicitly
+adapted; conditional regrets are not full-universe losses. All lists contain exactly ten
+candidates. The final column is the continuous fixed-set maximum, not the largest
+sampled test loss.
+
+            Context List            Recovery Winner Mean R Cont. max R
+            A90      Historical      0.64965   0.8908 0.000750    0.019380
+            A90      Prior robust    0.52989   1.0000 0.000000    0.000000
+            A90      AV              0.21158   0.6851 0.030440    0.232558
+            A90      AHV             0.65683   1.0000 0.000000    0.000000
+            A90      Coverage        0.66094   1.0000 0.000000    0.000000
+            A90      Protected       0.66094   1.0000 0.000000    0.000000
+            A180     Historical      0.69329   0.8908 0.000750    0.019380
+            A180     Prior robust    0.70456   1.0000 0.000000    0.000000
+            A180     AV              0.60172   0.8908 0.000750    0.019380
+            A180     AHV             0.70680   1.0000 0.000000    0.000000
+            A180     Coverage        0.70680   1.0000 0.000000    0.000000
+            A180     Protected       0.70680   1.0000 0.000000    0.000000
+            A270     Historical      0.99662   1.0000 0.000000    0.000000
+            A270     Prior robust    0.99662   1.0000 0.000000    0.000000
+            A270     AV              0.90000   1.0000 0.000000    0.000000
+            A270     AHV             0.90000   1.0000 0.000000    0.000000
+            A270     Coverage        0.99662   1.0000 0.000000    0.000000
+            A270     Protected       0.99662   1.0000 0.000000    0.000000
+                                    2.00                                                 Frozen threshold
+                                                                                         Test                                          100.0
+
+Recovery gain (percentage points)
+                                                                                         Replication
+                                    1.75
+                                                                                                                                        97.5
+
+
+
+
+                                                                                                            Test winner coverage (%)
+                                    1.50
+                                                                                                                                        95.0
+                                    1.25
+                                                                                                                                        92.5
+
+                                    1.00                                                                                                90.0
+
+                                    0.75                                                                                                87.5
+
+                                    0.50                                                                                                85.0
+
+                                    0.25                                                                                                82.5              Historical
+                                                                                                                                                          Protected
+                                    0.00                                                                                                80.0
+                                                   d           0           0        0     80        70                                                d               0           0     0     80     70
+                                                re          r7          r8     A9                                                                  re              r7          r8     A9
+                                              de        ol
+                                                           a
+                                                                    ol
+                                                                       a                A1       A2                                              de             la          la              A1     A2
+                                            Or         S           S                                                                           Or            So           So
+
+
+
+Fig. 1. New computed results from saved CSVs. Left: protected-list recovery gains
+remain below the frozen two-percentage-point threshold in both independent splits.
+Right: a real winner-coverage gain occurs in some contexts despite failure of the stronger
+replacement criterion.
+
+
+
+    Historical10 remains a strong ordered-priority baseline: test recovery is
+0.894950 and every preference retains a winner, with zero continuous regret.
+The new list raises recovery to 0.899380, only 0.004430 absolute. Prior Robust10
+retains the same winner but recovers only 0.444360 of the ordered top ten on
+average. This is the concrete distinction between preserving one opportunity
+and offering several high-ranked alternatives.
+    Under Solar70, Historical10 has test winner coverage 0.89080, mean regret
+0.000750 and continuous worst regret 0.019380. ProtectedCoverage10 achieves
+complete test winner coverage and zero continuous regret, while recovery rises
+from 0.649650 to 0.660935. Solar80 similarly raises winner coverage from 0.84435
+to one and recovery from 0.655725 to 0.669465. Higher total sunlight weight does
+not make the historical ranking uniformly adequate: Solar80 still permits nearly
+pure duration preferences. The previous ordered-space zero-regret finding cannot
+be transferred to this different support.
+    AHV10 also has zero regret in Solar70 and Solar80. Thus eliminating the
+historical list’s missing winner is not unique to the new selector. Its recovery
+results remain distinct: 0.656835 under Solar70 and 0.649560 under Solar80.
+AV10 performs poorly when duration is strongly valued, illustrating the cost of
+screening on area and volume while omitting the second sunlight measure.
+
+
+4.2                                        Small Gains, Replication and Solar Trade-offs
+
+No context passes the complete replacement rule. Table 3 shows that the positive
+recovery differences in five contexts are not large enough under the predeclared
+practical threshold, even when Monte Carlo intervals exclude zero. Statistical
+          4
+                                    AI-assisted preparation [11]; scope is stated in the AI Use Disclosure.
+Table 3. Protected minus historical recovery, with paired test Monte Carlo intervals,
+replication gains and raw list-mean sunlight changes. The frozen replacement threshold
+is a gain of at least 0.02 in both independent splits.
+
+                                      Context Test gain           Test 95% MC Repeat gain A change H change
+                                      Ordered      0.00443 [0.00307, 0.00579]                0.00381 +3.20%   -8.23%
+                                      Solar70      0.01128 [0.01001, 0.01256]                0.01038 -4.36% +5.79%
+                                      Solar80      0.01374 [0.00972, 0.01776]                0.01477 -11.92% +18.13%
+                                      A90          0.01128 [0.01001, 0.01256]                0.01038 -4.36% +5.79%
+                                      A180         0.01350 [0.01094, 0.01607]                0.01164 -7.85% +9.68%
+                                      A270         0.00000 [0.00000, 0.00000]                0.00000 +0.00% +0.00%
+
+
+                                                                  Historical         Prior robust    Protected
+                                300
+Mean shortlist A benefit (m²)
+
+
+
+
+                                250
+
+
+                                200
+
+
+                                150
+
+
+                                100
+
+
+                                 50
+
+
+                                  0
+                                         Ordered        Solar70            Solar80             A90        A180   A270
+
+
+Fig. 2. Mean raw area benefit of selected lists. Primary contexts use unchanged his-
+torical and prior-robust lists. Layered contexts use explicitly adapted versions. A high
+winner-coverage score does not imply that all ten alternatives have strong area benefits.
+
+
+
+integration precision is not practical importance. A270 has no difference at all
+between the historical and protected sets.
+    The ordered list replaces C12/C24 with C9/C28. Mean area benefit increas-
+es, but mean duration benefit decreases by about 8.2%, failing the 95% duration
+guard. Under Solar80, three substitutions increase duration benefit while reduc-
+ing mean area benefit by about 11.9% and increasing nominal mean volume. This
+is not evidence of improved sunlight repair on every measure, and it is not a cost-
+saving result. A180 also fails the area guard. Solar70 and A90 pass the raw-mean
+solar safeguards but remain below the recovery improvement threshold.
+    List-average performance is not the outcome of constructing ten interven-
+tions, since the architect would choose among alternatives. It is used here as a
+declared safeguard against offering a generally weak sunlight menu. Scenario-
+selected best-candidate distributions are also retained, and can differ from list
+averages. Neither summary replaces individual candidate review or demonstrates
+human decision quality.
+Table 4. Protected-list raw means, archived evidence coverage and training-block
+membership stability. HB denotes rule-level Honeybee review; translation is a sepa-
+rate geometry evidence stage.
+
+              Context     A      H      V   HB Trans. J mean J min
+              Ordered 319.5 0.03900 4378.8 9/10   3/10   1.000 1.000
+              Solar70 296.1 0.04495 4427.4 9/10   3/10   0.945 0.818
+              Solar80 272.7 0.05020 5350.6 7/10   2/10   0.894 0.667
+              A90     296.1 0.04495 4427.4 9/10   3/10   0.945 0.818
+              A180    285.3 0.04660 4388.6 9/10   4/10   0.891 0.818
+              A270    323.1 0.03609 4288.0 8/10   3/10   1.000 1.000
+
+
+
+4.3   The Effect of Hard Minimum Benefits
+
+A90 removes 464 candidates but leaves the historical and new Solar70 member-
+ships unchanged. Its conditional comparison therefore matches Solar70. A180
+leaves fifty candidates and changes several adapted baselines; ProtectedCover-
+age10 matches AHV10 in this context. These are separate, explicitly filtered
+decision universes.
+     A270 leaves only twelve candidates. Historical, prior-robust, Coverage and
+Protected adaptations become the same ten-member set, with test recovery
+0.996625 and zero conditional regret. AV10 and AHV10 remain different and
+have recovery 0.900000; they must not be described as identical to those four
+lists. More importantly, the A270 filter itself has mean full-universe opportunity
+loss about 0.030440 and maximum observed loss about 0.228607 on the Solar70
+test weights. A duration-focused preference can lose a valuable candidate before
+list selection begins. The near-perfect conditional recovery partly reflects a much
+smaller choice universe, not a universally superior decision method.
+     No threshold is selected as the “best” after seeing these outcomes. An archi-
+tect might rationally impose a minimum area benefit, but must understand that
+it expresses a substantive project requirement and may sacrifice duration oppor-
+tunities. The present experiment exposes that choice rather than authorizing it
+on the architect’s behalf.
+
+
+4.4   Membership Stability and Evidence Burden
+
+The protected ordered and A270 lists are identical across all training blocks. So-
+lar70 and A90 have mean block-to-full Jaccard 0.945455; Solar80 has 0.893939
+and minimum 0.666667; A180 has 0.890909. A small change in average recov-
+ery can coexist with changes in marginal membership. These blocks measure
+numerical sample sensitivity, not repeated architectural projects or users.
+    Solar70 illustrates the useful secondary finding particularly clearly: C24/C35
+replaces C9/C27, adding the largest archived duration gain, but has no archived
+rule-level Honeybee result. Ordered introduces unreviewed C9/C28. Solar80 con-
+tains unreviewed C24/C35, C24/C27 and C24/C26. A180 again lacks C24/C35
+Table 5. Illustrative Solar70 protected list, not a newly approved replacement. Mem-
+bership differs from Historical10 by C24/C35 replacing C9/C27. Position follows the
+selection record, not a final architectural recommendation.
+
+                Pair      Old rank    A       H      V Rule HB Trans.
+                C9/C24            1 396 0.04874 5551.3 Yes        Yes
+                C12/C24           7 198 0.06228 4919.3 Yes        Missing
+                C24/C35          11 189 0.06352 6192.0 Missing    Missing
+                C15/C24           4 243 0.05367 4016.5 Yes        Missing
+                C9/C12            3 306 0.04357 4030.5 Yes        Missing
+                C9/C35            5 297 0.04481 5303.3 Yes        Missing
+                C9/C15            2 351 0.03496 3127.8 Yes        Yes
+                C9/C26            9 315 0.03520 3906.1 Yes        Missing
+                C9/C13            6 333 0.03028 2975.2 Yes        Yes
+                C9/C21            8 333 0.03250 4252.0 Yes        Missing
+
+
+
+review. Even the A270 historical adaptation contains unreviewed C9/C28 and
+C9/C20, because it is no longer the original fully curated historical ten. A filtered
+or optimized list does not inherit validation merely from its method name.
+
+
+5     Simulation and Geometry Remain Separate Evidence
+
+The new computation consists only of decision analysis on archived A/H/V /N .5
+No new Honeybee/Radiance simulation, physical survey, architect study or con-
+struction assessment has been performed. The original 23 curated rule reviews
+and frozen twenty-candidate same-site coverage sample are preserved without
+reselection. They total 43 reviewed pairs, not validation of all 630 candidates.
+    In the archived coverage cohort, area agreement has Spearman correlation
+0.997668, with mean absolute difference 0.45 m2 caused by one 9 m2 discrepancy
+among twenty pairs. This is not sub-grid physical accuracy. Historical score
+agreement partly shares nominal V and constant N across routes. Honeybee and
+the screening route also use different effective solar rays; the aggregate agreement
+does not establish identical physics inputs or generalize to unreviewed pairs.
+    Historical translated geometries are another stage. Four of five archived trans-
+lations failed solid containment. Controlled corrections removed observed new
+obstruction events under the frozen rays and receivers. For C9/C24 the corrected
+translated area benefit is 351 m2 , whereas the rule-screening value is 396 m2 .
+For C9/C15 the corrected translation retains 342 m2 , whereas its rule value is
+351 m2 . Those values concern different geometry and cannot be interchanged in
+the decision table.
+    The previously measured implementation speed ratio of about 483 compares
+two unindexed single-thread Python implementations under matched primitive
+inputs. It supports the feasibility of rapid finite screening, not superiority over
+5
+    AI-assisted preparation [11]; scope is stated in the AI Use Disclosure.
+an indexed solver, a new simulation result, or a measured reduction of architects’
+work time. Ladybug and Radiance provide established simulation context [12,15];
+their names do not certify the input geometry or a proposed intervention.
+    The evidence sequence remains: rule candidate, selective professional simu-
+lation review, translated design and containment checks, then structural, legal
+and construction feasibility. An architect may use the shortlist to focus atten-
+tion, but cannot infer completion of later stages from a high score, zero modeled
+regret or a checked entry in an earlier stage.
+
+
+6     Interpretation and Manuscript Revision Options
+6.1     Answers to the Decision Questions
+The new selectors are more explicit about a particular decision service: retaining
+multiple high-ranked options across stated sunlight-priority preferences, rather
+than accepting one unvalidated weight vector.6 This gives them interpretability,
+but does not prove that they are generally better recommendations. In this
+experiment the gain is too small, or sunlight trade-offs too large, to satisfy the
+agreed replacement rule.
+    If Historical10 already includes every winner, as in the ordered space, a new
+set can add value only through other services such as retaining more near-best
+options, reducing review burden or improving raw performance. Here the recov-
+ery gain is small and mean duration declines beyond the guard. That is not a
+compelling replacement case. Under Solar70 and Solar80, by contrast, Histori-
+cal10 does miss some duration-priority winners. Adding those opportunities is a
+real conditional benefit, but AHV10 and prior Robust10 also retain them, and
+the new recovery improvement still misses the prospectively declared threshold.
+    The old broad-space Robust10 lowers mean nominal volume but offers much
+lower mean area benefit than Historical10 in the primary contexts (208.8 versus
+309.6 m2 ). This does not make its earlier full-simplex regret result false. It shows
+that unrestricted cost-dominant preferences answer a different question from
+sunlight-first repair. The correct response is to align the preference model with
+the project, rather than advertise the largest numerical improvement from an
+unsuitable weight region.
+
+6.2     What Should Be Retained or Revised?
+Conservative route. Preserve the historical shortlist as the default review list,
+with the newly measured sensitivity and evidence-state annotations. Describe
+the research as solar-priority interpretable screening and decision support. Its
+contribution is an explicit constrained decision model, controlled comparison
+and empirical finding that a plausible new selector fails a stronger replacement
+test. Do not claim that 45/35/15/5 has thereby become an expert-approved or
+universally optimal choice.
+6
+    AI-assisted preparation [11]; scope is stated in the AI Use Disclosure.
+Conditional route. If the architect explicitly accepts a total-sunlight space that
+allows duration-dominant preferences, offer the corresponding alternative list as
+an optional comparison. Solar70’s substitution is easy to explain and merits rule-
+level review of C24/C35 before design reliance. This is a secondary opportunity-
+preservation finding, not a reversal of the failed recovery-based replacement test.
+Choosing this route requires an author decision about the actual decision service,
+not post hoc threshold relaxation.
+
+Further research. Elicit real project preferences and rejection constraints; in-
+spect full source literature; perform missing professional simulations only when
+authorized inputs and environments are available; and study whether architects
+benefit from these lists. Such work would generate new evidence. It must not be
+represented as already completed by this preference experiment.
+    No new formal submission manuscript is substituted in this delivery. The
+prior English paper and its Chinese versions remain protected in their original
+location. This supplementary report, complete results and revision options allow
+the author to choose a justified framing before commissioning a final manuscript
+revision. The existing paper’s broad-space narrative should not be submitted
+unchanged while presented as proof of sunlight-first superiority.
+
+6.3     Limitations and Reproducibility
+The analysis uses one simplified site, one fixed rule family, a single day, a coarse
+receiver grid and fixed archived performances. Weight uniformity, normaliza-
+tion, benefit floors and decision gates are researcher-declared. Correlated sun-
+light metrics remain compensatory; raw V omits actual cost, relocation, rights
+and social effects. New weight seeds do not create new site evidence. Repeated
+evaluation of multiple contexts does not turn conditional Monte Carlo intervals
+into a familywise scientific discovery test.
+    All comparisons preserve ten slots, independent selection/evaluation and un-
+favorable results. The archive contains input hashes, the pre-outcome protocol,
+software and run logs, retained weights, ranking memberships, candidate accept-
+abilities, selection traces, continuous-audit witnesses, scenario metrics, stability
+results and evidence status. The supplementary figures and tables are generated
+directly from those saved outputs. Physical raw data and the private repository
+remain restricted; no public replication right is asserted. Author checks of data
+rights, originality, AI assistance, anonymity and submission declarations remain
+required.
+
+
+7     Conclusion
+None of six prospectively declared contexts supports replacing Historical10 under
+the complete frozen rule.7 Recovery improvements are below 0.02 in both inde-
+pendent splits, and some context-specific lists sacrifice too much mean area or
+7
+    AI-assisted preparation [11]; scope is stated in the AI Use Disclosure.
+duration benefit. The strongest useful secondary result is more complete winner
+retention in total-sunlight-weight spaces, including zero continuous condition-
+al regret for the new lists. The strongest warning is that a hard area floor can
+make within-filter performance look excellent while excluding valuable duration-
+focused opportunities.
+    Architects should first clarify whether priority means ordered criteria, a to-
+tal sunlight emphasis or an explicit minimum area improvement. They can then
+examine a small annotated set, compare its sensitivities, request missing sim-
+ulation or geometry evidence, and decide which intervention to develop. The
+experiment supports that transparent workflow and a cautious default, not an
+invented algorithm breakthrough or construction-ready recommendation.
+
+
+AI Use Disclosure
+
+An OpenAI assistant [11] substantially assisted with protocol and code prepara-
+tion, literature and evidence organization, analysis reporting, equations, draft-
+ing, figures, tables, translation preparation and LaTeX quality checks in the
+abstract and Sections 1–7. Section citations identify assisted text. Charts derive
+from saved computation; no synthetic observations replace missing physical ev-
+idence. The exact underlying model version was not recorded. This statement
+does not assert completed independent author verification. The author must con-
+firm assistance scope and applicable declarations. An identity-free disclosure is
+used provisionally because official AI-disclosure and anonymous-acknowledgment
+instructions require author clarification before submission.
+
+
+References
+
+ 1. Boutilier, C., Patrascu, R., Poupart, P., Schuurmans, D.: Constraint-based opti-
+    mization and utility elicitation using the minimax decision criterion. Artificial In-
+    telligence 170(8–9), 686–713 (2006). https://doi.org/10.1016/j.artint.2006.
+    02.003
+ 2. Compagnon, R.: Solar and daylight availability in the urban fabric. Energy and
+    Buildings 36(4), 321–328 (2004). https://doi.org/10.1016/j.enbuild.2004.01.
+    009
+ 3. Czachura, A., Kanters, J., Gentile, N., Wall, M.: Solar performance metrics in
+    urban planning: A review and taxonomy. Buildings 12(4), 393 (2022). https:
+    //doi.org/10.3390/buildings12040393
+ 4. Greco, S., Ehrgott, M., Figueira, J.R. (eds.): Multiple Criteria Decision Analysis:
+    State of the Art Surveys, International Series in Operations Research and Man-
+    agement Science, vol. 233. Springer, 2 edn. (2016). https://doi.org/10.1007/
+    978-1-4939-3094-4
+ 5. Greco, S., Mousseau, V., Slowiński, R.: Ordinal regression revisited: Multiple cri-
+    teria ranking using a set of additive value functions. European Journal of Op-
+    erational Research 191(2), 415–435 (2008). https://doi.org/10.1016/j.ejor.
+    2007.08.013
+ 6. Lahdelma, R., Salminen, P.: SMAA-2: Stochastic multicriteria acceptability analy-
+    sis for group decision making. Operations Research 49(3), 444–454 (2001). https:
+    //doi.org/10.1287/opre.49.3.444.11220
+ 7. Li, J., He, Z., Zhao, B.: A novel method of high-density urban block form generation
+    based on multi-objective solar performance optimization: A case study of nanjing.
+    Energy and Buildings 324, 114878 (2024). https://doi.org/10.1016/j.enbuild.
+    2024.114878
+ 8. Liu, K., Xu, X., Zhang, R., Kong, L., Wang, W., Deng, W.: Impact of urban
+    form on building energy consumption and solar energy potential: A case study
+    of residential blocks in jianhu, china. Energy and Buildings 280, 112727 (2023).
+    https://doi.org/10.1016/j.enbuild.2022.112727
+ 9. Nanongkai, D., Das Sarma, A., Lall, A., Lipton, R.J., Xu, J.: Regret-minimizing
+    representative databases. Proceedings of the VLDB Endowment 3, 1114–1124
+    (2010). https://doi.org/10.14778/1920841.1920980
+10. Nguyen, A.T., Reiter, S., Rigo, P.: A review on simulation-based optimization
+    methods applied to building performance analysis. Applied Energy 113, 1043–
+    1058 (2014). https://doi.org/10.1016/j.apenergy.2013.08.061
+11. OpenAI: OpenAI assistant. https://openai.com/ (2026), AI-assisted drafting and
+    editing tool; exact underlying model/version not recorded. Used October 2026
+12. Sadeghipour Roudsari, M., Pak, M.: Ladybug: A parametric environmental plu-
+    gin for Grasshopper to help designers create an environmentally-conscious de-
+    sign. In: Proceedings of BS2013: 13th Conference of International Building Per-
+    formance Simulation Association. pp. 3128–3135 (2013). https://doi.org/10.
+    26868/25222708.2013.2499
+13. Tervonen, T., Lahdelma, R.: Implementing stochastic multicriteria acceptabili-
+    ty analysis. European Journal of Operational Research 178(2), 500–513 (2007).
+    https://doi.org/10.1016/j.ejor.2005.12.037
+14. Wang, L., Janssen, P., Ji, G.: Optimization-based design exploration of build-
+    ing massing typologies—EvoMass and a typology-oriented computational design
+    optimization method for early-stage performance-based building massing design.
+    Frontiers of Architectural Research 13(6), 1400–1422 (2024). https://doi.org/
+    10.1016/j.foar.2024.06.001
+15. Ward, G.J.: The RADIANCE lighting simulation and rendering system. In: Pro-
+    ceedings of the 21st Annual Conference on Computer Graphics and Interactive
+    Techniques. pp. 459–472. ACM (1994). https://doi.org/10.1145/192161.192286
+

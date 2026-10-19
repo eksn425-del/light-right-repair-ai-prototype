@@ -1,0 +1,10 @@
+{
+  "prior_commit": "52aee8ed48e30da0ffdaba5809e63d51a45b8b2d",
+  "source": "icores_2027/preference_robust/paper",
+  "unchanged_copied_files": {
+    "llncs.cls": "04ec99046ad9867f6cd54ffd1ef8c47c767b327d1baec77536db0528cd492fa2",
+    "splncs04.bst": "f36c3a17e5304a692706359aafa9de709395a085e579eb47c027095aeaa35174",
+    "build_portable.sh": "5f77847544bda06fb871878a5c8461b6a79a200a4ee3f4e68fa4193e9330d64a"
+  },
+  "prior_manuscript_sha256": "caf2da25e3373aeb680a20e7082034694703a6e55ce591d8623c5367528c44ff"
+}
