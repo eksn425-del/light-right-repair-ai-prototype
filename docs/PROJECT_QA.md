@@ -1,4 +1,4 @@
-# Interview Talking Points
+# Project Q&A — Design Decisions and Evaluation Notes
 
 ## 30-second Version
 
