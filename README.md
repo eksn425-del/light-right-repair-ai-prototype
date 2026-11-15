@@ -1,16 +1,12 @@
-# Light Right Repair AI Prototype
+# Light Right Repair — Solar-Access Screening for Urban Renewal
 
-AI-assisted spatial decision workflow for light-equity restoration in dense urban blocks.
+**A screening workflow that helps architects shortlist building interventions that bring sunlight back to dense urban blocks — before anyone pays for full simulation.**
 
-## 中文项目简介
+In the Guankou, Xiamen case study behind this work, a Python screening program scored 630 two-building intervention candidates on low-sunlight-area reduction, mean direct-sun gain, and intervention volume. A shortlist was then rechecked with Honeybee/Radiance, and the screening ranking agreed with the detailed simulation at Spearman ρ = 0.883 across 23 curated candidates. An abstract of this work was accepted at the 8th IRCHST 2026.
 
-**Light Right Repair AI Prototype** 是一个面向城市更新和空间公平议题的 AI 辅助决策工作流原型。它把“哪些街区光照不足、哪些微更新策略最值得优先尝试”转化为可运行的三阶段流程：诊断、候选生成、规则验证和最终推荐。
+This repository is the public-safe demo of that workflow — the same three-stage pipeline (diagnose → generate candidates → validate) running on a toy dataset. Real site data, raw modeling files, and the full research archive are not published.
 
-这个项目不是最终版日照工程软件，也不是自动生成城市设计方案。它更适合表达为：**面向设计团队的空间诊断与方案评估 Workflow 产品**。系统用 toy dataset 和公开安全样例展示算法流程，真实项目数据和原始建模文件不在公开仓库中。
-
-**项目关键词：** Workflow 自动化、空间智能、光照公平、数据评测、决策辅助产品。
-
-This repository is a public-safe demo extracted from a larger private research project. It keeps the reusable algorithmic workflow and toy dataset, while excluding all real site data, raw CAD/Rhino/SketchUp files, field materials, team documents, and private project files.
+![Diagnosis heatmap](assets/figures/heatmap.png)
 
 ## Product Positioning
 
