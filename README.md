@@ -139,6 +139,11 @@ Public-safe research prototype release. It is ready to show as a v0.1 AI product
 
 The private project archive remains offline and is not published.
 
+## Paper
+
+**Auditable Screening and Decision Support for Solar-Access Improvement in Urban Renewal: A Case Study of the Lakeside Leisure Area in Guankou, Xiamen**
+Hong Lu and Wenting Chai. 8th International Research Conference on Humanities, Social Sciences and Technology (IRCHST 2026). Abstract accepted (Paper 083-046); full paper in preparation for the conference proceedings.
+
 ## Product Documents
 
 - [PRD-lite](docs/PRD-lite.md)
@@ -147,4 +152,4 @@ The private project archive remains offline and is not published.
 - [Evaluation metrics](docs/EVALUATION_METRICS.md)
 - [Standalone OBJ validation guide](docs/SINGLE_MASS_VALIDATION_GUIDE.md)
 - [中文产品定位说明](docs/PRODUCT_POSITIONING_CN.md)
-- [Interview talking points](docs/INTERVIEW_TALKING_POINTS.md)
+- [Project Q&A — design decisions and evaluation notes](docs/PROJECT_QA.md)
